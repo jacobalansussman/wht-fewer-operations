@@ -1,0 +1,24 @@
+8 points: |U| = 3280  |W| = 152
+== 8 points, every u with entries 0,+1,-1 : k = 3  gates tested with 2 or more births: 3900288
+   violations of Lemma 2 (births > max(1, e(u), e(v))): 0
+   violations of the sharper form (birth set inside E(u) or inside E(v)): 0
+   violations of Lemma 1 (parents both in or both out): 0
+   histogram (births, e(u), e(v)) -> count:
+      (2, 0, 2) 3456
+      (2, 0, 3) 39744
+      (2, 2, 0) 984
+      (2, 2, 2) 8232
+      (2, 2, 3) 271872
+      (2, 3, 0) 1164
+      (2, 3, 2) 26324
+      (2, 3, 3) 3345568
+      (3, 0, 3) 1728
+      (3, 2, 3) 13824
+      (3, 3, 0) 336
+      (3, 3, 2) 3180
+      (3, 3, 3) 183876
+   example lop2 : w = (0, 0, 0, 0, 1, -1, -1, 1)  u = (0, 0, 0, 0, 0, 0, 0, 1)  v = (0, 0, 0, 0, 1, -1, -1, 0)  alpha, beta = 1 1  births 2  e(u) 0  e(v) 2
+   example lop3 : w = (1, -1, -1, 1, -1, 1, 1, -1)  u = (0, 0, 0, 0, 0, 0, 0, 1)  v = (1, -1, -1, 1, -1, 1, 1, -2)  alpha, beta = 1 1  births 3  e(u) 0  e(v) 3
+   example onegate : w = (1, -1, -1, 1, -1, 1, 1, -1)  u = (0, 0, 0, 1, -1, 0, 0, 0)  v = (1, -1, -1, 0, 0, 1, 1, -1)  alpha, beta = 1 1  births 3  e(u) 3  e(v) 3
+LIGHT label=n1-h8 exit=0 time=38s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=01:13:42 cmd=python3 -B h5_lemma2.py 8
+h8 exit 0

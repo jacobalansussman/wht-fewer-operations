@@ -1,0 +1,78 @@
+## zeta4 p=3 m=0
+RESULT p=3: NO circuit with 3 gates (exhaustive over GF(3))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:57:57 cmd=../d-0-zeta/mincirc 3 4 0 ../d-0-zeta/rows_zeta2.txt
+## zeta4 p=3 m=1
+RESULT p=3: YES, circuit with 4 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:57:58 cmd=../d-0-zeta/mincirc 3 4 1 ../d-0-zeta/rows_zeta2.txt
+## zeta4 p=5 m=0
+RESULT p=5: NO circuit with 3 gates (exhaustive over GF(5))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:57:59 cmd=../d-0-zeta/mincirc 5 4 0 ../d-0-zeta/rows_zeta2.txt
+## zeta4 p=5 m=1
+RESULT p=5: YES, circuit with 4 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:00 cmd=../d-0-zeta/mincirc 5 4 1 ../d-0-zeta/rows_zeta2.txt
+## zeta4 p=7 m=0
+RESULT p=7: NO circuit with 3 gates (exhaustive over GF(7))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:01 cmd=../d-0-zeta/mincirc 7 4 0 ../d-0-zeta/rows_zeta2.txt
+## zeta4 p=7 m=1
+RESULT p=7: YES, circuit with 4 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:02 cmd=../d-0-zeta/mincirc 7 4 1 ../d-0-zeta/rows_zeta2.txt
+## pascal4 p=3 m=0
+RESULT p=3: NO circuit with 3 gates (exhaustive over GF(3))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:03 cmd=../d-0-zeta/mincirc 3 4 0 rows_pascal4.txt
+## pascal4 p=3 m=1
+RESULT p=3: YES, circuit with 4 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:04 cmd=../d-0-zeta/mincirc 3 4 1 rows_pascal4.txt
+## pascal4 p=3 m=2
+RESULT p=3: YES, circuit with 5 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:05 cmd=../d-0-zeta/mincirc 3 4 2 rows_pascal4.txt
+## pascal4 p=5 m=0
+RESULT p=5: NO circuit with 3 gates (exhaustive over GF(5))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:06 cmd=../d-0-zeta/mincirc 5 4 0 rows_pascal4.txt
+## pascal4 p=5 m=1
+RESULT p=5: NO circuit with 4 gates (exhaustive over GF(5))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:07 cmd=../d-0-zeta/mincirc 5 4 1 rows_pascal4.txt
+## pascal4 p=5 m=2
+RESULT p=5: YES, circuit with 5 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:09 cmd=../d-0-zeta/mincirc 5 4 2 rows_pascal4.txt
+## pascal4 p=7 m=0
+RESULT p=7: NO circuit with 3 gates (exhaustive over GF(7))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:10 cmd=../d-0-zeta/mincirc 7 4 0 rows_pascal4.txt
+## pascal4 p=7 m=1
+RESULT p=7: NO circuit with 4 gates (exhaustive over GF(7))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:11 cmd=../d-0-zeta/mincirc 7 4 1 rows_pascal4.txt
+## pascal4 p=7 m=2
+RESULT p=7: YES, circuit with 5 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:12 cmd=../d-0-zeta/mincirc 7 4 2 rows_pascal4.txt
+## pascal4 p=11 m=0
+RESULT p=11: NO circuit with 3 gates (exhaustive over GF(11))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:13 cmd=../d-0-zeta/mincirc 11 4 0 rows_pascal4.txt
+## pascal4 p=11 m=1
+RESULT p=11: NO circuit with 4 gates (exhaustive over GF(11))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:14 cmd=../d-0-zeta/mincirc 11 4 1 rows_pascal4.txt
+## pascal4 p=11 m=2
+RESULT p=11: YES, circuit with 5 gates. points in order (after the 4 inputs):
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:15 cmd=../d-0-zeta/mincirc 11 4 2 rows_pascal4.txt
+## pascal8 p=3 m=2
+RESULT p=3: NO circuit with 9 gates (exhaustive over GF(3))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:16 cmd=../d-0-zeta/mincirc 3 8 2 rows_pascal8.txt
+## pascal8 p=5 m=2
+RESULT p=5: NO circuit with 9 gates (exhaustive over GF(5))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:17 cmd=../d-0-zeta/mincirc 5 8 2 rows_pascal8.txt
+## pascal8 p=3 m=3
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:18 cmd=../d-0-zeta/mincirc 3 8 3 rows_pascal8.txt
+## pascal8 p=5 m=3
+RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+LIGHT label=ab7-mc exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:19 cmd=../d-0-zeta/mincirc 5 8 3 rows_pascal8.txt
+## pascal8 p=3 m=4
+RESULT p=3: NO circuit with 11 gates (exhaustive over GF(3))
+LIGHT label=ab7-mc exit=0 time=2s waited=0s peak_rss_mb=27 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:20 cmd=../d-0-zeta/mincirc 3 8 4 rows_pascal8.txt
+## pascal8 p=5 m=4
+RESULT p=5: NO circuit with 11 gates (exhaustive over GF(5))
+LIGHT label=ab7-mc exit=0 time=24s waited=0s peak_rss_mb=41 peak_footprint_mb=41 lowest_cap_mb=1500 stopped=- start=04:58:23 cmd=../d-0-zeta/mincirc 5 8 4 rows_pascal8.txt
+## pascal8 p=3 m=5
+RESULT p=3: NO circuit with 12 gates (exhaustive over GF(3))
+LIGHT label=ab7-mc exit=0 time=236s waited=0s peak_rss_mb=33 peak_footprint_mb=33 lowest_cap_mb=1500 stopped=- start=04:58:46 cmd=../d-0-zeta/mincirc 3 8 5 rows_pascal8.txt
+## pascal8 p=5 m=5
+LIGHT label=ab7-mc exit=124 time=243s waited=0s peak_rss_mb=16 peak_footprint_mb=16 lowest_cap_mb=1500 stopped=time>240s start=05:02:43 cmd=../d-0-zeta/mincirc 5 8 5 rows_pascal8.txt
+DONE

@@ -1,0 +1,25 @@
+two-element field, exhaustive over all relations
+  k=2 d=1: relations form a space of dimension 1; shortest = 4; claim 2^(d+1) = 4; OK
+  k=3 d=1: relations form a space of dimension 4; shortest = 4; claim 2^(d+1) = 4; OK
+  k=3 d=2: relations form a space of dimension 1; shortest = 8; claim 2^(d+1) = 8; OK
+  k=4 d=1: relations form a space of dimension 11; shortest = 4; claim 2^(d+1) = 4; OK
+  k=4 d=2: relations form a space of dimension 5; shortest = 8; claim 2^(d+1) = 8; OK
+  k=4 d=3: relations form a space of dimension 1; shortest = 16; claim 2^(d+1) = 16; OK
+  k=5 d=1: relations form a space of dimension 26; shortest = skipped; claim 2^(d+1) = 4; skipped
+  k=5 d=2: relations form a space of dimension 16; shortest = 8; claim 2^(d+1) = 8; OK
+  k=5 d=3: relations form a space of dimension 6; shortest = 16; claim 2^(d+1) = 16; OK
+  k=5 d=4: relations form a space of dimension 1; shortest = 32; claim 2^(d+1) = 32; OK
+  k=6 d=1: relations form a space of dimension 57; shortest = skipped; claim 2^(d+1) = 4; skipped
+  k=6 d=2: relations form a space of dimension 42; shortest = skipped; claim 2^(d+1) = 8; skipped
+  k=6 d=3: relations form a space of dimension 22; shortest = 16; claim 2^(d+1) = 16; OK
+  k=6 d=4: relations form a space of dimension 7; shortest = 32; claim 2^(d+1) = 32; OK
+  k=6 d=5: relations form a space of dimension 1; shortest = 64; claim 2^(d+1) = 64; OK
+rationals (independence modulo 1000003 of every set of 2^(d+1) - 1 rows)
+  k=3 d=1: 56 sets of 3 rows: all independent
+  k=3 d=2: 8 sets of 7 rows: all independent
+  k=4 d=1: 560 sets of 3 rows: all independent
+  k=4 d=2: 11440 sets of 7 rows: all independent
+  k=4 d=3: 16 sets of 15 rows: all independent
+  k=5 d=1: 4960 sets of 3 rows: all independent
+  k=5 d=2: 3365856 sets of 7 rows: all independent
+LIGHT label=ai1-delta exit=0 time=82s waited=0s peak_rss_mb=8 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=09:34:11 cmd=python3 -B delta.py

@@ -1,0 +1,18 @@
+(derivation, cut) cases: 20880 ; violations of the inequality among cases with M2 = 4: 0
+(M2 gates, injections, pure gates, cancelling gates, injections per upper wire, the bound 8 + sum of min(r,2)) -> cases
+   (4, 4, 4, 0, (2, 1, 1), 12) 8352
+   (4, 4, 4, 0, (1, 1, 1, 1), 12) 6588
+   (4, 4, 3, 1, (2, 1, 1), 12) 1920
+   (4, 4, 4, 0, (2, 2), 12) 1188
+   (4, 4, 4, 0, (3, 1), 11) 828
+   (4, 4, 3, 1, (3, 1), 11) 576
+   (4, 4, 3, 1, (2, 2), 12) 468
+   (4, 5, 2, 1, (3, 1, 1), 12) 456
+   (4, 5, 2, 1, (3, 2), 12) 216
+   (4, 4, 2, 2, (3, 1), 11) 90
+   (4, 5, 1, 2, (3, 2), 12) 72
+   (4, 4, 2, 2, (2, 2), 12) 36
+   (5, 4, 2, 1, (2, 1, 1), None) 36
+   (5, 4, 2, 1, (3, 1), None) 36
+   (5, 4, 2, 1, (1, 1, 1, 1), None) 18
+LIGHT label=ad2-cutineq exit=0 time=8s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=07:05:13 cmd=python3 -B cutineq.py

@@ -1,0 +1,36 @@
+# 8 points: the step of Alman and Rao, arXiv:2211.06459v2, Algorithm 5 (lines 12 to 28) at N = 8.
+# 22 additions or subtractions, one halving, seven doublings of inputs.  Sums of three or four terms
+# are taken from left to right, as written.  Output yJ = row J of H.
+
+a = x0
+b = 2*x1
+c = 2*x2
+d = 2*x3
+e = 2*x4
+f = 2*x5
+g = 2*x6
+h = 2*x7
+B1 = b + c
+B2 = d + h
+B3 = f + g
+
+t1 = B1 + B2
+t2 = t1 + B3
+totsum = t2 + e
+tot = 1/2*totsum
+diff = a - tot
+D = diff + d
+E = diff + e
+H = diff + h
+y0 = a + tot
+u1 = E + c
+y1 = u1 + g
+u2 = E + b
+y2 = u2 + f
+y3 = E + B2
+y4 = D + B1
+u3 = H + c
+y5 = u3 + f
+u4 = H + b
+y6 = u4 + g
+y7 = D + B3

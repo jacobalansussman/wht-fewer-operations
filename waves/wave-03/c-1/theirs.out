@@ -1,0 +1,9 @@
+(G) their slp_4.txt: 7 gates, coefficients ['1', '2'], outputs = the 4 rows of H times 1, each once: True | same set of wires as my program: True
+(G) their slp_8.txt: 20 gates, coefficients ['1', '2'], outputs = the 8 rows of H times 1, each once: True | same set of wires as my program: True
+(G) their slp_16.txt: 52 gates, coefficients ['1', '2'], outputs = the 16 rows of H times 1, each once: True | same set of wires as my program: True
+(G) their slp_32.txt: 128 gates, coefficients ['1', '2'], outputs = the 32 rows of H times 1, each once: True | same set of wires as my program: True
+(G) their slp_64.txt: 304 gates, coefficients ['1', '2'], outputs = the 64 rows of H times 1, each once: True | same set of wires as my program: True
+(O) their oslp_4.txt: 8 operations {'+': 3, '-': 4, '*': 1}, constants ['1/2'], outputs = the 4 rows of H times 1/2, each once: True | H x itself would need 4 more multiplications: 12 against the textbook 8
+(O) their oslp_16.txt: 60 operations {'+': 20, '-': 32, '*': 8}, constants ['1/2'], outputs = the 16 rows of H times 1/4, each once: True | H x itself would need 16 more multiplications: 76 against the textbook 64
+(O) their oslp_64.txt: 352 operations {'+': 112, '-': 192, '*': 48}, constants ['1/2'], outputs = the 64 rows of H times 1/8, each once: True | H x itself would need 64 more multiplications: 416 against the textbook 384
+LIGHT label=c1-theirs exit=0 time=1s waited=36s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:14:19 cmd=python3 -B theirs.py

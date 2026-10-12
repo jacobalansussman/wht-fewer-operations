@@ -1,0 +1,6 @@
+mode=3 N=32 restart=0 best=126 recount rows=126 cols=126 | whole-number: odd cells 126, checkerboards 79, other 0
+BEST 126
+rows 9 21 10 22 14 18 13 17 15 19 11 23 7 27 5 25 26 6 31 3 29 24 12 20 28 30 2 0 8 16 1 4 
+cols 18 10 6 31 17 9 5 28 26 25 24 27 15 12 13 14 22 21 20 23 29 7 11 19 30 3 1 8 2 4 0 16 
+mode=3 N=32 restart=1 best=126 recount rows=126 cols=126 | whole-number: odd cells 126, checkerboards 79, other 0
+mode=3 N=32 restart=2 best=126 recount rows=126 cols=126 | whole-number: odd cells 126, checkerboards 78, other 0

@@ -1,0 +1,82 @@
+# harness check; 2026-10-11 17:38:35 UTC; host (removed); load 4.53,4.61,4.91
+# compiler: gcc 13.3.0
+# harness, variants.c and our plain C built with: gcc -O3 -march=native; whti.c: gcc -O3 -march=native -ffp-contract=off
+# naive.c built with: (not in this build)
+# FFHT commit fba727a3ff72c862260460631ae1cc8e3e44e861; its fht.o built by its own Makefile with: gcc -O3 -march=native -std=c99 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
+C type=float k=25 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=25 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=N against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Np against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=NFp against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Nmp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Ncp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=NFcp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Nsp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Gp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Tw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Nw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=NFw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Ncw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=NFcw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Gw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Twp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=NFwp against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=26 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=N against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Np against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=NFp against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Nmp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Ncp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=NFcp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Nsp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Gp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Tw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Nw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=NFw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Ncw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=NFcw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Gw against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Twp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=NFwp against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=25 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=N against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Np against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=NFp against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Nmp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Ncp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=NFcp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Nsp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Gp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Tw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Nw against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=NFw against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Ncw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=NFcw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Gw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Twp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=NFwp against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=26 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=N against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Np against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=NFp against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Nmp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Ncp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=NFcp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Nsp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Gp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Tw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Nw against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=NFw against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Ncw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=NFcw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Gw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Twp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=NFwp against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+# check: all equal (0 failing lines)

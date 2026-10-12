@@ -1,0 +1,84 @@
+## K3 (x) H2 on 6 wires, 6 targets: textbook 14, inherited (7-gate brick) 13; gates = 6 + m
+p=3 m=4
+visited states by remaining budget: j=4:1 j=3:30 j=2:675 j=1:30354
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+p=3 m=5
+visited states by remaining budget: j=5:1 j=4:30 j=3:675 j=2:30354 j=1:1636026
+RESULT p=3: NO circuit with 11 gates (exhaustive over GF(3))
+p=3 m=6
+visited states by remaining budget: j=6:1 j=5:1 j=4:14 j=3:589 j=2:31120 j=1:1962861
+RESULT p=3: YES, circuit with 12 gates. points in order (after the 6 inputs):
+  g6  inter  = [0 0 0 0 1 1]  from #5 + 1*#4 (projectively)
+  g7  inter  = [0 0 1 1 0 0]  from #3 + 1*#2 (projectively)
+  g8  inter  = [0 0 1 1 1 1]  from #7 + 1*#6 (projectively)
+  g9  inter  = [0 1 0 0 0 1]  from #5 + 1*#1 (projectively)
+  g10 inter  = [1 0 0 0 2 2]  from #6 + 2*#0 (projectively)
+  g11 TARGET = [1 1 0 0 2 2]  from #10 + 1*#1 (projectively)
+  g12 TARGET = [1 2 0 0 2 1]  from #10 + 2*#9 (projectively)
+  g13 TARGET = [1 1 2 2 1 1]  from #11 + 2*#8 (projectively)
+  g14 TARGET = [1 1 1 1 1 1]  from #13 + 2*#7 (projectively)
+  g15 inter  = [1 2 2 2 1 2]  from #13 + 1*#9 (projectively)
+  g16 TARGET = [1 2 1 2 1 2]  from #15 + 2*#2 (projectively)
+  g17 TARGET = [1 2 2 1 1 2]  from #15 + 2*#3 (projectively)
+p=3 m=7
+visited states by remaining budget: j=7:1 j=6:1 j=5:1 j=4:17 j=3:804 j=2:47039 j=1:3273124
+RESULT p=3: YES, circuit with 13 gates. points in order (after the 6 inputs):
+  g6  inter  = [0 0 0 0 1 1]  from #5 + 1*#4 (projectively)
+  g7  inter  = [0 0 0 0 1 2]  from #5 + 2*#4 (projectively)
+  g8  inter  = [0 0 1 1 0 0]  from #3 + 1*#2 (projectively)
+  g9  inter  = [0 0 1 1 1 1]  from #8 + 1*#6 (projectively)
+  g10 inter  = [0 1 0 0 0 1]  from #5 + 1*#1 (projectively)
+  g11 inter  = [1 0 0 0 2 1]  from #7 + 2*#0 (projectively)
+  g12 TARGET = [1 1 0 0 2 2]  from #11 + 1*#10 (projectively)
+  g13 TARGET = [1 2 0 0 2 1]  from #11 + 2*#1 (projectively)
+  g14 TARGET = [1 1 2 2 1 1]  from #12 + 2*#9 (projectively)
+  g15 TARGET = [1 1 1 1 1 1]  from #14 + 2*#8 (projectively)
+  g16 inter  = [1 2 2 2 1 2]  from #14 + 1*#10 (projectively)
+  g17 TARGET = [1 2 1 2 1 2]  from #16 + 2*#2 (projectively)
+  g18 TARGET = [1 2 2 1 1 2]  from #16 + 2*#3 (projectively)
+p=5 m=4
+visited states by remaining budget: j=4:1 j=3:60 j=2:2730 j=1:253178
+RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+p=5 m=5
+visited states by remaining budget: j=5:1 j=4:60 j=3:2730 j=2:253178 j=1:28645242
+RESULT p=5: NO circuit with 11 gates (exhaustive over GF(5))
+p=5 m=6
+visited states by remaining budget: j=6:1 j=5:1 j=4:28 j=3:2526 j=2:283670 j=1:38489252
+RESULT p=5: YES, circuit with 12 gates. points in order (after the 6 inputs):
+  g6  inter  = [0 0 0 0 1 1]  from #5 + 1*#4 (projectively)
+  g7  inter  = [0 0 1 1 0 0]  from #3 + 1*#2 (projectively)
+  g8  inter  = [0 1 0 0 1 1]  from #6 + 1*#1 (projectively)
+  g9  inter  = [1 4 0 0 4 4]  from #8 + 4*#0 (projectively)
+  g10 TARGET = [1 1 0 0 4 4]  from #9 + 2*#1 (projectively)
+  g11 TARGET = [1 4 0 0 4 1]  from #9 + 2*#5 (projectively)
+  g12 inter  = [1 4 1 1 4 4]  from #9 + 1*#7 (projectively)
+  g13 TARGET = [1 1 1 1 1 1]  from #12 + 2*#8 (projectively)
+  g14 TARGET = [1 1 4 4 1 1]  from #12 + 3*#0 (projectively)
+  g15 inter  = [1 4 1 1 1 4]  from #12 + 2*#4 (projectively)
+  g16 TARGET = [1 4 1 4 1 4]  from #15 + 3*#3 (projectively)
+  g17 TARGET = [1 4 4 1 1 4]  from #15 + 3*#2 (projectively)
+p=5 m=7
+visited states by remaining budget: j=7:1 j=6:1 j=5:1 j=4:35 j=3:3693 j=2:473381 j=1:72260660
+RESULT p=5: YES, circuit with 13 gates. points in order (after the 6 inputs):
+  g6  inter  = [0 0 0 0 1 1]  from #5 + 1*#4 (projectively)
+  g7  inter  = [0 0 0 0 1 2]  from #5 + 3*#4 (projectively)
+  g8  inter  = [0 0 1 1 0 0]  from #3 + 1*#2 (projectively)
+  g9  inter  = [0 1 0 0 1 1]  from #6 + 1*#1 (projectively)
+  g10 inter  = [1 4 0 0 4 4]  from #9 + 4*#0 (projectively)
+  g11 TARGET = [1 1 0 0 4 4]  from #10 + 2*#1 (projectively)
+  g12 TARGET = [1 4 0 0 4 1]  from #10 + 2*#5 (projectively)
+  g13 inter  = [1 4 1 1 4 4]  from #10 + 1*#8 (projectively)
+  g14 TARGET = [1 1 1 1 1 1]  from #13 + 2*#9 (projectively)
+  g15 TARGET = [1 1 4 4 1 1]  from #13 + 3*#0 (projectively)
+  g16 inter  = [1 4 1 1 1 4]  from #13 + 2*#4 (projectively)
+  g17 TARGET = [1 4 1 4 1 4]  from #16 + 3*#3 (projectively)
+  g18 TARGET = [1 4 4 1 1 4]  from #16 + 3*#2 (projectively)
+p=7 m=4
+visited states by remaining budget: j=4:1 j=3:90 j=2:6165 j=1:866670
+RESULT p=7: NO circuit with 10 gates (exhaustive over GF(7))
+p=7 m=5
+visited states by remaining budget: j=5:1 j=4:90 j=3:6165 j=2:866670 j=1:149616014
+RESULT p=7: NO circuit with 11 gates (exhaustive over GF(7))
+p=7 m=6
+p=7 m=7
+(p=7 m=6 stopped by the 500 s limit without a result; p=7 m=7 stopped by hand at the end of the session. The rational 12-gate circuit of brick12.py has coefficients 1 and 2 only, so it is a 12-gate circuit over GF(7) as well.)

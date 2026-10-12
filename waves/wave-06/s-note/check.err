@@ -1,0 +1,1 @@
+LIGHT label=s-note exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:43:07 cmd=python3 -B check.py

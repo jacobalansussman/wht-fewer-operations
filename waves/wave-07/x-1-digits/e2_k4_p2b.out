@@ -1,0 +1,4 @@
+== rows=rows_e2_k4.txt p=2 m=5
+LIGHT label=x1-e2 exit=124 time=403s waited=2s peak_rss_mb=31 peak_footprint_mb=31 lowest_cap_mb=1500 stopped=time>400s start=03:40:24 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 5 rows_e2_k4.txt
+== rows=rows_e2_k4.txt p=2 m=6
+LIGHT label=x1-e2 exit=124 time=403s waited=0s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>400s start=03:47:07 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 6 rows_e2_k4.txt

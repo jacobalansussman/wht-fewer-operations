@@ -1,0 +1,51 @@
+(1) the cut-off form at the 99% and 99.99% windows: additions of sums + spread, over N; against k (textbook, k N in (G) and (O))
+  k=   16   99%: d=  8 cost 14.8 N = 3.71 sqrt(k) N, waist 2^15   |  99.99%: d= 11 cost 15.9 N = 3.98 sqrt(k) N, waist 2^16   | k N: 16 N
+  k=   64   99%: d= 17 cost 35.0 N = 4.37 sqrt(k) N, waist 2^51   |  99.99%: d= 26 cost 52.7 N = 6.59 sqrt(k) N, waist 2^60   | k N: 64 N
+  k=  256   99%: d= 35 cost 71.0 N = 4.44 sqrt(k) N, waist 2^144   |  99.99%: d= 53 cost 107.0 N = 6.69 sqrt(k) N, waist 2^185   | k N: 256 N
+  k= 1024   99%: d= 71 cost 143.0 N = 4.47 sqrt(k) N, waist 2^368   |  99.99%: d=107 cost 215.0 N = 6.72 sqrt(k) N, waist 2^490   | k N: 1024 N
+  k= 4096   99%: d=142 cost 285.0 N = 4.45 sqrt(k) N, waist 2^885   |  99.99%: d=215 cost 431.0 N = 6.73 sqrt(k) N, waist 2^1211   | k N: 4096 N
+(2) the exact two-piece program  H = cut-off(lower window d) + N * inverse of H on the heavy block  (heavy block = signs * ball of radius k-d-1, done by Moebius sums on the ball)
+    k=16 d=0: total 1.062 k N
+    k=16 d=4: total 1.499 k N
+    k=16 d=8: total 1.231 k N
+    k=16 d=12: total 1.003 k N
+    k=16 d=16: total 1.000 k N
+  k=16  cheapest at d=15: 1.0000 k N
+    k=64 d=0: total 1.016 k N
+    k=64 d=16: total 1.516 k N
+    k=64 d=32: total 1.358 k N
+    k=64 d=48: total 1.000 k N
+    k=64 d=64: total 1.000 k N
+  k=64  cheapest at d=63: 1.0000 k N
+    k=256 d=0: total 1.004 k N
+    k=256 d=64: total 1.504 k N
+    k=256 d=128: total 1.427 k N
+    k=256 d=192: total 1.000 k N
+    k=256 d=256: total 1.000 k N
+  k=256  cheapest at d=255: 1.0000 k N
+(3) weight classes: share of entries in class pairs (w,v) where at most d+1 overlaps occur, d = the 99% degree; and the degree needed for 99% when each class pair has its own window
+  k= 16  global 99% degree  8;  share of entries in thin class pairs 1.00e+00;  own window per class pair reaches 99% at degree 4 (1.00 sqrt k)
+  k= 64  global 99% degree 17;  share of entries in thin class pairs 4.54e-04;  own window per class pair reaches 99% at degree 10 (1.25 sqrt k)
+  k=256  global 99% degree 35;  share of entries in thin class pairs 6.74e-34;  own window per class pair reaches 99% at degree 20 (1.25 sqrt k)
+(4) the ball blocks A_w = H restricted to addresses of weight <= w: size M, cost 2*sum_{j<=w} j C(k,j) additions by sums on the ball; against M log2 M
+  k=   64 w=   1  log2 M=    6.0  cost per point 1.97  = 0.327 of log2 M;  log2|det| per point 0.98
+  k=   64 w=   2  log2 M=   11.0  cost per point 3.94  = 0.357 of log2 M;  log2|det| per point 1.97
+  k=   64 w=   3  log2 M=   15.4  cost per point 5.90  = 0.383 of log2 M;  log2|det| per point 2.95
+  k=   64 w=   8  log2 M=   32.3  cost per point 15.69  = 0.486 of log2 M;  log2|det| per point 7.84
+  k=   64 w=   8  log2 M=   32.3  cost per point 15.69  = 0.486 of log2 M;  log2|det| per point 7.84
+  k=   64 w=   8  log2 M=   32.3  cost per point 15.69  = 0.486 of log2 M;  log2|det| per point 7.84
+  k= 1024 w=   1  log2 M=   10.0  cost per point 2.00  = 0.200 of log2 M;  log2|det| per point 1.00
+  k= 1024 w=   2  log2 M=   19.0  cost per point 4.00  = 0.210 of log2 M;  log2|det| per point 2.00
+  k= 1024 w=   3  log2 M=   27.4  cost per point 5.99  = 0.219 of log2 M;  log2|det| per point 3.00
+  k= 1024 w=   8  log2 M=   64.7  cost per point 15.98  = 0.247 of log2 M;  log2|det| per point 7.99
+  k= 1024 w=  32  log2 M=  201.7  cost per point 63.93  = 0.317 of log2 M;  log2|det| per point 31.97
+  k= 1024 w= 128  log2 M=  552.1  cost per point 255.67  = 0.463 of log2 M;  log2|det| per point 127.83
+  k=16384 w=   1  log2 M=   14.0  cost per point 2.00  = 0.143 of log2 M;  log2|det| per point 1.00
+  k=16384 w=   2  log2 M=   27.0  cost per point 4.00  = 0.148 of log2 M;  log2|det| per point 2.00
+  k=16384 w=   3  log2 M=   39.4  cost per point 6.00  = 0.152 of log2 M;  log2|det| per point 3.00
+  k=16384 w=   8  log2 M=   96.7  cost per point 16.00  = 0.165 of log2 M;  log2|det| per point 8.00
+Traceback (most recent call last):
+  File "waves/wave-02/e-3-cutoff/count.py", line 66, in <module>
+    print("  k=%5d w=%4d  log2 M=%7.1f  cost per point %.2f  = %.3f of log2 M;  log2|det| per point %.2f" % (k, w, log2(M), c / M, c / M / log2(M), c / 2 / M))
+OverflowError: integer division result too large for a float
+LIGHT label=e3-count exit=1 time=485s waited=0s peak_rss_mb=14 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=22:03:03 cmd=python3 -B waves/wave-02/e-3-cutoff/count.py

@@ -1,0 +1,10 @@
+k  2 N     4 | (a) H x / 2:      8 operations = 7 add/sub + 1 halvings + 0 doublings; my formula 8 EQUAL | (b) H x exactly:     12 (formula 12 EQUAL) | textbook for H x:      8 | (b) - textbook = +4
+k  3 N     8 | (a) H x / 2:     26 operations = 20 add/sub + 2 halvings + 4 doublings; my formula 26 EQUAL | (b) H x exactly:     34 (formula 34 EQUAL) | textbook for H x:     24 | (b) - textbook = +10
+k  4 N    16 | (a) H x / 4:     60 operations = 52 add/sub + 8 halvings + 0 doublings; my formula 60 EQUAL | (b) H x exactly:     76 (formula 76 EQUAL) | textbook for H x:     64 | (b) - textbook = +12
+k  5 N    32 | (a) H x / 4:    160 operations = 128 add/sub + 16 halvings + 16 doublings; my formula 160 EQUAL | (b) H x exactly:    192 (formula 192 EQUAL) | textbook for H x:    160 | (b) - textbook = +32
+k  6 N    64 | (a) H x / 8:    352 operations = 304 add/sub + 48 halvings + 0 doublings; my formula 352 EQUAL | (b) H x exactly:    416 (formula 416 EQUAL) | textbook for H x:    384 | (b) - textbook = +32
+k  7 N   128 | (a) H x / 8:    864 operations = 704 add/sub + 96 halvings + 64 doublings; my formula 864 EQUAL | (b) H x exactly:    992 (formula 992 EQUAL) | textbook for H x:    896 | (b) - textbook = +96
+k  8 N   256 | (a) H x / 16:   1856 operations = 1600 add/sub + 256 halvings + 0 doublings; my formula 1856 EQUAL | (b) H x exactly:   2112 (formula 2112 EQUAL) | textbook for H x:   2048 | (b) - textbook = +64
+k  9 N   512 | (a) H x / 16:   4352 operations = 3584 add/sub + 512 halvings + 256 doublings; my formula 4352 EQUAL | (b) H x exactly:   4864 (formula 4864 EQUAL) | textbook for H x:   4608 | (b) - textbook = +256
+k 10 N  1024 | (a) H x / 32:   9216 operations = 7936 add/sub + 1280 halvings + 0 doublings; my formula 9216 EQUAL | (b) H x exactly:  10240 (formula 10240 EQUAL) | textbook for H x:  10240 | (b) - textbook = +0
+LIGHT label=c1-opr exit=0 time=3s waited=38s peak_rss_mb=181 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:16:05 cmd=python3 -B opr.py 2 10

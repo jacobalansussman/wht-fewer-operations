@@ -1,0 +1,202 @@
+The Walsh-Hadamard transform with fewer operations (wht-fewer-operations)
+Copyright 2026 Jacob Sussman
+
+This repository is not a project of OpenAI. OpenAI did not write, review or
+endorse it. The package name "OAI" and the namespaces "OAI.ExactFourier" and
+"OAI.PowerSaving" are those of openai/math. They are kept only because the
+new files extend that development: the files under lean/Work/SmallWHT/ put
+their names in "OAI.ExactFourier.WHT8Half", inside the namespace
+"OAI.ExactFourier" of openai/math.
+
+This repository contains files from, and files derived from, the repository
+"openai/math" (https://github.com/openai/math), family 130, "Exact Fourier
+transforms below n log n", at commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.
+That repository is published under the Apache License, Version 2.0. A copy of
+the licence is in the file LICENSE; it is a byte-for-byte copy of the file
+LICENSE of openai/math. The upstream repository has no NOTICE file and its
+licence text names no copyright holder; the files are attributed here to the
+authors of openai/math (OpenAI).
+
+1. Unmodified upstream files.
+   The 44 files under lean/OAI/Computability/FourierCircuit/ are
+   byte-for-byte copies of the files with the same paths in openai/math at
+   the commit above. They have not been changed. They are the files that the
+   proofs of this repository import, directly or indirectly: Core.lean, which
+   holds OpenAI's circuit model, and the 43 files that
+   TensorCostAlgebra.lean imports other than Core.lean, which hold OpenAI's
+   definition of the cost of a matrix and their theorems on the cost of
+   tensor products. openai/math has 51 files in that directory; the 7 that
+   are not here are Main.lean and the six further files that Main.lean
+   needs.
+   lean/lean-toolchain is a byte-for-byte copy of lean/lean-toolchain of
+   openai/math.
+   To check this yourself:
+
+       git clone https://github.com/openai/math openai-math
+       git -C openai-math checkout fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+       for f in $(find lean/OAI -name '*.lean'); do
+           cmp "$f" "openai-math/$f" || echo "DIFFERENT $f"; done
+       cmp lean/lean-toolchain openai-math/lean/lean-toolchain
+       cmp LICENSE openai-math/LICENSE
+
+   The loop and the two commands after it print nothing when the files are
+   identical. This was run for these files on 2026-10-11 against a checkout
+   of that commit: 44 of 44 identical, and the two other files identical.
+   The clone of openai/math takes about 3.2 GB. The commands above put it
+   in a folder openai-math/ at the top of this repository; .gitignore
+   names that folder, and it can be deleted afterwards.
+
+2. Files that contain upstream text.
+   - lean/Work/SmallWHT/ChallengeWHT8.lean contains, as its lines 25-62,
+     lines 12-49 of lean/ComparatorChallenges/ExactFourier.lean of
+     openai/math (OpenAI's statement of the circuit model), unchanged.
+     Everything else in the file was written by the agents of section 4.
+   - lean/Work/SmallWHT/TensorPow8.lean contains one theorem of openai/math
+     with its proof. Its theorem "exists_circuit_of_cost" (lines 67-81 of
+     the file) is the theorem "OAI.ExactFourier.CircuitCost.exists_circuit"
+     of lean/OAI/Computability/FourierCircuit/Main.lean (lines 196-210 of
+     that file), unchanged except for its name and for spacing. It is
+     repeated there so that Main.lean and the six further files that
+     Main.lean needs are not included in this repository. The comment above
+     the theorem says so. Everything else in the file was written by the
+     agents of section 4.
+   - lean/lakefile.lean is adapted from lean/lakefile.lean of openai/math:
+     the same package name, toolchain, package option and Mathlib pin; every
+     other dependency was removed and the three libraries of this repository
+     were declared. lean/lake-manifest.json lists Mathlib and its 8
+     dependencies at the revisions of lean/lake-manifest.json of
+     openai/math.
+
+3. New files.
+   The six files under lean/Work/SmallWHT/, the file
+   lean/WHTCheck/Solution.lean, the script lean/tools/Compare.lean and the
+   script lean/check.sh are not part of openai/math. The files under
+   lean/Work/SmallWHT/ import the upstream files and use their definitions
+   and theorems; the header of TensorPow8.lean lists the names it uses.
+   lean/WHTCheck/Solution.lean repeats one definition, with three small
+   checks of it, from the file of the same name in the repository
+   https://github.com/jacobalansussman/wht-power-saving-lean (same author,
+   Apache License 2.0); its header gives the line numbers.
+   lean/tools/Compare.lean is a byte-for-byte copy of tools/Compare.lean of
+   that repository.
+   The six files under lean/Work/SmallWHT/ were written inside a working copy
+   of that repository and are kept here exactly as they were checked. Where
+   their comments say "this repository" or "the repository", they mean
+   that one: its function "wht", its main theorems and its earlier
+   results. In the comment at the top of lean/tools/Compare.lean, read
+   "tools/Compare.lean" for "checks/Compare.lean".
+   Everything outside lean/ except LICENSE is new as well, and none of it
+   is a file of openai/math: README.md, VERIFY.md, CITATION.cff and this
+   file; docs/UNDERSTAND.md and docs/walkthrough.py; the note
+   notes/explicit-circuits.md and notes/explicit-circuits.json; the
+   programs, circuit texts and recorded outputs under tools/circuits/
+   (section 7 says more about two of its folders); and
+   the paper with its two check programs under paper/. The six text files
+   under tools/circuits/fast/wht56/circuits/ are byte-for-byte copies of
+   files under tools/circuits/programs/. The program
+   tools/circuits/lean/slp2lean.py writes Lean source in the circuit model
+   of lean/OAI/Computability/FourierCircuit/Core.lean; the comment that
+   it writes into that source names paths inside lean/ and says "this
+   repository" in the sense just explained, and so do the headers of two
+   circuit texts (tools/circuits/programs/README.md names them).
+
+4. How the new files were made.
+   Jacob Sussman made the new files by directing a team of AI agents
+   (Anthropic's Claude). The agents found the 20-operation circuit by
+   computer search and wrote the six Lean files under lean/Work/SmallWHT/ in
+   the night of 2026-10-10 to 2026-10-11. lean/Work/SmallWHT/H8Half.lean is
+   written by the program slp2lean.py from the circuit text
+   h8_half_o20.txt. lean/WHTCheck/Solution.lean, lean/lakefile.lean and
+   lean/check.sh were written by the agents on 2026-10-11.
+   lean/tools/Compare.lean was written by the agents for the repository
+   named in section 3, which has carried it since its first publication on
+   2026-10-09.
+   In the same night the agents found the other circuits under
+   tools/circuits/ by computer search and wrote the programs there;
+   tools/circuits/search/ holds the search programs as they were run. On
+   2026-10-11 they wrote the programs under tools/circuits/fast/wht56/ and
+   ran the timings recorded there, wrote docs/ and the paper under
+   paper/, and read two older papers from copies that Jacob Sussman
+   obtained. The note notes/explicit-circuits.md and the README files
+   under tools/circuits/ were first written inside the working copy named
+   in section 3 and were rewritten for this repository on 2026-10-11.
+
+5. What comes from others.
+   From openai/math: the circuit model in which the result is stated
+   (lean/OAI/Computability/FourierCircuit/Core.lean), the theorems on the
+   cost of tensor products that the proof uses (the other 43 files of
+   section 1), and the one theorem repeated with its proof in
+   lean/Work/SmallWHT/TensorPow8.lean (section 2). The 20-gate circuit and
+   the other proofs were made for this result.
+   Small circuits for this transform were published before by others, among
+   them Coppersmith, Feig and Linzer (1994) and Alman and Rao (2023).
+   README.md says what is theirs, with references. No file of theirs is
+   included here.
+   Some of the search programs under tools/circuits/search/ use NumPy,
+   and one of them uses SciPy (scipy.optimize.milp, which calls the
+   open-source solver HiGHS). tools/circuits/fast/wht56/fast.py, some
+   of the tests beside it and paper/check.py use NumPy. Of the programs
+   under waves/, 83 use NumPy, SciPy or SymPy, and one C program there
+   uses OpenMP. None of these libraries is included here.
+
+6. The folder waves/.
+   The files under waves/ are Jacob Sussman's. They are the working reports,
+   the programs and the saved outputs of the AI agents (Anthropic's Claude)
+   that he directed in the night of 2026-10-10 to 2026-10-11, and four pages
+   and one script written by the agents at his direction on 2026-10-11
+   (README.md, LEADS.md, WHERE.md, WHERE-THE-CIRCUITS-CAME-FROM.md and
+   link-waves.sh), with an index and a list of left-out files in each of
+   the ten folders. They are
+   published under the Apache License, Version 2.0, like the rest of this
+   repository. The reports are kept as they were written; paths and names
+   of his machines were replaced by a script, and 48 reports carry an
+   editor's note at the top. No file of openai/math and no text of any
+   paper is included in that folder beyond short quotations.
+
+7. The folders tools/circuits/fpga/ and
+   tools/circuits/fast/wht56/results/ffht/.
+   The files in these two folders are Jacob Sussman's. They were made on
+   2026-10-11 by the AI agents (Anthropic's Claude) that he directed, and
+   they are published under the Apache License, Version 2.0, like the rest
+   of this repository.
+   tools/circuits/fpga/ holds the circuits as hardware: the program that
+   writes hardware descriptions, the design files it wrote, the scripts
+   that run the open-source hardware tools, the result tables, and the
+   sources of a self-test design for a board.
+   tools/circuits/fast/wht56/results/ffht/ holds the timings of the 8-point
+   step inside the library FFHT: a patch against one file of FFHT, the
+   timing programs and what they printed.
+   Names of folders and of machines were taken out of the programs and of
+   the recorded outputs before publication; the two README files there say
+   what else was changed.
+   FFHT (https://github.com/FALCONN-LIB/FFHT, at commit
+   fba727a3ff72c862260460631ae1cc8e3e44e861) is published under the MIT
+   License, copyright (c) 2015 Alexandr Andoni, Piotr Indyk, Thijs
+   Laarhoven, Ilya Razenshteyn, Ludwig Schmidt. No file of FFHT is
+   included in this repository. The file
+   tools/circuits/fast/wht56/results/ffht/style-generator/gen.py.patch is
+   a patch against FFHT's gen.py. Besides the new lines it holds the few
+   unchanged lines of that file that a patch carries around each change;
+   those lines are FFHT's and stay under the MIT License. The files
+   plans.json, plans.inc and plans.txt under
+   tools/circuits/fast/wht56/results/ffht/style-intrinsics/ are new files
+   that describe FFHT's plan of passes (which levels of the transform go
+   into which pass at each size), read from the code that FFHT's
+   generator writes; the plan is FFHT's. The commands of the README in
+   that folder fetch FFHT.
+   The hardware descriptions of two video encoders by others, xk265 and
+   xk264 (https://github.com/openasic-org/xk265 and
+   https://github.com/openasic-org/xk264), were built for comparison and
+   are not included: their repositories have no licence file, and the
+   headers of their files forbid redistribution. The wrappers under
+   tools/circuits/fpga/outside/wrappers/ are new files. They name the
+   modules and the ports of those two designs and contain none of their
+   code. The commands of tools/circuits/fpga/README.md fetch the two
+   repositories.
+   The hardware tools (the oss-cad-suite of YosysHQ, with Yosys, nextpnr,
+   Icarus Verilog, Verilator and the solvers it ships) and the compiler
+   gcc are not included.
+
+Not included in this repository and fetched by the build: Mathlib
+(https://github.com/leanprover-community/mathlib4, Apache License 2.0) and its
+dependencies.

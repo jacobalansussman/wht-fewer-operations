@@ -1,0 +1,3 @@
+RESULT P=4 (wires modulo 16 before the halving) extra=0: 0 of 12 sets lift; nodes 78732; sets stopped at the node cap: 0
+  histogram of the most targets reached:  4 targets: 12 sets;
+LIGHT label=ag1-l exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:49:00 cmd=./lifth 4 rows_B4.txt

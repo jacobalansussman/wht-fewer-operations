@@ -1,0 +1,4 @@
+mode=xor (modulo 2) m=6 gates=14 : NO (exhaustive)  number of terminal successes=0
+nodes by remaining budget: 6:1 5:28 4:546 3:9666 2:167695 1:2967366 0:54789105
+LIGHT label=ac0-xs-xor6 exit=0 time=9s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:27:38 cmd=./xs 6 0 0
+exit 0

@@ -1,0 +1,7 @@
+N=   8: largest edges - vertices allowed with at most N edges: 0 (at E=8, V=8)  => classes >= 8
+N=  16: largest edges - vertices allowed with at most N edges: 2 (at E=16, V=14)  => classes >= 14
+N=  32: largest edges - vertices allowed with at most N edges: 8 (at E=32, V=24)  => classes >= 24
+N=  64: largest edges - vertices allowed with at most N edges: 24 (at E=64, V=40)  => classes >= 40
+N= 128: largest edges - vertices allowed with at most N edges: 60 (at E=128, V=68)  => classes >= 68
+N= 256: largest edges - vertices allowed with at most N edges: 140 (at E=256, V=116)  => classes >= 116
+cross-check with my exhaustive search (v4.out): excess 3 allowed at E=16? False  E=17? False  E=18? True

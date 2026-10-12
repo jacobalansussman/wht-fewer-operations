@@ -1,0 +1,43 @@
+== ../e2-0-pieces/slp_8.txt 20 gates
+  p1      1  1  0  0  0  0  0  0      s=2 s'=4 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  p2      0  0  1 -1  0  0  0  0      s=2 s'=4 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  hub3    1  1 -1  1  0  0  0  0      s=4 s'=8 s*s'/N=4    entangled on bits (0, 1)    best basis: 2  parents widths [0, 0] births 0 increments 0
+  p4      1  1  1  1  0  0  0  0      s=4 s'=2 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  p5      1 -1  1 -1  0  0  0  0      s=4 s'=2 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  p6      0  0  0  0  1  1  0  0      s=2 s'=4 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  p7      0  0  0  0  0  0  1 -1      s=2 s'=4 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  hub8    0  0  0  0  1  1  1 -1      s=4 s'=8 s*s'/N=4    entangled on bits (0, 1)    best basis: 2  parents widths [0, 0] births 0 increments 0
+  p9      0  0  0  0  1  1 -1 -1      s=4 s'=2 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  p10     0  0  0  0  1 -1 -1  1      s=4 s'=2 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  hub11   1  1  1  1  1  1 -1 -1      s=8 s'=4 s*s'/N=4    entangled on bits (1, 2)    best basis: 2  parents widths [0, 0] births 0 increments 0
+  y12     1  1  1  1 -1 -1 -1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  y13     1  1  1  1  1  1  1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  y14     1  1 -1 -1 -1 -1  1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  y15     1  1 -1 -1  1  1 -1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  hub16   1 -1  1 -1  1 -1 -1  1      s=8 s'=4 s*s'/N=4    entangled on bits (1, 2)    best basis: 2  parents widths [0, 0] births 0 increments 0
+  y17     1 -1  1 -1  1 -1  1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  y18     1 -1  1 -1 -1  1 -1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  y19     1 -1 -1  1  1 -1 -1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [2, 0] births 2 increments 2
+  y20     1 -1 -1  1 -1  1  1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 0] births 1 increments 1
+  gates 20 ; by increments: double 8, single 8, zero 4 ; sum of increments 24 ; 24 - double + zero = 20 ; entangled wires 4 ; by births: {0: 4, 1: 8, 2: 8, 3: 0}
+== ../g-1-tightwires/h8_19gates.txt 19 gates
+  g1      1  0  0  0  0  0  0  1      s=2 s'=4 s*s'/N=1    entangled on bits (0, 1, 2) best basis: 0  parents widths [0, 0] births 0 increments 0
+  g2      0  1  0  0  0  0  1  0      s=2 s'=4 s*s'/N=1    entangled on bits (0, 1, 2) best basis: 0  parents widths [0, 0] births 0 increments 0
+  g3      0  0  1  0  0 -1  0  0      s=2 s'=4 s*s'/N=1    entangled on bits (0, 1, 2) best basis: 0  parents widths [0, 0] births 0 increments 0
+  g4      0  0  0  1 -1  0  0  0      s=2 s'=4 s*s'/N=1    entangled on bits (0, 1, 2) best basis: 0  parents widths [0, 0] births 0 increments 0
+  g5      1 -1  0  0  0  0 -1  1      s=4 s'=2 s*s'/N=1    entangled on bits (1, 2)    best basis: 0  parents widths [3, 3] births 1 increments 1
+  g6      0  0  1  1 -1 -1  0  0      s=4 s'=2 s*s'/N=1    entangled on bits (1, 2)    best basis: 0  parents widths [3, 3] births 1 increments 1
+  g7      1 -1 -1 -1  1  1 -1  1      s=8 s'=4 s*s'/N=4    entangled on bits (0, 1, 2) best basis: 2  parents widths [2, 2] births 0 increments 0
+  g8      1 -1 -1 -1  1  1 -1 -1      s=8 s'=8 s*s'/N=8    entangled on bits (0, 1, 2) best basis: 3  parents widths [3, 0] births 0 increments 0
+  g9      1 -1 -1 -1  1 -1 -1  1      s=8 s'=8 s*s'/N=8    entangled on bits (0, 1, 2) best basis: 3  parents widths [3, 0] births 0 increments 0
+  g10     1 -1 -1 -1  1  1  1 -1      s=8 s'=4 s*s'/N=4    entangled on bits (0, 1, 2) best basis: 2  parents widths [3, 0] births 0 increments 0
+  g11     1 -1 -1 -1 -1 -1 -1  1      s=8 s'=4 s*s'/N=4    entangled on bits (0, 1, 2) best basis: 2  parents widths [3, 0] births 0 increments 0
+  y7      1 -1 -1  1 -1  1  1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [3, 3] births 3 increments 3
+  y3      1 -1 -1  1  1 -1 -1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [3, 0] births 3 increments 3
+  y5      1 -1  1 -1 -1  1 -1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 2] births 2 increments 2
+  y1      1 -1  1 -1  1 -1  1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [3, 3] births 3 increments 3
+  y6      1  1 -1 -1 -1 -1  1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [3, 3] births 3 increments 3
+  y2      1  1 -1 -1  1  1 -1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [3, 0] births 3 increments 3
+  y4      1  1  1  1 -1 -1 -1 -1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [0, 2] births 2 increments 2
+  y0      1  1  1  1  1  1  1  1      s=8 s'=1 s*s'/N=1    entangled on bits ()        best basis: 0  parents widths [3, 3] births 3 increments 3
+  gates 19 ; by increments: double 8, single 2, zero 9 ; sum of increments 24 ; 24 - double + zero = 19 ; entangled wires 11 ; by births: {0: 9, 1: 2, 2: 2, 3: 6}

@@ -1,0 +1,34 @@
+  [read] targets 11 in dimension 6; collinear triples of targets: 0
+  [read] four targets in a plane, no three on a line (4-term relations): 11
+  [read] pool (points on at least two secants): 19 ; by number of secants through them: [(2, 12), (3, 7)]
+  [read] collinear triples in targets + pool: 69
+  [write] targets 11 in dimension 6; collinear triples of targets: 0
+  [write] four targets in a plane, no three on a line (4-term relations): 11
+  [write] pool (points on at least two secants): 19 ; by number of secants through them: [(2, 12), (3, 7)]
+  [write] collinear triples in targets + pool: 69
+coordinates rt = 7: feasible read start sets by number of pool points in them: [(2, 306), (3, 20124)] ; write: 20430 sets
+   least pool points: read 2, write 2  => read cost 14, write cost 6 ; best middle over 306 x 306 pairs: between 4 and 6 gates
+   TOTAL at 16 points with 7 coordinates: 15 + 14 + 6 + middle = between 39 and 41   (Yates 32, product of 4-point routes 40, three boxes with 6 coordinates 41)
+   read start ['c0', 'c1', 'c2', 'c4', 'c6', (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0), (0, 0, 0, 0, 1, 1, 1, 0, -1, -1, -1, 0, 0, 0, 0, 0)]
+   write start ['e1', 'e3', 'e6', 'e8', 'e10', (0, 0, 0, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, -1, 1, 0), (0, 0, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, -1, 1, 0, 0)]
+      ['1', '0', '0', '1', '1', '0', '0']
+      ['0', '0', '0', '1', '0', '0', '0']
+      ['0', '0', '0', '0', '0', '0', '1']
+      ['0', '0', '0', '-1', '0', '-1', '1']
+      ['0', '0', '0', '0', '0', '1', '0']
+      ['0', '0', '-1', '0', '1', '0', '0']
+      ['0', '1', '1', '0', '0', '0', '0']
+coordinates rt = 8: feasible read start sets by number of pool points in them: [(2, 2366), (3, 65254)] ; write: 67620 sets
+   least pool points: read 2, write 2  => read cost 12, write cost 5 ; best middle over 1200 x 1200 pairs: between 6 and 10 gates
+   TOTAL at 16 points with 8 coordinates: 15 + 12 + 5 + middle = between 38 and 42   (Yates 32, product of 4-point routes 40, three boxes with 6 coordinates 41)
+   read start ['c0', 'c1', 'c2', 'c3', 'c5', 'c9', (0, 1, -1, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, 0, 0, 0), (0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0)]
+   write start ['e3', 'e4', 'e6', 'e7', 'e9', 'e10', (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, -2), (0, 1, 1, -1, 0, 0, 0, 0, 0, -1, -1, 1, 0, 0, 0, 0)]
+      ['0', '0', '0', '0', '0', '0', '0', '1']
+      ['0', '1', '0', '0', '1', '1', '0', '0']
+      ['0', '0', '0', '-1', '1', '0', '-1', '0']
+      ['0', '1', '1', '1', '0', '1', '0', '0']
+      ['0', '0', '-1', '0', '0', '0', '1', '0']
+      ['0', '0', '0', '0', '0', '1', '0', '0']
+      ['0', '0', '0', '0', '0', '1', '0', '1']
+      ['1', '0', '0', '0', '1', '0', '0', '0']
+LIGHT label=p2-lift16 exit=0 time=14s waited=4s peak_rss_mb=85 peak_footprint_mb=75 lowest_cap_mb=1500 stopped=- start=00:40:31 cmd=python3 -B lift16.py

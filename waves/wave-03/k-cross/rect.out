@@ -1,0 +1,21 @@
+== 8 points, g-1's design ==
+ entries -1 in the rescaled transform: 32 of 64;  dictionary (64, 225)
+ least sum of |constants| solution uses 24 rectangles
+ fewest rectangles with constants bounded by 4.0 : 13  solver status 0 Optimization terminated successfully. (HiGHS Status 7: Optimal)  (1 s)
+    [((0, 1, 2, 3, 4, 5, 6, 7), (0, 1, 2, 3, 4, 5, 6, 7), np.float64(1.0)), ((1, 2, 4, 7), (7,), np.float64(-2.0)), ((0, 3, 5, 6), (5,), np.float64(-2.0)), ((1, 7), (6,), np.float64(-2.0)), ((2, 4), (1,), np.float64(-2.0)), ((0, 6), (4,), np.float64(-2.0)), ((3, 5), (3,), np.float64(-2.0)), ((0,), (0, 7), np.float64(-2.0)), ((1,), (2, 5), np.float64(-2.0)), ((4,), (2, 3, 4, 5), np.float64(-2.0)), ((5,), (0, 1, 6, 7), np.float64(-2.0)), ((6,), (1, 6), np.float64(-2.0)), ((7,), (3, 4), np.float64(-2.0))]
+ fewest rectangles with constants bounded by 64.0 : 13  solver status 0 Optimization terminated successfully. (HiGHS Status 7: Optimal)  (1 s)
+    [((0, 1, 2, 3, 4, 5, 6, 7), (0, 1, 2, 3, 4, 5, 6, 7), np.float64(1.0)), ((1, 2, 4, 7), (7,), np.float64(-2.0)), ((0, 3, 5, 6), (5,), np.float64(-2.0)), ((1, 7), (6,), np.float64(-2.0)), ((2, 4), (1,), np.float64(-2.0)), ((0, 6), (4,), np.float64(-2.0)), ((3, 5), (3,), np.float64(-2.0)), ((0,), (0, 7), np.float64(-2.0)), ((1,), (2, 5), np.float64(-2.0)), ((4,), (2, 3, 4, 5), np.float64(-2.0)), ((5,), (0, 1, 6, 7), np.float64(-2.0)), ((6,), (1, 6), np.float64(-2.0)), ((7,), (3, 4), np.float64(-2.0))]
+ fewest rectangles with constants bounded by 1024.0 : 13  solver status 0 Optimization terminated successfully. (HiGHS Status 7: Optimal)  (1 s)
+    [((0, 1, 2, 3, 4, 5, 6, 7), (0, 1, 2, 3, 4, 5, 6, 7), np.float64(-1.0)), ((1, 2, 4, 7), (0,), np.float64(2.0)), ((0, 3, 5, 6), (2,), np.float64(2.0)), ((1, 7), (1,), np.float64(2.0)), ((2, 4), (6,), np.float64(2.0)), ((0, 6), (3,), np.float64(2.0)), ((3, 5), (4,), np.float64(2.0)), ((0,), (1, 6), np.float64(2.0)), ((1,), (3, 4), np.float64(2.0)), ((2,), (2, 3, 4, 5), np.float64(2.0)), ((3,), (0, 1, 6, 7), np.float64(2.0)), ((6,), (0, 7), np.float64(2.0)), ((7,), (2, 5), np.float64(2.0))]
+== 16 points: bent centre, its dual on the output side, dual chains; least-|constants| solutions (upper bounds only) ==
+ flags: 315
+ bent quadratic centres (up to sign): 448
+  new best: rectangles 60  -> gates N - 2 + tau = 74  centre [1, 1, -1, -1, 1, 1, 1, 1, -1, 1, 1, -1, -1, 1, -1, 1]  flag [[0, 12], [0, 5, 9, 12], [0, 2, 5, 7, 9, 11, 12, 14]]  max |constant| 4.000
+  new best: rectangles 59  -> gates N - 2 + tau = 73  centre [1, 1, -1, -1, 1, 1, 1, 1, 1, -1, -1, 1, -1, 1, -1, 1]  flag [[0, 4], [0, 3, 4, 7], [0, 3, 4, 7, 9, 10, 13, 14]]  max |constant| 4.000
+  new best: rectangles 58  -> gates N - 2 + tau = 72  centre [1, -1, 1, -1, -1, 1, 1, -1, -1, -1, 1, 1, -1, -1, -1, -1]  flag [[0, 7], [0, 7, 10, 13], [0, 3, 4, 7, 9, 10, 13, 14]]  max |constant| 4.000
+  new best: rectangles 57  -> gates N - 2 + tau = 71  centre [1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, -1, 1, 1, 1]  flag [[0, 2], [0, 2, 9, 11], [0, 2, 5, 7, 9, 11, 12, 14]]  max |constant| 4.000
+  new best: rectangles 55  -> gates N - 2 + tau = 69  centre [1, -1, 1, -1, -1, -1, 1, 1, 1, -1, -1, 1, -1, -1, -1, -1]  flag [[0, 15], [0, 2, 13, 15], [0, 1, 2, 3, 12, 13, 14, 15]]  max |constant| 4.000
+  new best: rectangles 54  -> gates N - 2 + tau = 68  centre [1, 1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1]  flag [[0, 5], [0, 2, 5, 7], [0, 2, 5, 7, 9, 11, 12, 14]]  max |constant| 4.000
+  new best: rectangles 53  -> gates N - 2 + tau = 67  centre [1, -1, 1, 1, -1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, 1]  flag [[0, 15], [0, 1, 14, 15], [0, 1, 4, 5, 10, 11, 14, 15]]  max |constant| 4.000
+ designs tried: 6122  histogram of rectangle counts: [(53, 1), (54, 26), (55, 56), (56, 154), (57, 344), (58, 493), (59, 720), (60, 762), (61, 559), (62, 293), (63, 96), (64, 27), (65, 1782), (73, 809)]
+ best upper bound from this sweep: tau(16) <= 53 , gates 67 (known: 52)

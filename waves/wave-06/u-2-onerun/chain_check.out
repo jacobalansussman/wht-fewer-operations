@@ -1,0 +1,41 @@
+q-cross cat3_4.out N=4: corners 5, runs R 4, volume V 8 (3^k = 9); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 4 >= sum c^2/S = 3.00 >= sum c^2/(4N(1+ln c)) = 0.63; sum c^2 = 18 (5^k = 25)
+q-cross cat3_8.out N=8: corners 13, runs R 8, volume V 26 (3^k = 27); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.277), V bound True, V_j bounds True; chain: R 8 >= sum c^2/S = 5.23 >= sum c^2/(4N(1+ln c)) = 1.30; sum c^2 = 96 (5^k = 125)
+q-cross cat3_16.out N=16: corners 30, runs R 19, volume V 74 (3^k = 81); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.286), V bound True, V_j bounds True; chain: R 19 >= sum c^2/S = 9.26 >= sum c^2/(4N(1+ln c)) = 2.26; sum c^2 = 384 (5^k = 625)
+q-cross cat3_32.out N=32: corners 81, runs R 43, volume V 198 (3^k = 243); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.291), V bound True, V_j bounds True; chain: R 43 >= sum c^2/S = 16.09 >= sum c^2/(4N(1+ln c)) = 3.61; sum c^2 = 1356 (5^k = 3125)
+q-cross cat3g_64.out N=64: corners 261, runs R 136, volume V 574 (3^k = 729); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.293), V bound True, V_j bounds True; chain: R 136 >= sum c^2/S = 34.45 >= sum c^2/(4N(1+ln c)) = 6.99; sum c^2 = 6048 (5^k = 15625)
+Gray/Gray N=4: corners 9, runs R 5, volume V 7 (3^k = 9); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.148), V bound True, V_j bounds True; chain: R 5 >= sum c^2/S = 4.67 >= sum c^2/(4N(1+ln c)) = 0.51; sum c^2 = 13 (5^k = 25)
+counting/counting N=4: corners 10, runs R 6, volume V 9 (3^k = 9); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 6 >= sum c^2/S = 4.14 >= sum c^2/(4N(1+ln c)) = 0.78; sum c^2 = 25 (5^k = 25)
+  random pairs of orders at N=4: all checks passed in all but 0 cases; least corners seen 5
+Gray/Gray N=8: corners 23, runs R 12, volume V 19 (3^k = 27); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.131), V bound True, V_j bounds True; chain: R 12 >= sum c^2/S = 10.73 >= sum c^2/(4N(1+ln c)) = 0.82; sum c^2 = 53 (5^k = 125)
+counting/counting N=8: corners 31, runs R 18, volume V 27 (3^k = 27); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 18 >= sum c^2/S = 9.14 >= sum c^2/(4N(1+ln c)) = 1.53; sum c^2 = 125 (5^k = 125)
+  random pairs of orders at N=8: all checks passed in all but 0 cases; least corners seen 21
+Gray/Gray N=16: corners 65, runs R 33, volume V 55 (3^k = 81); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.101), V bound True, V_j bounds True; chain: R 33 >= sum c^2/S = 28.87 >= sum c^2/(4N(1+ln c)) = 1.55; sum c^2 = 253 (5^k = 625)
+counting/counting N=16: corners 94, runs R 54, volume V 81 (3^k = 81); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 54 >= sum c^2/S = 20.18 >= sum c^2/(4N(1+ln c)) = 3.15; sum c^2 = 625 (5^k = 625)
+  random pairs of orders at N=16: all checks passed in all but 0 cases; least corners seen 88
+Gray/Gray N=32: corners 191, runs R 96, volume V 163 (3^k = 243); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.083), V bound True, V_j bounds True; chain: R 96 >= sum c^2/S = 83.27 >= sum c^2/(4N(1+ln c)) = 3.16; sum c^2 = 1253 (5^k = 3125)
+counting/counting N=32: corners 283, runs R 162, volume V 243 (3^k = 243); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 162 >= sum c^2/S = 45.25 >= sum c^2/(4N(1+ln c)) = 6.69; sum c^2 = 3125 (5^k = 3125)
+  random pairs of orders at N=32: all checks passed in all but 0 cases; least corners seen 328
+Gray/Gray N=64: corners 569, runs R 285, volume V 487 (3^k = 729); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.070), V bound True, V_j bounds True; chain: R 285 >= sum c^2/S = 246.47 >= sum c^2/(4N(1+ln c)) = 6.70; sum c^2 = 6253 (5^k = 15625)
+counting/counting N=64: corners 850, runs R 486, volume V 729 (3^k = 729); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 486 >= sum c^2/S = 103.32 >= sum c^2/(4N(1+ln c)) = 14.53; sum c^2 = 15625 (5^k = 15625)
+  random pairs of orders at N=64: all checks passed in all but 0 cases; least corners seen 1241
+Gray/Gray N=128: corners 1703, runs R 852, volume V 1459 (3^k = 2187); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.061), V bound True, V_j bounds True; chain: R 852 >= sum c^2/S = 736.07 >= sum c^2/(4N(1+ln c)) = 14.53; sum c^2 = 31253 (5^k = 78125)
+counting/counting N=128: corners 2551, runs R 1458, volume V 2187 (3^k = 2187); checks: corners>=R True, nested-run lemma True, S(T)<=4N(1+ln c) True (worst ratio 0.250), V bound True, V_j bounds True; chain: R 1458 >= sum c^2/S = 239.65 >= sum c^2/(4N(1+ln c)) = 32.10; sum c^2 = 78125 (5^k = 78125)
+  random pairs of orders at N=128: all checks passed in all but 0 cases; least corners seen 4336
+ALL CHECKS PASSED
+The general bound  R >= [sum_j (j/k)^2 C(k,j) (2^(k-j) - 1/2)^2] / (4N(1 + ln N))  against N and Yates' (N/2) log2 N:
+  k=4: bound 0.1563; N = 16; (N/2) log2 N = 32; bound/N = 0.009772; (5/2)^k = 39.06
+  k=5: bound 0.3317; N = 32; (N/2) log2 N = 80; bound/N = 0.01037; (5/2)^k = 97.66
+  k=6: bound 0.7105; N = 64; (N/2) log2 N = 192; bound/N = 0.0111; (5/2)^k = 244.1
+  k=8: bound 3.364; N = 256; (N/2) log2 N = 1024; bound/N = 0.01314; (5/2)^k = 1526
+  k=10: bound 16.59; N = 1024; (N/2) log2 N = 5120; bound/N = 0.0162; (5/2)^k = 9537
+  k=16: bound 2405; N = 6.554e+04; (N/2) log2 N = 5.243e+05; bound/N = 0.0367; (5/2)^k = 2.328e+06
+  k=20: bound 7.342e+04; N = 1.049e+06; (N/2) log2 N = 1.049e+07; bound/N = 0.07002; (5/2)^k = 9.095e+07
+  k=30: bound 4.51e+08; N = 1.074e+09; (N/2) log2 N = 1.611e+10; bound/N = 0.4201; (5/2)^k = 8.674e+11
+  k=40: bound 3.168e+12; N = 1.1e+12; (N/2) log2 N = 2.199e+13; bound/N = 2.881; (5/2)^k = 8.272e+15
+  k=44: bound 1.119e+14; N = 1.759e+13; (N/2) log2 N = 3.87e+14; bound/N = 6.361; (5/2)^k = 3.231e+17
+  k=50: bound 2.389e+16; N = 1.126e+15; (N/2) log2 N = 2.815e+16; bound/N = 21.22; (5/2)^k = 7.889e+19
+  k=54: bound 8.612e+17; N = 1.801e+16; (N/2) log2 N = 4.864e+17; bound/N = 47.81; (5/2)^k = 3.081e+21
+  k=56: bound 5.183e+18; N = 7.206e+16; (N/2) log2 N = 2.018e+18; bound/N = 71.92; (5/2)^k = 1.926e+22
+  k=60: bound 1.884e+20; N = 1.153e+18; (N/2) log2 N = 3.459e+19; bound/N = 163.4; (5/2)^k = 7.523e+23
+  k=80: bound 1.273e+28; N = 1.209e+24; (N/2) log2 N = 4.836e+25; bound/N = 1.053e+04; (5/2)^k = 6.842e+31
+  k=100: bound 9.204e+35; N = 1.268e+30; (N/2) log2 N = 6.338e+31; bound/N = 7.261e+05; (5/2)^k = 6.223e+39

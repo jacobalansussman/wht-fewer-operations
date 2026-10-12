@@ -1,0 +1,40 @@
+   tight wires only (20 wires): after 1 gates 12 sets of wires
+   tight wires only (20 wires): after 2 gates 66 sets of wires
+   tight wires only (20 wires): after 3 gates 232 sets of wires
+   tight wires only (20 wires): after 4 gates 621 sets of wires
+   tight wires only (20 wires): after 5 gates 1428 sets of wires
+   tight wires only (20 wires): after 6 gates 2994 sets of wires
+   tight wires only (20 wires): after 7 gates 5620 sets of wires
+   tight wires only (20 wires): after 8 gates 8790 sets of wires
+  tight wires only (20 wires): least number of gates = 8; 195 different sets of wires reach it
+   every wire with entries 0, +1, -1 (40 wires): after 1 gates 12 sets of wires
+   every wire with entries 0, +1, -1 (40 wires): after 2 gates 114 sets of wires
+   every wire with entries 0, +1, -1 (40 wires): after 3 gates 988 sets of wires
+   every wire with entries 0, +1, -1 (40 wires): after 4 gates 8083 sets of wires
+   every wire with entries 0, +1, -1 (40 wires): after 5 gates 63740 sets of wires
+   every wire with entries 0, +1, -1 (40 wires): after 6 gates 454444 sets of wires
+   every wire with entries 0, +1, -1 (40 wires): after 7 gates 2763208 sets of wires
+  every wire with entries 0, +1, -1 (40 wires): least number of gates = 7; 228 different sets of wires reach it
+  of these, sets with no non-tight wire: 0
+  sets by (number of wires with s s' = N^2, number of other non-tight wires): [((1, 0), 36), ((1, 1), 192)]
+   non-tight wire (0, 1, -1, -1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (0, 1, -1, 1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (0, 1, 1, -1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (0, 1, 1, 1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, -1, -1, -1)  s = 4, s' = 4, s s' = 16: in 57 of the sets
+   non-tight wire (1, -1, -1, 0)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, -1, 0, -1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, -1, 0, 1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, -1, 1, 0)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, -1, 1, 1)  s = 4, s' = 4, s s' = 16: in 57 of the sets
+   non-tight wire (1, 0, -1, -1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 0, -1, 1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 0, 1, -1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 0, 1, 1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 1, -1, 0)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 1, -1, 1)  s = 4, s' = 4, s s' = 16: in 57 of the sets
+   non-tight wire (1, 1, 0, -1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 1, 0, 1)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+   non-tight wire (1, 1, 1, -1)  s = 4, s' = 4, s s' = 16: in 57 of the sets
+   non-tight wire (1, 1, 1, 0)  s = 3, s' = 4, s s' = 12: in 12 of the sets
+LIGHT label=a2-bfs4 exit=0 time=10s waited=14s peak_rss_mb=386 peak_footprint_mb=383 lowest_cap_mb=1500 stopped=- start=22:26:04 cmd=python3 -B tight.py bfs4

@@ -1,0 +1,4 @@
+mode=xor (modulo 2) m=7 gates=15 : YES
+nodes by remaining budget: 7:1 6:1 5:1 4:8 3:276 2:7538 1:182881 0:4276039
+first solution, vectors after the inputs (bit j = input j): 03 05 12 17* 28 2b* 48 4d* a0 b2* e8* 3c 71* 8e* d4*
+LIGHT label=ac0-xs-xor7 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:27:57 cmd=./xs 7 0 1

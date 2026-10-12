@@ -1,0 +1,3 @@
+steiner_PL16_s1_empty best 61 exact 61 t 0.0
+steiner_PL16_s1_empty best 60 exact 60 t 0.1
+steiner_PL16_s1_empty DONE evaluated 43628 best 60 hist {60: 8700, 61: 28972, 62: 3998, 63: 1579, 64: 306, 65: 58, 66: 11, 67: 4}

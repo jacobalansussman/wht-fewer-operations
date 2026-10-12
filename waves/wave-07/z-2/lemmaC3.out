@@ -1,0 +1,2 @@
+m1 = m2, D1 odd under the shift: K1 D1 K2 = a1 a2 D1 + a1 D1 J2 + a2 J1 D1 on 60 random cases (8, 16, 32 points): True
+LIGHT label=z2-C3 exit=0 time=1s waited=36s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:07:57 cmd=python3 -B lemmaC3.py

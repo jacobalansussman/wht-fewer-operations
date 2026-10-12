@@ -1,0 +1,24 @@
+K=2 generic   part=full  (dim  4) r=1: unknowns 32, boxes 12, starts 40, best rms residual 5.36e-01, hits (also right on 10 fresh boxes) 0, 1 s
+K=2 generic   part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 40, best rms residual 2.13e-01, hits (also right on 10 fresh boxes) 0, 3 s
+K=2 generic   part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 40, best rms residual 2.18e-01, hits (also right on 10 fresh boxes) 0, 9 s
+K=2 generic   part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 40, best rms residual 2.65e-16, hits (also right on 10 fresh boxes) 39 [fresh rms 2.8e-16], 14 s
+K=2 inv       part=full  (dim  4) r=1: unknowns 32, boxes 12, starts 40, best rms residual 1.37e+00, hits (also right on 10 fresh boxes) 0, 1 s
+K=2 inv       part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 40, best rms residual 2.46e-01, hits (also right on 10 fresh boxes) 0, 3 s
+K=2 inv       part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 40, best rms residual 1.65e-01, hits (also right on 10 fresh boxes) 0, 11 s
+K=2 inv       part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 34, best rms residual 1.04e-15, hits (also right on 10 fresh boxes) 24 [fresh rms 3.5e-15], 63 s
+K=2 sym       part=full  (dim  4) r=1: unknowns 32, boxes 12, starts 40, best rms residual 4.00e-01, hits (also right on 10 fresh boxes) 0, 1 s
+K=2 sym       part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 40, best rms residual 2.09e-01, hits (also right on 10 fresh boxes) 0, 4 s
+K=2 sym       part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 40, best rms residual 1.95e-01, hits (also right on 10 fresh boxes) 0, 9 s
+K=2 sym       part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 40, best rms residual 2.59e-16, hits (also right on 10 fresh boxes) 24 [fresh rms 2.7e-16], 21 s
+K=2 refl      part=full  (dim  4) r=1: unknowns 32, boxes 12, starts 40, best rms residual 2.50e-01, hits (also right on 10 fresh boxes) 0, 1 s
+K=2 refl      part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 40, best rms residual 1.55e-16, hits (also right on 10 fresh boxes) 38 [fresh rms 9.5e-16], 2 s
+K=2 refl      part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 40, best rms residual 1.59e-16, hits (also right on 10 fresh boxes) 40 [fresh rms 1.4e-14], 4 s
+K=2 refl      part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 40, best rms residual 1.83e-16, hits (also right on 10 fresh boxes) 40 [fresh rms 3.5e-16], 13 s
+K=2 orth      part=full  (dim  4) r=1: unknowns 32, boxes 12, starts 40, best rms residual 9.18e-02, hits (also right on 10 fresh boxes) 0, 2 s
+K=2 orth      part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 40, best rms residual 1.16e-16, hits (also right on 10 fresh boxes) 39 [fresh rms 1.5e-16], 2 s
+K=2 orth      part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 40, best rms residual 1.17e-16, hits (also right on 10 fresh boxes) 40 [fresh rms 1.7e-16], 7 s
+K=2 orth      part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 40, best rms residual 1.34e-16, hits (also right on 10 fresh boxes) 39 [fresh rms 5.6e-16], 26 s
+K=2 syminvall part=full  (dim  4) r=1: unknowns 32, boxes 12, starts 40, best rms residual 2.15e-16, hits (also right on 10 fresh boxes) 0, 5 s
+K=2 syminvall part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 40, best rms residual 5.96e-03, hits (also right on 10 fresh boxes) 0, 31 s
+K=2 syminvall part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 40, best rms residual 7.41e-16, hits (also right on 10 fresh boxes) 0, 59 s
+K=2 syminvall part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 32, best rms residual 2.64e-16, hits (also right on 10 fresh boxes) 23 [fresh rms 3.6e-16], 65 s

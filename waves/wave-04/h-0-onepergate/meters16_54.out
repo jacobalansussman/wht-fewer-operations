@@ -1,0 +1,14 @@
+h16_54gates_tensor.txt: N=16 gates=54 | tight gate wires T=44, over-limit V=10 | saved=10 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   over-limit g7_0   s=8 s'=8 s*s'/N=4 entangled bits [0, 1, 2] read by 2: g8_0(8,16) g9_0(8,16)   [1, -1, -1, -1, 1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit g8_0   s=8 s'=16 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g10_0(8,8) y2_0(8,2)   [1, -1, -1, -1, 1, 1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit g9_0   s=8 s'=16 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g11_0(8,8) y3_0(8,2)   [1, -1, -1, -1, 1, -1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit g10_0  s=8 s'=8 s*s'/N=4 entangled bits [0, 1, 2] read by 2: y7_0(8,2) y1_0(8,2)   [1, -1, -1, -1, 1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit g11_0  s=8 s'=8 s*s'/N=4 entangled bits [0, 1, 2] read by 2: y6_0(8,2) y0_0(8,2)   [1, -1, -1, -1, -1, -1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit g7_1   s=8 s'=8 s*s'/N=4 entangled bits [0, 1, 2] read by 2: g8_1(8,16) g9_1(8,16)   [0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, 1, 1, -1, 1]
+   over-limit g8_1   s=8 s'=16 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g10_1(8,8) y2_1(8,2)   [0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, 1, 1, -1, -1]
+   over-limit g9_1   s=8 s'=16 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g11_1(8,8) y3_1(8,2)   [0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, 1, -1, -1, 1]
+   over-limit g10_1  s=8 s'=8 s*s'/N=4 entangled bits [0, 1, 2] read by 2: y7_1(8,2) y1_1(8,2)   [0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, 1, 1, 1, -1]
+   over-limit g11_1  s=8 s'=8 s*s'/N=4 entangled bits [0, 1, 2] read by 2: y6_1(8,2) y0_1(8,2)   [0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1]
+h16_54gates_tensor.txt: N=16 gates=54 | tight gate wires T=44, over-limit V=10 | saved=10 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   transposed: 54 gates (fixed wires 50, nodes with 3 or more terms: [('y2_1', 3), ('y3_1', 3), ('y2_0', 3), ('y3_0', 3)], association orders 81)
+   TRANSPOSE of h16_54gates_tensor.txt: N=16 gates=54 | tight gate wires T=44, over-limit V=10 | saved=10 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)

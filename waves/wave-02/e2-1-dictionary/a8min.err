@@ -1,0 +1,1 @@
+LIGHT label=e2-1-a8min exit=0 time=349s waited=0s peak_rss_mb=97 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:33:44 cmd=python3 -B a8min.py

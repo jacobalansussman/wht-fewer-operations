@@ -1,0 +1,8 @@
+== rows=rows_e2_k4.txt p=3 m=3
+p=3 n=12 rows=16 non-input distinct targets=15  intermediates allowed m=3  => gate budget 18
+visited states by remaining budget: j=3:1p=3 n=12 rows=16 non-input distinct targets=15  intermediates allowed m=4  => gate budget 19
+visited states by remaining budget: j=4:1 j=3:208 j=2:27470 j=1:7273046
+RESULT p=3: NO circuit with 19 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=79s waited=30s peak_rss_mb=42 peak_footprint_mb=43 lowest_cap_mb=1500 stopp=3 n=12 rows=16 non-input distinct targets=15  intermediates allowed m=4  => gate budget 19
+visited states by remaining budget: j=4:1 j=3:208 j=2:274LIGHT label=x1-e2 exit=124 time=242s waited=0s peak_rss_mb=14 peak_footprint_mb=14 lowest_cap_mb=1500 stopped=time>240s start=03:53:57 cmd=waves/wave-01/d-0-zeta/mincirc 3 12 5 rows_e2_k4.txt
+waves/wave-01/d-0-zeta/mincirc 3 12 4 rows_e2_k4.txt

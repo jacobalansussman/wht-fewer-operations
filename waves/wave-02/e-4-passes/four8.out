@@ -1,0 +1,2 @@
+d = 8  arrangements with at most 30 non-zeros tested: 4237   factor as two differences: 0
+LIGHT label=e4-four8b exit=0 time=19s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:38:28 cmd=python3 -B four.py 8 30

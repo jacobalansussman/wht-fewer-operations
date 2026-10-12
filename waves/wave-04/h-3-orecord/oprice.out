@@ -1,0 +1,13 @@
+slp_4.txt: N=4, 7 gates (G), every output exactly a row of H [replayed]; |coefficients| used [(1, 1), (1, 2)]; gates of the form -u-v: 0
+   exact H x        : price (O) = 11 = 7 gates + 4 extra copies   [search complete, 901 nodes]   textbook 8
+   common scale free: price (O) = 8 = 7 gates + 1 extra copies at output scale 2^-1   [search complete]   all scales tried: [(-4, 12), (-3, 12), (-2, 11), (-1, 8), (0, 11), (1, 12), (2, 12)]
+h8_19gates.txt: N=8, 19 gates (G), every output exactly a row of H [replayed]; |coefficients| used [(1, 1), (1, 2)]; gates of the form -u-v: 0
+   exact H x        : price (O) = 28 = 19 gates + 9 extra copies   [NODE LIMIT: upper bound only, 4000047 nodes]   textbook 24
+   common scale free: price (O) = 20 = 19 gates + 1 extra copies at output scale 2^-1   [NODE LIMIT somewhere: upper bound only]   all scales tried: [(-4, 28), (-3, 28), (-2, 27), (-1, 20), (0, 28), (1, 28), (2, 28)]
+slp_8.txt: N=8, 20 gates (G), every output exactly a row of H [replayed]; |coefficients| used [(1, 1), (1, 2)]; gates of the form -u-v: 0
+   exact H x        : price (O) = 30 = 20 gates + 10 extra copies   [NODE LIMIT: upper bound only, 4000056 nodes]   textbook 24
+   common scale free: price (O) = 26 = 20 gates + 6 extra copies at output scale 2^-2   [NODE LIMIT somewhere: upper bound only]   all scales tried: [(-4, 30), (-3, 30), (-2, 26), (-1, 26), (0, 30), (1, 30), (2, 30)]
+slp_16.txt: N=16, 52 gates (G), every output exactly a row of H [replayed]; |coefficients| used [(1, 1), (1, 2)]; gates of the form -u-v: 0
+   exact H x        : price (O) = 82 = 52 gates + 30 extra copies   [NODE LIMIT: upper bound only, 4000341 nodes]   textbook 64
+   common scale free: price (O) = 60 = 52 gates + 8 extra copies at output scale 2^-2   [NODE LIMIT somewhere: upper bound only]   all scales tried: [(-4, 90), (-3, 88), (-2, 60), (-1, 73), (0, 82), (1, 90), (2, 90)]
+LIGHT label=h3-oprice exit=0 time=355s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=23:43:59 cmd=python3 -B oprice.py waves/wave-02/e2-0-pieces/slp_4.txt waves/wave-03/g-1-tightwires/h8_19gates.txt waves/wave-02/e2-0-pieces/slp_8.txt [path cut short]

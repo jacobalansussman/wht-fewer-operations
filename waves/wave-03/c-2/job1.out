@@ -1,0 +1,11 @@
+[T] N=8: 254 sets S, 64516 pairs; equality cases (exact rank) 308; predicted 308; disagreements 0; exact ranks computed 308
+[E] w=8: no tree, no matching with 0 exceptional columns (1 sets X tried)
+[E] w=8: no tree, no matching with 1 exceptional columns (8 sets X tried)
+[E] w=8: no tree, no matching with 2 exceptional columns (28 sets X tried)
+[E] w=8: 3 exceptional columns SUFFICE for the rule: X=(0, 1, 2) tree (0>0 (1>1 (2>2 (3>3 (4>7 (5>5 (6>4 7>6)))))))
+[N] N=16: 300 pairs, identities nu = r(S,U)+r(S,U^c)-|S| and sum of four ranks = N+2nu: failures 0; nu histogram [(0, 51), (1, 66), (2, 56), (3, 48), (4, 37), (5, 25), (6, 9), (7, 8)]
+[N] N=32: 120 pairs, identities nu = r(S,U)+r(S,U^c)-|S| and sum of four ranks = N+2nu: failures 0; nu histogram [(0, 20), (1, 11), (2, 10), (3, 16), (4, 12), (5, 7), (6, 9), (7, 12), (8, 9), (9, 4), (10, 3), (11, 2), (12, 3), (13, 2)]
+[A] N=16: 8 random pairs of tree steps over F_p, 1568 pairs of nodes; rank <= |S' meet U'| + 2 violated 0 times, attained 874 times
+[A] N=32: 3 random pairs of tree steps over F_p, 2700 pairs of nodes; rank <= |S' meet U'| + 2 violated 0 times, attained 1998 times
+[T] N=32: 2511 sampled pairs; equality cases 449; predicted 449; disagreements 0
+[T] N=64: 1029 sampled pairs; equality cases 162; predicted 162; disagreements 0

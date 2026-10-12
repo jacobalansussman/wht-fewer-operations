@@ -1,0 +1,8 @@
+== hubparity8.txt
+   N=8  gates (G)=26  [textbook N log2 N=24, (3/4) N log2 N=18]  exact replay as the transform on 8 basis vectors: True
+   classes (inputs included)=27  [2N-1=15]   pairs of classes that overlap without nesting=84 of 351
+   pass 1: gates=26  J/S/Q/E=19/7/0/0  survivors=19 dead=7  orders of dead gates=[(1, 7)]
+   pass 2: gates=0  J/S/Q/E=0/0/0/0  survivors=0 dead=0  orders of dead gates=[]
+   total: survivors=19 [one tree: N-1=7]  dead=7 [(N/2) log2 N=12; textbook N log2 N-N+1=17]  dead-(N/2)log2N=-5
+   highest order=1  Q gates=0  E gates=0  gates that cancel powers of 2 (pass, kind, powers): []
+   over-limit gate wires V=0 of 26   h-0 sum: gates+V-N log2 N=2   gates reading two over-limit wires=0

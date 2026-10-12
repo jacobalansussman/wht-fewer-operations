@@ -1,0 +1,21 @@
+12
+  edge 32 -- 160  node 128
+  edge 0 -- 32  node 32
+  terminal #0 at 0
+  edge 15 -- 0  node 15
+  terminal #4 at 15
+  edge 48 -- 32  node 16
+  edge 51 -- 48  node 3
+  terminal #2 at 51
+  edge 60 -- 48  node 12
+  terminal #6 at 60
+  edge 161 -- 160  node 1
+  edge 165 -- 161  node 4
+  edge 85 -- 165  node 240
+  terminal #1 at 85
+  terminal #5 at 165
+  edge 169 -- 161  node 8
+  edge 153 -- 169  node 48
+  terminal #3 at 153
+  edge 105 -- 169  node 192
+  terminal #7 at 105

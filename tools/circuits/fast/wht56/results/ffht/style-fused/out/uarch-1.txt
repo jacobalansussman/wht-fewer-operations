@@ -1,0 +1,40 @@
+## locked_run.sh: taskset -c 1 build/uarch 9
+## pinned to processor 1 (siblings: 1,5)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 15:51:48 UTC; uptime: 15:51:48 up 22:00,  0 user,  load average: 6.01, 5.73, 5.02
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839938 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839050 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839000 99.9   1   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+##     881100 99.9   6   0 /usr/bin/python3 -B (another job)/tools/circuits/tables.py
+##     881757 99.7   4   0 pdflatex -interaction=nonstopmode -halt-on-error wrapA.tex
+##     881438 99.5   0  19 ./build/harness check -t all -k 3 26
+# uarch: processor 1; 9 repeats; each test: 10000000 turns
+# shortest cycle seen: 0.3793 ns (2.64 GHz)
+U test=tp_vaddps_x12 instructions=12 cycles_per_turn=3.14 cycles_per_instruction=0.261 instructions_per_cycle=3.82   (12 independent vaddps; best of 9)
+U test=tp_vaddpd_x12 instructions=12 cycles_per_turn=3.19 cycles_per_instruction=0.266 instructions_per_cycle=3.76   (12 independent vaddpd; best of 9)
+U test=tp_vmulps_x12 instructions=12 cycles_per_turn=3.25 cycles_per_instruction=0.271 instructions_per_cycle=3.69   (12 independent vmulps; best of 9)
+U test=tp_vfmadd231ps_x12 instructions=12 cycles_per_turn=3.27 cycles_per_instruction=0.272 instructions_per_cycle=3.67   (12 vfmadd231ps on 12 registers; best of 9)
+U test=tp_vfnmadd231pd_x12 instructions=12 cycles_per_turn=3.19 cycles_per_instruction=0.266 instructions_per_cycle=3.76   (12 vfnmadd231pd on 12 registers; best of 9)
+U test=tp_T_24add instructions=24 cycles_per_turn=6.26 cycles_per_instruction=0.261 instructions_per_cycle=3.84   (textbook step: 12 vaddps + 12 vsubps; best of 9)
+U test=tp_G19_7add_12fma instructions=19 cycles_per_turn=6.11 cycles_per_instruction=0.322 instructions_per_cycle=3.11   (form G fused: 7 vaddps + 12 vfmadd231ps; best of 9)
+U test=tp_G19a_31add instructions=31 cycles_per_turn=8.47 cycles_per_instruction=0.273 instructions_per_cycle=3.66   (form G two additions: 31 vaddps/vsubps; best of 9)
+U test=tp_vpaddd_x12 instructions=12 cycles_per_turn=2.96 cycles_per_instruction=0.247 instructions_per_cycle=4.05   (12 independent vpaddd; best of 9)
+U test=tp_vpslld_x12 instructions=12 cycles_per_turn=3.00 cycles_per_instruction=0.250 instructions_per_cycle=4.00   (12 independent vpslld by 1; best of 9)
+U test=tp_iT_24add instructions=24 cycles_per_turn=5.49 cycles_per_instruction=0.229 instructions_per_cycle=4.37   (int textbook step: 12 vpaddd + 12 vpsubd; best of 9)
+U test=tp_iG19s_19add_12shift instructions=31 cycles_per_turn=7.21 cycles_per_instruction=0.232 instructions_per_cycle=4.30   (int form G: 19 vpaddd + 12 vpslld; best of 9)
+U test=tp_iG19a_31add instructions=31 cycles_per_turn=6.21 cycles_per_instruction=0.200 instructions_per_cycle=4.99   (int form G two additions: 31 vpaddd/vpsubd; best of 9)
+U test=lat_vaddps instructions=12 cycles_per_turn=22.13 cycles_per_instruction=1.844 instructions_per_cycle=0.54   (chain of 12 vaddps; best of 9)
+U test=lat_vaddpd instructions=12 cycles_per_turn=23.18 cycles_per_instruction=1.932 instructions_per_cycle=0.52   (chain of 12 vaddpd; best of 9)
+U test=lat_vmulps instructions=12 cycles_per_turn=21.75 cycles_per_instruction=1.813 instructions_per_cycle=0.55   (chain of 12 vmulps; best of 9)
+U test=lat_vfmadd231ps instructions=12 cycles_per_turn=23.15 cycles_per_instruction=1.930 instructions_per_cycle=0.52   (chain of 12 vfmadd231ps through the sum; best of 9)
+U test=lat_vfmadd132ps instructions=12 cycles_per_turn=23.44 cycles_per_instruction=1.953 instructions_per_cycle=0.51   (chain of 12 vfmadd132ps through the factor; best of 9)
+U test=lat_vpaddd instructions=12 cycles_per_turn=5.69 cycles_per_instruction=0.474 instructions_per_cycle=2.11   (chain of 12 vpaddd; best of 9)
+U test=lat_vpslld instructions=12 cycles_per_turn=5.79 cycles_per_instruction=0.482 instructions_per_cycle=2.07   (chain of 12 vpslld; best of 9)
+## exit code 0
+## after: 2026-10-11 15:52:32 UTC; uptime: 15:52:32 up 22:00,  0 user,  load average: 6.34, 5.87, 5.10
+## after: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839938 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839050 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839000 99.9   7   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+##     882343 99.5   0   0 pdflatex -interaction=nonstopmode -halt-on-error wrapA.tex

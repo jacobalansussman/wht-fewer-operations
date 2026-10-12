@@ -1,0 +1,5 @@
+coordinate seeds, 549 bases.  (seed, lower bound on cost(B)+cost(B^-1), is the bound reached with no helper) -> number, examples
+   (0, 8, False) 183 [(0, 1), (1, -12), (1, -11), (1, -10)]
+   (1, 8, False) 183 [(0, 1), (1, -12), (1, -11), (1, -10)]
+   (2, 8, False) 183 [(0, 1), (1, -12), (1, -11), (1, -10)]
+least lower bound: 8

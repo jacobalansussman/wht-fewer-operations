@@ -1,0 +1,5 @@
+K = 23 ; vectors before symmetry: 4080
+21 moves: 1 classes; clique-excluded 1, zero-form-excluded 0, survive 0; largest joined set histogram [(13, 1)]
+22 moves: 7 classes; clique-excluded 7, zero-form-excluded 0, survive 0; largest joined set histogram [(12, 2), (13, 3), (15, 1), (17, 1)]
+23 moves: 43 classes; clique-excluded 43, zero-form-excluded 0, survive 0; largest joined set histogram [(11, 4), (12, 12), (13, 13), (14, 3), (15, 5), (16, 3), (17, 3)]
+LIGHT label=n2-w5p23 exit=0 time=5s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=01:29:55 cmd=python3 -B mypost.py 23 w5_23.txt

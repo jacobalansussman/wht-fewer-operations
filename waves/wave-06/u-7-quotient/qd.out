@@ -1,0 +1,16 @@
+  N=8 j=0: indicators of the C(k,j)=1 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 1
+  N=8 j=1: indicators of the C(k,j)=3 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 3
+  N=8 j=2: indicators of the C(k,j)=3 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 3
+  N=8 j=3: indicators of the C(k,j)=1 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 1
+  N=8 diagonal after integer row and column reduction (2^j: how many): [(1, 1), (2, 3), (4, 3), (8, 1)] ; binomials [1, 3, 3, 1]
+  N=16 j=0: indicators of the C(k,j)=1 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 1
+  N=16 j=1: indicators of the C(k,j)=4 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 4
+  N=16 j=2: indicators of the C(k,j)=6 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 6
+  N=16 j=3: indicators of the C(k,j)=4 coordinate subcubes of codimension j are 2^-j * (sum of 2^j outputs): True ; span of those for this j alone: 4
+  N=16 diagonal after integer row and column reduction (2^j: how many): [(1, 1), (2, 4), (4, 6), (8, 4), (16, 1)] ; binomials [1, 4, 6, 4, 1]
+D2. more circuits: are all quotients (f-f')/2, (f+f')/2 of held full wires distinct?
+  h8_21_three_hubs.txt: N=8 gates=21 full wires=9 (outputs among them 8) quotients 72 distinct 72 ; most pairs for one quotient 1
+  h16_54gates_tensor.txt: N=16 gates=54 full wires=16 (outputs among them 16) quotients 240 distinct 240 ; most pairs for one quotient 1
+  slp_64.txt: N=64 gates=304 full wires=80 (outputs among them 64) quotients 6320 distinct 6320 ; most pairs for one quotient 1
+  brick_m1.txt: N=4 gates=7 full wires=5 (outputs among them 4) quotients 20 distinct 20 ; most pairs for one quotient 1
+LIGHT label=u7-qd exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:59:58 cmd=python3 -B u-7-quotient/qd.py waves/wave-06

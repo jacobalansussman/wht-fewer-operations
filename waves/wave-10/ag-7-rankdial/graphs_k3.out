@@ -1,0 +1,4 @@
+k=3 edges=0 rank=4 graph=- degrees=[0, 0, 0] triangles=0 : gates = 7 outputs + 0 helpers
+k=3 edges=1 rank=5 graph=01 degrees=[1, 1, 0] triangles=0 : gates = 7 outputs + 1 helpers
+k=3 edges=2 rank=6 graph=01 02 degrees=[2, 1, 1] triangles=0 : gates = 7 outputs + 2 helpers
+k=3 edges=3 rank=7 graph=01 02 12 degrees=[2, 2, 2] triangles=1 : gates = 7 outputs + 4 helpers

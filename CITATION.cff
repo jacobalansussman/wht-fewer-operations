@@ -1,0 +1,60 @@
+# How to cite this repository.  The address below is the only place in this file that names it.
+cff-version: 1.2.0
+message: "If you use these circuits, the programs or the Lean proof, please cite this repository."
+type: software
+title: "The Walsh-Hadamard transform with fewer operations"
+authors:
+  - family-names: Sussman
+    given-names: Jacob
+repository-code: "https://github.com/jacobalansussman/wht-fewer-operations"
+date-released: 2026-10-11
+license: Apache-2.0
+abstract: >-
+  Explicit circuits for the Walsh-Hadamard transform that use fewer operations than the textbook's
+  N log2 N. When every addition, subtraction and multiplication by a constant costs one, the exact
+  transform on N = 8^j points takes at most (5/6) N log2 N + N operations; this count is proved in
+  Lean 4, in the circuit model of openai/math. When a multiplication by a constant is free inside an
+  addition, there are circuits with 19 operations at 8 points, 52 at 16, and (3/4) N log2 N + N/4 at
+  every power of two from 4; these are replayed exactly by programs and are not in Lean. It is a
+  better constant, not a better exponent. The circuits were found by computer searches run by AI
+  agents (Anthropic's Claude) under the author's direction.
+keywords:
+  - Walsh-Hadamard transform
+  - arithmetic circuits
+  - operation count
+  - Lean 4
+references:
+  - type: conference-paper
+    title: "Faster Walsh-Hadamard and Discrete Fourier Transforms From Matrix Non-Rigidity"
+    authors:
+      - family-names: Alman
+        given-names: Josh
+      - family-names: Rao
+        given-names: Kevin
+    collection-title: "Proceedings of the 55th Annual ACM Symposium on Theory of Computing (STOC 2023)"
+    year: 2023
+    start: 455
+    end: 462
+    doi: 10.1145/3564246.3585188
+  - type: article
+    title: "Hadamard transforms on multiply/add architectures"
+    authors:
+      - family-names: Coppersmith
+        given-names: D.
+      - family-names: Feig
+        given-names: E.
+      - family-names: Linzer
+        given-names: E.
+    journal: "IEEE Transactions on Signal Processing"
+    volume: 42
+    issue: 4
+    year: 1994
+    start: 969
+    end: 970
+    doi: 10.1109/78.285664
+  - type: software
+    title: "openai/math"
+    authors:
+      - name: OpenAI
+    url: "https://github.com/openai/math"
+    license: Apache-2.0

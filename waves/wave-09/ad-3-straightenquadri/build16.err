@@ -1,0 +1,1 @@
+LIGHT label=ad3-build16 exit=0 time=12s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=06:39:46 cmd=python3 -B build16.py

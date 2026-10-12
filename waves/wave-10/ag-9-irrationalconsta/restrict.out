@@ -1,0 +1,2 @@
+circuit over Q(sqrt2): 9 gates; every output is an exact multiple of its whole-number row: True
+rational circuit by restriction of scalars: 13 gates (the bound d*d per helper, d per output gives 26); replayed exactly

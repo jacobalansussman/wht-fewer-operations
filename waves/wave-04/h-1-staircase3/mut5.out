@@ -1,0 +1,10 @@
+t = 1     (1,1,t,-t) partners have [1, 1, 1, 1] non-zeros -> brick costs 7 gates ; (1,1,-t,t)  partners have [1, 1, 1, 1] non-zeros -> brick costs 7 gates
+t = -1    (1,1,t,-t) partners have [1, 1, 1, 1] non-zeros -> brick costs 7 gates ; (1,1,-t,t)  partners have [1, 1, 1, 1] non-zeros -> brick costs 7 gates
+t = 2     (1,1,t,-t) partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates ; (1,1,-t,t)  partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates
+t = 3     (1,1,t,-t) partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates ; (1,1,-t,t)  partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates
+t = 1/2   (1,1,t,-t) partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates ; (1,1,-t,t)  partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates
+t = -2    (1,1,t,-t) partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates ; (1,1,-t,t)  partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates
+t = 5/3   (1,1,t,-t) partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates ; (1,1,-t,t)  partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates
+t = 7     (1,1,t,-t) partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates ; (1,1,-t,t)  partners have [2, 2, 2, 2] non-zeros -> brick costs 11 gates
+t = +-1: every partner is a single input: 2 pieces + hub + 4 outputs = 7.  Any other t: every partner has two terms: 7 + 4 = 11 > 8.
+reason: y - M_t/s restricted to the pair where they differ is proportional to (1-t, 1+t) or (1+t, 1-t); one entry vanishes only if t*t = 1.

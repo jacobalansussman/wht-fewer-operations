@@ -1,0 +1,1 @@
+LIGHT label=g-5-k3 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:45:39 cmd=python3 -B k3.py k9_22.json

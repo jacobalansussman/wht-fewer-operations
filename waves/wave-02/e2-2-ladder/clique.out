@@ -1,0 +1,22 @@
+m = 4, W = 4, 16 moves (plain 16): 0001:4 0010:4 0100:4 1000:4
+  fewest moves selected by a form with q(I) = 1: 4 (feasible for counting); tight selections: 4; pairs joined: 24 of 120; largest clique: 4
+  -> not excluded by the clique lemma
+m = 4, W = 4, 15 moves (plain 16): 0001:1 0010:1 0011:1 0100:1 0101:1 0110:1 0111:1 1000:1 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  fewest moves selected by a form with q(I) = 1: 4 (feasible for counting); tight selections: 56; pairs joined: 105 of 105; largest clique: 15
+  -> EXCLUDED by the clique lemma (clique 15 > W = 4), scratch arrays or not
+m = 4, W = 5, 19 moves (plain 20): 0001:2 0010:2 0011:1 0100:2 0101:1 0110:1 0111:1 1000:2 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  fewest moves selected by a form with q(I) = 1: 5 (feasible for counting); tight selections: 52; pairs joined: 147 of 171; largest clique: 13
+  -> EXCLUDED by the clique lemma (clique 13 > W = 5), scratch arrays or not
+m = 4, W = 6, 23 moves (plain 24): 0001:3 0010:3 0011:1 0100:3 0101:1 0110:1 0111:1 1000:3 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  fewest moves selected by a form with q(I) = 1: 6 (feasible for counting); tight selections: 52; pairs joined: 199 of 253; largest clique: 14
+  -> EXCLUDED by the clique lemma (clique 14 > W = 6), scratch arrays or not
+m = 4, W = 7, 27 moves (plain 28): 0001:2 0010:2 0011:1 0100:2 0101:1 0110:1 0111:3 1000:2 1001:1 1010:1 1011:3 1100:1 1101:3 1110:3 1111:1
+  fewest moves selected by a form with q(I) = 1: 7 (feasible for counting); tight selections: 48; pairs joined: 273 of 351; largest clique: 12
+  -> EXCLUDED by the clique lemma (clique 12 > W = 7), scratch arrays or not
+m = 4, W = 8, 30 moves (plain 32): 0001:2 0010:2 0011:2 0100:2 0101:2 0110:2 0111:2 1000:2 1001:2 1010:2 1011:2 1100:2 1101:2 1110:2 1111:2
+  fewest moves selected by a form with q(I) = 1: 8 (feasible for counting); tight selections: 56; pairs joined: 435 of 435; largest clique: 30
+  -> EXCLUDED by the clique lemma (clique 30 > W = 8), scratch arrays or not
+m = 5, W = 4, 16 moves (plain 20): 00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:1 11010:1 11100:1 11111:1
+  fewest moves selected by a form with q(I) = 1: 4 (feasible for counting); tight selections: 75; pairs joined: 120 of 120; largest clique: 16
+  -> EXCLUDED by the clique lemma (clique 16 > W = 4), scratch arrays or not
+LIGHT label=e2-2-clique exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:00:13 cmd=sh -c python3 -B clique.py 4 4 0001:4 0010:4 0100:4 1000:4; python3 -B clique.py 4 4 0001:1 0010:1 0011:1 0100:1 0101:1 0110:1 0111:1 1000:1 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1; python3 -B clique.py 4 5 0001:2 0010:2 0011:1 0100:2 0101:1 0110:1 0111:1 1000:2 1001:1 1010:1 1011:1 1100:1 

@@ -1,0 +1,30 @@
+# count (O) program, 28 operations, 8 points, exact H x
+u1_g1 = x0 + x7
+u1_g2 = x1 + x6
+u1_g3 = x2 - x5
+u1_g4 = x3 - x4
+u1_g5 = u1_g1 - u1_g2
+u1_g6 = u1_g3 + u1_g4
+u1_g7 = u1_g5 - u1_g6
+u1_h = 1/2 * u1_g7
+u1_a8 = u1_h - x7
+u1_a9 = u1_h - x5
+u1_a10 = u1_a8 + x6
+u1_a11 = u1_a9 - x4
+u1_y7 = u1_a10 + u1_g4
+u1_y3 = u1_a9 + x3
+u1_y5 = u1_g5 - u1_y3
+u1_y1 = u1_a10 + u1_g3
+u1_y6 = u1_a11 + u1_g2
+u1_y2 = u1_a8 + x1
+u1_y4 = u1_y2 + u1_g6
+u1_y0 = u1_g1 - u1_a11
+z0 = 2 * u1_y0
+z1 = 2 * u1_y1
+z2 = 2 * u1_y2
+z3 = 2 * u1_y3
+z4 = 2 * u1_y4
+z5 = 2 * u1_y5
+z6 = 2 * u1_y6
+z7 = 2 * u1_y7
+# OUT z0 z1 z2 z3 z4 z5 z6 z7

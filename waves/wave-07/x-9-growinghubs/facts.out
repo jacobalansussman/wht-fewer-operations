@@ -1,0 +1,10 @@
+1. [ok] hub M_t = (1,1,t,-t): the four outputs are one gate each; witnesses: slope s=(1+t)/(1-t) and 1/s on R (outputs a,+ and a,-), s and 1/s on L (outputs b,+ and b,-); witness = reflection of the output in M for the form det
+2. [ok] general hub (1,p,t,tq): witness of slope s on R -> product (p, t(q-s)/(p-s)); on L -> product (q, t(s-q)/(s-p))  (200 random rational cases)
+3. [ok] t = +1 or -1: the witnesses of the four outputs are the four single quarters (M is the 2x2 transform written as 4 numbers)
+4. [ok] t -> (1+t)/(1-t) has order 4: t, s, -1/t, -1/s;  (1+i)/(1-i) = i (floating check of an exact identity: (1+i)^2 = 2i)
+   reading: -1/t is the hub with L and R exchanged, (y_b on R) - t (y_a on L); its witness slope is -1/s. The orbit of four = {hub, witness, mirror hub, mirror witness}.
+5. [ok] support lemma, N=4 modulo 5: over all 624 vectors M and all pairs of rows, least |supp(w1) u supp(w2)| = 2  (N/2 = 2); 59904 cases
+5. [ok] support lemma, N=4 modulo 7: over all 2400 vectors M and all pairs of rows, least |supp(w1) u supp(w2)| = 2  (N/2 = 2); 518400 cases
+5. [ok] support lemma, N=8 modulo 3: over all 6560 vectors M and all pairs of rows, least |supp(w1) u supp(w2)| = 4  (N/2 = 4); 734720 cases
+5. [ok] support lemma, N=8 modulo 5: over all 390624 vectors M and all pairs of rows, least |supp(w1) u supp(w2)| = 4  (N/2 = 4); 174999552 cases
+LIGHT label=x9f exit=0 time=60s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=04:06:02 cmd=python3 -B facts.py

@@ -1,0 +1,13 @@
+check: Z_4 without free form: 4 gates, not 3  OK
+saving 1  gates 3  w = x0+x1
+saving 1  gates 3  w = x0+x2
+saving 0  gates 4  w = x1+x2
+saving 1  gates 3  w = x0+x1+x2
+saving 0  gates 4  w = x0+x3
+saving 1  gates 3  w = x1+x3
+saving 1  gates 3  w = x0+x1+x3
+saving 1  gates 3  w = x2+x3
+saving 1  gates 3  w = x0+x2+x3
+saving 1  gates 3  w = x1+x2+x3
+saving 2  gates 2  w = x0+x1+x2+x3
+LIGHT label=ab5-free4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:00:54 cmd=python3 -B freeform4.py

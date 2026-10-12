@@ -1,0 +1,35 @@
+spec4_twounits.txt  (8 gates)
+   gate  1 (1,-1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  2 (1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  3 (-1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  4 (1,1)/1       height 1  Delta x 2  budget 2
+   gate  5 (2,-1)/1       height 1  Delta x 1  budget 3
+   gate  6 (2,1)/1       height 2  Delta x 2  budget 3
+   gate  7 (2,1)/1       height 1  Delta x 1  budget 3
+   gate  8 (-3,1)/1       height 2  Delta x 4  budget 4
+   merges 3 ; final Delta 16 = 2^4.000 ; violations 0 ; connected groups left 1
+   holds every row of H: True ; (N/2)log2 N = 4.0 ; largest height M = 2 ; lemma 3 with this M: 3.25 gates
+   sum of the per-gate caps (merge: log2 max(|a|,|b|); other: max(0, budget)) = 7.755
+spec4_mergevolume.txt  (8 gates)
+   gate  1 (2,1)/1 MERGE height 2  Delta x 2  budget 3
+   gate  2 (1,2)/1 MERGE height 2  Delta x 2  budget 3
+   gate  3 (2,1)/1 MERGE height 2  Delta x 2  budget 3
+   gate  4 (1,1)/2       height 2  Delta x 1  budget 1
+   gate  5 (-2,1)/1       height 1  Delta x 1  budget 3
+   gate  6 (-2,1)/1       height 1  Delta x 2  budget 3
+   gate  7 (-2,1)/1       height 1  Delta x 3/2  budget 3
+   gate  8 (2,-1)/1       height 1  Delta x 1  budget 3
+   merges 3 ; final Delta 24 = 2^4.585 ; violations 0 ; connected groups left 1
+   holds every row of H: True ; (N/2)log2 N = 4.0 ; largest height M = 2 ; lemma 3 with this M: 3.25 gates
+   sum of the per-gate caps (merge: log2 max(|a|,|b|); other: max(0, budget)) = 9.340
+spec4_joinvolume7.txt  (7 gates)
+   gate  1 (1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  2 (1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  3 (-1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  4 (1,1)/1       height 1  Delta x 2  budget 2
+   gate  5 (-2,1)/1       height 1  Delta x 2  budget 3
+   gate  6 (-2,1)/1       height 1  Delta x 2  budget 3
+   gate  7 (2,-1)/1       height 1  Delta x 2  budget 3
+   merges 3 ; final Delta 16 = 2^4.000 ; violations 0 ; connected groups left 1
+   holds every row of H: True ; (N/2)log2 N = 4.0 ; largest height M = 1 ; lemma 3 with this M: 5.52 gates
+   sum of the per-gate caps (merge: log2 max(|a|,|b|); other: max(0, budget)) = 5.755

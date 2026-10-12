@@ -1,0 +1,29 @@
+h8_19gates.txt: 8 points, 19 gates, helpers: 11 sign vectors, 0 with several magnitudes
+   witnesses of at most  1 points: one wire reaches at most  1 rows (wire g8); cap 1.78
+   witnesses of at most  2 points: one wire reaches at most  4 rows (wire g7); cap 4.00
+   witnesses of at most  3 points: one wire reaches at most  8 rows (wire g8); cap 8.00
+slp_4.txt: 4 points, 7 gates, helpers: 3 sign vectors, 0 with several magnitudes
+   witnesses of at most  1 points: one wire reaches at most  4 rows (wire hub3); cap 4.00
+slp_8.txt: 8 points, 20 gates, helpers: 12 sign vectors, 0 with several magnitudes
+   witnesses of at most  1 points: one wire reaches at most  0 rows (wire None); cap 1.78
+   witnesses of at most  2 points: one wire reaches at most  4 rows (wire hub11); cap 4.00
+   witnesses of at most  3 points: one wire reaches at most  4 rows (wire hub11); cap 8.00
+slp_16.txt: 16 points, 52 gates, helpers: 36 sign vectors, 0 with several magnitudes
+   witnesses of at most  1 points: one wire reaches at most  0 rows (wire None); cap 1.31
+   witnesses of at most  2 points: one wire reaches at most  0 rows (wire None); cap 1.78
+   witnesses of at most  4 points: one wire reaches at most  4 rows (wire hub33); cap 4.00
+   witnesses of at most  7 points: one wire reaches at most  4 rows (wire hub33); cap 16.00
+slp_32.txt: 32 points, 128 gates, helpers: 96 sign vectors, 0 with several magnitudes
+   witnesses of at most  1 points: one wire reaches at most  0 rows (wire None); cap 1.14
+   witnesses of at most  2 points: one wire reaches at most  0 rows (wire None); cap 1.31
+   witnesses of at most  4 points: one wire reaches at most  0 rows (wire None); cap 1.78
+   witnesses of at most  8 points: one wire reaches at most  4 rows (wire hub89); cap 4.00
+   witnesses of at most 15 points: one wire reaches at most  4 rows (wire hub89); cap 32.00
+slp_64.txt: 64 points, 304 gates, helpers: 240 sign vectors, 0 with several magnitudes
+   witnesses of at most  1 points: one wire reaches at most  0 rows (wire None); cap 1.07
+   witnesses of at most  2 points: one wire reaches at most  0 rows (wire None); cap 1.14
+   witnesses of at most  4 points: one wire reaches at most  0 rows (wire None); cap 1.31
+   witnesses of at most  8 points: one wire reaches at most  0 rows (wire None); cap 1.78
+   witnesses of at most 16 points: one wire reaches at most  4 rows (wire hub225); cap 4.00
+   witnesses of at most 31 points: one wire reaches at most  4 rows (wire hub225); cap 64.00
+LIGHT label=x9m exit=0 time=4s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:19:53 cmd=python3 -B meter.py waves/wave-03/g-1-tightwires/h8_19gates.txt waves/wave-02/e2-0-pieces/slp_4.txt waves/wave-02/e2-0-pieces/slp_8.txt [path cut short]

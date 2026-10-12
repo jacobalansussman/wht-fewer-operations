@@ -1,0 +1,5 @@
+(1) 4 points: a H b = J - 2 P with P the permutation y = swap(x) + 11 : True ; rows of a H b: [[1, 1, 1, -1], [1, -1, 1, 1], [1, 1, -1, 1], [-1, 1, 1, 1]]
+(2) 16 points: a H b = J - 2 [low pair matched] - 2 [high pair matched] + 4 [both matched] : True  : 4 flats of the doubled space (dimensions 8, 6, 6, 4; ranks 1, 4, 4, 16; total rank 25)
+(3) k=2: rank of x.y + alpha(x) + beta(y) over all 4 pairs of quadratic alpha, beta: [(2, 1), (4, 3)] ; least 2 (plain transform: 4)
+(3) k=3: rank of x.y + alpha(x) + beta(y) over all 64 pairs of quadratic alpha, beta: [(4, 28), (6, 36)] ; least 4 (plain transform: 6)
+(3) k=4: rank of x.y + alpha(x) + beta(y) over all 4096 pairs of quadratic alpha, beta: [(4, 28), (6, 2100), (8, 1968)] ; least 4 (plain transform: 8)

@@ -1,0 +1,116 @@
+Sun Oct 11 03:52:18 PM UTC 2026
+I type=float k=3 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=4 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=5 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=6 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=7 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=8 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=9 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=10 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=11 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=12 amp=7 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=13 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=14 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=15 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=16 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=17 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=18 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=19 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=20 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=21 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=22 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=23 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=float k=24 amp=1 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=3 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=4 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=5 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=6 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=7 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=8 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=9 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=10 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=11 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=12 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=13 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=14 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=15 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=16 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=17 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=18 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=19 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=20 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=21 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=22 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=23 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=double k=24 amp=1000 G19_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=3 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=4 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=5 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=6 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=7 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=8 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=9 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=10 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=11 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=12 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=13 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=14 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=15 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=16 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=17 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=18 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=19 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=20 amp=1000 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=21 amp=15 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=22 amp=15 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=23 amp=15 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=24 amp=15 G19s_vs_T=bit-identical G19a_vs_T=bit-identical
+I type=int32_t k=3 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=4 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=5 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=6 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=7 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=8 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=9 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=10 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=11 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=12 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=13 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=14 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=15 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=16 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=17 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=18 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=19 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=20 amp=1000 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=21 amp=15 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=22 amp=15 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=23 amp=15 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+I type=int32_t k=24 amp=15 sT_vs_T=bit-identical sG19_vs_T=bit-identical
+# bit-identity: all bit-identical (0 comparisons differ)
+A type=float k=3 input=uniform rms_of_output=1.936 | error against the true value, in units of that rms: T rms 2.18e-08 max 3.08e-08; G19 rms 2.18e-08 max 3.08e-08; G19a rms 2.18e-08 max 3.08e-08 | G19 against T: 0 of 8 numbers differ, largest difference 0 of the rms, largest difference relative to the number itself 0 | G19a against T: 0 differ, largest 0 of the rms
+A type=double k=3 input=uniform rms_of_output=1.978 | error against the true value, in units of that rms: T rms 0 max 0; G19 rms 0 max 0; G19a rms 0 max 0 | G19 against T: 0 of 8 numbers differ, largest difference 0 of the rms, largest difference relative to the number itself 0 | G19a against T: 0 differ, largest 0 of the rms
+A type=float k=6 input=uniform rms_of_output=4.406 | error against the true value, in units of that rms: T rms 6.86e-08 max 1.87e-07; G19 rms 8.52e-08 max 1.89e-07; G19a rms 8.37e-08 max 2.09e-07 | G19 against T: 39 of 64 numbers differ, largest difference 2.16e-07 of the rms, largest difference relative to the number itself 2.76e-06 | G19a against T: 35 differ, largest 2.71e-07 of the rms
+A type=double k=6 input=uniform rms_of_output=4.61 | error against the true value, in units of that rms: T rms 1.2e-16 max 3.37e-16; G19 rms 1.61e-16 max 5.3e-16; G19a rms 1.79e-16 max 5.3e-16 | G19 against T: 44 of 64 numbers differ, largest difference 3.85e-16 of the rms, largest difference relative to the number itself 3.3e-15 | G19a against T: 46 differ, largest 3.85e-16 of the rms
+A type=float k=9 input=uniform rms_of_output=13.33 | error against the true value, in units of that rms: T rms 8.18e-08 max 3.19e-07; G19 rms 9.77e-08 max 3.13e-07; G19a rms 1.4e-07 max 5.51e-07 | G19 against T: 351 of 512 numbers differ, largest difference 4.29e-07 of the rms, largest difference relative to the number itself 0.00011 | G19a against T: 385 differ, largest 5.01e-07 of the rms
+A type=double k=9 input=uniform rms_of_output=12.82 | error against the true value, in units of that rms: T rms 1.32e-16 max 5.71e-16; G19 rms 1.66e-16 max 6.06e-16; G19a rms 2.17e-16 max 7.79e-16 | G19 against T: 361 of 512 numbers differ, largest difference 1.11e-15 of the rms, largest difference relative to the number itself 2.84e-13 | G19a against T: 375 differ, largest 8.31e-16 of the rms
+A type=float k=12 input=uniform rms_of_output=36.9 | error against the true value, in units of that rms: T rms 9.36e-08 max 3.59e-07; G19 rms 1.22e-07 max 5.06e-07; G19a rms 1.51e-07 max 5.72e-07 | G19 against T: 3189 of 4096 numbers differ, largest difference 6.2e-07 of the rms, largest difference relative to the number itself 0.00257 | G19a against T: 3264 differ, largest 6.2e-07 of the rms
+A type=double k=12 input=uniform rms_of_output=36.46 | error against the true value, in units of that rms: T rms 1.62e-16 max 7.55e-16; G19 rms 2.11e-16 max 8.89e-16; G19a rms 2.68e-16 max 1.22e-15 | G19 against T: 3146 of 4096 numbers differ, largest difference 7.8e-16 of the rms, largest difference relative to the number itself 1.41e-12 | G19a against T: 3226 differ, largest 1.17e-15 of the rms
+A type=float k=15 input=uniform rms_of_output=104.6 | error against the true value, in units of that rms: T rms 1.06e-07 max 4.96e-07; G19 rms 1.35e-07 max 6.25e-07; G19a rms 1.69e-07 max 1.04e-06 | G19 against T: 26236 of 32768 numbers differ, largest difference 7.29e-07 of the rms, largest difference relative to the number itself 0.00748 | G19a against T: 27106 differ, largest 9.48e-07 of the rms
+A type=double k=15 input=uniform rms_of_output=104.9 | error against the true value, in units of that rms: T rms 1.87e-16 max 9.38e-16; G19 rms 2.43e-16 max 1.07e-15; G19a rms 3.12e-16 max 1.69e-15 | G19 against T: 26199 of 32768 numbers differ, largest difference 1.63e-15 of the rms, largest difference relative to the number itself 1.37e-11 | G19a against T: 27159 differ, largest 1.63e-15 of the rms
+A type=float k=18 input=uniform rms_of_output=295.1 | error against the true value, in units of that rms: T rms 1.16e-07 max 6.13e-07; G19 rms 1.49e-07 max 7.74e-07; G19a rms 1.88e-07 max 1.09e-06 | G19 against T: 215004 of 262144 numbers differ, largest difference 8.27e-07 of the rms, largest difference relative to the number itself 0.037 | G19a against T: 221417 differ, largest 1.24e-06 of the rms
+A type=double k=18 input=uniform rms_of_output=295.6 | error against the true value, in units of that rms: T rms 2.05e-16 max 1.06e-15; G19 rms 2.7e-16 max 1.48e-15; G19a rms 3.43e-16 max 1.69e-15 | G19 against T: 214489 of 262144 numbers differ, largest difference 1.92e-15 of the rms, largest difference relative to the number itself 3.66e-11 | G19a against T: 221282 differ, largest 1.92e-15 of the rms
+A type=float k=3 input=wide rms_of_output=27.76 | error against the true value, in units of that rms: T rms 3.67e-08 max 6.93e-08; G19 rms 3.67e-08 max 6.93e-08; G19a rms 3.67e-08 max 6.93e-08 | G19 against T: 0 of 8 numbers differ, largest difference 0 of the rms, largest difference relative to the number itself 0 | G19a against T: 0 differ, largest 0 of the rms
+A type=double k=3 input=wide rms_of_output=7.679e+05 | error against the true value, in units of that rms: T rms 5.85e-17 max 1.28e-16; G19 rms 5.85e-17 max 1.28e-16; G19a rms 5.85e-17 max 1.28e-16 | G19 against T: 0 of 8 numbers differ, largest difference 0 of the rms, largest difference relative to the number itself 0 | G19a against T: 0 differ, largest 0 of the rms
+A type=float k=6 input=wide rms_of_output=1.656e+06 | error against the true value, in units of that rms: T rms 6.1e-08 max 1.48e-07; G19 rms 7.14e-08 max 1.88e-07; G19a rms 8.32e-08 max 2.56e-07 | G19 against T: 37 of 64 numbers differ, largest difference 1.51e-07 of the rms, largest difference relative to the number itself 7.15e-07 | G19a against T: 34 differ, largest 1.51e-07 of the rms
+A type=double k=6 input=wide rms_of_output=2.799e+06 | error against the true value, in units of that rms: T rms 1.06e-16 max 2.79e-16; G19 rms 1.29e-16 max 2.89e-16; G19a rms 1.35e-16 max 3.48e-16 | G19 against T: 37 of 64 numbers differ, largest difference 3.33e-16 of the rms, largest difference relative to the number itself 3.41e-15 | G19a against T: 39 differ, largest 3.33e-16 of the rms
+A type=float k=9 input=wide rms_of_output=8.065e+06 | error against the true value, in units of that rms: T rms 7.2e-08 max 2.71e-07; G19 rms 9.52e-08 max 3.72e-07; G19a rms 1.28e-07 max 5.02e-07 | G19 against T: 375 of 512 numbers differ, largest difference 3.72e-07 of the rms, largest difference relative to the number itself 3.87e-05 | G19a against T: 381 differ, largest 4.96e-07 of the rms
+A type=double k=9 input=wide rms_of_output=5.196e+06 | error against the true value, in units of that rms: T rms 1.44e-16 max 5.77e-16; G19 rms 1.76e-16 max 5.81e-16; G19a rms 2.29e-16 max 9.6e-16 | G19 against T: 348 of 512 numbers differ, largest difference 7.17e-16 of the rms, largest difference relative to the number itself 2.33e-14 | G19a against T: 376 differ, largest 8.96e-16 of the rms
+A type=float k=12 input=wide rms_of_output=1.762e+07 | error against the true value, in units of that rms: T rms 9.14e-08 max 3.5e-07; G19 rms 1.17e-07 max 4.2e-07; G19a rms 1.49e-07 max 6.78e-07 | G19 against T: 3161 of 4096 numbers differ, largest difference 5.68e-07 of the rms, largest difference relative to the number itself 0.000465 | G19a against T: 3316 differ, largest 7.38e-07 of the rms
+A type=double k=12 input=wide rms_of_output=1.829e+07 | error against the true value, in units of that rms: T rms 1.68e-16 max 7.1e-16; G19 rms 2.14e-16 max 8.06e-16; G19a rms 2.77e-16 max 1.28e-15 | G19 against T: 3144 of 4096 numbers differ, largest difference 1.22e-15 of the rms, largest difference relative to the number itself 1.69e-12 | G19a against T: 3305 differ, largest 1.22e-15 of the rms
+A type=float k=15 input=wide rms_of_output=5.313e+07 | error against the true value, in units of that rms: T rms 1e-07 max 4.94e-07; G19 rms 1.31e-07 max 6.25e-07; G19a rms 1.69e-07 max 1.06e-06 | G19 against T: 26237 of 32768 numbers differ, largest difference 9.03e-07 of the rms, largest difference relative to the number itself 0.0012 | G19a against T: 27091 differ, largest 1.05e-06 of the rms
+A type=double k=15 input=wide rms_of_output=5.166e+07 | error against the true value, in units of that rms: T rms 1.92e-16 max 9.45e-16; G19 rms 2.47e-16 max 1.19e-15; G19a rms 3.15e-16 max 1.94e-15 | G19 against T: 26046 of 32768 numbers differ, largest difference 1.44e-15 of the rms, largest difference relative to the number itself 1.86e-12 | G19a against T: 27116 differ, largest 1.73e-15 of the rms
+A type=float k=18 input=wide rms_of_output=1.473e+08 | error against the true value, in units of that rms: T rms 1.12e-07 max 5.4e-07; G19 rms 1.46e-07 max 8.39e-07; G19a rms 1.87e-07 max 9.22e-07 | G19 against T: 214899 of 262144 numbers differ, largest difference 9.24e-07 of the rms, largest difference relative to the number itself 5.8 | G19a against T: 221767 differ, largest 1.09e-06 of the rms
+A type=double k=18 input=wide rms_of_output=1.482e+08 | error against the true value, in units of that rms: T rms 2.11e-16 max 1.05e-15; G19 rms 2.73e-16 max 1.44e-15; G19a rms 3.51e-16 max 2.35e-15 | G19 against T: 214869 of 262144 numbers differ, largest difference 1.61e-15 of the rms, largest difference relative to the number itself 5.18e-11 | G19a against T: 222108 differ, largest 2.31e-15 of the rms
+exit=0
+Sun Oct 11 03:52:23 PM UTC 2026

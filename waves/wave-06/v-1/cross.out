@@ -1,0 +1,10 @@
+k=4 exact-sum bound = 0.1563, per point 0.009772, factor per bit 2.101
+k=5 exact-sum bound = 0.3317, per point 0.01037, factor per bit 2.121
+k=6 exact-sum bound = 0.7105, per point 0.0111, factor per bit 2.142
+k=16 exact-sum bound = 2405, per point 0.0367, factor per bit 2.327
+k=32 exact-sum bound = 2.631e+09, per point 0.6126, factor per bit 2.417
+k=64 exact-sum bound = 6.883e+21, per point 373.1, factor per bit 2.460
+k=99 exact-sum bound = 3.72e+35, per point 5.869e+05, factor per bit 2.474
+k=100 exact-sum bound = 9.204e+35, per point 7.261e+05, factor per bit 2.474
+exact-sum bound first exceeds: {'N': 35, '3N': 41, 'Yates (N/2)k+1': 51}
+LIGHT label=v1-cross exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:26:47 cmd=python3 -B cross.py

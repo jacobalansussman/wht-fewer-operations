@@ -1,0 +1,42 @@
+p 3 k 3 N 8 n 4 points of the projective space 40 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+h = 0 gates = 4 : sets of hidden points tried 1 | buildable: 0
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:31 cmd=python3 -B rig.py 3 3 0
+p 3 k 3 N 8 n 4 points of the projective space 40 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+h = 1 gates = 5 : sets of hidden points tried 32 | buildable: 0
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:32 cmd=python3 -B rig.py 3 3 1
+p 3 k 3 N 8 n 4 points of the projective space 40 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+YES with 6 gates: hidden points ((0, 0, 0, 1), (0, 0, 1, 0)) | inputs [0, 1, 2, 4] | gates (new, from): [(8, (0, 4)), (6, (2, 8)), (9, (0, 2)), (3, (1, 9)), (7, (3, 8)), (5, (1, 8))]
+YES with 6 gates: hidden points ((0, 0, 0, 1), (0, 0, 1, 1)) | inputs [0, 1, 2, 4] | gates (new, from): [(8, (0, 4)), (6, (2, 8)), (9, (0, 6)), (5, (1, 8)), (7, (1, 9)), (3, (7, 8))]
+h = 2 gates = 6 : sets of hidden points tried 496 | buildable: 30
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:34 cmd=python3 -B rig.py 3 3 2
+p 5 k 3 N 8 n 4 points of the projective space 156 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+h = 0 gates = 4 : sets of hidden points tried 1 | buildable: 0
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:35 cmd=python3 -B rig.py 5 3 0
+p 5 k 3 N 8 n 4 points of the projective space 156 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+h = 1 gates = 5 : sets of hidden points tried 148 | buildable: 0
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:36 cmd=python3 -B rig.py 5 3 1
+p 5 k 3 N 8 n 4 points of the projective space 156 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+YES with 6 gates: hidden points ((0, 0, 0, 1), (0, 0, 1, 0)) | inputs [0, 1, 2, 4] | gates (new, from): [(8, (0, 4)), (6, (2, 8)), (9, (0, 2)), (3, (1, 9)), (7, (3, 8)), (5, (1, 8))]
+YES with 6 gates: hidden points ((0, 0, 0, 1), (0, 0, 1, 1)) | inputs [0, 1, 2, 4] | gates (new, from): [(8, (0, 4)), (6, (2, 8)), (9, (0, 6)), (5, (1, 8)), (7, (1, 9)), (3, (7, 8))]
+h = 2 gates = 6 : sets of hidden points tried 10878 | buildable: 30
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:37 cmd=python3 -B rig.py 5 3 2
+p 7 k 3 N 8 n 4 points of the projective space 400 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+h = 0 gates = 4 : sets of hidden points tried 1 | buildable: 0
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:38 cmd=python3 -B rig.py 7 3 0
+p 7 k 3 N 8 n 4 points of the projective space 400 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+h = 1 gates = 5 : sets of hidden points tried 392 | buildable: 0
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:39 cmd=python3 -B rig.py 7 3 1
+p 7 k 3 N 8 n 4 points of the projective space 400 | collinear cube triples: 0
+largest number of cube chords through one extra point: 4 | extra points with at least 2 chords: 16
+YES with 6 gates: hidden points ((0, 0, 0, 1), (0, 0, 1, 0)) | inputs [0, 1, 2, 4] | gates (new, from): [(8, (0, 4)), (6, (2, 8)), (9, (0, 2)), (3, (1, 9)), (7, (3, 8)), (5, (1, 8))]
+YES with 6 gates: hidden points ((0, 0, 0, 1), (0, 0, 1, 1)) | inputs [0, 1, 2, 4] | gates (new, from): [(8, (0, 4)), (6, (2, 8)), (9, (0, 6)), (5, (1, 8)), (7, (1, 9)), (3, (7, 8))]
+h = 2 gates = 6 : sets of hidden points tried 76636 | buildable: 30
+LIGHT label=ag4-rig exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:40 cmd=python3 -B rig.py 7 3 2

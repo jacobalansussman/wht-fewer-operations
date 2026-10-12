@@ -1,0 +1,7 @@
+degree 2: N=16: 17 gates, exact True, finite differences 30 ; N=64: 65 gates, exact True, finite differences 126 ; N=256: 257 gates, exact True, finite differences 510
+degree 3: N=16: 34 gates, exact True, finite differences 45 ; N=64: 130 gates, exact True, finite differences 189 ; N=256: 514 gates, exact True, finite differences 765
+degree 4: N=16: 38 gates, exact True, finite differences 60 ; N=64: 134 gates, exact True, finite differences 252 ; N=256: 518 gates, exact True, finite differences 1020
+degree 5: N=16: 57 gates, exact True, finite differences 75 ; N=64: 201 gates, exact True, finite differences 315 ; N=256: 777 gates, exact True, finite differences 1275
+degree 6: N=16: 63 gates, exact True, finite differences 90 ; N=64: 207 gates, exact True, finite differences 378 ; N=256: 783 gates, exact True, finite differences 1530
+degree 8: N=16: 92 gates, exact True, finite differences 120 ; N=64: 284 gates, exact True, finite differences 504 ; N=256: 1052 gates, exact True, finite differences 2040
+LIGHT label=x1-rowdeg exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:00:23 cmd=python3 -B rowdeg.py

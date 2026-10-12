@@ -1,0 +1,16 @@
+{"N":8,"seed":3,"K":2000,"coefset":1,"target":"H","P0":56}
+{"gate":1,"u":5,"v":6,"a":1,"b":1,"drain":4,"ties":56,"cands":56,"P":52,"U":53,"done":0,"wt":2,"sec":0}
+{"gate":2,"u":2,"v":8,"a":1,"b":-1,"drain":6,"ties":12,"cands":72,"P":46,"U":48,"done":0,"wt":3,"sec":0}
+{"gate":3,"u":1,"v":9,"a":1,"b":-1,"drain":6,"ties":1,"cands":90,"P":40,"U":43,"done":0,"wt":4,"sec":0}
+{"gate":4,"u":3,"v":10,"a":1,"b":-1,"drain":4,"ties":20,"cands":110,"P":36,"U":40,"done":0,"wt":5,"sec":0}
+{"gate":5,"u":0,"v":11,"a":1,"b":-1,"drain":7,"ties":1,"cands":132,"P":29,"U":34,"done":0,"wt":6,"sec":0}
+{"gate":6,"u":4,"v":7,"a":1,"b":-1,"drain":4,"ties":6,"cands":156,"P":25,"U":31,"done":0,"wt":2,"sec":0}
+{"gate":7,"u":12,"v":13,"a":1,"b":-1,"drain":7,"ties":2,"cands":182,"P":18,"U":25,"done":0,"wt":8,"sec":0}
+{"gate":8,"u":0,"v":6,"a":1,"b":-1,"drain":1,"ties":7,"cands":210,"P":17,"U":25,"done":0,"wt":2,"sec":0}
+{"gate":9,"u":2,"v":4,"a":1,"b":-1,"drain":1,"ties":6,"cands":240,"P":16,"U":25,"done":0,"wt":2,"sec":0}
+{"gate":10,"u":1,"v":7,"a":1,"b":-1,"drain":1,"ties":5,"cands":272,"P":15,"U":25,"done":0,"wt":2,"sec":0}
+{"gate":11,"u":3,"v":6,"a":1,"b":-1,"drain":1,"ties":4,"cands":306,"P":14,"U":25,"done":0,"wt":2,"sec":0}
+{"gate":12,"u":1,"v":4,"a":1,"b":1,"drain":1,"ties":3,"cands":342,"P":13,"U":25,"done":0,"wt":2,"sec":0}
+{"gate":13,"u":12,"v":13,"a":1,"b":1,"drain":1,"ties":2,"cands":380,"P":12,"U":25,"done":0,"wt":8,"sec":0}
+{"gate":14,"u":3,"v":5,"a":1,"b":-1,"drain":1,"ties":1,"cands":420,"P":11,"U":25,"done":0,"wt":2,"sec":0}
+{"best":{"U":25,"gates":14,"prog":[[5,6,1,1],[2,8,1,-1],[1,9,1,-1],[3,10,1,-1],[0,11,1,-1],[4,7,1,-1],[12,13,1,-1],[0,6,1,-1],[2,4,1,-1],[1,7,1,-1],[3,6,1,-1],[1,4,1,1],[12,13,1,1],[3,5,1,-1]],"reps":[{"forms":[14,8,19],"inputs":[],"cost":2},{"forms":[20,18],"inputs":[],"cost":1},{"forms":[14,15],"inputs":[],"cost":1},{"forms":[14,16],"inputs":[],"cost":1},{"forms":[14,17],"inputs":[],"cost":1},{"forms":[14,21],"inputs":[],"cost":1},{"forms":[14,11],"inputs":[5],"cost":2},{"forms":[14,9],"inputs":[7],"cost":2}]},"final_gates":14,"final_P":11,"half_drain_gates":7,"full_drain_gates":0}

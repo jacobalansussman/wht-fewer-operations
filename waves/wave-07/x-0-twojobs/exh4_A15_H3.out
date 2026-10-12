@@ -1,0 +1,23 @@
+# exh4 ALLOW=15 pool=1112 wires, helpers=3, gates=7
+CIRCUIT exh4-A15-profile1  N=4 gates=7  floor f(N)=7  excess=0
+w1 = 1*x2 + -1*x3   # [0 0 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + -1*w1   # [0 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x0 + -1*w2   # [1 -1 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = -2*x2 + 1*w3   # [1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w5 = 2*x3 + 1*w4   # [1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w6 = 2*x0 + -1*w4   # [1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w7 = 2*x1 + 1*w4   # [1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY exh4-A15-profile1  gates=7 excess=0  budget=9.34  volume=4.00 (needed 4)  joins=3 of which carry volume=0  merges=3 of which carry volume=0  coefficient-2 gates=4 bringing 4.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=4  most units from one gate=1.000
+CIRCUIT exh4-A15-profile2  N=4 gates=7  floor f(N)=7  excess=0
+w1 = 1*x2 + -1*x3   # [0 0 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + -1*w1   # [0 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x0 + 1*w2   # [1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x0 + -1*w2   # [1 -1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w5 = 2*x2 + 1*w3   # [1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w6 = -2*x3 + 1*w3   # [1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w7 = -2*x1 + 1*w3   # [1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY exh4-A15-profile2  gates=7 excess=0  budget=8.75  volume=4.00 (needed 4)  joins=4 of which carry volume=1  merges=3 of which carry volume=0  coefficient-2 gates=3 bringing 3.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=4  most units from one gate=1.000
+# tested 228554920 helper sets, circuits 228
+PROFILE 156 circuits: gates=7 excess=0 volume=4.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=4 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE 72 circuits: gates=7 excess=0 volume=4.00 merges-with-volume=0 joins-with-volume=1 coefficient-2-gates=3 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+LIGHT label=x0-exh15 exit=0 time=121s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:35:24 cmd=./exh4 15 3

@@ -1,0 +1,6 @@
+N=4, addresses with Q0 = 0: 3 fixed parts spanning dimension 2; squared length ['2/3']; |inner products| ['1/3']; cosine ['1/2']; inner products with the other class: ['0']
+N=4, addresses with Q0 = 1: 1 fixed parts spanning dimension 0; squared length ['0']; |inner products| []; cosine ['-']; inner products with the other class: ['0']
+N=16, addresses with Q0 = 0: 10 fixed parts spanning dimension 5; squared length ['1/2']; |inner products| ['1/6']; cosine ['1/3']; inner products with the other class: ['0']
+N=16, addresses with Q0 = 1: 6 fixed parts spanning dimension 1; squared length ['1/6']; |inner products| ['1/6']; cosine ['1']; inner products with the other class: ['0']
+N=64, addresses with Q0 = 0: 36 fixed parts spanning dimension 15; squared length ['5/12']; |inner products| ['1/12']; cosine ['1/5']; inner products with the other class: ['0']
+N=64, addresses with Q0 = 1: 28 fixed parts spanning dimension 7; squared length ['1/4']; |inner products| ['1/12']; cosine ['1/3']; inner products with the other class: ['0']

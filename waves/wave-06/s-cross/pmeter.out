@@ -1,0 +1,25 @@
+h8_19gates.txt                     N=  8 gates=  19  budget=   26.02  needed (N/2)log2N=  12  slack=   14.02  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,2)/1': 12, '(1,1)/1': 7}
+slp_4.txt                          N=  4 gates=   7  budget=    9.34  needed (N/2)log2N=   4  slack=    5.34  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,2)/1': 4, '(1,1)/1': 3}
+slp_8.txt                          N=  8 gates=  20  budget=   27.02  needed (N/2)log2N=  12  slack=   15.02  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,2)/1': 12, '(1,1)/1': 8}
+slp_16.txt                         N= 16 gates=  52  budget=   70.72  needed (N/2)log2N=  32  slack=   38.72  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,2)/1': 32, '(1,1)/1': 20}
+slp_64.txt                         N= 64 gates= 304  budget=  416.31  needed (N/2)log2N= 192  slack=  224.31  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,2)/1': 192, '(1,1)/1': 112}
+seed16_textbook.txt : not parsed
+zdz_yates_8.txt                    N=  8 gates=  24  budget=   31.02  needed (N/2)log2N=  12  slack=   19.02  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,1)/1': 12, '(1,2)/1': 12}
+zdz_yates_16.txt                   N= 16 gates=  64  budget=   82.72  needed (N/2)log2N=  32  slack=   50.72  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,1)/1': 32, '(1,2)/1': 32}
+hubparity8.txt                     N=  8 gates=  26  budget=   30.09  needed (N/2)log2N=  12  slack=   18.09  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,1)/1': 19, '(1,2)/1': 7}
+zdz_cat3_8_seq_same.txt            N=  8 gates=  38  budget=   48.68  needed (N/2)log2N=  12  slack=   36.68  Q gates=0  largest coefficient=4  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,1)/1': 21, '(1,2)/1': 16, '(1,4)/1': 1}
+zdz_cat3g_32_seq_same.txt          N= 32 gates= 220  budget=  302.01  needed (N/2)log2N=  80  slack=  222.01  Q gates=0  largest coefficient=16  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,1)/1': 114, '(1,2)/1': 87, '(1,4)/1': 13, '(1,8)/1': 5, '(1,16)/1': 1}
+tensor_19_x_19.txt                 N= 64 gates= 304  budget=  416.31  needed (N/2)log2N= 192  slack=  224.31  Q gates=0  largest coefficient=2  holds all rows of H: True
+      gate kinds (a,b)/g : count   {'(1,2)/1': 192, '(1,1)/1': 112}
+LIGHT label=scross-pmeter exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:00:24 cmd=python3 -B pmeter.py waves/wave-03/g-1-tightwires/h8_19gates.txt waves/wave-02/e2-0-pieces/slp_4.txt waves/wave-02/e2-0-pieces/slp_8.txt [path cut short]
+pmeter exit 0

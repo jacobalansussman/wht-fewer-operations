@@ -1,0 +1,196 @@
+nodes 5594336, leaves 745
+LIGHT label=h2-m4W17 exit=0 time=5s waited=28s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:04:14 cmd=./cover_g 4 17 67 leaves_m4_W17.txt
+m = 4, W = 17 (plain 68 moves), up to 67 moves; group of 48 maps
+  64 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  65 moves: 8 count vectors pass counting; excluded by the clique lemma 8, by the zero-form lemma 0, SURVIVE 0
+  66 moves: 43 count vectors pass counting; excluded by the clique lemma 42, by the zero-form lemma 1, SURVIVE 0
+  67 moves: 210 count vectors pass counting; excluded by the clique lemma 191, by the zero-form lemma 17, SURVIVE 2
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:6 1000:4 1001:4 1010:4 1011:6 1100:4 1101:6 1110:6 1111:3  [tight selections 12, largest joined set 17]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:5 1000:5 1001:4 1010:4 1011:5 1100:4 1101:5 1110:5 1111:3  [tight selections 12, largest joined set 17]
+nodes 8071399, leaves 1141
+LIGHT label=h2-m4W18 exit=0 time=6s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:04:20 cmd=./cover_g 4 18 71 leaves_m4_W18.txt
+m = 4, W = 18 (plain 72 moves), up to 71 moves; group of 48 maps
+  68 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  69 moves: 12 count vectors pass counting; excluded by the clique lemma 12, by the zero-form lemma 0, SURVIVE 0
+  70 moves: 63 count vectors pass counting; excluded by the clique lemma 61, by the zero-form lemma 2, SURVIVE 0
+  71 moves: 302 count vectors pass counting; excluded by the clique lemma 275, by the zero-form lemma 25, SURVIVE 2
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:7 1000:4 1001:4 1010:4 1011:7 1100:4 1101:7 1110:7 1111:3  [tight selections 12, largest joined set 18]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:6 1000:5 1001:4 1010:4 1011:6 1100:4 1101:6 1110:6 1111:3  [tight selections 12, largest joined set 18]
+nodes 11439164, leaves 1693
+LIGHT label=h2-m4W19 exit=0 time=9s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:04:28 cmd=./cover_g 4 19 75 leaves_m4_W19.txt
+m = 4, W = 19 (plain 76 moves), up to 75 moves; group of 48 maps
+  72 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  73 moves: 14 count vectors pass counting; excluded by the clique lemma 14, by the zero-form lemma 0, SURVIVE 0
+  74 moves: 79 count vectors pass counting; excluded by the clique lemma 75, by the zero-form lemma 3, SURVIVE 1
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:5 1101:5 1110:5 1111:4  [tight selections 12, largest joined set 19]
+  75 moves: 397 count vectors pass counting; excluded by the clique lemma 353, by the zero-form lemma 37, SURVIVE 7
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:8 1000:4 1001:4 1010:4 1011:8 1100:4 1101:8 1110:8 1111:3  [tight selections 12, largest joined set 19]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:7 1000:5 1001:4 1010:4 1011:7 1100:4 1101:7 1110:7 1111:3  [tight selections 12, largest joined set 19]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:6 1101:5 1110:5 1111:5  [tight selections 10, largest joined set 19]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:5 1101:5 1110:5 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:5 1101:5 1110:6 1111:4  [tight selections 9, largest joined set 19]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:6 1101:5 1110:5 1111:4  [tight selections 10, largest joined set 19]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:4 0110:4 0111:6 1000:6 1001:4 1010:4 1011:6 1100:4 1101:6 1110:6 1111:3  [tight selections 12, largest joined set 19]
+nodes 15953074, leaves 2378
+LIGHT label=h2-m4W20 exit=0 time=12s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:04:38 cmd=./cover_g 4 20 79 leaves_m4_W20.txt
+m = 4, W = 20 (plain 80 moves), up to 79 moves; group of 48 maps
+  75 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  76 moves: 6 count vectors pass counting; excluded by the clique lemma 6, by the zero-form lemma 0, SURVIVE 0
+  77 moves: 30 count vectors pass counting; excluded by the clique lemma 29, by the zero-form lemma 1, SURVIVE 0
+  78 moves: 140 count vectors pass counting; excluded by the clique lemma 128, by the zero-form lemma 11, SURVIVE 1
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:6 1000:5 1001:5 1010:5 1011:6 1100:5 1101:6 1110:6 1111:4  [tight selections 12, largest joined set 20]
+  79 moves: 629 count vectors pass counting; excluded by the clique lemma 531, by the zero-form lemma 89, SURVIVE 9
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:9 1000:4 1001:4 1010:4 1011:9 1100:4 1101:9 1110:9 1111:3  [tight selections 12, largest joined set 20]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:8 1000:5 1001:4 1010:4 1011:8 1100:4 1101:8 1110:8 1111:3  [tight selections 12, largest joined set 20]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:5 0110:5 0111:6 1000:5 1001:5 1010:5 1011:6 1100:6 1101:6 1110:6 1111:5  [tight selections 10, largest joined set 20]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:6 1000:5 1001:5 1010:5 1011:6 1100:5 1101:6 1110:6 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:6 1000:5 1001:5 1010:5 1011:6 1100:5 1101:6 1110:7 1111:4  [tight selections 9, largest joined set 20]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:6 1000:5 1001:5 1010:5 1011:6 1100:6 1101:6 1110:6 1111:4  [tight selections 10, largest joined set 20]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:6 1000:6 1001:5 1010:5 1011:6 1100:5 1101:6 1110:6 1111:4  [tight selections 9, largest joined set 20]
+     SURVIVES: 0001:5 0010:5 0011:6 0100:5 0101:6 0110:6 0111:6 1000:6 1001:5 1010:5 1011:5 1100:5 1101:5 1110:5 1111:4  [tight selections 12, largest joined set 20]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:4 0110:4 0111:7 1000:6 1001:4 1010:4 1011:7 1100:4 1101:7 1110:7 1111:3  [tight selections 12, largest joined set 20]
+nodes 21926707, leaves 3442
+LIGHT label=h2-m4W21 exit=0 time=17s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:05:34 cmd=./cover_g 4 21 83 leaves_m4_W21.txt
+light.py: h2-m4W21p found no free slot in 90 s. Nothing was run. Do other work and retry in a few minutes.
+nodes 29732789, leaves 5173
+LIGHT label=h2-m4W22 exit=0 time=23s waited=42s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:08:04 cmd=./cover_g 4 22 87 leaves_m4_W22.txt
+m = 4, W = 22 (plain 88 moves), up to 87 moves; group of 48 maps
+  83 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  84 moves: 12 count vectors pass counting; excluded by the clique lemma 12, by the zero-form lemma 0, SURVIVE 0
+  85 moves: 63 count vectors pass counting; excluded by the clique lemma 61, by the zero-form lemma 2, SURVIVE 0
+  86 moves: 302 count vectors pass counting; excluded by the clique lemma 275, by the zero-form lemma 25, SURVIVE 2
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:8 1000:5 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 12, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:7 1000:6 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:4  [tight selections 12, largest joined set 22]
+  87 moves: 1355 count vectors pass counting; excluded by the clique lemma 1130, by the zero-form lemma 209, SURVIVE 16
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:11 1000:4 1001:4 1010:4 1011:11 1100:4 1101:11 1110:11 1111:3  [tight selections 12, largest joined set 22]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:10 1000:5 1001:4 1010:4 1011:10 1100:4 1101:10 1110:10 1111:3  [tight selections 12, largest joined set 22]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:5 0110:5 0111:8 1000:5 1001:5 1010:5 1011:8 1100:6 1101:8 1110:8 1111:5  [tight selections 10, largest joined set 22]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:8 1000:5 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:8 1000:5 1001:5 1010:5 1011:8 1100:5 1101:8 1110:9 1111:4  [tight selections 9, largest joined set 22]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:8 1000:5 1001:5 1010:5 1011:8 1100:6 1101:8 1110:8 1111:4  [tight selections 10, largest joined set 22]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:8 1000:6 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 9, largest joined set 22]
+     SURVIVES: 0001:5 0010:5 0011:6 0100:5 0101:6 0110:6 0111:8 1000:6 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:4  [tight selections 12, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:4 0110:4 0111:9 1000:6 1001:4 1010:4 1011:9 1100:4 1101:9 1110:9 1111:3  [tight selections 12, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:5 0110:5 0111:7 1000:6 1001:5 1010:5 1011:7 1100:6 1101:7 1110:7 1111:5  [tight selections 10, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:7 1000:6 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:7 1000:6 1001:5 1010:5 1011:7 1100:5 1101:7 1110:8 1111:4  [tight selections 9, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:7 1000:6 1001:5 1010:5 1011:7 1100:6 1101:7 1110:7 1111:4  [tight selections 10, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:7 1000:7 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:4  [tight selections 9, largest joined set 22]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:5 1010:5 1011:6 1100:5 1101:6 1110:6 1111:4  [tight selections 12, largest joined set 22]
+     SURVIVES: 0001:7 0010:7 0011:4 0100:7 0101:4 0110:4 0111:8 1000:7 1001:4 1010:4 1011:8 1100:4 1101:8 1110:8 1111:3  [tight selections 12, largest joined set 22]
+nodes 39825055, leaves 7753
+LIGHT label=h2-m4W23 exit=0 time=30s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:08:30 cmd=./cover_g 4 23 91 leaves_m4_W23.txt
+m = 4, W = 23 (plain 92 moves), up to 91 moves; group of 48 maps
+  87 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  88 moves: 14 count vectors pass counting; excluded by the clique lemma 14, by the zero-form lemma 0, SURVIVE 0
+  89 moves: 79 count vectors pass counting; excluded by the clique lemma 75, by the zero-form lemma 3, SURVIVE 1
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:6 1110:6 1111:5  [tight selections 12, largest joined set 23]
+  90 moves: 397 count vectors pass counting; excluded by the clique lemma 353, by the zero-form lemma 37, SURVIVE 7
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:9 1000:5 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:4  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:8 1000:6 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:7 1101:6 1110:6 1111:6  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:6 1110:6 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:6 1110:7 1111:5  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:7 1101:6 1110:6 1111:5  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:7 0010:7 0011:5 0100:7 0101:5 0110:5 0111:7 1000:7 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:4  [tight selections 12, largest joined set 23]
+  91 moves: 1830 count vectors pass counting; excluded by the clique lemma 1488, by the zero-form lemma 301, SURVIVE 41
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:12 1000:4 1001:4 1010:4 1011:12 1100:4 1101:12 1110:12 1111:3  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:11 1000:5 1001:4 1010:4 1011:11 1100:4 1101:11 1110:11 1111:3  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:5 0110:5 0111:9 1000:5 1001:5 1010:5 1011:9 1100:6 1101:9 1110:9 1111:5  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:9 1000:5 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:9 1000:5 1001:5 1010:5 1011:9 1100:5 1101:9 1110:10 1111:4  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:9 1000:5 1001:5 1010:5 1011:9 1100:6 1101:9 1110:9 1111:4  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:9 1000:6 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:4  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:5 0010:5 0011:6 0100:5 0101:6 0110:6 0111:9 1000:6 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:5 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:7 1010:6 1011:6 1100:6 1101:6 1110:6 1111:6  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:4 0110:4 0111:10 1000:6 1001:4 1010:4 1011:10 1100:4 1101:10 1110:10 1111:3  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:5 0110:5 0111:8 1000:6 1001:5 1010:5 1011:8 1100:6 1101:8 1110:8 1111:5  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:8 1000:6 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:8 1000:6 1001:5 1010:5 1011:8 1100:5 1101:8 1110:9 1111:4  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:8 1000:6 1001:5 1010:5 1011:8 1100:6 1101:8 1110:8 1111:4  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:8 1000:7 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:7 1110:7 1111:6  [tight selections 6, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:7 1101:6 1110:6 1111:7  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:7 1101:6 1110:7 1111:6  [tight selections 7, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:8 1101:6 1110:6 1111:6  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:7 1100:7 1101:6 1110:6 1111:6  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:7 1011:6 1100:7 1101:6 1110:6 1111:6  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:6 1110:6 1111:7  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:6 1110:7 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:6 1110:8 1111:5  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:6 1101:7 1110:7 1111:5  [tight selections 6, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:7 1101:6 1110:6 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:7 1101:6 1110:7 1111:5  [tight selections 7, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:6 1100:8 1101:6 1110:6 1111:5  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:6 1011:7 1100:7 1101:6 1110:6 1111:5  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:6 1001:6 1010:7 1011:6 1100:7 1101:6 1110:6 1111:5  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:7 1001:5 1010:6 1011:6 1100:6 1101:6 1110:7 1111:6  [tight selections 7, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:6 1000:7 1001:6 1010:6 1011:6 1100:6 1101:6 1110:7 1111:5  [tight selections 7, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:6 1100:6 1101:6 1110:6 1111:5  [tight selections 6, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:8 1000:7 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:4  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:7 0111:6 1000:6 1001:7 1010:6 1011:6 1100:6 1101:6 1110:6 1111:5  [tight selections 8, largest joined set 23]
+     SURVIVES: 0001:7 0010:7 0011:4 0100:7 0101:4 0110:4 0111:9 1000:7 1001:4 1010:4 1011:9 1100:4 1101:9 1110:9 1111:3  [tight selections 12, largest joined set 23]
+     SURVIVES: 0001:7 0010:7 0011:4 0100:7 0101:5 0110:5 0111:7 1000:7 1001:5 1010:5 1011:7 1100:6 1101:7 1110:7 1111:5  [tight selections 10, largest joined set 23]
+     SURVIVES: 0001:7 0010:7 0011:5 0100:7 0101:5 0110:5 0111:7 1000:7 1001:5 1010:5 1011:7 1100:5 1101:7 1110:7 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:7 0010:7 0011:5 0100:7 0101:5 0110:5 0111:7 1000:7 1001:5 1010:5 1011:7 1100:5 1101:7 1110:8 1111:4  [tight selections 9, largest joined set 23]
+     SURVIVES: 0001:7 0010:7 0011:5 0100:7 0101:5 0110:5 0111:7 1000:7 1001:5 1010:5 1011:7 1100:6 1101:7 1110:7 1111:4  [tight selections 10, largest joined set 23]
+nodes 52742425, leaves 10961
+LIGHT label=h2-m4W24 exit=0 time=39s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:09:04 cmd=./cover_g 4 24 95 leaves_m4_W24.txt
+m = 4, W = 24 (plain 96 moves), up to 95 moves; group of 48 maps
+  90 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  91 moves: 6 count vectors pass counting; excluded by the clique lemma 6, by the zero-form lemma 0, SURVIVE 0
+  92 moves: 30 count vectors pass counting; excluded by the clique lemma 29, by the zero-form lemma 1, SURVIVE 0
+  93 moves: 140 count vectors pass counting; excluded by the clique lemma 128, by the zero-form lemma 11, SURVIVE 1
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:5  [tight selections 12, largest joined set 24]
+  94 moves: 629 count vectors pass counting; excluded by the clique lemma 531, by the zero-form lemma 89, SURVIVE 9
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:10 1000:5 1001:5 1010:5 1011:10 1100:5 1101:10 1110:10 1111:4  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:9 1000:6 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:4  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:7 1101:7 1110:7 1111:6  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:7 1110:8 1111:5  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:7 1101:7 1110:7 1111:5  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:5  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:7 0100:6 0101:7 0110:7 0111:7 1000:7 1001:6 1010:6 1011:6 1100:6 1101:6 1110:6 1111:5  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:7 0010:7 0011:5 0100:7 0101:5 0110:5 0111:8 1000:7 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 12, largest joined set 24]
+  95 moves: 2707 count vectors pass counting; excluded by the clique lemma 2082, by the zero-form lemma 565, SURVIVE 60
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:13 1000:4 1001:4 1010:4 1011:13 1100:4 1101:13 1110:13 1111:3  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:12 1000:5 1001:4 1010:4 1011:12 1100:4 1101:12 1110:12 1111:3  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:5 0010:5 0011:4 0100:5 0101:5 0110:5 0111:10 1000:5 1001:5 1010:5 1011:10 1100:6 1101:10 1110:10 1111:5  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:10 1000:5 1001:5 1010:5 1011:10 1100:5 1101:10 1110:10 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:10 1000:5 1001:5 1010:5 1011:10 1100:5 1101:10 1110:11 1111:4  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:10 1000:5 1001:5 1010:5 1011:10 1100:6 1101:10 1110:10 1111:4  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:10 1000:6 1001:5 1010:5 1011:10 1100:5 1101:10 1110:10 1111:4  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:5 0010:5 0011:6 0100:5 0101:6 0110:6 0111:10 1000:6 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:4  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:5 0010:6 0011:6 0100:6 0101:6 0110:6 0111:8 1000:6 1001:7 1010:6 1011:7 1100:6 1101:7 1110:7 1111:6  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:4 0110:4 0111:11 1000:6 1001:4 1010:4 1011:11 1100:4 1101:11 1110:11 1111:3  [tight selections 12, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:4 0100:6 0101:5 0110:5 0111:9 1000:6 1001:5 1010:5 1011:9 1100:6 1101:9 1110:9 1111:5  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:9 1000:6 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:5  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:9 1000:6 1001:5 1010:5 1011:9 1100:5 1101:9 1110:10 1111:4  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:9 1000:6 1001:5 1010:5 1011:9 1100:6 1101:9 1110:9 1111:4  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:5 0110:5 0111:9 1000:7 1001:5 1010:5 1011:9 1100:5 1101:9 1110:9 1111:4  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:8 1110:8 1111:6  [tight selections 6, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:7 1101:7 1110:7 1111:7  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:7 1101:7 1110:8 1111:6  [tight selections 7, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:8 1101:7 1110:7 1111:6  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:8 1100:7 1101:7 1110:7 1111:6  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:7 1011:7 1100:7 1101:7 1110:7 1111:6  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:5 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:7 1100:7 1101:7 1110:7 1111:6  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:7  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:7 1110:8 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:7 1110:9 1111:5  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:6 1101:8 1110:8 1111:5  [tight selections 6, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:7 1101:7 1110:7 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:7 1101:7 1110:8 1111:5  [tight selections 7, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:7 1100:8 1101:7 1110:7 1111:5  [tight selections 10, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:6 1011:8 1100:7 1101:7 1110:7 1111:5  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:6 1001:6 1010:7 1011:7 1100:7 1101:7 1110:7 1111:5  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:5 1010:6 1011:7 1100:6 1101:7 1110:8 1111:6  [tight selections 7, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:6 1100:7 1101:7 1110:7 1111:6  [tight selections 6, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:6  [tight selections 0, largest joined set 0]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:7 1100:6 1101:7 1110:8 1111:5  [tight selections 7, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:6 1010:6 1011:7 1100:7 1101:7 1110:7 1111:5  [tight selections 8, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:7 1001:7 1010:7 1011:6 1100:7 1101:6 1110:6 1111:6  [tight selections 6, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:7 1000:8 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:5  [tight selections 9, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:8 1000:7 1001:6 1010:6 1011:7 1100:6 1101:7 1110:7 1111:5  [tight selections 6, largest joined set 24]
+     SURVIVES: 0001:6 0010:6 0011:6 0100:6 0101:6 0110:6 0111:9 1000:7 1001:5 1010:5 1011:8 1100:5 1101:8 1110:8 1111:4  [tight selections 12, largest joined set 24]
+Sun Oct 11 00:10:08 EDT 2026

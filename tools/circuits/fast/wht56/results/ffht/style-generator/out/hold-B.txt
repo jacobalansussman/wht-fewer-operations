@@ -1,0 +1,18 @@
+## locked_run.sh: taskset -c 0 sh hold.sh whered ownf
+## pinned to processor 0 (siblings: 0,4)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 17:36:26 UTC; uptime: 17:36:26 up 23:44,  0 user,  load average: 4.34, 4.66, 4.97
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   1   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+hold.sh: step whered starts 17:36:26
+hold.sh: step whered ends 17:41:28
+hold.sh: step ownf starts 17:41:28
+hold.sh: step ownf ends 17:52:50
+## exit code 0
+## after: 2026-10-11 17:52:50 UTC; uptime: 17:52:50 up 1 day, 1 min,  0 user,  load average: 4.50, 4.55, 4.71
+## after: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   1   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334

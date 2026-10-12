@@ -1,0 +1,26 @@
+textbook 4: N=4 gates=8 classes=7 (2N-1=7) one tree=True survivors=3 (N-1=3) dead=5 ((N/2)log2N=4) over-limit wires=0 gates+over=8 (N log2 N=8)
+textbook 8: N=8 gates=24 classes=15 (2N-1=15) one tree=True survivors=7 (N-1=7) dead=17 ((N/2)log2N=12) over-limit wires=0 gates+over=24 (N log2 N=24)
+textbook 16: N=16 gates=64 classes=31 (2N-1=31) one tree=True survivors=15 (N-1=15) dead=49 ((N/2)log2N=32) over-limit wires=0 gates+over=64 (N log2 N=64)
+brick: N=4 gates=7 classes=7 (2N-1=7) one tree=True survivors=3 (N-1=3) dead=4 ((N/2)log2N=4) over-limit wires=1 gates+over=8 (N log2 N=8)
+19: outputs equal H_8 in natural order: True
+the 19: N=8 gates=19 classes=15 (2N-1=15) one tree=True survivors=7 (N-1=7) dead=12 ((N/2)log2N=12) over-limit wires=5 gates+over=24 (N log2 N=24)
+floor N=2: 2  record 2  textbook 2  (3/4)N log2 N + N/4 = 2.0
+floor N=4: 7  record 7  textbook 8  (3/4)N log2 N + N/4 = 7.0
+floor N=8: 19  record 19  textbook 24  (3/4)N log2 N + N/4 = 20.0
+floor N=16: 47  record 52  textbook 64  (3/4)N log2 N + N/4 = 52.0
+floor N=32: 111  record 128  textbook 160  (3/4)N log2 N + N/4 = 128.0
+floor N=64: 255  record 304  textbook 384  (3/4)N log2 N + N/4 = 304.0
+(O) k=3: 28 against textbook 24
+(O) k=6: 384 against textbook 384
+(O) k=9: 4352 against textbook 4608
+(O) k=12: 45056 against textbook 49152
+block 5, 4 arrays, 17 moves: saving 1.010e-01
+block 5, 4 arrays, 18 moves: saving 6.546e-02
+block 5, 4 arrays, 19 moves: saving 3.187e-02
+block 5, 5 arrays, 24 moves: saving 2.536e-02
+block 5, 6 arrays, 26 moves: saving 8.891e-02
+block 5, 19 arrays, 80 moves: saving 1.068e-01
+block 4, 15 arrays, 59 moves: saving 1.212e-02
+counting floor 3.75 moves per array at block size 5: exponent 0.8213
+h-7: 120/28135 = 0.00427  120/389730 = 3.08e-04
+LIGHT label=m-note exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:32:49 cmd=python3 -B check.py

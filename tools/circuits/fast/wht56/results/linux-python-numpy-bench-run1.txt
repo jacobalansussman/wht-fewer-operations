@@ -1,0 +1,19 @@
+ 12:58:22 up 19:06,  0 user,  load average: 12.09, 12.85, 10.84
+machine: Linux x86_64; Python 3.13.16
+nanoseconds per point for one transform; best of several runs
+
+PURE PYTHON (lists of floats; this is a reference, not a fast program)
+points         textbook    wht (exact)         family
+2^9              1338.4         2044.4         4455.4
+2^12             1949.7         2213.0         7475.4
+
+NUMPY 2.1.3 (float64, in place, the copy of the input not timed)
+points    textbook2/exact  textbook8/exact           k8/raw         k8/exact  textbook8/ortho         k8/ortho
+2^9                319.93           396.45           404.99           410.83           403.43           414.04
+2^12                99.96            88.18            90.46            91.26            90.68            90.88
+2^15                64.82            31.75            31.68            32.51            33.32            32.46
+2^18                67.96            34.63            33.58            33.95            34.52            34.16
+2^21                98.12            72.92            64.47            67.35            73.22            71.64
+
+C: sh <folder>/wht56/c/build_and_bench.sh [output directory [runs [k ...]]]
+ 12:58:29 up 19:06,  0 user,  load average: 12.08, 12.84, 10.85

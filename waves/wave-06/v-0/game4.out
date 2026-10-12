@@ -1,0 +1,6 @@
+possible wires above the leaves: 12
+gates = 4 : sets that are legal plays holding all 4 rows: 0
+gates = 5 : sets that are legal plays holding all 4 rows: 0
+gates = 6 : sets that are legal plays holding all 4 rows: 0
+gates = 7 : sets that are legal plays holding all 4 rows: 12
+LIGHT label=v0-game4 exit=0 time=1s waited=18s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:24:14 cmd=python3 -B game4.py

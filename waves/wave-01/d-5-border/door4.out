@@ -1,0 +1,9 @@
+w(e) coefficient vectors by power of e: [[31, 0, -29, -5]] (degree 0 in e means w is exact for every e)
+distinct limit targets (not inputs): 6 | fixed points: 9 | (n-1)-subsets whose span contains w: 3 of 84
+=> exact count >= 8 if that number is 0 ; border count <= 7
+w(e) coefficient vectors by power of e: [[-31, -54, 0, 31]] (degree 0 in e means w is exact for every e)
+distinct limit targets (not inputs): 6 | fixed points: 9 | (n-1)-subsets whose span contains w: 6 of 84
+=> exact count >= 8 if that number is 0 ; border count <= 7
+w(e) coefficient vectors by power of e: [[31, 14, 20, 11]] (degree 0 in e means w is exact for every e)
+distinct limit targets (not inputs): 6 | fixed points: 9 | (n-1)-subsets whose span contains w: 0 of 84
+=> exact count >= 8 if that number is 0 ; border count <= 7

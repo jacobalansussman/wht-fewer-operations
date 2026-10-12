@@ -1,0 +1,18 @@
+p=3: 2748 circuits, 3 cuts each; all assertions passed (GL - n(L) >= 4, GR - n(R) >= 4, gates + X >= n(L) + n(R) + N, deviations of rank 4)
+least slack of  gates + X - n(L) - n(R) - N  = 0
+(n(L), n(R), E - B, X crossing gates, Xh crossing helpers, R-repeats, L-repeats) : count
+   n(L)=4 n(R)=4 E-B=4 X=4 Xh=0 Rrep=4 Lrep=4 : 75
+   n(L)=4 n(R)=4 E-B=4 X=5 Xh=1 Rrep=4 Lrep=5 : 582
+   n(L)=4 n(R)=4 E-B=4 X=6 Xh=2 Rrep=4 Lrep=6 : 1272
+   n(L)=4 n(R)=4 E-B=4 X=6 Xh=2 Rrep=5 Lrep=5 : 12
+   n(L)=4 n(R)=4 E-B=4 X=7 Xh=3 Rrep=4 Lrep=7 : 1830
+   n(L)=4 n(R)=4 E-B=4 X=7 Xh=3 Rrep=5 Lrep=6 : 126
+   n(L)=4 n(R)=4 E-B=4 X=8 Xh=4 Rrep=4 Lrep=8 : 1647
+   n(L)=4 n(R)=4 E-B=4 X=8 Xh=4 Rrep=5 Lrep=7 : 234
+   n(L)=4 n(R)=4 E-B=4 X=9 Xh=5 Rrep=5 Lrep=8 : 168
+   n(L)=4 n(R)=5 E-B=3 X=9 Xh=5 Rrep=4 Lrep=8 : 6
+   n(L)=5 n(R)=4 E-B=3 X=6 Xh=2 Rrep=4 Lrep=5 : 6
+   n(L)=5 n(R)=4 E-B=3 X=7 Xh=3 Rrep=4 Lrep=6 : 408
+   n(L)=5 n(R)=4 E-B=3 X=8 Xh=4 Rrep=4 Lrep=7 : 1872
+   n(L)=5 n(R)=4 E-B=3 X=8 Xh=4 Rrep=5 Lrep=6 : 6
+LIGHT label=ab4-cross exit=0 time=65s waited=66s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=05:06:53 cmd=python3 -B zcross.py 3 z8_p3_full.out

@@ -1,0 +1,42 @@
+A. where the determinant (Morgenstern's volume) of the transform sits in the valence-bond form
+   log2|det H| = k N / 2.  scalars (-2)^j give sum_j d_j * j * n_j ; Krawtchouk blocks give sum_j d_j * n_j (n_j - 1) / 2,  n_j = k - 2j + 1
+        k      scalars/N       blocks/N      check blocks/(N sqrt k)
+        2         0.2500         0.7500       True       0.5303
+        4         0.8125         1.1875       True       0.5938
+        8         2.1758         1.8242       True       0.6450
+       16         5.2597         2.7403       True       0.6851
+       32        11.9516         4.0484       True       0.7157
+       64        26.0921         5.9079       True       0.7385
+      128        55.4554         8.5446       True       0.7552
+      256       115.7214        12.2786       True       0.7674
+     1024       486.9615        25.0385       True       0.7825
+
+B. the pair scheme (adapt to swapping bits 2i-1, 2i only): in = Walsh transforms on the swap orbits, middle = spin-1 kernel powers
+   in(k) = sum_s C(k/2,s) 2^(k/2-s) * s 2^s ;  mid(k) = sum_r C(k/2,r) * 4 r 3^(r-1) ;  total = 2 in + mid  against  k N
+   k=  2  in=2  mid=4  total=8  kN=8  tie=True
+   k=  4  in=16  mid=32  total=64  kN=64  tie=True
+   k=  8  in=512  mid=1024  total=2048  kN=2048  tie=True
+   k= 16  in=262144  mid=524288  total=1048576  kN=1048576  tie=True
+   k= 32  in=34359738368  mid=68719476736  total=137438953472  kN=137438953472  tie=True
+
+C. the recursion  t(k) = 2 E[t(Bin(k/2,1/2))] + E[tau(Bin(k/2,3/4))]   (t = cost per entry of the 2^k-point transform,
+   tau(r) = cost per entry of the r-fold power of the spin-1 kernel [[1,1,1],[2,0,-2],[1,-1,1]]; textbook tau(r) = 4r/3)
+   tau = textbook 4r/3     t(4)=4.00  t(16)=16.00  t(64)=64.00  t(256)=256.00  t(1024)=1024.00   t(1024)/t(256)=4.000  log4 of it = 1.000
+   tau = (4/3) r^0.9       t(4)=3.90  t(16)=14.50  t(64)=52.39  t(256)=186.09  t(1024)=654.85   t(1024)/t(256)=3.519  log4 of it = 0.908
+   tau = (4/3) r^0.5       t(4)=3.56  t(16)=10.51  t(64)=27.97  t(256)=69.64  t(1024)=166.20   t(1024)/t(256)=2.387  log4 of it = 0.627
+   tau = linear: 4/3 flat  t(4)=3.25  t(16)=8.10  t(64)=18.14  t(256)=38.42  t(1024)=79.07   t(1024)/t(256)=2.058  log4 of it = 0.521
+
+D. per-bit coupling (Clebsch-Gordan one bit at a time): cost in = sum_i 2^(k-i) sum_blocks 2 (n-1), against k N one way
+        k         in/N     k - in/N (k-in/N)/sqrt k      dense mid/N
+        2       0.5000       1.5000         1.0607           1.5000
+        3       1.0000       2.0000         1.1547           2.0000
+        4       1.6250       2.3750         1.1875           2.3750
+        6       2.9375       3.0625         1.2503           3.0625
+        8       4.3516       3.6484         1.2899           3.6484
+       16      10.5194       5.4806         1.3701           5.4806
+       32      23.9033       8.0967         1.4313           8.0967
+       64      52.1843      11.8157         1.4770          11.8157
+      128     110.9108      17.0892         1.5105          17.0892
+      256     231.4428      24.5572         1.5348          24.5572
+   k=4: in = 26 additions for 16 points by this build
+LIGHT label=d-7-spin-counts exit=0 time=20s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=21:32:39 cmd=python3 -B counts.py

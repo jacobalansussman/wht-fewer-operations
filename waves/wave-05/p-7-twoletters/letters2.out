@@ -1,0 +1,10 @@
+32 points: eight bricks, then the 19 four times: 32 points, 132 gates (G) and 0 free copies; exact replay: every row of the transform is a wire: True
+   1 letter(s): no assignment; search EXHAUSTIVE (567971 nodes)
+   fewest letters found: 2
+   letter 1: 56 gates (24 up, 32 down); rectangles 64 + 0 pass-throughs = 64; wires leaving it: 32
+   letter 2: 76 gates (28 up, 48 down); rectangles 56 + 0 pass-throughs = 56; wires leaving it: 32
+64 points: the 19 eight times, then eight times: 64 points, 304 gates (G) and 0 free copies; exact replay: every row of the transform is a wire: True
+   1 letter(s): no assignment; search EXHAUSTIVE (33916 nodes)
+   fewest letters found: 2
+   letter 1: 152 gates (56 up, 96 down); rectangles 112 + 0 pass-throughs = 112; wires leaving it: 64
+   letter 2: 152 gates (56 up, 96 down); rectangles 112 + 0 pass-throughs = 112; wires leaving it: 64

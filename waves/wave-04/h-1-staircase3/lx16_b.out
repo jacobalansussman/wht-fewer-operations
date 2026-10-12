@@ -1,0 +1,4 @@
+start: helpers 38 dead 0 missing 0 gates 54
+t=2s it=12225: circuit with 53 gates
+t=48s it=226674: circuit with 52 gates
+done: 5558272 moves, 378034 accepted, best 52 gates; feasible states visited by gate count: 52:508 53:3539 54:11276 55:23205 56:33703 57:36776 58:32269 59:23775 60:15205 61:8717 62:4735 63:2368 64:1120 65:481 66:169 67:55 68:18 69:7

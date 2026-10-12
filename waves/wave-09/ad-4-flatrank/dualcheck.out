@@ -1,0 +1,10 @@
+Lemma B on examples: 70 decompositions, 70 with a pair of non-point flats whose directions are not perpendicular; in each: every transform is a multiple of a signed flat of the complementary dimension, the transformed identity holds, both flats vanish on W', and the transform of g on W' is bent on K - 2 bits
+   K=4, 4 flats: 2 survive the projection (first pair found) in 6 cases
+   K=6, 8 flats: 4 survive the projection (first pair found) in 14 cases
+   K=6, 8 flats: 5 survive the projection (first pair found) in 29 cases
+   K=6, 8 flats: 6 survive the projection (first pair found) in 15 cases
+   K=6, 9 flats: 4 survive the projection (first pair found) in 3 cases
+   K=6, 9 flats: 5 survive the projection (first pair found) in 1 cases
+   K=6, 9 flats: 6 survive the projection (first pair found) in 2 cases
+K=6: 35 singular non-zero points, 30 totally singular subspaces of 3 bits, 120 pairs meeting in 0 only, 0 triples pairwise meeting in 0 only (a spread would need 5)
+LIGHT label=ad4-dual exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:52:57 cmd=python3 -B dualcheck.py ls4_r4.out ls6_r8_ctl.out ls6_r8_more.out sym6_p7.out

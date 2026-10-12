@@ -1,0 +1,7 @@
+cube tree: spanning 12, with junction points 12
+tree -3: spanning 12, with junction points 12  leaves: 0 1 2 3 4 5 6 7  merges: (0,1) (2,3) (4,5) (6,7) (8,9) (10,11) (12,13)
+chain in address order: spanning 12, with junction points 12
+chain in Gray order: spanning 12, with junction points 12
+N=8: (N/2) log2 N = 12; over 70003 trees: least spanning 12, least with junction points 12, trees with junction count below (N/2)log2N: 0
+histogram of the junction count: 12:9245 13:8032 14:44495 15:8231
+LIGHT label=u9-st8a exit=0 time=491s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=02:25:19 cmd=./steiner4 3 70000 7

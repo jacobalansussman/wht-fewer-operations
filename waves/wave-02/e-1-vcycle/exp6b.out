@@ -1,0 +1,24 @@
+identity A: plus space of H_N = graph of (2/sqrt N) h_(N/2) - I, N = 16 : True
+identity A: plus space of H_N = graph of (2/sqrt N) h_(N/2) - I, N = 64 : True
+tensor orthogonal frame: in minus space True | S == 4I - 8 sum v v^T/|v|^2 : True | greedy s_R 38
+the 16 vectors (column contraction j) -+ (row contraction i): all in the minus space, 6 non-zeros each, distinct: 16 | greedy cost of the 8 contractions 24
+family: 166 minus vectors
+  local optimum (56, 28, 28)  t=7s
+  local optimum (55, 25, 30)  t=43s
+  local optimum (52, 26, 26)  t=52s
+random frames: histogram of cost(frame)+cost(dual): {66: 1, 67: 1, 69: 1, 72: 3, 74: 4, 75: 1, 76: 1, 77: 10, 78: 4, 79: 1, 80: 4, 81: 6, 82: 2, 83: 8, 85: 2, 86: 6, 87: 3, 88: 2, 89: 3, 90: 4, 91: 4, 92: 2, 93: 4, 94: 1, 96: 2, 98: 2}
+best found: cost(frame)+cost(dual) = 52 = 26 + 26 | program = 58 against 56 known, 64 textbook
+    (1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1)
+    (0, 1, 0, -1, 0, -1, 0, 1, 0, -1, 0, 1, 0, -1, 0, 1)
+    (0, 0, 0, 0, 1, -1, -1, -1, -1, 1, 1, 1, 0, 0, 0, 0)
+    (0, 1, 1, 0, 0, -1, -1, 0, -1, 0, 0, 1, -1, 0, 0, 1)
+    (0, 2, 0, 0, -1, -1, 1, 1, -1, -1, 1, 1, 0, -2, 0, 0)
+    (1, -1, -1, 1, 0, 0, 0, -2, 0, 0, 0, -2, -1, 1, 1, -1)
+   dual:
+    (2, -1, 0, -1, -1, 0, -1, 0, -1, 0, -1, 0, 0, -1, -2, -1)
+    (0, 0, 1, 1, -1, 1, 0, 0, -1, 1, 0, 0, 0, 0, -1, -1)
+    (1, 0, 1, 0, -2, 1, 0, 1, 0, -1, -2, -1, -1, 0, -1, 0)
+    (1, 0, 1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0)
+    (0, 1, 0, 1, -1, 0, 1, 0, -1, 0, 1, 0, 0, -1, 0, -1)
+    (1, 0, -1, 0, 0, -1, 0, -1, 0, -1, 0, -1, -1, 0, 1, 0)
+LIGHT label=e1-exp6b exit=0 time=431s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=22:09:23 cmd=python3 -B exp6.py 11 430

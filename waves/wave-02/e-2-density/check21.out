@@ -1,0 +1,1 @@
+gates: 21 | all 8 outputs equal their rows exactly: True | gates needing a scalar multiplication in count (O): 12 -> count (O) = 33 (textbook 24)

@@ -1,0 +1,8 @@
+# parameters a, b, c, d (x,y = x + y*sqrt2): [1, 2, 3, -1, -2, 3, 5, 2]
+# exact replay over Q(sqrt2): every output lies on the line of its two helpers: True ; 9 gates = 4 helpers + 5 outputs
+# number of non-zero entries of each output: [3, 3, 3, 3, 3]
+1 -5 -14 0
+1 21 -2 0
+14 3 11 0
+4 7 0 17
+11 0 2 51

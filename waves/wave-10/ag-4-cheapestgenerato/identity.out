@@ -1,0 +1,4 @@
+k 3 N 8: H_N = diag(1, M) (H_2 x H') on every entry: True | random basis U: change of basis = 2 H' U: True; high characters all zero: True
+k 5 N 32: H_N = diag(1, M) (H_2 x H') on every entry: True | random basis U: change of basis = 2 H' U: True; high characters all zero: True
+k 7 N 128: H_N = diag(1, M) (H_2 x H') on every entry: True
+LIGHT label=ag4-ident exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:15:07 cmd=python3 -B identity.py

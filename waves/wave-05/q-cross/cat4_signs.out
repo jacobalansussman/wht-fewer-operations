@@ -1,0 +1,6 @@
+N=8 E=0 seed=0 best nnz=23 gates=29
+N=8 E=0 seed=1 best nnz=23 gates=29
+N=8 E=0 seed=2 best nnz=23 gates=29
+BEST 23 gates 29
+([1, 4, 3, 6, 2, 7, 0, 5], [2, 7, 5, 0, 3, 1, 4, 6], [1, 1, 1, -1, 1, -1, -1, -1], [0, 0, 0, 0, 0, 0, 0, 0], [1, 1, -1, -1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0])
+LIGHT label=qcross-cat4s exit=0 time=3s waited=0s peak_rss_mb=9 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:15:30 cmd=python3 -B cat4.py 3 60000 3 0

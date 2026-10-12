@@ -1,0 +1,8 @@
+a = 3: 7 gates give exactly M_3: True
+helper r = [1, -1, -3, -3]  (not an output; r - y1 = -2*(0,1,1,1) is a running sum, which happens only for a = 3)
+a = 1: table L flat (every entry 1/4): True; potential 8.000 bits; rows orthogonal: True; cond with rows scaled [float]: 1.000
+a = 3: table L flat (every entry 1/4): True; potential 8.000 bits; rows orthogonal: False; cond with rows scaled [float]: 3.000
+a = 1/3: table L flat (every entry 1/4): True; potential 8.000 bits; rows orthogonal: False; cond with rows scaled [float]: 3.000
+a = 2: table L flat (every entry 1/4): True; potential 8.000 bits; rows orthogonal: False; cond with rows scaled [float]: 2.000
+a = 5: table L flat (every entry 1/4): True; potential 8.000 bits; rows orthogonal: False; cond with rows scaled [float]: 5.000
+LIGHT label=g3-fam3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:03:59 cmd=python3 -B fam3.py

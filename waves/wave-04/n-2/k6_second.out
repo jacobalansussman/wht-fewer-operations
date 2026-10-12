@@ -1,0 +1,4 @@
+forms with q(I)=1 restricted to the 15 edges: 1024 patterns; smallest selects 3; patterns with exactly 3 edges: 15, all perfect matchings: True
+forms with q(I)=0 restricted: 1024 patterns; with exactly 4 edges: 45, all 4-cycles: True (K6 has 45 four-cycles)
+every 4-cycle contains two disjoint edges (a joined pair), so it is an equality case of the zero-form lemma: 4 = 2*2
+LIGHT label=n2-k6s exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:23:30 cmd=python3 -B k6_second.py

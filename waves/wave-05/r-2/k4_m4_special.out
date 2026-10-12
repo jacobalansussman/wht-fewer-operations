@@ -1,0 +1,6 @@
+k=4 p=11 tau=9 (9 = -2, 5 = -1/2 modulo 11) m=4, 9 gates:
+RESULT p=11: NO circuit with 9 gates (exhaustive over GF(11))
+LIGHT label=r2-k4m4 exit=0 time=2s waited=0s peak_rss_mb=43 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:44:36 cmd=../g-5-k3/mincirc_odd 
+k=4 p=11 tau=5 (9 = -2, 5 = -1/2 modulo 11) m=4, 9 gates:
+RESULT p=11: NO circuit with 9 gates (exhaustive over GF(11))
+LIGHT label=r2-k4m4 exit=0 time=2s waited=0s peak_rss_mb=43 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:44:38 cmd=../g-5-k3/mincirc_odd 

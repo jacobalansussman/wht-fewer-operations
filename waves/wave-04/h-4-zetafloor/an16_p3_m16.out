@@ -1,0 +1,5 @@
+anneal p=3 n=16 targets=15 helpers m=16 => gate budget 31 ; 900 s ; seed 7 ; T 0.80 -> 0.20
+start file: 17 helpers
+  [   0s] best energy 5 (restart 1)
+  [   0s] best energy 4 (restart 1)
+DONE p=3 n=16 m=16: evals 5577809 restarts 30 hits 0 best energy 4 (energy = 4*missing targets + unreached helpers)

@@ -1,0 +1,3 @@
+m = 5: 11536 covering constraints after removing implied ones (lightest has 8 ones, heaviest 16)
+W = 4: plain 20 moves; with parity: 16 moves (status 0: 0 = proved optimal, 1 = time limit, then only 'at most'; solver's lower bound 16.0), 4.000 per array, z if realised with single moves 0.8614; without parity: 16 moves (status 0: 0 = proved optimal, 1 = time limit, then only 'at most'; solver's lower bound 16.000000000000014), 4.000 per array, z if realised with single moves 0.8614; 
+      example of counts (direction: times): 00001:1, 00010:1, 00100:1, 00111:1, 01000:1, 01011:1, 01101:1, 01110:1, 10000:1, 10011:1, 10101:1, 10110:1, 11001:1, 11010:1, 11100:1, 11111:1

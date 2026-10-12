@@ -1,0 +1,14 @@
+t = 2  centre = t^q, q over kernel columns 0..7: [1, 2, 2, 1, 0, 1, 3, 2]   row scaling = t^q', q' over kernel rows 0..7: [-1, 0, 0, 1, 0, 1, -1, 0]
+t = 3  centre = t^q, q over kernel columns 0..7: [1, 2, 2, 1, 0, 1, 3, 2]   row scaling = t^q', q' over kernel rows 0..7: [-1, 0, 0, 1, 0, 1, -1, 0]
+same exponents for t = 2 and t = 3: True
+values of  distance(x,y) - q(x) - q'(y)  over the 64 cells: [(-2, 16), (0, 32), (2, 16)]
+     2  0  0  0 -2 -2  0  2
+     0  0 -2  0  0 -2  2  2
+     0 -2  0  0  0  0  0  2
+     0  0  0  2  0 -2  0  0
+     0 -2 -2 -2 -2 -2  0  2
+     2  2  0  2  0 -2  2  2
+     0 -2  0  0 -2 -2 -2  0
+     0  0  0  2  2  0  2  2
+cells with the value 2 modulo 4: 32  (the transform has 32 cells with -1)
+LIGHT label=k-cross-expo exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:54:38 cmd=python3 -B expo.py

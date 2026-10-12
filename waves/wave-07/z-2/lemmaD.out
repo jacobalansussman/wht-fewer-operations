@@ -1,0 +1,39 @@
+== (a) least rank of the block 'rows in a hyperplane, columns outside it' of H, all hyperplanes ==
+   (rank modulo 2^61-1: a lower bound for the rational rank; H has entries +-1)
+k=3 N=8: ranks found [(2, 3), (4, 4)]  N/4=2 N/2=4
+k=4 N=16: ranks found [(4, 7), (8, 8)]  N/4=4 N/2=8
+k=5 N=32: ranks found [(8, 15), (16, 16)]  N/4=8 N/2=16
+k=6 N=64: ranks found [(16, 31), (32, 32)]  N/4=16 N/2=32
+k=7 N=128: ranks found [(32, 63), (64, 64)]  N/4=32 N/2=64
+== (b) ANY N/2 x N/2 block of H (rows and columns chosen freely): rank >= N/4 by the singular-value count; samples ==
+k=3 N=8: least rank over 300 random blocks 2; adversarial block (duplicated columns) rank 2; N/4=2
+k=4 N=16: least rank over 300 random blocks 5; adversarial block (duplicated columns) rank 4; N/4=4
+k=5 N=32: least rank over 300 random blocks 13; adversarial block (duplicated columns) rank 8; N/4=8
+k=6 N=64: least rank over 40 random blocks 28; adversarial block (duplicated columns) rank 16; N/4=16
+k=7 N=128: least rank over 40 random blocks 63; adversarial block (duplicated columns) rank 32; N/4=32
+== (c) the count itself: random products D0 K1 D1 ... Kr Dr of flag kernels (random flags, weights, diagonals) ==
+   for every hyperplane containing W = M^1_t + ... + M^r_t: exact rank of the block against r N / 2^(t+1)
+k=4 r=1: no violation; closest case rank 8 against bound 8 at t=0  (exact fractions)
+k=4 r=2: no violation; closest case rank 7 against bound 8 at t=1  (exact fractions)
+k=5 r=2: no violation; closest case rank 8 against bound 8 at t=2  (exact fractions)
+k=5 r=3: no violation; closest case rank 16 against bound 24 at t=1  (exact fractions)
+k=6 r=2: no violation; closest case rank 16 against bound 16 at t=2  (rank modulo 2^61-1; whole-number entries, so this can only UNDER-count: a check, not a proof)
+k=6 r=3: no violation; closest case rank 32 against bound 48 at t=1  (rank modulo 2^61-1; whole-number entries, so this can only UNDER-count: a check, not a proof)
+k=6 r=4: no violation; closest case rank 32 against bound 64 at t=1  (rank modulo 2^61-1; whole-number entries, so this can only UNDER-count: a check, not a proof)
+== (d) the bound as a table: least r with r >= 2^(ceil(k/r)-2) (lemma D alone), against k/2 and k/log2 k ==
+k=4: r >= 2;  k/2 = 2;  k/log2 k = 2.0;  ratio r log2(k)/k = 1.000
+k=6: r >= 2;  k/2 = 3;  k/log2 k = 2.3;  ratio r log2(k)/k = 0.862
+k=8: r >= 3;  k/2 = 4;  k/log2 k = 2.7;  ratio r log2(k)/k = 1.125
+k=10: r >= 4;  k/2 = 5;  k/log2 k = 3.0;  ratio r log2(k)/k = 1.329
+k=12: r >= 4;  k/2 = 6;  k/log2 k = 3.3;  ratio r log2(k)/k = 1.195
+k=16: r >= 4;  k/2 = 8;  k/log2 k = 4.0;  ratio r log2(k)/k = 1.000
+k=24: r >= 6;  k/2 = 12;  k/log2 k = 5.2;  ratio r log2(k)/k = 1.146
+k=32: r >= 8;  k/2 = 16;  k/log2 k = 6.4;  ratio r log2(k)/k = 1.250
+k=64: r >= 13;  k/2 = 32;  k/log2 k = 10.7;  ratio r log2(k)/k = 1.219
+k=256: r >= 37;  k/2 = 128;  k/log2 k = 32.0;  ratio r log2(k)/k = 1.156
+k=1024: r >= 128;  k/2 = 512;  k/log2 k = 102.4;  ratio r log2(k)/k = 1.250
+k=4096: r >= 410;  k/2 = 2048;  k/log2 k = 341.3;  ratio r log2(k)/k = 1.201
+k=65536: r >= 4682;  k/2 = 32768;  k/log2 k = 4096.0;  ratio r log2(k)/k = 1.143
+k=1048576: r >= 61681;  k/2 = 524288;  k/log2 k = 52428.8;  ratio r log2(k)/k = 1.176
+LIGHT label=z2-D exit=0 time=5s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=04:58:54 cmd=python3 -B lemmaD.py
+exit 0

@@ -1,0 +1,3 @@
+   first hit generic r=4: residual 6.12e-15, on 6 fresh boxes 7.64e-15
+generic     calls r=4: 6 starts, best rms residual 1.341e-15, starts below 1e-9: 5
+generic     calls r=3: 60 starts, best rms residual 2.372e-01, starts below 1e-9: 0

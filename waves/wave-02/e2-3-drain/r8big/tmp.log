@@ -1,0 +1,1 @@
+drain N=8 seed=3025 K=2000 cs=2 target=H: bestU=22 at gate 21; ended g=21 P=1; gates draining >=N/2: 7, ==N: 0; 1s

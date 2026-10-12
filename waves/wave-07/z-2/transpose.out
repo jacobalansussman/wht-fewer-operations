@@ -1,0 +1,15 @@
+== random programs: g gates for an m x n matrix; the reversed program, its gate count, its matrix ==
+reversed program computes the transpose in every case: True ; (gates of reversed) - (g + m - n): [(0, 316)]
+   (a negative difference means the reversed program is SHORTER: a cancellation made some gate of the original useless)
+== the 19-gate 8-point circuit reversed ==
+original: 19 gates; computes H exactly: True
+reversed: 19 gates; computes H^T = H exactly: True
+== hybrid 1: H(x,y) = i^|x| * (-i)^|x+y| * i^|y| for EVERY k (Gaussian; no need for k even) ==
+k=1: True; k=2: True; k=3: True; k=4: True; k=5: True; k=6: True; k=7: True; k=8: True; 
+== hybrid 2: V = (sum and difference on exchanged pairs)(half transform); V H' V^T diagonal; H' = N V^T diag^-1 V ==
+N=4: diagonal: True, values [-8, 4, 8]; H' = N V^T diag^-1 V: True; pair gates 2 = N - sqrt N = 2
+N=16: diagonal: True, values [-32, 16, 32]; H' = N V^T diag^-1 V: True; pair gates 12 = N - sqrt N = 12
+N=64: diagonal: True, values [-128, 64, 128]; H' = N V^T diag^-1 V: True; pair gates 56 = N - sqrt N = 56
+N=256: diagonal: True, values [-512, 256, 512]; H' = N V^T diag^-1 V: not run at this size; pair gates 240 = N - sqrt N = 240
+LIGHT label=z2-tr exit=0 time=3s waited=6s peak_rss_mb=15 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:59:00 cmd=python3 -B transpose.py
+exit 0

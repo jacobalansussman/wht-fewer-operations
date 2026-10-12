@@ -1,0 +1,21 @@
+# count (O) program, 20 operations, 8 points (h-3-orecord: windows of 3 bits, then butterflies)
+u1_g1 = x0 + x7
+u1_g2 = x1 + x6
+u1_g3 = x2 - x5
+u1_g4 = x3 - x4
+u1_g5 = u1_g1 - u1_g2
+u1_g6 = u1_g3 + u1_g4
+u1_g7 = u1_g5 - u1_g6
+u1_h = 1/2 * u1_g7
+u1_a8 = u1_h - x7
+u1_a9 = u1_h - x5
+u1_a10 = u1_a8 + x6
+u1_a11 = u1_a9 - x4
+y7 = u1_a10 + u1_g4
+y3 = u1_a9 + x3
+y5 = u1_g5 - y3
+y1 = u1_a10 + u1_g3
+y6 = u1_a11 + u1_g2
+y2 = u1_a8 + x1
+y4 = y2 + u1_g6
+y0 = u1_g1 - u1_a11

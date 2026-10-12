@@ -1,0 +1,10 @@
+# n=3 wires, coefficients up to 3, in place; way restricted to rowmass <= infinity
+# m new | up = max Phi (positive side) | PUMP max|Phi| (per move) | LAND max Phi with all p in [0,1] (per move) | ORTH max Phi, orthogonal rows (per move) | max rowmass | witnesses
+1 84 | up 0.000 | 0.000 (0.000) | 0.000 (0.000) | 0.000 (0.000) | 1.0 | pump (0,1,0)(0,1,1)(1,0,0) land (0,1,0)(0,1,1)(1,0,0)
+2 4821 | up 2.000 | -9.380 (4.690) | 2.000 (1.000) | 2.000 (1.000) | 19.0 | pump (0,3,1)(0,10,3)(1,0,0) land (0,1,-1)(0,1,1)(1,0,0) orth (0,1,-1)(0,1,1)(1,0,0)
+3 224022 | up 2.000 | -16.159 (5.386) | 2.000 (0.667) | 0.000 (0.000) | 199.0 | pump (0,3,10)(0,10,33)(1,0,0) land (0,1,1)(1,0,0)(1,1,-1)
+4 9237842 | up 41.552 | -66.341 (16.585) | 4.000 (1.000) | 3.837 (0.959) | 2179.0 | pump (1,0,3)(6,1,9)(9,3,1) land (0,1,1)(1,-1,1)(1,1,-1) orth (0,1,1)(1,1,-1)(2,-1,1)
+pool full
+pool full
+5 22533230 | up 247.507 | -314.858 (62.972) | 4.084 (0.817) | 3.007 (0.601) | 16567.0 | pump (3,19,9)(10,63,30)(30,187,89) land (1,1,2)(1,2,-2)(3,-4,-2) orth (0,1,1)(1,-2,2)(4,1,-1)  [POOL FULL: this depth incomplete]
+LIGHT label=x8-t3 exit=0 time=14s waited=0s peak_rss_mb=794 peak_footprint_mb=700 lowest_cap_mb=1500 stopped=- start=04:11:31 cmd=./rt3 3 3 5 0 32000000

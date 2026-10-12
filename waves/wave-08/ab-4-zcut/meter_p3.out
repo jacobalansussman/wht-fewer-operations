@@ -1,0 +1,25 @@
+p=3: 2772 sets read; 2748 replay over Q with this lift (12 gates), 24 do not
+cut kind coord: (n1, n2, E - B, least B over orders, largest B over orders) : number of (circuit, cut) pairs
+   n1=4 n2=4 E-B=4 Bmin=0 Bmax=0 : 3099   e.g. helpers ['00000011', '00001010', '00001100', '00001111', '01010000'] cut bit 2
+   n1=4 n2=4 E-B=4 Bmin=0 Bmax=1 : 1692   e.g. helpers ['00000011', '00001010', '00001100', '00110000', '00110011'] cut bit 1
+   n1=4 n2=4 E-B=4 Bmin=0 Bmax=2 : 906   e.g. helpers ['00000011', '00001010', '00001100', '00001111', '00110000'] cut bit 1
+   n1=4 n2=4 E-B=4 Bmin=0 Bmax=3 : 210   e.g. helpers ['00000011', '00001010', '00001100', '00001111', '01010000'] cut bit 0
+   n1=4 n2=4 E-B=4 Bmin=0 Bmax=4 : 15   e.g. helpers ['00000011', '00001010', '00001100', '00001111', '00110000'] cut bit 0
+   n1=4 n2=4 E-B=4 Bmin=1 Bmax=2 : 24   e.g. helpers ['00001010', '00001110', '00110000', '11111100', '11111110'] cut bit 1
+   n1=4 n2=5 E-B=3 Bmin=0 Bmax=1 : 6   e.g. helpers ['00001010', '00001110', '11001110', '11011110', '11111110'] cut bit 1
+   n1=5 n2=4 E-B=3 Bmin=0 Bmax=0 : 18   e.g. helpers ['00001010', '00110010', '10111010', '11111010', '11111110'] cut bit 0
+   n1=5 n2=4 E-B=3 Bmin=0 Bmax=1 : 30   e.g. helpers ['00001010', '00001011', '0011m000', '10110000', '11110100'] cut bit 0
+   n1=5 n2=4 E-B=3 Bmin=0 Bmax=2 : 1020   e.g. helpers ['00001010', '00001011', '00001100', '00110000', '11110100'] cut bit 1
+   n1=5 n2=4 E-B=3 Bmin=0 Bmax=3 : 282   e.g. helpers ['00000011', '00001010', '00001100', '11101100', '11111100'] cut bit 0
+   n1=5 n2=4 E-B=3 Bmin=1 Bmax=2 : 480   e.g. helpers ['00001010', '00001011', '00001100', '00110000', '11111011'] cut bit 1
+   n1=5 n2=4 E-B=3 Bmin=1 Bmax=3 : 402   e.g. helpers ['00000011', '00001010', '00001100', '01010000', '11110011'] cut bit 0
+   n1=5 n2=4 E-B=3 Bmin=1 Bmax=4 : 60   e.g. helpers ['00000011', '00001010', '00001100', '00110000', '00110011'] cut bit 0
+   per circuit, the three cuts as sorted (E - B, least B): count
+     ((3, 0), (3, 0), (4, 0)) : 24
+     ((3, 0), (3, 1), (4, 0)) : 6
+     ((3, 0), (4, 0), (4, 0)) : 1290
+     ((3, 0), (4, 0), (4, 1)) : 12
+     ((3, 1), (4, 0), (4, 0)) : 924
+     ((3, 1), (4, 0), (4, 1)) : 12
+     ((4, 0), (4, 0), (4, 0)) : 480
+LIGHT label=ab4-meter3 exit=0 time=75s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=04:54:55 cmd=python3 -B zmeter.py 3 z8_p3_full.out coord

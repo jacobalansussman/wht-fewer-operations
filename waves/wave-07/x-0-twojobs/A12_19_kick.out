@@ -1,0 +1,396 @@
+# tj N=8 ALLOW=7 (largest entry 2, coefficient box 8, 86 coefficient pairs) seconds=270 seed=31 start=s19.txt helpers=11
+CIRCUIT A12-from19-kick-start  N=8 gates=19  floor f(N)=19  excess=0
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = -2*x7 + 1*w7   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = -2*x5 + 1*w7   # [1 -1 -1 -1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x6 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x1 + 1*w8   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x4 + 1*w9   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x3 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w6 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w1 + -1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w2 + 1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + -1*w13   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-start  gates=19 excess=0  budget=26.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile1  N=8 gates=19  floor f(N)=19  excess=0
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 2*x6 + 1*w7   # [1 -1 -1 -1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = -2*x4 + 1*w7   # [1 -1 -1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x7 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x0 + -1*w8   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x5 + 1*w9   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x2 + 1*w9   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = -2*w6 + 1*w11   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w1 + -1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w2 + 1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + -1*w13   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile1  gates=19 excess=0  budget=26.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile2  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 2*x6 + 1*w7   # [1 -1 -1 -1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = -2*x5 + 1*w7   # [1 -1 -1 -1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x2 + 1*w7   # [1 -1 1 -1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = -2*x7 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x0 + -1*w8   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x3 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*x3 + 1*w10   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w15 = -2*x4 + 1*w10   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w3 + 1*w11   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w4 + 1*w11   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = -2*w6 + 1*w12   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w2 + 1*w14   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w1 + -1*w14   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile2  gates=20 excess=1  budget=27.60  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=13 bringing 12.00 units (0.923 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile3  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 1*w1 + -1*w7   # [0 1 1 1 -1 -1 1 0] kind (1,1)/1 budget 1.00 vol 0.000
+w9 = -2*x7 + 1*w7   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x2 + 1*w7   # [1 -1 1 -1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x6 + 1*w9   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x1 + 1*w9   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x3 + 1*w10   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = -2*x4 + 1*w10   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w3 + 1*w11   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w4 + 1*w11   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w6 + 1*w12   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w2 + 1*w13   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w1 + -1*w13   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w5 + -1*w14   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile3  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile4  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x2 + 1*x5   # [0 0 1 0 0 1 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w5 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w5   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w2 + 1*w6   # [0 1 1 1 -1 -1 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 1*w1 + -1*w7   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w9 = -2*x7 + 1*w8   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x5 + 1*w8   # [1 -1 -1 -1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w11 = 2*x6 + 1*w9   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x1 + 1*w9   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = -2*x4 + 1*w10   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*x3 + 1*w10   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w3 + 1*w11   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w5 + 1*w11   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w6 + 1*w12   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w13   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w4 + 1*w13   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w2 + 1*w13   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile4  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=1  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 11.00 units (0.917 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile5  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 2*x0 + -1*w7   # [1 1 1 1 -1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = 2*x3 + 1*w7   # [1 -1 -1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x1 + 1*w8   # [1 -1 1 1 -1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = -2*x6 + 1*w8   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*w1 + -1*w9   # [1 1 1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x2 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = -2*x5 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.585
+w15 = -2*w4 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = -2*w3 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 0.737
+w17 = -2*w6 + 1*w11   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 0.678
+w18 = -2*x2 + 1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w19 = 2*w2 + 1*w13   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w5 + -1*w14   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile5  gates=20 excess=1  budget=27.60  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=13 bringing 12.00 units (0.923 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.585
+CIRCUIT A12-from19-kick-profile6  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = -1*x4 + 1*w3   # [0 0 1 0 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*x3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 2*x6 + 1*w7   # [1 -1 -1 -1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = 2*x3 + 1*w7   # [1 -1 -1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x7 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x0 + -1*w8   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x2 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = -2*x5 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 1*w6 + 1*w10   # [1 -1 0 0 0 0 1 -1] kind (1,1)/1 budget 1.00 vol 0.000
+w15 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.322
+w16 = -2*w6 + 1*w11   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 0.678
+w17 = 2*w2 + 1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + -1*w13   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w14 + -1*w15   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile6  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.322
+CIRCUIT A12-from19-kick-profile7  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = -1*x6 + 1*w1   # [1 0 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = -1*x1 + 1*w5   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w7 = 1*w3 + -1*w4   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 1*w6 + -1*w7   # [1 -1 -1 1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w9 = 2*x6 + 1*w8   # [1 -1 -1 1 -1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.585
+w10 = -2*x3 + 1*w8   # [1 -1 -1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x0 + -1*w9   # [1 1 1 -1 1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x7 + 1*w9   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 0.415
+w13 = -2*x5 + 1*w10   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*x2 + 1*w10   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = -2*w3 + 1*w11   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w4 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w7 + 1*w12   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w13   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w2 + 1*w13   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w6 + -1*w14   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile7  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.585
+CIRCUIT A12-from19-kick-profile8  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = -1*x2 + 1*w1   # [1 0 -1 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*x2 + 1*w2   # [0 1 1 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w8 = 1*w3 + -1*w6   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w9 = 1*w7 + -1*w8   # [1 -1 -1 1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w10 = 2*x6 + 1*w9   # [1 -1 -1 1 -1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x4 + 1*w9   # [1 -1 -1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x0 + -1*w10   # [1 1 1 -1 1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = -2*x7 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w5 + 1*w11   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = -2*x5 + 1*w11   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w4 + -1*w11   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = -2*w3 + 1*w12   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w6 + 1*w12   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w8 + 1*w13   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w7 + -1*w15   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile8  gates=20 excess=1  budget=26.43  volume=12.00 (needed 12)  joins=9 of which carry volume=1  merges=7 of which carry volume=0  coefficient-2 gates=11 bringing 11.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile9  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + -1*w4   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = -2*x3 + 1*w7   # [1 -1 -1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = 2*x0 + -1*w7   # [1 1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x5 + 1*w8   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x2 + 1*w8   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x6 + 1*w9   # [1 1 1 -1 1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x5 + 1*w9   # [1 1 1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 0.585
+w14 = -2*x1 + 1*w9   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.415
+w15 = 2*w1 + -1*w10   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w2 + 1*w10   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w5 + -1*w11   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w18 = -2*w3 + 1*w12   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w4 + 1*w12   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = -2*w6 + 1*w14   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile9  gates=20 excess=1  budget=27.60  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=13 bringing 12.00 units (0.923 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.415
+CIRCUIT A12-from19-kick-profile10  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x0 + -1*x5   # [1 0 0 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w1 + -1*w3   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w4 + -1*w5   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 1*w6 + -1*w7   # [1 -1 -1 1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w9 = -2*x3 + 1*w8   # [1 -1 -1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x6 + 1*w8   # [1 -1 -1 1 -1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = -2*x5 + 1*w9   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w12 = 2*x2 + 1*w9   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.585
+w13 = 2*x0 + -1*w10   # [1 1 1 -1 1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 0.415
+w14 = -2*x7 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w1 + -1*w11   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w3 + 1*w11   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w6 + -1*w12   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = -2*w4 + 1*w13   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + 1*w13   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w7 + 1*w14   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile10  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=1  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 11.00 units (0.917 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.585
+CIRCUIT A12-from19-kick-profile11  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + -1*w4   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = -2*x4 + 1*w6   # [0 0 1 -1 -1 -1 0 0] kind (1,2)/1 budget 1.58 vol 1.000
+w8 = 2*x7 + 1*w6   # [0 0 1 -1 1 -1 0 2] kind (1,2)/1 budget 1.58 JOIN MERGE vol 1.000
+w9 = 1*w5 + -1*w7   # [1 -1 -1 1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w10 = 1*w5 + -1*w8   # [1 -1 -1 1 -1 1 -1 -1] kind (1,1)/1 budget 1.00 vol 0.000
+w11 = 2*x2 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x5 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x1 + 1*w10   # [1 1 -1 1 -1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*x6 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w2 + 1*w11   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w1 + -1*w11   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w5 + -1*w12   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = -2*w4 + 1*w13   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w3 + 1*w13   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w6 + 1*w14   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile11  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=1  merges=7 of which carry volume=1  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+# 200 states, 55 s, current 20 gates, best 19, distinct states seen 172
+CIRCUIT A12-from19-kick-profile12  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w4 + 1*w5   # [1 -1 0 1 -1 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w3 + 1*w6   # [1 -1 1 1 -1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 2*x1 + 1*w7   # [1 1 1 1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = -2*x2 + 1*w7   # [1 -1 -1 1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x0 + -1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = -2*x7 + 1*w8   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x3 + 1*w9   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x4 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = -2*x6 + 1*w10   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.322
+w17 = 2*w1 + -1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w2 + 1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 0.678
+w19 = 2*w5 + -1*w13   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 0.585
+w20 = 2*x1 + 1*w14   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 0.415
+SUMMARY A12-from19-kick-profile12  gates=20 excess=1  budget=27.60  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=13 bringing 12.00 units (0.923 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=13  most units from one gate=1.322
+# 400 states, 103 s, current 20 gates, best 19, distinct states seen 357
+CIRCUIT A12-from19-kick-profile13  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + 1*w2   # [1 1 0 0 0 0 1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + -1*w4   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 2*x0 + -1*w6   # [2 0 -1 1 -1 1 0 0] kind (1,2)/1 budget 1.58 JOIN MERGE vol 1.000
+w8 = -1*w5 + 1*w7   # [1 -1 -1 1 -1 1 -1 -1] kind (1,1)/1 budget 1.00 vol 0.000
+w9 = 2*x1 + 1*w8   # [1 1 -1 1 -1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x5 + 1*w8   # [1 -1 -1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x6 + 1*w8   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*w4 + 1*w9   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*w3 + 1*w9   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*x0 + -1*w10   # [1 1 1 -1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w15 = 2*w6 + 1*w11   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = -2*x4 + 1*w14   # [1 1 1 -1 -1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*x3 + 1*w14   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w16   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = -2*w2 + 1*w16   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w5 + -1*w17   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile13  gates=20 excess=1  budget=27.60  volume=12.00 (needed 12)  joins=7 of which carry volume=1  merges=7 of which carry volume=1  coefficient-2 gates=13 bringing 12.00 units (0.923 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+# 600 states, 151 s, current 19 gates, best 19, distinct states seen 534
+# 800 states, 196 s, current 20 gates, best 19, distinct states seen 712
+CIRCUIT A12-from19-kick-profile14  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + -1*w4   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 2*x2 + 1*w5   # [1 -1 2 0 0 0 -1 1] kind (1,2)/1 budget 1.58 JOIN MERGE vol 1.000
+w8 = 2*x7 + 1*w6   # [0 0 1 -1 1 -1 0 2] kind (1,2)/1 budget 1.58 JOIN vol 1.000
+w9 = -1*w6 + 1*w7   # [1 -1 1 1 -1 1 -1 1] kind (1,1)/1 budget 1.00 vol 0.000
+w10 = 1*w5 + -1*w8   # [1 -1 -1 1 -1 1 -1 -1] kind (1,1)/1 budget 1.00 vol 0.000
+w11 = 2*x4 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x3 + 1*w9   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x1 + 1*w10   # [1 1 -1 1 -1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*x6 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w2 + 1*w11   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w1 + -1*w11   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w5 + -1*w12   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = -2*w4 + 1*w13   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w3 + 1*w13   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w6 + 1*w14   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile14  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=2  merges=7 of which carry volume=1  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT A12-from19-kick-profile15  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + -1*w4   # [0 0 1 -1 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 2*x7 + 1*w6   # [0 0 1 -1 1 -1 0 2] kind (1,2)/1 budget 1.58 JOIN vol 1.585
+w9 = 2*x0 + -1*w7   # [1 1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x4 + 1*w7   # [1 -1 -1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = -2*x6 + 1*w9   # [1 1 1 -1 1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = -2*x1 + 1*w9   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = 2*x2 + 1*w10   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = -2*x5 + 1*w10   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = -2*w3 + 1*w11   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w4 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 0.737
+w17 = -2*w6 + 1*w12   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 0.000
+w18 = 2*w2 + 1*w13   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w1 + -1*w13   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 0.678
+w20 = 2*w5 + -1*w14   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-profile15  gates=20 excess=1  budget=27.60  volume=12.00 (needed 12)  joins=8 of which carry volume=1  merges=7 of which carry volume=0  coefficient-2 gates=13 bringing 12.00 units (0.923 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.585
+# 1000 states, 244 s, current 20 gates, best 19, distinct states seen 870
+# END states=1101 distinct=945 two-swaps=466 rounds without a move=1 best=19 gates, current=20, 270 s
+# kicks=67
+PROFILE seen 72 times: gates=19 excess=0 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 104 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=13 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 46 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 16 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=1 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 60 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=13 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.585
+PROFILE seen 8 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.322
+PROFILE seen 17 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.585
+PROFILE seen 8 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=1 coefficient-2-gates=11 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 6 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=13 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.415
+PROFILE seen 11 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=1 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.585
+PROFILE seen 4 times: gates=20 excess=1 volume=12.00 merges-with-volume=1 joins-with-volume=1 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 8 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=0 coefficient-2-gates=13 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.322
+PROFILE seen 3 times: gates=20 excess=1 volume=12.00 merges-with-volume=1 joins-with-volume=1 coefficient-2-gates=13 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 1 times: gates=20 excess=1 volume=12.00 merges-with-volume=1 joins-with-volume=2 coefficient-2-gates=12 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.000
+PROFILE seen 3 times: gates=20 excess=1 volume=12.00 merges-with-volume=0 joins-with-volume=1 coefficient-2-gates=13 gates-with-coefficient-above-2=0 quotient-gates=0 largest-coefficient=2 most-units-from-one-gate=1.585
+CIRCUIT A12-from19-kick-last  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 2*x0 + -1*w5   # [1 1 0 0 0 0 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w8 = -1*w6 + 1*w7   # [1 1 -1 -1 1 1 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w9 = -2*x3 + 1*w6   # [0 0 1 -1 -1 -1 0 0] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x1 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = -2*x6 + 1*w8   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 1*w5 + 1*w9   # [1 -1 1 -1 -1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w13 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w6 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = -2*x2 + 1*w12   # [1 -1 -1 -1 -1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*x5 + 1*w12   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w16   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w2 + 1*w16   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = 2*w5 + -1*w17   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY A12-from19-kick-last  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+LIGHT label=x0-r3 exit=0 time=271s waited=62s peak_rss_mb=81 peak_footprint_mb=81 lowest_cap_mb=1500 stopped=- start=03:32:47 cmd=./tj8 7 270 31 s19.txt 0 A12-from19-kick 40 3 35

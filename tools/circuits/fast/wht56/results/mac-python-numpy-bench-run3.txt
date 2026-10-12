@@ -1,0 +1,18 @@
+machine: Darwin arm64; Python 3.9.6
+nanoseconds per point for one transform; best of several runs
+
+PURE PYTHON (lists of floats; this is a reference, not a fast program)
+points         textbook    wht (exact)         family
+2^9               446.8          613.1         1326.0
+2^12              672.4          574.8         1883.1
+
+NUMPY 2.0.2 (float64, in place, the copy of the input not timed)
+points    textbook2/exact  textbook8/exact           k8/raw         k8/exact  textbook8/ortho         k8/ortho
+2^9                 60.38            71.78            72.35            73.32            72.35            73.00
+2^12                21.54            15.55            15.53            15.59            15.70            15.65
+2^15                16.31             7.67             7.50             7.55             7.76             7.55
+2^18                17.81             7.73             6.94             7.12             7.84             7.24
+2^21                20.24            11.03            10.24            10.77            11.12            10.66
+
+C: sh <folder>/wht56/c/build_and_bench.sh [output directory [runs [k ...]]]
+exit 0

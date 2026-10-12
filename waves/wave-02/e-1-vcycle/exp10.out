@@ -1,0 +1,4 @@
+N = 4 : points with Q0 = 1: 1 | minus part of the free third: dim 0 | plus part: dim 2 | predicted 0 2 | total 2 = (N+2)/3 = 2
+N = 16 : points with Q0 = 1: 6 | minus part of the free third: dim 1 | plus part: dim 5 | predicted 1 5 | total 6 = (N+2)/3 = 6
+N = 64 : points with Q0 = 1: 28 | minus part of the free third: dim 7 | plus part: dim 15 | predicted 7 15 | total 22 = (N+2)/3 = 22
+LIGHT label=e1-exp10 exit=0 time=1s waited=40s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:22:29 cmd=python3 -B exp10.py

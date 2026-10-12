@@ -1,0 +1,47 @@
+== TABLE B.  Fat ports (h, r): ceiling on kappa from knows.py / mis.py, and what that ceiling is worth
+   three-stage word, m = 3h, per data array: blocks h-r, h-r, h-r, 2r ; totals: 1.5/kappa blocks of rank h per array; no helpers
+   merged: blocks h-r, h, h ; in place (a word nobody has): m = h, one block h-r per array, 1/kappa totals of rank h-1 and of rank 1
+   (h,r) = (5,2): kappa <= 2.500 (exact); gain needs kappa > 3.75 : fails ; saving three-stage 0.0000 (free shears: 0.0940) ; merged 0.0000 (free: 0.1174) ; in place 0.0000
+   (h,r) = (6,2): kappa <= 3.750 (between 3.48 and 3.75); gain needs kappa > 4.50 : fails ; saving three-stage 0.0000 (free shears: 0.0783) ; merged 0.0000 (free: 0.0980) ; in place 0.1615
+   (h,r) = (7,3): kappa <= 2.647 (at most); gain needs kappa > 3.50 : fails ; saving three-stage 0.0000 (free shears: 0.1011) ; merged 0.0000 (free: 0.1257) ; in place 0.1025
+   (h,r) = (8,3): kappa <= 4.364 (at most); gain needs kappa > 4.00 : PASSES ; saving three-stage 0.0071 (free shears: 0.0880) ; merged 0.0088 (free: 0.1101) ; in place 0.3376
+   (h,r) = (9,3): kappa <= 4.636 (at most); gain needs kappa > 4.50 : PASSES ; saving three-stage 0.0022 (free shears: 0.0783) ; merged 0.0027 (free: 0.0980) ; in place 0.3050
+   (h,r) = (9,4): kappa <= 2.550 (at most); gain needs kappa > 3.38 : fails ; saving three-stage 0.0000 (free shears: 0.1051) ; merged 0.0000 (free: 0.1303) ; in place 0.1075
+   (h,r) = (8,2): kappa <= 8.000 (at most); gain needs kappa > 6.00 : PASSES ; saving three-stage 0.0146 (free shears: 0.0596) ; merged 0.0180 (free: 0.0739) ; in place 0.4217
+   (h,r) = (9,2): kappa <= 8.500 (at most); gain needs kappa > 6.75 : PASSES ; saving three-stage 0.0108 (free shears: 0.0534) ; merged 0.0132 (free: 0.0658) ; in place 0.3962
+   (h,r) = (9,1): kappa <= 16.000 (at most; the published E8 scatter has 15); gain needs kappa > 13.50 : PASSES ; saving three-stage 0.0044 (free shears: 0.0285) ; merged 0.0051 (free: 0.0333) ; in place 0.3555
+== the club ceiling 2^(ceil((h+1)/2) - r) (rough; exact values above) against the threshold 3h/(2r), r = h/3
+   h =  9, r =  3 : ceiling about      4.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0000 ; with free shears 0.0783 ; merged at the ceiling 0.0000
+   h = 12, r =  4 : ceiling about      8.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0337 ; with free shears 0.0783 ; merged at the ceiling 0.0417
+   h = 15, r =  5 : ceiling about      8.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0337 ; with free shears 0.0783 ; merged at the ceiling 0.0417
+   h = 18, r =  6 : ceiling about     16.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0558 ; with free shears 0.0783 ; merged at the ceiling 0.0695
+   h = 24, r =  8 : ceiling about     32.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0670 ; with free shears 0.0783 ; merged at the ceiling 0.0837
+   h = 30, r = 10 : ceiling about     64.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0727 ; with free shears 0.0783 ; merged at the ceiling 0.0908
+   h = 45, r = 15 : ceiling about    256.0 ; threshold 4.50 ; three-stage saving AT the ceiling 0.0769 ; with free shears 0.0783 ; merged at the ceiling 0.0962
+== TABLE C1.  One big block and one block of rank 1 per array: blocks (m-1-d, 1), d = moves saved per array
+   m =   4 : d=0.10: 0.0423 (by moves alone 0.0183) ; d=0.25: 0.0986 (by moves alone 0.0466) ; d=0.50: 0.1786 (by moves alone 0.0963) ; d=1.00: 0.3058 (by moves alone 0.2075) ; d=2.00: 0.5000 (by moves alone 0.5000) ; saving 0.1 needs d = 0.254 moves per array = 6.35 % of the moves
+   m =   5 : d=0.10: 0.0380 (by moves alone 0.0126) ; d=0.25: 0.0886 (by moves alone 0.0319) ; d=0.50: 0.1602 (by moves alone 0.0655) ; d=1.00: 0.2728 (by moves alone 0.1386) ; d=2.00: 0.4361 (by moves alone 0.3174) ; saving 0.1 needs d = 0.287 moves per array = 5.74 % of the moves
+   m =   9 : d=0.10: 0.0303 (by moves alone 0.0051) ; d=0.25: 0.0706 (by moves alone 0.0128) ; d=0.50: 0.1276 (by moves alone 0.0260) ; d=1.00: 0.2164 (by moves alone 0.0536) ; d=2.00: 0.3403 (by moves alone 0.1144) ; saving 0.1 needs d = 0.373 moves per array = 4.14 % of the moves
+   m =  45 : d=0.10: 0.0198 (by moves alone 0.0006) ; d=0.25: 0.0463 (by moves alone 0.0015) ; d=0.50: 0.0839 (by moves alone 0.0029) ; d=1.00: 0.1425 (by moves alone 0.0059) ; d=2.00: 0.2240 (by moves alone 0.0119) ; saving 0.1 needs d = 0.623 moves per array = 1.38 % of the moves
+   m = 110 : d=0.10: 0.0167 (by moves alone 0.0002) ; d=0.25: 0.0390 (by moves alone 0.0005) ; d=0.50: 0.0708 (by moves alone 0.0010) ; d=1.00: 0.1204 (by moves alone 0.0019) ; d=2.00: 0.1896 (by moves alone 0.0039) ; saving 0.1 needs d = 0.776 moves per array = 0.71 % of the moves
+== TABLE C2.  Tiny shapes scored by blocks.  'cut into single moves' = the score every search used; 'best grouping' = fewest/largest blocks
+   allowed by (full game) the floor theorem sum(1 - 2^-rank) >= W (1 - 2^-m), or (sub-game) at least 2W blocks [this report]
+   m = 3,  3 arrays in  8 moves (2.667 per array): cut into single moves 0.1072 ; best grouping, full game 0.2905 (2, 2, 2, 2) ; sub-game 0.1547 (2, 2, 1, 1, 1, 1)
+   m = 4,  3 arrays in 10 moves (3.333 per array): cut into single moves 0.1315 ; best grouping, full game 0.4300 (3, 3, 3, 1) ; sub-game 0.2392 (3, 3, 1, 1, 1, 1)
+   m = 4,  3 arrays in 11 moves (3.667 per array): cut into single moves 0.0628 ; best grouping, full game 0.2388 (3, 3, 3, 2) ; sub-game 0.1288 (3, 3, 2, 1, 1, 1)
+   m = 4,  4 arrays in 15 moves (3.750 per array): cut into single moves 0.0466 ; best grouping, full game 0.2243 (3, 3, 3, 3, 3) ; sub-game 0.0999 (3, 3, 3, 2, 1, 1, 1, 1)
+   m = 5,  2 arrays in  9 moves (4.500 per array): cut into single moves 0.0655 ; best grouping, full game 0.2606 (4, 4, 1) ; sub-game 0.1617 (4, 3, 1, 1)
+   m = 5,  4 arrays in 17 moves (4.250 per array): cut into single moves 0.1010 ; best grouping, full game 0.4835 (4, 4, 4, 4, 1) ; sub-game 0.2388 (4, 4, 4, 1, 1, 1, 1, 1)
+   m = 5,  8 arrays in 31 moves (3.875 per array): cut into single moves 0.1584 ; best grouping, full game 0.7241 (4, 4, 4, 4, 4, 4, 4, 2, 1) ; sub-game 0.3232 (4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+   m = 5,  8 arrays in 34 moves (4.250 per array): cut into single moves 0.1010 ; best grouping, full game 0.5956 (4, 4, 4, 4, 4, 4, 4, 4, 2) ; sub-game 0.2388 (4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+   m = 6, 16 arrays in 63 moves (3.938 per array): cut into single moves 0.2351 ; best grouping, full game 0.0000 None ; sub-game 0.0000 None
+== TABLE C3.  The character floor of the sub-game (lp.py, lp_sym.py): every direction once for 2^(m-2) arrays; saving if it existed
+   m =   4 : 3.7500 moves per array against 4 ; saving 1 - ln(3.7500)/ln(4) = 0.0466
+   m =   5 : 3.8750 moves per array against 5 ; saving 1 - ln(3.8750)/ln(5) = 0.1584
+   m =   6 : 3.9375 moves per array against 6 ; saving 1 - ln(3.9375)/ln(6) = 0.2351
+   m =   7 : 3.9688 moves per array against 7 ; saving 1 - ln(3.9688)/ln(7) = 0.2916
+   m =   8 : 3.9844 moves per array against 8 ; saving 1 - ln(3.9844)/ln(8) = 0.3352
+   m =   9 : 3.9922 moves per array against 9 ; saving 1 - ln(3.9922)/ln(9) = 0.3700
+   m =  16 : 3.9999 moves per array against 16 ; saving 1 - ln(3.9999)/ln(16) = 0.5000
+   m =  45 : 4.0000 moves per array against 45 ; saving 1 - ln(4.0000)/ln(45) = 0.6358
+   m = 110 : 4.0000 moves per array against 110 ; saving 1 - ln(4.0000)/ln(110) = 0.7051

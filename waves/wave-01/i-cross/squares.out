@@ -1,0 +1,17 @@
+antisymmetric square (rows/cols = pairs [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]):
+   [-2, 0, -2, 2, 0, -2]
+   [0, -2, -2, -2, -2, 0]
+   [-2, -2, 0, 0, 2, 2]
+   [2, -2, 0, 0, 2, -2]
+   [0, -2, 2, 2, -2, 0]
+   [-2, 0, 2, -2, 0, -2]
+non-zeros per row: [4, 4, 4, 4, 4, 4]  A2*A2 = 16 I: True
+symmetric square non-zeros per row: [10, 10, 10, 10, 6, 6, 6, 6, 6, 6]  S2*S2 = 16 I: True
+antisymmetric square: 12 gates, all 6 rows produced: True
+symmetric square: 26 gates, all 10 rows produced: False
+16 points by this route: split 12 + middle (sym) + middle (antisym) + merge 12
+LIGHT label=ic-squares exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:01:43 cmd=python3 -B squares.py
+antisymmetric square: 12 gates, all 6 rows produced: True
+symmetric square: 26 gates, all 10 rows produced: True
+16 points by this route: split 12 + middle (sym) + middle (antisym) + merge 12
+LIGHT label=ic-squares exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:01:56 cmd=python3 -B squares.py

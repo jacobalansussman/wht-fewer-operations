@@ -1,0 +1,1 @@
+LIGHT label=g6-emin8 exit=0 time=5s waited=0s peak_rss_mb=44 peak_footprint_mb=42 lowest_cap_mb=1500 stopped=- start=23:09:42 cmd=python3 -B emin8.py

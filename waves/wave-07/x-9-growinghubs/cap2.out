@@ -1,0 +1,18 @@
+N=4 modulo 5: most rows one gate away with a witness of support <= s
+   s=1: sign wires 4   weighted wires 1   (e.g. weighted [1, 1, 1, 2])
+   s=2: sign wires 4   weighted wires 4   (e.g. weighted [1, 1, 1, 2])
+N=4 modulo 7: most rows one gate away with a witness of support <= s
+   s=1: sign wires 4   weighted wires 1   (e.g. weighted [1, 1, 1, 2])
+   s=2: sign wires 4   weighted wires 4   (e.g. weighted [1, 1, 1, 2])
+N=8 modulo 3: most rows one gate away with a witness of support <= s
+   s=1: sign wires 1   weighted wires 0   (e.g. weighted None)
+   s=2: sign wires 4   weighted wires 0   (e.g. weighted None)
+   s=3: sign wires 8   weighted wires 0   (e.g. weighted None)
+   s=4: sign wires 8   weighted wires 0   (e.g. weighted None)
+N=8 modulo 5: most rows one gate away with a witness of support <= s
+   s=1: sign wires 1   weighted wires 1   (e.g. weighted [1, 1, 1, 1, 1, 1, 1, 2])
+   s=2: sign wires 4   weighted wires 1   (e.g. weighted [0, 1, 1, 1, 1, 1, 1, 2])
+   s=3: sign wires 8   weighted wires 4   (e.g. weighted [1, 1, 1, 1, 1, 1, 2, -1])
+   s=4: sign wires 8   weighted wires 8   (e.g. weighted [1, 1, 1, 1, 1, 1, 1, 2])
+LIGHT label=x9c2 exit=0 time=19s waited=0s peak_rss_mb=8 peak_footprint_mb=4 lowest_cap_mb=1500 stopped=- start=04:10:14 cmd=python3 -B cap2.py
+exit 0

@@ -1,0 +1,16 @@
+vectors with entries in -2..2, up to sign: 312; with c H c^T = +-1: 28, +-2: 24, +-4: 18
+solutions A (wires up to sign and order): 7 ; diagonal sign patterns: [(-4, -2, 1, 2), (-4, -1, 2, 2), (-2, -2, 1, 4), (-2, -1, 2, 4)]
+in-place cost (moves +-1) of these A: histogram [(4, 7)]
+subset sums Z: cost 4 ; is a solution up to the signs of its columns: True
+classes of solutions when the inputs may also be relabelled and negated: 2 ; the class of Z among them: True
+  class representative ((0, 0, 0, 1), (0, 0, 1, -1), (0, 1, -1, 1), (1, -1, 0, 1))  diagonals [(-4, -2, 1, 2), (-2, -1, 2, 4)]
+  class representative ((0, 0, 0, 1), (0, 0, 1, -1), (0, 1, 0, -1), (1, -1, -1, 1))  diagonals [(-4, -1, 2, 2), (-2, -2, 1, 4)]
+  cost 4, 9 non-zero entries, D = (-2, -1, 2, 4), A = ((1, -1, -1, 0), (1, -1, 0, 0), (1, 0, 0, 0), (1, 0, 1, -1))
+  cost 4, 9 non-zero entries, D = (-4, -2, 1, 2), A = ((1, -1, -1, 0), (1, 0, -1, 0), (1, 0, 0, 0), (1, 1, 0, -1))
+  cost 4, 9 non-zero entries, D = (-2, -1, 2, 4), A = ((1, -1, -1, 0), (1, 0, -1, 0), (1, 0, 0, 0), (1, 1, 0, -1))
+  cost 4, 9 non-zero entries, D = (-4, -1, 2, 2), A = ((1, -1, -1, 1), (1, -1, 0, 0), (1, 0, -1, 0), (1, 0, 0, 0))
+  cost 4, 9 non-zero entries, D = (-2, -2, 1, 4), A = ((1, -1, -1, 1), (1, -1, 0, 0), (1, 0, -1, 0), (1, 0, 0, 0))
+  cost 4, 9 non-zero entries, D = (-4, -2, 1, 2), A = ((1, -1, 0, 0), (1, -1, 1, 0), (1, 0, -1, 1), (1, 0, 0, 0))
+  cost 4, 9 non-zero entries, D = (-2, -1, 2, 4), A = ((1, -1, 0, 1), (1, 0, -1, 0), (1, 0, 0, 0), (1, 1, -1, 0))
+fewest non-zero entries of A^-1 over all solutions: 9 (3^k = 9)
+LIGHT label=x8-adapted4 exit=0 time=4s waited=0s peak_rss_mb=124 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:17:15 cmd=python3 -B adapted4.py

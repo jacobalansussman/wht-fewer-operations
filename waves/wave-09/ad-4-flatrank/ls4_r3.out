@@ -1,0 +1,3 @@
+K=4 subspaces 67 flats 1072 (signed)
+ls K=4 r=3 flats=1072 seed=1: restarts 22808, slot optimisations 238901, candidates 0, least residual |.|^2 seen 4.000000 (g has |g|^2 = 16)
+LIGHT label=ad4-ls4 exit=0 time=5s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=06:30:16 cmd=./fr 4 ls 3 5 1

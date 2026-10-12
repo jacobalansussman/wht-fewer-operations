@@ -1,0 +1,1 @@
+LIGHT label=d-6-det48 exit=124 time=242s waited=0s peak_rss_mb=615 peak_footprint_mb=601 lowest_cap_mb=1500 stopped=time>240s start=21:35:30 cmd=/usr/bin/python3 -B det5.py 48 2

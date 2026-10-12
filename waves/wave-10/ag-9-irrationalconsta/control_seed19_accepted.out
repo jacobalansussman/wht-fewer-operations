@@ -1,0 +1,22 @@
+p=17 N=8 W=19 pool=0 seed=1 T0=0.5: least number of underivable wires 0 after 0 moves
+CIRCUIT 19 gates over GF(17) (wire : entries : made from wires a, b ; inputs are 0..7)
+w 16 : 1 0 0 0 0 0 0 1 : 0 7
+w 17 : 0 1 0 0 0 0 1 0 : 1 6
+w 18 : 0 0 1 0 0 16 0 0 : 2 5
+w 19 : 0 0 0 1 16 0 0 0 : 3 4
+w 20 : 1 16 0 0 0 0 16 1 : 16 17
+w 21 : 0 0 1 1 16 16 0 0 : 18 19
+w 22 : 1 16 16 16 1 1 16 1 : 20 21
+w 23 : 1 16 16 16 1 1 16 16 : 7 22
+w 24 : 1 16 16 16 1 16 16 1 : 5 22
+w 25 : 1 16 16 16 1 1 1 16 : 6 23
+w 26 : 1 16 16 16 16 16 16 1 : 4 24
+w 8 : 1 1 1 1 1 1 1 1 : 16 26
+w 9 : 1 16 1 16 1 16 1 16 : 18 25
+w 10 : 1 1 16 16 1 1 16 16 : 1 23
+w 11 : 1 16 16 1 1 16 16 1 : 3 24
+w 12 : 1 1 1 1 16 16 16 16 : 10 21
+w 13 : 1 16 1 16 16 1 16 1 : 11 20
+w 14 : 1 1 16 16 16 16 1 1 : 17 26
+w 15 : 1 16 16 1 16 1 1 16 : 19 25
+LIGHT label=ag9-c19a exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:47:58 cmd=./fpgame 17 8 19 1000 1 0.5 0 seed8_19.txt

@@ -1,0 +1,12 @@
+inplace p=5 wires=5 fd=4 bd=3 garbage=1 points=157
+forward depth 0 states 1
+forward depth 1 new states 52 (total 53)
+forward depth 2 new states 1596 (total 1649)
+forward depth 3 new states 33720 (total 35369)
+forward depth 4 new states 514132 (total 549501)
+backward depth 0 states 157
+backward depth 1 new states 8344 (total 8501)
+backward depth 2 new states 246300 (total 254801)
+backward depth 3 new states 4598000 (total 4852801)
+RESULT p=5 wires=5 garbage=1: NO program with <= 7 moves over GF(5)
+LIGHT label=g3-ip5m1g exit=0 time=2s waited=0s peak_rss_mb=606 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:45:59 cmd=./inplace 5 1 4 3 1 25 rows_had2.txt

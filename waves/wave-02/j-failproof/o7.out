@@ -1,0 +1,4 @@
+mode O  gates 7  tset pm1: circuits found 0  search nodes 7357
+distinct helper sets: 0
+LIGHT label=jf-o7 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:47:52 cmd=python3 -B min4.py O 7 pm1
+exit 0

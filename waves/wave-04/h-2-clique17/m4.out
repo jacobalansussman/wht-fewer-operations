@@ -1,0 +1,78 @@
+m = 4, W = 4, K = 15: forms with q(I)=1: 512; product forms: 56; a point lies in at most 16 of them
+nodes 1424, leaves 1
+m = 4, W = 4 (plain 16 moves), up to 15 moves; group of 48 maps
+  15 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+m = 4, W = 5, K = 19: forms with q(I)=1: 512; product forms: 56; a point lies in at most 16 of them
+nodes 4333, leaves 2
+m = 4, W = 5 (plain 20 moves), up to 19 moves; group of 48 maps
+  19 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+m = 4, W = 6, K = 23: forms with q(I)=1: 512; product forms: 56; a point lies in at most 16 of them
+nodes 11404, leaves 3
+m = 4, W = 6 (plain 24 moves), up to 23 moves; group of 48 maps
+  23 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+m = 4, W = 7, K = 27: forms with q(I)=1: 512; product forms: 56; a point lies in at most 16 of them
+nodes 26680, leaves 4
+LIGHT label=h2-m4W7 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:00:41 cmd=./cover_g 4 7 27 leaves_m4_W7.txt
+m = 4, W = 7 (plain 28 moves), up to 27 moves; group of 48 maps
+  27 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+LIGHT label=h2-m4W7p exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:00:43 cmd=not-in-this-repository/wht33/fatlabels/venv/bin/python -B post_g.py 4 7 27 leaves_m4_W7.txt
+m = 4, W = 8, K = 31: forms with q(I)=1: 512; product forms: 56; a point lies in at most 16 of them
+nodes 57216, leaves 12
+LIGHT label=h2-m4W8 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:00:44 cmd=./cover_g 4 8 31 leaves_m4_W8.txt
+m = 4, W = 8 (plain 32 moves), up to 31 moves; group of 48 maps
+  30 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  31 moves: 6 count vectors pass counting; excluded by the clique lemma 6, by the zero-form lemma 0, SURVIVE 0
+LIGHT label=h2-m4W8p exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:00:45 cmd=not-in-this-repository/wht33/fatlabels/venv/bin/python -B post_g.py 4 8 31 leaves_m4_W8.txt
+light.py: h2-m4W9 found no free slot in 90 s. Nothing was run. Do other work and retry in a few minutes.
+Traceback (most recent call last):
+  File "waves/wave-04/h-2-clique17/post_g.py", line 58, in <module>
+    for line in open(sys.argv[4]):
+FileNotFoundError: [Errno 2] No such file or directory: 'leaves_m4_W9.txt'
+nodes 211018, leaves 36
+LIGHT label=h2-m4W10 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:33 cmd=./cover_g 4 10 39 leaves_m4_W10.txt
+m = 4, W = 10 (plain 40 moves), up to 39 moves; group of 48 maps
+  38 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  39 moves: 12 count vectors pass counting; excluded by the clique lemma 12, by the zero-form lemma 0, SURVIVE 0
+nodes 373637, leaves 48
+LIGHT label=h2-m4W11 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:35 cmd=./cover_g 4 11 43 leaves_m4_W11.txt
+m = 4, W = 11 (plain 44 moves), up to 43 moves; group of 48 maps
+  42 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  43 moves: 14 count vectors pass counting; excluded by the clique lemma 14, by the zero-form lemma 0, SURVIVE 0
+nodes 633444, leaves 84
+LIGHT label=h2-m4W12 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:38 cmd=./cover_g 4 12 47 leaves_m4_W12.txt
+m = 4, W = 12 (plain 48 moves), up to 47 moves; group of 48 maps
+  45 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  46 moves: 6 count vectors pass counting; excluded by the clique lemma 6, by the zero-form lemma 0, SURVIVE 0
+  47 moves: 30 count vectors pass counting; excluded by the clique lemma 29, by the zero-form lemma 1, SURVIVE 0
+nodes 113301, leaves 24
+LIGHT label=h2-m4W9 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:46 cmd=./cover_g 4 9 35 leaves_m4_W9.txt
+m = 4, W = 9 (plain 36 moves), up to 35 moves; group of 48 maps
+  34 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  35 moves: 8 count vectors pass counting; excluded by the clique lemma 8, by the zero-form lemma 0, SURVIVE 0
+nodes 1036010, leaves 150
+LIGHT label=h2-m4W13 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:48 cmd=./cover_g 4 13 51 leaves_m4_W13.txt
+m = 4, W = 13 (plain 52 moves), up to 51 moves; group of 48 maps
+  49 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  50 moves: 8 count vectors pass counting; excluded by the clique lemma 8, by the zero-form lemma 0, SURVIVE 0
+  51 moves: 43 count vectors pass counting; excluded by the clique lemma 42, by the zero-form lemma 1, SURVIVE 0
+nodes 1641265, leaves 226
+LIGHT label=h2-m4W14 exit=0 time=2s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:51 cmd=./cover_g 4 14 55 leaves_m4_W14.txt
+m = 4, W = 14 (plain 56 moves), up to 55 moves; group of 48 maps
+  53 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  54 moves: 12 count vectors pass counting; excluded by the clique lemma 12, by the zero-form lemma 0, SURVIVE 0
+  55 moves: 63 count vectors pass counting; excluded by the clique lemma 61, by the zero-form lemma 2, SURVIVE 0
+nodes 2528410, leaves 317
+LIGHT label=h2-m4W15 exit=0 time=2s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:54 cmd=./cover_g 4 15 59 leaves_m4_W15.txt
+m = 4, W = 15 (plain 60 moves), up to 59 moves; group of 48 maps
+  57 moves: 2 count vectors pass counting; excluded by the clique lemma 2, by the zero-form lemma 0, SURVIVE 0
+  58 moves: 14 count vectors pass counting; excluded by the clique lemma 14, by the zero-form lemma 0, SURVIVE 0
+  59 moves: 79 count vectors pass counting; excluded by the clique lemma 75, by the zero-form lemma 3, SURVIVE 1
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:3  [tight selections 12, largest joined set 15]
+nodes 3802655, leaves 467
+LIGHT label=h2-m4W16 exit=0 time=3s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:57 cmd=./cover_g 4 16 63 leaves_m4_W16.txt
+m = 4, W = 16 (plain 64 moves), up to 63 moves; group of 48 maps
+  60 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  61 moves: 6 count vectors pass counting; excluded by the clique lemma 6, by the zero-form lemma 0, SURVIVE 0
+  62 moves: 30 count vectors pass counting; excluded by the clique lemma 29, by the zero-form lemma 1, SURVIVE 0
+  63 moves: 140 count vectors pass counting; excluded by the clique lemma 128, by the zero-form lemma 11, SURVIVE 1
+     SURVIVES: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:4 1001:4 1010:4 1011:5 1100:4 1101:5 1110:5 1111:3  [tight selections 12, largest joined set 16]

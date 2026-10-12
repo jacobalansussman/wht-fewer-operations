@@ -1,0 +1,30 @@
+[ran] the 16 addresses form a 4 x 4 grid: rows = cosets of U1 = [0, 7, 11, 12] , columns = cosets of U2 = [0, 3, 13, 14]
+[ran] G = 4 I + J - 2 (row-sum matrix + column-sum matrix): output(cell) = 4 x(cell) + total - 2 (its row sum) - 2 (its column sum)
+[ran] the (-4)-eigenspace (dimension 6) = all tables a(row) + b(column) with sum a = 0 = sum b
+[ran] information sets: 4048 ; T is one  <=>  its 6 cells, read as edges between 4 row-nodes and 4 column-nodes, form two trees
+      covering all 8 nodes, and the first tree does not have as many rows as columns. (checked on all 8008 subsets)
+[ran] encoder sizes: [(30, 192), (34, 2880), (39, 960), (60, 16)]
+[ran] by shape: (rows,columns) of the two trees | row degrees | column degrees -> sizes
+    (((0, 1), (4, 3)), (1, 1, 1, 3), (0, 1, 1, 4)) {39: 48}
+    (((0, 1), (4, 3)), (1, 1, 1, 3), (0, 1, 2, 3)) {34: 288}
+    (((0, 1), (4, 3)), (1, 1, 1, 3), (0, 2, 2, 2)) {30: 96}
+    (((0, 1), (4, 3)), (1, 1, 2, 2), (0, 1, 1, 4)) {34: 144}
+    (((0, 1), (4, 3)), (1, 1, 2, 2), (0, 1, 2, 3)) {39: 288, 34: 576}
+    (((0, 1), (4, 3)), (1, 1, 2, 2), (0, 2, 2, 2)) {34: 288}
+    (((1, 0), (3, 4)), (0, 1, 1, 4), (1, 1, 1, 3)) {39: 48}
+    (((1, 0), (3, 4)), (0, 1, 1, 4), (1, 1, 2, 2)) {34: 144}
+    (((1, 0), (3, 4)), (0, 1, 2, 3), (1, 1, 1, 3)) {34: 288}
+    (((1, 0), (3, 4)), (0, 1, 2, 3), (1, 1, 2, 2)) {34: 576, 39: 288}
+    (((1, 0), (3, 4)), (0, 2, 2, 2), (1, 1, 1, 3)) {30: 96}
+    (((1, 0), (3, 4)), (0, 2, 2, 2), (1, 1, 2, 2)) {34: 288}
+    (((1, 2), (3, 2)), (1, 1, 2, 2), (1, 1, 1, 3)) {39: 144}
+    (((1, 2), (3, 2)), (1, 1, 2, 2), (1, 1, 2, 2)) {34: 144}
+    (((1, 3), (3, 1)), (1, 1, 1, 3), (1, 1, 1, 3)) {60: 16}
+    (((2, 1), (2, 3)), (1, 1, 1, 3), (1, 1, 2, 2)) {39: 144}
+    (((2, 1), (2, 3)), (1, 1, 2, 2), (1, 1, 2, 2)) {34: 144}
+[ran] weights of the 6 codewords of the systematic generator (1 + column weight of the encoder), by encoder size:
+    30 {(6, 6, 6, 6, 6, 6): 192}
+    34 {(6, 6, 6, 6, 8, 8): 2880}
+    39 {(6, 6, 6, 8, 8, 11): 960}
+    60 {(11, 11, 11, 11, 11, 11): 16}
+LIGHT label=e2-forest exit=0 time=8s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=21:57:19 cmd=python3 -B forest.py

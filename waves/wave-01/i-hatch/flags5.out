@@ -1,0 +1,3 @@
+flags: 9765 ; first flags after symmetry: 1575 ; built in 0 s
+first flags done: 1575 of 1575 ; pairs tested: 15379875 ; solutions: 0 ; 34 s
+LIGHT label=i-hatch-flags5 exit=0 time=34s waited=0s peak_rss_mb=38 peak_footprint_mb=35 lowest_cap_mb=1500 stopped=- start=21:09:15 cmd=/usr/bin/python3 -I -B waves/wave-01/i-hatch/flags5.py 270

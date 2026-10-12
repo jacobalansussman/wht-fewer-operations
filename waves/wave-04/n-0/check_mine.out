@@ -1,0 +1,9 @@
+m_4.txt        N=16     operations=56      (+ 28, - 26, * 2; constants {1/2: 2})  textbook=64      outputs = 1/2 * (row j of H), j in Sylvester order: A OK, B OK
+mx_3.txt       N=8      operations=28      (+ 10, - 9, * 9; constants {1/2: 1, 2: 8})  textbook=24      outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+mx_4.txt       N=16     operations=72      (+ 28, - 26, * 18; constants {1/2: 2, 2: 16})  textbook=64      outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+mx_5.txt       N=32     operations=176     (+ 72, - 68, * 36; constants {1/2: 4, 2: 32})  textbook=160     outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+mx_6.txt       N=64     operations=384     (+ 160, - 144, * 80; constants {1/2: 16, 4: 64})  textbook=384     outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+mx_9.txt       N=512    operations=4352    (+ 1920, - 1728, * 704; constants {1/2: 192, 8: 512})  textbook=4608    outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+mx_10.txt      N=1024   operations=9728    (+ 4352, - 3968, * 1408; constants {1/2: 384, 8: 1024})  textbook=10240   outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+mx_11.txt      N=2048   operations=21504   (+ 9728, - 8960, * 2816; constants {1/2: 768, 8: 2048})  textbook=22528   outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+LIGHT label=n0-mine exit=0 time=7s waited=0s peak_rss_mb=123 peak_footprint_mb=119 lowest_cap_mb=1500 stopped=- start=01:10:13 cmd=python3 -B check.py (a temporary folder)/n0/m_4.txt (a temporary folder)/n0/mx_3.txt [path cut short]

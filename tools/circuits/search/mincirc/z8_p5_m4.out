@@ -1,0 +1,3 @@
+p=5 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=4  => gate budget 11
+visited states by remaining budget: j=4:1 j=3:187 j=2:23940 j=1:6190587
+RESULT p=5: NO circuit with 11 gates (exhaustive over GF(5))

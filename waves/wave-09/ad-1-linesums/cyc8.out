@@ -1,0 +1,48 @@
+N = 256  q = 16  D = (16 logarithms)
+valuation of D at the prime a equals  digits(b) - digits(b mod (q-1))  [or - j when q-1 divides b], b = +1 * a, on every prime: False
+valuation of D at the prime a equals  digits(b) - digits(b mod (q-1))  [or - j when q-1 divides b], b = -1 * a, on every prime: True
+sum of the valuations over all N - 1 roots of unity: 480  (N-1) j / 2 = 510.0
+component (order of the root of unity) : valuations of D at its primes
+      1 trivial     primes   1  valuations {4: 1}  spread 0
+      3 radius only primes   1  valuations {2: 1}  spread 0
+      5 radius only primes   1  valuations {2: 1}  spread 0
+     15 radius only primes   2  valuations {1: 1, 3: 1}  spread 2
+     17 angle only  primes   2  valuations {0: 2}  spread 0
+     51 MIXED       primes   4  valuations {0: 1, 1: 1, 3: 1, 4: 1}  spread 4
+     85 MIXED       primes   8  valuations {0: 2, 1: 1, 2: 2, 3: 1, 4: 2}  spread 4
+    255 MIXED       primes  16  valuations {0: 5, 1: 2, 2: 2, 3: 2, 4: 5}  spread 4
+top component: 16 primes, target valuations (4, 4, 4, 4, 2, 1, 3, 0, 4, 3, 0, 1, 2, 0, 0, 0)
+trinomials 1 + c1 t^e + c2 t^f, all e < f, c1 and c2 in every odd class modulo 8:
+   largest valuation at any prime: 8 (8 = the cap = exactly zero)  cases with valuation >= 2: 31676   all of them at primes where t^e and t^f are cube roots of unity: True
+   examples (e, f, c1, c2, prime a, valuation, cube-root case): [(1, 2, 1, 1, 85, 8, True), (1, 5, 1, 1, 85, 8, True), (1, 8, 1, 1, 85, 8, True)]
+   distinct zero patterns on the top component (trinomials that are exactly zero there are left out): 26
+   number of top primes one trinomial vanishes at, values seen: [1, 2, 8] of 16
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1)  e.g. 1 + t^1 + t^231
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0)  e.g. 1 + t^1 + t^134
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)  e.g. 1 + t^1 + t^141
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)  e.g. 1 + t^1 + t^23
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0)  e.g. 1 + t^1 + t^99
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^13
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^157
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^122
+      pattern (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^240
+      pattern (0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^59
+      pattern (0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^197
+      pattern (0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^233
+      pattern (0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^243
+      pattern (0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^115
+      pattern (0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^16
+      pattern (1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^25
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1)  e.g. 1 + t^9 + t^144
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0)  e.g. 1 + t^15 + t^186
+      pattern (0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0)  e.g. 1 + t^3 + t^48
+      pattern (0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^27 + t^105
+      pattern (0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^15 + t^84
+      pattern (0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0)  e.g. 1 + t^3 + t^210
+      pattern (0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^27 + t^177
+      pattern (1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)  e.g. 1 + t^9 + t^120
+      pattern (0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1)  e.g. 1 + t^17 + t^204
+      pattern (1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0)  e.g. 1 + t^17 + t^68
+   total valuation of D on the top component (in primes): 32   so at least 4 trinomials by count and 4 by spread
+   reachable sums with 0..4 signed patterns: [1, 52, 1353, 22433, 270509]
+   LEAST number of trinomial factors (inverses allowed, a power of 2 free) with D's valuations on the top component: more than 8

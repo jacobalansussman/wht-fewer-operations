@@ -1,0 +1,26 @@
+--- the ways to put two bricks (or their relatives) on 16 points that I could build and replay
+textbook 16 = t2^4         N= 16 gates=  64 exact_H=True  J= 64 S=  0 Q=0 E=0   duplicate joins D=J-(N-1)= 49   S-(N/2)log2N=-32   e= 17   law predicts 17: agrees
+brick x textbook4          N= 16 gates=  60 exact_H=True  J= 44 S= 16 Q=0 E=0   duplicate joins D=J-(N-1)= 29   S-(N/2)log2N=-16   e= 13   law predicts 13: agrees
+textbook4 x brick          N= 16 gates=  60 exact_H=True  J= 44 S= 16 Q=0 E=0   duplicate joins D=J-(N-1)= 29   S-(N/2)log2N=-16   e= 13   law predicts 13: agrees
+brick x brick (tensor)     N= 16 gates=  56 exact_H=True  J= 24 S= 32 Q=0 E=0   duplicate joins D=J-(N-1)=  9   S-(N/2)log2N=  0   e=  9   law predicts 9: agrees
+staircase8 x t2            N= 16 gates=  56 exact_H=True  J= 32 S= 24 Q=0 E=0   duplicate joins D=J-(N-1)= 17   S-(N/2)log2N= -8   e=  9   law predicts 9: agrees
+t2 x staircase8            N= 16 gates=  56 exact_H=True  J= 32 S= 24 Q=0 E=0   duplicate joins D=J-(N-1)= 17   S-(N/2)log2N= -8   e=  9   law predicts 9: agrees
+19 x t2                    N= 16 gates=  54 exact_H=True  J= 30 S= 24 Q=0 E=0   duplicate joins D=J-(N-1)= 15   S-(N/2)log2N= -8   e=  7   law predicts 7: agrees
+t2 x 19                    N= 16 gates=  54 exact_H=True  J= 30 S= 24 Q=0 E=0   duplicate joins D=J-(N-1)= 15   S-(N/2)log2N= -8   e=  7   law predicts 7: agrees
+staircase 16               N= 16 gates=  52 exact_H=True  J= 20 S= 32 Q=0 E=0   duplicate joins D=J-(N-1)=  5   S-(N/2)log2N=  0   e=  5
+second 52 (h-1)            N= 16 gates=  52 exact_H=True  J= 20 S= 32 Q=0 E=0   duplicate joins D=J-(N-1)=  5   S-(N/2)log2N=  0   e=  5
+--- smaller and larger
+brick                      N=  4 gates=   7 exact_H=True  J=  3 S=  4 Q=0 E=0   duplicate joins D=J-(N-1)=  0   S-(N/2)log2N=  0   e=  0
+the 19                     N=  8 gates=  19 exact_H=True  J=  7 S= 12 Q=0 E=0   duplicate joins D=J-(N-1)=  0   S-(N/2)log2N=  0   e=  0
+staircase 8                N=  8 gates=  20 exact_H=True  J=  8 S= 12 Q=0 E=0   duplicate joins D=J-(N-1)=  1   S-(N/2)log2N=  0   e=  1
+staircase 32               N= 32 gates= 128 exact_H=True  J= 48 S= 80 Q=0 E=0   duplicate joins D=J-(N-1)= 17   S-(N/2)log2N=  0   e= 17
+staircase 64               N= 64 gates= 304 exact_H=True  J=112 S=192 Q=0 E=0   duplicate joins D=J-(N-1)= 49   S-(N/2)log2N=  0   e= 49
+brick x 19                 N= 32 gates= 132 exact_H=True  J= 52 S= 80 Q=0 E=0   duplicate joins D=J-(N-1)= 21   S-(N/2)log2N=  0   e= 21   law predicts 21: agrees
+19 x brick                 N= 32 gates= 132 exact_H=True  J= 52 S= 80 Q=0 E=0   duplicate joins D=J-(N-1)= 21   S-(N/2)log2N=  0   e= 21   law predicts 21: agrees
+brick x staircase8         N= 32 gates= 136 exact_H=True  J= 56 S= 80 Q=0 E=0   duplicate joins D=J-(N-1)= 25   S-(N/2)log2N=  0   e= 25   law predicts 25: agrees
+staircase8 x brick         N= 32 gates= 136 exact_H=True  J= 56 S= 80 Q=0 E=0   duplicate joins D=J-(N-1)= 25   S-(N/2)log2N=  0   e= 25   law predicts 25: agrees
+19 x 19                    N= 64 gates= 304 exact_H=True  J=112 S=192 Q=0 E=0   duplicate joins D=J-(N-1)= 49   S-(N/2)log2N=  0   e= 49   law predicts 49: agrees
+staircase8 x staircase8    N= 64 gates= 320 exact_H=True  J=128 S=192 Q=0 E=0   duplicate joins D=J-(N-1)= 65   S-(N/2)log2N=  0   e= 65   law predicts 65: agrees
+brick x staircase16        N= 64 gates= 320 exact_H=True  J=128 S=192 Q=0 E=0   duplicate joins D=J-(N-1)= 65   S-(N/2)log2N=  0   e= 65   law predicts 65: agrees
+staircase16 x brick        N= 64 gates= 320 exact_H=True  J=128 S=192 Q=0 E=0   duplicate joins D=J-(N-1)= 65   S-(N/2)log2N=  0   e= 65   law predicts 65: agrees
+LIGHT label=u-8-ways exit=0 time=2s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:16:53 cmd=python3 -B ways.py

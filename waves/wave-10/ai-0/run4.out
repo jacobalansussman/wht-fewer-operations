@@ -1,0 +1,8 @@
+tower: 2 real colours of 2, atoms of 1 bits, 0 extra bits: y has 3 bits, k = 4, N = 16, classes 16 = 1.0000 N
+   coefficients containing a bit of the forgotten atom, formed and found to be the zero form: 1
+   inputs 15 ; gates (G) 36 = 2.2500 N ; outputs wrong on some unit input: 0 of 16
+   textbook for degree 3 on k bits (same recursion): 31 = 1.9375 N   (0 s)
+tower: 2 real colours of 2, atoms of 2 bits, 0 extra bits: y has 10 bits, k = 11, N = 2048, classes 1536 = 0.7500 N
+   coefficients containing a bit of the forgotten atom, formed and found to be the zero form: 6
+   inputs 232 ; gates (G) 5867 = 2.8647 N ; outputs wrong on some unit input: 0 of 2048
+   textbook for degree 3 on k bits (same recursion): 6064 = 2.9609 N   (0 s)

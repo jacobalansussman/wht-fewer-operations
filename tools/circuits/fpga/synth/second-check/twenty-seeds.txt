@@ -1,0 +1,5 @@
+8_textbook_c_w8    20 seeds (seeds 1 to 10 from ../results, seeds 11 to 20 from the second check): cells [349]; nextpnr MHz median 97.2 [87.6 - 103.6]; icetime MHz median 95.2 [86.4 - 101.6]
+8_ours_c_w8        20 seeds (seeds 1 to 10 from ../results, seeds 11 to 20 from the second check): cells [274]; nextpnr MHz median 72.9 [65.9 - 75.6]; icetime MHz median 70.9 [64.8 - 73.5]
+8_ar2023_c_w8      20 seeds (seeds 1 to 10 from ../results, seeds 11 to 20 from the second check): cells [244]; nextpnr MHz median 74.1 [66.9 - 77.6]; icetime MHz median 72.9 [65.2 - 75.8]
+16_textbook_c_w8   20 seeds (seeds 1 to 10 from ../results, seeds 11 to 20 from the second check): cells [969]; nextpnr MHz median 71.2 [66.3 - 77.0]; icetime MHz median 70.0 [65.3 - 75.2]
+16_ours_c_w8       20 seeds (seeds 1 to 10 from ../results, seeds 11 to 20 from the second check): cells [877]; nextpnr MHz median 54.8 [52.4 - 57.6]; icetime MHz median 53.7 [51.4 - 55.7]

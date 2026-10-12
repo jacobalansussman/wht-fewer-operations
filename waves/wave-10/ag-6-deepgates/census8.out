@@ -1,0 +1,10 @@
+N=8, 19 gates: circuits printed 26; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 182, (1, 2, 1): 312}
+N=8, 20 gates: circuits printed 125; with a deep gate 19; with a halving 0; kinds {(1, 1, 1): 956, (1, 2, 1): 1525, (1, 4, 1): 19}
+N=8, 21 gates: circuits printed 18; with a deep gate 0; with a halving 1; kinds {(1, 1, 1): 153, (1, 2, 1): 224, (1, 1, 2): 1}
+N=8, 22 gates: circuits printed 1; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 12, (1, 2, 1): 10}
+N=8, 23 gates: circuits printed 1; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 14, (1, 2, 1): 9}
+N=8, 24 gates: circuits printed 1; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 16, (1, 2, 1): 8}
+N=8, 25 gates: circuits printed 1; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 18, (1, 2, 1): 7}
+N=8, 26 gates: circuits printed 1; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 20, (1, 2, 1): 6}
+N=16, 52 gates: circuits printed 7; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 140, (1, 2, 1): 224}
+N=16, 53 gates: circuits printed 2; with a deep gate 0; with a halving 0; kinds {(1, 1, 1): 43, (1, 2, 1): 63}

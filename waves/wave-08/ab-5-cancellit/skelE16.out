@@ -1,0 +1,4 @@
+E at 16 points: fixed 25 gates; open budget 5 -> total 30 : NO (exhaustive)  (0 s)
+E at 16 points: fixed 25 gates; open budget 6 -> total 31 : NO (exhaustive)  (83 s)
+LIGHT label=ab5-E16 exit=0 time=84s waited=0s peak_rss_mb=48 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=05:17:36 cmd=python3 -B skelE.py 16
+done

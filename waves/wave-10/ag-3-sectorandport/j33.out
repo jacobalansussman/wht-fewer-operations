@@ -1,0 +1,4 @@
+h=3 f=3 port 001  + every address map (all of GL(3,2))                       : dim of the J space = 0
+h=3 f=3 port 111  + every address map (all of GL(3,2))                       : dim of the J space = 0
+h=3 f=3 port 001  + every orthogonal map (all permutations of bits)          : dim of the J space = 56 ; smallest orbit has 8 pairs, e.g. J sends configuration (7, 7, 0) to (0, 0, 0)
+h=2 f=4 port 01  + every address map (all of GL(2,2))                       : dim of the J space = 56 ; smallest orbit has 24 pairs, e.g. J sends configuration (2, 3, 1, 0) to (0, 0, 0, 0)

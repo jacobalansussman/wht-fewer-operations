@@ -1,0 +1,1 @@
+LIGHT label=h7-unitmeter-p11 exit=0 time=20s waited=0s peak_rss_mb=275 peak_footprint_mb=222 lowest_cap_mb=1500 stopped=- start=23:53:55 cmd=python3 -I -B unitmeter.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-p11-pr193.json.gz

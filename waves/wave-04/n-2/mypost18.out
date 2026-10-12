@@ -1,0 +1,5 @@
+K = 18 ; vectors before symmetry: 528
+16 moves: 1 classes; clique-excluded 1, zero-form-excluded 0, survive 0; largest joined set histogram [(16, 1)]
+17 moves: 3 classes; clique-excluded 3, zero-form-excluded 0, survive 0; largest joined set histogram [(15, 2), (16, 1)]
+18 moves: 12 classes; clique-excluded 12, zero-form-excluded 0, survive 0; largest joined set histogram [(14, 3), (15, 6), (16, 3)]
+LIGHT label=n2-p18 exit=0 time=3s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:11:47 cmd=python3 -B mypost.py 18 l18.txt

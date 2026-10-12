@@ -1,0 +1,15 @@
+wht_8_xk265_c_w8             SB_LUT4   326  SB_CARRY   216  flip-flops     0
+wht_8_textbook_c_w8          SB_LUT4   326  SB_CARRY   216  flip-flops     0
+wht_8_ours_c_w8              SB_LUT4   249  SB_CARRY   168  flip-flops     0
+wht_8_xk265_c_w9             SB_LUT4   362  SB_CARRY   240  flip-flops     0
+wht_8_textbook_c_w9          SB_LUT4   362  SB_CARRY   240  flip-flops     0
+wht_8_ours_c_w9              SB_LUT4   275  SB_CARRY   187  flip-flops     0
+wht_8_xk265_c_w12            SB_LUT4   470  SB_CARRY   312  flip-flops     0
+wht_8_textbook_c_w12         SB_LUT4   470  SB_CARRY   312  flip-flops     0
+wht_8_ours_c_w12             SB_LUT4   353  SB_CARRY   244  flip-flops     0
+wht_8_xk265_c_w16            SB_LUT4   614  SB_CARRY   408  flip-flops     0
+wht_8_textbook_c_w16         SB_LUT4   614  SB_CARRY   408  flip-flops     0
+wht_8_ours_c_w16             SB_LUT4   457  SB_CARRY   320  flip-flops     0
+wht_16_xk264_c_w9            SB_LUT4  1006  SB_CARRY   672  flip-flops     0
+wht_16_textbook_c_w9         SB_LUT4  1006  SB_CARRY   672  flip-flops     0
+wht_16_ours_c_w9             SB_LUT4   842  SB_CARRY   532  flip-flops     0

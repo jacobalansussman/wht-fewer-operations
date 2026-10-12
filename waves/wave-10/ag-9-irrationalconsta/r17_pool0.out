@@ -1,0 +1,7 @@
+p=17 N=8 W=18 pool=0 seed=1 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=17 N=8 W=18 pool=0 seed=2 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=17 N=8 W=18 pool=0 seed=3 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=17 N=8 W=18 pool=0 seed=4 T0=0.2: least number of underivable wires 3 after 3000000 moves
+p=17 N=8 W=18 pool=0 seed=5 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=17 N=8 W=18 pool=0 seed=6 T0=0.2: least number of underivable wires 3 after 3000000 moves
+p=17 N=8 W=18 pool=0 seed=7 T0=0.2: least number of underivable wires 4 after 3000000 moves

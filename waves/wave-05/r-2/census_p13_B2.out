@@ -1,0 +1,12 @@
+tau=2 (1/tau=7): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 134 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=3 (1/tau=9): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=4 (1/tau=10): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 142 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=5 (1/tau=8): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=6 (1/tau=11): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=7 (1/tau=2): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 134 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=8 (1/tau=5): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=9 (1/tau=3): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=10 (1/tau=4): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 142 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=11 (1/tau=6): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 16210800]
+tau=12 (1/tau=12): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 228 distinct helper sets, gates 7  [fixpoint tests 16210800]
+LIGHT label=r2-c13 exit=0 time=16s waited=0s peak_rss_mb=25 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:36:20 cmd=./run_census.sh 2 13 all

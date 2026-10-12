@@ -1,0 +1,16 @@
+2-vectors used as tensor factors: 16 [(-2, -2), (-2, -1), (-2, 0), (-2, 1), (-2, 2), (-2, 3), (-1, -2), (-1, 2), (-1, 3), (0, -2), (1, 3), (2, 3), (3, -2), (3, -1), (3, 1), (3, 2)]
+k=2: gates with two product inputs: product output 34560, largest kappa 1 (P1 says <= 1); entangled output 259200, largest kappa 0 (P2 says 0)
+k=3: gates with two product inputs: product output 6030, largest kappa 1 (P1 says <= 1); entangled output 533970, largest kappa 0 (P2 says 0)
+P4: number of double-kill consumers per hub, over 496 hubs with entries -2..2 and the 16 partners per axis: {1: 376, 0: 120}  (the proof says exactly one partner direction, when it lies in the list)
+subset sums, hub M = x00+x10+x01 = [1, 1, 1, 0]
+  M - e(x)f = [1, 1, 0, 0]  = j(x)e ? True | bits: e on bit 0, f on bit 1
+  M - f(x)e = [1, 0, 1, 0]  = e(x)j ? True
+  M + f(x)f = [1, 1, 1, 1]  = j(x)j ? True
+  so hub (2 gates) + 3 consumers = 5 gates against Yates's 4; kills: 1 + 1 + 2 = 4, idle 2, excess 1
+  kernel [[1,1],[1,tau]], tau=-1: number of inputs q with (output, hub, q) on one line, per output: [1, 1, 1, 1]
+  kernel [[1,1],[1,tau]], tau=2: number of inputs q with (output, hub, q) on one line, per output: [1, 1, 1, 1]
+  kernel [[1,1],[1,tau]], tau=1/3: number of inputs q with (output, hub, q) on one line, per output: [1, 1, 1, 1]
+  kernel [[1,1],[1,tau]], tau=7: number of inputs q with (output, hub, q) on one line, per output: [1, 1, 1, 1]
+  kernel [[1,1],[1,tau]], tau=0: number of inputs q with (output, hub, q) on one line, per output: [1, 1, 1, 1]
+  (tau = 0: the kernel [[1,1],[1,0]] is subset sums with the two inputs of each bit swapped; the output (1,0)(x)(1,0) is then an input, so only three consumers remain: hub 2 gates + 3 = 5 against 4)
+LIGHT label=h4-lemmas-b exit=0 time=38s waited=0s peak_rss_mb=602 peak_footprint_mb=599 lowest_cap_mb=1500 stopped=- start=00:21:42 cmd=python3 -B lemmas.py

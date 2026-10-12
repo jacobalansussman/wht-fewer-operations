@@ -1,0 +1,30 @@
+## waited 887 s for the lock (one hold for all runs)
+## MBUF=1 taskset -c 1 b/reftime 5 12,18 iT,iG19s,sT,sG19
+## before: 2026-10-11 17:10:45 UTC; load 7.94 6.16 5.36 7/532 951730
+##    pid 839050 99.9% cpu5 nice5 python3
+##    pid 839938 99.9% cpu7 nice5 python3
+##    pid 839000 99.9% cpu6 nice5 python3
+##    pid 949528 99.5% cpu1 nice10 python3
+##    pid 950722 99.2% cpu4 nice15 cc1
+# cycle counter: 2.1998 GHz against the monotonic clock over the run of 61.0 s
+S k=12 arrays=1 bytes=16384 G=5255 R=15 cpu=1 sibling=5 sibling_busy=98% loadavg_at_start=[7.94 6.16 5.36 6/532 951733]
+V k=12 iT       min=0.3674 med=0.6403 max=0.6854 ns/point  shortest_loop=0.119s  all: 0.6279 0.6554 0.6466 0.6801 0.6854 0.6168 0.6403 0.3674 0.6045
+V k=12 iG19s    min=0.4420 med=0.7000 max=0.7579 ns/point  shortest_loop=0.143s  all: 0.7066 0.6805 0.7000 0.6964 0.7579 0.7401 0.7091 0.4420 0.6647
+V k=12 sT       min=4.4356 med=4.7812 max=4.8753 ns/point  shortest_loop=1.432s  all: 4.7812 4.7773 4.8077 4.8667 4.8753 4.8155 4.7317 4.4356 4.6019
+V k=12 sG19     min=4.1858 med=4.6842 max=4.8099 ns/point  shortest_loop=1.351s  all: 4.7014 4.6213 4.6369 4.7197 4.8099 4.6842 4.6519 4.1858 4.7891
+P k=12 iG19s/iT best/best=1.2032 med/med=1.0932  repeat-by-repeat: min=1.0240 med=1.1058 max=1.2032
+P k=12 sG19/sT best/best=0.9437 med/med=0.9797  repeat-by-repeat: min=0.9437 med=0.9727 max=1.0407
+S k=18 arrays=1 bytes=1048576 G=76 R=10 cpu=1 sibling=5 sibling_busy=97% loadavg_at_start=[8.06 6.35 5.45 6/531 952121]
+V k=18 iT       min=0.8400 med=1.0253 max=1.0539 ns/point  shortest_loop=0.167s  all: 1.0420 1.0367 1.0300 0.8400 1.0181 1.0539 1.0253 0.9675 0.9528
+V k=18 iG19s    min=0.9747 med=1.1168 max=1.2659 ns/point  shortest_loop=0.194s  all: 1.1283 1.1113 1.1055 0.9747 1.2186 1.1376 1.1168 1.0489 1.2659
+V k=18 sT       min=6.8729 med=7.4120 max=7.7166 ns/point  shortest_loop=1.369s  all: 7.3876 7.4226 7.4449 7.4120 7.2755 7.7166 7.4713 6.8729 7.2261
+V k=18 sG19     min=5.1353 med=7.0810 max=7.5825 ns/point  shortest_loop=1.023s  all: 7.3500 7.2818 7.2781 6.9173 7.0810 7.5825 6.9275 6.9578 5.1353
+P k=18 iG19s/iT best/best=1.1604 med/med=1.0893  repeat-by-repeat: min=1.0720 med=1.0842 max=1.3286
+P k=18 sG19/sT best/best=0.7472 med/med=0.9553  repeat-by-repeat: min=0.7107 med=0.9776 max=1.0124
+## exit 0
+## after: 2026-10-11 17:11:46 UTC; load 8.17 6.55 5.55 8/536 952493
+##    pid 839050 99.9% cpu7 nice5 python3
+##    pid 839938 99.9% cpu6 nice5 python3
+##    pid 839000 99.8% cpu0 nice5 python3
+##    pid 949528 99.5% cpu4 nice10 python3
+##    pid 950722 99.3% cpu3 nice15 cc1

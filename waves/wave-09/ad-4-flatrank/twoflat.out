@@ -1,0 +1,3 @@
+307 flats, 1072 signed flats
+combinations of two signed flats with values 0 and 1 only: 56677 ; by type: [('E is a flat', 19185), ('F1 minus F2, nested', 1916), ('F2 minus F1, nested', 1916), ('disjoint union', 21660), ('xor, intersection half of one', 12000)] ; outside the classification: 0
+LIGHT label=ad4-two exit=0 time=25s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=07:04:57 cmd=python3 -B twoflat.py

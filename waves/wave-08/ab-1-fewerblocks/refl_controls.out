@@ -1,0 +1,8 @@
+== m = 3, W = 2 live, S = 0 scratch, mode all, sequence plain
+   order 1,2,4,1,2,4 try 0: root-mean-square error 3.799e-15
+   order 1,2,4,1,2,4 try 0: root-mean-square error 5.048e-13
+   [5 s]
+== m = 3, W = 2 live, S = 0 scratch, mode pm, sequence 1,2,4,3,5
+   order 1,2,4,3,5 try 0: root-mean-square error 5.000e-01
+   order 1,2,4,3,5 try 0: root-mean-square error 5.000e-01
+   [1 s]

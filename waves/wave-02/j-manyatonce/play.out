@@ -1,0 +1,18 @@
+shifted copies N=4: HX = diag(Hx)H True;  HXH = N diag(Hx) True
+shifted copies N=8: HX = diag(Hx)H True;  HXH = N diag(Hx) True
+shifted copies N=16: HX = diag(Hx)H True;  HXH = N diag(Hx) True
+general batch N=4: HX = sum_c S^c diag(H m_c) H  True
+general batch N=8: HX = sum_c S^c diag(H m_c) H  True
+three shears N=2: equals diag(H, H^-1) True
+three shears N=4: equals diag(H, H^-1) True
+three shears N=8: equals diag(H, H^-1) True
+k= 3 N=8: textbook 24 | sum of 2 products: 12 gates (1.500 N) | tensor-train entries 16 (2.000 N)
+k= 4 N=16: textbook 64 | sum of 4 products: 32 gates (2.000 N) | tensor-train entries 40 (2.500 N)
+k= 8 N=256: textbook 2048 | sum of 29 products: 464 gates (1.812 N) | tensor-train entries 680 (2.656 N)
+k=16 N=65536: textbook 1048576 | sum of 3856 products: 123392 gates (1.883 N) | tensor-train entries 174760 (2.667 N)
+k=20 N=1048576: textbook 20971520 | sum of 49933 products: 1997320 gates (1.905 N) | tensor-train entries 2796200 (2.667 N)
+z = 0.999124  <->  N copies of the N-point transform for theta = 0.99879 of N separate ones
+z = 0.990000  <->  N copies of the N-point transform for theta = 0.98618 of N separate ones
+z = 0.900000  <->  N copies of the N-point transform for theta = 0.86607 of N separate ones
+z = 0.500000  <->  N copies of the N-point transform for theta = 0.41421 of N separate ones
+z = 0.100000  <->  N copies of the N-point transform for theta = 0.07177 of N separate ones

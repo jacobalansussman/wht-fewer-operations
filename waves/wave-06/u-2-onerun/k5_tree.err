@@ -1,0 +1,6 @@
+depth 1 of 32 at node 2
+depth 2 of 32 at node 3
+depth 3 of 32 at node 4
+depth 4 of 32 at node 5
+depth 5 of 32 at node 15
+LIGHT label=u2-onerun exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:50:54 cmd=./onerun 5 tree 2 1

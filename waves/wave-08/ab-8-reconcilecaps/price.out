@@ -1,0 +1,39 @@
+== 1. controls against the two studies own outputs
+k-levers fat (6,3) lam .5144, 3-stage, hp 0 / 1 / 6.5, two idle blocks : 2.2833e-02 1.7197e-02 7.2791e-03   (k.out: 2.2842e-02 1.7204e-02 7.2822e-03)
+k-levers fat (6,3) lam .5144, 5-stage, hp 0 / 1 / 6.5, two idle blocks : 2.4812e-02 1.9391e-02 8.8064e-03   (k.out: 2.4829e-02 1.9402e-02 8.8098e-03)
+v-levers formula corner (8,4) lam 0 hp 0: 3-stage A2 0.1018  B1 0.1198 ; 5-stage A2 0.0721  A5 0.0784  B1 0.1065   (v-levers: 0.107 to 0.120 ; 0.075 to 0.086)
+x-6 shapes rho = .2 .3 .4 .5 : 5-stage A5 0.0282 0.0430 0.0594 0.0784   (x-6: 0.0282 0.0430 0.0594 0.0784)
+x-6 shapes rho = .2 .3 .4 .5 : 3-stage B1 0.0485 0.0707 0.0940 0.1198   (x-6: 0.0485 0.0707 0.0940 0.1198)
+x-6 merged    rho = .2 .3 1/3 .4 .5 : 3-stage C0 0.0593 0.0884 0.0980 0.1174 0.1467   (x-6: 0.0593 0.0884 0.0980 0.1174 0.1467)
+x-6 r = h/3 : 3-stage B1 0.0783 ; 5-stage A5 0.0483   (x-6: 0.078 ; 0.048)
+E8 thin (9,1) lam 0 hp 0 : 5-stage A5 1.5758e-02  (x-6: 1.5758e-02) ; A2 1.4919e-02  B1 1.9871e-02 (v-levers R 0 cst 0: 1.6e-2 to 2.0e-2) ; 3-stage B1 2.8483e-02 (v-levers 2.85e-2)
+E8 thin (9,1) lam 0.6 (cst 72), hp 0 : 5-stage A5 3.9014e-03 ; lam 55/120 hp 8/120 A5 6.5564e-03 B1 8.2038e-03 (k-levers 6.55e-3 ; v-levers to 8.2e-3)
+E8 thin (9,1) lam 0.6 hp 116/120 and 37/120, A5, helper one block : 3.0644e-03 3.5887e-03   (k.out 3.0644e-03 3.5887e-03)
+
+== 2. the ladder from 2.3e-2 to 0.12 at r = h/2, three stages: one idealisation at a time
+   start  k-levers  (6,3) lam .5144 hp 0 A2 : 0.0228
+   only the idle block merged (B1)          : 0.0266
+   only copies free (lam 0), A2             : 0.1018
+   both (x-6 corner)                        : 0.1198
+   and catch-up merged into the climb (C0)  : 0.1467
+   from the corner 0.1198 back down, one cost at a time (B1): lam 0.10: 0.1013 ; lam 0.20: 0.0829 ; lam 0.30: 0.0648 ; lam 0.40: 0.0468 ; lam 0.50: 0.0291 ; lam 0.60: 0.0116
+   corner, helpers per pair-index (B1, lam 0): hp 0.31: 0.1071 ; hp 0.97: 0.0871 ; hp 2.00: 0.0674 ; hp 6.50: 0.0338
+
+== 3. the frontier for 1e-1: largest loss ratio lam that still gives saving >= 0.1, by rho = r/h (h = 1000 r-grid), helpers hp
+   3-stage B1 hp 0.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: lam<=0.025 (kappa>=92.2) ; 0.46: lam<=0.054 (kappa>=40.3) ; 0.48: lam<=0.081 (kappa>=25.6) ; 0.50: lam<=0.107 (kappa>=18.7)
+   3-stage B1 hp 0.31 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: lam<=0.014 (kappa>=147.8) ; 0.50: lam<=0.042 (kappa>=47.1)
+   3-stage B1 hp 1.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   3-stage C0 hp 0.00 : 0.30: none ; 0.34: none ; 0.38: lam<=0.066 (kappa>=40.0) ; 0.42: lam<=0.120 (kappa>=19.9) ; 0.44: lam<=0.143 (kappa>=15.9) ; 0.46: lam<=0.165 (kappa>=13.2) ; 0.48: lam<=0.184 (kappa>=11.3) ; 0.50: lam<=0.203 (kappa>=9.9)
+   3-stage C0 hp 0.31 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: lam<=0.043 (kappa>=55.5) ; 0.44: lam<=0.070 (kappa>=32.6) ; 0.46: lam<=0.094 (kappa>=23.0) ; 0.48: lam<=0.117 (kappa>=17.8) ; 0.50: lam<=0.138 (kappa>=14.5)
+   3-stage C0 hp 1.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   3-stage A2 hp 0.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: lam<=0.011 (kappa>=177.7)
+   3-stage A2 hp 0.31 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   3-stage A2 hp 1.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   5-stage A5 hp 0.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   5-stage A5 hp 0.31 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   5-stage A5 hp 1.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   5-stage B1 hp 0.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: lam<=0.007 (kappa>=297.2) ; 0.50: lam<=0.045 (kappa>=44.1)
+   5-stage B1 hp 0.31 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+   5-stage B1 hp 1.00 : 0.30: none ; 0.34: none ; 0.38: none ; 0.42: none ; 0.44: none ; 0.46: none ; 0.48: none ; 0.50: none
+
+== 4. least rho for 1e-1 with everything else free: 3-stage A2: 0.492 ; 3-stage B1: 0.425 ; 3-stage C0: 0.341 ; 5-stage B1: 0.477

@@ -1,0 +1,8 @@
+anneal p=2 n=16 targets=15 helpers m=16 => gate budget 31 ; 520 s ; seed 11 ; T 0.80 -> 0.20
+start file: 17 helpers
+  [   0s] best energy 10 (restart 1)
+  [   0s] best energy 9 (restart 1)
+  [   0s] best energy 8 (restart 1)
+  [   0s] best energy 4 (restart 1)
+DONE p=2 n=16 m=16: evals 106820612 restarts 596 hits 0 best energy 4 (energy = 4*missing targets + unreached helpers)
+LIGHT label=h4-an16-p2 exit=0 time=521s waited=0s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=23:48:26 cmd=./anneal 2 16 16 520 11 rows_zeta4.txt 0.8 0.2 yates16.txt

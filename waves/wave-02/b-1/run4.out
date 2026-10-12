@@ -1,0 +1,35 @@
+== designs in which every form selects at least W+1 moves: no tight form, so the clique lemma is silent ==
+m=5 W=19 design with 80 moves (plain 95): fewest moves selected by a form with q(I)=1: 20 (passes counting)
+  SURVIVOR total 80, largest clique 1, tight forms 0: 00001:5 00010:5 00100:5 00111:5 01000:5 01011:5 01101:5 01110:5 10000:5 10011:5 10101:5 10110:5 11001:5 11010:5 11100:5 11111:5
+  total 80, tight forms 0, largest clique 1 (W=19): 00001:5 00010:5 00100:5 00111:5 01000:5 01011:5 01101:5 01110:5 10000:5 10011:5 10101:5 10110:5 11001:5 11010:5 11100:5 11111:5
+  -> not excluded
+m=6 W=7 design with 32 moves (plain 42): fewest moves selected by a form with q(I)=1: 8 (passes counting)
+  SURVIVOR total 32, largest clique 1, tight forms 0: 000001:1 000010:1 000100:1 000111:1 001000:1 001011:1 001101:1 001110:1 010000:1 010011:1 010101:1 010110:1 011001:1 011010:1 011100:1 011111:1 100000:1 100011:1 100101:1 10011
+  total 32, tight forms 0, largest clique 1 (W=7): 000001:1 000010:1 000100:1 000111:1 001000:1 001011:1 001101:1 001110:1 010000:1 010011:1 010101:1 010110:1 011001:1 011010:1 011100:1 011111:1 100000:1 100011:1 100101:1 100110:1
+  -> not excluded
+m=4 W=19 design with 75 moves (plain 76): fewest moves selected by a form with q(I)=1: 20 (passes counting)
+  SURVIVOR total 75, largest clique 1, tight forms 0: 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:5 1101:5 1110:5 1111:5
+  total 75, tight forms 0, largest clique 1 (W=19): 0001:5 0010:5 0011:5 0100:5 0101:5 0110:5 0111:5 1000:5 1001:5 1010:5 1011:5 1100:5 1101:5 1110:5 1111:5
+  -> not excluded
+m=5 W=7 design with 32 moves (plain 35): fewest moves selected by a form with q(I)=1: 8 (passes counting)
+  SURVIVOR total 32, largest clique 1, tight forms 0: 00001:2 00010:2 00100:2 00111:2 01000:2 01011:2 01101:2 01110:2 10000:2 10011:2 10101:2 10110:2 11001:2 11010:2 11100:2 11111:2
+  total 32, tight forms 0, largest clique 1 (W=7): 00001:2 00010:2 00100:2 00111:2 01000:2 01011:2 01101:2 01110:2 10000:2 10011:2 10101:2 10110:2 11001:2 11010:2 11100:2 11111:2
+  -> not excluded
+== block size 5, 4 arrays, 19 moves ==
+TIMEOUT part 0
+TIMEOUT part 1
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 19 moves that pass counting (plain = 20). search nodes 3004898, minimal leaves 1, part 2 of 8
+  19 moves: 1 count vectors pass counting; largest clique between 15 and 15; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 19 moves that pass counting (plain = 20). search nodes 3021744, minimal leaves 3, part 3 of 8
+  19 moves: 3 count vectors pass counting; largest clique between 15 and 15; pass the clique test too: 0
+TIMEOUT part 4
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 19 moves that pass counting (plain = 20). search nodes 2625207, minimal leaves 1, part 5 of 8
+  19 moves: 1 count vectors pass counting; largest clique between 15 and 15; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 19 moves that pass counting (plain = 20). search nodes 2955350, minimal leaves 1, part 6 of 8
+  19 moves: 1 count vectors pass counting; largest clique between 15 and 15; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 19 moves that pass counting (plain = 20). search nodes 2512566, minimal leaves 0, part 7 of 8

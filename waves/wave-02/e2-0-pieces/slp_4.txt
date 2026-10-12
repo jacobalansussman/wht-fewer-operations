@@ -1,0 +1,8 @@
+# count (G) program for the 4-point Walsh-Hadamard transform, 7 gates; each line: name = a*u + b*v
+p1 = 1 * x0 + 1 * x1    # 1 1 0 0
+p2 = 1 * x2 + -1 * x3    # 0 0 1 -1
+hub3 = 1 * p1 + 1 * p2    # 1 1 1 -1
+y4 = 1 * hub3 + 2 * x3    # 1 1 1 1
+y5 = -1 * y4 + 2 * p1    # 1 1 -1 -1
+y6 = 1 * hub3 + -2 * x1    # 1 -1 1 -1
+y7 = 1 * y6 + -2 * p2    # 1 -1 -1 1

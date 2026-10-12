@@ -1,0 +1,13 @@
+subgroups of sizes 2, 8, 32: 1521  t=0s
+minus vectors, distinct up to scale: 27468  t=7s
+  spot check S v = -8 v on 20: True
+  non-zeros histogram {12: 2016, 16: 21420, 32: 2016, 34: 2016}
+tensor orthogonal frame: non-zeros 832 greedy s_R 246 | program 2*s_R+m = 520 | law (N-m)+m*log2(N) = 204  t=8s
+  trial 0 stuck at 18
+  trial 1 stuck at 14
+  trial 2 stuck at 16
+  trial 3 stuck at 12
+  trial 4 stuck at 17
+  trial 5 stuck at 17
+references at 64 points: textbook 384 (O), one-reflection-per-digit 336 (G)
+LIGHT label=e1-exp4 exit=0 time=36s waited=30s peak_rss_mb=69 peak_footprint_mb=66 lowest_cap_mb=1500 stopped=- start=22:03:45 cmd=python3 -B exp4.py 7

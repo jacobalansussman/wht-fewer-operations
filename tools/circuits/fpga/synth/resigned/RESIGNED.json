@@ -1,0 +1,906 @@
+[
+ {
+  "size": "8",
+  "design": "textbookS",
+  "of": "textbook",
+  "adders": 24,
+  "depth": 3,
+  "exact": true,
+  "tried": 65536,
+  "negated": [],
+  "before": {
+   "adder_bits": 240,
+   "sub_bits": 108,
+   "subs": 12
+  },
+  "after": {
+   "adder_bits": 240,
+   "sub_bits": 108,
+   "subs": 12
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/8_textbookS_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/8_textbookS_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/8_textbookS_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/8_textbookS_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/8_textbookS_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/8_textbookS_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/8_textbookS_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/8_textbookS_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/8_textbookS_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 24,
+    "depth": 3,
+    "adder_bits": 240,
+    "reg_data": 240,
+    "reg_delay": 0,
+    "reg_after_adders": 240
+   },
+   "p_w8": {
+    "adders": 24,
+    "depth": 3,
+    "adder_bits": 240,
+    "reg_data": 240,
+    "reg_delay": 0,
+    "reg_after_adders": 240
+   },
+   "c_w12": {
+    "adders": 24,
+    "depth": 3,
+    "adder_bits": 336,
+    "reg_data": 336,
+    "reg_delay": 0,
+    "reg_after_adders": 336
+   },
+   "p_w12": {
+    "adders": 24,
+    "depth": 3,
+    "adder_bits": 336,
+    "reg_data": 336,
+    "reg_delay": 0,
+    "reg_after_adders": 336
+   },
+   "c_w16": {
+    "adders": 24,
+    "depth": 3,
+    "adder_bits": 432,
+    "reg_data": 432,
+    "reg_delay": 0,
+    "reg_after_adders": 432
+   },
+   "p_w16": {
+    "adders": 24,
+    "depth": 3,
+    "adder_bits": 432,
+    "reg_data": 432,
+    "reg_delay": 0,
+    "reg_after_adders": 432
+   }
+  }
+ },
+ {
+  "size": "8",
+  "design": "cfl1994S",
+  "of": "cfl1994",
+  "adders": 22,
+  "depth": 5,
+  "exact": true,
+  "tried": 16384,
+  "negated": [],
+  "before": {
+   "adder_bits": 226,
+   "sub_bits": 60,
+   "subs": 6
+  },
+  "after": {
+   "adder_bits": 226,
+   "sub_bits": 60,
+   "subs": 6
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/8_cfl1994S_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/8_cfl1994S_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/8_cfl1994S_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w8": {
+    "file": "synth/v_resigned/8_cfl1994S_p3_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/8_cfl1994S_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/8_cfl1994S_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/8_cfl1994S_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w12": {
+    "file": "synth/v_resigned/8_cfl1994S_p3_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/8_cfl1994S_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/8_cfl1994S_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/8_cfl1994S_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w16": {
+    "file": "synth/v_resigned/8_cfl1994S_p3_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 22,
+    "depth": 5,
+    "adder_bits": 226,
+    "reg_data": 424,
+    "reg_delay": 198,
+    "reg_after_adders": 226
+   },
+   "p_w8": {
+    "adders": 22,
+    "depth": 5,
+    "adder_bits": 226,
+    "reg_data": 424,
+    "reg_delay": 198,
+    "reg_after_adders": 226
+   },
+   "c_w12": {
+    "adders": 22,
+    "depth": 5,
+    "adder_bits": 314,
+    "reg_data": 608,
+    "reg_delay": 294,
+    "reg_after_adders": 314
+   },
+   "p_w12": {
+    "adders": 22,
+    "depth": 5,
+    "adder_bits": 314,
+    "reg_data": 608,
+    "reg_delay": 294,
+    "reg_after_adders": 314
+   },
+   "c_w16": {
+    "adders": 22,
+    "depth": 5,
+    "adder_bits": 402,
+    "reg_data": 792,
+    "reg_delay": 390,
+    "reg_after_adders": 402
+   },
+   "p_w16": {
+    "adders": 22,
+    "depth": 5,
+    "adder_bits": 402,
+    "reg_data": 792,
+    "reg_delay": 390,
+    "reg_after_adders": 402
+   }
+  }
+ },
+ {
+  "size": "8",
+  "design": "ar2023S",
+  "of": "ar2023",
+  "adders": 22,
+  "depth": 6,
+  "exact": true,
+  "tried": 16384,
+  "negated": [],
+  "before": {
+   "adder_bits": 226,
+   "sub_bits": 11,
+   "subs": 1
+  },
+  "after": {
+   "adder_bits": 226,
+   "sub_bits": 11,
+   "subs": 1
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/8_ar2023S_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/8_ar2023S_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/8_ar2023S_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w8": {
+    "file": "synth/v_resigned/8_ar2023S_p3_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/8_ar2023S_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/8_ar2023S_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/8_ar2023S_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w12": {
+    "file": "synth/v_resigned/8_ar2023S_p3_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/8_ar2023S_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/8_ar2023S_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/8_ar2023S_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w16": {
+    "file": "synth/v_resigned/8_ar2023S_p3_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 22,
+    "depth": 6,
+    "adder_bits": 226,
+    "reg_data": 620,
+    "reg_delay": 394,
+    "reg_after_adders": 226
+   },
+   "p_w8": {
+    "adders": 22,
+    "depth": 6,
+    "adder_bits": 226,
+    "reg_data": 620,
+    "reg_delay": 394,
+    "reg_after_adders": 226
+   },
+   "c_w12": {
+    "adders": 22,
+    "depth": 6,
+    "adder_bits": 314,
+    "reg_data": 888,
+    "reg_delay": 574,
+    "reg_after_adders": 314
+   },
+   "p_w12": {
+    "adders": 22,
+    "depth": 6,
+    "adder_bits": 314,
+    "reg_data": 888,
+    "reg_delay": 574,
+    "reg_after_adders": 314
+   },
+   "c_w16": {
+    "adders": 22,
+    "depth": 6,
+    "adder_bits": 402,
+    "reg_data": 1156,
+    "reg_delay": 754,
+    "reg_after_adders": 402
+   },
+   "p_w16": {
+    "adders": 22,
+    "depth": 6,
+    "adder_bits": 402,
+    "reg_data": 1156,
+    "reg_delay": 754,
+    "reg_after_adders": 402
+   }
+  }
+ },
+ {
+  "size": "8",
+  "design": "oursS",
+  "of": "ours",
+  "adders": 19,
+  "depth": 6,
+  "exact": true,
+  "tried": 2048,
+  "negated": [],
+  "before": {
+   "adder_bits": 199,
+   "sub_bits": 65,
+   "subs": 9
+  },
+  "after": {
+   "adder_bits": 199,
+   "sub_bits": 65,
+   "subs": 9
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/8_oursS_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/8_oursS_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/8_oursS_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w8": {
+    "file": "synth/v_resigned/8_oursS_p3_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/8_oursS_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/8_oursS_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/8_oursS_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w12": {
+    "file": "synth/v_resigned/8_oursS_p3_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/8_oursS_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/8_oursS_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/8_oursS_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p3_w16": {
+    "file": "synth/v_resigned/8_oursS_p3_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 19,
+    "depth": 6,
+    "adder_bits": 199,
+    "reg_data": 601,
+    "reg_delay": 402,
+    "reg_after_adders": 199
+   },
+   "p_w8": {
+    "adders": 19,
+    "depth": 6,
+    "adder_bits": 199,
+    "reg_data": 601,
+    "reg_delay": 402,
+    "reg_after_adders": 199
+   },
+   "c_w12": {
+    "adders": 19,
+    "depth": 6,
+    "adder_bits": 275,
+    "reg_data": 861,
+    "reg_delay": 586,
+    "reg_after_adders": 275
+   },
+   "p_w12": {
+    "adders": 19,
+    "depth": 6,
+    "adder_bits": 275,
+    "reg_data": 861,
+    "reg_delay": 586,
+    "reg_after_adders": 275
+   },
+   "c_w16": {
+    "adders": 19,
+    "depth": 6,
+    "adder_bits": 351,
+    "reg_data": 1121,
+    "reg_delay": 770,
+    "reg_after_adders": 351
+   },
+   "p_w16": {
+    "adders": 19,
+    "depth": 6,
+    "adder_bits": 351,
+    "reg_data": 1121,
+    "reg_delay": 770,
+    "reg_after_adders": 351
+   }
+  }
+ },
+ {
+  "size": "16",
+  "design": "textbookS",
+  "of": "textbook",
+  "adders": 64,
+  "depth": 4,
+  "exact": false,
+  "tried": 24000,
+  "negated": [],
+  "before": {
+   "adder_bits": 672,
+   "sub_bits": 304,
+   "subs": 32
+  },
+  "after": {
+   "adder_bits": 672,
+   "sub_bits": 304,
+   "subs": 32
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/16_textbookS_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/16_textbookS_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/16_textbookS_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/16_textbookS_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/16_textbookS_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/16_textbookS_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/16_textbookS_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/16_textbookS_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/16_textbookS_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 64,
+    "depth": 4,
+    "adder_bits": 672,
+    "reg_data": 672,
+    "reg_delay": 0,
+    "reg_after_adders": 672
+   },
+   "p_w8": {
+    "adders": 64,
+    "depth": 4,
+    "adder_bits": 672,
+    "reg_data": 672,
+    "reg_delay": 0,
+    "reg_after_adders": 672
+   },
+   "c_w12": {
+    "adders": 64,
+    "depth": 4,
+    "adder_bits": 928,
+    "reg_data": 928,
+    "reg_delay": 0,
+    "reg_after_adders": 928
+   },
+   "p_w12": {
+    "adders": 64,
+    "depth": 4,
+    "adder_bits": 928,
+    "reg_data": 928,
+    "reg_delay": 0,
+    "reg_after_adders": 928
+   },
+   "c_w16": {
+    "adders": 64,
+    "depth": 4,
+    "adder_bits": 1184,
+    "reg_data": 1184,
+    "reg_delay": 0,
+    "reg_after_adders": 1184
+   },
+   "p_w16": {
+    "adders": 64,
+    "depth": 4,
+    "adder_bits": 1184,
+    "reg_data": 1184,
+    "reg_delay": 0,
+    "reg_after_adders": 1184
+   }
+  }
+ },
+ {
+  "size": "16",
+  "design": "cfl1994S",
+  "of": "cfl1994",
+  "adders": 56,
+  "depth": 8,
+  "exact": false,
+  "tried": 24000,
+  "negated": [],
+  "before": {
+   "adder_bits": 608,
+   "sub_bits": 88,
+   "subs": 8
+  },
+  "after": {
+   "adder_bits": 608,
+   "sub_bits": 88,
+   "subs": 8
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/16_cfl1994S_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/16_cfl1994S_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/16_cfl1994S_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p4_w8": {
+    "file": "synth/v_resigned/16_cfl1994S_p4_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/16_cfl1994S_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/16_cfl1994S_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/16_cfl1994S_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p4_w12": {
+    "file": "synth/v_resigned/16_cfl1994S_p4_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/16_cfl1994S_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/16_cfl1994S_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/16_cfl1994S_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p4_w16": {
+    "file": "synth/v_resigned/16_cfl1994S_p4_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 56,
+    "depth": 8,
+    "adder_bits": 608,
+    "reg_data": 1496,
+    "reg_delay": 888,
+    "reg_after_adders": 608
+   },
+   "p_w8": {
+    "adders": 56,
+    "depth": 8,
+    "adder_bits": 608,
+    "reg_data": 1496,
+    "reg_delay": 888,
+    "reg_after_adders": 608
+   },
+   "c_w12": {
+    "adders": 56,
+    "depth": 8,
+    "adder_bits": 832,
+    "reg_data": 2104,
+    "reg_delay": 1272,
+    "reg_after_adders": 832
+   },
+   "p_w12": {
+    "adders": 56,
+    "depth": 8,
+    "adder_bits": 832,
+    "reg_data": 2104,
+    "reg_delay": 1272,
+    "reg_after_adders": 832
+   },
+   "c_w16": {
+    "adders": 56,
+    "depth": 8,
+    "adder_bits": 1056,
+    "reg_data": 2712,
+    "reg_delay": 1656,
+    "reg_after_adders": 1056
+   },
+   "p_w16": {
+    "adders": 56,
+    "depth": 8,
+    "adder_bits": 1056,
+    "reg_data": 2712,
+    "reg_delay": 1656,
+    "reg_after_adders": 1056
+   }
+  }
+ },
+ {
+  "size": "16",
+  "design": "oursS",
+  "of": "ours",
+  "adders": 52,
+  "depth": 8,
+  "exact": false,
+  "tried": 24000,
+  "negated": [
+   "hub24",
+   "hub30",
+   "p18",
+   "p2",
+   "p21",
+   "p23",
+   "p25",
+   "p29",
+   "p9"
+  ],
+  "before": {
+   "adder_bits": 564,
+   "sub_bits": 290,
+   "subs": 32
+  },
+  "after": {
+   "adder_bits": 564,
+   "sub_bits": 224,
+   "subs": 26
+  },
+  "files": {
+   "c_w8": {
+    "file": "synth/v_resigned/16_oursS_c_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w8": {
+    "file": "synth/v_resigned/16_oursS_p_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w8": {
+    "file": "synth/v_resigned/16_oursS_p2_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p4_w8": {
+    "file": "synth/v_resigned/16_oursS_p4_w8.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w12": {
+    "file": "synth/v_resigned/16_oursS_c_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w12": {
+    "file": "synth/v_resigned/16_oursS_p_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w12": {
+    "file": "synth/v_resigned/16_oursS_p2_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p4_w12": {
+    "file": "synth/v_resigned/16_oursS_p4_w12.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "c_w16": {
+    "file": "synth/v_resigned/16_oursS_c_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p_w16": {
+    "file": "synth/v_resigned/16_oursS_p_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p2_w16": {
+    "file": "synth/v_resigned/16_oursS_p2_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   },
+   "p4_w16": {
+    "file": "synth/v_resigned/16_oursS_p4_w16.v",
+    "sim": "RESULT vectors=4008 errors=0",
+    "ok": true
+   }
+  },
+  "metrics": {
+   "c_w8": {
+    "adders": 52,
+    "depth": 8,
+    "adder_bits": 564,
+    "reg_data": 1420,
+    "reg_delay": 856,
+    "reg_after_adders": 564
+   },
+   "p_w8": {
+    "adders": 52,
+    "depth": 8,
+    "adder_bits": 564,
+    "reg_data": 1420,
+    "reg_delay": 856,
+    "reg_after_adders": 564
+   },
+   "c_w12": {
+    "adders": 52,
+    "depth": 8,
+    "adder_bits": 772,
+    "reg_data": 1980,
+    "reg_delay": 1208,
+    "reg_after_adders": 772
+   },
+   "p_w12": {
+    "adders": 52,
+    "depth": 8,
+    "adder_bits": 772,
+    "reg_data": 1980,
+    "reg_delay": 1208,
+    "reg_after_adders": 772
+   },
+   "c_w16": {
+    "adders": 52,
+    "depth": 8,
+    "adder_bits": 980,
+    "reg_data": 2540,
+    "reg_delay": 1560,
+    "reg_after_adders": 980
+   },
+   "p_w16": {
+    "adders": 52,
+    "depth": 8,
+    "adder_bits": 980,
+    "reg_data": 2540,
+    "reg_delay": 1560,
+    "reg_after_adders": 980
+   }
+  }
+ }
+]

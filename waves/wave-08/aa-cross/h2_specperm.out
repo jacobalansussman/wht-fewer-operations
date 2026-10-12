@@ -1,0 +1,6 @@
+k=4 N=16 : -1 on 6 outputs in both patterns ; C_sigma' = -X_u + (2/|V|) sum_V : True ; its cost at most 30 gates (coset sums 14, then one gate per point)
+   least non-zeros of N*Phi found: 92 of 256 (walk, 731667 evaluations, 100 s) ; N^1.5 = 64 ; pattern condition and bijection: True ; largest entry of N*Phi 16
+k=6 N=64 : -1 on 28 outputs in both patterns ; C_sigma' = -X_u + (2/|V|) sum_V : True ; its cost at most 124 gates (coset sums 60, then one gate per point)
+   least non-zeros of N*Phi found: 2321 of 4096 (walk, 90845 evaluations, 200 s) ; N^1.5 = 512 ; pattern condition and bijection: True
+LIGHT label=aacross-h2 exit=0 time=300s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=06:04:57 cmd=python3 -B h2_specperm.py 100 200
+exit 0

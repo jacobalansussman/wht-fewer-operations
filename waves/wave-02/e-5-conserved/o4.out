@@ -1,0 +1,16 @@
+additions/subtractions only, at most 6 gates; nodes 8017
+  convention exact : programs found 0
+  convention debt : programs found 0
+  convention both : programs found 0
+additions/subtractions only, at most 7 gates; nodes 279937
+  convention exact : programs found 0
+  convention debt : programs found 0
+  convention both : programs found 0
+additions/subtractions only, at most 8 gates; nodes 9186465
+  convention exact : programs found 12
+    example: (((0, 0, 0, 1), '+', (0, 0, 1, 0), (0, 0, 1, 1)), ((0, 0, 0, 1), '-', (0, 0, 1, 0), (0, 0, 1, -1)), ((0, 1, 0, 0), '+', (1, 0, 0, 0), (1, 1, 0, 0)), ((0, 0, 1, 1), '+', (1, 1, 0, 0), (1, 1, 1, 1)), ((0, 0, 1, 1), '-', (1, 1, 0, 0), (1, 1, -1, -1)), ((0, 1, 0, 0), '-', (1, 0, 0, 0), (1, -1, 0, 0)), ((0, 0, 1, -1), '+', (1, -1, 0, 0), (1, -1, 1, -1)), ((0, 0, 1, -1), '-', (1, -1, 0, 0), (1, -1, -1, 1)))
+  convention debt : programs found 12
+    example: (((0, 0, 0, 1), '+', (0, 0, 1, 0), (0, 0, 1, 1)), ((0, 0, 0, 1), '-', (0, 0, 1, 0), (0, 0, 1, -1)), ((0, 1, 0, 0), '+', (1, 0, 0, 0), (1, 1, 0, 0)), ((0, 0, 1, 1), '+', (1, 1, 0, 0), (1, 1, 1, 1)), ((0, 0, 1, 1), '-', (1, 1, 0, 0), (1, 1, -1, -1)), ((0, 1, 0, 0), '-', (1, 0, 0, 0), (1, -1, 0, 0)), ((0, 0, 1, -1), '+', (1, -1, 0, 0), (1, -1, 1, -1)), ((0, 0, 1, -1), '-', (1, -1, 0, 0), (1, -1, -1, 1)))
+  convention both : programs found 24
+    example: ((((0, 0, 0, 1), '+', (0, 0, 1, 0), (0, 0, 1, 1)), ((0, 0, 0, 1), '-', (0, 0, 1, 0), (0, 0, 1, -1)), ((0, 1, 0, 0), '+', (1, 0, 0, 0), (1, 1, 0, 0)), ((0, 0, 1, -1), '+', (1, 1, 0, 0), (1, 1, 1, -1)), ((0, 0, 1, -1), '-', (1, 1, 0, 0), (1, 1, -1, 1)), ((0, 1, 0, 0), '-', (1, 0, 0, 0), (1, -1, 0, 0)), ((0, 0, 1, 1), '+', (1, -1, 0, 0), (1, -1, 1, 1)), ((0, 0, 1, 1), '-', (1, -1, 0, 0), (1, -1, -1, -1))), ((1, -1, -1, -1), (1, 1, -1, 1), (1, -1, 1, 1), (1, 1, 1, -1)))
+LIGHT label=e5-o4 exit=0 time=212s waited=0s peak_rss_mb=170 peak_footprint_mb=167 lowest_cap_mb=1500 stopped=- start=22:11:42 cmd=python3 -I -B o4.py 6 7 8

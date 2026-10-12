@@ -1,0 +1,21 @@
+inputs (columns) = even addresses [0, 3, 5, 6, 9, 10, 12, 15]
+1. gates: 15  every printed vector reproduced; outputs found at gates: {1: 'g17', 2: 'g14', 4: 'g20', 7: 'g21', 8: 'g22', 11: 'g12', 13: 'g18', 14: 'g15'}
+   all 8 odd addresses present modulo 2: True
+   second file B4_p2_m7_top_d4.out gates 15 all 8 outputs present modulo 2: True
+   same wiring, gates u+v over the integers: outputs right at [1, 2, 11, 13, 14]  g19 = [0, 1, 1, 0, 2, 1, 1, 2]
+2. rank of the block: rationals 5  modulo 2, 3, 5, 7: [4, 5, 5, 5]
+   dependent sets of at most 4 rows over the rationals: [(1, 2, 13, 14), (1, 4, 11, 14), (1, 7, 8, 14), (2, 4, 11, 13), (2, 7, 8, 13), (4, 7, 8, 11)]
+   every one is two antipodal pairs: True
+   the same list modulo 3: True   modulo 5: True
+   rows that fit inside the largest possible support of each gate: {'g8': [], 'g9': [], 'g10': [], 'g11': [], 'g12': [11], 'g13': [], 'g14': [2], 'g15': [14], 'g16': [], 'g17': [1], 'g18': [13], 'g19': [11, 13], 'g20': [1, 2, 4, 7, 8, 11, 13, 14], 'g21': [7, 11, 13, 14], 'g22': [1, 8, 11, 13]}
+   wiring: {'g8': (1, 0), 'g9': (7, 6), 'g10': (7, 5), 'g11': (10, 4), 'g12': (11, 1), 'g13': (5, 3), 'g14': (13, 8), 'g15': (13, 9), 'g16': (4, 2), 'g17': (16, 8), 'g18': (16, 9), 'g19': (18, 12), 'g20': (19, 14), 'g21': (19, 15), 'g22': (19, 17)}
+3. k = 2  N = 4  pairing circuit gates 2  law 2  equal: True
+3. k = 3  N = 8  pairing circuit gates 12  law 12  equal: True
+3. k = 4  N = 16  pairing circuit gates 32  law 32  equal: True
+3. k = 5  N = 32  pairing circuit gates 96  law 96  equal: True
+3. k = 6  N = 64  pairing circuit gates 224  law 224  equal: True
+3. k = 7  N = 128  pairing circuit gates 576  law 576  equal: True
+3. k = 8  N = 256  pairing circuit gates 1280  law 1280  equal: True
+4. k = 4  N = 16  gates modulo 2: 30  correct modulo 2: True   N(23k/32 - 1) = 30   adding-only law: 32
+4. k = 8  N = 256  gates modulo 2: 1216  correct modulo 2: True   N(23k/32 - 1) = 1216   adding-only law: 1280
+LIGHT label=ac0-replay exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:27:36 cmd=python3 -B replay.py

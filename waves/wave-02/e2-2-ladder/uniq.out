@@ -1,0 +1,6 @@
+W = 4: even design has 15 moves (plain 16). Fewest moves when one direction is forced off the even count: 16 (direction 0001 used fewer often; status 0)
+   -> the even design is the ONLY count vector with 15 moves
+W = 8: even design has 30 moves (plain 32). Fewest moves when one direction is forced off the even count: 31 (direction 0001 used fewer often; status 0)
+   -> the even design is the ONLY count vector with 30 moves
+W = 12: even design has 45 moves (plain 48). Fewest moves when one direction is forced off the even count: 46 (direction 0001 used fewer often; status 0)
+   -> the even design is the ONLY count vector with 45 moves

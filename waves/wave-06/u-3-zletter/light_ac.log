@@ -1,0 +1,1 @@
+LIGHT label=u3-ac exit=0 time=296s waited=0s peak_rss_mb=5 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:42:44 cmd=./runpart.sh ac

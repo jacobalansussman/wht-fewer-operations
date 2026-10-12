@@ -1,0 +1,4 @@
+N = 4: 3 pairs (u, v) checked, entries that differ: 0
+N = 16: 105 pairs (u, v) checked, entries that differ: 0
+N = 64: 1953 pairs (u, v) checked, entries that differ: 0
+LIGHT label=e2-2-twist exit=0 time=5s waited=20s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:54:06 cmd=python3 -B twist.py

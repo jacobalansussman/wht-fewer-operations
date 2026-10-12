@@ -1,0 +1,7 @@
+k=4 search: minor 1 (log2 0.000) size 7 rows [1, 6, 7, 8, 10, 11, 15] cols [0, 3, 6, 8, 10, 11, 15]
+k=4 search: minor 2 (log2 1.000) size 9 rows [2, 4, 7, 8, 10, 11, 12, 13, 15] cols [0, 1, 2, 4, 7, 8, 11, 12, 13]
+k=4 search: minor 3 (log2 1.585) size 12 rows [0, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15] cols [0, 1, 2, 4, 5, 7, 8, 9, 11, 12, 14, 15]
+k=4 search: minor 4 (log2 2.000) size 7 rows [3, 5, 7, 9, 11, 13, 14] cols [0, 3, 5, 6, 9, 10, 12]
+k=4 search: minor 5 (log2 2.322) size 9 rows [1, 2, 4, 7, 8, 11, 13, 14, 15] cols [0, 1, 2, 4, 7, 8, 11, 13, 14]
+k=4 search ended: largest minor found 5, log2 = 2.322  (a lower bound on the largest minor)
+LIGHT label=scross-zm4 exit=0 time=101s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=03:04:59 cmd=python3 -B zminor.py 4 7 100

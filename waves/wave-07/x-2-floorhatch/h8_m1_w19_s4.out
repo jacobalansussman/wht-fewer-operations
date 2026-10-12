@@ -1,0 +1,22 @@
+N=8 mode=1 W=19 seed=4: least number of underivable wires 0 after 1244114 moves
+CIRCUIT 19 gates (wire : entries : made from wires a, b ; inputs are 0..7)
+w 16 : 0 0 0 0 0 1 1 0 : 5 6
+w 20 : 1 0 0 -1 0 0 0 0 : 0 3
+w 23 : 0 0 0 0 1 0 0 1 : 4 7
+w 24 : 0 1 -1 0 0 0 0 0 : 1 2
+w 21 : 1 1 -1 -1 0 0 0 0 : 20 24
+w 22 : 0 0 0 0 1 -1 -1 1 : 16 23
+w 18 : 1 1 -1 -1 1 -1 -1 1 : 21 22
+w 26 : 1 1 -1 -1 1 1 -1 1 : 5 18
+w 10 : 1 1 -1 -1 1 1 -1 -1 : 7 26
+w 14 : 1 1 -1 -1 -1 -1 1 1 : 10 21
+w 17 : 1 -1 1 1 -1 1 1 -1 : 0 18
+w 19 : 1 1 1 1 -1 1 1 -1 : 1 17
+w 25 : 1 1 -1 -1 -1 1 -1 1 : 4 26
+w 8 : 1 1 1 1 1 1 1 1 : 19 23
+w 9 : 1 -1 1 -1 1 -1 1 -1 : 20 25
+w 12 : 1 1 1 1 -1 -1 -1 -1 : 16 19
+w 13 : 1 -1 1 -1 -1 1 -1 1 : 24 25
+w 15 : 1 -1 -1 1 -1 1 1 -1 : 2 17
+w 11 : 1 -1 -1 1 1 -1 -1 1 : 15 22
+LIGHT label=x2-h8m1 exit=0 time=13s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:26:33 cmd=./hatch 8 1 19 1500000 4

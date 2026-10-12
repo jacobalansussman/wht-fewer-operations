@@ -1,0 +1,32 @@
+n=1 N=4 sqrtN=2 form=plain
+   block Q=0: 3 points, eigenvalues {-2: 1, -1: 1, 2: 1}, minimal-polynomial identity exact: True, trace -1
+   block Q=1: 1 points, eigenvalues {1: 1}, minimal-polynomial identity exact: True, trace 1
+   cross block 3x1: C^T C eigenvalues {3: 1}
+n=1 N=4 sqrtN=2 form=polar
+   block Q=0: 3 points, eigenvalues {-1: 1, 2: 2}, minimal-polynomial identity exact: True, trace 3
+   block Q=1: 1 points, eigenvalues {1: 1}, minimal-polynomial identity exact: True, trace 1
+   cross block 3x1: C^T C eigenvalues {3: 1}
+n=2 N=16 sqrtN=4 form=plain
+   block Q=0: 10 points, eigenvalues {-4: 2, -2: 3, 2: 2, 4: 3}, minimal-polynomial identity exact: True, trace 2
+   block Q=1: 6 points, eigenvalues {-4: 1, -2: 2, 2: 3}, minimal-polynomial identity exact: True, trace -2
+   cross block 10x6: C^T C eigenvalues {0: 1, 12: 5}
+n=2 N=16 sqrtN=4 form=polar
+   block Q=0: 10 points, eigenvalues {-2: 5, 4: 5}, minimal-polynomial identity exact: True, trace 10
+   block Q=1: 6 points, eigenvalues {-4: 1, 2: 5}, minimal-polynomial identity exact: True, trace 6
+   cross block 10x6: C^T C eigenvalues {0: 1, 12: 5}
+n=3 N=64 sqrtN=8 form=plain
+   block Q=0: 36 points, eigenvalues {-8: 7, -4: 12, 4: 9, 8: 8}, minimal-polynomial identity exact: True, trace -4
+   block Q=1: 28 points, eigenvalues {-8: 4, -4: 9, 4: 12, 8: 3}, minimal-polynomial identity exact: True, trace 4
+   cross block 36x28: C^T C eigenvalues {0: 7, 48: 21}
+n=3 N=64 sqrtN=8 form=polar
+   block Q=0: 36 points, eigenvalues {-4: 21, 8: 15}, minimal-polynomial identity exact: True, trace 36
+   block Q=1: 28 points, eigenvalues {-8: 7, 4: 21}, minimal-polynomial identity exact: True, trace 28
+   cross block 36x28: C^T C eigenvalues {0: 7, 48: 21}
+n=4 N=256 sqrtN=16 form=plain
+   block Q=0: 136 points, eigenvalues {-16: 24, -8: 45, 8: 40, 16: 27}, minimal-polynomial identity exact: True, trace 8
+   block Q=1: 120 points, eigenvalues {-16: 19, -8: 40, 8: 45, 16: 16}, minimal-polynomial identity exact: True, trace -8
+   cross block 136x120: C^T C eigenvalues {0: 35, 192: 85}
+n=4 N=256 sqrtN=16 form=polar
+   block Q=0: 136 points, eigenvalues {-8: 85, 16: 51}, minimal-polynomial identity exact: True, trace 136
+   block Q=1: 120 points, eigenvalues {-16: 35, 8: 85}, minimal-polynomial identity exact: True, trace 120
+   cross block 136x120: C^T C eigenvalues {0: 35, 192: 85}

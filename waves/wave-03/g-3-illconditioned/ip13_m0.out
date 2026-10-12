@@ -1,0 +1,23 @@
+inplace p=13 wires=4 fd=4 bd=4 garbage=0 points=2381
+forward depth 0 states 1
+forward depth 1 new states 144 (total 145)
+forward depth 2 new states 12492 (total 12637)
+forward depth 3 new states 754272 (total 766909)
+forward depth 4 new states 34565868 (total 35332777)
+backward depth 0 states 1
+backward depth 1 new states 144 (total 145)
+backward depth 2 new states 12492 (total 12637)
+backward depth 3 new states 754272 (total 766909)
+backward depth 4 new states 34565868 (total 35332777)
+RESULT p=13 wires=4 garbage=0: least number of moves = 8 over GF(13) (meeting states at that length: 2019)
+PATH p=13 wires=4 moves=8
+STATE 1,0,0,0 0,1,0,0 0,0,1,0 0,0,0,1
+STATE 1,0,0,0 0,0,1,0 0,0,0,1 0,1,0,12
+STATE 0,0,1,0 1,0,1,0 0,0,0,1 0,1,0,12
+STATE 1,0,1,0 0,0,0,1 0,1,0,12 0,1,2,12
+STATE 1,0,1,0 1,0,1,11 0,1,0,12 0,1,2,12
+STATE 1,0,1,0 0,1,0,12 1,12,1,12 0,1,2,12
+STATE 1,0,1,0 1,12,12,1 0,1,0,12 1,12,1,12
+STATE 1,1,1,1 1,12,12,1 0,1,0,12 1,12,1,12
+STATE 1,1,1,1 1,12,12,1 1,12,1,12 1,1,12,12
+END

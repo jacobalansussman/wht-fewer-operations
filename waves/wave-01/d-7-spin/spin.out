@@ -1,0 +1,24 @@
+k=2 N=4  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=6 (1.50 per entry)  nnz(M)=9 (2.250 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 1}
+   det(S) mod 2147483629 = 2
+k=3 N=8  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=16 (2.00 per entry)  nnz(M)=24 (3.000 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 2}
+   det(S) mod 2147483629 = 9
+k=4 N=16  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=48 (3.00 per entry)  nnz(M)=47 (2.938 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 3, 2: 2}
+   det(S) mod 2147483629 = 768
+k=5 N=32  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=136 (4.25 per entry)  nnz(M)=120 (3.750 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 4, 2: 5}
+   det(S) mod 2147483629 = 16402500
+k=6 N=64  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=408 (6.38 per entry)  nnz(M)=226 (3.531 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 5, 2: 9, 3: 5}
+   det(S) mod 2147483629 = 1688664742
+k=7 N=128  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=1184 (9.25 per entry)  nnz(M)=560 (4.375 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 6, 2: 14, 3: 14}
+   det(S) mod 2147483629 = 770825391
+k=8 N=256  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=3552 (13.88 per entry)  nnz(M)=1039 (4.059 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 7, 2: 20, 3: 28, 4: 14}
+k=10 N=1024  H*S == S*M: True   S entries in {0,+-1}: True by construction   S = relabelling x unitriangular: False
+   nnz(S)=31296 (30.56 per entry)  nnz(M)=4646 (4.537 per entry)  blocks {arcs j: multiplicity} = {0: 1, 1: 9, 2: 35, 3: 75, 4: 90, 5: 42}
+SOMETHING FAILED
+LIGHT label=d-7-spin-build exit=0 time=2s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:32:37 cmd=python3 -B spin.py 2 3 4 5 6 7 8 10

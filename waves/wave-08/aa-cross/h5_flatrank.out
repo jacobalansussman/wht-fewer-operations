@@ -1,0 +1,14 @@
+k=3 : 51 flats
+   neighbour sums (weight 1)                                              D = 1, bound k - D = 2, flat rank found: 2  flats (bit masks) 96 80
+   neighbour sums plus the point itself (weight <= 1)                     D = 1, bound k - D = 2, flat rank found: 2  flats (bit masks) 3 14
+   sphere of radius 2                                                     D = 2, bound k - D = 1, flat rank found: 2  flats (bit masks) 69 1
+   quadric signs +,+,-,-,+ by weight (the transform's kernel for even k)  D = 2, bound k - D = 1, flat rank found: 3  flats (bit masks) 3 14 ff
+k=4 : 307 flats
+   neighbour sums (weight 1)                                              D = 2, bound k - D = 2, flat rank found: 2  flats (bit masks) 12 104
+   neighbour sums plus the point itself (weight <= 1)                     D = 2, bound k - D = 2, flat rank found: 3  flats (bit masks) 4114 3 4000
+   sphere of radius 2                                                     D = 3, bound k - D = 1, flat rank found: 2  flats (bit masks) 1248 420
+   quadric signs +,+,-,-,+ by weight (the transform's kernel for even k)  D = 2, bound k - D = 2, flat rank found: > 3
+k=5 : 2451 flats ; D(neighbour sums) = 2 (floor(k/2) = 2) ; D(quadric signs' spectrum) = 4
+k=6 : 26387 flats ; D(neighbour sums) = 3 (floor(k/2) = 3) ; D(quadric signs' spectrum) = 3
+LIGHT label=aacross-h5 exit=0 time=2s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:07:02 cmd=python3 -B h5_flatrank.py 240
+exit 0

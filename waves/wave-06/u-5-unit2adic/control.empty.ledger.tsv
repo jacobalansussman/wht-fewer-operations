@@ -1,0 +1,3 @@
+phase	source	target	frame_dim	t_source	t_source_x	t_target_before	t_target_before_x	t_target_after	t_target_after_x	kind	batch_order
+A	x0	s2	3	1	1	0	0	1	1	copy	-1
+scatter	copy0	y1	0	1	1	1	0	2	1	J disjoint	0

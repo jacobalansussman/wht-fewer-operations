@@ -1,0 +1,11 @@
+inplace p=7 wires=5 fd=4 bd=3 garbage=1 points=401
+forward depth 0 states 1
+forward depth 1 new states 76 (total 77)
+forward depth 2 new states 3438 (total 3515)
+forward depth 3 new states 108036 (total 111551)
+forward depth 4 new states 2525007 (total 2636558)
+backward depth 0 states 401
+backward depth 1 new states 32724 (total 33125)
+backward depth 2 new states 1513110 (total 1546235)
+backward depth 3 new states 46091916 (total 47638151)
+RESULT p=7 wires=5 garbage=1: NO program with <= 7 moves over GF(7)

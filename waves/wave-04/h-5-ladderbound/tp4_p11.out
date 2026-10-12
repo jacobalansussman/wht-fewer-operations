@@ -1,0 +1,13 @@
+p=11 pool=product (136 candidates) gates=4: none (1 sets tried)
+p=11 pool=product (136 candidates) gates=5: none (136 sets tried)
+p=11 pool=product (136 candidates) gates=6: none (9180 sets tried)
+p=11 pool=product (136 candidates) gates=7: none (410040 sets tried)
+p=11 pool=product (136 candidates) gates=8: REACHED ((0, 0, 1, 1), (0, 0, 1, 10), (0, 1, 0, 1), (1, 0, 1, 0)) (67630 sets tried)
+p=11 pool=product+tight (140 candidates) gates=4: none (1 sets tried)
+p=11 pool=product+tight (140 candidates) gates=5: none (140 sets tried)
+p=11 pool=product+tight (140 candidates) gates=6: none (9730 sets tried)
+p=11 pool=product+tight (140 candidates) gates=7: none (447580 sets tried)
+p=11 pool=product+tight (140 candidates) gates=8: REACHED ((0, 0, 1, 1), (0, 0, 1, 10), (0, 1, 0, 1), (1, 0, 1, 0)) (71858 sets tried)
+p=11 pool=everything (1456 candidates) gates=4: none (1 sets tried)
+p=11 pool=everything (1456 candidates) gates=5: none (1456 sets tried)
+LIGHT label=h5-tp4-11 exit=124 time=403s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=time>400s start=23:46:57 cmd=python3 -B h-5-ladderbound/tp4.py 11

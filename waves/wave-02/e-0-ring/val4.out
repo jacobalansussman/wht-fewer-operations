@@ -1,0 +1,71 @@
+== k=4 N=16 n=15  primitive polynomial 0b10011  trace-one set has 8 terms
+primes (orbits of doubling) reps: [1, 3, 5, 7]
+  piece of each rep (order of zeta^j): [15, 5, 3, 15]
+  digit sums s(j):                    [1, 2, 2, 3]
+  valuation of the mask at j:         [2, 1, 1, 0]
+  k-1-s(j):                           [2, 1, 1, 0]  s(j)-1: [0, 1, 1, 2]
+  norm of mask on each piece: {3: '2^2', 5: '2^4', 15: '2^8'}
+-- two-term letters 1 + c t^a (integer c): valuations at the reps, norms per piece
+   c=+1: sum over all a and all primes of |valuation beyond the scalar| = 0
+   c=-1: sum over all a and all primes of |valuation beyond the scalar| = 0
+   c=+2: sum over all a and all primes of |valuation beyond the scalar| = 0
+   c=-2: sum over all a and all primes of |valuation beyond the scalar| = 0
+   c=+3: sum over all a and all primes of |valuation beyond the scalar| = 0
+   c=-3: sum over all a and all primes of |valuation beyond the scalar| = 0
+-- three-term letters s0 + s1 t^a + s2 t^b, signs +-1, a<b, up to shift: those that vanish mod 2 somewhere
+   31 shift classes of supports; 52 signed letters with some positive valuation
+   1 + t^1 + t^2  val [0, 0, 48, 0]  norms {3: '0', 5: '1', 15: '5^2'}
+   1 + t^1 - t^2  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 - t^1 + t^2  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '1'}   <-- PURE power of 2 on every piece
+   1 - t^1 - t^2  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 + t^1 + t^4  val [1, 0, 0, 0]  norms {3: '3', 5: '1', 15: '2^4'}
+   1 + t^1 - t^4  val [1, 0, 0, 0]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 - t^1 + t^4  val [1, 0, 0, 0]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 - t^1 - t^4  val [1, 0, 0, 0]  norms {3: '7', 5: '1', 15: '2^4'}
+   1 + t^1 + t^5  val [0, 0, 48, 0]  norms {3: '0', 5: '11', 15: '5^2'}
+   1 + t^1 - t^5  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 - t^1 + t^5  val [0, 0, 1, 0]  norms {3: '2^2', 5: '31', 15: '1'}
+   1 - t^1 - t^5  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 + t^1 + t^8  val [0, 0, 48, 0]  norms {3: '0', 5: '1', 15: '5^2'}
+   1 + t^1 - t^8  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '1'}   <-- PURE power of 2 on every piece
+   1 - t^1 + t^8  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 - t^1 - t^8  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 + t^1 + t^11  val [0, 0, 48, 0]  norms {3: '0', 5: '11', 15: '5^2'}
+   1 + t^1 - t^11  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 - t^1 + t^11  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 - t^1 - t^11  val [0, 0, 1, 0]  norms {3: '2^2', 5: '31', 15: '1'}
+   1 + t^1 + t^12  val [0, 0, 0, 1]  norms {3: '3', 5: '1', 15: '2^4'}
+   1 + t^1 - t^12  val [0, 0, 0, 1]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 - t^1 + t^12  val [0, 0, 0, 1]  norms {3: '7', 5: '1', 15: '2^4'}
+   1 - t^1 - t^12  val [0, 0, 0, 1]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 + t^2 + t^4  val [0, 0, 48, 0]  norms {3: '0', 5: '1', 15: '5^2'}
+   1 + t^2 - t^4  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 - t^2 + t^4  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '1'}   <-- PURE power of 2 on every piece
+   1 - t^2 - t^4  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 + t^2 + t^7  val [0, 0, 48, 0]  norms {3: '0', 5: '11', 15: '5^2'}
+   1 + t^2 - t^7  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 - t^2 + t^7  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 - t^2 - t^7  val [0, 0, 1, 0]  norms {3: '2^2', 5: '31', 15: '1'}
+   1 + t^2 + t^8  val [1, 0, 0, 0]  norms {3: '3', 5: '1', 15: '2^4'}
+   1 + t^2 - t^8  val [1, 0, 0, 0]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 - t^2 + t^8  val [1, 0, 0, 0]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 - t^2 - t^8  val [1, 0, 0, 0]  norms {3: '7', 5: '1', 15: '2^4'}
+   1 + t^2 + t^9  val [0, 0, 0, 1]  norms {3: '3', 5: '1', 15: '2^4'}
+   1 + t^2 - t^9  val [0, 0, 0, 1]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 - t^2 + t^9  val [0, 0, 0, 1]  norms {3: '7', 5: '1', 15: '2^4'}
+   1 - t^2 - t^9  val [0, 0, 0, 1]  norms {3: '1', 5: '11', 15: '2^4'}
+   1 + t^2 + t^10  val [0, 0, 48, 0]  norms {3: '0', 5: '11', 15: '5^2'}
+   1 + t^2 - t^10  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 - t^2 + t^10  val [0, 0, 1, 0]  norms {3: '2^2', 5: '31', 15: '1'}
+   1 - t^2 - t^10  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '61'}
+   1 + t^4 + t^8  val [0, 0, 48, 0]  norms {3: '0', 5: '1', 15: '5^2'}
+   1 + t^4 - t^8  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 - t^4 + t^8  val [0, 0, 1, 0]  norms {3: '2^2', 5: '1', 15: '1'}   <-- PURE power of 2 on every piece
+   1 - t^4 - t^8  val [0, 0, 1, 0]  norms {3: '2^2', 5: '11', 15: '31'}
+   1 + t^5 + t^10  val [48, 0, 48, 48]  norms {3: '0', 5: '3^4', 15: '0'}
+   1 + t^5 - t^10  val [1, 0, 1, 1]  norms {3: '2^2', 5: '1', 15: '2^8'}   <-- PURE power of 2 on every piece
+   1 - t^5 + t^10  val [1, 0, 1, 1]  norms {3: '2^2', 5: '1', 15: '2^8'}   <-- PURE power of 2 on every piece
+   1 - t^5 - t^10  val [1, 0, 1, 1]  norms {3: '2^2', 5: '1', 15: '2^8'}   <-- PURE power of 2 on every piece
+   letters whose norm is a pure power of 2 on every non-trivial piece: 7 of 52
+   (all-plus trinomials) number of primes hit -> how many trinomial classes: {1: 12, 3: 1} of 4 primes
+LIGHT label=e0-val4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:54:51 cmd=python3 -B val.py 4 all

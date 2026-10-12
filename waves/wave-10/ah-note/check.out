@@ -1,0 +1,25 @@
+controls: 13 of 13 textbook counts agree with ag-7's TABLE.txt and ai-0's table
+
+16 points (k=4); transform: textbook 64, night's record 52 (count G)
+  degree 1: rank   5  textbook gates   15  step  15  (N = 16)  transform modulo 4 by M D M^T with textbook pieces: 41
+  degree 2: rank  11  textbook gates   26  step  11  (N = 16)  transform modulo 8 by M D M^T with textbook pieces: 57
+  degree 3: rank  15  textbook gates   31  step   5  (N = 16)  transform modulo 16 by M D M^T with textbook pieces: 63
+  degree 4: rank  16  textbook gates   32  step   1  (N = 16)  transform modulo 32 by M D M^T with textbook pieces: 64
+
+32 points (k=5); transform: textbook 160, night's record 128 (count G)
+  degree 1: rank   6  textbook gates   31  step  31  (N = 32)  transform modulo 4 by M D M^T with textbook pieces: 88
+  degree 2: rank  16  textbook gates   57  step  26  (N = 32)  transform modulo 8 by M D M^T with textbook pieces: 130
+  degree 3: rank  26  textbook gates   73  step  16  (N = 32)  transform modulo 16 by M D M^T with textbook pieces: 152
+  degree 4: rank  31  textbook gates   79  step   6  (N = 32)  transform modulo 32 by M D M^T with textbook pieces: 159
+  degree 5: rank  32  textbook gates   80  step   1  (N = 32)  transform modulo 64 by M D M^T with textbook pieces: 160
+
+64 points (k=6); transform: textbook 384, night's record 304 (count G)
+  degree 1: rank   7  textbook gates   63  step  63  (N = 64)  transform modulo 4 by M D M^T with textbook pieces: 183
+  degree 2: rank  22  textbook gates  120  step  57  (N = 64)  transform modulo 8 by M D M^T with textbook pieces: 282
+  degree 3: rank  42  textbook gates  162  step  42  (N = 64)  transform modulo 16 by M D M^T with textbook pieces: 346
+  degree 4: rank  57  textbook gates  184  step  22  (N = 64)  transform modulo 32 by M D M^T with textbook pieces: 375
+  degree 5: rank  63  textbook gates  191  step   7  (N = 64)  transform modulo 64 by M D M^T with textbook pieces: 383
+  degree 6: rank  64  textbook gates  192  step   1  (N = 64)  transform modulo 128 by M D M^T with textbook pieces: 384
+
+limit check: textbook(d,k)/N for fixed d tends to d: [1.0, 2.0, 3.0, 4.0]
+LIGHT label=ah-note exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:44:08 cmd=python3 -B check.py

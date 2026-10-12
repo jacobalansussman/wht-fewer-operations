@@ -1,0 +1,31 @@
+k=2 N=4 support<=2: 14 non-isotropic vectors; largest pairwise H-orthogonal family = 3  (N/4 = 1, N/2 = 2, N = 4)  [0 s]
+    supports in that family: [(1, 1), (2, 2)] ; covering sum of s(s-1)/2 = 2 of the 6 pairs
+      +1*e[00]
+      +1*e[00] -1*e[01]
+      +1*e[00] -1*e[10]
+LIGHT label=x5-peel22 exit=0 time=1s waited=20s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:19 cmd=python3 -B peel.py 2 2 30
+k=2 N=4 support<=4: 36 non-isotropic vectors; largest pairwise H-orthogonal family = 4  (N/4 = 1, N/2 = 2, N = 4)  [0 s]
+    supports in that family: [(1, 1), (2, 2), (4, 1)] ; covering sum of s(s-1)/2 = 8 of the 6 pairs
+      +1*e[00]
+      +1*e[00] -1*e[01]
+      +1*e[00] -1*e[10]
+      +1*e[00] -1*e[01] -1*e[10] +1*e[11]
+LIGHT label=x5-peel24 exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:20 cmd=python3 -B peel.py 2 4 30
+k=3 N=8 support<=2: 52 non-isotropic vectors; largest pairwise H-orthogonal family = 4  (N/4 = 2, N/2 = 4, N = 8)  [0 s]
+    supports in that family: [(1, 1), (2, 3)] ; covering sum of s(s-1)/2 = 3 of the 28 pairs
+      +1*e[000]
+      +1*e[000] -1*e[001]
+      +1*e[000] -1*e[010]
+      +1*e[000] -1*e[100]
+LIGHT label=x5-peel32 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:21 cmd=python3 -B peel.py 3 2 60
+k=3 N=8 support<=4: 764 non-isotropic vectors; largest pairwise H-orthogonal family = 8  (N/4 = 2, N/2 = 4, N = 8)  [4 s]
+    supports in that family: [(2, 2), (4, 6)] ; covering sum of s(s-1)/2 = 38 of the 28 pairs
+      +1*e[000] +1*e[011]
+      +1*e[101] -1*e[110]
+      +1*e[000] -1*e[001] -1*e[100] -1*e[101]
+      +1*e[000] -1*e[010] +1*e[101] -1*e[111]
+      +1*e[000] -1*e[011] +1*e[101] +1*e[110]
+      +1*e[001] +1*e[010] +1*e[100] -1*e[111]
+      +1*e[001] +1*e[011] -1*e[100] -1*e[110]
+      +1*e[010] +1*e[011] +1*e[110] -1*e[111]
+LIGHT label=x5-peel34 exit=0 time=5s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=03:37:22 cmd=python3 -B peel.py 3 4 120

@@ -1,0 +1,20 @@
+== p=3 m=4 (gates = 6 + m)
+p=3 n=6 rows=6 non-input distinct targets=6  intermediates allowed m=4  => gate budget 10
+visited states by remaining budget: j=4:1 j=3:30 j=2:675 j=1:30942
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+LIGHT label=ic-alt-p3m4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:01:57 cmd=sh -c ../d-0-zeta/mincirc 3 6 4 < rows_alt4.txt
+== p=3 m=5 (gates = 6 + m)
+p=3 n=6 rows=6 non-input distinct targets=6  intermediates allowed m=5  => gate budget 11
+visited states by remaining budget: j=5:1 j=4:30 j=3:675 j=2:30942 j=1:1733958
+RESULT p=3: NO circuit with 11 gates (exhaustive over GF(3))
+LIGHT label=ic-alt-p3m5 exit=0 time=9s waited=0s peak_rss_mb=16 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:01:58 cmd=sh -c ../d-0-zeta/mincirc 3 6 5 < rows_alt4.txt
+== p=5 m=4 (gates = 6 + m)
+p=5 n=6 rows=6 non-input distinct targets=6  intermediates allowed m=4  => gate budget 10
+visited states by remaining budget: j=4:1 j=3:60 j=2:2730 j=1:254694
+RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+LIGHT label=ic-alt-p5m4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:02:08 cmd=sh -c ../d-0-zeta/mincirc 5 6 4 < rows_alt4.txt
+== p=5 m=5 (gates = 6 + m)
+p=5 n=6 rows=6 non-input distinct targets=6  intermediates allowed m=5  => gate budget 11
+visited states by remaining budget: j=5:1 j=4:60 j=3:2730 j=2:254694 j=1:29214246
+RESULT p=5: NO circuit with 11 gates (exhaustive over GF(5))
+LIGHT label=ic-alt-p5m5 exit=0 time=177s waited=0s peak_rss_mb=31 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:02:09 cmd=sh -c ../d-0-zeta/mincirc 5 6 5 < rows_alt4.txt

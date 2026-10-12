@@ -1,0 +1,15 @@
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=5  => gate budget 12
+visited states by remaining budget: j=5:1 j=4:40 j=3:1113 j=2:60708 j=1:3773055
+RESULT p=2: 2802 distinct sets of 5 intermediates give a circuit with 12 gates (found 35778 times)
+  example with 0 signed intermediates: [00000011] [00001010] [00001100] [00001111] [00110000]
+  example with 0 signed intermediates: [00000011] [00001010] [00001100] [00001111] [01010000]
+  example with 0 signed intermediates: [00000011] [00001010] [00001100] [00001111] [10110000]
+  example with 0 signed intermediates: [00000011] [00001010] [00001100] [00001111] [11010000]
+  example with 0 signed intermediates: [00000011] [00001010] [00001100] [00001111] [11100000]
+  example with 0 signed intermediates: [00000011] [00001010] [00001100] [00110000] [00110011]
+CLASS p=2: sets with 0 intermediates not proportional to a 0/1 vector: 2802
+CLASS p=2: sets with 1 intermediates not proportional to a 0/1 vector: 0
+CLASS p=2: sets with 2 intermediates not proportional to a 0/1 vector: 0
+CLASS p=2: sets with 3 intermediates not proportional to a 0/1 vector: 0
+CLASS p=2: sets with 4 intermediates not proportional to a 0/1 vector: 0
+CLASS p=2: sets with 5 intermediates not proportional to a 0/1 vector: 0

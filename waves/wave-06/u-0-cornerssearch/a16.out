@@ -1,0 +1,8 @@
+start 108 (by columns 108)
+N=16 restart=0 best=30 recount rows=30 cols=30 final cur=30
+BEST 16 nnz 30 gates 44
+rows [11, 9, 8, 10, 14, 2, 6, 7, 3, 1, 5, 13, 12, 4, 0, 15] r []
+cols [4, 6, 14, 12, 8, 13, 9, 1, 5, 7, 3, 2, 10, 11, 15, 0] c []
+N=16 restart=1 best=30 recount rows=30 cols=30 final cur=30
+N=16 restart=2 best=30 recount rows=30 cols=30 final cur=30
+N=16 restart=3 best=30 recount rows=30 cols=30 final cur=30

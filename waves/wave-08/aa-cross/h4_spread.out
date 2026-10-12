@@ -1,0 +1,14 @@
+q= 4 N= 16 : spread of 5 subspaces ok ; slice identity on all 16 outputs: True ; lines 20, points per line 4 ; pairs of lines sharing 2 points: 0
+        rank of the line-sum matrix: 16 (rationals), modulo 2: 9, modulo 3: 16 ; subspaces equal to their own perpendicular: 1 ; perpendicular again in the spread: 5 of 5
+        adding-only cost of the line sums (no two lines share two points): (q^2+q)(q-1) = 60 ; textbook N log2 N = 64
+q= 8 N= 64 : spread of 9 subspaces ok ; slice identity on all 64 outputs: True ; lines 72, points per line 8 ; pairs of lines sharing 2 points: 0
+        rank of the line-sum matrix: 64 (rationals), modulo 2: 27, modulo 3: 64 ; subspaces equal to their own perpendicular: 1 ; perpendicular again in the spread: 3 of 9
+        adding-only cost of the line sums (no two lines share two points): (q^2+q)(q-1) = 504 ; textbook N log2 N = 384
+q=16 N=256 : spread of 17 subspaces ok ; slice identity on all 256 outputs: True ; lines 272, points per line 16 ; pairs of lines sharing 2 points: 0
+        rank of the line-sum matrix: 256 (modulo 1000003), modulo 2: 81, modulo 3: 256 ; subspaces equal to their own perpendicular: 1 ; perpendicular again in the spread: 3 of 17
+        adding-only cost of the line sums (no two lines share two points): (q^2+q)(q-1) = 4080 ; textbook N log2 N = 2048
+== the recursion T(N) <= R(N) + (sqrt N + 1) T(sqrt N): gates per point if R(N) <= beta N at every size (beta = 1, 2), N = 2^(2^t)
+   beta = 1 : 2^2: 1.75 (textbook 2) ; 2^4: 3.19 (textbook 4) ; 2^8: 4.39 (textbook 8) ; 2^16: 5.40 (textbook 16) ; 2^32: 6.40 (textbook 32) ; 2^64: 7.40 (textbook 64) ; 2^128: 8.40 (textbook 128) ; 2^256: 9.40 (textbook 256)
+   beta = 2 : 2^2: 2.75 (textbook 2) ; 2^4: 5.44 (textbook 4) ; 2^8: 7.78 (textbook 8) ; 2^16: 9.81 (textbook 16) ; 2^32: 11.81 (textbook 32) ; 2^64: 13.81 (textbook 64) ; 2^128: 15.81 (textbook 128) ; 2^256: 17.81 (textbook 256)
+LIGHT label=aacross-h4 exit=0 time=2s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:04:57 cmd=python3 -B h4_spread.py
+exit 0

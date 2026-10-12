@@ -1,0 +1,7 @@
+h1.txt: N=4 gates=8 outputs=4 helpers=4
+  control tau=-1, identity frame: YES
+  frames tried: 576   YES: 32   undecided/degenerate: 0
+   e.g. inputs [0, 1, 2, 3] outputs [1, 0, 3, 2] | second random tau: YES | exact tau=3: YES  tau=5/7: YES
+   e.g. inputs [0, 1, 2, 3] outputs [2, 3, 0, 1] | second random tau: YES | exact tau=3: YES  tau=5/7: YES
+   e.g. inputs [0, 1, 3, 2] outputs [1, 2, 3, 0] | second random tau: YES | exact tau=3: YES  tau=5/7: YES
+LIGHT label=ag8-h1 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:20:39 cmd=python3 -B wsolve.py h1.txt frames

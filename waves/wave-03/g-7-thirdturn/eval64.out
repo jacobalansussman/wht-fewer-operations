@@ -1,0 +1,6 @@
+N=4 half transform: rows closed under R: True (fixed 1, three-cycles 1); non-zeros of B 8, of B^-1 8; pair-sharing count of B 4 (per form 1.00), of B^-1 4; sum 8; N log2 N = 8
+N=4 chain (tensor power of the 4-point chain): rows closed under R: True (fixed 1, three-cycles 1); non-zeros of B 11, of B^-1 8; pair-sharing count of B 4 (per form 1.00), of B^-1 4; sum 8; N log2 N = 8
+N=16 half transform: rows closed under R: True (fixed 1, three-cycles 5); non-zeros of B 64, of B^-1 64; pair-sharing count of B 32 (per form 2.00), of B^-1 32; sum 64; N log2 N = 64
+N=16 chain (tensor power of the 4-point chain): rows closed under R: True (fixed 1, three-cycles 5); non-zeros of B 121, of B^-1 64; pair-sharing count of B 32 (per form 2.00), of B^-1 32; sum 64; N log2 N = 64
+N=64 half transform: rows closed under R: True (fixed 1, three-cycles 21); non-zeros of B 512, of B^-1 512; pair-sharing count of B 192 (per form 3.00), of B^-1 192; sum 384; N log2 N = 384
+N=64 chain (tensor power of the 4-point chain): rows closed under R: True (fixed 1, three-cycles 21); non-zeros of B 1331, of B^-1 512; pair-sharing count of B 193 (per form 3.02), of B^-1 192; sum 385; N log2 N = 384

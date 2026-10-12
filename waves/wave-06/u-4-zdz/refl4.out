@@ -1,0 +1,7 @@
+N=4: reflections tried 1152 (support <= 4, entries from 1, -1, 2, -2, 1/2, -1/2); non-zeros of subset sums: 9
+histogram of non-zeros of B = Z Q: [(9, 14), (10, 36), (11, 48), (12, 64), (13, 220), (14, 342), (15, 6), (16, 422)] ...
+sparsest: 9 non-zeros, u = ['1', '0', '0', '2'], B D B^T = H exactly: True
+         0     0     0  -1/2
+         0     1     0  -1/2
+         0     0     1  -1/2
+        -2     1     1  -1/2

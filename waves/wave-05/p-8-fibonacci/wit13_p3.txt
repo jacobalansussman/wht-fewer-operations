@@ -1,0 +1,22 @@
+13
+  edge  from 2 2 2 2 2 1 2 1  to 0 0 0 0 0 0 0 0   node 255  mult 1
+  edge  from 2 2 2 2 2 1 1 1  to 2 2 2 2 2 1 2 1   node 64  mult 1
+  edge  from 2 2 2 2 1 1 1 1  to 2 2 2 2 2 1 1 1   node 16  mult 1
+  edge  from 1 1 1 1 1 1 1 1  to 2 2 2 2 1 1 1 1   node 15  mult 1
+  terminal row 0 at 1 1 1 1 1 1 1 1
+  terminal row 4 at 2 2 2 2 1 1 1 1
+  edge  from 2 2 2 2 2 2 1 1  to 2 2 2 2 2 1 1 1   node 32  mult 1
+  edge  from 2 2 1 1 2 2 1 1  to 2 2 2 2 2 2 1 1   node 12  mult 1
+  terminal row 2 at 2 2 1 1 2 2 1 1
+  edge  from 1 1 2 2 2 2 1 1  to 2 2 2 2 2 2 1 1   node 3  mult 1
+  terminal row 6 at 1 1 2 2 2 2 1 1
+  edge  from 2 2 2 1 2 1 2 1  to 2 2 2 2 2 1 2 1   node 8  mult 1
+  edge  from 2 1 2 1 2 1 2 1  to 2 2 2 1 2 1 2 1   node 2  mult 1
+  terminal row 1 at 2 1 2 1 2 1 2 1
+  edge  from 2 1 2 1 1 2 1 2  to 2 1 2 1 2 1 2 1   node 240  mult 1
+  terminal row 5 at 2 1 2 1 1 2 1 2
+  edge  from 1 2 2 1 2 1 2 1  to 2 2 2 1 2 1 2 1   node 1  mult 1
+  edge  from 1 2 2 1 1 2 2 1  to 1 2 2 1 2 1 2 1   node 48  mult 1
+  terminal row 3 at 1 2 2 1 1 2 2 1
+  edge  from 1 2 2 1 2 1 1 2  to 1 2 2 1 2 1 2 1   node 192  mult 1
+  terminal row 7 at 1 2 2 1 2 1 1 2

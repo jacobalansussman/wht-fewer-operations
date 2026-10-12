@@ -1,0 +1,125 @@
+== block size 6, 8 arrays: every odd-weight direction once (32 moves, plain 48), ALL forms ==
+m=6 W=8 design with 32 moves (plain 48): fewest moves selected by a form with q(I)=1: 8 (passes counting)
+  total 32, tight forms 10240, largest clique 32 (W=8): 000001:1 000010:1 000100:1 000111:1 001000:1 001011:1 001101:1 001110:1 010000:1 010011:1 010101:1 010110:1 011001:1 011010:1 011100:1 011111:1 
+  -> EXCLUDED by the clique lemma
+== block size 5, 4 arrays, 18 moves ==
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 2664824, minimal leaves 118, part 0 of 8
+  16 moves: 1 count vectors pass counting; largest clique between 16 and 16; pass the clique test too: 0
+  17 moves: 31 count vectors pass counting; largest clique between 15 and 16; pass the clique test too: 0
+  18 moves: 496 count vectors pass counting; largest clique between 14 and 16; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 1498451, minimal leaves 0, part 1 of 8
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 975704, minimal leaves 0, part 2 of 8
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 960928, minimal leaves 0, part 3 of 8
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 1145296, minimal leaves 0, part 4 of 8
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 816465, minimal leaves 0, part 5 of 8
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 989726, minimal leaves 0, part 6 of 8
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 18 moves that pass counting (plain = 20). search nodes 855147, minimal leaves 0, part 7 of 8
+== block size 4, more arrays, up to one move below plain ==
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 33.749995 moves
+m=4 W=9: all count vectors with at most 35 moves that pass counting (plain = 36). search nodes 67721, minimal leaves 24, part 0 of 1
+  34 moves: 2 count vectors pass counting; largest clique between 25 and 25; pass the clique test too: 0
+  35 moves: 40 count vectors pass counting; largest clique between 14 and 25; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 37.499995 moves
+m=4 W=10: all count vectors with at most 39 moves that pass counting (plain = 40). search nodes 126236, minimal leaves 36, part 0 of 1
+  38 moves: 3 count vectors pass counting; largest clique between 20 and 26; pass the clique test too: 0
+  39 moves: 60 count vectors pass counting; largest clique between 15 and 26; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 41.249994 moves
+m=4 W=11: all count vectors with at most 43 moves that pass counting (plain = 44). search nodes 221502, minimal leaves 48, part 0 of 1
+  42 moves: 4 count vectors pass counting; largest clique between 21 and 27; pass the clique test too: 0
+  43 moves: 80 count vectors pass counting; largest clique between 16 and 27; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 44.999994 moves
+  SURVIVOR total 47, largest clique 12, tight forms 27: 0001:4 0010:3 0011:3 0100:3 0101:3 0110:3 0111:3 1000:3 1001:3 1010:3 1011:3 1100:3 1101:3 1110:4 1111:3
+  SURVIVOR total 47, largest clique 12, tight forms 27: 0001:3 0010:3 0011:3 0100:3 0101:3 0110:3 0111:4 1000:4 1001:3 1010:3 1011:3 1100:3 1101:3 1110:3 1111:3
+  SURVIVOR total 47, largest clique 12, tight forms 27: 0001:3 0010:3 0011:3 0100:4 0101:3 0110:3 0111:3 1000:3 1001:3 1010:3 1011:4 1100:3 1101:3 1110:3 1111:3
+  SURVIVOR total 47, largest clique 12, tight forms 27: 0001:3 0010:4 0011:3 0100:3 0101:3 0110:3 0111:3 1000:3 1001:3 1010:3 1011:3 1100:3 1101:4 1110:3 1111:3
+m=4 W=12: all count vectors with at most 47 moves that pass counting (plain = 48). search nodes 375483, minimal leaves 84, part 0 of 1
+  45 moves: 1 count vectors pass counting; largest clique between 45 and 45; pass the clique test too: 0
+  46 moves: 20 count vectors pass counting; largest clique between 22 and 42; pass the clique test too: 0
+  47 moves: 220 count vectors pass counting; largest clique between 12 and 42; pass the clique test too: 4
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 48.749994 moves
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:5 0010:4 0011:3 0100:4 0101:3 0110:3 0111:3 1000:4 1001:3 1010:3 1011:3 1100:3 1101:3 1110:4 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:4 0010:4 0011:3 0100:4 0101:3 0110:3 0111:4 1000:5 1001:3 1010:3 1011:3 1100:3 1101:3 1110:3 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:4 0010:4 0011:3 0100:5 0101:3 0110:3 0111:3 1000:4 1001:3 1010:3 1011:4 1100:3 1101:3 1110:3 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:4 0010:5 0011:3 0100:4 0101:3 0110:3 0111:3 1000:4 1001:3 1010:3 1011:3 1100:3 1101:4 1110:3 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:4 0010:3 0011:3 0100:3 0101:3 0110:3 0111:4 1000:3 1001:3 1010:3 1011:4 1100:3 1101:4 1110:5 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:3 0010:3 0011:3 0100:3 0101:3 0110:3 0111:5 1000:4 1001:3 1010:3 1011:4 1100:3 1101:4 1110:4 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:3 0010:3 0011:3 0100:4 0101:3 0110:3 0111:4 1000:3 1001:3 1010:3 1011:5 1100:3 1101:4 1110:4 1111:3
+  SURVIVOR total 51, largest clique 13, tight forms 27: 0001:3 0010:4 0011:3 0100:3 0101:3 0110:3 0111:4 1000:3 1001:3 1010:3 1011:4 1100:3 1101:5 1110:4 1111:3
+m=4 W=13: all count vectors with at most 51 moves that pass counting (plain = 52). search nodes 608315, minimal leaves 150, part 0 of 1
+  49 moves: 2 count vectors pass counting; largest clique between 37 and 37; pass the clique test too: 0
+  50 moves: 40 count vectors pass counting; largest clique between 23 and 37; pass the clique test too: 0
+  51 moves: 424 count vectors pass counting; largest clique between 13 and 37; pass the clique test too: 8
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 59.999992 moves
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:8 0010:7 0011:3 0100:7 0101:3 0110:3 0111:3 1000:7 1001:3 1010:3 1011:3 1100:3 1101:3 1110:4 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:7 0010:7 0011:3 0100:7 0101:3 0110:3 0111:4 1000:8 1001:3 1010:3 1011:3 1100:3 1101:3 1110:3 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:7 0010:7 0011:3 0100:8 0101:3 0110:3 0111:3 1000:7 1001:3 1010:3 1011:4 1100:3 1101:3 1110:3 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:7 0010:8 0011:3 0100:7 0101:3 0110:3 0111:3 1000:7 1001:3 1010:3 1011:3 1100:3 1101:4 1110:3 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:7 0010:6 0011:3 0100:6 0101:3 0110:3 0111:4 1000:6 1001:3 1010:3 1011:4 1100:3 1101:4 1110:5 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:6 0010:6 0011:3 0100:6 0101:3 0110:3 0111:5 1000:7 1001:3 1010:3 1011:4 1100:3 1101:4 1110:4 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:6 0010:6 0011:3 0100:7 0101:3 0110:3 0111:4 1000:6 1001:3 1010:3 1011:5 1100:3 1101:4 1110:4 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:6 0010:7 0011:3 0100:6 0101:3 0110:3 0111:4 1000:6 1001:3 1010:3 1011:4 1100:3 1101:5 1110:4 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:6 0010:5 0011:3 0100:5 0101:3 0110:3 0111:5 1000:5 1001:3 1010:3 1011:5 1100:3 1101:5 1110:6 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 12: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:4 1000:5 1001:4 1010:4 1011:4 1100:3 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:4 1000:5 1001:4 1010:3 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:4 0111:4 1000:5 1001:3 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:5 0010:5 0011:4 0100:5 0101:4 0110:3 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:5 0010:5 0011:3 0100:5 0101:4 0110:4 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:5 0010:5 0011:4 0100:5 0101:3 0110:4 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:5 0010:5 0011:3 0100:5 0101:3 0110:3 0111:6 1000:6 1001:3 1010:3 1011:5 1100:3 1101:5 1110:5 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:5 0010:5 0011:3 0100:6 0101:3 0110:3 0111:5 1000:5 1001:3 1010:3 1011:6 1100:3 1101:5 1110:5 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:5 0010:6 0011:3 0100:5 0101:3 0110:3 0111:5 1000:5 1001:3 1010:3 1011:5 1100:3 1101:6 1110:5 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:5 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:5 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:5 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:5 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:5 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:5 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:5 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:5 0101:4 0110:4 0111:4 1000:4 1001:4 1010:5 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:5 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:5 0010:4 0011:4 0100:4 0101:5 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:5 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:5 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:5 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:6 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:5 0010:4 0011:5 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:5 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:5 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:5 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:5 1110:5 1111:4
+  SURVIVOR total 62, largest clique 16, tight forms 27: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:6 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 21: 0001:5 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:5 1111:5
+  SURVIVOR total 63, largest clique 16, tight forms 27: 0001:5 0010:4 0011:3 0100:4 0101:3 0110:3 0111:6 1000:4 1001:3 1010:3 1011:6 1100:3 1101:6 1110:7 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:4 0010:4 0011:5 0100:4 0101:5 0110:4 0111:4 1000:4 1001:5 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:4 0100:4 0101:5 0110:4 0111:5 1000:4 1001:4 1010:4 1011:4 1100:4 1101:5 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:4 0100:4 0101:5 0110:4 0111:5 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:4 0010:4 0011:4 0100:4 0101:5 0110:5 0111:4 1000:4 1001:4 1010:4 1011:4 1100:5 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:5 0011:4 0100:4 0101:5 0110:4 0111:4 1000:5 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:5 0011:4 0100:4 0101:5 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:5 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:4 0010:4 0011:4 0100:5 0101:5 0110:4 0111:4 1000:4 1001:4 1010:4 1011:5 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:4 0100:5 0101:4 0110:4 0111:4 1000:4 1001:5 1010:4 1011:5 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:5 1010:4 1011:5 1100:4 1101:5 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:5 1001:5 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 20: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:5 1010:5 1011:4 1100:5 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:5 0011:4 0100:5 0101:4 0110:4 0111:4 1000:4 1001:5 1010:4 1011:4 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:5 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:5 1010:4 1011:4 1100:4 1101:5 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:5 0100:4 0101:4 0110:4 0111:5 1000:4 1001:4 1010:4 1011:5 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 12: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:4 1001:4 1010:4 1011:5 1100:4 1101:5 1110:5 1111:3
+  SURVIVOR total 63, largest clique 16, tight forms 14: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:4 1001:4 1010:4 1011:5 1100:3 1101:5 1110:5 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:4 0100:5 0101:4 0110:4 0111:5 1000:4 1001:4 1010:4 1011:5 1100:4 1101:4 1110:4 1111:4
+  SURVIVOR total 63, largest clique 16, tight forms 18: 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:5 1000:5 1001:4 1010:4 1011:5 1100:4 1101:4 1110:4 1111:4
+m=4 W=16: all count vectors with at most 63 moves that pass counting (plain = 64). search nodes 2197544, minimal leaves 467, part 0 of 1
+  60 moves: 1 count vectors pass counting; largest clique between 60 and 60; pass the clique test too: 0
+  61 moves: 20 count vectors pass counting; largest clique between 31 and 56; pass the clique test too: 0
+  62 moves: 220 count vectors pass counting; largest clique between 16 and 56; pass the clique test too: 4
+  63 moves: 1768 count vectors pass counting; largest clique between 16 and 56; pass the clique test too: 110

@@ -1,0 +1,14 @@
+exact: n = 2  L = 2.0  c0 = ++  c1 = ++
+exact: n = 4  L = 5.5  c0 = ++++  c1 = -+++
+exact: n = 8  L = 16.0  c0 = -+++-+++  c1 = +----+++
+exact: n = 16  L = 54.0  c0 = -+-+++++++++++++  c1 = +--+--++--++--++
+  check L(2n) >= 4 L(n) - 2n : 5.5 >= 4.0 True
+  check L(2n) >= 4 L(n) - 2n : 16.0 >= 14.0 True
+  check L(2n) >= 4 L(n) - 2n : 54.0 >= 48.0 True
+  seed descent: L(32) <= 195.0  at 0 s
+  seed descent: L(32) <= 194.0  at 0 s
+  seed descent: L(32) <= 193.0  at 2 s
+  random descent: L(32) <= 192.0  at 8 s
+upper bound found: L(32) <= 192.0  c0 = +---+++---+-+-+++++-+----+--++-+  c1 = +------+-+----+---+--+--+++--+++
+derived lower bound: L(32) >= 4 L(16) - 32 = 184.0
+so at N = 64 the floor 2 L(32) lies between 368 and 384

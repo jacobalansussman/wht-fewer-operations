@@ -1,0 +1,9 @@
+K=4 subspaces 67 flats 1072 (signed)
+sym2 K=4 p=2: 488 orbits, 96 invariant flats, part 0 of 1
+CANDIDATE r=5 K=4 (floats, replay exactly): 10:0 40:0 aa:88 aa00:2800 5555:5050
+CANDIDATE r=5 K=4 (floats, replay exactly): 10:0 40:0 a0a:808 a0a0:2080 5555:5050
+CANDIDATE r=5 K=4 (floats, replay exactly): 100:0 400:0 aa:88 aa00:2800 5555:5500
+CANDIDATE r=5 K=4 (floats, replay exactly): 100:0 400:0 a0a:808 a0a0:2080 5555:5500
+CANDIDATE r=5 K=4 (floats, replay exactly): 110:0 440:0 aa:88 aa00:2800 5005:5000
+CANDIDATE r=5 K=4 (floats, replay exactly): 110:0 440:0 a0a:808 a0a0:2080 5005:5000
+sym2 K=4 p=2 seed=1 part 0/1: 488 orbits, 96 invariant flats. two orbits (4 flats): 336 covering pairs tested exactly, 0 span g ; two orbits + 1 invariant flat (5 flats): 1208780 covering triples tested exactly, 24 span g

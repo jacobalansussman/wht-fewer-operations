@@ -1,0 +1,2 @@
+k 11 N  2048 | (a) H x / 32:  20992 operations = 17408 add/sub + 2560 halvings + 1024 doublings; my formula 20992 EQUAL | (b) H x exactly:  23040 (formula 23040 EQUAL) | textbook for H x:  22528 | (b) - textbook = +512
+k 12 N  4096 | (a) H x / 64:  44032 operations = 37888 add/sub + 6144 halvings + 0 doublings; my formula 44032 EQUAL | (b) H x exactly:  48128 (formula 48128 EQUAL) | textbook for H x:  49152 | (b) - textbook = -1024

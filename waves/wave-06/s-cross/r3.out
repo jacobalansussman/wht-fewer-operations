@@ -1,0 +1,4 @@
+N=4: (D H)^3 = 8 * identity: True ; trace(D H) = 2 ; so D H / sqrtN has order 3 with fixed space of dimension (N+2)/3 = 2 and the two other eigenvalues (N-1)/3 = 1 times each
+N=16: (D H)^3 = 64 * identity: True ; trace(D H) = 4 ; so D H / sqrtN has order 3 with fixed space of dimension (N+2)/3 = 6 and the two other eigenvalues (N-1)/3 = 5 times each
+N=64: (D H)^3 = 512 * identity: True ; trace(D H) = 8 ; so D H / sqrtN has order 3 with fixed space of dimension (N+2)/3 = 22 and the two other eigenvalues (N-1)/3 = 21 times each
+LIGHT label=scross-r3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:05:18 cmd=python3 -B r3.py

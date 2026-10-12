@@ -1,0 +1,35 @@
+pair-class pool with entries 0,+-1: 352 wires, 336 candidate helpers, 14016 (wire, parent pair) gate records
+staircase check: gates 20, outputs missing 0, dead helpers 0
+   seed 2 t=0s: circuit with 21 gates
+   seed 2 t=0s: circuit with 20 gates
+   seed 2 t=0s: circuit with 21 gates
+   seed 2 t=0s: circuit with 20 gates
+   seed 2 t=0s: circuit with 21 gates
+   seed 2 t=0s: circuit with 20 gates
+   seed 2 t=0s: circuit with 21 gates
+   seed 2 t=0s: circuit with 20 gates
+   seed 2 t=0s: circuit with 21 gates
+   seed 2 t=0s: circuit with 20 gates
+restarts 5, seed 2 start stair: 1718569 moves; best circuit 20 gates; feasible states visited by gate count: [(20, 30), (21, 210), (22, 387), (23, 353), (24, 183), (25, 62), (26, 11), (27, 1)]
+   help [1, 1, 0, 0, 0, 0, 0, 0]
+   help [0, 0, 1, -1, 0, 0, 0, 0]
+   help [1, 1, -1, 1, 0, 0, 0, 0]
+   help [1, 1, 1, 1, 0, 0, 0, 0]
+   help [1, -1, 1, -1, 0, 0, 0, 0]
+   help [0, 0, 0, 0, 1, 1, 0, 0]
+   help [0, 0, 0, 0, 0, 0, 1, -1]
+   help [0, 0, 0, 0, 1, 1, 1, -1]
+   help [0, 0, 0, 0, 1, 1, -1, -1]
+   help [0, 0, 0, 0, 1, -1, -1, 1]
+   help [1, 1, 1, 1, 1, 1, -1, -1]
+   help [1, -1, 1, -1, 1, -1, -1, 1]
+   OUT  [1, -1, 1, -1, 1, -1, 1, -1]
+   OUT  [1, -1, -1, 1, 1, -1, -1, 1]
+   OUT  [1, 1, 1, 1, -1, -1, -1, -1]
+   OUT  [1, -1, 1, -1, -1, 1, -1, 1]
+   OUT  [1, 1, -1, -1, -1, -1, 1, 1]
+   OUT  [1, -1, -1, 1, -1, 1, 1, -1]
+   OUT  [1, 1, 1, 1, 1, 1, 1, 1]
+   OUT  [1, 1, -1, -1, 1, 1, -1, -1]
+   exhaustive exchange around it (remove 1; remove 2 and add any 1 of 336): 21528 states tested, 0 circuits with 19 gates
+LIGHT label=h5-sa2 exit=0 time=304s waited=2s peak_rss_mb=11 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=00:03:42 cmd=python3 -B classsa.py 300 2 stair

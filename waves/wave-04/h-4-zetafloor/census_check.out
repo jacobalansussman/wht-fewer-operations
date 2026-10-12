@@ -1,0 +1,4 @@
+largest-kappa rule: {'all': 2748, 'signed': 126, 'yates-like': 24, 'idle=excess,surplus=0': 2742, 'excess>idle': 6, 'free entangled wire': 576, 'a gate with kappa 3': 1542}
+smallest-kappa rule: {'all': 2748, 'idle=excess,surplus=0': 2742, 'excess>idle': 6, 'free entangled wire': 576, 'a gate with kappa 3': 1542, 'a gate with two entangled inputs, an entangled output, three different entanglement sets, kappa>=1': 6}
+smallest-kappa rule, (idle, excess, surplus) : {(0, 0, 0): 24, (1, 1, 0): 234, (2, 2, 0): 804, (3, 3, 0): 1134, (3, 4, 1): 6, (4, 4, 0): 546}
+LIGHT label=h4-cc exit=0 time=5s waited=0s peak_rss_mb=13 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=00:19:49 cmd=python3 -B census_check.py

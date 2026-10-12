@@ -1,0 +1,438 @@
+{
+  "format": "explicit-circuits/1",
+  "written": "2026-10-11",
+  "author": "Jacob Sussman",
+  "about": "Machine-readable index of the result of this repository: explicit circuits for the Walsh-Hadamard transform with fewer operations than the textbook program. It is a better constant in front of N log2 N, not a better exponent. The account in words is in explicit-circuits.md, in this folder.",
+  "how_to_read": {
+    "counts": {
+      "G": "one operation is one a*u + b*v with any constants a, b; multiplying by a constant is free",
+      "O": "every addition, every subtraction and every multiplication by a constant costs one; the gate set of OpenAI's circuit model (lean/OAI/Computability/FourierCircuit/Core.lean)",
+      "textbook": "N log2 N in both counts",
+      "G_and_the_1994_paper": "Coppersmith, Feig and Linzer (1994, page 969) charge one for a multiply-add, +-a +- b*c, for a plain addition and for a plain multiplication. Count G is wider, because it allows a constant on both terms. No circuit here uses that: every line has at most one constant (tools/circuits/multiply_add_check.py), so each count G below is also the circuit's count in the sense of the 1994 paper"
+    },
+    "status_values": {
+      "lean": "a theorem in lean/Work/SmallWHT/ of this repository, accepted by Lean 4.34.1 on one Linux machine in a build of the folder lean/ from nothing with lake; lean/tools/Compare.lean passed; the official comparator was not run on this folder",
+      "python": "replayed exactly by the Python programs of tools/circuits/ on every unit input; not checked in Lean",
+      "on_paper": "argued in writing by the AI agents of this project; not in Lean, without a human review",
+      "read": "taken from the publication named"
+    },
+    "new": "'not found in print' means: not found in the literature search described in explicit-circuits.md, section 7; it is not a proof of novelty",
+    "review": "The reports behind this index were written by AI agents (Anthropic's Claude) that I directed, on 2026-10-10 and 2026-10-11. They have not had a line-by-line human review."
+  },
+  "not_a_change_of_order": "Every count here is a fixed fraction of N log2 N. Results that lower the exponent, such as OpenAI's result of 2026-09-25 for the Fourier transform, are of a smaller order: below every fixed fraction of N log2 N for large N.",
+  "lean": {
+    "status": "lean",
+    "statement_in_words": "for every j, the exact Walsh-Hadamard transform on N = 8^j points has a circuit in OpenAI's circuit model with at most 20*j*8^(j-1) + 8^j gates, which is (5/6) N log2 N + N",
+    "theorem": "OAI.ExactFourier.WHT8Half.hadamard_pow8_circuit",
+    "theorem_text": "theorem hadamard_pow8_circuit (j : Nat) : exists C : Circuit (2 ^ (3 * j)), C.Computes (hadamard (3 * j)) /\\ C.size <= 20 * (j * 8 ^ (j - 1)) + 8 ^ j",
+    "other_theorems": {
+      "OAI.ExactFourier.WHT8Half.hadamard_512_circuit": "512 points: a circuit with at most 4352 gates",
+      "OAI.ExactFourier.WHT8Half.hadamard_pow8_circuit_real": "the same count as (5/6) N log2 N + N",
+      "OAI.ExactFourier.WHT8Half.exists_circuit": "8 points: a circuit with 20 gates computes (1/2) H",
+      "OAI.ExactFourier.WHT8Half.wht_eq_mulVec": "multiplying by hadamard k is the function wht of lean/WHTCheck/Solution.lean (the two use the same formula)",
+      "OAI.ExactFourier.WHT8Half.cost_power_half_H": "the tensor power of (1/2) H_8 costs at most j * 8^(j-1) * 20"
+    },
+    "files": [
+      "lean/Work/SmallWHT/H8Half.lean",
+      "lean/Work/SmallWHT/HadamardDigits.lean",
+      "lean/Work/SmallWHT/TensorPow8.lean",
+      "lean/Work/SmallWHT/TensorPow8Real.lean",
+      "lean/Work/SmallWHT/H8Bridge.lean",
+      "lean/Work/SmallWHT/ChallengeWHT8.lean"
+    ],
+    "statement_only_file": "lean/Work/SmallWHT/ChallengeWHT8.lean",
+    "model_file": "lean/OAI/Computability/FourierCircuit/Core.lean",
+    "openai_files": 44,
+    "openai_files_what": "lean/OAI/Computability/FourierCircuit/: Core.lean (the circuit model) and 43 files on the cost of tensor products, unmodified",
+    "openai_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "checked": {
+      "lean_version": "4.34.1",
+      "machine": "one rented Linux machine, x86-64",
+      "date": "2026-10-11",
+      "how": "a build of the folder lean/ from nothing with lake (Mathlib from its cache, the 51 files of the folder from source); the commands are in VERIFY.md",
+      "result": "exit code 0; no error; the two expected sorry warnings for the statement-only file and no other warning; lean/tools/Compare.lean RESULT: PASS",
+      "lake_build_from_nothing": true,
+      "comparator": "not run on this folder; in the night of 2026-10-10 to 2026-10-11, in the folder where the six files were written, it accepted the same two statements, with a stand-in for its sandbox and a configuration file that is not in this repository",
+      "mac": false,
+      "human_review": false,
+      "negative_control": "a copy of the 8-point file with gate 13 changed from an addition to a subtraction was refused by Lean; a copy of the statement with 20 changed to 19 was refused by lean/tools/Compare.lean"
+    },
+    "what_it_does_not_say": "above 8 points it states that a circuit exists and writes no gate list; sizes that are not powers of 8, count G and the 7/8 family are not stated in Lean",
+    "checksums": "NOTICE, section 1, gives the commands that compare the 44 files of openai/math with a checkout of that repository"
+  },
+  "circuits": [
+    {
+      "name": "4 points, 7 operations",
+      "count": "G",
+      "operations": 7,
+      "textbook": 8,
+      "file": "tools/circuits/programs/h4_7gates.txt",
+      "status": "python",
+      "origin": "known: Coppersmith, Feig and Linzer, 1994, page 969; the file is another wiring of the same idea (3 additions or subtractions and 4 multiply-adds, where theirs has 4 and 3)"
+    },
+    {
+      "name": "8 points, 19 operations",
+      "count": "G",
+      "operations": 19,
+      "textbook": 24,
+      "best_found_in_print": 22,
+      "file": "tools/circuits/programs/h8_19gates.txt",
+      "status": "python",
+      "origin": "this project; not found in print",
+      "best_found_in_print_source": "22 by the formula of Coppersmith, Feig and Linzer (1994) for odd powers of two, (7/8) N log2 N + N/8; also the 8-point step of Alman and Rao (2023) when its halving is free"
+    },
+    {
+      "name": "8 points, every output halved, 20 operations",
+      "count": "O",
+      "operations": 20,
+      "textbook": 24,
+      "computes": "H x / 2",
+      "file": "tools/circuits/programs/h8_half_20ops.txt",
+      "lean_data": "tools/circuits/lean/h8_half_o20.txt",
+      "status": "lean",
+      "origin": "this project: the 19-operation circuit with its centre halved once"
+    },
+    {
+      "name": "16 points, 52 operations",
+      "count": "G",
+      "operations": 52,
+      "textbook": 64,
+      "best_found_in_print": 56,
+      "file": "tools/circuits/programs/h16_52gates.txt",
+      "status": "python",
+      "origin": "this project; not found in print",
+      "best_found_in_print_source": "56 by the formula of Coppersmith, Feig and Linzer (1994): eight 4-point transforms (page 970)"
+    }
+  ],
+  "families": [
+    {
+      "name": "the family",
+      "count": "G",
+      "computes": "exact H x",
+      "sizes": "every N = 2^k, k >= 2",
+      "operations": "(3/4) N log2 N + N/4",
+      "best_rate_found_in_print": "7/8 (Coppersmith, Feig and Linzer, 1994: (7/8) N log2 N for N a power of four, and N/8 more for an odd power of two)",
+      "generator": "tools/circuits/gen.py",
+      "replayed_to_points": 16384,
+      "status": "python",
+      "like_for_like": "every line of these circuits is one operation in the count of the 1994 paper (tools/circuits/multiply_add_check.py)"
+    },
+    {
+      "name": "layers of the 20-operation circuit",
+      "count": "O",
+      "computes": "exact H x",
+      "sizes": "N = 8^j",
+      "operations": "(5/6) N log2 N + N = 20*j*8^(j-1) + 8^j",
+      "other_sizes": "k = 3m + r, r = 1 or 2: N (k - m/2 + 1), a textbook layer for each bit left over; python only",
+      "first_size_below_textbook": 512,
+      "published_record_compared_with": "at most (23/24) N log2 N + (13/12) N (Alman and Rao, 2023, Theorem 1.1); exactly (23/24) N log2 N + N - 1 when N is a power of 8",
+      "replayed_to_points": 16384,
+      "status": "lean for the count at N = 8^j; python for the gate lists"
+    },
+    {
+      "name": "the family, scaled transform",
+      "count": "O",
+      "computes": "H x / sqrt(N)",
+      "sizes": "N a power of 4",
+      "operations": "(7/8) N log2 N + N/4",
+      "at_16_points": 60,
+      "replayed_to_points": 16384,
+      "status": "python",
+      "least_for_this_wiring": "on_paper and python: an argument, and exact computations at 4 to 64 points, made by the AI agents on 2026-10-11, say that the wiring of the family cannot go below the rate 7/8 in count O however its values are scaled; the programs are not in this repository"
+    }
+  ],
+  "table_exact_transform": {
+    "columns": {
+      "textbook": "N log2 N",
+      "G_published_rate_7_8": "count G: computed from the two formulas of Coppersmith, Feig and Linzer (1994, page 969): (7/8) N log2 N for N a power of four, and N/8 more for an odd power of two",
+      "G_family": "count G: (3/4) N log2 N + N/4; python",
+      "G_layers_small_circuits": "count G: the 8-point circuit on three bits at a time, then a textbook layer for one bit left over or the 4-point circuit for two; python",
+      "O_alman_rao_algorithm": "count O: the exact count in the proof of Alman and Rao's Theorem 6.2, 23 N k / 24 + (N/24)(k mod 3) + N - 1; read",
+      "O_layers_exact": "count O: layers of the 20-operation circuit, a textbook layer per bit left over, N final multiplications; python (lean for the count when 3 divides k)"
+    },
+    "rows": [
+      {
+        "points": 4,
+        "k": 2,
+        "textbook": 8,
+        "G_published_rate_7_8": 7,
+        "G_family": 7,
+        "G_layers_small_circuits": null,
+        "O_alman_rao_algorithm": null,
+        "O_layers_exact": null,
+        "O_below_textbook": false
+      },
+      {
+        "points": 8,
+        "k": 3,
+        "textbook": 24,
+        "G_published_rate_7_8": 22,
+        "G_family": 20,
+        "G_layers_small_circuits": 19,
+        "O_alman_rao_algorithm": 30,
+        "O_layers_exact": 28,
+        "O_below_textbook": false
+      },
+      {
+        "points": 16,
+        "k": 4,
+        "textbook": 64,
+        "G_published_rate_7_8": 56,
+        "G_family": 52,
+        "G_layers_small_circuits": 54,
+        "O_alman_rao_algorithm": 77,
+        "O_layers_exact": 72,
+        "O_below_textbook": false
+      },
+      {
+        "points": 32,
+        "k": 5,
+        "textbook": 160,
+        "G_published_rate_7_8": 144,
+        "G_family": 128,
+        "G_layers_small_circuits": 132,
+        "O_alman_rao_algorithm": 187,
+        "O_layers_exact": 176,
+        "O_below_textbook": false
+      },
+      {
+        "points": 64,
+        "k": 6,
+        "textbook": 384,
+        "G_published_rate_7_8": 336,
+        "G_family": 304,
+        "G_layers_small_circuits": 304,
+        "O_alman_rao_algorithm": 431,
+        "O_layers_exact": 384,
+        "O_below_textbook": false
+      },
+      {
+        "points": 128,
+        "k": 7,
+        "textbook": 896,
+        "G_published_rate_7_8": 800,
+        "G_family": 704,
+        "G_layers_small_circuits": 736,
+        "O_alman_rao_algorithm": 991,
+        "O_layers_exact": 896,
+        "O_below_textbook": false
+      },
+      {
+        "points": 256,
+        "k": 8,
+        "textbook": 2048,
+        "G_published_rate_7_8": 1792,
+        "G_family": 1600,
+        "G_layers_small_circuits": 1664,
+        "O_alman_rao_algorithm": 2239,
+        "O_layers_exact": 2048,
+        "O_below_textbook": false
+      },
+      {
+        "points": 512,
+        "k": 9,
+        "textbook": 4608,
+        "G_published_rate_7_8": 4096,
+        "G_family": 3584,
+        "G_layers_small_circuits": 3648,
+        "O_alman_rao_algorithm": 4927,
+        "O_layers_exact": 4352,
+        "O_below_textbook": true
+      },
+      {
+        "points": 1024,
+        "k": 10,
+        "textbook": 10240,
+        "G_published_rate_7_8": 8960,
+        "G_family": 7936,
+        "G_layers_small_circuits": 8320,
+        "O_alman_rao_algorithm": 10879,
+        "O_layers_exact": 9728,
+        "O_below_textbook": true
+      },
+      {
+        "points": 2048,
+        "k": 11,
+        "textbook": 22528,
+        "G_published_rate_7_8": 19968,
+        "G_family": 17408,
+        "G_layers_small_circuits": 18176,
+        "O_alman_rao_algorithm": 23807,
+        "O_layers_exact": 21504,
+        "O_below_textbook": true
+      },
+      {
+        "points": 4096,
+        "k": 12,
+        "textbook": 49152,
+        "G_published_rate_7_8": 43008,
+        "G_family": 37888,
+        "G_layers_small_circuits": 38912,
+        "O_alman_rao_algorithm": 51199,
+        "O_layers_exact": 45056,
+        "O_below_textbook": true
+      }
+    ],
+    "replayed": "every row, to 4096 points on a Mac; to 16384 points on a Linux machine; above that the counts rest on an induction written out in tools/circuits/gen.py, checked twice by the AI agents of this project and read by no person"
+  },
+  "table_scaled_transform": {
+    "what": "H x / sqrt(N) in count O, even k",
+    "status": "python",
+    "rows": [
+      {
+        "points": 4,
+        "k": 2,
+        "textbook_and_N_multiplications": 12,
+        "family": 8,
+        "layers": 8
+      },
+      {
+        "points": 16,
+        "k": 4,
+        "textbook_and_N_multiplications": 80,
+        "family": 60,
+        "layers": 72
+      },
+      {
+        "points": 64,
+        "k": 6,
+        "textbook_and_N_multiplications": 448,
+        "family": 352,
+        "layers": 384
+      },
+      {
+        "points": 256,
+        "k": 8,
+        "textbook_and_N_multiplications": 2304,
+        "family": 1856,
+        "layers": 2048
+      },
+      {
+        "points": 1024,
+        "k": 10,
+        "textbook_and_N_multiplications": 11264,
+        "family": 9216,
+        "layers": 9728
+      },
+      {
+        "points": 4096,
+        "k": 12,
+        "textbook_and_N_multiplications": 53248,
+        "family": 44032,
+        "layers": 45056
+      }
+    ]
+  },
+  "reproduce": [
+    {
+      "what": "the ten steps of docs/UNDERSTAND.md, each with its check",
+      "command": "python3 docs/walkthrough.py all",
+      "needs": "Python 3.9 or later, standard library; a second",
+      "expected": "last line starts with OK"
+    },
+    {
+      "what": "every circuit replayed exactly, the tables, and the Lean data file written again and compared",
+      "command": "python3 -B tools/circuits/run.py",
+      "needs": "Python 3.9 or later, standard library; about a minute, about 700 MB",
+      "expected": "tools/circuits/expected-output.txt; last line starts with OK"
+    },
+    {
+      "what": "every line of every circuit file is one operation of the 1994 paper",
+      "command": "python3 -B tools/circuits/multiply_add_check.py",
+      "needs": "Python 3.9 or later, standard library; a second",
+      "expected": "last line starts with OK"
+    },
+    {
+      "what": "the count stated by Grigoryan and Agaian (2000) beside the count of their algorithm",
+      "command": "python3 -B tools/circuits/ga_count.py",
+      "needs": "Python 3.9 or later, standard library; a second",
+      "expected": "last line starts with OK"
+    },
+    {
+      "what": "the circuits as working programs: 30 tests",
+      "command": "cd tools/circuits/fast && python3 -B -m wht56 --selftest",
+      "needs": "Python 3.9 or later; numpy and a C compiler are used when present; under a minute",
+      "expected": "last line OK, or OK (skipped=5) without numpy"
+    },
+    {
+      "what": "the Lean statement",
+      "command": "sh lean/check.sh",
+      "needs": "Linux with git, curl and elan; about 12 GB of disk; the last command held 15.3 GB of memory in one process; VERIFY.md",
+      "note": "on 2026-10-11 on the Linux machine: 51 modules, 15 minutes from nothing, RESULT: PASS"
+    }
+  ],
+  "not_claimed": [
+    "a change of order: none",
+    "running time: the 8-point step was written into the generated code of the library FFHT in place of its 24-operation block and timed on one machine on 2026-10-11; it was not faster at any size from 2^6 to 2^26 points (from 2^5 in double precision), in any of three forms (tools/circuits/fast/wht56/results/ffht/README.md); in my own plain C on two machines the time did not follow the operation count (tools/circuits/fast/wht56/results/bench-by-size/bench.md)",
+    "hardware: as one block of adders with no registers inside, the 19-adder 8-point circuit takes 274 logic cells against 349 for the textbook network on a Lattice iCE40HX8K (273 against 337 with the synthesis option -dff); it is twice as deep, slower by the tools' estimates, larger than the textbook when pipelined, and not the smallest design on that chip; no existing design was improved (tools/circuits/fpga/README.md)",
+    "optimality: at 8 points the minimum in count G is between 15 and 19; the lower bound 2N - 1 (15 at 8 points) is Proposition 6 of the paper in paper/, with a proof written by the AI agents on 2026-10-11 and read by a second agent and by no person, not in Lean; 19 is the exact minimum only among circuits of its own shape, by two exhaustive searches (python)",
+    "novelty beyond the literature search described in explicit-circuits.md"
+  ],
+  "literature": {
+    "searched_on": [
+      "2026-10-10",
+      "2026-10-11"
+    ],
+    "best_found_in_print": {
+      "G_8_points": 22,
+      "G_16_points": 56,
+      "G_rate": "7/8",
+      "O_rate_exact": "23/24"
+    },
+    "not_read": [
+      "I. S. Sergeev, survey of 2025: pages 50 to about 170 not read",
+      "circuits counted in wires (Alman, 2021, and later): read in part; their constructions were converted into count G by the AI agents, and the best that comes out is the rate 7/8, the 1994 circuit again (a computation without a human review)",
+      "Morgenstern (1973): known as Alman and Rao quote it; Samadi, Suzukake and Iwakura (1998) and the comment of Frigo and Johnson (2007): known from their abstracts"
+    ],
+    "read": [
+      "D. Coppersmith, E. Feig, E. Linzer, IEEE Trans. Signal Process. 42(4), 1994, pages 969-970, doi 10.1109/78.285664: both pages, read by the AI agents from a copy I obtained",
+      "A. M. Grigoryan, S. S. Agaian, IEEE Trans. Signal Process. 48(1), 2000, pages 172-183, doi 10.1109/78.815487: pages 172 and 178 to 183, read by the AI agents from a copy I obtained; pages 173 to 177 were not read: by the outline on page 172 they hold the part on the Fourier transform and also the section that sets out the algorithm for the Hadamard transform"
+    ],
+    "stated_count_of_grigoryan_and_agaian_2000": {
+      "stated": "6*2^r - r^2 - 3r - 6 additions and subtractions for N = 2^r points (page 181)",
+      "finding": "the stated count is too small: the recursion that the algorithm follows, T(N) = (2N - 2) + T(N/2) + ... + T(1), T(1) = 0, gives exactly N log2 N",
+      "first_size_below_N_log2_N": 16,
+      "first_size_below_half_N_log2_N": 4096,
+      "at_4096_points": {
+        "stated": 24390,
+        "N_log2_N": 49152,
+        "half_N_log2_N": 24576
+      },
+      "bound": "(N/2) log2 N is a lower bound for circuits of additions and subtractions, by the determinant argument of Morgenstern (1973) as Alman and Rao quote it; the introduction of the paper gives 0.5 N log N as a lower bound for the Hadamard transform (page 172)",
+      "program": "tools/circuits/ga_count.py",
+      "status": "python: arithmetic on the two formulas; the recursion was written down by the AI agents from the description of the algorithm on pages 179 to 181"
+    }
+  },
+  "credits": [
+    {
+      "what": "the circuit model and the Lean development of circuit costs under tensor products",
+      "who": "OpenAI (openai/math, family 130)"
+    },
+    {
+      "what": "the 7-operation circuit for 4 points; (7/8) N log2 N for N a power of four and N/8 more for an odd power of two, in their count, where one multiply-add +-a +- b*c is one operation",
+      "who": "D. Coppersmith, E. Feig, E. Linzer, IEEE Trans. Signal Process. 42(4), 1994, doi 10.1109/78.285664"
+    },
+    {
+      "what": "the published record in count O, (23/24) N log2 N + (13/12) N; the method of the 20-operation circuit: the 8-point matrix as a part of low rank plus a sparse part, with one halving",
+      "who": "J. Alman, K. Rao, STOC 2023, doi 10.1145/3564246.3585188; arXiv:2211.06459"
+    },
+    {
+      "what": "the searches, the programs, the Lean files, the literature search",
+      "who": "AI agents (Anthropic's Claude) that I directed"
+    }
+  ],
+  "tried_and_nothing_found": [
+    "the family together with the 8-point circuit in count O (2026-10-11): six ways of mixing them were built and replayed exactly, and from 64 points on every mix that is not just the layers of the 8-point circuit costs more than the layers; status on_paper and python, programs not in this repository; it does not show that no other circuit beats the rate 5/6"
+  ],
+  "not_tried": [
+    "a direct search for a 16-point circuit with 53 operations or fewer in count O, up to a common factor (the best known has 56)",
+    "Lean statements for count G, for the 7/8 family and for sizes that are not powers of 8",
+    "the exact minimum at 8 points",
+    "the same question for the Fourier transform"
+  ]
+}

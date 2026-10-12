@@ -1,0 +1,9 @@
+== m = 4, W = 4 live, S = 2 scratch, characters with values +-1 (1024), sequence all
+   try 0, order 4,8,6,7,9,2,10,15,3,14,11,13,1,5,12: root-mean-square error 3.639e-01   [82 s]
+   try 1, order 1,15,5,11,9,4,10,2,14,7,12,3,13,6,8: root-mean-square error 3.641e-01   [167 s]
+   try 2, order 7,11,5,9,14,6,1,8,2,10,13,12,4,3,15: root-mean-square error 4.540e-01   [243 s]
+   try 3, order 1,10,11,8,12,6,14,2,3,15,13,4,5,9,7: root-mean-square error 3.689e-01   [295 s]
+   try 4, order 8,13,15,10,11,5,14,1,4,6,2,7,9,12,3: root-mean-square error 4.540e-01   [344 s]
+   try 5, order 5,7,3,2,1,10,4,13,6,9,8,12,15,14,11: root-mean-square error 4.540e-01   [393 s]
+   try 6, order 10,8,13,5,9,4,11,2,1,12,15,6,7,3,14: root-mean-square error 6.477e-01   [408 s]
+   try 7, order 7,9,4,6,8,5,3,14,15,1,12,2,10,13,11: root-mean-square error 3.641e-01   [457 s]

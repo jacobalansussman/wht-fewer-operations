@@ -1,0 +1,32 @@
+h=2  Hadamard [[1,1],[1,-1]] (cross-ratio -1)   ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  [[1,2],[3,-6]] (cross-ratio -1)            ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  [[1,2],[3,5]] (generic)                    ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  [[2,1],[1,1]] (cross-ratio 2)              ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  [[1,1],[1,3]] (cross-ratio 3)              ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  subset sums [[1,0],[1,1]]                  ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  a reflection [[3,4],[4,-3]] (cross-ratio -9/16) ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=2  an involution [[1,3],[0,-1]]               ports (direction, hyperplane):   2 ; distinct directions   2 of 3 ; their weights [1] ; hyperplane = b-perp for all: True
+h=3  Hadamard [[1,1],[1,-1]] (cross-ratio -1)   ports (direction, hyperplane):   4 ; distinct directions   4 of 7 ; their weights [1, 3] ; hyperplane = b-perp for all: True
+h=3  [[1,2],[3,-6]] (cross-ratio -1)            ports (direction, hyperplane):   4 ; distinct directions   4 of 7 ; their weights [1, 3] ; hyperplane = b-perp for all: True
+h=3  [[1,2],[3,5]] (generic)                    ports (direction, hyperplane):   3 ; distinct directions   3 of 7 ; their weights [1] ; hyperplane = b-perp for all: True
+h=3  [[2,1],[1,1]] (cross-ratio 2)              ports (direction, hyperplane):   3 ; distinct directions   3 of 7 ; their weights [1] ; hyperplane = b-perp for all: True
+h=3  [[1,1],[1,3]] (cross-ratio 3)              ports (direction, hyperplane):   3 ; distinct directions   3 of 7 ; their weights [1] ; hyperplane = b-perp for all: True
+h=3  subset sums [[1,0],[1,1]]                  ports (direction, hyperplane):   3 ; distinct directions   3 of 7 ; their weights [1] ; hyperplane = b-perp for all: True
+h=3  a reflection [[3,4],[4,-3]] (cross-ratio -9/16) ports (direction, hyperplane):   3 ; distinct directions   3 of 7 ; their weights [1] ; hyperplane = b-perp for all: True
+h=3  an involution [[1,3],[0,-1]]               ports (direction, hyperplane):   3 ; distinct directions   3 of 7 ; their weights [1] ; hyperplane = b-perp for all: True
+h=4  Hadamard [[1,1],[1,-1]] (cross-ratio -1)   ports (direction, hyperplane):   8 ; distinct directions   8 of 15 ; their weights [1, 3] ; hyperplane = b-perp for all: True
+h=4  [[1,2],[3,-6]] (cross-ratio -1)            ports (direction, hyperplane):   8 ; distinct directions   8 of 15 ; their weights [1, 3] ; hyperplane = b-perp for all: True
+h=4  [[1,2],[3,5]] (generic)                    ports (direction, hyperplane):   4 ; distinct directions   4 of 15 ; their weights [1] ; hyperplane = b-perp for all: True
+h=4  [[2,1],[1,1]] (cross-ratio 2)              ports (direction, hyperplane):   4 ; distinct directions   4 of 15 ; their weights [1] ; hyperplane = b-perp for all: True
+h=4  [[1,1],[1,3]] (cross-ratio 3)              ports (direction, hyperplane):   4 ; distinct directions   4 of 15 ; their weights [1] ; hyperplane = b-perp for all: True
+h=4  subset sums [[1,0],[1,1]]                  ports (direction, hyperplane):   4 ; distinct directions   4 of 15 ; their weights [1] ; hyperplane = b-perp for all: True
+h=4  a reflection [[3,4],[4,-3]] (cross-ratio -9/16) ports (direction, hyperplane):   4 ; distinct directions   4 of 15 ; their weights [1] ; hyperplane = b-perp for all: True
+h=4  an involution [[1,3],[0,-1]]               ports (direction, hyperplane):   4 ; distinct directions   4 of 15 ; their weights [1] ; hyperplane = b-perp for all: True
+h=5  Hadamard [[1,1],[1,-1]] (cross-ratio -1)   ports (direction, hyperplane):  16 ; distinct directions  16 of 31 ; their weights [1, 3, 5] ; hyperplane = b-perp for all: True
+h=5  [[1,2],[3,-6]] (cross-ratio -1)            ports (direction, hyperplane):  16 ; distinct directions  16 of 31 ; their weights [1, 3, 5] ; hyperplane = b-perp for all: True
+h=5  [[1,2],[3,5]] (generic)                    ports (direction, hyperplane):   5 ; distinct directions   5 of 31 ; their weights [1] ; hyperplane = b-perp for all: True
+h=5  [[2,1],[1,1]] (cross-ratio 2)              ports (direction, hyperplane):   5 ; distinct directions   5 of 31 ; their weights [1] ; hyperplane = b-perp for all: True
+h=5  [[1,1],[1,3]] (cross-ratio 3)              ports (direction, hyperplane):   5 ; distinct directions   5 of 31 ; their weights [1] ; hyperplane = b-perp for all: True
+h=5  subset sums [[1,0],[1,1]]                  ports (direction, hyperplane):   5 ; distinct directions   5 of 31 ; their weights [1] ; hyperplane = b-perp for all: True
+h=5  a reflection [[3,4],[4,-3]] (cross-ratio -9/16) ports (direction, hyperplane):   5 ; distinct directions   5 of 31 ; their weights [1] ; hyperplane = b-perp for all: True
+h=5  an involution [[1,3],[0,-1]]               ports (direction, hyperplane):   5 ; distinct directions   5 of 31 ; their weights [1] ; hyperplane = b-perp for all: True

@@ -1,0 +1,5 @@
+R det ok ; hits: [] number of hits 0
+R^T det ok ; hits: [] number of hits 0
+R^-1 det ok ; hits: [] number of hits 0
+R^-T det ok ; hits: [] number of hits 0
+LIGHT label=wcross-x8 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:38:05 cmd=python3 -B x8basis.py

@@ -1,0 +1,16 @@
+start c20: gates 20, over-limit helpers 4, cost = gates + over-limit = 24  (L1 says >= 24)
+      (2,4) [1, 1, 0, 0, 0, 0, 0, 0]
+      (2,4) [0, 0, 1, -1, 0, 0, 0, 0]
+      (4,8) OVER [1, 1, -1, 1, 0, 0, 0, 0]
+      (4,2) [1, 1, 1, 1, 0, 0, 0, 0]
+      (4,2) [1, -1, 1, -1, 0, 0, 0, 0]
+      (2,4) [0, 0, 0, 0, 1, 1, 0, 0]
+      (2,4) [0, 0, 0, 0, 0, 0, 1, -1]
+      (4,8) OVER [0, 0, 0, 0, 1, 1, 1, -1]
+      (4,2) [0, 0, 0, 0, 1, 1, -1, -1]
+      (4,2) [0, 0, 0, 0, 1, -1, -1, 1]
+      (8,4) OVER [1, 1, 1, 1, 1, 1, -1, -1]
+      (8,4) OVER [1, -1, 1, -1, 1, -1, -1, 1]
+exchange around c20 (cost 24): remove 1, 2 or 3 helpers and add helpers of smaller total weight: 1615418 states tested, 0 circuits with cost < 24
+LIGHT label=h0-ex20 exit=0 time=183s waited=0s peak_rss_mb=13 peak_footprint_mb=10 lowest_cap_mb=1500 stopped=- start=23:50:50 cmd=python3 -B saw.py exchange c20
+exit 0

@@ -1,0 +1,18 @@
+N=4: R^3 = I: True; trace R = 1; R R^T = I: True; dim fixed space = 2 (N+2)/3 = 2
+      coordinate seed e_x: e_x R = +-(Walsh row x)/sqrtN, e_x R^2 = +-(-1)^(Q0 + w(x,.))/sqrtN (an eigenvector of S): True
+      half-transform basis: B R B^-1 is a signed relabelling: True; entries [Fraction(1, 1)]; cycles {length: count} = {1: 1, 3: 1}; rule on labels (a,b): [('(b, a+b+c)', 0)]
+N=16: R^3 = I: True; trace R = 1; R R^T = I: True; dim fixed space = 6 (N+2)/3 = 6
+      R_N = tensor power of R_4 (digit i = bit i of each half): True
+      coordinate seed e_x: e_x R = +-(Walsh row x)/sqrtN, e_x R^2 = +-(-1)^(Q0 + w(x,.))/sqrtN (an eigenvector of S): True
+      half-transform basis: B R B^-1 is a signed relabelling: True; entries [Fraction(1, 1)]; cycles {length: count} = {1: 1, 3: 5}; rule on labels (a,b): [('(b, a+b+c)', 0)]
+N=64: R^3 = I: True; trace R = 1; R R^T = I: True; dim fixed space = 22 (N+2)/3 = 22
+      R_N = tensor power of R_4 (digit i = bit i of each half): True
+      coordinate seed e_x: e_x R = +-(Walsh row x)/sqrtN, e_x R^2 = +-(-1)^(Q0 + w(x,.))/sqrtN (an eigenvector of S): True
+      half-transform basis: B R B^-1 is a signed relabelling: True; entries [Fraction(1, 1)]; cycles {length: count} = {1: 1, 3: 21}; rule on labels (a,b): [('(b, a+b+c)', 0)]
+
+4 points. fixed forms (left): x0+x1 and x0+x2 fixed by R: [True, True]
+seed e_0 gives [(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)), (Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(-1, 1))]
+4 points: 5418 invertible B in the box.  (lower bound on cost(B)+cost(B^-1), exact?) -> example
+    (8, False) ((-2, -2, -2, -2), [1, 1, 0, 0], 3, False, 3, False)
+    (8, True) ((-2, 0, 0, -2), [1, 1, 0, 0], 4, True, 4, True)
+    (10, False) ((-2, -2, -2, -1), [1, 1, 0, 0], 4, False, 4, False)

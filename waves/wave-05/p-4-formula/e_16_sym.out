@@ -1,0 +1,2 @@
+N=16 maxrect=999: EXHAUSTIVE after 0 s, 2672080 search nodes | Hadamard matrices of this form: 0, fewest rectangles 999 (tau 1000, gates 1014) | of them the transform up to relabelling and signs: 0, fewest rectangles 999 (tau 1000, gates 1014)
+LIGHT label=p4-e4s exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:20:17 cmd=./onenode_sym 4 540

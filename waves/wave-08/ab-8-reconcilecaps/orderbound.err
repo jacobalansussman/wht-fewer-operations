@@ -1,0 +1,5 @@
+LIGHT label=ab8-order exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:43:22 cmd=python3 -B orderbound.py 4 2 wide
+LIGHT label=ab8-order exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:43:24 cmd=python3 -B orderbound.py 4 2 x6
+LIGHT label=ab8-order exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:43:25 cmd=python3 -B orderbound.py 5 2 x6
+LIGHT label=ab8-order exit=0 time=2s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:43:26 cmd=python3 -B orderbound.py 5 2 wide
+LIGHT label=ab8-order exit=0 time=14s waited=0s peak_rss_mb=13 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=05:43:28 cmd=python3 -B orderbound.py 6 3 x6

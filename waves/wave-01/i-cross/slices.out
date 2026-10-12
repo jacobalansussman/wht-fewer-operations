@@ -1,0 +1,10 @@
+q= 4 symmetric    : slices  4, non-zero blocks  10, zero pattern as claimed: True, every block rank one with flat factor: True, slice factors form a transform of the slice: True, two-layer cost at textbook prices 28
+q= 4 antisymmetric: slices  3, non-zero blocks   6, zero pattern as claimed: True, every block rank one with flat factor: True, slice factors form a transform of the slice: True, two-layer cost at textbook prices 12
+      total with split and merge: 64   textbook for 16 points: 64
+q= 8 symmetric    : slices  8, non-zero blocks  36, zero pattern as claimed: True, every block rank one with flat factor: True, slice factors form a transform of the slice: True, two-layer cost at textbook prices 160
+q= 8 antisymmetric: slices  7, non-zero blocks  28, zero pattern as claimed: True, every block rank one with flat factor: True, slice factors form a transform of the slice: True, two-layer cost at textbook prices 112
+      total with split and merge: 384   textbook for 64 points: 384
+q=16 symmetric    : slices 16, non-zero blocks 136, zero pattern as claimed: True, every block rank one with flat factor: True, slice factors form a transform of the slice: True, two-layer cost at textbook prices 848
+q=16 antisymmetric: slices 15, non-zero blocks 120, zero pattern as claimed: True, every block rank one with flat factor: True, slice factors form a transform of the slice: True, two-layer cost at textbook prices 720
+      total with split and merge: 2048   textbook for 256 points: 2048
+LIGHT label=ic-slices exit=0 time=1s waited=8s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:15:51 cmd=python3 -B slices.py

@@ -1,0 +1,8 @@
+k=3 d=2: 654 minimum circuits, 1176 derivations of their outputs
+  type c gates (two outputs added): 0;  derivations with a repeated label or edge: 0
+  type a outputs 5175, type b outputs 3057 (summed over derivations)
+  shortest cycle of H+ over all derivations: 6  histogram: {6: 36, 'forest': 1140}
+k=3 d=3: 2802 minimum circuits, 5148 derivations of their outputs
+  type c gates (two outputs added): 0;  derivations with a repeated label or edge: 0
+  type a outputs 21717, type b outputs 14319 (summed over derivations)
+  shortest cycle of H+ over all derivations: none (always a forest)  histogram: {'forest': 5148}

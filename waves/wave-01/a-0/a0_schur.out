@@ -1,0 +1,10 @@
+k= 2 N=   4 strings=  2 rank mod p=4  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 1.50
+k= 3 N=   8 strings=  3 rank mod p=8  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 2.00
+k= 4 N=  16 strings=  6 rank mod p=16  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 3.00
+k= 5 N=  32 strings= 10 rank mod p=32  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 4.25
+k= 6 N=  64 strings= 20 rank mod p=64  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 6.38
+k= 7 N= 128 strings= 35 rank mod p=128  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 9.25
+k= 8 N= 256 strings= 70 rank mod p=256  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 13.88
+k= 9 N= 512 strings=126 rank mod p=512  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 20.38
+k=10 N=1024 strings=252 rank mod p=1024  U shift:True  Z Pascal:True  H (-2)^pairs Krawtchouk:True  heads killed by 'remove one':True  non-zeros of B per column 30.56
+LIGHT label=a0-schur exit=0 time=4s waited=0s peak_rss_mb=38 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:23:04 cmd=python3 -B a0_schur.py 10 10

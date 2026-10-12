@@ -1,0 +1,3 @@
+M=5 W=4 K=18 forms=16384 products=240 frozen0=0 root=[0,1073741824)
+nodes 1379019 leaves 118
+LIGHT label=n2-c18 exit=0 time=18s waited=0s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:09:25 cmd=./mycover 5 4 18 l18.txt

@@ -1,0 +1,2 @@
+start: helpers 36 dead 0 missing 0 gates 52
+done: 5341184 moves, 257525 accepted, best 52 gates; feasible states visited by gate count: 52:398 53:1875 54:4321 55:9084 56:20398 57:37260 58:48891 59:47432 60:35201 61:21196 62:10665 63:4806 64:1959 65:772 66:266 67:74 68:22 69:11

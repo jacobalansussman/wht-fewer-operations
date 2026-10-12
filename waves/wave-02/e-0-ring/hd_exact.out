@@ -1,0 +1,4 @@
+k=4 N=16: M(t) M(wt) M(w^2 t) == N(-J3 + 4K(t^3)) exactly: True ;  K has 1 of 5 points: [0]
+k=6 N=64: M(t) M(wt) M(w^2 t) == N(-J3 + 4K(t^3)) exactly: True ;  K has 5 of 21 points: [3, 6, 7, 12, 14]
+k=8 N=256: M(t) M(wt) M(w^2 t) == N(-J3 + 4K(t^3)) exactly: True ;  K has 21 of 85 points: ...
+LIGHT label=e0-hdx exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:17:39 cmd=python3 -B hd_exact.py

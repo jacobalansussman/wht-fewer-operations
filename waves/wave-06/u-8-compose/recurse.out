@@ -1,0 +1,25 @@
+textbook 4               N=  4 gates=   8 distinct wires=   8  e=  1 = sum of deltas by node size 2:0 4:1   wires not one gate from earlier ones, in the circuit or in any projection: 0
+brick                    N=  4 gates=   7 distinct wires=   7  e=  0 = sum of deltas by node size 2:0 4:0   wires not one gate from earlier ones, in the circuit or in any projection: 0
+the 19                   N=  8 gates=  19 distinct wires=  19  e=  0 = sum of deltas by node size 2:0 4:0 8:0   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase 8              N=  8 gates=  20 distinct wires=  20  e=  1 = sum of deltas by node size 2:0 4:0 8:1   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase 16             N= 16 gates=  52 distinct wires=  52  e=  5 = sum of deltas by node size 2:0 4:0 8:2 16:3   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase 32             N= 32 gates= 128 distinct wires= 128  e= 17 = sum of deltas by node size 2:0 4:0 8:4 16:6 32:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase 64             N= 64 gates= 304 distinct wires= 304  e= 49 = sum of deltas by node size 2:0 4:0 8:8 16:12 32:14 64:15   wires not one gate from earlier ones, in the circuit or in any projection: 0
+second 52 (h-1)          N= 16 gates=  52 distinct wires=  52  e=  5 = sum of deltas by node size 2:0 4:0 8:0 16:5   wires not one gate from earlier ones, in the circuit or in any projection: 0
+textbook 16              N= 16 gates=  64 distinct wires=  64  e= 17 = sum of deltas by node size 2:0 4:4 8:6 16:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+brick x textbook4        N= 16 gates=  60 distinct wires=  60  e= 13 = sum of deltas by node size 2:0 4:0 8:6 16:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+textbook4 x brick        N= 16 gates=  60 distinct wires=  60  e= 13 = sum of deltas by node size 2:0 4:4 8:6 16:3   wires not one gate from earlier ones, in the circuit or in any projection: 0
+brick x brick            N= 16 gates=  56 distinct wires=  56  e=  9 = sum of deltas by node size 2:0 4:0 8:6 16:3   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase8 x t2          N= 16 gates=  56 distinct wires=  56  e=  9 = sum of deltas by node size 2:0 4:0 8:2 16:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+t2 x staircase8          N= 16 gates=  56 distinct wires=  56  e=  9 = sum of deltas by node size 2:0 4:4 8:2 16:3   wires not one gate from earlier ones, in the circuit or in any projection: 0
+19 x t2                  N= 16 gates=  54 distinct wires=  54  e=  7 = sum of deltas by node size 2:0 4:0 8:0 16:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+t2 x 19                  N= 16 gates=  54 distinct wires=  54  e=  7 = sum of deltas by node size 2:0 4:4 8:2 16:1   wires not one gate from earlier ones, in the circuit or in any projection: 0
+brick x 19               N= 32 gates= 132 distinct wires= 132  e= 21 = sum of deltas by node size 2:0 4:0 8:12 16:6 32:3   wires not one gate from earlier ones, in the circuit or in any projection: 0
+19 x brick               N= 32 gates= 132 distinct wires= 132  e= 21 = sum of deltas by node size 2:0 4:0 8:0 16:14 32:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+brick x staircase8       N= 32 gates= 136 distinct wires= 136  e= 25 = sum of deltas by node size 2:0 4:0 8:12 16:6 32:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase8 x brick       N= 32 gates= 136 distinct wires= 136  e= 25 = sum of deltas by node size 2:0 4:0 8:4 16:14 32:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+19 x 19                  N= 64 gates= 304 distinct wires= 304  e= 49 = sum of deltas by node size 2:0 4:0 8:0 16:28 32:14 64:7   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase8 x staircase8  N= 64 gates= 320 distinct wires= 320  e= 65 = sum of deltas by node size 2:0 4:0 8:8 16:28 32:14 64:15   wires not one gate from earlier ones, in the circuit or in any projection: 0
+brick x staircase16      N= 64 gates= 320 distinct wires= 320  e= 65 = sum of deltas by node size 2:0 4:0 8:24 16:12 32:14 64:15   wires not one gate from earlier ones, in the circuit or in any projection: 0
+staircase16 x brick      N= 64 gates= 320 distinct wires= 320  e= 65 = sum of deltas by node size 2:0 4:0 8:8 16:12 32:30 64:15   wires not one gate from earlier ones, in the circuit or in any projection: 0
+LIGHT label=u-8-recurse exit=0 time=3s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:26:14 cmd=python3 -B recurse.py

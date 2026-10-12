@@ -1,0 +1,40 @@
+== 1. 2 x 2 identities (exact) ==
+Z  = D(1/4,1/5) H D(3/2,-1/2) H D(2,1) H D(1,5/3)        : True
+Z  = D(1,3/5) H D(1,-1/2) H D(1,1/3) H D(1,5/4)           : True
+Z^-1 = D(1,-3/5) H D(1,-1/2) H D(1,1/3) H D(1,-5/4)       : True
+Z^T = D(1,5/4) H D(1,1/3) H D(1,-1/2) H D(1,3/5)          : True
+H  = Z D(1,-2) Z^T                                        : True
+Z^T = X Z X                                               : True
+Z^-1 = D(1,-1) Z D(1,-1)                                  : True
+H  = Z^-1^T ... the Moebius form: H = D(1,-1) M D(1,2) M^T D(1,-1) : True
+== 2. the same as N x N identities, k = 1..6 (exact) ==
+k=1 N=  2 Z_is_subset_sums:True  moebius_is_inverse:True  a0_word:True  unit_word:True  moebius_word:True  ZT_word:True  H_from_Z:True  ZT_is_XZX:True
+k=2 N=  4 Z_is_subset_sums:True  moebius_is_inverse:True  a0_word:True  unit_word:True  moebius_word:True  ZT_word:True  H_from_Z:True  ZT_is_XZX:True
+k=3 N=  8 Z_is_subset_sums:True  moebius_is_inverse:True  a0_word:True  unit_word:True  moebius_word:True  ZT_word:True  H_from_Z:True  ZT_is_XZX:True
+k=4 N= 16 Z_is_subset_sums:True  moebius_is_inverse:True  a0_word:True  unit_word:True  moebius_word:True  ZT_word:True  H_from_Z:True  ZT_is_XZX:True
+k=5 N= 32 Z_is_subset_sums:True  moebius_is_inverse:True  a0_word:True  unit_word:True  moebius_word:True  ZT_word:True  H_from_Z:True  ZT_is_XZX:True
+k=6 N= 64 Z_is_subset_sums:True  moebius_is_inverse:True  a0_word:True  unit_word:True  moebius_word:True  ZT_word:True  H_from_Z:True  ZT_is_XZX:True
+== 3. the family: for p, q with 2 p q (p^2+q^2)(q^2-p^2) invertible ==
+   Z = D(1/(2pq), 1/(p^2+q^2)) H D((p+q)/2, (p-q)/2) H D(q, p) H D(1, (p^2+q^2)/(q^2-p^2))
+   2128 rational pairs (p, q) tried at k = 1, all equal to Z: True
+   normalised to four diagonals D(1, r): global factor ((p+q)/(4p))^k ; it is 1 exactly when q = 3p, which gives
+   D(1,3/5) H D(1,-1/2) H D(1,1/3) H D(1,5/4), checked above for k = 1..6
+== 4. the word run as a program; operations counted ==
+   k    N   Yates adds = k 2^(k-1)   word: adds   muls   total (O)   = 3 k N + 4 (N-1)   total (G) = 3 k N   ratio (O)/Yates   outputs equal
+   1     2          1                      6      4        10             10                   6         10.000     zeta:True moebius:True
+   2     4          4                     24     12        36             36                  24          9.000     zeta:True moebius:True
+   3     8         12                     72     28       100            100                  72          8.333     zeta:True moebius:True
+   4    16         32                    192     60       252            252                 192          7.875     zeta:True moebius:True
+   5    32         80                    480    124       604            604                 480          7.550     zeta:True moebius:True
+   6    64        192                   1152    252      1404           1404                1152          7.312     zeta:True moebius:True
+   7   128        448                   2688    508      3196           3196                2688          7.134     zeta:True moebius:True
+   8   256       1024                   6144   1020      7164           7164                6144          6.996     zeta:True moebius:True
+   9   512       2304                  13824   2044     15868          15868               13824          6.887     zeta:True moebius:True
+  10  1024       5120                  30720   4092     34812          34812               30720          6.799     zeta:True moebius:True
+== 5. two calls cannot give Z, even with arbitrary diagonals ==
+   k=1: f must vanish on 1 of the 1 non-zero addresses -> H D2 H is a multiple of the identity: True
+   k=2: f must vanish on 3 of the 3 non-zero addresses -> H D2 H is a multiple of the identity: True
+   k=3: f must vanish on 7 of the 7 non-zero addresses -> H D2 H is a multiple of the identity: True
+   k=4: f must vanish on 15 of the 15 non-zero addresses -> H D2 H is a multiple of the identity: True
+done
+LIGHT label=g4-verify exit=0 time=7s waited=0s peak_rss_mb=14 peak_footprint_mb=10 lowest_cap_mb=1500 stopped=- start=22:43:30 cmd=python3 -B verify.py 6

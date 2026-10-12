@@ -1,0 +1,25 @@
+Z8 twist (0,): Hadamard 0; the transform 0
+Z8 twist (1,): Hadamard 0; the transform 0
+Z4xZ2 twist (0, 0): Hadamard 0; the transform 0
+Z4xZ2 twist (0, 1): Hadamard 16; the transform 16; example eps ++--++++
+Z4xZ2 twist (1, 0): Hadamard 16; the transform 16; example eps +-++-+++
+Z4xZ2 twist (1, 1): Hadamard 16; the transform 16; example eps +--+++++
+Z2^3 twist (0, 0, 0): Hadamard 0; the transform 0
+Z2^3 twist (0, 0, 1): Hadamard 32; the transform 32; example eps +--+++++
+Z2^3 twist (0, 1, 0): Hadamard 32; the transform 32; example eps +--+++++
+Z2^3 twist (0, 1, 1): Hadamard 32; the transform 32; example eps +-+-++++
+Z2^3 twist (1, 0, 0): Hadamard 32; the transform 32; example eps +-++-+++
+Z2^3 twist (1, 0, 1): Hadamard 32; the transform 32; example eps +--+++++
+Z2^3 twist (1, 1, 0): Hadamard 32; the transform 32; example eps +--+++++
+Z2^3 twist (1, 1, 1): Hadamard 32; the transform 32; example eps ++++++++
+Z16 twist (0,): Hadamard 0; the transform 0
+Z16 twist (1,): Hadamard 0; the transform 0
+Z8xZ2 twist (0, 0): Hadamard 192; the transform 64; example eps +--+--++-+-+++++
+Z8xZ2 twist (0, 1): Hadamard 64; the transform 0
+Z8xZ2 twist (1, 0): Hadamard 0; the transform 0
+Z8xZ2 twist (1, 1): Hadamard 0; the transform 0
+Z4xZ4 twist (0, 0): Hadamard 192; the transform 192; example eps +--+-+-+--++++++
+Z4xZ4 twist (0, 1): Hadamard 64; the transform 0
+Z4xZ4 twist (1, 0): Hadamard 64; the transform 0
+Z4xZ4 twist (1, 1): Hadamard 64; the transform 0
+LIGHT label=ab7-torus2 exit=0 time=3s waited=16s peak_rss_mb=9 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:09:43 cmd=python3 -B torus2.py

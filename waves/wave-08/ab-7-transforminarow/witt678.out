@@ -1,0 +1,4 @@
+k=6 N=64: group Z/8 x Z/4 x Z/2; one-to-one column labellings w tried: 4; (w, twist) pairs for which H is a twisted convolution up to signs: 1 (stopped at the first); first: w on generators ['100000', '001101', '000011'], twist (0, 0, 0)
+k=7 N=128: group Z/8 x Z/4 x Z/2 x Z/2; one-to-one column labellings w tried: 3; (w, twist) pairs for which H is a twisted convolution up to signs: 1 (stopped at the first); first: w on generators ['1000000', '0011011', '0000110', '0000001'], twist (1, 0, 0, 0)
+k=8 N=256: group Z/16 x Z/4 x Z/2 x Z/2; one-to-one column labellings w tried: 2; (w, twist) pairs for which H is a twisted convolution up to signs: 1 (stopped at the first); first: w on generators ['10000000', '00110110', '00001100', '00000011'], twist (0, 0, 0, 0)
+LIGHT label=ab7-witt6 exit=0 time=6s waited=0s peak_rss_mb=17 peak_footprint_mb=12 lowest_cap_mb=1500 stopped=- start=05:20:20 cmd=python3 -B witt.py 6 7 8 first

@@ -1,0 +1,16 @@
+   seed 1 t=0s: circuit with cost 24 (gates 19 + over-limit 5)
+seed 1 start c19: 273011 moves; least cost 24; feasible states visited by (cost, gates): [((24, 19), 1)]
+   best: gates 19, over-limit helpers 5, cost = gates + over-limit = 24  (L1 says >= 24)
+      (2,4) [1, 0, 0, 0, 0, 0, 0, 1]
+      (2,4) [0, 1, 0, 0, 0, 0, 1, 0]
+      (2,4) [0, 0, 1, 0, 0, -1, 0, 0]
+      (2,4) [0, 0, 0, 1, -1, 0, 0, 0]
+      (4,2) [1, -1, 0, 0, 0, 0, -1, 1]
+      (4,2) [0, 0, 1, 1, -1, -1, 0, 0]
+      (8,4) OVER [1, -1, -1, -1, 1, 1, -1, 1]
+      (8,8) OVER [1, -1, -1, -1, 1, -1, -1, 1]
+      (8,4) OVER [1, -1, -1, -1, -1, -1, -1, 1]
+      (8,8) OVER [1, 1, -1, -1, 1, 1, -1, 1]
+      (8,4) OVER [1, -1, 1, 1, -1, -1, 1, -1]
+   seed 2 t=0s: circuit with cost 25 (gates 21 + over-limit 4)
+   seed 2 t=0s: circuit with cost 24 (gates 20 + over-limit 4)

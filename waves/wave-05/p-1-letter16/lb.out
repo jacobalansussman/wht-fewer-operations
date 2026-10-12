@@ -1,0 +1,7 @@
+half of n = 2 points (N = 4 ):  L(n) = 2   so tau >= 2 L = 4   gates >= N - 2 + 2L = 6    [one half only, no choice: min sum = 2 ]   distinct profiles: 1
+     profiles at the minimum: ['1', '1'] ['1', '1']
+half of n = 4 points (N = 8 ):  L(n) = 11/2   so tau >= 2 L = 11   gates >= N - 2 + 2L = 17    [one half only, no choice: min sum = 6 ]   distinct profiles: 5
+     profiles at the minimum: ['1', '2', '2', '2'] ['3/2', '3/2', '3/2', '3/2']
+half of n = 8 points (N = 16 ):  L(n) = 16   so tau >= 2 L = 32   gates >= N - 2 + 2L = 46    [one half only, no choice: min sum = 19 ]   distinct profiles: 30
+     profiles at the minimum: ['2', '2', '2', '2', '3', '3', '3', '3'] ['3', '3', '3', '3', '2', '2', '2', '2']
+LIGHT label=p1lb exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:50:34 cmd=python3 -B lb.py

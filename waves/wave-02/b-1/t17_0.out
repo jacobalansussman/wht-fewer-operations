@@ -1,0 +1,4 @@
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 17 moves that pass counting (plain = 20). search nodes 690485, minimal leaves 14, part 0 of 8
+  16 moves: 1 count vectors pass counting; largest clique between 16 and 16; pass the clique test too: 0
+  17 moves: 31 count vectors pass counting; largest clique between 15 and 16; pass the clique test too: 0

@@ -1,0 +1,7 @@
+K=2 rot       part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 20, best rms residual 1.18e-16, hits (also right on 10 fresh boxes) 20 [fresh rms 1.3e-13], 1 s
+K=2 oboth     part=full  (dim  4) r=2: unknowns 52, boxes 12, starts 7, best rms residual 8.87e-02, hits (also right on 10 fresh boxes) 0, 8 s
+K=2 rot       part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 20, best rms residual 1.17e-16, hits (also right on 10 fresh boxes) 20 [fresh rms 2.0e-16], 2 s
+K=2 oboth     part=full  (dim  4) r=3: unknowns 76, boxes 17, starts 5, best rms residual 4.48e-02, hits (also right on 10 fresh boxes) 0, 8 s
+K=2 rot       part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 20, best rms residual 1.21e-16, hits (also right on 10 fresh boxes) 20 [fresh rms 1.6e-16], 4 s
+K=2 oboth     part=full  (dim  4) r=4: unknowns 104, boxes 22, starts 7, best rms residual 2.06e-16, hits (also right on 10 fresh boxes) 3 [fresh rms 2.2e-16], 8 s
+K=4 refl      part=full  (dim 16) r=6: unknowns 1264, boxes 17, starts 4, best rms residual 1.27e-01, hits (also right on 10 fresh boxes) 0, 98 s

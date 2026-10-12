@@ -1,0 +1,17 @@
+tower L=2 s=1 k=4 : degree of A in y = 3 ; degree of B_a on each piece, by colour: {0: 2, 1: 1}
+tower L=2 s=2 k=11 : degree of A in y = 3 ; degree of B_a on each piece, by colour: {0: 2, 1: 1}
+tower L=3 s=1 k=13 : degree of A in y = 3 ; degree of B_a on each piece, by colour: {0: 2, 1: 2, 2: 1}
+irregular Moore window, girth 16 (n >= 2 * sum_{i<8} (d-1)^i, d = 2N/n; RECALLED theorem, as in ad-6):
+  k= 5 N=    32  least classes allowed     30 = 0.9375 N
+  k= 6 N=    64  least classes allowed     55 = 0.8594 N
+  k= 7 N=   128  least classes allowed    103 = 0.8047 N
+  k= 8 N=   256  least classes allowed    191 = 0.7461 N
+  k= 9 N=   512  least classes allowed    356 = 0.6953 N
+  k=10 N=  1024  least classes allowed    664 = 0.6484 N
+  k=11 N=  2048  least classes allowed   1238 = 0.6045 N
+  k=12 N=  4096  least classes allowed   2308 = 0.5635 N
+  k=13 N=  8192  least classes allowed   4300 = 0.5249 N
+  k=14 N= 16384  least classes allowed   8006 = 0.4886 N
+  k=15 N= 32768  least classes allowed  14894 = 0.4545 N
+  k=16 N= 65536  least classes allowed  27683 = 0.4224 N
+LIGHT label=ag0-helpers exit=0 time=4s waited=30s peak_rss_mb=44 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:08:15 cmd=python3 -B check_helpers.py

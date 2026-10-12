@@ -1,0 +1,3 @@
+GF(37): values of a with a 7-gate circuit (exhaustive for each a): 1 3 12 25 34 36
+for comparison: 1/3 = 25, -1/3 = 12, -3 = 34, square roots of -1: 6 31, sixth roots of unity: 10 26 27 11
+LIGHT label=g3-census37b exit=0 time=9s waited=0s peak_rss_mb=55 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:57:14 cmd=./census37b.sh

@@ -1,0 +1,20 @@
+== D4 : dictionaries with sigma(e)=0: 5040  distinct bridges up to row order/scale: 30
+  nonzeros 12  blocks (1, 1, 1, 1, 2, 2)  row supports (1, 1, 1, 1, 2, 2, 2, 2)  count 336
+  nonzeros 18  blocks (1, 1, 2, 4)  row supports (1, 1, 2, 2, 3, 3, 3, 3)  count 672
+  nonzeros 30  blocks (1, 1, 6)  row supports (1, 1, 2, 2, 6, 6, 6, 6)  count 1344
+  nonzeros 33  blocks (1, 7)  row supports (1, 2, 3, 3, 6, 6, 6, 6)  count 2688
+  coarse classes (nonzeros, blocks, row supports, column supports): 4
+   class 0 (12, (1, 1, 1, 1, 2, 2), (1, 1, 1, 1, 2, 2, 2, 2), (1, 1, 1, 1, 2, 2, 2, 2))  bridges: 2
+   class 1 (18, (1, 1, 2, 4), (1, 1, 2, 2, 3, 3, 3, 3), (1, 1, 2, 2, 2, 2, 4, 4))  bridges: 4
+   class 2 (30, (1, 1, 6), (1, 1, 2, 2, 6, 6, 6, 6), (1, 1, 4, 4, 5, 5, 5, 5))  bridges: 8
+   class 3 (33, (1, 7), (1, 2, 3, 3, 6, 6, 6, 6), (1, 4, 4, 4, 5, 5, 5, 5))  bridges: 16
+== Q8 : dictionaries with sigma(e)=0: 5040  distinct bridges up to row order/scale: 30
+  nonzeros 20  blocks (1, 1, 1, 1, 4)  row supports (1, 1, 1, 1, 4, 4, 4, 4)  count 336
+  nonzeros 26  blocks (1, 1, 6)  row supports (1, 1, 4, 4, 4, 4, 4, 4)  count 672
+  nonzeros 34  blocks (1, 1, 6)  row supports (1, 1, 4, 4, 6, 6, 6, 6)  count 1344
+  nonzeros 37  blocks (1, 7)  row supports (1, 4, 4, 4, 6, 6, 6, 6)  count 2688
+  coarse classes (nonzeros, blocks, row supports, column supports): 4
+   class 0 (20, (1, 1, 1, 1, 4), (1, 1, 1, 1, 4, 4, 4, 4), (1, 1, 1, 1, 4, 4, 4, 4))  bridges: 2
+   class 1 (26, (1, 1, 6), (1, 1, 4, 4, 4, 4, 4, 4), (1, 1, 4, 4, 4, 4, 4, 4))  bridges: 4
+   class 2 (34, (1, 1, 6), (1, 1, 4, 4, 6, 6, 6, 6), (1, 1, 4, 4, 6, 6, 6, 6))  bridges: 8
+   class 3 (37, (1, 7), (1, 4, 4, 4, 6, 6, 6, 6), (1, 4, 4, 4, 6, 6, 6, 6))  bridges: 16

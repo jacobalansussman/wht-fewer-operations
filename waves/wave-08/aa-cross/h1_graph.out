@@ -1,0 +1,14 @@
+== theta family: P1 forgets bit 0; P2 keeps only bit 1 where bit 0 = 0, and forgets bit 1 where bit 0 = 1
+k=3 N=  8 classes   4 +   4 =   8 (N = 8, 3N/4 + 2 = 8) rank   7 ; missing degree<=1: 0, degree<=2: 0, degree<=3: 1  [Fractions]
+k=4 N= 16 classes   8 +   6 =  14 (N = 16, 3N/4 + 2 = 14) rank  13 ; missing degree<=1: 0, degree<=2: 0, degree<=3: 2  [Fractions]
+k=5 N= 32 classes  16 +  10 =  26 (N = 32, 3N/4 + 2 = 26) rank  25 ; missing degree<=1: 0, degree<=2: 0, degree<=3: 3  [Fractions]
+k=6 N= 64 classes  32 +  18 =  50 (N = 64, 3N/4 + 2 = 50) rank  49 ; missing degree<=1: 0, degree<=2: 0, degree<=3: 4  [Fractions]
+k=7 N=128 classes  64 +  34 =  98 (N = 128, 3N/4 + 2 = 98) rank  97 ; missing degree<=1: 0, degree<=2: 0, degree<=3: 5  [mod p]
+== control, degree 1: halves of the bits
+k=4 classes 8: missing degree<=1 0, degree<=2 4
+k=6 classes 16: missing degree<=1 0, degree<=2 9
+k=4 degree<=2 total classes <= 12 : (p1, p2, least defect reached, evaluations, exact hits) [(4, 8, 3, 175285, 0), (5, 7, 4, 161175, 0), (6, 6, 3, 162122, 0)]
+k=4 degree<=2 total classes <= 13 : (p1, p2, least defect reached, evaluations, exact hits) [(4, 9, 2, 159792, 0), (5, 8, 2, 158060, 0), (6, 7, 2, 159523, 0)]
+k=4 degree<=2 total classes <= 14 : (p1, p2, least defect reached, evaluations, exact hits) [(5, 9, 2, 172731, 0), (6, 8, 2, 173098, 0), (7, 7, 2, 174913, 0)]
+LIGHT label=aacross-h1 exit=0 time=331s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=06:04:15 cmd=python3 -B h1_graph.py 4 2 110 12 13 14
+exit 0

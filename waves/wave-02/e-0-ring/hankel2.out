@@ -1,0 +1,2 @@
+k=9 n=511 poly 0b1000010001: 511 starting points scanned (0..511 step 1); singular (mod P1): 0  []  [99s]
+k=10 n=1023 poly 0b10000001001: 128 starting points scanned (0..1023 step 8); singular (mod P1): 0  []  [206s]

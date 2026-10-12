@@ -1,0 +1,7 @@
+k=2 N=4: distance to the outputs -> how many outputs: [(1, 4)]
+k=3 N=8: distance to the outputs -> how many outputs: [(2, 4), (4, 4)]
+k=4 N=16: distance to the outputs -> how many outputs: [(6, 16)]
+k=5 N=32: distance to the outputs -> how many outputs: [(12, 16), (16, 16)]
+k=6 N=64: distance to the outputs -> how many outputs: [(28, 64)]
+k=7 N=128: distance to the outputs -> how many outputs: [(56, 64), (64, 64)]
+k=8 N=256: distance to the outputs -> how many outputs: [(120, 256)]

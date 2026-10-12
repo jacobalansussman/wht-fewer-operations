@@ -1,0 +1,2 @@
+== m = 4, W = 4 live, S = 8 scratch, characters with values +-1 (1024), sequence all
+   try 0, order 10,9,14,6,11,3,1,2,13,12,4,5,15,7,8: root-mean-square error 6.511e-01   [40 s]

@@ -1,0 +1,15 @@
+[E16] explicit tree at 16 points with |X| = 8 exceptional columns: rule holds at every node: True []
+[E16] same tree with any one of the 8 exceptional columns made good: still fine in 0 of 8 cases
+[E-lb] w=8: exceptions forced by one node of 3 or 4 rows, by (size, dimension): [((3, 2), 3), ((4, 2), 2), ((4, 3), 3)]; minimum 2  (= 3w/4 - 4 = 2)
+[E-lb] w=16: exceptions forced by one node of 3 or 4 rows, by (size, dimension): [((3, 2), 9), ((4, 2), 8), ((4, 3), 10)]; minimum 8  (= 3w/4 - 4 = 8)
+[E-lb] w=32: exceptions forced by one node of 3 or 4 rows, by (size, dimension): [((3, 2), 21), ((4, 2), 20), ((4, 3), 24)]; minimum 20  (= 3w/4 - 4 = 20)
+[E-lb] w=64: exceptions forced by one node of 3 or 4 rows, by (size, dimension): [((3, 2), 45), ((4, 2), 44), ((4, 3), 52)]; minimum 44  (= 3w/4 - 4 = 44)
+[budget] N=16: 2x8: need 6 have 10 open; 4x4: need 0 have 8 open; 8x2: need 6 have 10 open
+[budget] N=32: 2x16: need 16 have 18 open; 4x8: need 12 have 12 tight; 8x4: need 12 have 12 tight; 16x2: need 16 have 18 open
+[budget] N=64: 2x32: need 40 have 34 EXCLUDED; 4x16: need 32 have 20 EXCLUDED; 8x8: need 24 have 16 EXCLUDED; 16x4: need 32 have 20 EXCLUDED; 32x2: need 40 have 34 EXCLUDED
+[budget] N=128: 2x64: need 88 have 66 EXCLUDED; 4x32: need 80 have 36 EXCLUDED; 8x16: need 64 have 24 EXCLUDED; 16x8: need 64 have 24 EXCLUDED; 32x4: need 80 have 36 EXCLUDED; 64x2: need 88 have 66 EXCLUDED
+[budget] N=256: 2x128: need 184 have 130 EXCLUDED; 4x64: need 176 have 68 EXCLUDED; 8x32: need 160 have 40 EXCLUDED; 16x16: need 128 have 32 EXCLUDED; 32x8: need 160 have 40 EXCLUDED; 64x4: need 176 have 68 EXCLUDED; 128x2: need 184 have 130 EXCLUDED
+[budget] N=512: 2x256: need 376 have 258 EXCLUDED; 4x128: need 368 have 132 EXCLUDED; 8x64: need 352 have 72 EXCLUDED; 16x32: need 320 have 48 EXCLUDED; 32x16: need 320 have 48 EXCLUDED; 64x8: need 352 have 72 EXCLUDED; 128x4: need 368 have 132 EXCLUDED; 256x2: need 376 have 258 EXCLUDED
+[budget] N=1024: 2x512: need 760 have 514 EXCLUDED; 4x256: need 752 have 260 EXCLUDED; 8x128: need 736 have 136 EXCLUDED; 16x64: need 704 have 80 EXCLUDED; 32x32: need 640 have 64 EXCLUDED; 64x16: need 704 have 80 EXCLUDED; 128x8: need 736 have 136 EXCLUDED; 256x4: need 752 have 260 EXCLUDED; 512x2: need 760 have 514 EXCLUDED
+[budget] N=2048: 2x1024: need 1528 have 1026 EXCLUDED; 4x512: need 1520 have 516 EXCLUDED; 8x256: need 1504 have 264 EXCLUDED; 16x128: need 1472 have 144 EXCLUDED; 32x64: need 1408 have 96 EXCLUDED; 64x32: need 1408 have 96 EXCLUDED; 128x16: need 1472 have 144 EXCLUDED; 256x8: need 1504 have 264 EXCLUDED; 512x4: need 1520 have 516 EXCLUDED; 1024x2: need 1528 have 1026 EXCLUDED
+[budget] N=4096: 2x2048: need 3064 have 2050 EXCLUDED; 4x1024: need 3056 have 1028 EXCLUDED; 8x512: need 3040 have 520 EXCLUDED; 16x256: need 3008 have 272 EXCLUDED; 32x128: need 2944 have 160 EXCLUDED; 64x64: need 2816 have 128 EXCLUDED; 128x32: need 2944 have 160 EXCLUDED; 256x16: need 3008 have 272 EXCLUDED; 512x8: need 3040 have 520 EXCLUDED; 1024x4: need 3056 have 1028 EXCLUDED; 2048x2: need 3064 have 2050 EXCLUDED

@@ -1,0 +1,9 @@
+o_8.txt        N=8      operations=20      (+ 10, - 9, * 1; constants {1/2: 1})  textbook=24      outputs = 1/2 * (row j of H), j in Sylvester order: A OK, B OK
+o_16.txt       N=16     operations=56      (+ 28, - 26, * 2; constants {1/2: 2})  textbook=64      outputs = 1/2 * (row j of H), j in Sylvester order: A OK, B OK
+ox_8.txt       N=8      operations=28      (+ 10, - 9, * 9; constants {1/2: 1, 2: 8})  textbook=24      outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+ox_16.txt      N=16     operations=72      (+ 28, - 26, * 18; constants {1/2: 2, 2: 16})  textbook=64      outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+o_64.txt       N=64     operations=320     (+ 160, - 144, * 16; constants {1/2: 16})  textbook=384     outputs = 1/4 * (row j of H), j in Sylvester order: A OK, B OK
+ox_64.txt      N=64     operations=384     (+ 160, - 144, * 80; constants {1/2: 16, 4: 64})  textbook=384     outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+o_512.txt      N=512    operations=3840    (+ 1920, - 1728, * 192; constants {1/2: 192})  textbook=4608    outputs = 1/8 * (row j of H), j in Sylvester order: A OK, B OK
+ox_512.txt     N=512    operations=4352    (+ 1920, - 1728, * 704; constants {1/2: 192, 8: 512})  textbook=4608    outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+LIGHT label=n0-check exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:08:33 cmd=python3 -B n-0/check.py h-3-orecord/o_8.txt h-3-orecord/o_16.txt h-3-orecord/ox_8.txt h-3-orecord/ox_16.txt h-3-orecord/o_64.txt h-3-orecord/ox_64.txt h-3-orecord/o_512.txt h-3-orecord/ox_512.txt

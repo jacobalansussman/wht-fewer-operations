@@ -1,0 +1,18 @@
+--- control: k=4, r=2, flags 1234 / 3412 (the tensor arrangement must be reachable)
+k=4 r=2 flags=1234/3412 seed=0: loss=2.194e+02 max||M|-1|=2.44e-01 max|MM^T-NI|=9.14e+00 nfev=50 1s
+k=4 r=2 flags=1234/3412 seed=1: loss=1.751e+02 max||M|-1|=9.79e-01 max|MM^T-NI|=8.85e+00 nfev=133 3s
+k=4 r=2 flags=1234/3412 seed=2: loss=2.138e+02 max||M|-1|=9.43e-01 max|MM^T-NI|=1.12e+01 nfev=291 9s
+k=4 r=2 flags=1234/3412 seed=3: loss=2.209e+02 max||M|-1|=3.56e-01 max|MM^T-NI|=1.01e+01 nfev=367 6s
+k=4 r=2 flags=1234/3412 seed=4: loss=1.499e+02 max||M|-1|=9.98e-01 max|MM^T-NI|=1.24e+01 nfev=337 9s
+k=4 r=2 flags=1234/3412 seed=5: loss=1.471e+02 max||M|-1|=1.00e+00 max|MM^T-NI|=1.27e+01 nfev=339 7s
+--- k=4, r=1 (derived: impossible)
+k=4 r=1 flags=1234 seed=0: loss=2.084e+02 max||M|-1|=1.00e+00 max|MM^T-NI|=1.05e+01 nfev=282 3s
+k=4 r=1 flags=1234 seed=1: loss=1.938e+02 max||M|-1|=3.07e-01 max|MM^T-NI|=9.94e+00 nfev=37 0s
+k=4 r=1 flags=1234 seed=2: loss=2.281e+02 max||M|-1|=1.00e+00 max|MM^T-NI|=7.13e+00 nfev=42 1s
+k=4 r=1 flags=1234 seed=3: loss=1.938e+02 max||M|-1|=3.07e-01 max|MM^T-NI|=9.94e+00 nfev=36 0s
+--- k=4, r=2, opposite flags 1234 / 4321
+k=4 r=2 flags=1234/4321 seed=0: loss=1.897e+02 max||M|-1|=3.39e-01 max|MM^T-NI|=1.02e+01 nfev=94 2s
+k=4 r=2 flags=1234/4321 seed=1: loss=1.620e+02 max||M|-1|=4.35e-01 max|MM^T-NI|=1.15e+01 nfev=112 2s
+k=4 r=2 flags=1234/4321 seed=2: loss=1.705e+02 max||M|-1|=8.50e-01 max|MM^T-NI|=8.57e+00 nfev=74 1s
+k=4 r=2 flags=1234/4321 seed=3: loss=1.024e+02 max||M|-1|=1.07e-01 max|MM^T-NI|=1.28e+01 nfev=400 9s
+--- THE QUESTION: k=6, r=2, opposite (generic) flags

@@ -1,0 +1,18 @@
+== 1. subset convolution through the word ==
+   k    N   transforms used   operations in the transforms   = 3(k+1) (3kN + 4(N-1))   Yates would use 3(k+1) k N/2   rank products (schoolbook)   equal to the direct sum
+   1    2            6                     60                             60                              6                         6                 True
+   2    4            9                    324                            324                             36                        24                 True
+   3    8           12                   1200                           1200                            144                        80                 True
+   4   16           15                   3780                           3780                            480                       240                 True
+   5   32           18                  10872                          10872                           1440                       672                 True
+   6   64           21                  29484                          29484                           4032                      1792                 True
+   7  128           24                  76704                          76704                          10752                      4608                 True
+== 2. the 'add one element' operator U of the cube ==
+   k=1  U = (A + WA - AW)/2: True   N A = H diag(k-2|S|) H: True   WZ - ZW = UZ: True
+   k=2  U = (A + WA - AW)/2: True   N A = H diag(k-2|S|) H: True   WZ - ZW = UZ: True
+   k=3  U = (A + WA - AW)/2: True   N A = H diag(k-2|S|) H: True   WZ - ZW = UZ: True
+   k=4  U = (A + WA - AW)/2: True   N A = H diag(k-2|S|) H: True   WZ - ZW = UZ: True
+   k=5  U = (A + WA - AW)/2: True   N A = H diag(k-2|S|) H: True   WZ - ZW = UZ: True
+   k=6  U = (A + WA - AW)/2: True   N A = H diag(k-2|S|) H: True   WZ - ZW = UZ: True
+done
+LIGHT label=g4-subconv exit=0 time=1s waited=66s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:54:23 cmd=python3 -B subconv.py

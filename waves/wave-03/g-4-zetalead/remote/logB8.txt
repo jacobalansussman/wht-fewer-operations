@@ -1,0 +1,7 @@
+steiner_Z8_s5_empty best 20 exact 20 t 0.0
+steiner_Z8_s5_empty best 19 exact 19 t 0.0
+steiner_Z8_s5_empty best 16 exact 16 t 0.1
+steiner_Z8_s5_empty best 15 exact 15 t 2.2
+steiner_Z8_s5_empty best 14 exact 14 t 3.7
+steiner_Z8_s5_empty best 13 exact 13 t 52.5
+steiner_Z8_s5_empty DONE evaluated 6272 best 13 hist {13: 1, 14: 101, 15: 725, 16: 1501, 17: 1541, 18: 876, 19: 901, 20: 497}

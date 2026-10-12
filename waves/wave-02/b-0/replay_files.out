@@ -1,0 +1,9 @@
+G file slp_4.txt: 7 gates, |coefficients| ['1', '2'], outputs are exactly the 4 rows of H: True
+G file slp_8.txt: 20 gates, |coefficients| ['1', '2'], outputs are exactly the 8 rows of H: True
+G file slp_16.txt: 52 gates, |coefficients| ['1', '2'], outputs are exactly the 16 rows of H: True
+G file slp_32.txt: 128 gates, |coefficients| ['1', '2'], outputs are exactly the 32 rows of H: True
+G file slp_64.txt: 304 gates, |coefficients| ['1', '2'], outputs are exactly the 64 rows of H: True
+O file oslp_4.txt: 8 operations {'+': 3, '-': 4, '*': 1}, constants ['1/2'], outputs are exactly the rows of H divided by [2]
+O file oslp_16.txt: 60 operations {'+': 20, '-': 32, '*': 8}, constants ['1/2'], outputs are exactly the rows of H divided by [4]
+O file oslp_64.txt: 352 operations {'+': 112, '-': 192, '*': 48}, constants ['1/2'], outputs are exactly the rows of H divided by [8]
+LIGHT label=b0-replay exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:43:44 cmd=python3 -B replay_files.py

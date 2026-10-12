@@ -1,0 +1,10 @@
+n = 5 | border gates: 9
+limits of the two chains: [(1, 1, 0, 0, 0), (1, 1, 1, 0, 0), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1), (0, 0, 0, 1, 1), (0, 0, 1, 1, 1), (0, 1, 1, 1, 1), (1, 1, 1, 1, 1)]
+w(e) coefficient vectors by power of e: [[29, -22, 8, -2, 31]] (degree 0 in e means w is exact for every e)
+distinct limit targets (not inputs): 8 | fixed points: 12 | (n-1)-subsets whose span contains w: 0 of 495
+=> exact count >= 11 if that number is 0 ; border count <= 9
+n = 6 | border gates: 11
+limits of the two chains: [(1, 1, 0, 0, 0, 0), (1, 1, 1, 0, 0, 0), (1, 1, 1, 1, 0, 0), (1, 1, 1, 1, 1, 0), (1, 1, 1, 1, 1, 1), (0, 0, 0, 0, 1, 1), (0, 0, 0, 1, 1, 1), (0, 0, 1, 1, 1, 1), (0, 1, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1)]
+w(e) coefficient vectors by power of e: [[-29, -38, 48, -8, 20, -3]] (degree 0 in e means w is exact for every e)
+distinct limit targets (not inputs): 10 | fixed points: 15 | (n-1)-subsets whose span contains w: 0 of 3003
+=> exact count >= 14 if that number is 0 ; border count <= 11

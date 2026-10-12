@@ -1,0 +1,155 @@
+## locked_run.sh: taskset -c 2 build/harness time -t double -k 3 26 -r 9 -v ffht,ffhtB,Tp,G19p,G19ap
+## pinned to processor 2 (siblings: 2,6)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 16:12:59 UTC; uptime: 16:12:59 up 22:21,  0 user,  load average: 5.48, 5.31, 5.06
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839938 99.9   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839050 99.9   1   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839000 99.9   6   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+##     894469 99.7   3  10 build/harness check -k 3 26
+# harness time; 2026-10-11 16:12:59 UTC; host (removed); load 5.48,5.31,5.06
+# compiler: gcc 13.3.0
+# harness, variants.c, whtf.c built with: gcc -O3 -march=native -Wa,-mbranches-within-32B-boundaries; whtf.c: gcc -O3 -march=native -fno-tree-reassoc -Wa,-mbranches-within-32B-boundaries
+# whts.c and naive_i.c built with: gcc -O3 -march=native -fno-tree-vectorize -fno-tree-slp-vectorize -fwrapv -Wa,-mbranches-within-32B-boundaries
+# FFHT commit fba727a3ff72c862260460631ae1cc8e3e44e861; its fht.o built by its own Makefile with: gcc -O3 -march=native -std=c99 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
+# pinned: yes; processor 2; its hyper-thread sibling 6; processors allowed 1
+# times: nanoseconds per point for one transform, wall clock; 9 repeats; a loop aims at 0.25 s and counts only from 0.20 s
+# a size is timed again (up to 4 attempts) when the hyper-thread sibling was busy for more than 25 % of it
+B type=double k=3 n=8 bytes=64 R=666 R_overflow=666 reset=timed loop_s=0.25 repeats=9 cpu=2 sibling=6 hugepages=0 attempt=1 load=5.48,5.31,5.06
+D type=double k=3 attempt=1 discarded: processor 6, the hyper-thread sibling of the timed processor 2, was busy for 94.9 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 107.5 % of one second, together)
+B type=double k=3 n=8 bytes=64 R=666 R_overflow=666 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=2 load=5.67,5.36,5.08
+D type=double k=3 attempt=2 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 94.0 % of the time (limit 25 %)
+# pinned again: processor 2; its hyper-thread sibling 6 (the two were busy for 105.9 % of one second, together)
+B type=double k=3 n=8 bytes=64 R=666 R_overflow=666 reset=timed loop_s=0.25 repeats=9 cpu=2 sibling=6 hugepages=0 attempt=3 load=5.62,5.37,5.09
+D type=double k=3 attempt=3 discarded: processor 6, the hyper-thread sibling of the timed processor 2, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 101.0 % of one second, together)
+B type=double k=3 n=8 bytes=64 R=666 R_overflow=666 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=4 load=5.55,5.36,5.10
+T type=double k=3 variant=ffht min=1.8021 med=1.8476 max=1.8975 net_min=1.4778 net_med=1.5232 spread_med_pct=2.5 spread_max_pct=5.3 ns_per_transform_min=14.42 G=25949 R=666 loop_s_min=0.249 redone=0 ivcsw=4
+T type=double k=3 variant=ffhtB min=1.8549 med=1.9000 max=1.9779 net_min=1.5306 net_med=1.5757 spread_med_pct=2.4 spread_max_pct=6.6 ns_per_transform_min=14.84 G=23454 R=666 loop_s_min=0.232 redone=0 ivcsw=4
+T type=double k=3 variant=Tp min=2.0982 med=2.1399 max=2.1811 net_min=1.7739 net_med=1.8156 spread_med_pct=2.0 spread_max_pct=4.0 ns_per_transform_min=16.79 G=20295 R=666 loop_s_min=0.227 redone=0 ivcsw=5
+T type=double k=3 variant=G19p min=2.1440 med=2.1962 max=2.2905 net_min=1.8197 net_med=1.8718 spread_med_pct=2.4 spread_max_pct=6.8 ns_per_transform_min=17.15 G=20131 R=666 loop_s_min=0.230 redone=0 ivcsw=0
+T type=double k=3 variant=G19ap min=2.0951 med=2.1609 max=2.2096 net_min=1.7708 net_med=1.8366 spread_med_pct=3.1 spread_max_pct=5.5 ns_per_transform_min=16.76 G=20513 R=666 loop_s_min=0.229 redone=0 ivcsw=2
+E type=double k=3 variant=empty min=0.3243 med=0.3321 max=0.3405 net_min=0.0000 net_med=0.0000 spread_med_pct=2.4 spread_max_pct=5.0 ns_per_transform_min=2.59 G=130055 R=666 loop_s_min=0.225 redone=0 ivcsw=3
+A type=double k=3 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=100.0 allcpus_busy_pct=68.7 wall_s=12.8 attempt=4 cpu=3 load=5.54,5.37,5.10
+B type=double k=4 n=16 bytes=128 R=500 R_overflow=500 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=1 load=5.54,5.37,5.10
+D type=double k=4 attempt=1 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 101.0 % of one second, together)
+B type=double k=4 n=16 bytes=128 R=500 R_overflow=500 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=2 load=5.42,5.35,5.10
+D type=double k=4 attempt=2 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 65.9 % of the time (limit 25 %)
+# pinned again: processor 0; its hyper-thread sibling 4 (the two were busy for 101.0 % of one second, together)
+B type=double k=4 n=16 bytes=128 R=500 R_overflow=500 reset=timed loop_s=0.25 repeats=9 cpu=0 sibling=4 hugepages=0 attempt=3 load=5.40,5.35,5.10
+D type=double k=4 attempt=3 discarded: processor 4, the hyper-thread sibling of the timed processor 0, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 3.0 % of one second, together)
+B type=double k=4 n=16 bytes=128 R=500 R_overflow=500 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=4 load=5.31,5.33,5.10
+T type=double k=4 variant=ffht min=1.0916 med=1.1275 max=1.2185 net_min=0.9717 net_med=1.0075 spread_med_pct=3.3 spread_max_pct=11.6 ns_per_transform_min=17.47 G=26384 R=500 loop_s_min=0.230 redone=0 ivcsw=4
+T type=double k=4 variant=ffhtB min=1.0540 med=1.0733 max=1.1809 net_min=0.9341 net_med=0.9533 spread_med_pct=1.8 spread_max_pct=12.0 ns_per_transform_min=16.86 G=28704 R=500 loop_s_min=0.242 redone=0 ivcsw=5
+T type=double k=4 variant=Tp min=0.8117 med=0.8218 max=0.9900 net_min=0.6918 net_med=0.7018 spread_med_pct=1.2 spread_max_pct=22.0 ns_per_transform_min=12.99 G=37250 R=500 loop_s_min=0.242 redone=0 ivcsw=5
+T type=double k=4 variant=G19p min=0.8126 med=0.8228 max=0.8653 net_min=0.6927 net_med=0.7028 spread_med_pct=1.2 spread_max_pct=6.5 ns_per_transform_min=13.00 G=36817 R=500 loop_s_min=0.239 redone=0 ivcsw=6
+T type=double k=4 variant=G19ap min=0.8088 med=0.8289 max=1.1210 net_min=0.6889 net_med=0.7090 spread_med_pct=2.5 spread_max_pct=38.6 ns_per_transform_min=12.94 G=34327 R=500 loop_s_min=0.222 redone=0 ivcsw=3
+E type=double k=4 variant=empty min=0.1200 med=0.1228 max=0.1465 net_min=0.0000 net_med=0.0000 spread_med_pct=2.3 spread_max_pct=22.1 ns_per_transform_min=1.92 G=260992 R=500 loop_s_min=0.250 redone=0 ivcsw=4
+A type=double k=4 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=9.4 allcpus_busy_pct=56.3 wall_s=13.4 attempt=4 cpu=3 load=5.09,5.28,5.08
+B type=double k=5 n=32 bytes=256 R=400 R_overflow=400 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=1 load=5.09,5.28,5.08
+T type=double k=5 variant=ffht min=0.7483 med=0.7556 max=0.8324 net_min=0.6884 net_med=0.6957 spread_med_pct=1.0 spread_max_pct=11.2 ns_per_transform_min=23.95 G=23977 R=400 loop_s_min=0.230 redone=0 ivcsw=3
+T type=double k=5 variant=ffhtB min=0.7459 med=0.7529 max=0.7768 net_min=0.6860 net_med=0.6930 spread_med_pct=0.9 spread_max_pct=4.1 ns_per_transform_min=23.87 G=26206 R=400 loop_s_min=0.250 redone=0 ivcsw=8
+T type=double k=5 variant=Tp min=0.6565 med=0.6646 max=0.6776 net_min=0.5966 net_med=0.6047 spread_med_pct=1.2 spread_max_pct=3.2 ns_per_transform_min=21.01 G=29873 R=400 loop_s_min=0.251 redone=0 ivcsw=3
+T type=double k=5 variant=G19p min=0.7827 med=0.8067 max=0.8542 net_min=0.7227 net_med=0.7467 spread_med_pct=3.1 spread_max_pct=9.1 ns_per_transform_min=25.05 G=20540 R=400 loop_s_min=0.206 redone=0 ivcsw=4
+T type=double k=5 variant=G19ap min=0.9679 med=0.9884 max=1.0671 net_min=0.9080 net_med=0.9284 spread_med_pct=2.1 spread_max_pct=10.2 ns_per_transform_min=30.97 G=20131 R=400 loop_s_min=0.249 redone=0 ivcsw=3
+E type=double k=5 variant=empty min=0.0599 med=0.0620 max=0.0679 net_min=0.0000 net_med=0.0000 spread_med_pct=3.4 spread_max_pct=13.4 ns_per_transform_min=1.92 G=332366 R=400 loop_s_min=0.255 redone=0 ivcsw=7
+A type=double k=5 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=6.8 allcpus_busy_pct=56.2 wall_s=13.3 attempt=1 cpu=3 load=4.92,5.23,5.07
+B type=double k=6 n=64 bytes=512 R=332 R_overflow=332 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=1 load=4.92,5.23,5.07
+D type=double k=6 attempt=1 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 32.5 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 8.1 % of one second, together)
+B type=double k=6 n=64 bytes=512 R=332 R_overflow=332 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=2 load=4.79,5.19,5.06
+T type=double k=6 variant=ffht min=0.7325 med=0.7489 max=0.8578 net_min=0.7024 net_med=0.7188 spread_med_pct=2.2 spread_max_pct=17.1 ns_per_transform_min=46.88 G=16045 R=332 loop_s_min=0.250 redone=0 ivcsw=6
+T type=double k=6 variant=ffhtB min=0.7337 med=0.7453 max=0.8535 net_min=0.7035 net_med=0.7151 spread_med_pct=1.6 spread_max_pct=16.3 ns_per_transform_min=46.96 G=16069 R=332 loop_s_min=0.251 redone=0 ivcsw=3
+T type=double k=6 variant=Tp min=0.6808 med=0.6916 max=0.7730 net_min=0.6507 net_med=0.6614 spread_med_pct=1.6 spread_max_pct=13.5 ns_per_transform_min=43.57 G=17313 R=332 loop_s_min=0.250 redone=0 ivcsw=5
+T type=double k=6 variant=G19p min=0.7104 med=0.7163 max=0.7547 net_min=0.6802 net_med=0.6861 spread_med_pct=0.8 spread_max_pct=6.2 ns_per_transform_min=45.46 G=16681 R=332 loop_s_min=0.252 redone=0 ivcsw=8
+T type=double k=6 variant=G19ap min=0.8187 med=0.8277 max=1.0372 net_min=0.7886 net_med=0.7975 spread_med_pct=1.1 spread_max_pct=26.7 ns_per_transform_min=52.40 G=14140 R=332 loop_s_min=0.246 redone=0 ivcsw=4
+E type=double k=6 variant=empty min=0.0302 med=0.0309 max=0.0348 net_min=0.0000 net_med=0.0000 spread_med_pct=2.4 spread_max_pct=15.4 ns_per_transform_min=1.93 G=391481 R=332 loop_s_min=0.251 redone=0 ivcsw=4
+A type=double k=6 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=8.8 allcpus_busy_pct=61.1 wall_s=14.0 attempt=2 cpu=3 load=4.70,5.15,5.05
+B type=double k=7 n=128 bytes=1024 R=284 R_overflow=284 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=1 load=4.70,5.15,5.05
+D type=double k=7 attempt=1 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 28.7 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 96.0 % of one second, together)
+B type=double k=7 n=128 bytes=1024 R=284 R_overflow=284 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=2 load=4.76,5.14,5.05
+D type=double k=7 attempt=2 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 96.6 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 101.0 % of one second, together)
+B type=double k=7 n=128 bytes=1024 R=284 R_overflow=284 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=3 load=4.97,5.17,5.06
+D type=double k=7 attempt=3 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 3; its hyper-thread sibling 7 (the two were busy for 103.4 % of one second, together)
+B type=double k=7 n=128 bytes=1024 R=284 R_overflow=284 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=4 load=5.11,5.19,5.07
+T type=double k=7 variant=ffht min=1.1806 med=1.1873 max=1.1949 net_min=1.1601 net_med=1.1668 spread_med_pct=0.6 spread_max_pct=1.2 ns_per_transform_min=151.11 G=5742 R=284 loop_s_min=0.246 redone=0 ivcsw=4
+T type=double k=7 variant=ffhtB min=1.1986 med=1.2085 max=1.2262 net_min=1.1781 net_med=1.1880 spread_med_pct=0.8 spread_max_pct=2.3 ns_per_transform_min=153.42 G=5581 R=284 loop_s_min=0.243 redone=0 ivcsw=4
+T type=double k=7 variant=Tp min=1.0559 med=1.0587 max=1.1043 net_min=1.0353 net_med=1.0382 spread_med_pct=0.3 spread_max_pct=4.6 ns_per_transform_min=135.15 G=6441 R=284 loop_s_min=0.247 redone=0 ivcsw=3
+T type=double k=7 variant=G19p min=1.0409 med=1.0441 max=1.0509 net_min=1.0204 net_med=1.0236 spread_med_pct=0.3 spread_max_pct=1.0 ns_per_transform_min=133.24 G=6549 R=284 loop_s_min=0.248 redone=0 ivcsw=3
+T type=double k=7 variant=G19ap min=1.1750 med=1.1772 max=1.2940 net_min=1.1545 net_med=1.1567 spread_med_pct=0.2 spread_max_pct=10.1 ns_per_transform_min=150.40 G=5843 R=284 loop_s_min=0.250 redone=0 ivcsw=2
+E type=double k=7 variant=empty min=0.0205 med=0.0214 max=0.0232 net_min=0.0000 net_med=0.0000 spread_med_pct=4.4 spread_max_pct=13.1 ns_per_transform_min=2.63 G=331130 R=284 loop_s_min=0.247 redone=0 ivcsw=1
+A type=double k=7 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=100.0 allcpus_busy_pct=68.9 wall_s=13.6 attempt=4 cpu=3 load=5.23,5.21,5.08
+B type=double k=8 n=256 bytes=2048 R=250 R_overflow=250 reset=timed loop_s=0.25 repeats=9 cpu=3 sibling=7 hugepages=0 attempt=1 load=5.23,5.21,5.08
+D type=double k=8 attempt=1 discarded: processor 7, the hyper-thread sibling of the timed processor 3, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 2; its hyper-thread sibling 6 (the two were busy for 60.0 % of one second, together)
+B type=double k=8 n=256 bytes=2048 R=250 R_overflow=250 reset=timed loop_s=0.25 repeats=9 cpu=2 sibling=6 hugepages=0 attempt=2 load=5.25,5.22,5.08
+D type=double k=8 attempt=2 discarded: processor 6, the hyper-thread sibling of the timed processor 2, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 1; its hyper-thread sibling 5 (the two were busy for 78.9 % of one second, together)
+B type=double k=8 n=256 bytes=2048 R=250 R_overflow=250 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=3 load=5.34,5.24,5.09
+D type=double k=8 attempt=3 discarded: processor 5, the hyper-thread sibling of the timed processor 1, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 1; its hyper-thread sibling 5 (the two were busy for 101.0 % of one second, together)
+B type=double k=8 n=256 bytes=2048 R=250 R_overflow=250 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=4 load=5.33,5.25,5.09
+T type=double k=8 variant=ffht min=1.2008 med=1.2098 max=1.2175 net_min=1.1903 net_med=1.1993 spread_med_pct=0.7 spread_max_pct=1.4 ns_per_transform_min=307.41 G=3235 R=250 loop_s_min=0.249 redone=0 ivcsw=1
+T type=double k=8 variant=ffhtB min=1.2071 med=1.2222 max=1.2344 net_min=1.1966 net_med=1.2117 spread_med_pct=1.2 spread_max_pct=2.3 ns_per_transform_min=309.02 G=3195 R=250 loop_s_min=0.247 redone=0 ivcsw=4
+T type=double k=8 variant=Tp min=0.9984 med=1.0048 max=1.0127 net_min=0.9879 net_med=0.9943 spread_med_pct=0.6 spread_max_pct=1.4 ns_per_transform_min=255.59 G=3887 R=250 loop_s_min=0.248 redone=0 ivcsw=6
+T type=double k=8 variant=G19p min=1.0300 med=1.0338 max=1.0399 net_min=1.0195 net_med=1.0233 spread_med_pct=0.4 spread_max_pct=1.0 ns_per_transform_min=263.68 G=3795 R=250 loop_s_min=0.250 redone=0 ivcsw=8
+T type=double k=8 variant=G19ap min=1.3060 med=1.3115 max=1.3920 net_min=1.2955 net_med=1.3010 spread_med_pct=0.4 spread_max_pct=6.6 ns_per_transform_min=334.34 G=2934 R=250 loop_s_min=0.245 redone=0 ivcsw=4
+E type=double k=8 variant=empty min=0.0105 med=0.0106 max=0.0109 net_min=0.0000 net_med=0.0000 spread_med_pct=1.3 spread_max_pct=3.8 ns_per_transform_min=2.69 G=378939 R=250 loop_s_min=0.255 redone=0 ivcsw=7
+A type=double k=8 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=100.0 allcpus_busy_pct=68.9 wall_s=13.6 attempt=4 cpu=1 load=5.39,5.26,5.10
+B type=double k=9 n=512 bytes=4096 R=222 R_overflow=222 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=1 load=5.39,5.26,5.10
+D type=double k=9 attempt=1 discarded: processor 5, the hyper-thread sibling of the timed processor 1, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 1; its hyper-thread sibling 5 (the two were busy for 100.0 % of one second, together)
+B type=double k=9 n=512 bytes=4096 R=222 R_overflow=222 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=2 load=5.29,5.25,5.10
+T type=double k=9 variant=ffht min=0.8474 med=0.8616 max=1.4683 net_min=0.8431 net_med=0.8573 spread_med_pct=1.7 spread_max_pct=73.3 ns_per_transform_min=433.87 G=2554 R=222 loop_s_min=0.246 redone=1 ivcsw=5
+T type=double k=9 variant=ffhtB min=0.8444 med=0.8621 max=1.4531 net_min=0.8401 net_med=0.8578 spread_med_pct=2.1 spread_max_pct=72.1 ns_per_transform_min=432.31 G=2831 R=222 loop_s_min=0.249 redone=1 ivcsw=0
+T type=double k=9 variant=Tp min=0.7025 med=0.7188 max=1.2552 net_min=0.6982 net_med=0.7145 spread_med_pct=2.3 spread_max_pct=78.7 ns_per_transform_min=359.66 G=3392 R=222 loop_s_min=0.246 redone=1 ivcsw=6
+T type=double k=9 variant=G19p min=0.7380 med=0.7727 max=1.1985 net_min=0.7337 net_med=0.7684 spread_med_pct=4.7 spread_max_pct=62.4 ns_per_transform_min=377.84 G=2802 R=222 loop_s_min=0.235 redone=1 ivcsw=5
+T type=double k=9 variant=G19ap min=0.9748 med=0.9989 max=1.5368 net_min=0.9705 net_med=0.9946 spread_med_pct=2.5 spread_max_pct=57.7 ns_per_transform_min=499.10 G=2107 R=222 loop_s_min=0.233 redone=1 ivcsw=5
+E type=double k=9 variant=empty min=0.0043 med=0.0044 max=0.0061 net_min=0.0000 net_med=0.0000 spread_med_pct=2.9 spread_max_pct=41.7 ns_per_transform_min=2.20 G=561343 R=222 loop_s_min=0.201 redone=1 ivcsw=6
+A type=double k=9 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=24.5 allcpus_busy_pct=68.6 wall_s=15.3 attempt=2 cpu=1 load=5.30,5.25,5.10
+B type=double k=10 n=1024 bytes=8192 R=200 R_overflow=200 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=1 load=5.30,5.25,5.10
+D type=double k=10 attempt=1 discarded: processor 5, the hyper-thread sibling of the timed processor 1, was busy for 36.0 % of the time (limit 25 %)
+# pinned again: processor 1; its hyper-thread sibling 5 (the two were busy for 40.0 % of one second, together)
+B type=double k=10 n=1024 bytes=8192 R=200 R_overflow=200 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=2 load=5.22,5.24,5.10
+D type=double k=10 attempt=2 discarded: processor 5, the hyper-thread sibling of the timed processor 1, was busy for 100.0 % of the time (limit 25 %)
+# pinned again: processor 0; its hyper-thread sibling 4 (the two were busy for 98.0 % of one second, together)
+B type=double k=10 n=1024 bytes=8192 R=200 R_overflow=200 reset=untimed loop_s=0.25 repeats=9 cpu=0 sibling=4 hugepages=0 attempt=3 load=5.02,5.20,5.09
+T type=double k=10 variant=ffht min=0.8757 med=0.8886 max=1.5081 net_min=0.8735 net_med=0.8864 spread_med_pct=1.5 spread_max_pct=72.2 ns_per_transform_min=896.74 G=1531 R=200 loop_s_min=0.231 redone=1 ivcsw=7
+T type=double k=10 variant=ffhtB min=0.8591 med=0.8642 max=1.0748 net_min=0.8569 net_med=0.8620 spread_med_pct=0.6 spread_max_pct=25.1 ns_per_transform_min=879.75 G=1263 R=200 loop_s_min=0.222 redone=1 ivcsw=6
+T type=double k=10 variant=Tp min=0.7530 med=0.7588 max=0.9953 net_min=0.7508 net_med=0.7566 spread_med_pct=0.8 spread_max_pct=32.2 ns_per_transform_min=771.04 G=1629 R=200 loop_s_min=0.251 redone=1 ivcsw=7
+T type=double k=10 variant=G19p min=0.7801 med=0.7954 max=0.9934 net_min=0.7779 net_med=0.7932 spread_med_pct=2.0 spread_max_pct=27.4 ns_per_transform_min=798.78 G=1689 R=200 loop_s_min=0.270 redone=1 ivcsw=6
+T type=double k=10 variant=G19ap min=1.0222 med=1.0326 max=1.4373 net_min=1.0200 net_med=1.0304 spread_med_pct=1.0 spread_max_pct=40.6 ns_per_transform_min=1046.75 G=1312 R=200 loop_s_min=0.275 redone=1 ivcsw=8
+E type=double k=10 variant=empty min=0.0022 med=0.0023 max=0.0029 net_min=0.0000 net_med=0.0000 spread_med_pct=2.5 spread_max_pct=30.0 ns_per_transform_min=2.26 G=1 R=121267649 loop_s_min=0.274 redone=1 ivcsw=6
+A type=double k=10 mycpu_busy_pct=100.0 mycpu_steal_pct=0.06 sibling_busy_pct=19.5 allcpus_busy_pct=56.4 wall_s=16.2 attempt=3 cpu=0 load=4.87,5.15,5.08
+B type=double k=11 n=2048 bytes=16384 R=180 R_overflow=180 reset=untimed loop_s=0.25 repeats=9 cpu=0 sibling=4 hugepages=0 attempt=1 load=4.87,5.15,5.08
+T type=double k=11 variant=ffht min=0.9045 med=0.9180 max=1.1610 net_min=0.9034 net_med=0.9169 spread_med_pct=1.5 spread_max_pct=28.4 ns_per_transform_min=1852.46 G=755 R=180 loop_s_min=0.252 redone=0 ivcsw=6
+T type=double k=11 variant=ffhtB min=0.8961 med=0.9141 max=1.0717 net_min=0.8950 net_med=0.9130 spread_med_pct=2.0 spread_max_pct=19.6 ns_per_transform_min=1835.23 G=753 R=180 loop_s_min=0.249 redone=0 ivcsw=2
+T type=double k=11 variant=Tp min=0.7740 med=0.8014 max=0.9338 net_min=0.7729 net_med=0.8003 spread_med_pct=3.5 spread_max_pct=20.6 ns_per_transform_min=1585.22 G=876 R=180 loop_s_min=0.250 redone=0 ivcsw=7
+T type=double k=11 variant=G19p min=0.8404 med=0.8545 max=0.8870 net_min=0.8393 net_med=0.8534 spread_med_pct=1.7 spread_max_pct=5.5 ns_per_transform_min=1721.17 G=739 R=180 loop_s_min=0.229 redone=0 ivcsw=6
+T type=double k=11 variant=G19ap min=1.2125 med=1.2282 max=1.2451 net_min=1.2114 net_med=1.2271 spread_med_pct=1.3 spread_max_pct=2.7 ns_per_transform_min=2483.20 G=540 R=180 loop_s_min=0.241 redone=0 ivcsw=5
+E type=double k=11 variant=empty min=0.0011 med=0.0011 max=0.0012 net_min=0.0000 net_med=0.0000 spread_med_pct=1.3 spread_max_pct=11.9 ns_per_transform_min=2.27 G=1 R=105314463 loop_s_min=0.239 redone=0 ivcsw=4
+A type=double k=11 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=7.7 allcpus_busy_pct=55.9 wall_s=13.6 attempt=1 cpu=0 load=4.76,5.11,5.06
+B type=double k=12 n=4096 bytes=32768 R=166 R_overflow=166 reset=untimed loop_s=0.25 repeats=9 cpu=0 sibling=4 hugepages=0 attempt=1 load=4.76,5.11,5.06
+T type=double k=12 variant=ffht min=1.0220 med=1.0404 max=1.1232 net_min=1.0215 net_med=1.0398 spread_med_pct=1.8 spread_max_pct=9.9 ns_per_transform_min=4186.25 G=357 R=166 loop_s_min=0.248 redone=0 ivcsw=8
+T type=double k=12 variant=ffhtB min=1.0285 med=1.0388 max=1.2092 net_min=1.0279 net_med=1.0382 spread_med_pct=1.0 spread_max_pct=17.6 ns_per_transform_min=4212.65 G=361 R=166 loop_s_min=0.252 redone=0 ivcsw=9
+T type=double k=12 variant=Tp min=0.9013 med=0.9209 max=1.1188 net_min=0.9008 net_med=0.9204 spread_med_pct=2.2 spread_max_pct=24.1 ns_per_transform_min=3691.81 G=409 R=166 loop_s_min=0.251 redone=0 ivcsw=5
+T type=double k=12 variant=G19p min=0.9471 med=0.9680 max=1.0746 net_min=0.9466 net_med=0.9675 spread_med_pct=2.2 spread_max_pct=13.5 ns_per_transform_min=3879.48 G=390 R=166 loop_s_min=0.251 redone=0 ivcsw=3
+T type=double k=12 variant=G19ap min=1.3105 med=1.3370 max=1.3909 net_min=1.3100 net_med=1.3364 spread_med_pct=2.0 spread_max_pct=6.1 ns_per_transform_min=5367.92 G=283 R=166 loop_s_min=0.252 redone=0 ivcsw=6
+E type=double k=12 variant=empty min=0.0006 med=0.0006 max=0.0006 net_min=0.0000 net_med=0.0000 spread_med_pct=0.5 spread_max_pct=3.0 ns_per_transform_min=2.28 G=1 R=106103183 loop_s_min=0.242 redone=0 ivcsw=3
+A type=double k=12 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.6 allcpus_busy_pct=55.4 wall_s=13.9 attempt=1 cpu=0 load=4.67,5.07,5.05
+B type=double k=13 n=8192 bytes=65536 R=152 R_overflow=152 reset=untimed loop_s=0.25 repeats=9 cpu=0 sibling=4 hugepages=0 attempt=1 load=4.67,5.07,5.05
+T type=double k=13 variant=ffht min=1.1074 med=1.1118 max=1.1740 net_min=1.1071 net_med=1.1115 spread_med_pct=0.4 spread_max_pct=6.0 ns_per_transform_min=9071.42 G=155 R=152 loop_s_min=0.214 redone=0 ivcsw=3
+T type=double k=13 variant=ffhtB min=1.1056 med=1.1167 max=1.1439 net_min=1.1053 net_med=1.1164 spread_med_pct=1.0 spread_max_pct=3.5 ns_per_transform_min=9056.82 G=201 R=152 loop_s_min=0.277 redone=1 ivcsw=8
+T type=double k=13 variant=Tp min=1.0982 med=1.1041 max=1.1621 net_min=1.0979 net_med=1.1038 spread_med_pct=0.5 spread_max_pct=5.8 ns_per_transform_min=8996.45 G=158 R=152 loop_s_min=0.216 redone=0 ivcsw=8
+T type=double k=13 variant=G19p min=1.1234 med=1.1351 max=1.2238 net_min=1.1232 net_med=1.1349 spread_med_pct=1.0 spread_max_pct=8.9 ns_per_transform_min=9203.23 G=174 R=152 loop_s_min=0.243 redone=0 ivcsw=3
+T type=double k=13 variant=G19ap min=1.4547 med=1.4829 max=1.6768 net_min=1.4545 net_med=1.4826 spread_med_pct=1.9 spread_max_pct=15.3 ns_per_transform_min=11917.26 G=138 R=152 loop_s_min=0.250 redone=0 ivcsw=8
+E type=double k=13 variant=empty min=0.0003 med=0.0003 max=0.0003 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=8.9 ns_per_transform_min=2.27 G=1 R=103217240 loop_s_min=0.235 redone=0 ivcsw=6
+A type=double k=13 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=4.9 allcpus_busy_pct=55.1 wall_s=13.4 attempt=1 cpu=0 load=4.60,5.04,5.04
+B type=double k=14 n=16384 bytes=131072 R=142 R_overflow=142 reset=untimed loop_s=0.25 repeats=9 cpu=0 sibling=4 hugepages=0 attempt=1 load=4.60,5.04,5.04
+## run stopped by hand at 16:19:57 UTC after 2^13: the machine was too busy for the full range in the time allowed; the key sizes follow in time-double-k*.txt

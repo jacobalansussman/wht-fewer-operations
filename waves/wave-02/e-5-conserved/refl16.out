@@ -1,0 +1,37 @@
+bent form, (-4)-eigenspace: symmetric=True square=16I=True diag=[1] ; eigenvalue -4 space has dimension 6 ; 0/+-1 vectors in it by support: [(6, 16), (8, 30), (16, 6)]
+   least total support of an orthogonal 0/+-1 basis: 48 (supports [8, 8, 8, 8, 8, 8]) -> count (O) = 96, count (G) = 90 ; nodes 1223
+      (0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, 1, 1, -1, -1, 1)
+      (0, 0, 1, -1, 0, 0, -1, 1, -1, 1, 0, 0, 1, -1, 0, 0)
+      (0, 0, 1, 1, 0, 0, -1, -1, 0, 0, -1, -1, 0, 0, 1, 1)
+      (1, -1, -1, 1, 1, -1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0)
+      (1, -1, 0, 0, -1, 1, 0, 0, 0, 0, -1, 1, 0, 0, 1, -1)
+      (1, 1, 0, 0, -1, -1, 0, 0, -1, -1, 0, 0, 1, 1, 0, 0)
+Grover form (J-2I)x(J-2I), (-4)-eigenspace: symmetric=True square=16I=True diag=[1] ; eigenvalue -4 space has dimension 6 ; 0/+-1 vectors in it by support: [(6, 16), (8, 30), (16, 6)]
+   least total support of an orthogonal 0/+-1 basis: 48 (supports [8, 8, 8, 8, 8, 8]) -> count (O) = 96, count (G) = 90 ; nodes 1223
+      (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, -1, -1, -1, -1)
+      (0, 0, 1, -1, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, 1, -1)
+      (0, 0, 1, 1, 0, 0, 1, 1, -1, -1, 0, 0, -1, -1, 0, 0)
+      (1, -1, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0)
+      (1, 1, 0, 0, 1, 1, 0, 0, 0, 0, -1, -1, 0, 0, -1, -1)
+      (1, 1, 1, 1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0)
+Sylvester form H16, (-4)-eigenspace: symmetric=True square=16I=True diag=[-1, 1] ; eigenvalue -4 space has dimension 8 ; 0/+-1 vectors in it by support: [(4, 6), (6, 32), (8, 64), (10, 48), (12, 36), (16, 10)]
+   least total support of an orthogonal 0/+-1 basis: 56 (supports [4, 4, 8, 8, 8, 8, 8, 8]) -> count (O) = 112, count (G) = 104 ; nodes 4128
+      (0, 0, 0, 0, 1, 0, 0, 1, -1, 0, 0, -1, 0, 0, 0, 0)
+      (0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0)
+      (0, 0, 0, 0, 0, 1, 1, 0, -1, 0, 0, 1, 1, -1, -1, -1)
+      (0, 0, 1, -1, 0, -1, 0, 1, 0, -1, 0, 1, 0, 0, -1, 1)
+      (0, 0, 1, 1, 0, 0, 1, -1, -1, -1, 0, 0, -1, 1, 0, 0)
+      (1, -1, -1, -1, 1, 0, 0, -1, 0, -1, -1, 0, 0, 0, 0, 0)
+      (1, -1, 0, 0, -1, -1, 0, 0, 0, 0, 1, -1, 0, 0, -1, -1)
+      (1, 1, 0, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, -1, 0, 0)
+Sylvester form H16, (+4)-eigenspace: symmetric=True square=16I=True diag=[-1, 1] ; eigenvalue 4 space has dimension 8 ; 0/+-1 vectors in it by support: [(4, 6), (6, 32), (8, 64), (10, 48), (12, 36), (16, 10)]
+   least total support of an orthogonal 0/+-1 basis: 56 (supports [4, 4, 8, 8, 8, 8, 8, 8]) -> count (O) = 112, count (G) = 104 ; nodes 4128
+      (0, 0, 0, 0, 0, 1, -1, 0, 0, -1, 1, 0, 0, 0, 0, 0)
+      (1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1)
+      (0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, -1, -1, -1, -1, 1)
+      (0, 0, 1, -1, -1, 1, 0, 0, 0, 0, -1, -1, 1, 1, 0, 0)
+      (0, 0, 1, 1, 1, 0, -1, 0, 1, 0, -1, 0, 0, 0, -1, -1)
+      (1, -1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, -1, 1, 0, 0)
+      (1, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 1, -1)
+      (1, 1, 1, -1, 1, 0, 0, -1, 0, 1, 1, 0, 0, 0, 0, 0)
+LIGHT label=e5-refl16 exit=0 time=6s waited=4s peak_rss_mb=14 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=22:25:29 cmd=python3 -I -B refl16.py

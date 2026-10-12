@@ -1,0 +1,4 @@
+points 64 derivations 568 cap 19
+search nodes 6257809 seconds 224.0
+NONE: no program with at most 19 gates has all its points in the class (exhaustive)
+LIGHT label=b0-walldfs19 exit=0 time=226s waited=68s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=23:52:31 cmd=python3 -B wall_dfs.py 19

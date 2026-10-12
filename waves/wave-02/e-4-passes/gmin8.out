@@ -1,0 +1,2 @@
+d = 8  (d/2) log2 d = 12   histogram of G over all arrangements (columns up to GL): [(12, 1), (13, 9), (14, 28), (15, 60), (16, 91), (17, 222)] ... max 45
+LIGHT label=e4-gmin8 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:28:40 cmd=python3 -B gmin.py 8

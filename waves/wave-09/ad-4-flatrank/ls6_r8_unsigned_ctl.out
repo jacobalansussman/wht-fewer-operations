@@ -1,0 +1,3 @@
+K=6 subspaces 2825 flats 26387 (unsigned)
+ls K=6 r=8 flats=26387 seed=5: restarts 599, slot optimisations 24262, candidates 0, least residual |.|^2 seen 9.750000 (g has |g|^2 = 64)
+LIGHT label=ad4-ls6uc exit=0 time=121s waited=0s peak_rss_mb=4 peak_footprint_mb=4 lowest_cap_mb=1500 stopped=- start=06:40:47 cmd=./fr 6 ls 8 120 5 unsigned

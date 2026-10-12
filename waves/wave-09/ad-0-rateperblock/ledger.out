@@ -1,0 +1,164 @@
+======================================================================================================================================================
+LEGAL UNIT gcert1-e8-r783.json.gz
+  h=9 v=120 R=783 cst=72  m=45  W=1263 arrays (4v=480 data, 783 helpers)  D=120 moves saved of 56835  (helper start labels above 0: 0 moves, counted as moves made)
+  root of the law, fill -> infinity: saving e* = 8.76248e-04  [FLOAT]
+
+1. CLASSES [exact counts; LEGAL]            blocks   per array   moves    per array  move-nats S   S per array   rank: count
+  x-role (5 inv.)                1415       2.948      4800      10.000      11031.6       22.98     1:590 2:160 3:105 4:15 5:75 6:250 7:120 8:100
+  y-role (5 inv.)                1435       2.990      4800      10.000      11591.2       24.15     1:400 2:185 3:170 4:270 5:90 6:260 7:50 8:10
+  idle/catch-up                   960       2.000     11520      24.000      13503.1       28.13     20:240 16:240 8:240 4:240
+  helpers (5 inv.)              16980      21.686     35235      45.000     100076.7      127.81     1:9465 2:2675 3:2315 4:415 5:910 6:1145 7:45 8:10
+  scratch copies (5 inv.)          40           -       360           -        579.4           -     9:40
+  DATA ARRAYS (x+y+idle)         3810       7.938     21120      44.000      36126.0       75.26
+  UNIT                          20830      16.492     56715      44.905     136782.0      108.30
+  plain schedule, same arrays: 2 blocks per array (m-1, 1), S per array = 4.795 move-nats
+
+2. THE LEDGER AT THE UNIT'S OWN ROOT e* [FLOATS; LEGAL].  Credit: the data arrays skip 480 moves (one each).  It is spent on:
+  x-role (5 inv.)            charge      9.677 moves =   2.02 % of the credit   (per block 0.00684 ; first order e*S = 9.666)
+  y-role (5 inv.)            charge     10.168 moves =   2.12 % of the credit   (per block 0.00709 ; first order e*S = 10.157)
+  idle/catch-up              charge     11.839 moves =   2.47 % of the credit   (per block 0.01233 ; first order e*S = 11.832)
+  helpers (5 inv.)           charge     87.808 moves =  18.29 % of the credit   (per block 0.00517 ; first order e*S = 87.692)
+  scratch copies (5 inv.)    charge    360.508 moves =  75.11 % of the credit   (per block 9.01270 ; first order e*S = 0.508 + the copies' own 360 moves)
+  sum                                  480.000  (must equal 4v = 480)
+  first-order law e ~ D / S(unit) = 120 / 136782.0 = 8.77308e-04   (exact root 8.76248e-04)
+  move-nats per move saved: unit 1139.9 ; data arrays alone 75.3 ; the bar 1e-1 allows about 10.0 (first order 1/e; exact below)
+
+3. RATES = moves saved / blocks  [exact ratios shown as decimals].  Bar at this width for saving 1e-1, single-move blocks: m^e/(1-e) - 1 = 0.626 ; saving 1e-2: 0.049
+   rank-aware bar (what ONE block of rank r is charged at saving 1e-1, in moves): r=1: 0.463 ; r=2: 0.731 ; r=4: 1.095 ; r=8: 1.508 ; r=9: 1.572 ; r=16: 1.743 ; r=20: 1.689
+   LEGAL  unit, all blocks                                  moves saved    120  blocks   20830 : per block   0.0058 ; per block beyond one per array   0.0061 ; beyond two per array (plain)   0.0066
+   LEGAL  data arrays (credit 4v; x, y and idle blocks)     moves saved    480  blocks    3810 : per block   0.1260 ; per block beyond one per array   0.1441 ; beyond two per array (plain)   0.1684
+   LEGAL  helpers (credit 0)                                moves saved      0  blocks   16980 : per block   0.0000 ; per block beyond one per array   0.0000 ; beyond two per array (plain)   0.0000
+   LEGAL  scratch copies (credit -5 cst; not arrays)        moves saved   -360  blocks      40 : per block  -9.0000 ; per block beyond one per array  -9.0000 ; beyond two per array (plain)  -9.0000
+   gross view [read: R/tools/gen/foldlib.py, list B2u]: every data array makes 5 stage climbs of h-1 (role or idle: 5 directions left out) and one catch-up block of 4 (4 of them paid back);
+   so the 10v role climbs leave out 10v moves, and the idle class (10v idle stage climbs and the 4v catch-up blocks, merged as published) nets 10v - 16v = -6v:
+   LEGAL  x-role (5 inv.)        gross moves skipped   600  blocks   1415 : 0.4240 per block
+   LEGAL  y-role (5 inv.)        gross moves skipped   600  blocks   1435 : 0.4181 per block
+   LEGAL  idle/catch-up          gross moves skipped  -720  blocks    960 : -0.7500 per block
+
+4. WHAT-IF block lists (NO NETWORK behind any of them) [FLOATS].  Columns: blocks per array, moves saved per array, move-nats per array, saving, credit the list would need for 1e-1 (moves per array)
+   LEGAL (for reference) the unit as it is                                                      W=  1263  blk/arr  16.49  d  0.0950  S/arr  108.30  saving 8.7625e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  12.49
+   WHAT-IF (a1) scratch copies deleted                                                          W=  1263  blk/arr  16.46  d  0.3800  S/arr  107.84  saving 3.5071e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  12.44
+   WHAT-IF (a2) helpers deleted, copies kept (W = 4v)                                           W=   480  blk/arr   8.02  d  0.2500  S/arr   76.47  saving 3.2582e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   8.51
+   WHAT-IF (a3) helpers and copies deleted: the data arrays as the certificate cuts them        W=   480  blk/arr   7.94  d  1.0000  S/arr   75.26  saving 1.3105e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   8.38
+   WHAT-IF (a4) as (a3), x-role climbs merged to one block h-1 per invocation                   W=   480  blk/arr   6.24  d  1.0000  S/arr   69.55  saving 1.4188e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   7.65
+   WHAT-IF (a5) as (a3), y-role climbs merged to one block h-1 per invocation                   W=   480  blk/arr   6.20  d  1.0000  S/arr   68.39  saving 1.4429e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   7.52
+   WHAT-IF (a6) as (a3), both merged (x-6's row: 4.5 blocks per data array)                     W=   480  blk/arr   4.50  d  1.0000  S/arr   62.68  saving 1.5758e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   6.79
+   WHAT-IF (a7) as (a6), the catch-up 4 merged into a neighbour: X1,Y1 = 3x(h-1), 2h+2 ; X2,Y2 = 2h-2, h-1, h-1, h+3 W=   480  blk/arr   4.00  d  1.0000  S/arr   58.86  saving 1.6785e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   6.33
+   WHAT-IF (a8) as (a6), no catch-up at all: every data array 5 blocks of h-1 (5 moves skipped; no word does this) W=   480  blk/arr   5.00  d  5.0000  S/arr   69.09  saving 6.8192e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   7.54
+   WHAT-IF (b1) unit with every helper one block of rank h per invocation, copies kept          W=  1263  blk/arr   6.15  d  0.0950  S/arr   73.96  saving 1.2831e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   8.11
+   WHAT-IF (b2) the same, copies deleted                                                        W=  1263  blk/arr   6.12  d  0.3800  S/arr   73.50  saving 5.1466e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   8.06
+   WHAT-IF (b3) helpers on the plain schedule (m-1, 1), copies deleted                          W=  1263  blk/arr   4.26  d  0.3800  S/arr   31.58  saving 1.1880e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   3.53
+   WHAT-IF (b4) helpers on the plain schedule, data merged as (a6), copies deleted              W=  1263  blk/arr   2.95  d  0.3800  S/arr   26.79  saving 1.4013e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   2.93
+   WHAT-IF (b5) helpers cut into single moves (the worst cutting), copies deleted               W=  1263  blk/arr  30.91  d  0.3800  S/arr  134.80  saving 2.8057e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  16.11
+   WHAT-IF (c1) unit as it is with the helpers' rank-1 blocks each merged into a rank-1 neighbour (pairs of singles -> 2) W=  1263  blk/arr  12.75  d  0.0950  S/arr  103.11  saving 9.2040e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  11.75
+   WHAT-IF (c2) unit as it is, ONE more move skipped by every data array (taken from a block of rank 2h-2) W=  1263  blk/arr  16.49  d  0.4751  S/arr  108.27  saving 4.3612e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  12.49
+
+5. THE TWO SHAPES OF THE BRIEF [FLOATS; WHAT-IF]
+   WHAT-IF ab-1's shape (m-1-d, 1) at m = 45 with d = 0.0950 : saving 1.8894e-02 ; rate d per block beyond one = 0.0950 ; bar 0.626
+   WHAT-IF ab-1's shape (m-1-d, 1) at m = 45 with d = 0.3800 : saving 6.6745e-02 ; rate d per block beyond one = 0.3800 ; bar 0.626
+   WHAT-IF ab-1's shape (m-1-d, 1) at m = 45 with d = 1.0000 : saving 1.4254e-01 ; rate d per block beyond one = 1.0000 ; bar 0.626
+   WHAT-IF ab-6's bystander word, catch-up merged, h = 9, r = 3, m = 18, 3 arrays, helpers and shears free: blocks/array 1.67, d = 2.000, saving 0.2045 ; rate per block beyond one = 3.000 ; bar at m = 18: 0.483
+   WHAT-IF ab-6's bystander word, catch-up merged, h = 9, r = 1, m = 18, 3 arrays, helpers and shears free: blocks/array 1.67, d = 0.667, saving 0.0747 ; rate per block beyond one = 1.000 ; bar at m = 18: 0.483
+   WHAT-IF ab-6's bystander word, catch-up merged, h = 9, r = 1, m = 18, 3 arrays, helpers and shears free: blocks/array 1.67, d = 0.667, saving 0.0747 ; rate per block beyond one = 1.000 ; bar at m = 18: 0.483
+
+6. LOOK: how the certificate cuts one invocation [exact; LEGAL]
+   x-role climbs of h-1 = 8 moves, block ranks in order (pattern: count), 120 arrays, mean 2.36 blocks: 116:34 17:24 8:20 26:16 215:6 125:4 233:3 1133:3 143:3 1115:2 53:2 323:1 1223:1 35:1
+   y-role climbs of h-1 = 8 moves, block ranks in order (pattern: count), 120 arrays, mean 2.39 blocks: 611:25 44:20 62:15 53:12 26:12 17:8 431:6 341:4 35:4 3311:2 8:2 4211:2 422:2 332:2
+   helpers, blocks per invocation (number of blocks: helpers): 2:2 3:142 4:360 5:195 6:40 7:41 8:3
+   helpers, commonest patterns: 6111:104 33111:71 1116:49 1161:30 11151:30 2151:29 216:27 2133:26 5211:26 1113111:25 333:21 423:19
+   helpers, move-nats per invocation: least 17.62, mean 25.56, most 32.87 ; one block of rank h would be 14.48, h single moves 34.26
+   helpers, rank of the FIRST block (rank: helpers): 1:261 2:183 3:149 4:35 5:41 6:111 7:3 ; of the LAST block: 1:454 2:74 3:111 4:28 5:30 6:78 7:6 8:2
+   WHAT-IF (c3): every helper's last block of an invocation merged with its first block of the next:
+   WHAT-IF (c3) helpers' blocks merged across the four stage boundaries, rest as it is          W=  1263  blk/arr  14.01  d  0.0950  S/arr  101.68  saving 9.3328e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  11.62
+
+7. WHERE THE CHARGE COMES FROM [FLOATS on exact counts; LEGAL].  move-nats S = sum r ln(m/r); the saving is D / S to first order
+   data arrays: the five stages (role climbs whole, idle blocks as published)         30084.4 move-nats =  22.0 %   blocks (or extra cuts)   2160 :  13.93 move-nats each
+   data arrays: cuts inside the role climbs                                            6041.5 move-nats =   4.4 %   blocks (or extra cuts)   1650 :   3.66 move-nats each
+   helpers: the five stages (one block of h per invocation)                           56708.5 move-nats =  41.5 %   blocks (or extra cuts)   3915 :  14.48 move-nats each
+   helpers: cuts inside an invocation                                                 43368.1 move-nats =  31.7 %   blocks (or extra cuts)  13065 :   3.32 move-nats each
+   scratch copies                                                                       579.4 move-nats =   0.4 %   blocks (or extra cuts)     40 :  14.48 move-nats each
+   sum                                                                               136782.0           (the same arrays on the plain schedule: 6056.7)
+   skipped share, step by step [exact fractions]: a role climb skips 1 of h = 0.1111 of its stage ; the word pays 4 of 5 back: 1/m = 0.02222 per data array ; data arrays are 480 of 1263 arrays: 0.00845 ; the copies take 360 of 480 back: D/(W m) = 0.002111
+   mean entropy of the cutting, S/(W m) = 2.4067 nats per array (plain 0.1066 ; five equal stage blocks ln 5 = 1.6094) ; saving ~ skipped share / entropy = 8.7731e-04
+======================================================================================================================================================
+LEGAL UNIT gcert1-p11-pr193.json.gz
+  h=22 v=1320 R=9412 cst=440  m=110  W=14692 arrays (4v=5280 data, 9412 helpers)  D=3080 moves saved of 1616120  (helper start labels above 0: 0 moves, counted as moves made)
+  root of the law, fill -> infinity: saving e* = 7.47455e-04  [FLOAT]
+
+1. CLASSES [exact counts; LEGAL]            blocks   per array   moves    per array  move-nats S   S per array   rank: count
+  x-role (5 inv.)               19800       3.750    138600      26.250     298960.9       56.62     1:6600 2:6600 18:6600
+  y-role (5 inv.)               26400       5.000    138600      26.250     308110.4       58.35     1:19800 18:6600
+  idle/catch-up                 10560       2.000    298320      56.500     339436.7       64.29     46:2640 42:2640 21:2640 4:2640
+  helpers (5 inv.)             304535      32.356   1035320     110.000    3165691.7      336.35     1:119490 2:55390 3:49615 4:21045 5:9750 6:8025 7:3530 8:7655 9:2145 10:4650 11:1770 12:5985 13:635 14:3710 15:9395 16:440 17:405 18:65 19:835
+  scratch copies (5 inv.)         110           -      2200           -       3750.4           -     20:110
+  DATA ARRAYS (x+y+idle)        56760      10.750    575520     109.000     946508.0      179.26
+  UNIT                         361405      24.599   1613040     109.790    4115950.1      280.15
+  plain schedule, same arrays: 2 blocks per array (m-1, 1), S per array = 5.696 move-nats
+
+2. THE LEDGER AT THE UNIT'S OWN ROOT e* [FLOATS; LEGAL].  Credit: the data arrays skip 5280 moves (one each).  It is spent on:
+  x-role (5 inv.)            charge    223.669 moves =   4.24 % of the credit   (per block 0.01130 ; first order e*S = 223.460)
+  y-role (5 inv.)            charge    230.530 moves =   4.37 % of the credit   (per block 0.00873 ; first order e*S = 230.299)
+  idle/catch-up              charge    253.843 moves =   4.81 % of the credit   (per block 0.02404 ; first order e*S = 253.714)
+  helpers (5 inv.)           charge   2369.153 moves =  44.87 % of the credit   (per block 0.00778 ; first order e*S = 2366.212)
+  scratch copies (5 inv.)    charge   2202.805 moves =  41.72 % of the credit   (per block 20.02550 ; first order e*S = 2.803 + the copies' own 2200 moves)
+  sum                                 5280.000  (must equal 4v = 5280)
+  first-order law e ~ D / S(unit) = 3080 / 4115950.1 = 7.48308e-04   (exact root 7.47455e-04)
+  move-nats per move saved: unit 1336.3 ; data arrays alone 179.3 ; the bar 1e-1 allows about 10.0 (first order 1/e; exact below)
+
+3. RATES = moves saved / blocks  [exact ratios shown as decimals].  Bar at this width for saving 1e-1, single-move blocks: m^e/(1-e) - 1 = 0.778 ; saving 1e-2: 0.059
+   rank-aware bar (what ONE block of rank r is charged at saving 1e-1, in moves): r=1: 0.600 ; r=2: 0.986 ; r=4: 1.572 ; r=21: 3.782 ; r=22: 3.842 ; r=42: 4.245 ; r=46: 4.190
+   LEGAL  unit, all blocks                                  moves saved   3080  blocks  361405 : per block   0.0085 ; per block beyond one per array   0.0089 ; beyond two per array (plain)   0.0093
+   LEGAL  data arrays (credit 4v; x, y and idle blocks)     moves saved   5280  blocks   56760 : per block   0.0930 ; per block beyond one per array   0.1026 ; beyond two per array (plain)   0.1143
+   LEGAL  helpers (credit 0)                                moves saved      0  blocks  304535 : per block   0.0000 ; per block beyond one per array   0.0000 ; beyond two per array (plain)   0.0000
+   LEGAL  scratch copies (credit -5 cst; not arrays)        moves saved  -2200  blocks     110 : per block -20.0000 ; per block beyond one per array -20.0000 ; beyond two per array (plain) -20.0000
+   gross view [read: R/tools/gen/foldlib.py, list B2u]: every data array makes 5 stage climbs of h-1 (role or idle: 5 directions left out) and one catch-up block of 4 (4 of them paid back);
+   so the 10v role climbs leave out 10v moves, and the idle class (10v idle stage climbs and the 4v catch-up blocks, merged as published) nets 10v - 16v = -6v:
+   LEGAL  x-role (5 inv.)        gross moves skipped  6600  blocks  19800 : 0.3333 per block
+   LEGAL  y-role (5 inv.)        gross moves skipped  6600  blocks  26400 : 0.2500 per block
+   LEGAL  idle/catch-up          gross moves skipped -7920  blocks  10560 : -0.7500 per block
+
+4. WHAT-IF block lists (NO NETWORK behind any of them) [FLOATS].  Columns: blocks per array, moves saved per array, move-nats per array, saving, credit the list would need for 1e-1 (moves per array)
+   LEGAL (for reference) the unit as it is                                                      W= 14692  blk/arr  24.60  d  0.2096  S/arr  280.15  saving 7.4745e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  32.83
+   WHAT-IF (a1) scratch copies deleted                                                          W= 14692  blk/arr  24.59  d  0.3594  S/arr  279.89  saving 1.2815e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  32.81
+   WHAT-IF (a2) helpers deleted, copies kept (W = 4v)                                           W=  5280  blk/arr  10.77  d  0.5833  S/arr  179.97  saving 3.2300e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  20.13
+   WHAT-IF (a3) helpers and copies deleted: the data arrays as the certificate cuts them        W=  5280  blk/arr  10.75  d  1.0000  S/arr  179.26  saving 5.5451e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  20.06
+   WHAT-IF (a4) as (a3), x-role climbs merged to one block h-1 per invocation                   W=  5280  blk/arr   8.25  d  1.0000  S/arr  166.11  saving 5.9858e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  18.34
+   WHAT-IF (a5) as (a3), y-role climbs merged to one block h-1 per invocation                   W=  5280  blk/arr   7.00  d  1.0000  S/arr  164.38  saving 6.0499e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  18.07
+   WHAT-IF (a6) as (a3), both merged (x-6's row: 4.5 blocks per data array)                     W=  5280  blk/arr   4.50  d  1.0000  S/arr  151.23  saving 6.5794e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  16.35
+   WHAT-IF (a7) as (a6), the catch-up 4 merged into a neighbour: X1,Y1 = 3x(h-1), 2h+2 ; X2,Y2 = 2h-2, h-1, h-1, h+3 W=  5280  blk/arr   4.00  d  1.0000  S/arr  145.73  saving 6.8286e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  15.67
+   WHAT-IF (a8) as (a6), no catch-up at all: every data array 5 blocks of h-1 (5 moves skipped; no word does this) W=  5280  blk/arr   5.00  d  5.0000  S/arr  173.88  saving 2.8093e-02  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  18.91
+   WHAT-IF (b1) unit with every helper one block of rank h per invocation, copies kept          W= 14692  blk/arr   7.07  d  0.2096  S/arr  178.09  saving 1.1759e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  19.54
+   WHAT-IF (b2) the same, copies deleted                                                        W= 14692  blk/arr   7.07  d  0.3594  S/arr  177.84  saving 2.0171e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  19.51
+   WHAT-IF (b3) helpers on the plain schedule (m-1, 1), copies deleted                          W= 14692  blk/arr   5.14  d  0.3594  S/arr   68.07  saving 5.2483e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   7.66
+   WHAT-IF (b4) helpers on the plain schedule, data merged as (a6), copies deleted              W= 14692  blk/arr   2.90  d  0.3594  S/arr   58.00  saving 6.1646e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):   6.32
+   WHAT-IF (b5) helpers cut into single moves (the worst cutting), copies deleted               W= 14692  blk/arr  74.33  d  0.3594  S/arr  395.66  saving 9.0654e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  49.49
+   WHAT-IF (c1) unit as it is with the helpers' rank-1 blocks each merged into a rank-1 neighbour (pairs of singles -> 2) W= 14692  blk/arr  20.53  d  0.2096  S/arr  274.51  saving 7.6282e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  31.96
+   WHAT-IF (c2) unit as it is, ONE more move skipped by every data array (taken from a block of rank 2h-2) W= 14692  blk/arr  24.60  d  0.5690  S/arr  280.16  saving 2.0248e-03  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  32.84
+
+5. THE TWO SHAPES OF THE BRIEF [FLOATS; WHAT-IF]
+   WHAT-IF ab-1's shape (m-1-d, 1) at m = 110 with d = 0.2096 : saving 3.3320e-02 ; rate d per block beyond one = 0.2096 ; bar 0.778
+   WHAT-IF ab-1's shape (m-1-d, 1) at m = 110 with d = 0.3594 : saving 5.3657e-02 ; rate d per block beyond one = 0.3594 ; bar 0.778
+   WHAT-IF ab-1's shape (m-1-d, 1) at m = 110 with d = 1.0000 : saving 1.2040e-01 ; rate d per block beyond one = 1.0000 ; bar 0.778
+   WHAT-IF ab-6's bystander word, catch-up merged, h = 9, r = 3, m = 18, 3 arrays, helpers and shears free: blocks/array 1.67, d = 2.000, saving 0.2045 ; rate per block beyond one = 3.000 ; bar at m = 18: 0.483
+   WHAT-IF ab-6's bystander word, catch-up merged, h = 9, r = 1, m = 18, 3 arrays, helpers and shears free: blocks/array 1.67, d = 0.667, saving 0.0747 ; rate per block beyond one = 1.000 ; bar at m = 18: 0.483
+   WHAT-IF ab-6's bystander word, catch-up merged, h = 22, r = 1, m = 44, 3 arrays, helpers and shears free: blocks/array 1.67, d = 0.667, saving 0.0318 ; rate per block beyond one = 1.000 ; bar at m = 44: 0.622
+
+6. LOOK: how the certificate cuts one invocation [exact; LEGAL]
+   x-role climbs of h-1 = 21 moves, block ranks in order (pattern: count), 1320 arrays, mean 3.00 blocks: 2-18-1:1320
+   y-role climbs of h-1 = 21 moves, block ranks in order (pattern: count), 1320 arrays, mean 4.00 blocks: 18-1-1-1:1320
+   helpers, blocks per invocation (number of blocks: helpers): 3:287 4:1563 5:1745 6:1263 7:1236 8:1940 9:841 10:229 11:247 12:50 13:11
+   helpers, commonest patterns: 1-1-1-15-1-1-1-1:1369 1-1-1-15-1-1-2:444 3-12-2-2-3:362 1-1-1-2-2-2-8-2-3:220 1-1-1-19:167 3-4-12-3:154 3-14-2-3:132 3-2-2-2-10-3:110 3-4-8-4-3:110 1-1-1-2-12-2-1-1-1:109 1-1-1-2-2-2-2-8-1-1-1:104 3-2-14-1-1-1:98
+   helpers, move-nats per invocation: least 47.47, mean 67.27, most 89.89 ; one block of rank h would be 35.41, h single moves 103.41
+   helpers, rank of the FIRST block (rank: helpers): 1:3960 3:3564 4:503 5:550 6:182 7:23 8:241 9:5 10:96 11:5 12:57 13:11 14:92 15:47 16:37 17:39 ; of the LAST block: 1:2640 2:1518 3:3410 4:651 5:177 6:293 7:87 8:117 9:26 10:169 11:1 12:63 13:1 14:30 16:7 17:42 18:13 19:167
+   WHAT-IF (c3): every helper's last block of an invocation merged with its first block of the next:
+   WHAT-IF (c3) helpers' blocks merged across the four stage boundaries, rest as it is          W= 14692  blk/arr  22.04  d  0.2096  S/arr  270.86  saving 7.7310e-04  NET moves per array that these blocks would be charged at 1e-1 (ranks held fixed):  31.55
+
+7. WHERE THE CHARGE COMES FROM [FLOATS on exact counts; LEGAL].  move-nats S = sum r ln(m/r); the saving is D / S to first order
+   data arrays: the five stages (role climbs whole, idle blocks as published)        798468.2 move-nats =  19.4 %   blocks (or extra cuts)  23760 :  33.61 move-nats each
+   data arrays: cuts inside the role climbs                                          148039.7 move-nats =   3.6 %   blocks (or extra cuts)  33000 :   4.49 move-nats each
+   helpers: the five stages (one block of h per invocation)                         1666283.3 move-nats =  40.5 %   blocks (or extra cuts)  47060 :  35.41 move-nats each
+   helpers: cuts inside an invocation                                               1499408.4 move-nats =  36.4 %   blocks (or extra cuts) 257475 :   5.82 move-nats each
+   scratch copies                                                                      3750.4 move-nats =   0.1 %   blocks (or extra cuts)    110 :  34.09 move-nats each
+   sum                                                                              4115950.1           (the same arrays on the plain schedule: 83684.5)
+   skipped share, step by step [exact fractions]: a role climb skips 1 of h = 0.0455 of its stage ; the word pays 4 of 5 back: 1/m = 0.00909 per data array ; data arrays are 5280 of 14692 arrays: 0.00327 ; the copies take 2200 of 5280 back: D/(W m) = 0.001906
+   mean entropy of the cutting, S/(W m) = 2.5468 nats per array (plain 0.0518 ; five equal stage blocks ln 5 = 1.6094) ; saving ~ skipped share / entropy = 7.4831e-04

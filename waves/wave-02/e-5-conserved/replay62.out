@@ -1,0 +1,2 @@
+textbook with one butterfly left out: 62 operations, entropy 62.000000 bits (exact squares are dyadic, so the value is exact: 62)
+LIGHT label=e5-replay62 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:37:59 cmd=python3 -I -B replay62.py

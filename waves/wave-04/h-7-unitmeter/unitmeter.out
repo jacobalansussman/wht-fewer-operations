@@ -1,0 +1,40 @@
+certificate: h=9 v=120 R=783  (registers: 120 x, 120 y, 783 slots), replayed exactly, scalar identity holds
+
+(1) blocks and moves of ONE invocation, by class and by t = number of sources the register mixes at that time
+    class            t=0         t=1         t=2       t=3-4       t=5-8      t=9-16     t=17-32     t=33-64t=65-1000000       total
+    x blocks           0         283           0           0           0           0           0           0           0         283
+    x moves            0         960           0           0           0           0           0           0           0         960
+    y blocks           0           0           0           0           0           0           0         287           0         287
+    y moves            0           0           0           0           0           0           0         960           0         960
+    s blocks         783         267         553         614         391         472         316           0           0        3396
+    s moves         2106         346        1424        1627         709         499         336           0           0        7047
+    c blocks           0           0           0           0           0           0           0           8           0           8
+    c moves            0           0           0           0           0           0           0          72           0          72
+    all moves of one invocation: 9039 (certificate N = 9039, of which the copies cst = 72)
+    moves on a single source (t=1): 1306;  on a mixture (t>=2): 5627;  on a register with no x-content (t=0): 2106
+    sum over mixture moves of log2 t = 15688.9   (the L2 budget of these wires, per f*n, is this number)
+    sum over mixture moves of (t-1) = 77946   (moves that the sharing would save if nothing had to be undone)
+    largest t ever held: x 0, y 107, s 57; the 8 totals mix [57, 57, 57, 57, 57, 57, 57, 57]
+    y registers right after the scatter mix: [(57, 120)]
+    mean rank of a block by t: t=0: 2.69, t=1: 2.37, t=2: 2.58, t=3-4: 2.65, t=5-8: 1.81, t=9-16: 1.06, t=17-32: 1.06, t=33-64: 3.50, t=65-1000000: 0.00
+    mixture moves by the dimension d of the label BEFORE the block: d=0: 528, d=1: 56, d=2: 906, d=3: 1641, d=4: 458, d=5: 300, d=6: 690, d=7: 522, d=8: 454, d=9: 72
+
+(2) additions of ONE invocation (one term a*u into v = n gates (G); sign changes are free in (G))
+    by (source class -> target class): c->y 736, s->s 1544, s->y 666, x->s 930;  total 3876
+    additions whose result is a mixture (t>=2): 3451; whose result is a single source or empty: 425
+    additions that CANCEL (result mixes fewer sources than its larger operand): 867
+
+(3) fan-out: how many addition terms read one wire state (register at one frame with one content)
+    histogram {reads: states}: [(1, 1861), (2, 300), (3, 124), (4, 7), (5, 9), (6, 26), (7, 2), (8, 8)]
+    each scratch copy of a total is read by: [92, 92, 92, 92, 92, 92, 92, 92] targets
+    most-read register states inside the gate lists: x91 read 8 times, x109 read 8 times, x113 read 8 times, x116 read 8 times, x118 read 8 times
+
+(4) one UNIT = five invocations + idle blocks of the twins (as R/tools/whatif_copies.py builds it)
+    W = 1263 arrays, m = 45, plain 56835 moves, unit 56715 moves, D = 120 moves saved
+    additions per unit (five invocations; the free gates between twins are NOT in the certificate): >= 19380
+    count (G), arrays of n = 2^(45 f) points, blocks done by the textbook:
+       textbook  W*m*f*n = 56835 f n ;  unit  (56715 f + 19380) n ;  saved  (120 f - 19380) n
+       first f with a positive saving: 162  (arrays of 2^7290 points)
+    over-limit wires (t>=2) per unit: (28135 f + 17255) n ;  L1 ratio saved/over-limit -> 120/28135 = 0.00427 as f grows
+    L2 budget per unit: (1/2) sum log2(t^2) = 78444 f n ;  saved/budget -> 0.001530
+    share count per unit: 389730 ;  D / share = 0.000308

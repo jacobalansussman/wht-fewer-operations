@@ -1,0 +1,33 @@
+# deepmin NN=5 m=4 AREF=6 ACH=278 DIV=3 full=0 hcap=3
+# candidate targets=116 group=3840
+# only the classes whose number is 0 modulo 2
+# progress: 100 sets done (class number 200), saved so far 0, histogram so far: h=0:0 h=1:16 h=2:57 h=3:27 above cap=0
+# progress: 200 sets done (class number 400), saved so far 0, histogram so far: h=0:1 h=1:27 h=2:108 h=3:58 above cap=6
+# progress: 300 sets done (class number 600), saved so far 0, histogram so far: h=0:1 h=1:28 h=2:143 h=3:117 above cap=11
+# progress: 400 sets done (class number 800), saved so far 0, histogram so far: h=0:1 h=1:28 h=2:158 h=3:184 above cap=29
+# progress: 500 sets done (class number 1000), saved so far 0, histogram so far: h=0:1 h=1:28 h=2:189 h=3:247 above cap=35
+# progress: 600 sets done (class number 1200), saved so far 0, histogram so far: h=0:1 h=1:28 h=2:202 h=3:299 above cap=70
+# progress: 700 sets done (class number 1400), saved so far 0, histogram so far: h=0:1 h=1:31 h=2:232 h=3:342 above cap=94
+# progress: 800 sets done (class number 1600), saved so far 0, histogram so far: h=0:1 h=1:37 h=2:281 h=3:383 above cap=98
+# progress: 900 sets done (class number 1800), saved so far 0, histogram so far: h=0:1 h=1:49 h=2:324 h=3:424 above cap=102
+# progress: 1000 sets done (class number 2000), saved so far 0, histogram so far: h=0:1 h=1:53 h=2:363 h=3:469 above cap=114
+# progress: 1100 sets done (class number 2200), saved so far 0, histogram so far: h=0:1 h=1:54 h=2:387 h=3:521 above cap=137
+# progress: 1200 sets done (class number 2400), saved so far 0, histogram so far: h=0:1 h=1:55 h=2:413 h=3:562 above cap=169
+# progress: 1300 sets done (class number 2600), saved so far 0, histogram so far: h=0:1 h=1:59 h=2:450 h=3:606 above cap=184
+# progress: 1400 sets done (class number 2800), saved so far 0, histogram so far: h=0:1 h=1:65 h=2:497 h=3:650 above cap=187
+# progress: 1500 sets done (class number 3000), saved so far 0, histogram so far: h=0:1 h=1:72 h=2:522 h=3:692 above cap=213
+# progress: 1600 sets done (class number 3200), saved so far 0, histogram so far: h=0:4 h=1:104 h=2:569 h=3:708 above cap=215
+# progress: 1700 sets done (class number 3400), saved so far 0, histogram so far: h=0:12 h=1:139 h=2:607 h=3:727 above cap=215
+# progress: 1800 sets done (class number 3600), saved so far 0, histogram so far: h=0:13 h=1:157 h=2:653 h=3:761 above cap=216
+# progress: 1900 sets done (class number 3800), saved so far 0, histogram so far: h=0:13 h=1:162 h=2:694 h=3:804 above cap=227
+# progress: 2000 sets done (class number 4000), saved so far 0, histogram so far: h=0:13 h=1:162 h=2:713 h=3:860 above cap=252
+# progress: 2100 sets done (class number 4200), saved so far 0, histogram so far: h=0:14 h=1:171 h=2:745 h=3:901 above cap=269
+# progress: 2200 sets done (class number 4400), saved so far 0, histogram so far: h=0:14 h=1:189 h=2:793 h=3:933 above cap=271
+# progress: 2300 sets done (class number 4600), saved so far 0, histogram so far: h=0:15 h=1:201 h=2:831 h=3:971 above cap=282
+# progress: 2400 sets done (class number 4800), saved so far 0, histogram so far: h=0:16 h=1:218 h=2:862 h=3:1008 above cap=296
+# progress: 2500 sets done (class number 5000), saved so far 0, histogram so far: h=0:18 h=1:246 h=2:898 h=3:1033 above cap=305
+# progress: 2600 sets done (class number 5200), saved so far 0, histogram so far: h=0:20 h=1:262 h=2:943 h=3:1065 above cap=310
+# progress: 2700 sets done (class number 5400), saved so far 0, histogram so far: h=0:26 h=1:304 h=2:985 h=3:1075 above cap=310
+# progress: 2800 sets done (class number 5600), saved so far 0, histogram so far: h=0:55 h=1:342 h=2:1013 h=3:1079 above cap=311
+# sets=5606  reference helpers histogram: h=0:58 h=1:342 h=2:1013 h=3:1079  above cap=311
+# target sets where the challenger class saves a gate: 0

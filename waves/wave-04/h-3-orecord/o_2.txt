@@ -1,0 +1,4 @@
+# count (O) program, 2 operations, 2 points; outputs out_j named in the last comment line
+u1_y0 = x0 + x1
+u1_y1 = x0 - x1
+# OUT u1_y0 u1_y1

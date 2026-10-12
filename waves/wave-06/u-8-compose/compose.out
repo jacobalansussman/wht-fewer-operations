@@ -1,0 +1,36 @@
+textbook 2                         N=  2 gates=   2 exact_H=True survivors=  1 (N-1=  1) dead=   1 e=  0  classes=3 one_tree=True  full non-outputs=0  wires by support [(2, 2)]  rate=1.0000
+brick                              N=  4 gates=   7 exact_H=True survivors=  3 (N-1=  3) dead=   4 e=  0  classes=7 one_tree=True  full non-outputs=1  wires by support [(2, 2), (4, 5)]  rate=0.8750
+the 19                             N=  8 gates=  19 exact_H=True survivors=  7 (N-1=  7) dead=  12 e=  0  classes=15 one_tree=True  full non-outputs=5  wires by support [(2, 4), (4, 2), (8, 13)]  rate=0.7917
+staircase 8                        N=  8 gates=  20 exact_H=True survivors=  7 (N-1=  7) dead=  13 e=  1  classes=15 one_tree=True  full non-outputs=2  wires by support [(2, 4), (4, 6), (8, 10)]  rate=0.8333
+staircase 16                       N= 16 gates=  52 exact_H=True survivors= 15 (N-1= 15) dead=  37 e=  5  classes=31 one_tree=True  full non-outputs=4  wires by support [(2, 8), (4, 12), (8, 12), (16, 20)]  rate=0.8125
+staircase 32                       N= 32 gates= 128 exact_H=True survivors= 31 (N-1= 31) dead=  97 e= 17  classes=63 one_tree=True  full non-outputs=8  wires by support [(2, 16), (4, 24), (8, 24), (16, 24), (32, 40)]  rate=0.8000
+staircase 64                       N= 64 gates= 304 exact_H=True survivors= 63 (N-1= 63) dead= 241 e= 49  classes=127 one_tree=True  full non-outputs=16  wires by support [(2, 32), (4, 48), (8, 48), (16, 48), (32, 48), (64, 80)]  rate=0.7917
+second 52 (h-1)                    N= 16 gates=  52 exact_H=True survivors= 15 (N-1= 15) dead=  37 e=  5  classes=31 one_tree=True  full non-outputs=6  wires by support [(2, 8), (4, 4), (8, 18), (16, 22)]  rate=0.8125
+54 = 19 x textbook2 (h-0)          N= 16 gates=  54 exact_H=True survivors= 15 (N-1= 15) dead=  39 e=  7  classes=31 one_tree=True  full non-outputs=0  wires by support [(2, 8), (4, 4), (8, 26), (16, 16)]  rate=0.8438
+--- tensor products built here; law e(AxB) = n e(A) + m e(B) + (m-1)(n-1)
+t2 x t2                            N=  4 gates=   8 exact_H=True survivors=  3 (N-1=  3) dead=   5 e=  1  classes=7 one_tree=True  full non-outputs=0  wires by support [(2, 4), (4, 4)]  rate=1.0000
+      law predicts e = 1 : agrees
+brick x t2                         N=  8 gates=  22 exact_H=True survivors=  7 (N-1=  7) dead=  15 e=  3  classes=15 one_tree=True  full non-outputs=0  wires by support [(2, 4), (4, 10), (8, 8)]  rate=0.9167
+      law predicts e = 3 : agrees
+t2 x brick                         N=  8 gates=  22 exact_H=True survivors=  7 (N-1=  7) dead=  15 e=  3  classes=15 one_tree=True  full non-outputs=2  wires by support [(2, 8), (4, 4), (8, 10)]  rate=0.9167
+      law predicts e = 3 : agrees
+brick x brick                      N= 16 gates=  56 exact_H=True survivors= 15 (N-1= 15) dead=  41 e=  9  classes=31 one_tree=True  full non-outputs=4  wires by support [(2, 8), (4, 20), (8, 8), (16, 20)]  rate=0.8750
+      law predicts e = 9 : agrees
+19 x t2                            N= 16 gates=  54 exact_H=True survivors= 15 (N-1= 15) dead=  39 e=  7  classes=31 one_tree=True  full non-outputs=0  wires by support [(2, 8), (4, 4), (8, 26), (16, 16)]  rate=0.8438
+      law predicts e = 7 : agrees
+t2 x 19                            N= 16 gates=  54 exact_H=True survivors= 15 (N-1= 15) dead=  39 e=  7  classes=31 one_tree=True  full non-outputs=10  wires by support [(2, 16), (4, 8), (8, 4), (16, 26)]  rate=0.8438
+      law predicts e = 7 : agrees
+brick x 19                         N= 32 gates= 132 exact_H=True survivors= 31 (N-1= 31) dead= 101 e= 21  classes=63 one_tree=True  full non-outputs=20  wires by support [(2, 16), (4, 40), (8, 16), (16, 8), (32, 52)]  rate=0.8250
+      law predicts e = 21 : agrees
+19 x brick                         N= 32 gates= 132 exact_H=True survivors= 31 (N-1= 31) dead= 101 e= 21  classes=63 one_tree=True  full non-outputs=8  wires by support [(2, 16), (4, 8), (8, 52), (16, 16), (32, 40)]  rate=0.8250
+      law predicts e = 21 : agrees
+19 x 19                            N= 64 gates= 304 exact_H=True survivors= 63 (N-1= 63) dead= 241 e= 49  classes=127 one_tree=True  full non-outputs=40  wires by support [(2, 32), (4, 16), (8, 104), (16, 32), (32, 16), (64, 104)]  rate=0.7917
+      law predicts e = 49 : agrees
+--- staircase as a composition: cross(m,n) = e(mn) - n e(m) - m e(n), against (3/4) m n - m - n + 1 and the tensor (m-1)(n-1)
+   staircase 16 =  4 o  4 : cross =   5   (3/4)mn-m-n+1 =   5   tensor (m-1)(n-1) =   9
+   staircase 32 =  4 o  8 : cross =  13   (3/4)mn-m-n+1 =  13   tensor (m-1)(n-1) =  21
+   staircase 32 =  8 o  4 : cross =  13   (3/4)mn-m-n+1 =  13   tensor (m-1)(n-1) =  21
+   staircase 64 =  4 o 16 : cross =  29   (3/4)mn-m-n+1 =  29   tensor (m-1)(n-1) =  45
+   staircase 64 =  8 o  8 : cross =  33   (3/4)mn-m-n+1 =  33   tensor (m-1)(n-1) =  49
+   staircase 64 = 16 o  4 : cross =  29   (3/4)mn-m-n+1 =  29   tensor (m-1)(n-1) =  45
+LIGHT label=u-8-compose exit=0 time=1s waited=6s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:10:07 cmd=python3 -B compose.py

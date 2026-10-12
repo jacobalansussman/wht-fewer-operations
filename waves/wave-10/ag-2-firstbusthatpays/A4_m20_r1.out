@@ -1,0 +1,8 @@
+TWO-ELEMENT FIELD, count (G). wire sets read 470, derivations seen 1208, this run: index = 1 modulo 20, MAXD = 4
+groupings with 8 independent reaches visited (pruned: not all): 15248689 ; with a wire of >= 3 classes (class A structures): 15248689
+delivery sets of size 1: (structure, set) passing the census 4046763 ; then the single-edge test 266771 ; then the exact joint search (pure + deliveries <= 11) 0
+delivery sets of size 2: (structure, set) passing the census 6369365 ; then the single-edge test 922746 ; then the exact joint search (pure + deliveries <= 11) 0
+delivery sets of size 3: (structure, set) passing the census 2906753 ; then the single-edge test 774948 ; then the exact joint search (pure + deliveries <= 11) 0
+delivery sets of size 4: (structure, set) passing the census 939211 ; then the single-edge test 262519 ; then the exact joint search (pure + deliveries <= 11) 0
+STRUCTURES with some delivery set reaching pure + deliveries <= 11 : 0   (11 would be a 31-gate candidate; 12 is a tie)
+exact search calls: 1574920 (joint ones 944690) ; SYM = 1 (1: only wire sets that are the least of their 6 images under permutations of the three address bits; such sets met: 470)

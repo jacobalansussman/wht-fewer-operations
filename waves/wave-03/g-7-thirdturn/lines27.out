@@ -1,0 +1,6 @@
+vectors fixed by R: 27 ; distinct bases they generate: 27 ; sizes: [16]
+each basis closed under R: True ; orthogonal: True
+non-zeros per row -> number of bases: {(4,): 15, (16,): 12}
+S maps the set of bases to itself: True ; bases kept: 15 ; swapped in pairs: 12 ; sent outside: 0
+T maps the set of bases to itself: True ; bases kept: 15 ; swapped in pairs: 12 ; sent outside: 0
+for each basis: (number of other bases in which each of its rows spreads over 4 rows, over 16 rows), sorted -> count: {(10, 16): 27}

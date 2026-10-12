@@ -1,0 +1,11 @@
+hub (x0 + x2) + t (x1 - x3), t = rho = 1:
+   row 0  slopes (1, (1+0j)): single-input witnesses ['x3'] ; weighted-pair witnesses []
+   row 1  slopes (-1, 1j): single-input witnesses [] ; weighted-pair witnesses ['x0+(-i)x2']
+   row 2  slopes (1, (-1+0j)): single-input witnesses ['x1'] ; weighted-pair witnesses []
+   row 3  slopes (-1, (-0-1j)): single-input witnesses [] ; weighted-pair witnesses ['x0+(i)x2']
+hub (x0 + x2) + t (x1 - x3), t = i rho = i:
+   row 0  slopes (1, (1+0j)): single-input witnesses [] ; weighted-pair witnesses ['x1+(i)x3']
+   row 1  slopes (-1, 1j): single-input witnesses ['x2'] ; weighted-pair witnesses []
+   row 2  slopes (1, (-1+0j)): single-input witnesses [] ; weighted-pair witnesses ['x1+(-i)x3']
+   row 3  slopes (-1, (-0-1j)): single-input witnesses ['x0'] ; weighted-pair witnesses []
+LIGHT label=x9d exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:18:37 cmd=python3 -B fourier4.py

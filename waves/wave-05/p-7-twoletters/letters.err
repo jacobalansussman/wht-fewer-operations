@@ -1,0 +1,1 @@
+LIGHT label=p7-letters exit=0 time=26s waited=78s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=00:31:28 cmd=python3 -B letters.py

@@ -1,0 +1,93 @@
+h-1 second 52: 16 points, 52 gates (G); exact replay, every row of the transform is a wire: True
+   1 letter(s): none; search exhaustive (1983 nodes)
+   2 letter(s): assignment found (53 nodes)
+   letter 1: 30 gates (14 up, 16 down); matrix 19 x 16; rectangles 28 (of them 8 free pass-throughs/up forms leaving); dead 0; row family 24 sets, column family 26 sets; nested: yes; matches replay: yes
+   letter 2: 22 gates (10 up, 12 down); matrix 16 x 19; rectangles 25 (of them 5 free pass-throughs/up forms leaving); dead 0; row family 16 sets, column family 19 sets; nested: yes; matches replay: yes
+   product of the 2 letter matrices = H_16 exactly: yes
+   --- letter 1 ---
+   input wires (16): x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15
+   wires leaving (19): h1 h5 h6 h8 h9 h10 h13 h14 h16 h18 h21 h22 h24 h25 h26 h27 h28 h30 h45
+     h1   = 1*x7 + 1*x0   up   set {x0,x7}
+     h2   = 1*x15 + 1*x8   up   set {x8,x15}
+     h3   = 1*x14 + 1*x9   up   set {x9,x14}
+     h4   = -1*x5 + 1*x2   up   set {x2,x5}
+     h5   = -1*x13 + 1*x10   up   set {x10,x13}
+     h6   = -1*x4 + 1*x3   up   set {x3,x4}
+     h7   = -1*x12 + 1*x11   up   set {x11,x12}
+     h8   = -1*h3 + 1*h2   up   set {x8,x9,x14,x15}
+     h9   = 1*h6 + 1*h4   up   set {x2,x3,x4,x5}
+     h10  = 1*h7 + 1*h5   up   set {x10,x11,x12,x13}
+     h11  = -1*h10 + 1*h8   up   set {x8,x9,x10,x11,x12,x13,x14,x15}
+     h12  = 1*h11 + -2*x15   down stream: starts here
+     h13  = 1*x6 + 1*x1   up   set {x1,x6}
+     h14  = 1*h12 + 2*x9   down stream: h12
+     h15  = 1*h11 + -2*x13   down stream: starts here
+     h16  = -1*h13 + 1*h1   up   set {x0,x1,x6,x7}
+     h17  = 1*h16 + -1*h9   up   set {x0,x1,x2,x3,x4,x5,x6,x7}
+     h18  = 1*h12 + 2*x14   down stream: h12
+     h19  = 1*h15 + -2*x12   down stream: h15
+     h20  = 1*h17 + 2*x6   down stream: starts here
+     h21  = 1*h15 + 2*x11   down stream: h15
+     h22  = -1*h20 + 2*x0   down stream: h20
+     h23  = 1*h17 + -2*x4   down stream: starts here
+     h24  = 1*h19 + 2*h3   down stream: h19
+     h25  = 1*h23 + -2*x5   down stream: h23
+     h26  = 1*h18 + 2*h7   down stream: h18
+     h27  = 1*h23 + 2*x2   down stream: h23
+     h28  = 1*h20 + -2*x7   down stream: h20
+     h30  = -1*h19 + 2*h2   down stream: h19
+     h45  = 1*h28 + 2*h4   down stream: h28
+   --- letter 2 ---
+   input wires (19): h1 h5 h6 h8 h9 h10 h13 h14 h16 h18 h21 h22 h24 h25 h26 h27 h28 h30 h45
+   wires leaving (16): y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 y10 y11 y12 y13 y14 y15
+     h29  = 1*h25 + 1*h24   up   set {h24,h25}
+     h31  = 1*h22 + 1*h14   up   set {h14,h22}
+     h32  = 1*h27 + -1*h21   up   set {h21,h27}
+     h33  = 1*h30 + 1*h25   down stream: starts here
+     y2   = 1*h31 + -2*h9   up   set {h9,h14,h22}
+     y3   = -1*h32 + 2*h16   up   set {h16,h21,h27}
+     y4   = 1*h31 + 2*h10   down stream: starts here
+     y5   = 1*h32 + 2*h8   down stream: starts here
+     y6   = 1*h29 + 2*h13   up   set {h13,h24,h25}
+     y8   = -1*h33 + 2*h1   down stream: h33
+     y10  = 1*y2 + -2*h14   down stream: starts here
+     y11  = 1*y3 + -2*h21   down stream: starts here
+     y12  = -1*y4 + 2*h22   down stream: y4
+     y13  = -1*y5 + 2*h27   down stream: y5
+     y14  = 1*y6 + -2*h24   down stream: starts here
+     h46  = 1*h28 + 1*h26   up   set {h26,h28}
+     h47  = 1*h45 + 1*h18   up   set {h18,h45}
+     y0   = 1*y8 + 2*h30   down stream: y8
+     y1   = 1*h47 + 2*h5   up   set {h5,h18,h45}
+     y7   = 1*h46 + 2*h6   up   set {h6,h26,h28}
+     y9   = -1*y1 + 2*h45   down stream: starts here
+     y15  = 1*y7 + -2*h26   down stream: starts here
+   cells of the two-letter factorisation (p-7 section 4):
+   output nodes with more than one output: 4 (sizes [2, 2, 2, 16]); input nodes with more than one input: 15 (sizes [2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 8, 8, 16])
+   p-7's Lemma 1 (rank of the block <= 2 + wires in the cell): violated on 0 of 60 pairs
+     |C|= 2 |B|= 2 rank 1 :  24 blocks, wires in the cell: 18x0 6x1
+     |C|= 2 |B|= 4 rank 1 :  12 blocks, wires in the cell: 8x0 4x1
+     |C|= 2 |B|= 8 rank 1 :   6 blocks, wires in the cell: 3x0 3x1
+     |C|= 2 |B|=16 rank 2 :   3 blocks, wires in the cell: 3x1
+     |C|=16 |B|= 2 rank 2 :   8 blocks, wires in the cell: 2x2 6x3
+     |C|=16 |B|= 4 rank 4 :   4 blocks, wires in the cell: 1x4 3x5
+     |C|=16 |B|= 8 rank 8 :   2 blocks, wires in the cell: 1x9 1x10
+     |C|=16 |B|=16 rank 16 :   1 blocks, wires in the cell: 1x19
+
+g-1 19: 8 points, 19 gates (G); exact replay, every row of the transform is a wire: True
+   1 letter(s): assignment found (20 nodes)
+   letter 1: 19 gates (7 up, 12 down); matrix 8 x 8; rectangles 14 (of them 0 free pass-throughs/up forms leaving); dead 0; row family 12 sets, column family 13 sets; nested: yes; matches replay: yes
+   product of the 1 letter matrices = H_8 exactly: yes
+e2-0 slp_8: 8 points, 20 gates (G); exact replay, every row of the transform is a wire: True
+   1 letter(s): none; search exhaustive (91 nodes)
+   2 letter(s): assignment found (21 nodes)
+   letter 1: 10 gates (6 up, 4 down); matrix 8 x 8; rectangles 12 (of them 4 free pass-throughs/up forms leaving); dead 0; row family 8 sets, column family 10 sets; nested: yes; matches replay: yes
+   letter 2: 10 gates (4 up, 6 down); matrix 8 x 8; rectangles 12 (of them 2 free pass-throughs/up forms leaving); dead 0; row family 8 sets, column family 10 sets; nested: yes; matches replay: yes
+   product of the 2 letter matrices = H_8 exactly: yes
+h-8 three-hub 21: 8 points, 21 gates (G); exact replay, every row of the transform is a wire: True
+   1 letter(s): none; search exhaustive (91 nodes)
+   2 letter(s): assignment found (22 nodes)
+   letter 1: 12 gates (6 up, 6 down); matrix 8 x 8; rectangles 12 (of them 2 free pass-throughs/up forms leaving); dead 0; row family 8 sets, column family 10 sets; nested: yes; matches replay: yes
+   letter 2: 9 gates (4 up, 5 down); matrix 8 x 8; rectangles 12 (of them 3 free pass-throughs/up forms leaving); dead 0; row family 8 sets, column family 11 sets; nested: yes; matches replay: yes
+   product of the 2 letter matrices = H_8 exactly: yes
+LIGHT label=r0-main exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:34:16 cmd=python3 -B check.py main

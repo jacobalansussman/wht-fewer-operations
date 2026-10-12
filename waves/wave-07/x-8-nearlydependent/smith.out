@@ -1,0 +1,10 @@
+N= 2: H = Z D Z^T True; |diagonal of D| multiplicities [(1, 1), (2, 1)] (binomials [1, 1]); rank of H modulo 2 = 1; sum of exponents = 1 = (N/2) log2 N = 1
+N= 4: H = Z D Z^T True; |diagonal of D| multiplicities [(1, 1), (2, 2), (4, 1)] (binomials [1, 2, 1]); rank of H modulo 2 = 1; sum of exponents = 4 = (N/2) log2 N = 4
+N= 8: H = Z D Z^T True; |diagonal of D| multiplicities [(1, 1), (2, 3), (4, 3), (8, 1)] (binomials [1, 3, 3, 1]); rank of H modulo 2 = 1; sum of exponents = 12 = (N/2) log2 N = 12
+N=16: H = Z D Z^T True; |diagonal of D| multiplicities [(1, 1), (2, 4), (4, 6), (8, 4), (16, 1)] (binomials [1, 4, 6, 4, 1]); rank of H modulo 2 = 1; sum of exponents = 32 = (N/2) log2 N = 32
+N=32: H = Z D Z^T True; |diagonal of D| multiplicities [(1, 1), (2, 5), (4, 10), (8, 10), (16, 5), (32, 1)] (binomials [1, 5, 10, 10, 5, 1]); rank of H modulo 2 = 1; sum of exponents = 80 = (N/2) log2 N = 80
+brick: H4 = v v^T - 2 P4 exactly, v = (1,1,1,-1)
+N= 4: rank(H Mon^-1 - sqrt(N) I) = 1 ; (N - sqrt N)/2 = 1
+N=16: rank(H Mon^-1 - sqrt(N) I) = 6 ; (N - sqrt N)/2 = 6
+N=64: rank(H Mon^-1 - sqrt(N) I) = 28 ; (N - sqrt N)/2 = 28
+LIGHT label=x8-smith exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:09:41 cmd=python3 -B smith.py

@@ -1,0 +1,30 @@
+A2 (2 x 2 minors of H4) / 2 equals rows_alt4.txt: True ; entries: [-2, 0, 2]
+S2 (induced / permanent matrix) equals rows_sym4.txt: True
+A2^2 = 16 I: True ; S2^2 = 16 I: True
+A2 non-zero exactly when (u+v).(x+y) = 1: True ; row slice w misses column slice {1: [2], 2: [1], 3: [3]}
+middle alone q=4 alt brick=0: 12 gates, 6 outputs, each row of the matrix produced exactly once (up to scale): True
+middle alone q=4 alt brick=1: 12 gates, 6 outputs, each row of the matrix produced exactly once (up to scale): True
+middle alone q=4 sym brick=0: 28 gates, 10 outputs, each row of the matrix produced exactly once (up to scale): False
+middle alone q=4 sym brick=1: 26 gates, 10 outputs, each row of the matrix produced exactly once (up to scale): False
+middle alone q=8 alt textbook slices: 112 gates, 28 outputs, rows produced: True
+middle alone q=16 alt textbook slices: 720 gates, 120 outputs, rows produced: True
+middle alone q=8 sym textbook slices: 160 gates, 36 outputs, rows produced: False
+middle alone q=16 sym textbook slices: 848 gates, 136 outputs, rows produced: False
+q=  2 points=    4 brick=0: gates=     8 = split 2 + sym middle 4 + alt middle 0 + merge 2 ; formula 8 ; all 4 outputs proportional to rows of H: True ; output scales [1] ; textbook 8 ; brick-direct 7
+q=  2 points=    4 brick=1: gates=     8 = split 2 + sym middle 4 + alt middle 0 + merge 2 ; formula 8 ; all 4 outputs proportional to rows of H: True ; output scales [1] ; textbook 8 ; brick-direct 7
+q=  4 points=   16 brick=0: gates=    64 = split 12 + sym middle 28 + alt middle 12 + merge 12 ; formula 64 ; all 16 outputs proportional to rows of H: True ; output scales [1] ; textbook 64 ; brick-direct 56
+q=  4 points=   16 brick=1: gates=    62 = split 12 + sym middle 26 + alt middle 12 + merge 12 ; formula 62 ; all 16 outputs proportional to rows of H: True ; output scales [1] ; textbook 64 ; brick-direct 56
+q=  8 points=   64 brick=0: gates=   384 = split 56 + sym middle 160 + alt middle 112 + merge 56 ; formula 384 ; all 64 outputs proportional to rows of H: True ; output scales [1] ; textbook 384 ; brick-direct 336
+q=  8 points=   64 brick=1: gates=   352 = split 56 + sym middle 142 + alt middle 98 + merge 56 ; formula 352 ; all 64 outputs proportional to rows of H: True ; output scales [1] ; textbook 384 ; brick-direct 336
+q= 16 points=  256 brick=0: gates=  2048 = split 240 + sym middle 848 + alt middle 720 + merge 240 ; formula 2048 ; all 256 outputs proportional to rows of H: True ; output scales [1] ; textbook 2048 ; brick-direct 1792
+q= 16 points=  256 brick=1: gates=  1912 = split 240 + sym middle 772 + alt middle 660 + merge 240 ; formula 1912 ; all 256 outputs proportional to rows of H: True ; output scales [1] ; textbook 2048 ; brick-direct 1792
+q= 32 points= 1024 brick=0: gates= 10240 = split 992 + sym middle 4288 + alt middle 3968 + merge 992 ; formula 10240 ; all 1024 outputs proportional to rows of H: True ; output scales [1] ; textbook 10240 ; brick-direct 8960
+q= 32 points= 1024 brick=1: gates=  9216 = split 992 + sym middle 3760 + alt middle 3472 + merge 992 ; formula 9216 ; all 1024 outputs proportional to rows of H: True ; output scales [1] ; textbook 10240 ; brick-direct 8960
+Lambda^2(H4) in the basis {01, 03+12, 23 | 02, 03-12, 13}:
+    [-2, 0, -2, 0, -4, 0]
+    [0, 0, 0, -2, 0, 2]
+    [-2, 0, -2, 0, 4, 0]
+    [0, -4, 0, -2, 0, -2]
+    [-2, 0, 2, 0, 0, 0]
+    [0, 4, 0, -2, 0, -2]
+LIGHT label=a1-verify exit=0 time=4s waited=0s peak_rss_mb=66 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:25:28 cmd=python3 -B verify.py

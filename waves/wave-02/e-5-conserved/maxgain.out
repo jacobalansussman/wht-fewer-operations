@@ -1,0 +1,8 @@
+q=3 fresh gain h(q)=1.3921  best found 1.4242  (q*best = 4.273 bits for 6 ops (O): 0.7121 bits/op)  at x=[0.998, -0.041, -0.041]
+q=4 fresh gain h(q)=2.0000  best found 2.0000  (q*best = 8.000 bits for 8 ops (O): 1.0000 bits/op)  at x=[1.0, 0.0, 0.0, 0.0]
+q=5 fresh gain h(q)=2.2227  best found 2.2421  (q*best = 11.211 bits for 10 ops (O): 1.1211 bits/op)  at x=[0.999, 0.019, 0.019, 0.019, 0.019]
+q=6 fresh gain h(q)=2.2810  best found 2.3492  (q*best = 14.095 bits for 12 ops (O): 1.1746 bits/op)  at x=[0.997, 0.034, 0.034, 0.034, 0.034, 0.034]
+q=7 fresh gain h(q)=2.2658  best found 2.3949  (q*best = 16.765 bits for 14 ops (O): 1.1975 bits/op)  at x=[-0.994, -0.045, -0.045, -0.045, -0.045, -0.045, -0.045]
+q=8 fresh gain h(q)=2.2169  best found 2.4096  (q*best = 19.277 bits for 16 ops (O): 1.2048 bits/op)  at x=[0.99, 0.053, 0.053, 0.053, 0.053, 0.053, 0.053, 0.053]
+q=9 fresh gain h(q)=2.1532  best found 2.4074  (q*best = 21.666 bits for 18 ops (O): 1.2037 bits/op)  at x=[0.987, 0.058, 0.058, 0.058, 0.058, 0.058, 0.058, 0.058, 0.058]
+LIGHT label=e5-maxgain exit=0 time=19s waited=0s peak_rss_mb=11 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=22:30:48 cmd=python3 -I -B maxgain.py

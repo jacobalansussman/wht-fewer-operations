@@ -1,0 +1,6 @@
+textbook: gates 8; computes the target: True; weights [0, 1, 0, 1, 0, 1, 0, 1]; sum of positive weights 4; gates of positive weight 4; largest minor degree at the end 4; degree of the output determinant 4; 'a minor rises by at most the weight' held at every gate: True
+seven gates (ag-6's wiring, general tau): gates 7; computes the target: True; weights [0, 0, 0, 1, 1, 1, 2]; sum of positive weights 5; gates of positive weight 4; largest minor degree at the end 4; degree of the output determinant 4; 'a minor rises by at most the weight' held at every gate: True
+eight gates (ae-cross / ag-8): gates 8; computes the target: True; weights [1, 1, 0, 0, 1, 1, 0, 1]; sum of positive weights 5; gates of positive weight 5; largest minor degree at the end 4; degree of the output determinant 4; 'a minor rises by at most the weight' held at every gate: True
+nine gates, one gate of weight 2 (mine): gates 9; computes the target: True; weights [0, 0, 0, 0, 1, 1, 0, 0, 2]; sum of positive weights 4; gates of positive weight 3; largest minor degree at the end 4; degree of the output determinant 4; 'a minor rises by at most the weight' held at every gate: True
+LIGHT label=ah-h1 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:19:08 cmd=python3 -B h1_ledger.py
+h1 exit 0

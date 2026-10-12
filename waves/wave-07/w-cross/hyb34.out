@@ -1,0 +1,16 @@
+== HYBRID 3: ports are the subspaces P with P and P-perp meeting only in 0 ==
+h=2: dim 1: 2 of 3 subspaces
+h=3: dim 1: 4 of 7 subspaces; dim 2: 4 of 7 subspaces
+h=4: dim 1: 8 of 15 subspaces; dim 2: 20 of 35 subspaces; dim 3: 8 of 15 subspaces
+h=5: dim 1: 16 of 31 subspaces; dim 2: 80 of 155 subspaces; dim 3: 80 of 155 subspaces
+h=6: dim 1: 32 of 63 subspaces; dim 2: 336 of 651 subspaces; dim 3: 640 of 1395 subspaces
+h=3, p=111: H(x,y) = (-1)^(ab) * (-1)^(u.v) with x = a p + u, y = b p + v, u, v even words: True
+
+== HYBRID 4: the whole-number diagonalising bases are Z times the automorphisms of the form D ==
+k=2 N=4: roots with <= 3 non-zeros and entries <= 2: 22; bases A = Z*O reached within 4 reflections: 2; all satisfy A D A^T = H (first 2000 checked): True
+  non-zeros of Z: 9  histogram of non-zeros (count): [(9, 2)]
+  sparsest basis found, rows: [(1, 0, 0, 0), (1, 1, 0, 0), (1, 0, 1, 0), (1, 1, 1, 1)]
+k=3 N=8: roots with <= 2 non-zeros and entries <= 2: 82; bases A = Z*O reached within 2 reflections: 20; all satisfy A D A^T = H (first 2000 checked): True
+  non-zeros of Z: 27  histogram of non-zeros (count): [(27, 20)]
+  sparsest basis found, rows: [(1, 0, 0, 0, 0, 0, 0, 0), (1, 1, 0, 0, 0, 0, 0, 0), (1, 0, 1, 0, 0, 0, 0, 0), (1, 1, 1, 1, 0, 0, 0, 0), (1, 0, 0, 0, 1, 0, 0, 0), (1, 1, 0, 0, 1, 1, 0, 0), (1, 0, 1, 0, 1, 0, 1, 0), (1, 1, 1, 1, 1, 1, 1, 1)]
+LIGHT label=wcross-hyb34 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:31:38 cmd=python3 -B hyb34.py

@@ -1,0 +1,206 @@
+Small circuits for the Walsh-Hadamard transform H x on N = 2^k points.
+Count (G): a gate is any a*u + b*v; multiplying by a constant is free.
+Count (O): every addition, every subtraction and every multiplication by a constant costs one.
+Everything below is computed in exact integers and fractions by Python.  It is not a proof.
+
+STEP 1.  The named circuits, read from their text and replayed against the transform.
+  file                        N  textbook   (G)   (O)   add  sub  mul  outputs                 checks
+  h4_7gates.txt               4         8     7    11     3    4    4  H x, yJ = row J         packed (all 4 unit vectors); dense; 4 random vectors
+  h8_19gates.txt              8        24    19    31    10    9   12  H x, yJ = row J         packed (all 8 unit vectors); dense; 4 random vectors
+  h8_half_20ops.txt           8        24    19    20    10    9    1  (1/2) H x, yJ = row J   packed (all 8 unit vectors); dense; 4 random vectors
+  h16_52gates.txt            16        64    52    84    20   32   32  H x, yJ = row J         packed (all 16 unit vectors); dense; 4 random vectors
+  lean/h8_half_o20.txt        8        24    19    20    10    9    1  (1/2) H x, zJ = row J   packed (all 8 unit vectors); dense; 4 random vectors
+  lean/h8_half_o20.txt and programs/h8_half_20ops.txt: the same 20 operations in the same order, under other names.
+  (G) = lines with two terms.  (O) = add + sub + mul.  "packed" is one exact run that is equivalent to all N unit
+  vectors (slp.py says why); "dense" compares every entry with H.
+
+STEP 2.  tables.py: every program regenerated from gen.py and replayed up to 4096 points; the tables.
+
+PART 0.  The checker tried on wrong programs.  Every line of five small programs is spoiled in up to ten ways
+(a sign, a factor 2 or 1/2, a wrong operand); the packed check must give the same verdict as the dense check.
+  1621 spoiled programs: the two checks agree on all; 1621 rejected, 0 still compute a multiple of H (a change that cancels).
+
+PART 1.  The programs as the searches left them (programs/as_found/, copied unchanged).
+  file                N    (G)  (O)  (O')  add  sub  mul  neg  strict  outputs               checks
+  h3_o_16.txt          16    54   56   56   28   26    2    0  True    (1/2) * rows of H     packed (all 16 unit vectors); dense; 4 random vectors
+  h3_o_512.txt        512  3648 3840 3840 1920 1728  192    0  True    (1/8) * rows of H     packed (all 512 unit vectors); 4 random vectors
+  h3_o_64.txt          64   304  320  320  160  144   16    0  True    (1/4) * rows of H     packed (all 64 unit vectors); dense; 4 random vectors
+  h3_o_8.txt            8    19   20   20   10    9    1    0  True    (1/2) * rows of H     packed (all 8 unit vectors); dense; 4 random vectors
+  h3_ox_16.txt         16    54   72   72   28   26   18    0  True    (1) * rows of H       packed (all 16 unit vectors); dense; 4 random vectors
+  h3_ox_512.txt       512  3648 4352 4352 1920 1728  704    0  True    (1) * rows of H       packed (all 512 unit vectors); 4 random vectors
+  h3_ox_64.txt         64   304  384  384  160  144   80    0  True    (1) * rows of H       packed (all 64 unit vectors); dense; 4 random vectors
+  h3_ox_8.txt           8    19   28   28   10    9    9    0  True    (1) * rows of H       packed (all 8 unit vectors); dense; 4 random vectors
+  h8_19gates.txt        8    19   31   31   10    9   12    0  False   (1) * rows of H       packed (all 8 unit vectors); dense; 4 random vectors
+  h8_21gates.txt        8    21   33   33   10   11   12    0  False   (1) * rows of H       packed (all 8 unit vectors); dense; 4 random vectors
+  oslp_16.txt          16    52   60   60   20   32    8    0  True    (1/4) * rows of H     packed (all 16 unit vectors); dense; 4 random vectors
+  oslp_4.txt            4     7    8    8    3    4    1    0  True    (1/2) * rows of H     packed (all 4 unit vectors); dense; 4 random vectors
+  oslp_64.txt          64   304  352  352  112  192   48    0  True    (1/8) * rows of H     packed (all 64 unit vectors); dense; 4 random vectors
+  slp_16.txt           16    52   84   84   20   32   32    0  False   (1) * rows of H       packed (all 16 unit vectors); dense; 4 random vectors
+  slp_32.txt           32   128  208  208   48   80   80    0  False   (1) * rows of H       packed (all 32 unit vectors); dense; 4 random vectors
+  slp_4.txt             4     7   11   11    3    4    4    0  False   (1) * rows of H       packed (all 4 unit vectors); dense; 4 random vectors
+  slp_64.txt           64   304  496  496  112  192  192    0  False   (1) * rows of H       packed (all 64 unit vectors); dense; 4 random vectors
+  slp_8.txt             8    20   32   32    8   12   12    0  False   (1) * rows of H       packed (all 8 unit vectors); dense; 4 random vectors
+  Every file: each of the N rows of H appears exactly once among the outputs, all with the one factor shown.
+  (G) = lines with two terms.  (O) = additions + subtractions + multiplications + negations, line by line.
+  (O') = the same with a multiplication by -1 free (Alman and Rao).  Negations in these files: 0, so (O) = (O') throughout.
+
+PART 2.  The units (each checked on all unit vectors when built).
+  B2  textbook step (2 points)                                (G)= 2 (O)= 2 strict=True factor 1
+  G4  7 gates, 4 points                                       (G)= 7 (O)=11 strict=False factor 1
+  G8  19 gates, 8 points                                      (G)=19 (O)=31 strict=False factor 1
+  O4  4 points, 7 additions and 1 halving, output H x / 2     (G)= 7 (O)= 8 strict=True factor 1/2
+  O8  8 points, 19 additions and 1 halving, output H x / 2    (G)=19 (O)=20 strict=True factor 1/2
+
+PART 3.  The family (gen.py, construction 1), generated and replayed for k = 2 .. 12.
+  k      N   (G) gates  formula (3/4)Nk+N/4 |  (O) ops  formula   factor of outputs | (O) exact H x = previous + N
+   2      4          7          7            |        8        8   1/2               |       12
+   3      8         20         20            |       26       26   1/2               |       34
+   4     16         52         52            |       60       60   1/4               |       76
+   5     32        128        128            |      160      160   1/4               |      192
+   6     64        304        304            |      352      352   1/8               |      416
+   7    128        704        704            |      864      864   1/8               |      992
+   8    256       1600       1600            |     1856     1856   1/16              |     2112
+   9    512       3584       3584            |     4352     4352   1/16              |     4864
+  10   1024       7936       7936            |     9216     9216   1/32              |    10240
+  11   2048      17408      17408            |    20992    20992   1/32              |    23040
+  12   4096      37888      37888            |    44032    44032   1/64              |    48128
+  All replayed: packed check (equivalent to all N unit vectors), dense check for N <= 64, 4 random vectors each.
+  (O) formula: (7/8)Nk + N/4 for even k, (7/8)Nk + (5/8)N for odd k.
+
+PART 4.  Layered programs, generated and replayed (k <= 12).
+  (G), best layering of the 2-, 4- and 8-point units alone (no family):
+    k= 1 N=    2 gates      2   textbook step
+    k= 2 N=    4 gates      7   7-gate 4-point unit
+    k= 3 N=    8 gates     19   19-gate 8-point unit
+    k= 4 N=   16 gates     54   19-gate 8-point unit + textbook step
+    k= 5 N=   32 gates    132   19-gate 8-point unit + 7-gate 4-point unit
+    k= 6 N=   64 gates    304   2 x 19-gate 8-point unit
+    k= 7 N=  128 gates    736   2 x 19-gate 8-point unit + textbook step
+    k= 8 N=  256 gates   1664   2 x 19-gate 8-point unit + 7-gate 4-point unit
+    k= 9 N=  512 gates   3648   3 x 19-gate 8-point unit
+    k=10 N= 1024 gates   8320   3 x 19-gate 8-point unit + textbook step
+    k=11 N= 2048 gates  18176   3 x 19-gate 8-point unit + 7-gate 4-point unit
+    k=12 N= 4096 gates  38912   4 x 19-gate 8-point unit
+  (O), layers of the 20-operation 8-point unit, textbook steps for the bits left over:
+     k      N   common factor   operations   then exact H x (N more)   textbook
+     3      8   1/2                   20           28                      24
+     4     16   1/2                   56           72                      64
+     5     32   1/2                  144          176                     160
+     6     64   1/4                  320          384                     384
+     7    128   1/4                  768          896                     896
+     8    256   1/4                 1792         2048                    2048
+     9    512   1/8                 3840         4352                    4608
+    10   1024   1/8                 8704         9728                   10240
+    11   2048   1/8                19456        21504                   22528
+    12   4096   1/16               40960        45056                   49152
+  (O), textbook, k = 1 .. 12:
+    all replayed, k*N operations each, outputs exactly the rows of H.
+  (O), the family on 2^(k-1) points and one textbook layer, odd k (cheaper than the family itself at odd k):
+    k= 3 N=    8 operations     24 = (7/8)Nk + (3/8)N   (the family itself: 26)   factor 1/2
+    k= 5 N=   32 operations    152 = (7/8)Nk + (3/8)N   (the family itself: 160)   factor 1/4
+    k= 7 N=  128 operations    832 = (7/8)Nk + (3/8)N   (the family itself: 864)   factor 1/8
+    k= 9 N=  512 operations   4224 = (7/8)Nk + (3/8)N   (the family itself: 4352)   factor 1/16
+    k=11 N= 2048 operations  20480 = (7/8)Nk + (3/8)N   (the family itself: 20992)   factor 1/32
+
+TABLE (O).  Exact transform H x (every output with factor 1), count (O): additions, subtractions and
+multiplications by constants all charged.  "here" = the cheaper of the textbook and the best layered program
+found by the dynamic programme over all layerings of: textbook step, 4-point unit, 8-point unit, family on
+2^j points (any j), with N final multiplications when the factor is not 1.
+Alman and Rao (2023): "Thm 1.1" is the bound they state, (23/24) N k + (13/12) N; "Thm 6.2" is the exact count
+in the proof of their Theorem 6.2, (23/24) N k + (N/24)(k mod 3) + N - 1.
+   k       N  textbook  Alman-Rao  Alman-Rao     here  here/    replayed     how (here)
+                 N*k    Thm 1.1    Thm 6.2    exact  textbook
+   1       2        2        4.1        3.0        2  1.0000  yes          textbook
+   2       4        8       12.0       11.0        8  1.0000  yes          textbook
+   3       8       24       31.7       30.0       24  1.0000  yes          textbook
+   4      16       64       78.7       77.0       64  1.0000  yes          textbook
+   5      32      160      188.0      187.0      160  1.0000  yes          textbook
+   6      64      384      437.3      431.0      384  1.0000  yes          textbook (tie with: 2 x 20-operation 8-point unit, then N multiplications)
+   7     128      896      997.3      991.0      896  1.0000  yes          textbook (tie with: 2 x 20-operation 8-point unit + textbook step, then N multiplications)
+   8     256     2048     2240.0     2239.0     2048  1.0000  yes          textbook (tie with: 2 x 20-operation 8-point unit + 2 x textbook step, then N multiplications)
+   9     512     4608     4970.7     4927.0     4352  0.9444  yes          3 x 20-operation 8-point unit, then N multiplications
+  10    1024    10240    10922.7    10879.0     9728  0.9500  yes          3 x 20-operation 8-point unit + textbook step, then N multiplications
+  11    2048    22528    23808.0    23807.0    21504  0.9545  yes          3 x 20-operation 8-point unit + 2 x textbook step, then N multiplications
+  12    4096    49152    51541.3    51199.0    45056  0.9167  yes          4 x 20-operation 8-point unit, then N multiplications
+  13    8192   106496   110933.3   110591.0    98304  0.9231  no (formula) 4 x 20-operation 8-point unit + textbook step, then N multiplications
+  14   16384   229376   237568.0   237567.0   212992  0.9286  no (formula) 4 x 20-operation 8-point unit + 2 x textbook step, then N multiplications
+  Below the textbook: from k = 9 (512 points) on, at every k up to 14; equal to it below that.
+  Below Alman and Rao (both columns): at every k in the table: True.
+  Alman and Rao's exact count (proof of their Theorem 6.2) is first below the textbook at k = 24; the bound of their Theorem 1.1 at k = 27.
+  The same sizes when one common factor on all outputs is allowed (count (O); cheapest layering):
+   k       N  textbook  operations  factor  how
+   2       4        8          8  1/2     8-operation 4-point unit
+   3       8       24         20  1/2     20-operation 8-point unit
+   4      16       64         56  1/2     20-operation 8-point unit + textbook step
+   5      32      160        144  1/2     20-operation 8-point unit + 2 x textbook step
+   6      64      384        320  1/4     2 x 20-operation 8-point unit
+   7     128      896        768  1/4     2 x 20-operation 8-point unit + textbook step
+   8     256     2048       1792  1/4     2 x 20-operation 8-point unit + 2 x textbook step
+   9     512     4608       3840  1/8     3 x 20-operation 8-point unit
+  10    1024    10240       8704  1/8     3 x 20-operation 8-point unit + textbook step
+  11    2048    22528      19456  1/8     3 x 20-operation 8-point unit + 2 x textbook step
+  12    4096    49152      40960  1/16    4 x 20-operation 8-point unit
+  13    8192   106496      90112  1/16    4 x 20-operation 8-point unit + textbook step
+  14   16384   229376     196608  1/16    4 x 20-operation 8-point unit + 2 x textbook step
+  General k = 3m + j (j = 0, 1, 2), m >= 1: layers cost N*(k - m/2) with factor 2^-m, exact H x costs N*(k - m/2 + 1).
+  That is (5/6) N k + N when 3 divides k, (5/6) N k + (7/6) N when j = 1, (5/6) N k + (4/3) N when j = 2.
+
+TABLE (G).  Exact transform H x, count (G): a gate is any a*u + b*v, scalings free.
+"7/8 published" = (7/8) N k for even k and (7/8) N k + N/8 for odd k: the two formulas of Coppersmith, Feig and Linzer 1994
+(page 969), who charge one for a multiply-add, +-a +- b*c (narrower than count (G)); a 4-point step with 7 additions is also
+in Reshef and Alrod 2002 and in Alman and Rao 2023.  The column is computed from the two formulas.
+   k       N  textbook  7/8 published  small units only  family (3/4)Nk+N/4         here  here/textbook  replayed      how (here)
+   1       2        2          2              2                  2                2   1.0000       yes           textbook step
+   2       4        8          7              7                  7                7   0.8750       yes           7-gate 4-point unit (= family)
+   3       8       24         22             19                 20               19   0.7917       yes           19-gate 8-point unit
+   4      16       64         56             54                 52               52   0.8125       yes           family
+   5      32      160        144            132                128              128   0.8000       yes           family
+   6      64      384        336            304                304              304   0.7917       yes           family; tie with 2 x 19-gate 8-point unit
+   7     128      896        800            736                704              704   0.7857       yes           family
+   8     256     2048       1792           1664               1600             1600   0.7812       yes           family
+   9     512     4608       4096           3648               3584             3584   0.7778       yes           family
+  10    1024    10240       8960           8320               7936             7936   0.7750       yes           family
+  11    2048    22528      19968          18176              17408            17408   0.7727       yes           family
+  12    4096    49152      43008          38912              37888            37888   0.7708       yes           family
+  13    8192   106496      94208          86016              81920            81920   0.7692       no (formula)  family
+  14   16384   229376     200704         184320             176128           176128   0.7679       no (formula)  family
+  The family is below the textbook at every k >= 2 and below the published 7/8 count at every k >= 3 (equal at k = 2).
+  Layers of the 19-gate unit alone: (19/24) N k when 3 divides k; below the family only at k = 3 (19 against 20), equal at k = 6.
+
+TABLE (O), orthonormal.  H x / sqrt(N) for even k (for odd k, 1/sqrt(N) is not rational), count (O).
+"layers" = the cheapest layering with any common factor, then N multiplications to reach 1/sqrt(N).
+The textbook gives H x in N*k and needs N more multiplications for H x / sqrt(N).
+   k       N  textbook+N  family (7/8)Nk+N/4  layers+N     best  which
+   2       4         12              8             8        8  tie
+   4      16         80             60            72       60  family
+   6      64        448            352           384      352  family
+   8     256       2304           1856          2048     1856  family
+  10    1024      11264           9216          9728     9216  family
+  12    4096      53248          44032         45056    44032  family
+  14   16384     245760         204800        212992   204800  family
+  Beyond the table (formulas): the family stays cheaper up to k = 16 and at k = 20, ties at k = 18, 22, 26,
+  and layers of the 8-point unit are cheaper at k = 24 and from k = 28 on:
+    k=16  family 14.25 N   layers 14.5 N
+    k=18  family 16.0 N   layers 16.0 N
+    k=20  family 17.75 N   layers 18.0 N
+    k=22  family 19.5 N   layers 19.5 N
+    k=24  family 21.25 N   layers 21.0 N
+    k=26  family 23.0 N   layers 23.0 N
+    k=28  family 24.75 N   layers 24.5 N
+    k=30  family 26.5 N   layers 26.0 N
+    k=32  family 28.25 N   layers 28.0 N
+
+ALL CHECKS PASSED.
+
+STEP 3.  The program files in this folder against the files just regenerated.
+  programs/generated/: 41 files, each byte for byte the regenerated file.
+  programs/h4_7gates.txt:       the same operations as the regenerated G_family_4.txt  (the wiring of gen.py; 7 operations at 4 points are due to Coppersmith, Feig and Linzer 1994).
+  programs/h8_19gates.txt:      the same operations as the regenerated G_unit8_19gates.txt  (19 gates).
+  programs/h8_half_20ops.txt:   the same operations as the regenerated O_unit8_20ops_factor_half.txt  (19 additions or subtractions, 1 halving).
+  programs/h16_52gates.txt:     the same operations as the regenerated G_family_16.txt  (the family (3/4) N log2 N + N/4 at N = 16).
+
+STEP 4.  The Lean data file lean/Work/SmallWHT/H8Half.lean (top of the repository), written again from the 20-line program.
+  slp2lean.py: CHECK ok: h8_half_o20.txt: 8 points, 20 operations (19 add/sub, 1 scale), every row j of (1/2)*H is held by a wire; outputs [28, 24, 26, 22, 27, 23, 25, 21]
+  regenerated file: 131 lines, 6542 bytes; byte for byte the file in the tree.
+
+OK: 4 named circuits and the 20-line program replayed; every size up to 4096 points regenerated and replayed; 41 program files and the Lean data file reproduced byte for byte.  A Python check, not a proof.

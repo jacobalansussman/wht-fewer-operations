@@ -1,0 +1,13 @@
+m = 4, W = 4, 15 moves (plain 16): 0001:1 0010:1 0011:1 0100:1 0101:1 0110:1 0111:1 1000:1 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  distinct selections by forms with q(I) = 1: 512; fewest moves selected: 4; selections with fewer than W: 0; with exactly W (frames): 56
+  pairs of moves forced to commute: 105 of 105
+  -> every two moves must commute: EXCLUDED without scratch arrays (a commuting unit needs 16 moves)
+m = 5, W = 4, 16 moves (plain 20): 00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:1 11010:1 11100:1 11111:1
+  distinct selections by forms with q(I) = 1: 1024; fewest moves selected: 4; selections with fewer than W: 0; with exactly W (frames): 75
+  pairs of moves forced to commute: 120 of 120
+  -> every two moves must commute: EXCLUDED without scratch arrays (a commuting unit needs 20 moves)
+m = 5, W = 4, 20 moves (plain 20): 00001:4 00010:4 00100:4 01000:4 10000:4
+  distinct selections by forms with q(I) = 1: 16; fewest moves selected: 4; selections with fewer than W: 0; with exactly W (frames): 5
+  pairs of moves forced to commute: 30 of 190
+  -> the frame argument does not exclude this count vector
+LIGHT label=e2-2-frames exit=0 time=1s waited=10s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:57:05 cmd=sh -c python3 -B frames.py 4 4 0001:1 0010:1 0011:1 0100:1 0101:1 0110:1 0111:1 1000:1 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1; python3 -B frames.py 5 4 00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:1 11010:1 11100:1 11111:1; python3 -

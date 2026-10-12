@@ -1,0 +1,8 @@
+H8_K21_s1_seed evaluated 3702 zeros 0 near 0 hist {0: 1, 1: 3701}
+H4x2_K13_s1_seed evaluated 7449 zeros 0 near 0 hist {0: 2, 1: 7447}
+Z8_K11_s2_seed evaluated 0 zeros 0 near 0 hist {}
+H4_K7_s1_seed evaluated 20181 zeros 4 near 0 hist {-30: 3, -29: 1, 0: 20170, 1: 7}
+Z8_K11_s1_seed evaluated 0 zeros 0 near 0 hist {}
+H8_K21_s2_seed evaluated 3732 zeros 0 near 0 hist {0: 1, 1: 3731}
+H4x2_K13_s2_seed evaluated 7245 zeros 0 near 0 hist {0: 11, 1: 7234}
+H16_K55_s1_seed evaluated 152 zeros 0 near 0 hist {1: 6, 2: 146}

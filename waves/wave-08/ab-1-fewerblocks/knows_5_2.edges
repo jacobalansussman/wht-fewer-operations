@@ -1,0 +1,241 @@
+80 160
+t 0 P_odd,_P-perp_odd
+t 1 P_odd,_P-perp_odd
+t 2 P_odd,_P-perp_odd
+t 3 P_odd,_P-perp_odd
+t 4 P_alternating,_P-perp_odd
+t 5 P_odd,_P-perp_odd
+t 6 P_odd,_P-perp_odd
+t 7 P_alternating,_P-perp_odd
+t 8 P_alternating,_P-perp_odd
+t 9 P_odd,_P-perp_odd
+t 10 P_odd,_P-perp_odd
+t 11 P_alternating,_P-perp_odd
+t 12 P_odd,_P-perp_odd
+t 13 P_odd,_P-perp_odd
+t 14 P_odd,_P-perp_odd
+t 15 P_odd,_P-perp_odd
+t 16 P_alternating,_P-perp_odd
+t 17 P_odd,_P-perp_odd
+t 18 P_odd,_P-perp_odd
+t 19 P_alternating,_P-perp_odd
+t 20 P_odd,_P-perp_odd
+t 21 P_odd,_P-perp_odd
+t 22 P_odd,_P-perp_odd
+t 23 P_odd,_P-perp_odd
+t 24 P_odd,_P-perp_odd
+t 25 P_odd,_P-perp_odd
+t 26 P_odd,_P-perp_odd
+t 27 P_odd,_P-perp_odd
+t 28 P_alternating,_P-perp_odd
+t 29 P_alternating,_P-perp_odd
+t 30 P_alternating,_P-perp_odd
+t 31 P_alternating,_P-perp_odd
+t 32 P_odd,_P-perp_odd
+t 33 P_odd,_P-perp_odd
+t 34 P_alternating,_P-perp_odd
+t 35 P_odd,_P-perp_odd
+t 36 P_alternating,_P-perp_odd
+t 37 P_odd,_P-perp_odd
+t 38 P_odd,_P-perp_odd
+t 39 P_odd,_P-perp_odd
+t 40 P_odd,_P-perp_odd
+t 41 P_odd,_P-perp_odd
+t 42 P_odd,_P-perp_odd
+t 43 P_odd,_P-perp_odd
+t 44 P_odd,_P-perp_odd
+t 45 P_odd,_P-perp_odd
+t 46 P_alternating,_P-perp_odd
+t 47 P_alternating,_P-perp_odd
+t 48 P_odd,_P-perp_odd
+t 49 P_alternating,_P-perp_odd
+t 50 P_odd,_P-perp_odd
+t 51 P_odd,_P-perp_odd
+t 52 P_odd,_P-perp_odd
+t 53 P_odd,_P-perp_odd
+t 54 P_odd,_P-perp_odd
+t 55 P_alternating,_P-perp_odd
+t 56 P_odd,_P-perp_odd
+t 57 P_odd,_P-perp_odd
+t 58 P_odd,_P-perp_odd
+t 59 P_odd,_P-perp_odd
+t 60 P_odd,_P-perp_odd
+t 61 P_odd,_P-perp_odd
+t 62 P_alternating,_P-perp_odd
+t 63 P_odd,_P-perp_odd
+t 64 P_alternating,_P-perp_odd
+t 65 P_odd,_P-perp_odd
+t 66 P_odd,_P-perp_odd
+t 67 P_odd,_P-perp_odd
+t 68 P_odd,_P-perp_odd
+t 69 P_odd,_P-perp_odd
+t 70 P_odd,_P-perp_odd
+t 71 P_alternating,_P-perp_odd
+t 72 P_odd,_P-perp_odd
+t 73 P_odd,_P-perp_odd
+t 74 P_odd,_P-perp_odd
+t 75 P_odd,_P-perp_odd
+t 76 P_odd,_P-perp_odd
+t 77 P_alternating,_P-perp_odd
+t 78 P_odd,_P-perp_odd
+t 79 P_odd,_P-perp_odd
+0 76
+0 77
+0 78
+0 79
+1 63
+1 65
+1 71
+1 73
+2 62
+2 63
+2 67
+2 69
+3 64
+3 65
+3 68
+3 69
+4 42
+4 47
+4 52
+4 76
+5 14
+5 29
+5 38
+5 42
+6 22
+6 30
+6 50
+6 52
+7 14
+7 22
+7 40
+7 64
+8 44
+8 46
+8 58
+8 78
+9 13
+9 28
+9 38
+9 44
+10 26
+10 30
+10 57
+10 58
+11 13
+11 26
+11 39
+11 62
+12 35
+12 37
+12 49
+12 51
+13 42
+13 66
+14 44
+14 66
+15 42
+15 44
+15 53
+15 55
+16 54
+16 55
+16 59
+16 79
+17 21
+17 28
+17 50
+17 54
+18 25
+18 29
+18 57
+18 59
+19 21
+19 25
+19 51
+19 71
+20 34
+20 35
+20 39
+20 41
+21 52
+21 72
+22 54
+22 72
+23 43
+23 46
+23 52
+23 54
+24 36
+24 37
+24 40
+24 41
+25 58
+25 75
+26 59
+26 75
+27 45
+27 47
+27 58
+27 59
+28 36
+28 68
+29 34
+29 67
+30 49
+30 73
+31 43
+31 45
+31 53
+31 77
+32 70
+32 71
+32 74
+32 79
+33 67
+33 68
+33 73
+33 77
+34 50
+34 70
+35 40
+35 47
+36 57
+36 74
+37 39
+37 46
+38 49
+38 53
+39 61
+40 61
+41 51
+41 55
+43 50
+43 72
+45 57
+45 75
+46 65
+47 63
+48 60
+48 62
+48 74
+48 78
+49 60
+51 61
+53 66
+55 69
+56 60
+56 64
+56 70
+56 76
+60 79
+61 77
+62 72
+63 68
+64 75
+65 67
+66 71
+69 73
+70 78
+74 76

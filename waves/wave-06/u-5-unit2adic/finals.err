@@ -1,0 +1,1 @@
+LIGHT label=u5-fin exit=0 time=37s waited=0s peak_rss_mb=90 peak_footprint_mb=86 lowest_cap_mb=1500 stopped=- start=01:50:39 cmd=python3 -I -B finals.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-e8-r783.json.gz

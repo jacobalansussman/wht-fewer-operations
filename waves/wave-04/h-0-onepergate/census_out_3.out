@@ -1,0 +1,12 @@
+N = 8: 128 tight wires, 8 outputs, 904 lines through an output and another tight wire
+non-tight points on such a line and on a second tight line: 1176
+classes (outputs one gate away, levels of their partners, s, s', |entries|): count, example
+   (4, (1, 1, 1, 1), 8, 4, (1,)) : 56 [1, -1, -1, 1, -1, 1, -1, 1]
+   (4, (1, 2, 2, 2), 8, 3, (1, 3)) : 224 [1, -1, -1, 1, -1, 1, -3, 3]
+   (1, (1,), 6, 4, (1,)) : 224 [1, -1, -1, 1, -1, 1, 0, 0]
+   (1, (2,), 6, 3, (1, 2)) : 672 [1, -1, -1, 1, 0, 0, 2, -2]
+most outputs served by one non-tight wire with tight partners: 4
+least total partner support by number of outputs served:
+   1 outputs: partners of total support 2  (N/4 per pair of outputs would be 1)
+   4 outputs: partners of total support 8  (N/4 per pair of outputs would be 4)
+exit 0

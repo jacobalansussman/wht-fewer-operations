@@ -1,0 +1,1 @@
+LIGHT label=e2-1-b32 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:43:26 cmd=python3 -B b32.py

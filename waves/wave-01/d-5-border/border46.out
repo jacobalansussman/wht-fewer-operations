@@ -1,0 +1,2 @@
+n 4 gates 6 prime 13 stats (lost nodes, helpers needed): [(('skip', 0), 8), (('skip', 3), 216), (('skip', 4), 165), (('skip', 5), 60), (('skip', 6), 8), ((1, 0), 23), ((2, 0), 115), ((2, 1), 2)]
+LIGHT label=d5-border exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:31:52 cmd=/usr/bin/python3 -I -B border.py 4 6 600 3 13 2

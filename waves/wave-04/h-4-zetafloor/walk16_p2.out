@@ -1,0 +1,5 @@
+anneal p=2 n=16 targets=15 helpers m=17 => gate budget 32 ; 380 s ; seed 21 ; T 0.35 -> 0.35
+start file: 17 helpers
+start: missing 0 reached helpers 17 => gates 32
+DONE walk p=2 n=16 m=17: evals 128750571 ; states met with all targets reached 1 ; fewest gates 32 ; temperature 0.35 ; W 3
+LIGHT label=h4-walk16p2 exit=0 time=380s waited=0s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:03:05 cmd=./walk 2 16 17 380 21 rows_zeta4.txt 0.35 0.35 yates16.txt

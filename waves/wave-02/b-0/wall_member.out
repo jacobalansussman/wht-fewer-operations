@@ -1,0 +1,3 @@
+points 64 derivations 568 cap 20
+gates 20 | all values in the class and all gates in the derivation table: True
+LIGHT label=b0-member exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:44 cmd=python3 -B wall_member.py

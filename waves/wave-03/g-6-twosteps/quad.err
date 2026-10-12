@@ -1,0 +1,1 @@
+LIGHT label=g6-quad exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:08:58 cmd=python3 -B quad.py 5 6 7

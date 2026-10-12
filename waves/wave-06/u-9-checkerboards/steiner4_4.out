@@ -1,0 +1,7 @@
+cube tree: spanning 4, with junction points 4
+tree -3: spanning 4, with junction points 4  leaves: 0 1 2 3  merges: (0,1) (2,3) (4,5)
+chain in address order: spanning 4, with junction points 4
+chain in Gray order: spanning 4, with junction points 4
+N=4: (N/2) log2 N = 4; over 2003 trees: least spanning 4, least with junction points 4, trees with junction count below (N/2)log2N: 0
+histogram of the junction count: 4:2003
+LIGHT label=u9-st exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:24:05 cmd=./steiner4 2 2000 1

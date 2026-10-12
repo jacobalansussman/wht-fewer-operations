@@ -1,0 +1,13 @@
+class (8,2): 10795 subspaces of dimension 2, ports (meet their perpendicular only in 0): 5440  by type {'alt': 1344, 'gen': 4032, 'one': 64}   [0s]
+   star sets: X_odd = 8 odd words pairwise overlapping oddly; X_even = 7 even words pairwise overlapping oddly
+   a port of type alt knows: {'alt': 80, 'gen': 240, 'one': 16}
+   a port of type gen knows: {'alt': 80, 'gen': 256}
+   a port of type one knows: {'alt': 336}
+   type alt :    1344 ports ; star X_odd holds       0, star X_even holds     203  ->  kappa <= 6.621
+   type gen :    4032 ports ; star X_odd holds     504, star X_even holds     224  ->  kappa <= 8.000
+   type one :      64 ports ; star X_odd holds       8, star X_even holds       0  ->  kappa <= 8.000
+TYPE 8 2 alt 6.6207
+TYPE 8 2 gen 8.0000
+TYPE 8 2 one 8.0000
+CEIL 8 2 22.6207   (every sub-family, types mixed: sum of the per-type ceilings)
+   [0s]

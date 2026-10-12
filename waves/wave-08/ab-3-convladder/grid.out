@@ -1,0 +1,52 @@
+== grid at k=3, N=8 points.  best known transform (G) [read]: 19 gates; route 'via transform' = 2T+N = 46 ==
+  sphere j=0: spectrum [1, 1, 1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  sphere j=1: spectrum [3, 1, -1, -3]  adding-only greedy 12 gates (1.500/pt) replay ok
+  sphere j=2: spectrum [3, -1, -1, 3]  adding-only greedy 12 gates (1.500/pt) replay ok
+  sphere j=3: spectrum [1, -1, 1, -1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  ball  j=0: spectrum [1, 1, 1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  ball  j=1: spectrum [4, 2, 0, -2]  adding-only greedy 16 gates (2.000/pt) replay ok
+  ball  j=2: spectrum [7, 1, -1, 1]  adding-only greedy 18 gates (2.250/pt) replay ok
+  ball  j=3: spectrum [8, 0, 0, 0]  adding-only greedy 7 gates (0.875/pt) replay ok
+  neighbour sums by pairing: 12 gates (1.500/pt) replay ok; formula (3/4)k-1 = 1.250 (even k)
+  low-pass d=0: N*q by weight ['1', '1', '1', '1']  built 7 gates (0.875/pt) replay ok
+  low-pass d=1: N*q by weight ['4', '2', '0', '-2']  built 30 gates (3.750/pt) replay BAD
+  low-pass d=2: N*q by weight ['7', '1', '-1', '1']  built 35 gates (4.375/pt) replay BAD
+  low-pass d=3: N*q by weight ['8', '0', '0', '0']  built 24 gates (3.000/pt) replay ok
+== grid at k=4, N=16 points.  best known transform (G) [read]: 52 gates; route 'via transform' = 2T+N = 120 ==
+  sphere j=0: spectrum [1, 1, 1, 1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  sphere j=1: spectrum [4, 2, 0, -2, -4]  adding-only greedy 32 gates (2.000/pt) replay ok
+  sphere j=2: spectrum [6, 0, -2, 0, 6]  adding-only greedy 20 gates (1.250/pt) replay ok
+  sphere j=3: spectrum [4, -2, 0, 2, -4]  adding-only greedy 32 gates (2.000/pt) replay ok
+  sphere j=4: spectrum [1, -1, 1, -1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  ball  j=0: spectrum [1, 1, 1, 1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  ball  j=1: spectrum [5, 3, 1, -1, -3]  adding-only greedy 48 gates (3.000/pt) replay ok
+  ball  j=2: spectrum [11, 3, -1, -1, 3]  adding-only greedy 64 gates (4.000/pt) replay ok
+  ball  j=3: spectrum [15, 1, -1, 1, -1]  adding-only greedy 42 gates (2.625/pt) replay ok
+  ball  j=4: spectrum [16, 0, 0, 0, 0]  adding-only greedy 15 gates (0.938/pt) replay ok
+  neighbour sums by pairing: 32 gates (2.000/pt) replay ok; formula (3/4)k-1 = 2.000 (even k)
+  low-pass d=0: N*q by weight ['1', '1', '1', '1', '1']  built 15 gates (0.938/pt) replay ok
+  low-pass d=1: N*q by weight ['5', '3', '1', '-1', '-3']  built 69 gates (4.312/pt) replay BAD
+  low-pass d=2: N*q by weight ['11', '3', '-1', '-1', '3']  built 97 gates (6.062/pt) replay BAD
+  low-pass d=3: N*q by weight ['15', '1', '-1', '1', '-1']  built 91 gates (5.688/pt) replay BAD
+  low-pass d=4: N*q by weight ['16', '0', '0', '0', '0']  built 64 gates (4.000/pt) replay ok
+== grid at k=5, N=32 points.  best known transform (G) [read]: 128 gates; route 'via transform' = 2T+N = 288 ==
+  sphere j=0: spectrum [1, 1, 1, 1, 1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  sphere j=1: spectrum [5, 3, 1, -1, -3, -5]  adding-only greedy 96 gates (3.000/pt) replay ok
+  sphere j=2: spectrum [10, 2, -2, -2, 2, 10]  adding-only greedy 136 gates (4.250/pt) replay ok
+  sphere j=3: spectrum [10, -2, -2, 2, 2, -10]  adding-only greedy 136 gates (4.250/pt) replay ok
+  sphere j=4: spectrum [5, -3, 1, 1, -3, 5]  adding-only greedy 96 gates (3.000/pt) replay ok
+  sphere j=5: spectrum [1, -1, 1, -1, 1, -1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  ball  j=0: spectrum [1, 1, 1, 1, 1, 1]  adding-only greedy 0 gates (0.000/pt) replay ok
+  ball  j=1: spectrum [6, 4, 2, 0, -2, -4]  adding-only greedy 112 gates (3.500/pt) replay ok
+  ball  j=2: spectrum [16, 6, 0, -2, 0, 6]  adding-only greedy 136 gates (4.250/pt) replay ok
+  ball  j=3: spectrum [26, 4, -2, 0, 2, -4]  adding-only greedy 176 gates (5.500/pt) replay ok
+  ball  j=4: spectrum [31, 1, -1, 1, -1, 1]  adding-only greedy 90 gates (2.812/pt) replay ok
+  ball  j=5: spectrum [32, 0, 0, 0, 0, 0]  adding-only greedy 31 gates (0.969/pt) replay ok
+  neighbour sums by pairing: 96 gates (3.000/pt) replay ok; formula (3/4)k-1 = 2.750 (even k)
+  low-pass d=0: N*q by weight ['1', '1', '1', '1', '1', '1']  built 31 gates (0.969/pt) replay ok
+  low-pass d=1: N*q by weight ['6', '4', '2', '0', '-2', '-4']  built 148 gates (4.625/pt) replay BAD
+  low-pass d=2: N*q by weight ['16', '6', '0', '-2', '0', '6']  built 230 gates (7.188/pt) replay BAD
+  low-pass d=3: N*q by weight ['26', '4', '-2', '0', '2', '-4']  built 252 gates (7.875/pt) replay BAD
+  low-pass d=4: N*q by weight ['31', '1', '-1', '1', '-1', '1']  built 219 gates (6.844/pt) replay BAD
+  low-pass d=5: N*q by weight ['32', '0', '0', '0', '0', '0']  built 160 gates (5.000/pt) replay ok
+LIGHT label=ab3-grid exit=0 time=1s waited=22s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:53:30 cmd=python3 -B ladder.py grid 3 4 5

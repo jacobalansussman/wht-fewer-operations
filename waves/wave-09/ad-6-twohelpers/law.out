@@ -1,0 +1,38 @@
+check of the count-only copy against the built and replayed circuits (circuit2.out): True
+k | classes of the family, best t | classes/N | girth-only lower bound (recalled theorem) | gates (G) for a degree-2 polynomial at all points, best t | gates/N
+k=  3 t=1 classes/N=1.00000 classes=8 lower 8 | gates/N = 1.62500 (t=1) ; (log2 k)/k = 0.5283
+k=  4 t=1 classes/N=0.87500 classes=14 lower 14 | gates/N = 1.81250 (t=1) ; (log2 k)/k = 0.5000
+k=  5 t=1 classes/N=0.75000 classes=24 lower 24 | gates/N = 1.96875 (t=1) ; (log2 k)/k = 0.4644
+k=  6 t=1 classes/N=0.68750 classes=44 lower 40 | gates/N = 2.01562 (t=2) ; (log2 k)/k = 0.4308
+k=  7 t=1 classes/N=0.62500 classes=80 lower 68 | gates/N = 1.95312 (t=2) ; (log2 k)/k = 0.4011
+k=  8 t=1 classes/N=0.59375 classes=152 lower 116 | gates/N = 1.91797 (t=2) ; (log2 k)/k = 0.3750
+k=  9 t=1 classes/N=0.56250 classes=288 lower 197 | gates/N = 1.83008 (t=2) ; (log2 k)/k = 0.3522
+k= 10 t=2 classes/N=0.50000 classes=512 lower 335 | gates/N = 1.74805 (t=2) ; (log2 k)/k = 0.3322
+k= 11 t=2 classes/N=0.46875 classes=960 lower 569 | gates/N = 1.69434 (t=2) ; (log2 k)/k = 0.3145
+k= 12 t=2 classes/N=0.43750 classes=1792 lower 967 | gates/N = 1.63379 (t=2) ; (log2 k)/k = 0.2987
+k= 13 t=2 classes/N=0.40625  lower 1639 | gates/N = 1.58643 (t=2) ; (log2 k)/k = 0.2846
+k= 14 t=2 classes/N=0.37500  lower 2777 | gates/N = 1.53870 (t=2) ; (log2 k)/k = 0.2720
+k= 15 t=2 classes/N=0.35938  lower 4701 | gates/N = 1.50867 (t=2) ; (log2 k)/k = 0.2605
+k= 16 t=2 classes/N=0.34375  lower 7948 | gates/N = 1.48073 (t=2) ; (log2 k)/k = 0.2500
+k= 17 t=2 classes/N=0.32812  lower 13430 | gates/N = 1.45670 (t=2) ; (log2 k)/k = 0.2404
+k= 18 t=2 classes/N=0.31250  lower 22676 | gates/N = 1.43340 (t=2) ; (log2 k)/k = 0.2317
+k= 19 t=2 classes/N=0.30469  lower 38265 | gates/N = 1.41955 (t=2) ; (log2 k)/k = 0.2236
+k= 20 t=2 classes/N=0.29688  lower 64536 | gates/N = 1.40558 (t=2) ; (log2 k)/k = 0.2161
+k= 21 t=2 classes/N=0.28906  lower about N^(3/4) | gates/N = 1.39419 (t=2) ; (log2 k)/k = 0.2092
+k= 22 t=2 classes/N=0.28125  lower about N^(3/4) | gates/N = 1.38133 (t=3) ; (log2 k)/k = 0.2027
+k= 23 t=2 classes/N=0.27734  lower about N^(3/4) | gates/N = 1.36365 (t=3) ; (log2 k)/k = 0.1967
+k= 24 t=2 classes/N=0.27344  lower about N^(3/4) | gates/N = 1.34647 (t=3) ; (log2 k)/k = 0.1910
+k= 28 t=3 classes/N=0.24219  lower about N^(3/4) | gates/N = 1.28338 (t=3) ; (log2 k)/k = 0.1717
+k= 32 t=3 classes/N=0.21094  lower about N^(3/4) | gates/N = 1.24512 (t=3) ; (log2 k)/k = 0.1562
+k= 40 t=3 classes/N=0.16797  lower about N^(3/4) | gates/N = 1.19398 (t=3) ; (log2 k)/k = 0.1330
+k= 48 t=3 classes/N=0.14648  lower about N^(3/4) | gates/N = 1.16842 (t=3) ; (log2 k)/k = 0.1164
+k= 56 t=3 classes/N=0.13574  lower about N^(3/4) | gates/N = 1.15564 (t=3) ; (log2 k)/k = 0.1037
+k= 64 t=3 classes/N=0.13037  lower about N^(3/4) | gates/N = 1.14925 (t=3) ; (log2 k)/k = 0.0938
+k= 80 t=4 classes/N=0.10156  lower about N^(3/4) | gates/N = 1.10889 (t=4) ; (log2 k)/k = 0.0790
+k= 96 t=4 classes/N=0.08203  lower about N^(3/4) | gates/N = 1.08778 (t=4) ; (log2 k)/k = 0.0686
+k=128 t=4 classes/N=0.06738  lower about N^(3/4) | gates/N = 1.07194 (t=4) ; (log2 k)/k = 0.0547
+k=160 t=4 classes/N=0.06372  lower about N^(3/4) | gates/N = 1.06799 (t=4) ; (log2 k)/k = 0.0458
+k=200 t=5 classes/N=0.04614  lower about N^(3/4) | gates/N = 1.04769 (t=5) ; (log2 k)/k = 0.0382
+k=256 t=5 classes/N=0.03577  lower about N^(3/4) | gates/N = 1.03694 (t=5) ; (log2 k)/k = 0.0312
+k=400 t=6 classes/N=0.03003  lower about N^(3/4) | gates/N = 1.03052 (t=6) ; (log2 k)/k = 0.0216
+LIGHT label=ad6-law exit=0 time=2s waited=0s peak_rss_mb=9 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:40:44 cmd=python3 -B law.py

@@ -1,0 +1,4 @@
+p=5 n=8 rows=8 non-input distinct targets=8  intermediates allowed m=4  => gate budget 12
+visited states by remaining budget: j=4:1 j=3:162 j=2:17865 j=1:3977818
+RESULT p=5: NO circuit with 12 gates (exhaustive over GF(5))
+LIGHT label=x5-v8p5m4 exit=0 time=10s waited=0s peak_rss_mb=41 peak_footprint_mb=41 lowest_cap_mb=1500 stopped=- start=03:39:56 cmd=../d-0-zeta/mincirc 5 8 4 rows_v8_p5.txt

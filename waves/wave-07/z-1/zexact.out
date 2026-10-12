@@ -1,0 +1,23 @@
+enclosures: width of ln 2 1.1e-64, of exp(-1) 7.7e-66
+== gcert1-e8-r783.json.gz : h=9 v=120 R=783 m=45 W=1263 cst=72 (field cst=72)
+   published unit (x, y, helpers, copies)     blocks 20830 (16.4925 per array), moves 56715, deficit D = W m - moves = 120 (share 0.21114 %)
+      largest A with the whole-block fact proved at A/10^8 : fill 2^13: 87624 ; fill -> infinity (sum < W): 87624 ; A+1 proved to FAIL in both
+      for comparison, 'moves per array' law 1 - ln(a)/ln(m), floats: 5.5524e-04
+   WHAT-IF no scratch copies (x, y, helpers)  blocks 20790 (16.4608 per array), moves 56355, deficit D = W m - moves = 480 (share 0.84455 %)
+      largest A with the whole-block fact proved at A/10^8 : fill 2^13: 350708 ; fill -> infinity (sum < W): 350710 ; A+1 proved to FAIL in both
+      for comparison, 'moves per array' law 1 - ln(a)/ln(m), floats: 2.2280e-03
+== gcert1-p11-pr193.json.gz : h=22 v=1320 R=9412 m=110 W=14692 cst=440 (field cst=440)
+   published unit (x, y, helpers, copies)     blocks 361405 (24.5988 per array), moves 1613040, deficit D = W m - moves = 3080 (share 0.19058 %)
+      largest A with the whole-block fact proved at A/10^8 : fill 2^13: 74745 ; fill -> infinity (sum < W): 74745 ; A+1 proved to FAIL in both
+      for comparison, 'moves per array' law 1 - ln(a)/ln(m), floats: 4.0583e-04
+   WHAT-IF no scratch copies (x, y, helpers)  blocks 361295 (24.5913 per array), moves 1610840, deficit D = W m - moves = 5280 (share 0.32671 %)
+      largest A with the whole-block fact proved at A/10^8 : fill 2^13: 128147 ; fill -> infinity (sum < W): 128147 ; A+1 proved to FAIL in both
+      for comparison, 'moves per array' law 1 - ln(a)/ln(m), floats: 6.9619e-04
+== caps (WHAT-IF block lists; W = 1 array, shears, helpers and copies free)
+   r = h/2, three merged blocks (h/2, h, h) of m = 3h                                         saving in [146679, 146680) / 10^6
+   r = h/3, three merged blocks (2h/3, h, h) of m = 3h                                        saving in [98030, 98031) / 10^6
+   r = h/3, four blocks: 3 x (2h/3) and one catch-up 2h/3, m = 3h                             saving in [78309, 78310) / 10^6
+   r = h/2, four blocks: 3 x (h/2) and one catch-up h, m = 3h                                 saving in [119840, 119841) / 10^6
+   r = h/2, five-stage word: 10 x (h/2) per 4 arrays + idle (h+2h, h, h/2, 2h) x 2, m = 5h    saving in [78432, 78433) / 10^6
+== k equal blocks, skipped share rho: closed form saving = L/(ln k + L), L = ln(1/(1-rho)); check of one instance by enclosure
+   k=2, rho=0.1: enclosure [131946, 131947)/10^6 ; closed form 0.131947

@@ -1,0 +1,8 @@
+ls4_r4.out: r=4 K=4: least survivors of a restriction 2, of a projection 2  (6 decompositions; 20 hyperbolic planes x 4 rules)
+ls6_r8_ctl.out: r=8 K=6: least survivors of a restriction 4, of a projection 4  (3 decompositions; 336 hyperbolic planes x 4 rules)
+ls6_r8_ctl.out: r=8 K=6: least survivors of a restriction 5, of a projection 5  (1 decompositions; 336 hyperbolic planes x 4 rules)
+ls6_r8_ctl.out: r=8 K=6: least survivors of a restriction 6, of a projection 6  (2 decompositions; 336 hyperbolic planes x 4 rules)
+ls6_r8_more.out: r=8 K=6: least survivors of a restriction 4, of a projection 4  (34 decompositions; 336 hyperbolic planes x 4 rules)
+ls6_r8_more.out: r=8 K=6: least survivors of a restriction 5, of a projection 5  (7 decompositions; 336 hyperbolic planes x 4 rules)
+ls6_r8_more.out: r=8 K=6: least survivors of a restriction 6, of a projection 6  (7 decompositions; 336 hyperbolic planes x 4 rules)
+LIGHT label=ad4-kill exit=0 time=8s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=06:40:01 cmd=python3 -B kill.py ls4_r4.out ls6_r8_ctl.out ls6_r8_more.out

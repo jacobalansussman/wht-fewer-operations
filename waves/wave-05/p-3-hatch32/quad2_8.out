@@ -1,0 +1,4 @@
+first tree: subsets S1 of the quadric S against the quadric U: nu(S, U) = 4 (exact)
+  subsets of size 8: 12870 tried, 874 with nu <= 4; first ones (set, nu, size of its stabiliser): [((0, 1, 2, 7, 8, 10, 16, 18), 4, 1), ((0, 1, 2, 7, 8, 10, 16, 24), 4, 1), ((0, 1, 2, 7, 8, 10, 16, 26), 4, 1)]
+second tree: subsets U1 of the quadric U against the quadric S: nu(S, U) = 4 (exact)
+  subsets of size 8: 12870 tried, 874 with nu <= 4; first ones (set, nu, size of its stabiliser): [((0, 1, 2, 3, 4, 5, 6, 7), 0, 8), ((0, 1, 2, 3, 4, 5, 6, 8), 2, 1), ((0, 1, 2, 3, 4, 5, 6, 9), 2, 1)]

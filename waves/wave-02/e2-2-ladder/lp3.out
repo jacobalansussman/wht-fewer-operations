@@ -1,0 +1,14 @@
+m = 3: 64 symmetric matrices, 28 legal blocks in 9 orbits; 32 forms with q(I)=1 in 10 orbits
+  z = 1.000000: LP value 1.000000000
+    blocks per array 1.000000  rank 2  orbit size 3  example 100/010/000  (I+S has rank 1)
+    blocks per array 1.000000  rank 1  orbit size 3  example 100/000/000  (I+S has rank 2)
+    dual weight 0.666667 on form orbit (size 6) example Q = 110/100/000 (rank of its bilinear form: see text)
+    dual weight 0.166667 on form orbit (size 3) example Q = 111/100/100 (rank of its bilinear form: see text)
+    dual weight 0.166667 on form orbit (size 3) example Q = 100/000/000 (rank of its bilinear form: see text)
+LP(m=3, z=1) = 1.000000000   (the plain schedule has value 1)
+LP(m=3, z=0.9) = 1.066294221
+LP(m=3, z=0.5) = 1.393846850
+LP(m=3, z=0.0) = 2.000000000
+LP(z=1) = 1: at z = 1 the plain schedule is LP-optimal; looking just below 1
+LP(m=3, z=0.999) = 1.000636770
+LP(m=3, z=0.990) = 1.006390819

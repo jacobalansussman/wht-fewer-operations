@@ -1,0 +1,31 @@
+22
+  edge 10752 -- 43520  node 32768
+  edge 10240 -- 10752  node 512
+  edge 2048 -- 10240  node 8192
+  edge 0 -- 2048  node 2048
+  terminal #0 at 0
+  edge 255 -- 0  node 255
+  terminal #4 at 255
+  edge 11264 -- 10240  node 1024
+  edge 15360 -- 11264  node 4096
+  edge 15372 -- 15360  node 12
+  edge 15420 -- 15372  node 48
+  terminal #3 at 15420
+  edge 15363 -- 15360  node 3
+  edge 15555 -- 15363  node 192
+  terminal #7 at 15555
+  edge 11008 -- 10752  node 256
+  edge 8960 -- 11008  node 2048
+  edge 13056 -- 8960  node 4096
+  edge 13059 -- 13056  node 3
+  edge 13107 -- 13059  node 48
+  terminal #1 at 13107
+  edge 13068 -- 13056  node 12
+  edge 13260 -- 13068  node 192
+  terminal #5 at 13260
+  edge 2816 -- 11008  node 8192
+  edge 3840 -- 2816  node 1024
+  edge 3855 -- 3840  node 15
+  terminal #2 at 3855
+  edge 4080 -- 3840  node 240
+  terminal #6 at 4080

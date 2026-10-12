@@ -1,0 +1,51 @@
+== identities (whole numbers) ==
+k=2: H's own q by weight [1, 1, -1]; spectrum by weight [2, 2, -2]
+k=3: H's own q by weight [1, 1, -1, -1]; spectrum by weight [0, 4, 0, -4]
+k=4: H's own q by weight [1, 1, -1, -1, 1]; spectrum by weight [-4, 4, 4, -4, -4]
+k=5: H's own q by weight [1, 1, -1, -1, 1, 1]; spectrum by weight [-8, 0, 8, 0, -8, 0]
+k=6: H's own q by weight [1, 1, -1, -1, 1, 1, -1]; spectrum by weight [-8, -8, 8, 8, -8, -8, 8]
+k=7: H's own q by weight [1, 1, -1, -1, 1, 1, -1, -1]; spectrum by weight [0, -16, 0, 16, 0, -16, 0, 16]
+k=8: H's own q by weight [1, 1, -1, -1, 1, 1, -1, -1, 1]; spectrum by weight [16, -16, -16, 16, 16, -16, -16, 16, 16]
+k=2: spectrum/2^(k/2) = -1 exactly on weights congruent to [2] mod 4, +1 on [0, 1]; two-valued: True
+k=4: spectrum/2^(k/2) = -1 exactly on weights congruent to [0, 3] mod 4, +1 on [1, 2]; two-valued: True
+k=6: spectrum/2^(k/2) = -1 exactly on weights congruent to [0, 1] mod 4, +1 on [2, 3]; two-valued: True
+k=8: spectrum/2^(k/2) = -1 exactly on weights congruent to [1, 2] mod 4, +1 on [0, 3]; two-valued: True
+k=3: q reversed -> spectrum (-1)^w s(w): True;  q times (-1)^j -> spectrum s(k-w): True
+k=4: q reversed -> spectrum (-1)^w s(w): True;  q times (-1)^j -> spectrum s(k-w): True
+k=5: q reversed -> spectrum (-1)^w s(w): True;  q times (-1)^j -> spectrum s(k-w): True
+k=2 t=2: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(9, 1), Fraction(-3, 1), Fraction(1, 1)]
+k=2 t=3: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(16, 1), Fraction(-8, 1), Fraction(4, 1)]
+k=2 t=1/2: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(9, 4), Fraction(3, 4), Fraction(1, 4)]
+k=2 t=-3: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(4, 1), Fraction(-8, 1), Fraction(16, 1)]
+k=3 t=2: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(27, 1), Fraction(-9, 1), Fraction(3, 1), Fraction(-1, 1)]
+k=3 t=3: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(64, 1), Fraction(-32, 1), Fraction(16, 1), Fraction(-8, 1)]
+k=3 t=1/2: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(27, 8), Fraction(9, 8), Fraction(3, 8), Fraction(1, 8)]
+k=3 t=-3: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(-8, 1), Fraction(16, 1), Fraction(-32, 1), Fraction(64, 1)]
+k=4 t=2: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(81, 1), Fraction(-27, 1), Fraction(9, 1), Fraction(-3, 1), Fraction(1, 1)]
+k=4 t=3: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(256, 1), Fraction(-128, 1), Fraction(64, 1), Fraction(-32, 1), Fraction(16, 1)]
+k=4 t=1/2: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(81, 16), Fraction(27, 16), Fraction(9, 16), Fraction(3, 16), Fraction(1, 16)]
+k=4 t=-3: t^distance == t^|x| t^|y| (t^-2)^|x&y| : True;  spectrum by weight [Fraction(16, 1), Fraction(-32, 1), Fraction(64, 1), Fraction(-128, 1), Fraction(256, 1)]
+k=2: spectrum [w even] has q by weight [Fraction(1, 2), Fraction(0, 1), Fraction(1, 2)]
+k=3: spectrum [w even] has q by weight [Fraction(1, 2), Fraction(0, 1), Fraction(0, 1), Fraction(1, 2)]
+k=4: spectrum [w even] has q by weight [Fraction(1, 2), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 2)]
+k=5: spectrum [w even] has q by weight [Fraction(1, 2), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 2)]
+k=6: spectrum [w even] has q by weight [Fraction(1, 2), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 2)]
+k=4: spectrum [w mod 4 in (0, 1)] has q by weight ['3/8', '1/8', '1/8', '-1/8', '-1/8']
+k=4: spectrum [w mod 4 in (0,)] has q by weight ['1/8', '0', '1/8', '0', '1/8']
+k=4: spectrum [w mod 4 in (1,)] has q by weight ['1/4', '1/8', '0', '-1/8', '-1/4']
+k=4: spectrum [w mod 4 in (2,)] has q by weight ['3/8', '0', '-1/8', '0', '3/8']
+k=4: spectrum [w mod 4 in (3,)] has q by weight ['1/4', '-1/8', '0', '1/8', '-1/4']
+k=6: spectrum [w mod 4 in (0, 1)] has q by weight ['7/16', '-1/16', '1/16', '1/16', '-1/16', '-1/16', '1/16']
+k=6: spectrum [w mod 4 in (0,)] has q by weight ['1/4', '-1/16', '0', '1/16', '0', '-1/16', '1/4']
+k=6: spectrum [w mod 4 in (1,)] has q by weight ['3/16', '0', '1/16', '0', '-1/16', '0', '-3/16']
+k=6: spectrum [w mod 4 in (2,)] has q by weight ['1/4', '1/16', '0', '-1/16', '0', '1/16', '1/4']
+k=6: spectrum [w mod 4 in (3,)] has q by weight ['5/16', '0', '-1/16', '0', '1/16', '0', '-5/16']
+k=8: spectrum [w mod 4 in (0, 1)] has q by weight ['17/32', '-1/32', '-1/32', '1/32', '1/32', '-1/32', '-1/32', '1/32', '1/32']
+k=8: spectrum [w mod 4 in (0,)] has q by weight ['9/32', '0', '-1/32', '0', '1/32', '0', '-1/32', '0', '9/32']
+k=8: spectrum [w mod 4 in (1,)] has q by weight ['1/4', '-1/32', '0', '1/32', '0', '-1/32', '0', '1/32', '-1/4']
+k=8: spectrum [w mod 4 in (2,)] has q by weight ['7/32', '0', '1/32', '0', '-1/32', '0', '1/32', '0', '7/32']
+k=8: spectrum [w mod 4 in (3,)] has q by weight ['1/4', '1/32', '0', '-1/32', '0', '1/32', '0', '-1/32', '-1/4']
+k=3: spectrum [w mod 3 == 0] has N*q by weight ['2', '0', '2', '0']
+k=6: spectrum [w mod 3 == 0] has N*q by weight ['22', '0', '-2', '0', '6', '0', '-18']
+k=9: spectrum [w mod 3 == 0] has N*q by weight ['170', '0', '2', '0', '-6', '0', '18', '0', '-54', '0']
+LIGHT label=ab3-ident exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:51:50 cmd=python3 -B ladder.py ident

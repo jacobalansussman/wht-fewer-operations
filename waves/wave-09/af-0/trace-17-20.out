@@ -1,0 +1,6 @@
+k | N | inputs D | gates (G) counted by my tracer | their counter | gates/N | gates that subtract | free negations | largest leaf count of a wire (limit 256) | outputs whose form is wrong | outputs that are no gate
+k=17 N= 131072 D=154 gates=  191050 theirs=  191050 same gates/N=1.4576 minus=1645 negs=82 maxleaves=154 wrong=0 ungated=1  EXACT PASS  (0.4s)
+k=18 N= 262144 D=172 gates=  375794 theirs=  375794 same gates/N=1.4335 minus=2190 negs=100 maxleaves=172 wrong=0 ungated=1  EXACT PASS  (0.8s)
+k=19 N= 524288 D=191 gates=  744372 theirs=  744372 same gates/N=1.4198 minus=2801 negs=106 maxleaves=191 wrong=0 ungated=1  EXACT PASS  (1.9s)
+k=20 N=1048576 D=211 gates= 1473899 theirs= 1473899 same gates/N=1.4056 minus=3850 negs=126 maxleaves=211 wrong=0 ungated=1  EXACT PASS  (4.0s)
+LIGHT label=af0-trace2 exit=0 time=7s waited=0s peak_rss_mb=895 peak_footprint_mb=478 lowest_cap_mb=1500 stopped=- start=07:41:50 cmd=python3 -B trace.py 17 20 10

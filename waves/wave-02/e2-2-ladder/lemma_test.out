@@ -1,0 +1,3 @@
+part 1: 40 random words, 1384 (word, form) cases, formula wrong in 0
+part 2: 30 right words built (with mixing; scratch in some); tight forms met: 720; triangular pattern violated: 0; sets of more than W blocks pairwise joined: 0; formula wrong: 0
+LIGHT label=e2-2-lemma exit=0 time=4s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:02:26 cmd=python3 -B lemma_test.py

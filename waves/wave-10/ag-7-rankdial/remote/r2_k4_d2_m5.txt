@@ -1,0 +1,5 @@
+visited states by remaining budget: j=5:1 j=4:96 j=3:5976 j=2:311823 j=1:15227687
+RESULT p=2: NO circuit with 20 gates (exhaustive over GF(2))
+real	7m31.166s
+
+[exited with code 0]

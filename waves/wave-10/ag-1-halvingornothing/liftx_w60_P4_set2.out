@@ -1,0 +1,4 @@
+RESULT P=4 (wires modulo 16 before the halving) extra=1: 0 of 1 sets lift; nodes 10709368; sets stopped at the node cap: 0
+  halvings examined (u, p, q, c, s with a primitive half): 17732688216 ; of them with the residue w: 0
+  histogram of the most targets reached:  4 targets: 1 sets;
+LIGHT label=ag1-x60p4 exit=0 time=316s waited=40s peak_rss_mb=2 peak_footprint_mb=2 lowest_cap_mb=1500 stopped=- start=08:04:04 cmd=./lifth 4 rows_B4.txt 1

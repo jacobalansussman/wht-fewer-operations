@@ -1,0 +1,2 @@
+steiner_Z16_s11_seed best 32 exact 32 t 0.0
+steiner_Z16_s11_seed DONE evaluated 18044 best 32 hist {32: 2, 33: 21, 34: 28, 35: 68, 36: 50, 37: 78, 38: 91, 39: 100}

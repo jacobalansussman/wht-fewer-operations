@@ -1,0 +1,17 @@
+count (O): one operation per line (addition, subtraction, or multiplication by a constant)
+k  N    plan            ops(scaled)  scale   textbook  ops(exact Hx)  per point per bit  bits/op   replay
+1  2    1               2            1       2         2              1.0000             1.0000   scaled OK exact OK {'+': 1, '-': 1, '*': 0}
+2  4    11              8            1       8         8              1.0000             1.0000   scaled OK exact OK {'+': 4, '-': 4, '*': 0}
+3  8    3               20           1/2     24        28             0.8333             1.2000   scaled OK exact OK {'+': 10, '-': 9, '*': 1}
+4  16   31              56           1/2     64        72             0.8750             1.1429   scaled OK exact OK {'+': 28, '-': 26, '*': 2}
+5  32   311             144          1/2     160       176            0.9000             1.1111   scaled OK exact OK {'+': 72, '-': 68, '*': 4}
+6  64   33              320          1/4     384       384            0.8333             1.2000   scaled OK exact OK {'+': 160, '-': 144, '*': 16}
+7  128  331             768          1/4     896       896            0.8571             1.1667   scaled OK exact OK {'+': 384, '-': 352, '*': 32}
+8  256  3311            1792         1/4     2048      2048           0.8750             1.1429   scaled OK exact OK {'+': 896, '-': 832, '*': 64}
+9  512  333             3840         1/8     4608      4352           0.8333             1.2000   scaled OK exact OK {'+': 1920, '-': 1728, '*': 192}
+
+e2-0's programs, re-read with this parser (outputs = names starting with y, compared as a set):
+oslp_4.txt  N 4  operations 8 {'+': 3, '-': 4, '*': 1}  outputs = rows of H times 1/2   textbook 8
+oslp_16.txt  N 16  operations 60 {'+': 20, '-': 32, '*': 8}  outputs = rows of H times 1/4   textbook 64
+oslp_64.txt  N 64  operations 352 {'+': 112, '-': 192, '*': 48}  outputs = rows of H times 1/8   textbook 384
+LIGHT label=h3-orec exit=0 time=3s waited=0s peak_rss_mb=165 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:43:07 cmd=python3 -B orec.py

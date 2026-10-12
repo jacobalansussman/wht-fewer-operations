@@ -1,0 +1,5 @@
+plain H16        eigenvalue +4 (multiplicity 8): span of eigenvectors by support size  <=1:0  <=2:0  <=3:0  <=4:3  <=5:3  <=6:8   [5s]
+plain H16        eigenvalue -4 (multiplicity 8): span of eigenvectors by support size  <=1:0  <=2:0  <=3:0  <=4:3  <=5:3  <=6:8   [11s]
+relabelled H16'  eigenvalue +4 (multiplicity 10): span of eigenvectors by support size  <=1:0  <=2:0  <=3:0  <=4:10   [11s]
+relabelled H16'  eigenvalue -4 (multiplicity 6): span of eigenvectors by support size  <=1:0  <=2:0  <=3:0  <=4:0  <=5:0  <=6:6   [19s]
+LIGHT label=i-backwards-play2 exit=0 time=20s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=21:01:26 cmd=python3 -B waves/wave-01/i-backwards/play2.py

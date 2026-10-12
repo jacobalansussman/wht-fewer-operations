@@ -1,0 +1,20 @@
+f(Z | total free) = 2 ; forms that are free in some optimal circuit given the total (inputs included): 6
+FOUND: pure gates 3 = 1 + f(Z | total); injected ["x'0", "x'1", "x'0+x'1", "x'0+x'2", "x'3"] idle version offset x'0+x'1+x'2 
+   classes [('1000', (2,), '1000', "x'0"), ('1010', (0,), '0001', "x'0+x'1+x'2+x'3"), ('1010', (1,), '0010', "x'0+x'2"), ('1100', (0,), '0100', "x'0+x'1")] 
+   C'' [('1100', '1000', '0100'), ('1010', '1000', '0010'), ('1110', '0100', '1010'), ('1111', '0001', '1110')]
+FOUND: pure gates 3 = 1 + f(Z | total); injected ["x'0", "x'1", "x'0+x'1", "x'0+x'2", "x'3"] idle version offset x'0+x'2+x'3 
+   classes [('1000', (2,), '1000', "x'0"), ('1010', (0,), '0001', "x'0+x'1+x'2+x'3"), ('1010', (1,), '0010', "x'0+x'2"), ('1100', (0,), '0100', "x'0+x'1")] 
+   C'' [('1100', '1000', '0100'), ('1010', '1000', '0010'), ('1110', '0100', '1010'), ('1111', '0001', '1110')]
+FOUND: pure gates 3 = 1 + f(Z | total); injected ["x'0", "x'1", "x'0+x'1", "x'0+x'2", "x'3"] idle version offset x'0+x'1+x'2 
+   classes [('1000', (2,), '1000', "x'0"), ('0100', (0,), '0100', "x'0+x'1"), ('1010', (0,), '0001', "x'0+x'1+x'2+x'3"), ('1010', (1,), '0010', "x'0+x'2")] 
+   C'' [('1100', '1000', '0100'), ('1010', '1000', '0010'), ('1110', '0100', '1010'), ('1111', '0001', '1110')]
+FOUND: pure gates 3 = 1 + f(Z | total); injected ["x'0", "x'1", "x'0+x'1", "x'0+x'2", "x'3"] idle version offset x'0+x'2+x'3 
+   classes [('1000', (2,), '1000', "x'0"), ('0100', (0,), '0100', "x'0+x'1"), ('1010', (0,), '0001', "x'0+x'1+x'2+x'3"), ('1010', (1,), '0010', "x'0+x'2")] 
+   C'' [('1100', '1000', '0100'), ('1010', '1000', '0010'), ('1110', '0100', '1010'), ('1111', '0001', '1110')]
+n = 4 (cut of 8 points), source all4: derivations (C'', one per way of deriving each wire) = 8
+wires by rank of their slot transfers (longest bus without an idle injection) -> count: {1: 38, 2: 20, 3: 6}
+structures with n independent classes and a wire with >= 3 classes : 2250
+structures in which at most one wire lacks a tree of wires free given the total : 1560
+(structure, wire, idle version, tree) with every injected wire free given the total and the total a difference of two versions : 176
+least pure gates over these structures -> count (the lower half alone costs 4; a saving needs <= 3): {3: 224}
+LIGHT label=ad2-d3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:55:07 cmd=python3 -B deco.py 4 all4

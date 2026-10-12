@@ -1,0 +1,17 @@
+drain N=16 seed=2 K=3000 cs=2 target=H: bestU=63 at gate 51; ended g=51 P=12; gates draining >=N/2: 0, ==N: 0; 5s
+drain N=16 seed=3 K=3000 cs=2 target=H: bestU=65 at gate 55; ended g=55 P=10; gates draining >=N/2: 0, ==N: 0; 7s
+drain N=16 seed=4 K=3000 cs=2 target=H: bestU=64 at gate 55; ended g=55 P=9; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=5 K=3000 cs=2 target=H: bestU=64 at gate 51; ended g=51 P=13; gates draining >=N/2: 0, ==N: 0; 5s
+drain N=16 seed=6 K=3000 cs=2 target=H: bestU=64 at gate 52; ended g=52 P=12; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=7 K=3000 cs=2 target=H: bestU=63 at gate 51; ended g=51 P=12; gates draining >=N/2: 0, ==N: 0; 5s
+drain N=16 seed=8 K=3000 cs=2 target=H: bestU=65 at gate 52; ended g=52 P=13; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=9 K=3000 cs=2 target=H: bestU=64 at gate 55; ended g=55 P=9; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=10 K=3000 cs=2 target=H: bestU=65 at gate 55; ended g=55 P=10; gates draining >=N/2: 0, ==N: 0; 7s
+drain N=16 seed=11 K=3000 cs=2 target=H: bestU=63 at gate 52; ended g=52 P=11; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=12 K=3000 cs=2 target=H: bestU=63 at gate 53; ended g=53 P=10; gates draining >=N/2: 0, ==N: 0; 7s
+drain N=16 seed=13 K=3000 cs=2 target=H: bestU=64 at gate 54; ended g=54 P=10; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=14 K=3000 cs=2 target=H: bestU=62 at gate 48; ended g=48 P=14; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=15 K=3000 cs=2 target=H: bestU=64 at gate 48; ended g=48 P=16; gates draining >=N/2: 0, ==N: 0; 5s
+drain N=16 seed=16 K=3000 cs=2 target=H: bestU=64 at gate 53; ended g=53 P=11; gates draining >=N/2: 0, ==N: 0; 6s
+drain N=16 seed=17 K=3000 cs=2 target=H: bestU=64 at gate 54; ended g=54 P=10; gates draining >=N/2: 0, ==N: 0; 7s
+LIGHT label=e2-3-drain exit=0 time=97s waited=0s peak_rss_mb=4 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:47:18 cmd=./batch3.sh

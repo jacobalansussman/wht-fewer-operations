@@ -1,0 +1,2 @@
+pairs (a, b) with 0 <= a, b <= 80: 6561 checked, 0 failures
+LIGHT label=x5-pairid exit=0 time=1s waited=46s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:50:38 cmd=python3 -B pairid.py

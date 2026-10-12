@@ -1,0 +1,14 @@
+class (7,1): 127 subspaces of dimension 1, ports (meet their perpendicular only in 0): 64  by type {'gen': 63, 'one': 1}   [0s]
+   star sets: X_odd = 8 odd words pairwise overlapping oddly; X_even = 7 even words pairwise overlapping oddly
+   a port of type gen knows: {'gen': 32}
+   a port of type one knows: nobody
+   type gen :      63 ports ; star X_odd holds       7, star X_even holds       0  ->  kappa <= 9.000
+   type one :       1 ports ; star X_odd holds       1, star X_even holds       0  ->  kappa <= 1.000
+   knows graph built: 64 ports, degrees [0, 32]
+   ALL:    64 ports; largest set with no two knowing each other: 8 EXACT (greedy 8)  ->  size/alpha = 8.000
+   gen:    63 ports; largest set with no two knowing each other: 7 EXACT (greedy 7)  ->  size/alpha = 9.000
+   one:     1 ports; largest set with no two knowing each other: 1 EXACT (greedy 1)  ->  size/alpha = 1.000
+TYPE 7 1 gen 9.0000
+TYPE 7 1 one 1.0000
+CEIL 7 1 10.0000   (every sub-family, types mixed: sum of the per-type ceilings)
+   [0s]

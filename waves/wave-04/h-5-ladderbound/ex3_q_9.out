@@ -1,0 +1,1 @@
+LIGHT label=h5-e3-9 exit=-15 time=348s waited=2s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:09:43 cmd=./pairex3 pool_q.txt 9

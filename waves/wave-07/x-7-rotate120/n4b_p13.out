@@ -1,0 +1,39 @@
+p=13: dimension of {X : X R = R^-1 X} = 6 (expected 6 = 2^2 + 2*1^2)
+part on the fixed space: dimension 4 ; part on the rest: dimension 2
+involutions on the fixed space: 184 ; on the rest: 12
+mirrors (S^2 = 1, S R S = R^-1) over GF(13): 2208
+fact (i) checked on all of them: S R is an involution, S * (S R) = R, and S R inverts R too
+cost triples (cost S, cost S R, cost S R^2), sorted, with how many mirrors S have them, and one example S (rows), its trace mod p and non-zeros:
+  triple (0, 7, 7)  two cheapest sum to 7  count 24   example [[0, 12, 0, 0], [12, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 12]]  trace 0  nnz 4 / S R nnz 16 / S R^2 nnz 16
+  triple (3, 8, 8)  two cheapest sum to 11  count 36   example [[1, 0, 0, 0], [11, 12, 0, 0], [2, 2, 1, 0], [0, 0, 0, 12]]  trace 0  nnz 7 / S R nnz 16 / S R^2 nnz 16
+  triple (4, 7, 7)  two cheapest sum to 11  count 144   example [[1, 0, 0, 0], [7, 10, 11, 0], [6, 4, 3, 0], [0, 0, 0, 12]]  trace 0  nnz 8 / S R nnz 15 / S R^2 nnz 15
+  triple (4, 8, 8)  two cheapest sum to 12  count 396   example [[9, 5, 5, 0], [10, 4, 5, 0], [0, 0, 12, 0], [0, 0, 0, 1]]  trace 0  nnz 8 / S R nnz 16 / S R^2 nnz 16
+  triple (5, 7, 7)  two cheapest sum to 12  count 216   example [[4, 7, 11, 0], [11, 4, 6, 0], [7, 2, 4, 0], [0, 0, 0, 1]]  trace 0  nnz 10 / S R nnz 13 / S R^2 nnz 13
+  triple (6, 6, 7)  two cheapest sum to 12  count 48   example [[4, 8, 9, 10], [8, 4, 4, 3], [9, 4, 5, 3], [10, 3, 3, 0]]  trace 0  nnz 15 / S R nnz 13 / S R^2 nnz 16
+  triple (5, 8, 8)  two cheapest sum to 13  count 288   example [[7, 12, 9, 0], [12, 4, 7, 0], [9, 7, 1, 0], [0, 0, 0, 1]]  trace 0  nnz 10 / S R nnz 16 / S R^2 nnz 16
+  triple (7, 7, 7)  two cheapest sum to 14  count 72   example [[6, 7, 12, 10], [5, 0, 5, 3], [1, 7, 7, 3], [10, 3, 3, 0]]  trace 0  nnz 14 / S R nnz 15 / S R^2 nnz 15
+  triple (7, 7, 8)  two cheapest sum to 14  count 288   example [[5, 9, 9, 10], [3, 1, 2, 3], [2, 8, 7, 3], [10, 3, 3, 0]]  trace 0  nnz 15 / S R nnz 15 / S R^2 nnz 15
+  triple (7, 8, 8)  two cheapest sum to 15  count 696   example [[5, 9, 9, 10], [1, 0, 1, 3], [4, 9, 8, 3], [10, 3, 3, 0]]  trace 0  nnz 14 / S R nnz 15 / S R^2 nnz 15
+least cost(S) + cost(S R) over all pairs, GF(13): 7   (the trivial pair D, H/2 gives 0 + 7)
+pairs by (cost S, cost S R) unsorted:
+   (0, 7) 8
+   (3, 8) 12
+   (4, 7) 48
+   (4, 8) 132
+   (5, 7) 72
+   (5, 8) 96
+   (6, 6) 16
+   (6, 7) 16
+   (7, 0) 8
+   (7, 4) 48
+   (7, 5) 72
+   (7, 6) 16
+   (7, 7) 296
+   (7, 8) 328
+   (8, 3) 12
+   (8, 4) 132
+   (8, 5) 96
+   (8, 7) 328
+   (8, 8) 472
+distinct matrices priced: 1044
+LIGHT label=x7-n4b13 exit=0 time=156s waited=0s peak_rss_mb=46 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=03:34:45 cmd=python3 -B n4b.py 13

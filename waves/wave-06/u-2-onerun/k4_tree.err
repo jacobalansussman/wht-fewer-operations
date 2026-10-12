@@ -1,0 +1,17 @@
+depth 1 of 16 at node 2
+depth 2 of 16 at node 3
+depth 3 of 16 at node 4
+depth 4 of 16 at node 5
+depth 5 of 16 at node 12
+depth 6 of 16 at node 13
+depth 7 of 16 at node 14
+depth 8 of 16 at node 15
+depth 9 of 16 at node 16
+depth 10 of 16 at node 17
+depth 11 of 16 at node 18
+depth 12 of 16 at node 19
+depth 13 of 16 at node 20
+depth 14 of 16 at node 21
+depth 15 of 16 at node 22
+depth 16 of 16 at node 23
+LIGHT label=u2-onerun exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:50:42 cmd=./onerun 4 tree 3 1

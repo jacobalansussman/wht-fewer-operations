@@ -1,0 +1,1 @@
+LIGHT label=h4-all8p3 exit=0 time=440s waited=0s peak_rss_mb=37 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=23:58:02 cmd=sh -c ./mincirc_all 3 8 5 100000 < rows_zeta3.txt > z8_p3_full.local.out

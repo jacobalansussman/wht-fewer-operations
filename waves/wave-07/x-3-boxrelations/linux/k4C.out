@@ -1,0 +1,8 @@
+K=4 generic   part=skew  (dim  6) r=8: unknowns 868, boxes 75, starts 2, best rms residual 1.96e-14, hits (also right on 10 fresh boxes) 1 [fresh rms 2.2e-14], 35 s
+K=4 generic   part=skew  (dim  6) r=7: unknowns 708, boxes 61, starts 5, best rms residual 4.93e-16, hits (also right on 10 fresh boxes) 4 [fresh rms 6.5e-16], 35 s
+K=4 generic   part=skew  (dim  6) r=6: unknowns 564, boxes 49, starts 9, best rms residual 2.45e-01, hits (also right on 10 fresh boxes) 0, 35 s
+K=4 refl      part=skew  (dim  6) r=8: unknowns 868, boxes 75, starts 5, best rms residual 4.78e-16, hits (also right on 10 fresh boxes) 4 [fresh rms 1.2e-14], 35 s
+K=4 refl      part=skew  (dim  6) r=7: unknowns 708, boxes 61, starts 1, best rms residual 2.84e-07, hits (also right on 10 fresh boxes) 0, 36 s
+K=4 generic   part=sym   (dim 10) r=8: unknowns 1188, boxes 38, starts 2, best rms residual 5.99e-16, hits (also right on 10 fresh boxes) 1 [fresh rms 7.2e-16], 50 s
+K=4 generic   part=sym   (dim 10) r=7: unknowns 996, boxes 32, starts 4, best rms residual 1.59e-01, hits (also right on 10 fresh boxes) 0, 50 s
+K=4 refl      part=symtl (dim  9) r=8: unknowns 1105, boxes 43, starts 5, best rms residual 3.90e-16, hits (also right on 10 fresh boxes) 4 [fresh rms 2.3e-14], 51 s

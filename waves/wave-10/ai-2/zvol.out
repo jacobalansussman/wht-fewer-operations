@@ -1,0 +1,23 @@
+(a) exhaustive, every minor of every order
+  k=2: largest |minor| of Z = 1; sum of squared minors by order = [9, 16, 9, 1]; formula e_r = [9, 16, 9, 1]; equal: True
+  k=3: largest |minor| of Z = 2; sum of squared minors by order = [27, 193, 594, 870, 594, 193, 27, 1]; formula e_r = [27, 193, 594, 870, 594, 193, 27, 1]; equal: True
+(b) the disjoint-pairs block of Z: rows = complements of s-sets, columns = s-sets (order C(k,s))
+  k=4 (N=16): s=1: order 4, |det| = 3 [elimination = formula]; s=2: order 6, |det| = 1 [elimination = formula]
+  k=5 (N=32): s=1: order 5, |det| = 4 [elimination = formula]; s=2: order 10, |det| = 48 [elimination = formula]
+  k=6 (N=64): s=1: order 6, |det| = 5 [elimination = formula]; s=2: order 15, |det| = 1458 [elimination = formula]; s=3: order 20, |det| = 1 [elimination = formula]
+  k=7 (N=128): s=1: order 7, |det| = 6 [elimination = formula]; s=2: order 21, |det| = 40960 [elimination = formula]; s=3: order 35, |det| = 47775744 [elimination = formula]
+  k=8 (N=256): s=1: order 8, |det| = 7 [elimination = formula]; s=2: order 28, |det| = 1171875 [elimination = formula]; s=3: order 56, |det| = 9760764780783360 [elimination = formula]; s=4: order 70, |det| = 1 [elimination = formula]
+  k=9 (N=512): s=1: order 9, |det| = 2^3.0 [formula]; s=2: order 36, |det| = 2^25.1 [formula]; s=3: order 84, |det| = 2^84.9 [formula]; s=4: order 126, |det| = 2^109.1 [formula]
+(c) bounds on log2(largest minor of Z) from the singular values; H needs (N/2) log2 N
+   k      N   explicit(b)   lower (Cauchy-Binet, best r)   upper = sum log2 sigma_i>1    upper/N   0.2770*sqrt(k)   (N/2)log2N
+   2      4          0.0            0.0 (r=4)                   1.4              0.347     0.392      4
+   3      8          1.0            0.0 (r=8)                   4.2              0.521     0.480      12
+   4     16          1.6            0.0 (r=16)                   8.3              0.521     0.554      32
+   5     32          5.6            0.0 (r=32)                  20.8              0.651     0.619      80
+   6     64         10.5            0.0 (r=64)                  41.7              0.651     0.679      192
+   7    128         25.5            0.0 (r=128)                  97.2              0.759     0.733      448
+   8    256         53.1            0.0 (r=256)                 194.4              0.759     0.783      1024
+   9    512        109.1            0.0 (r=512)                 437.4              0.854     0.831      2304
+  10   1024        243.2           24.8 (r=512)                 874.7              0.854     0.876      5120
+  11   2048        453.2          123.1 (r=1024)                1924.4              0.940     0.919      11264
+LIGHT label=ai2-zvol exit=0 time=2s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:32:54 cmd=python3 -B zvol.py 11

@@ -1,0 +1,10 @@
+# count (O) program, 8 operations, 4 points, exact H x
+u1_y0 = x0 + x1
+u1_y1 = x0 - x1
+u2_y0 = x2 + x3
+u2_y1 = x2 - x3
+u3_y0 = u1_y0 + u2_y0
+u3_y1 = u1_y0 - u2_y0
+u4_y0 = u1_y1 + u2_y1
+u4_y1 = u1_y1 - u2_y1
+# OUT u3_y0 u4_y0 u3_y1 u4_y1

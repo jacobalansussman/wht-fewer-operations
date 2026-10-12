@@ -1,0 +1,4 @@
+STOPPED EARLY after 222 forms
+forms tried: 222 ; saving -> number of forms (2 or more only): {2: 5} ; the others save 0 or 1  (522 s)
+LIGHT label=ab5-p3 exit=0 time=523s waited=0s peak_rss_mb=47 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=05:19:14 cmd=python3 -B freeform8p3.py
+done

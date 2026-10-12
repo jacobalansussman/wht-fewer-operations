@@ -1,0 +1,10 @@
+N=4  (1) S + S R + S R^2 == 3 S P0 : True   (2) S R == R S R^-1 : True   rank P0 = 2  rank(R - 1) = 2 = 2(N-1)/3 = 2
+      (3) mirrors +1 on the fixed space: rank P1 = 1, rank P2 = 1, (N-1)/3 = 1 ; R == 1 - 2P1 - 2P2 + 4 P1 P2 : True ; non-zeros of P1: 1, of P2: 16 ; row weights of S1: [1]
+      (4) least supp(v) * supp(S1 v) over those eigenvectors of S2: 16 = 4 * 4   (N = 4)
+N=16  (1) S + S R + S R^2 == 3 S P0 : True   (2) S R == R S R^-1 : True   rank P0 = 6  rank(R - 1) = 10 = 2(N-1)/3 = 10
+      (3) mirrors +1 on the fixed space: rank P1 = 5, rank P2 = 5, (N-1)/3 = 5 ; R == 1 - 2P1 - 2P2 + 4 P1 P2 : True ; non-zeros of P1: 36, of P2: 256 ; row weights of S1: [1, 6]
+      (4) least supp(v) * supp(S1 v) over those eigenvectors of S2: 256 = 16 * 16   (N = 16)
+N=64  (1) S + S R + S R^2 == 3 S P0 : True   (2) S R == R S R^-1 : True   rank P0 = 22  rank(R - 1) = 42 = 2(N-1)/3 = 42
+      (3) mirrors +1 on the fixed space: rank P1 = 21, rank P2 = 21, (N-1)/3 = 21 ; R == 1 - 2P1 - 2P2 + 4 P1 P2 : True ; non-zeros of P1: 784, of P2: 4096 ; row weights of S1: [1, 28]
+      (4) least supp(v) * supp(S1 v) over those eigenvectors of S2: 4096 = 64 * 64   (N = 64)
+LIGHT label=x7-fused exit=0 time=4s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:42:35 cmd=python3 -B fused.py

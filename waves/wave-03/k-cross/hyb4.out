@@ -1,0 +1,8 @@
+kernel [[1,2],[2,1]] cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 8
+kernel [[1,3],[3,1]] cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 27
+kernel [[1,2],[3,4]] cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 16
+kernel [[1,2],[2,3]] cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 12
+kernel [[2,7],[5,3]] cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 245
+kernel [[1,1],[1,-1]] (the transform) cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 2
+kernel [[1,100],[1,1]] (near subset sums) cubed : gates 19 ; every output y_j times the number a_j is exactly row pi(j) of the kernel power, columns in the order sig: True ; all 12 constants non-zero: True ; largest numerator or denominator 10000
+LIGHT label=k-cross-hyb4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:46:49 cmd=python3 -B hyb4.py

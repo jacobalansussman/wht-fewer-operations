@@ -1,0 +1,5 @@
+== alt4 p=5 m=5 (own)
+own: p=5 n=6 rows=6 distinct non-input targets=6 intermediates=5 => gate budget 11
+nodes by depth: 1 60 2730 122414 5889288 0
+RESULT p=5: NO circuit (exhaustive over this field) with 11 gates
+LIGHT label=a1-own-5-5 exit=0 time=259s waited=0s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:27:52 cmd=sh -c ./own 5 6 5 < ../i-cross/rows_alt4.txt

@@ -1,0 +1,4 @@
+pair-class pool with entries 0,+-1: 352 wires, 336 candidate helpers, 14016 (wire, parent pair) gate records
+staircase check: gates 20, outputs missing 0, dead helpers 0
+restarts 5, seed 1 start empty: 2765973 moves; best circuit 1000000000 gates; feasible states visited by gate count: []
+LIGHT label=h5-sa1 exit=0 time=302s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=00:03:40 cmd=python3 -B classsa.py 300 1 empty

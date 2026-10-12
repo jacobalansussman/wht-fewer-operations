@@ -1,0 +1,7 @@
+program 2 | N 4 | gates 7 | kinds of gate: {'join': 3, 'shift +1': 2, 'shift -1': 2}
+program 3 | N 8 | gates 20 | kinds of gate: {'join': 8, 'shift +1': 6, 'shift -1': 6}
+program 4 | N 16 | gates 52 | kinds of gate: {'join': 20, 'shift +1': 16, 'shift -1': 16}
+program 5 | N 32 | gates 128 | kinds of gate: {'join': 48, 'shift +1': 40, 'shift -1': 40}
+program 6 | N 64 | gates 304 | kinds of gate: {'join': 112, 'shift +1': 96, 'shift -1': 96}
+program 19 | N 8 | gates 19 | kinds of gate: {'join': 7, 'shift +1': 6, 'shift -1': 6}
+LIGHT label=h6-gk exit=0 time=4s waited=0s peak_rss_mb=14 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:58:49 cmd=sh -c for a in 2 3 4 5 6 19; do python3 -B gatekinds.py $a; done

@@ -1,0 +1,40 @@
+== my builder: k, N, t, helper classes read by the last layer, gates (G), gates/N, formula agrees, replay
+k= 3 N=      8 t=1 classes=      8 (1.0000 N) gates=      12 = 1.5000 N [adds 10, subtractions 2, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 8]  formula same  replay PASS [every unit input (7), exact]
+k= 4 N=     16 t=1 classes=     14 (0.8750 N) gates=      28 = 1.7500 N [adds 22, subtractions 6, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 16]  formula same  replay PASS [every unit input (11), exact]
+k= 5 N=     32 t=1 classes=     24 (0.7500 N) gates=      62 = 1.9375 N [adds 44, subtractions 18, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 32]  formula same  replay PASS [every unit input (16), exact]
+k= 6 N=     64 t=2 classes=     48 (0.7500 N) gates=     125 = 1.9531 N [adds 95, subtractions 30, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 64]  formula same  replay PASS [every unit input (22), exact]
+k= 7 N=    128 t=2 classes=     88 (0.6875 N) gates=     246 = 1.9219 N [adds 190, subtractions 56, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 128]  formula same  replay PASS [every unit input (29), exact]
+k= 8 N=    256 t=2 classes=    160 (0.6250 N) gates=     478 = 1.8672 N [adds 377, subtractions 101, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 256]  formula same  replay PASS [every unit input (37), exact]
+k= 9 N=    512 t=2 classes=    288 (0.5625 N) gates=     920 = 1.7969 N [adds 728, subtractions 192, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 512]  formula same  replay PASS [every unit input (46), exact]
+k=10 N=   1024 t=2 classes=    512 (0.5000 N) gates=    1762 = 1.7207 N [adds 1333, subtractions 429, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 1024]  formula same  replay PASS [every unit input (56), exact]
+k=11 N=   2048 t=2 classes=    960 (0.4688 N) gates=    3417 = 1.6685 N [adds 2645, subtractions 772, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 2048]  formula same  replay PASS [every unit input (67), exact]
+k=12 N=   4096 t=2 classes=   1792 (0.4375 N) gates=    6628 = 1.6182 N [adds 5106, subtractions 1522, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 4096]  formula same  replay PASS [every unit input (79), exact]
+k=13 N=   8192 t=2 classes=   3328 (0.4062 N) gates=   12892 = 1.5737 N [adds 10002, subtractions 2890, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 8192]  formula same  replay PASS [every unit input (92), exact]
+k=14 N=  16384 t=2 classes=   6144 (0.3750 N) gates=   25065 = 1.5298 N [adds 18865, subtractions 6200, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 16384]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+k=15 N=  32768 t=2 classes=  11776 (0.3594 N) gates=   49242 = 1.5027 N [adds 37586, subtractions 11656, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 32768]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+k=16 N=  65536 t=2 classes=  22528 (0.3438 N) gates=   96744 = 1.4762 N [adds 73585, subtractions 23159, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 65536]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+k=17 N= 131072 t=2 classes=  43008 (0.3281 N) gates=  190554 = 1.4538 N [adds 145554, subtractions 45000, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 131072]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+k=18 N= 262144 t=2 classes=  81920 (0.3125 N) gates=  375274 = 1.4316 N [adds 281907, subtractions 93367, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 262144]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+k=19 N= 524288 t=2 classes= 159744 (0.3047 N) gates=  743501 = 1.4181 N [adds 562773, subtractions 180728, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 524288]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+k=20 N=1048576 t=2 classes= 311296 (0.2969 N) gates= 1472990 = 1.4048 N [adds 1112822, subtractions 360168, gates -u-v 0, outputs needing a sign flip 0, distinct output wires 1048576]  formula same  replay PASS [2 draws of whole numbers below 10^9]
+== count-only formula (checked above against every built program): k, best t, (gates - N)/N, that times k/log2(k)
+k=     8 t= 2 excess/N=0.867188  times k/log2 k = 2.3125   2^-t = 0.250000
+k=    16 t= 2 excess/N=0.476196  times k/log2 k = 1.9048   2^-t = 0.250000
+k=    20 t= 2 excess/N=0.404753  times k/log2 k = 1.8730   2^-t = 0.250000
+k=    24 t= 3 excess/N=0.346080  times k/log2 k = 1.8116   2^-t = 0.125000
+k=    32 t= 3 excess/N=0.245094  times k/log2 k = 1.5686   2^-t = 0.125000
+k=    48 t= 3 excess/N=0.168418  times k/log2 k = 1.4475   2^-t = 0.125000
+k=    64 t= 3 excess/N=0.149247  times k/log2 k = 1.5920   2^-t = 0.125000
+k=   100 t= 4 excess/N=0.083611  times k/log2 k = 1.2585   2^-t = 0.062500
+k=   128 t= 4 excess/N=0.071944  times k/log2 k = 1.3156   2^-t = 0.062500
+k=   200 t= 5 excess/N=0.047689  times k/log2 k = 1.2478   2^-t = 0.031250
+k=   256 t= 5 excess/N=0.036941  times k/log2 k = 1.1821   2^-t = 0.031250
+k=   400 t= 6 excess/N=0.030518  times k/log2 k = 1.4122   2^-t = 0.015625
+k=   512 t= 6 excess/N=0.020219  times k/log2 k = 1.1502   2^-t = 0.015625
+k=   800 t= 6 excess/N=0.016071  times k/log2 k = 1.3331   2^-t = 0.015625
+k=  1024 t= 7 excess/N=0.012028  times k/log2 k = 1.2317   2^-t = 0.007812
+k=  1600 t= 7 excess/N=0.008065  times k/log2 k = 1.2124   2^-t = 0.007812
+k=  2048 t= 7 excess/N=0.007890  times k/log2 k = 1.4690   2^-t = 0.007812
+k=  3000 t= 8 excess/N=0.004243  times k/log2 k = 1.1021   2^-t = 0.003906
+k=  4096 t= 8 excess/N=0.003937  times k/log2 k = 1.3440   2^-t = 0.003906
+LIGHT label=af0-own exit=0 time=29s waited=0s peak_rss_mb=518 peak_footprint_mb=480 lowest_cap_mb=1500 stopped=- start=07:46:45 cmd=python3 -B own.py 20 13 4096

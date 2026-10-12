@@ -1,0 +1,23 @@
+# t2 x brick : 8 points, 22 gates, count (G); A inside blocks then B across blocks
+b0_s = 1 * x0 + 1 * x1
+b0_d = 1 * x0 + -1 * x1
+b1_s = 1 * x2 + 1 * x3
+b1_d = 1 * x2 + -1 * x3
+b2_s = 1 * x4 + 1 * x5
+b2_d = 1 * x4 + -1 * x5
+b3_s = 1 * x6 + 1 * x7
+b3_d = 1 * x6 + -1 * x7
+c0_p1 = 1 * b0_s + 1 * b1_s
+c0_p2 = 1 * b2_s + -1 * b3_s
+c0_hub3 = 1 * c0_p1 + 1 * c0_p2
+c0_y4 = 1 * c0_hub3 + 2 * b3_s
+c0_y5 = -1 * c0_y4 + 2 * c0_p1
+c0_y6 = 1 * c0_hub3 + -2 * b1_s
+c0_y7 = 1 * c0_y6 + -2 * c0_p2
+c1_p1 = 1 * b0_d + 1 * b1_d
+c1_p2 = 1 * b2_d + -1 * b3_d
+c1_hub3 = 1 * c1_p1 + 1 * c1_p2
+c1_y4 = 1 * c1_hub3 + 2 * b3_d
+c1_y5 = -1 * c1_y4 + 2 * c1_p1
+c1_y6 = 1 * c1_hub3 + -2 * b1_d
+c1_y7 = 1 * c1_y6 + -2 * c1_p2

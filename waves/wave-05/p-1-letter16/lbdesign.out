@@ -1,0 +1,7 @@
+45-design : rows 18  columns 18  bound on tau 36
+bent x0x3+x1x2 both sides : rows 24  columns 24  bound on tau 48
+bent x0x1+x2x3 both sides : rows 24  columns 24  bound on tau 48
+all ones : rows 21  columns 21  bound on tau 42
+random designs (half quadratic, half arbitrary signs): 829610  smallest bound seen: 32 (rows 16 columns 16 )  r [1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, -1, 1, 1, -1, -1]  c [1, -1, 1, 1, 1, 1, -1, 1, 1, 1, 1, -1, 1, -1, -1, -1]
+smallest values and counts: [(Fraction(32, 1), 2021), (Fraction(33, 1), 7), (Fraction(34, 1), 1695), (Fraction(35, 1), 842), (Fraction(36, 1), 26584), (Fraction(37, 1), 39510), (Fraction(38, 1), 98519), (Fraction(39, 1), 111294)]
+LIGHT label=p1lbd exit=0 time=150s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=00:38:59 cmd=python3 -B lbdesign.py

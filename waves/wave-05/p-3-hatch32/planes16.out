@@ -1,0 +1,4 @@
+8 f-cells, weak: 24 solutions (F, T1, T2); all have the claimed structure: True; examples [((0, 2, 4, 6, 8, 10, 12, 14), [1, 5], [9, 13]), ((0, 2, 4, 6, 8, 10, 12, 14), [1, 9], [5, 13])]
+8 f-cells, strong (u = chi_0): 6 solutions (F, T1, T2); all have the claimed structure: True; examples [((1, 3, 5, 7, 9, 11, 13, 15), [2, 6], [10, 14]), ((1, 3, 5, 7, 9, 11, 13, 15), [2, 10], [6, 14])]
+7 f-cells, weak: 0 solutions (F, T1, T2); all have the claimed structure: n/a; examples []
+7 f-cells, strong (u = chi_0): 0 solutions (F, T1, T2); all have the claimed structure: n/a; examples []

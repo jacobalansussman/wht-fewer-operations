@@ -1,0 +1,23 @@
+# 8 points: the circuit of tools/circuits/programs/h8_19gates.txt with other signs (written by resign.py).
+# Same adders, same wiring, same depth; the lines kept with the opposite sign: (none).
+# At input width 8: adder bits 199 -> 199, bits of distinct subtracted operands 65 -> 65, subtractions 9 -> 9.
+# Every choice of signs was tried (2048).
+g1 = x0 + x7
+g2 = x1 + x6
+g3 = x2 - x5
+g4 = x3 - x4
+g5 = g1 - g2
+g6 = g3 + g4
+g7 = g5 - g6
+g8 = g7 - 2*x7
+g9 = g7 - 2*x5
+g10 = g8 + 2*x6
+g11 = g9 - 2*x4
+y7 = g10 + 2*g4
+y3 = g9 + 2*x3
+y5 = 2*g5 - y3
+y1 = g10 + 2*g3
+y6 = g11 + 2*g2
+y2 = g8 + 2*x1
+y4 = y2 + 2*g6
+y0 = 2*g1 - g11

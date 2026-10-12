@@ -1,0 +1,11 @@
+d=4 exhaustive minimum: d=4 N=7 = border 1 + corners 4 + crossings 2;  empty 1 straight 2;  G=4; zero-criterion and corner=G hold: True;  crossings - empty = 1, (d-1) - b/2 = 1.0
+d=8 exhaustive minimum: d=8 N=23 = border 1 + corners 13 + crossings 9;  empty 7 straight 20;  G=13; zero-criterion and corner=G hold: True;  crossings - empty = 2, (d-1) - b/2 = 2.0
+d=16 plain / bit-reversed: d=16 N=87 = border 1 + corners 36 + crossings 50;  empty 45 straight 94;  G=36; zero-criterion and corner=G hold: True;  crossings - empty = 5, (d-1) - b/2 = 5.0
+d=16 Gray / bit-reversed Gray: d=16 N=89 = border 1 + corners 32 + crossings 56;  empty 49 straight 88;  G=32; zero-criterion and corner=G hold: True;  crossings - empty = 7, (d-1) - b/2 = 7.0
+an8.out: d=8 N=23 = border 5 + corners 13 + crossings 5;  empty 5 straight 26;  G=13; zero-criterion and corner=G hold: True;  crossings - empty = 0, (d-1) - b/2 = 0.0
+an16a.out: d=16 N=72 = border 12 + corners 34 + crossings 26;  empty 26 straight 139;  G=34; zero-criterion and corner=G hold: True;  crossings - empty = 0, (d-1) - b/2 = 0.0
+an16b.out: d=16 N=72 = border 9 + corners 35 + crossings 28;  empty 28 straight 134;  G=35; zero-criterion and corner=G hold: True;  crossings - empty = 0, (d-1) - b/2 = 0.0
+an32.out: d=32 N=252 = border 23 + corners 86 + crossings 143;  empty 139 straight 593;  G=86; zero-criterion and corner=G hold: True;  crossings - empty = 4, (d-1) - b/2 = 4.0
+LIGHT label=e4-corners exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:27:39 cmd=python3 -B corners.py an8.out an16a.out an16b.out an32.out
+an64.out: d=64 N=911 = border 53 + corners 223 + crossings 635;  empty 630 straight 2481;  G=223; zero-criterion and corner=G hold: True;  crossings - empty = 5, (d-1) - b/2 = 5.0
+LIGHT label=e4-corners3 exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:43:29 cmd=python3 -B corners.py an64.out

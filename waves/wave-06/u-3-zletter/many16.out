@@ -1,0 +1,49 @@
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 tau 20 deg0 2
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 28 deg0 11
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+LIGHT label=u3-many16 exit=0 time=110s waited=16s peak_rss_mb=4 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:59:37 cmd=./many16.sh

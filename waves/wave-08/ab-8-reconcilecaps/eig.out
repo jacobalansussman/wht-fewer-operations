@@ -1,0 +1,18 @@
+class (9,1) type gen: 255 ports, each knows 128 of its type; distinct eigenvalues [-8.0, 8.0, 128.0]
+   theta = n|lmin|/(d+|lmin|) = 15.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 17.0000 ; clique bound floor(h/r) or less
+class (5,2) type gen: 60 ports, each knows 3 of its type; distinct eigenvalues [-2.0, 1.0, 3.0]
+   theta = n|lmin|/(d+|lmin|) = 24.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 2.5000 ; clique bound floor(h/r) or less
+class (5,2) type alt: 20 ports, each knows 1 of its type; distinct eigenvalues [-1.0, 1.0]
+   theta = n|lmin|/(d+|lmin|) = 10.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 2.0000 ; clique bound floor(h/r) or less
+class (6,2) type gen: 240 ports, each knows 16 of its type; distinct eigenvalues [-8.0, -6.744563, -2.0, 2.0, 4.0, 4.744563, '...']
+   theta = n|lmin|/(d+|lmin|) = 80.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 3.0000 ; clique bound floor(h/r) or less
+class (6,2) type alt: 80 ports, each knows 4 of its type; distinct eigenvalues [-4.0, -0.0, 4.0]
+   theta = n|lmin|/(d+|lmin|) = 40.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 2.0000 ; clique bound floor(h/r) or less
+class (7,2) type alt: 336 ports, each knows 20 of its type; distinct eigenvalues [-8.0, -4.0, 2.0, 8.0, 20.0]
+   theta = n|lmin|/(d+|lmin|) = 96.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 3.5000 ; clique bound floor(h/r) or less
+class (7,2) type gen: 1008 ports, each knows 60 of its type; distinct eigenvalues [-18.422205, -14.330303, -8.0, -2.0, 4.0, 10.422205, '...']
+   theta = n|lmin|/(d+|lmin|) = 236.790 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 4.2569 ; clique bound floor(h/r) or less
+class (8,2) type alt: 1344 ports, each knows 80 of its type; distinct eigenvalues [-32.0, -16.0, -0.0, 8.0, 32.0, 80.0]
+   theta = n|lmin|/(d+|lmin|) = 384.000 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 3.5000 ; clique bound floor(h/r) or less
+class (9,2) type alt: 5440 ports, each knows 336 of its type; distinct eigenvalues [-64.0, -16.0, 8.0, 64.0, 336.0]
+   theta = n|lmin|/(d+|lmin|) = 870.400 ; kappa of a symmetric positive scatter <= 1 + d/|lmin| = 6.2500 ; clique bound floor(h/r) or less

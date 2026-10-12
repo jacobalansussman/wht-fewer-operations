@@ -1,0 +1,7 @@
+subspaces 2825, flats 26387, flats of dimension 1 to 4 unchanged by a given u: 2388
+control: start has 28 points, is_bq(start)=0 ; the quadric y0y1+y2y3+y4y5 has 28 points, is_bq=1
+B. first exchange of class 1 with u in W: 2388 sets T tried; of the results, one exchange (ANY T) from a quadric: 0
+B. first exchange of class 1 with u in the hyperplane, not in W: 2388 sets T tried; of the results, one exchange (ANY T) from a quadric: 0
+B. first exchange of class 1 with u outside the hyperplane: 2388 sets T tried; of the results, one exchange (ANY T) from a quadric: 0
+   hits where the quadric side was bent of degree above 2 (not counted): 0
+   second exchanges found, by least number of flats covering T (1,2,3, 9 = more): 0 0 0 0

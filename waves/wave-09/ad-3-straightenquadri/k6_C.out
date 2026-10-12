@@ -1,0 +1,6 @@
+subspaces 2825, flats 26387, flats of dimension 1 to 4 unchanged by a given u: 2388
+control: start has 28 points, is_bq(start)=0 ; the quadric y0y1+y2y3+y4y5 has 28 points, is_bq=1
+C. two exchanges of class 1 (first with u in W): 359260272 products; one exchange (ANY T) from a quadric: 0
+C. two exchanges of class 1 (first with u in the hyperplane, not in W): 359260272 products; one exchange (ANY T) from a quadric: 0
+C. two exchanges of class 1 (first with u outside the hyperplane): 359260272 products; one exchange (ANY T) from a quadric: 0
+   third exchanges found, by least number of flats covering T (1,2,3, 9 = more): 0 0 0 0

@@ -1,0 +1,7 @@
+cat3_8.out: N=8 corners=13; single-non-zero steps 3 (<= 7); most top components through one input 5 (<= 16); window count at most 0.94 of its cap; all lemma checks pass: True
+cat3_16.out: N=16 corners=30; single-non-zero steps 5 (<= 9); most top components through one input 6 (<= 20); window count at most 0.97 of its cap; all lemma checks pass: True
+cat3g_32.out: N=32 corners=80; single-non-zero steps 4 (<= 11); most top components through one input 8 (<= 24); window count at most 0.98 of its cap; all lemma checks pass: True
+cat3g_64.out: N=64 corners=261; single-non-zero steps 5 (<= 13); most top components through one input 11 (<= 28); window count at most 0.99 of its cap; all lemma checks pass: True
+all 168 optimal 8-point pairs pass the three lemma checks: True
+random and half-regular orders, 310 pictures at 4 to 128 points pass: True
+LIGHT label=u1-lemmas exit=0 time=2s waited=70s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:56:44 cmd=python3 -B checklemmas.py

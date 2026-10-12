@@ -1,0 +1,8 @@
+h=9 v=120 R=783 cst=72 moves in one pass N=9039
+A: 773 steps, 1462 terms (148 with a coefficient field != 1)
+B: 1220 steps, 1678 terms (592 with a coefficient field != 1)
+scatter: 736 terms ; ret: 8
+array additions per invocation (terms): about 3876 ; five invocations: about 19380 ; W=1263 m=45 D=120 ; W*m=56835
+  if one move costs c=1.0 operations per point and column: first dip at f > 162 columns, array length 2^(45*f) = 2^7290 points
+  if one move costs c=2.5 operations per point and column: first dip at f > 65 columns, array length 2^(45*f) = 2^2925 points
+LIGHT label=e5-cert exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:27:44 cmd=python3 -I -B cert_count.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-e8-r783.json.gz

@@ -1,0 +1,14 @@
+certificate h=9 v=120 R=783 cst=72; totals 8; replay ends with x_t alone and y_t + x_t: True
+  copy        A    532  scatter      0  B    251   total    783
+  J disjoint  A    782  scatter     28  B    485   total   1295
+  J nested    A      5  scatter      0  B    598   total    603
+  J cross     A      0  scatter    400  B      0   total    400
+  S           A    141  scatter    308  B    224   total    673
+  Q           A      0  scatter      0  B    120   total    120
+  E           A      2  scatter      0  B      0   total      2
+  Q additions: 120, all in phase ['B']; into targets: 120 (distinct targets 120; each is the last addition into its target: True; class sizes before -> after: [((16, 2), 48), ((18, 2), 44), ((17, 2), 10), ((19, 2), 8)])
+               into helpers: 0 (class sizes before -> after: []); into sources: 0
+  Q gates per invocation at one digit column = (cst + Q additions) * 2^h = (72 + 120) * 2^9; cst / v = 0.600; Q additions / v = 1.000
+  right after the scatter: wanted term x_t sits this many powers of 2 above the least power in its row: {1: 120}; class sizes {56: 120}
+  rank: the 8 totals over the rationals 8; the classes of the totals modulo 2: 8; the 120 target classes right after the scatter modulo 2: 8
+  pairs of target classes that overlap without nesting right after the scatter: 7140 of 7140

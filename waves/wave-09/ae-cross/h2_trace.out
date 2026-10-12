@@ -1,0 +1,18 @@
+4 points, all 24*16*16 = 6144 signed relabelled transforms: (codimension of fixed space, trace) -> count
+   (1, 4) 64
+   (2, 0) 384
+   (2, 2) 256
+   (2, 4) 192
+   (3, -4) 64
+   (3, -2) 1280
+   (3, 0) 384
+   (3, 2) 1280
+   (4, -4) 320
+   (4, -2) 256
+   (4, 0) 1536
+   (4, 4) 128
+least codimension: 1 ; bound (N - sqrt N)/2 = 1
+brick to the power 1 : N = 4 orthogonal up to scale: True codimension of fixed space 1 bound (N - sqrt N)/2 = 1
+brick to the power 2 : N = 16 orthogonal up to scale: True codimension of fixed space 6 bound (N - sqrt N)/2 = 6
+brick to the power 3 : N = 64 orthogonal up to scale: True codimension of fixed space 28 bound (N - sqrt N)/2 = 28
+LIGHT label=ae-h2_trace exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:24:45 cmd=python3 -B h2_trace.py

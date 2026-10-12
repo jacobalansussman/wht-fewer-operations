@@ -1,0 +1,56 @@
+# Lake build directory (Mathlib and all compiled files; several GB)
+.lake/
+# Python caches
+__pycache__/
+*.pyc
+# What the C scripts build (tools/circuits/fast/wht56/c/build_and_bench.sh and the benchmark by size)
+tools/circuits/fast/wht56/c/build/
+bench_novec
+bench_plain
+bench_vec
+bench_size_scalar
+bench_size_vec
+bench_pass_scalar
+bench_pass_vec
+kernels.h.new
+# What the command of paper/README.md builds
+/lowerbound_check
+/paper/lowerbound_check
+# LaTeX build files of the paper (the .tex and the .pdf are kept)
+paper/*.aux
+paper/*.toc
+paper/*.synctex.gz
+paper/explicit-wht-circuits.log
+paper/explicit-wht-circuits.out
+# The checkout of openai/math that the comparison commands of NOTICE, section 1, make (3.2 GB)
+/openai-math/
+# macOS Finder metadata
+.DS_Store
+# What the programs of tools/circuits/fpga write when they are run again
+tools/circuits/fpga/rtl/work/
+tools/circuits/fpga/rtl/formal/helpers/
+tools/circuits/fpga/synth/work/
+tools/circuits/fpga/synth/v_extra/
+tools/circuits/fpga/synth/v_resigned/
+tools/circuits/fpga/family/v/
+tools/circuits/fpga/family/work/
+tools/circuits/fpga/family/jobs/
+tools/circuits/fpga/family/logs/
+tools/circuits/fpga/family/pnr/
+tools/circuits/fpga/family/synth_out/
+tools/circuits/fpga/family/synth_keep/
+tools/circuits/fpga/family/formal/
+tools/circuits/fpga/family/circuits/[0-9]*.txt
+tools/circuits/fpga/board/selftest/build/
+tools/circuits/fpga/board/selftest/sim/vl_chip/
+tools/circuits/fpga/board/selftest/sim/**/*.bin
+tools/circuits/fpga/board/selftest/sim/**/*.vvp
+tools/circuits/fpga/board/selftest/sim/**/*.log
+# The two outside encoders, which the commands of tools/circuits/fpga/README.md fetch
+tools/circuits/fpga/outside/cores/
+# The clone of FFHT and what the benchmark of tools/circuits/fast/wht56/results/ffht builds beside it
+tools/circuits/fast/wht56/results/ffht/FFHT/
+tools/circuits/fast/wht56/results/ffht/style-generator/gen.py
+tools/circuits/fast/wht56/results/ffht/style-generator/gen/
+tools/circuits/fast/wht56/results/ffht/**/build*/
+tools/circuits/fast/wht56/results/ffht/fused-retiming/b/

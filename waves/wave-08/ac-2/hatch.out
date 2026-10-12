@@ -1,0 +1,19 @@
+== (a) best what-if saving over ALL classes with h <= 9 (every r from 1 to h-1), totals 1/K per pair per stage, each ONE block of rank f*h
+   3-stage B1 : f=1.00: 0.0450 (9,2) ; f=0.90: 0.0459 (9,3) ; f=0.76: 0.0507 (9,3) ; f=0.60: 0.0561 (9,3) ; f=0.51: 0.0592 (9,3) ; f=0.45: 0.0616 (9,8) ; f=0.40: 0.0826 (9,8) ; f=0.35: 0.1038 (9,8) ; f=0.30: 0.1253 (9,8)
+   3-stage C0 : f=1.00: 0.0553 (9,2) ; f=0.90: 0.0570 (9,3) ; f=0.76: 0.0628 (9,3) ; f=0.60: 0.0696 (9,3) ; f=0.51: 0.0735 (9,3) ; f=0.45: 0.0761 (9,3) ; f=0.40: 0.0783 (9,3) ; f=0.35: 0.0919 (9,8) ; f=0.30: 0.1114 (9,8)
+   5-stage B1 : f=1.00: 0.0397 (9,3) ; f=0.90: 0.0420 (9,3) ; f=0.76: 0.0454 (9,3) ; f=0.60: 0.0492 (9,3) ; f=0.51: 0.0668 (9,8) ; f=0.45: 0.0868 (9,8) ; f=0.40: 0.1037 (9,8) ; f=0.35: 0.1210 (9,8) ; f=0.30: 0.1387 (9,8)
+   5-stage A5 : f=1.00: 0.0298 (9,3) ; f=0.90: 0.0315 (9,3) ; f=0.76: 0.0340 (9,3) ; f=0.60: 0.0369 (9,3) ; f=0.51: 0.0566 (9,8) ; f=0.45: 0.0734 (9,8) ; f=0.40: 0.0876 (9,8) ; f=0.35: 0.1020 (9,8) ; f=0.30: 0.1167 (9,8)
+   the same restricted to r <= h/2:
+   3-stage B1 : f=1.00: 0.0450 (9,2) ; f=0.76: 0.0507 (9,3) ; f=0.51: 0.0592 (9,3) ; f=0.40: 0.0630 (9,3) ; f=0.30: 0.0667 (9,4) ; f=0.20: 0.0782 (9,4) ; f=0.10: 0.0918 (8,4)
+   3-stage C0 : f=1.00: 0.0553 (9,2) ; f=0.76: 0.0628 (9,3) ; f=0.51: 0.0735 (9,3) ; f=0.40: 0.0783 (9,3) ; f=0.30: 0.0828 (9,3) ; f=0.20: 0.0954 (9,4) ; f=0.10: 0.1103 (8,4)
+   5-stage B1 : f=1.00: 0.0397 (9,3) ; f=0.76: 0.0454 (9,3) ; f=0.51: 0.0514 (9,3) ; f=0.40: 0.0547 (9,4) ; f=0.30: 0.0630 (9,4) ; f=0.20: 0.0747 (8,4) ; f=0.10: 0.0853 (8,4)
+   5-stage A5 : f=1.00: 0.0298 (9,3) ; f=0.76: 0.0340 (9,3) ; f=0.51: 0.0385 (9,3) ; f=0.40: 0.0410 (9,4) ; f=0.30: 0.0471 (9,4) ; f=0.20: 0.0561 (8,4) ; f=0.10: 0.0638 (8,4)
+== (a2) a total is one block of rank r (it does only the moves the source skipped): best over h <= 9, and first width reaching 1e-1
+   3-stage B1 : best for h <= 9: 0.0654 at (9,3) ; first width with 1e-1: h = 47, r = 21 (0.1003)
+   3-stage C0 : best for h <= 9: 0.0813 at (9,3) ; first width with 1e-1: h = 18, r = 7 (0.1026)
+   5-stage B1 : best for h <= 9: 0.0558 at (9,3) ; first width with 1e-1: h = 183, r = 88 (0.1001)
+   5-stage A5 : best for h <= 9: 0.0418 at (9,3) ; first width with 1e-1: none below 400
+== (b) pair rule: quadratic forms Q on m bits (Q(0) = 0); active directions = non-zero z with Q(z) = 1; <Q,I> = Q(e_1)+...+Q(e_m) mod 2
+   m = 3: forms with <Q,I> = 1 by number of active directions: [(2, 12), (4, 16), (6, 4)] ; W = 2^(m-2) = 2 ; tight characters: 12 ; pairs of directions lying together in a tight character: 12 of 21
+   m = 4: forms with <Q,I> = 1 by number of active directions: [(4, 56), (6, 136), (8, 216), (10, 88), (12, 16)] ; W = 2^(m-2) = 4 ; tight characters: 56 ; pairs of directions lying together in a tight character: 105 of 105
+   m = 5: forms with <Q,I> = 1 by number of active directions: [(8, 240), (12, 4320), (16, 9152), (20, 2592), (24, 80)] ; W = 2^(m-2) = 8 ; tight characters: 240 ; pairs of directions lying together in a tight character: 465 of 465

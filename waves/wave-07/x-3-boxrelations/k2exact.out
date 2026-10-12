@@ -1,0 +1,5 @@
+(a) rotations, 2 nested calls: 200 exact cases right; (b) reflections, 2 nested calls: 200 exact cases right
+(c) each program applied to the other component is wrong in 398 of 400 cases
+(d) so(2): [J, X] by one call: 100 exact cases right
+(e) so(3): [S, X] by four calls: 100 exact cases right
+LIGHT label=x3-k2exact exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:47 cmd=python3 -B k2exact.py

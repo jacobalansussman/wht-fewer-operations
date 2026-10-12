@@ -1,0 +1,9 @@
+N=16  subset sums: off-diagonal non-zeros 65, Yates 32 gates
+anneal seed 1 steps 5000: best min(off(L), off(L^-1)) = 65  off(L)=65 off(L^-1)=65 order [12, 11, 7, 0, 1, 2, 6, 13, 5, 8, 3, 10, 14, 15, 4, 9]
+   D = ['1', '-2', '-2', '4', '-2', '-2', '4', '-4', '4', '-4', '4', '8', '-8', '8', '-8', '16']
+N=16  subset sums: off-diagonal non-zeros 65, Yates 32 gates
+anneal seed 2 steps 5000: best min(off(L), off(L^-1)) = 65  off(L)=65 off(L^-1)=65 order [6, 7, 15, 14, 4, 0, 12, 8, 5, 13, 1, 9, 11, 10, 3, 2]
+   D = ['1', '-2', '2', '-4', '-2', '2', '4', '-4', '4', '-8', '-4', '8', '-4', '8', '8', '-16']
+N=16  subset sums: off-diagonal non-zeros 65, Yates 32 gates
+anneal seed 3 steps 5000: best min(off(L), off(L^-1)) = 65  off(L)=65 off(L^-1)=65 order [3, 13, 6, 10, 11, 8, 1, 12, 7, 4, 9, 15, 2, 5, 14, 0]
+   D = ['1', '-2', '2', '2', '-2', '-4', '-4', '4', '-4', '-4', '4', '8', '-8', '8', '-8', '16']

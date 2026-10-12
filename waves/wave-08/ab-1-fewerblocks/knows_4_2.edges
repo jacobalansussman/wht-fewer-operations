@@ -1,0 +1,31 @@
+20 10
+t 0 P_odd,_P-perp_odd
+t 1 P_odd,_P-perp_alternating
+t 2 P_alternating,_P-perp_odd
+t 3 P_odd,_P-perp_odd
+t 4 P_alternating,_P-perp_odd
+t 5 P_odd,_P-perp_odd
+t 6 P_odd,_P-perp_alternating
+t 7 P_odd,_P-perp_odd
+t 8 P_odd,_P-perp_odd
+t 9 P_odd,_P-perp_odd
+t 10 P_odd,_P-perp_odd
+t 11 P_alternating,_P-perp_odd
+t 12 P_odd,_P-perp_alternating
+t 13 P_odd,_P-perp_odd
+t 14 P_odd,_P-perp_odd
+t 15 P_odd,_P-perp_alternating
+t 16 P_odd,_P-perp_odd
+t 17 P_alternating,_P-perp_odd
+t 18 P_odd,_P-perp_odd
+t 19 P_odd,_P-perp_odd
+0 19
+1 17
+2 12
+3 8
+4 15
+5 7
+6 11
+9 13
+10 18
+14 16

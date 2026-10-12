@@ -1,0 +1,12 @@
+class (9,1) type gen: n = 255, degree 128; eigenvalue: multiplicity  -8: 135 ; 8: 119 ; 128: 1
+   M = (A + 8 I)/8 is a symmetric positive scatter of rank n - f = 120 : kappa = 2.1250 ; (three-stage gain needs > 13.500, five-stage > 11.250)
+class (7,1) type gen: n = 63, degree 32; eigenvalue: multiplicity  -4: 35 ; 4: 27 ; 32: 1
+   M = (A + 4 I)/4 is a symmetric positive scatter of rank n - f = 28 : kappa = 2.2500 ; (three-stage gain needs > 10.500, five-stage > 8.750)
+class (7,2) type alt: n = 336, degree 20; eigenvalue: multiplicity  -8: 27 ; -4: 105 ; 2: 168 ; 8: 35 ; 20: 1
+   M = (A + 8 I)/8 is a symmetric positive scatter of rank n - f = 309 : kappa = 1.0874 ; (three-stage gain needs > 5.250, five-stage > 4.375)
+class (9,2) type alt: n = 5440, degree 336; eigenvalue: multiplicity  -64: 119 ; -16: 1785 ; 8: 3400 ; 64: 135 ; 336: 1
+   M = (A + 64 I)/64 is a symmetric positive scatter of rank n - f = 5321 : kappa = 1.0224 ; (three-stage gain needs > 6.750, five-stage > 5.625)
+class (7,2) type gen: n = 1008, degree 60; eigenvalue: multiplicity  -18.4222: 35 ; -14.3303: 27 ; -8: 210 ; -2: 168 ; 4: 505 ; 10.4222: 35 ; 22.3303: 27 ; 60: 1
+   M = (A + 18.4222 I)/18.4222 is a symmetric positive scatter of rank n - f = 973 : kappa = 1.0360 ; (three-stage gain needs > 5.250, five-stage > 4.375)
+class (6,2) type gen: n = 240, degree 16; eigenvalue: multiplicity  -8: 10 ; -6.74456: 15 ; -2: 114 ; 2: 30 ; 4: 40 ; 4.74456: 15 ; 6: 9 ; 8: 6 ; 16: 1
+   M = (A + 8 I)/8 is a symmetric positive scatter of rank n - f = 230 : kappa = 1.0435 ; (three-stage gain needs > 4.500, five-stage > 3.750)

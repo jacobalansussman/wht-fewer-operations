@@ -1,0 +1,85 @@
+N = 32, reduced: 11968 tight wires, by level [32, 992, 4960, 4960, 992, 32]
+  ordered (u, v, w) with w = p u + q v tight, w not parallel to u or v, by levels (level u, level v, level w): count
+   (0, 0, 1): 62
+   (0, 1, 0): 62
+   (0, 1, 1): 62
+   (1, 0, 0): 2
+   (1, 0, 1): 2
+   (1, 1, 0): 2
+   (1, 1, 1): 120
+   (1, 1, 2): 30
+   (1, 2, 1): 30
+   (1, 2, 2): 30
+   (2, 1, 1): 6
+   (2, 1, 2): 6
+   (2, 2, 1): 6
+   (2, 2, 2): 168
+   (2, 2, 3): 14
+   (2, 3, 2): 14
+   (2, 3, 3): 14
+   (3, 2, 2): 14
+   (3, 2, 3): 14
+   (3, 3, 2): 14
+   (3, 3, 3): 168
+   (3, 3, 4): 6
+   (3, 4, 3): 6
+   (3, 4, 4): 6
+   (4, 3, 3): 30
+   (4, 3, 4): 30
+   (4, 4, 3): 30
+   (4, 4, 4): 120
+   (4, 4, 5): 2
+   (4, 5, 4): 2
+   (4, 5, 5): 2
+   (5, 4, 4): 62
+   (5, 4, 5): 62
+   (5, 5, 4): 62
+  shapes (level v - level u, level w - level u): [((-1, -1), 114), ((-1, 0), 114), ((0, -1), 114), ((0, 0), 576), ((0, 1), 114), ((1, 0), 114), ((1, 1), 114)]
+  triples whose levels differ by more than 1: 0
+LIGHT label=a2-tr5 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:25:50 cmd=python3 -B tight.py triples 5 reduced
+N = 64, reduced: 180800 tight wires, by level [64, 4032, 41664, 89280, 41664, 4032, 64]
+  ordered (u, v, w) with w = p u + q v tight, w not parallel to u or v, by levels (level u, level v, level w): count
+   (0, 0, 1): 126
+   (0, 1, 0): 126
+   (0, 1, 1): 126
+   (1, 0, 0): 2
+   (1, 0, 1): 2
+   (1, 1, 0): 2
+   (1, 1, 1): 248
+   (1, 1, 2): 62
+   (1, 2, 1): 62
+   (1, 2, 2): 62
+   (2, 1, 1): 6
+   (2, 1, 2): 6
+   (2, 2, 1): 6
+   (2, 2, 2): 360
+   (2, 2, 3): 30
+   (2, 3, 2): 30
+   (2, 3, 3): 30
+   (3, 2, 2): 14
+   (3, 2, 3): 14
+   (3, 3, 2): 14
+   (3, 3, 3): 392
+   (3, 3, 4): 14
+   (3, 4, 3): 14
+   (3, 4, 4): 14
+   (4, 3, 3): 30
+   (4, 3, 4): 30
+   (4, 4, 3): 30
+   (4, 4, 4): 360
+   (4, 4, 5): 6
+   (4, 5, 4): 6
+   (4, 5, 5): 6
+   (5, 4, 4): 62
+   (5, 4, 5): 62
+   (5, 5, 4): 62
+   (5, 5, 5): 248
+   (5, 5, 6): 2
+   (5, 6, 5): 2
+   (5, 6, 6): 2
+   (6, 5, 5): 126
+   (6, 5, 6): 126
+   (6, 6, 5): 126
+  shapes (level v - level u, level w - level u): [((-1, -1), 240), ((-1, 0), 240), ((0, -1), 240), ((0, 0), 1608), ((0, 1), 240), ((1, 0), 240), ((1, 1), 240)]
+  triples whose levels differ by more than 1: 0
+LIGHT label=a2-tr6 exit=0 time=15s waited=0s peak_rss_mb=51 peak_footprint_mb=48 lowest_cap_mb=1500 stopped=- start=22:25:51 cmd=python3 -B tight.py triples 6 reduced

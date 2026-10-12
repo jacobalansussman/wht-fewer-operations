@@ -1,0 +1,5 @@
+m = 4, W = 15, 59 moves; tight selections 12; largest joined set 15
+  forms with q(I) = 0 at equality in the zero-form lemma: 66
+  after merging sets with the same span: 15 sets (17 merges)
+  -> no contradiction found at second order (proves nothing)
+LIGHT label=h2-second15 exit=0 time=1s waited=4s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:04:51 cmd=not-in-this-repository/wht33/fatlabels/venv/bin/python -B second.py 4 15 0001:4 0010:4 0011:4 0100:4 0101:4 0110:4 0111:4 1000:4 1001:4 1010:4 1011:4 1100:4 1101:4 1110:4 1111:3

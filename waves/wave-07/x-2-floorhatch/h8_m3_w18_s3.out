@@ -1,0 +1,2 @@
+N=8 mode=3 W=18 seed=3: least number of underivable wires 2 after 1500000 moves
+LIGHT label=x2-h8m3 exit=0 time=13s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:24:01 cmd=./hatch 8 3 18 1500000 3

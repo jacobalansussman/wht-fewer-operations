@@ -1,0 +1,26 @@
+sanity of the closed form against my built circuit (check.py, run3.out): 3 real colours of 4, s = 1, k = 13:
+   main terms 24377 (built: outputs 8190 + A 6064 + B 5052 + B trivial 4083 = 23389, two outputs need no gate) ; bound on coefficient gates 2113 (built: see run3.out)
+
+degree-2 law of ad-6 at the sizes used: E2(j)/2^j = 400: 1.030518, 1024: 1.012028, 2046: 1.007890, 2058: 1.007889, 2060: 1.007889
+
+design                                            k tower, textbook inside tower, ad-6 inside     best without tower    
+2 colours, s=2                                   11 3.366699               3.348145               2.810059                 coefficient gates at most 861 = 4.2e-01 N
+3 real colours of 4, s=1                         13 3.233643               3.075439               2.692993                 coefficient gates at most 2.11e+03 = 2.6e-01 N
+3 real colours of 4, s=1, +50 bits               63 3.000000               2.258183               2.151072                 coefficient gates at most 7.24e+04 = 7.8e-15 N
+3 real colours of 4, s=2                       2060 2.625000               1.942924               2.007889                 coefficient gates at most 1.6e+09 = 0.0e+00 N
+3 real colours of 4, s=2, +4 bits              2064 2.625000               1.942924               2.007889                 coefficient gates at most 1.61e+09 = 0.0e+00 N
+4 colours, s=1                                 2061 2.750000               2.005917               2.007889                 coefficient gates at most 1.77e+09 = 0.0e+00 N
+4 colours, s=1, +3 bits                        2064 2.750000               2.005917               2.007889                 coefficient gates at most 1.78e+09 = 0.0e+00 N
+
+in the limit (inner costs exactly 1 and 2 gates per point, coefficient gates dropped), gates/N of a tower with Lr real colours of 2^t and s-bit atoms:
+   1 + 2/2^t + (Lr/2^s + (2^t - Lr)) / 2^t
+   Lr= 2 of  2, s=2 : 9/4 = 2.2500   needs k = 11
+   Lr= 3 of  4, s=1 : 17/8 = 2.1250   needs k = 13
+   Lr= 3 of  4, s=2 : 31/16 = 1.9375   needs k = 2060
+   Lr= 3 of  4, s=3 : 59/32 = 1.8438   needs k = 402653213
+   Lr= 4 of  4, s=1 : 2 = 2.0000   needs k = 2061
+   Lr= 4 of  4, s=2 : 7/4 = 1.7500   needs a tower of bits
+   Lr= 4 of  4, s=3 : 13/8 = 1.6250   needs a tower of bits
+   Lr= 8 of  8, s=3 : 11/8 = 1.3750   needs a tower of bits
+   Lr=16 of 16, s=4 : 19/16 = 1.1875   needs a tower of bits
+LIGHT label=ai0-big exit=0 time=9s waited=0s peak_rss_mb=14 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=09:38:31 cmd=python3 -B big.py

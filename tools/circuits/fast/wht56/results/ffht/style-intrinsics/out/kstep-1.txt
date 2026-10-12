@@ -1,0 +1,95 @@
+## locked_run.sh: taskset -c 1 build3/harness_k time -t both -k 11 11 -r 9
+## pinned to processor 1 (siblings: 1,5)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 17:52:53 UTC; uptime: 17:52:53 up 1 day, 1 min,  0 user,  load average: 4.50, 4.55, 4.71
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   0   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+# harness time; 2026-10-11 17:52:53 UTC; host (removed); load 4.50,4.55,4.71
+# compiler: gcc 13.3.0
+# harness, variants.c and our plain C built with: gcc -O3 -march=native; whti.c: gcc -O3 -march=native -ffp-contract=off
+# naive.c built with: (not in this build)
+# FFHT commit fba727a3ff72c862260460631ae1cc8e3e44e861; its fht.o built by its own Makefile with: gcc -O3 -march=native -std=c99 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
+# pinned: yes; processor 1; its hyper-thread sibling 5; processors allowed 1
+# times: nanoseconds per point for one transform, wall clock; 9 repeats; a loop aims at 0.25 s and counts only from 0.20 s
+# a size is timed again (up to 4 attempts) when the hyper-thread sibling was busy for more than 25 % of it
+B type=float k=11 n=2048 bytes=8192 R=20 R_overflow=20 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=1 load=4.46,4.54,4.71
+T type=float k=11 variant=ffht min=0.5483 med=0.5551 max=0.5898 net_min=0.5444 net_med=0.5512 spread_med_pct=1.2 spread_max_pct=7.6 ns_per_transform_min=1122.85 G=11166 R=20 loop_s_min=0.251 redone=0 ivcsw=4
+T type=float k=11 variant=T_3 min=0.0902 med=0.0910 max=0.0926 net_min=0.0863 net_med=0.0871 spread_med_pct=0.8 spread_max_pct=2.6 ns_per_transform_min=184.83 G=67519 R=20 loop_s_min=0.250 redone=0 ivcsw=2
+T type=float k=11 variant=N_3 min=0.1047 med=0.1057 max=0.1155 net_min=0.1008 net_med=0.1018 spread_med_pct=1.0 spread_max_pct=10.4 ns_per_transform_min=214.38 G=57805 R=20 loop_s_min=0.248 redone=0 ivcsw=4
+T type=float k=11 variant=NF_3 min=0.0938 med=0.0953 max=0.0991 net_min=0.0899 net_med=0.0914 spread_med_pct=1.6 spread_max_pct=5.6 ns_per_transform_min=192.15 G=63825 R=20 loop_s_min=0.245 redone=0 ivcsw=1
+T type=float k=11 variant=G_3 min=0.0957 med=0.0966 max=0.1249 net_min=0.0918 net_med=0.0927 spread_med_pct=0.9 spread_max_pct=30.4 ns_per_transform_min=196.07 G=60653 R=20 loop_s_min=0.238 redone=0 ivcsw=2
+T type=float k=11 variant=Tp_3 min=0.0887 med=0.0899 max=0.1064 net_min=0.0848 net_med=0.0860 spread_med_pct=1.3 spread_max_pct=19.9 ns_per_transform_min=181.75 G=67780 R=20 loop_s_min=0.246 redone=0 ivcsw=3
+T type=float k=11 variant=Np_3 min=0.1058 med=0.1067 max=0.1355 net_min=0.1019 net_med=0.1028 spread_med_pct=0.9 spread_max_pct=28.1 ns_per_transform_min=216.67 G=54547 R=20 loop_s_min=0.236 redone=0 ivcsw=1
+T type=float k=11 variant=NFp_3 min=0.0959 med=0.0974 max=0.1121 net_min=0.0920 net_med=0.0935 spread_med_pct=1.5 spread_max_pct=16.9 ns_per_transform_min=196.45 G=63325 R=20 loop_s_min=0.249 redone=0 ivcsw=6
+T type=float k=11 variant=Gp_3 min=0.0961 med=0.0987 max=0.1034 net_min=0.0922 net_med=0.0948 spread_med_pct=2.6 spread_max_pct=7.5 ns_per_transform_min=196.89 G=60732 R=20 loop_s_min=0.239 redone=0 ivcsw=2
+T type=float k=11 variant=Tw_3 min=0.0894 med=0.0903 max=0.0961 net_min=0.0855 net_med=0.0864 spread_med_pct=0.9 spread_max_pct=7.4 ns_per_transform_min=183.18 G=69153 R=20 loop_s_min=0.253 redone=0 ivcsw=6
+T type=float k=11 variant=Nw_3 min=0.1021 med=0.1027 max=0.1036 net_min=0.0982 net_med=0.0988 spread_med_pct=0.6 spread_max_pct=1.5 ns_per_transform_min=209.06 G=50916 R=20 loop_s_min=0.213 redone=0 ivcsw=1
+T type=float k=11 variant=NFw_3 min=0.0920 med=0.0925 max=0.1136 net_min=0.0881 net_med=0.0886 spread_med_pct=0.6 spread_max_pct=23.5 ns_per_transform_min=188.41 G=67961 R=20 loop_s_min=0.256 redone=0 ivcsw=2
+T type=float k=11 variant=Gw_3 min=0.0907 med=0.0914 max=0.1075 net_min=0.0868 net_med=0.0875 spread_med_pct=0.8 spread_max_pct=18.6 ns_per_transform_min=185.73 G=68921 R=20 loop_s_min=0.256 redone=0 ivcsw=4
+T type=float k=11 variant=Twp_3 min=0.0891 med=0.0905 max=0.1193 net_min=0.0852 net_med=0.0866 spread_med_pct=1.5 spread_max_pct=33.8 ns_per_transform_min=182.57 G=67408 R=20 loop_s_min=0.246 redone=0 ivcsw=3
+T type=float k=11 variant=Nwp_3 min=0.1033 med=0.1043 max=0.1211 net_min=0.0994 net_med=0.1004 spread_med_pct=1.0 spread_max_pct=17.2 ns_per_transform_min=211.65 G=58158 R=20 loop_s_min=0.246 redone=0 ivcsw=5
+T type=float k=11 variant=NFwp_3 min=0.0944 med=0.0952 max=0.1087 net_min=0.0905 net_med=0.0913 spread_med_pct=0.8 spread_max_pct=15.2 ns_per_transform_min=193.33 G=65373 R=20 loop_s_min=0.253 redone=0 ivcsw=6
+T type=float k=11 variant=Gwp_3 min=0.0924 med=0.0949 max=0.1217 net_min=0.0885 net_med=0.0910 spread_med_pct=2.8 spread_max_pct=31.7 ns_per_transform_min=189.23 G=67274 R=20 loop_s_min=0.255 redone=0 ivcsw=2
+T type=float k=11 variant=T_1 min=0.3036 med=0.3100 max=0.3837 net_min=0.2997 net_med=0.3061 spread_med_pct=2.1 spread_max_pct=26.4 ns_per_transform_min=621.84 G=19965 R=20 loop_s_min=0.248 redone=0 ivcsw=5
+T type=float k=11 variant=N_1 min=0.3355 med=0.3373 max=0.4581 net_min=0.3316 net_med=0.3334 spread_med_pct=0.6 spread_max_pct=36.6 ns_per_transform_min=687.04 G=17999 R=20 loop_s_min=0.247 redone=0 ivcsw=0
+T type=float k=11 variant=NF_1 min=0.3221 med=0.3262 max=0.4297 net_min=0.3182 net_med=0.3223 spread_med_pct=1.3 spread_max_pct=33.4 ns_per_transform_min=659.73 G=18424 R=20 loop_s_min=0.243 redone=0 ivcsw=3
+T type=float k=11 variant=G_1 min=0.3282 med=0.3318 max=0.3879 net_min=0.3243 net_med=0.3279 spread_med_pct=1.1 spread_max_pct=18.2 ns_per_transform_min=672.16 G=18560 R=20 loop_s_min=0.250 redone=0 ivcsw=4
+T type=float k=11 variant=Tp_1 min=0.2904 med=0.2949 max=0.3435 net_min=0.2865 net_med=0.2910 spread_med_pct=1.6 spread_max_pct=18.3 ns_per_transform_min=594.72 G=20396 R=20 loop_s_min=0.243 redone=0 ivcsw=3
+T type=float k=11 variant=Np_1 min=0.3196 med=0.3251 max=0.3593 net_min=0.3157 net_med=0.3212 spread_med_pct=1.7 spread_max_pct=12.4 ns_per_transform_min=654.63 G=18897 R=20 loop_s_min=0.247 redone=0 ivcsw=6
+T type=float k=11 variant=NFp_1 min=0.3083 med=0.3148 max=0.3569 net_min=0.3044 net_med=0.3109 spread_med_pct=2.1 spread_max_pct=15.7 ns_per_transform_min=631.49 G=19051 R=20 loop_s_min=0.241 redone=0 ivcsw=3
+T type=float k=11 variant=Gp_1 min=0.3124 med=0.3183 max=0.3765 net_min=0.3085 net_med=0.3144 spread_med_pct=1.9 spread_max_pct=20.5 ns_per_transform_min=639.87 G=18966 R=20 loop_s_min=0.243 redone=0 ivcsw=5
+T type=float k=11 variant=Tw_1 min=0.2626 med=0.2651 max=0.3939 net_min=0.2587 net_med=0.2612 spread_med_pct=1.0 spread_max_pct=50.0 ns_per_transform_min=537.78 G=22706 R=20 loop_s_min=0.244 redone=0 ivcsw=3
+T type=float k=11 variant=Nw_1 min=0.2676 med=0.2698 max=0.3733 net_min=0.2636 net_med=0.2659 spread_med_pct=0.8 spread_max_pct=39.5 ns_per_transform_min=547.95 G=22385 R=20 loop_s_min=0.245 redone=0 ivcsw=1
+T type=float k=11 variant=NFw_1 min=0.2600 med=0.2619 max=0.3498 net_min=0.2561 net_med=0.2580 spread_med_pct=0.7 spread_max_pct=34.5 ns_per_transform_min=532.54 G=23039 R=20 loop_s_min=0.245 redone=0 ivcsw=1
+T type=float k=11 variant=Gw_1 min=0.2682 med=0.2747 max=0.3257 net_min=0.2643 net_med=0.2708 spread_med_pct=2.4 spread_max_pct=21.4 ns_per_transform_min=549.27 G=22427 R=20 loop_s_min=0.246 redone=0 ivcsw=10
+T type=float k=11 variant=Twp_1 min=0.2481 med=0.2497 max=0.2907 net_min=0.2442 net_med=0.2458 spread_med_pct=0.6 spread_max_pct=17.2 ns_per_transform_min=508.13 G=20286 R=20 loop_s_min=0.206 redone=0 ivcsw=0
+T type=float k=11 variant=Nwp_1 min=0.2705 med=0.2710 max=0.3172 net_min=0.2666 net_med=0.2670 spread_med_pct=0.2 spread_max_pct=17.3 ns_per_transform_min=553.93 G=22007 R=20 loop_s_min=0.244 redone=0 ivcsw=2
+T type=float k=11 variant=NFwp_1 min=0.2610 med=0.2631 max=0.3022 net_min=0.2571 net_med=0.2592 spread_med_pct=0.8 spread_max_pct=15.8 ns_per_transform_min=534.53 G=23506 R=20 loop_s_min=0.251 redone=0 ivcsw=6
+T type=float k=11 variant=Gwp_1 min=0.2673 med=0.2726 max=0.3068 net_min=0.2634 net_med=0.2687 spread_med_pct=2.0 spread_max_pct=14.8 ns_per_transform_min=547.50 G=22434 R=20 loop_s_min=0.246 redone=0 ivcsw=5
+E type=float k=11 variant=empty min=0.0039 med=0.0039 max=0.0051 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=30.5 ns_per_transform_min=8.00 G=1286989 R=20 loop_s_min=0.206 redone=0 ivcsw=1
+A type=float k=11 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=11.6 allcpus_busy_pct=56.0 wall_s=77.9 attempt=1 cpu=1 load=4.65,4.59,4.72
+B type=double k=11 n=2048 bytes=16384 R=180 R_overflow=180 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 attempt=1 load=4.68,4.60,4.72
+T type=double k=11 variant=ffht min=0.8959 med=0.9285 max=1.0587 net_min=0.8943 net_med=0.9269 spread_med_pct=3.6 spread_max_pct=18.2 ns_per_transform_min=1834.77 G=745 R=180 loop_s_min=0.246 redone=0 ivcsw=2
+T type=double k=11 variant=T_3 min=0.1737 med=0.1816 max=0.2008 net_min=0.1721 net_med=0.1800 spread_med_pct=4.6 spread_max_pct=15.7 ns_per_transform_min=355.65 G=3824 R=180 loop_s_min=0.245 redone=0 ivcsw=7
+T type=double k=11 variant=N_3 min=0.2026 med=0.2082 max=0.2467 net_min=0.2011 net_med=0.2066 spread_med_pct=2.7 spread_max_pct=21.8 ns_per_transform_min=415.01 G=3645 R=180 loop_s_min=0.236 redone=1 ivcsw=8
+T type=double k=11 variant=NF_3 min=0.1809 med=0.1848 max=0.1964 net_min=0.1793 net_med=0.1832 spread_med_pct=2.1 spread_max_pct=8.6 ns_per_transform_min=370.48 G=3189 R=180 loop_s_min=0.213 redone=0 ivcsw=6
+T type=double k=11 variant=G_3 min=0.1848 med=0.1862 max=0.2171 net_min=0.1832 net_med=0.1846 spread_med_pct=0.8 spread_max_pct=17.5 ns_per_transform_min=378.48 G=3215 R=180 loop_s_min=0.219 redone=0 ivcsw=1
+T type=double k=11 variant=Tp_3 min=0.1719 med=0.1744 max=0.1987 net_min=0.1703 net_med=0.1728 spread_med_pct=1.4 spread_max_pct=15.6 ns_per_transform_min=352.11 G=3318 R=180 loop_s_min=0.210 redone=0 ivcsw=4
+T type=double k=11 variant=Np_3 min=0.2034 med=0.2055 max=0.2310 net_min=0.2018 net_med=0.2039 spread_med_pct=1.0 spread_max_pct=13.6 ns_per_transform_min=416.62 G=3548 R=180 loop_s_min=0.216 redone=1 ivcsw=5
+T type=double k=11 variant=NFp_3 min=0.1843 med=0.1875 max=0.2389 net_min=0.1827 net_med=0.1859 spread_med_pct=1.7 spread_max_pct=29.6 ns_per_transform_min=377.46 G=3686 R=180 loop_s_min=0.250 redone=0 ivcsw=2
+T type=double k=11 variant=Gp_3 min=0.1837 med=0.1861 max=0.2169 net_min=0.1821 net_med=0.1846 spread_med_pct=1.3 spread_max_pct=18.1 ns_per_transform_min=376.14 G=3639 R=180 loop_s_min=0.246 redone=0 ivcsw=4
+T type=double k=11 variant=Tw_3 min=0.1716 med=0.1735 max=0.2125 net_min=0.1700 net_med=0.1719 spread_med_pct=1.1 spread_max_pct=23.8 ns_per_transform_min=351.47 G=3962 R=180 loop_s_min=0.251 redone=0 ivcsw=1
+T type=double k=11 variant=Nw_3 min=0.1970 med=0.1998 max=0.2085 net_min=0.1954 net_med=0.1982 spread_med_pct=1.4 spread_max_pct=5.8 ns_per_transform_min=403.51 G=3457 R=180 loop_s_min=0.251 redone=0 ivcsw=3
+T type=double k=11 variant=NFw_3 min=0.1761 med=0.1781 max=0.2130 net_min=0.1745 net_med=0.1766 spread_med_pct=1.2 spread_max_pct=21.0 ns_per_transform_min=360.60 G=3807 R=180 loop_s_min=0.247 redone=0 ivcsw=1
+T type=double k=11 variant=Gw_3 min=0.1748 med=0.1837 max=0.1935 net_min=0.1732 net_med=0.1821 spread_med_pct=5.1 spread_max_pct=10.7 ns_per_transform_min=357.93 G=3591 R=180 loop_s_min=0.231 redone=0 ivcsw=4
+T type=double k=11 variant=Twp_3 min=0.1712 med=0.1797 max=0.2053 net_min=0.1696 net_med=0.1781 spread_med_pct=5.0 spread_max_pct=19.9 ns_per_transform_min=350.64 G=3891 R=180 loop_s_min=0.246 redone=0 ivcsw=6
+T type=double k=11 variant=Nwp_3 min=0.2004 med=0.2044 max=0.2360 net_min=0.1988 net_med=0.2028 spread_med_pct=2.0 spread_max_pct=17.7 ns_per_transform_min=410.48 G=3337 R=180 loop_s_min=0.247 redone=0 ivcsw=4
+T type=double k=11 variant=NFwp_3 min=0.1826 med=0.1880 max=0.2254 net_min=0.1810 net_med=0.1865 spread_med_pct=3.0 spread_max_pct=23.5 ns_per_transform_min=373.94 G=3741 R=180 loop_s_min=0.252 redone=0 ivcsw=7
+T type=double k=11 variant=Gwp_3 min=0.1768 med=0.1832 max=0.1972 net_min=0.1752 net_med=0.1816 spread_med_pct=3.6 spread_max_pct=11.5 ns_per_transform_min=362.15 G=3820 R=180 loop_s_min=0.249 redone=0 ivcsw=2
+T type=double k=11 variant=T_1 min=0.4219 med=0.4305 max=0.4810 net_min=0.4204 net_med=0.4289 spread_med_pct=2.0 spread_max_pct=14.0 ns_per_transform_min=864.13 G=1592 R=180 loop_s_min=0.248 redone=0 ivcsw=2
+T type=double k=11 variant=N_1 min=0.4856 med=0.4972 max=0.5885 net_min=0.4840 net_med=0.4957 spread_med_pct=2.4 spread_max_pct=21.2 ns_per_transform_min=994.43 G=1369 R=180 loop_s_min=0.245 redone=0 ivcsw=5
+T type=double k=11 variant=NF_1 min=0.4621 med=0.4676 max=0.5229 net_min=0.4605 net_med=0.4660 spread_med_pct=1.2 spread_max_pct=13.2 ns_per_transform_min=946.34 G=1335 R=180 loop_s_min=0.227 redone=0 ivcsw=3
+T type=double k=11 variant=G_1 min=0.4566 med=0.4639 max=0.5284 net_min=0.4550 net_med=0.4623 spread_med_pct=1.6 spread_max_pct=15.7 ns_per_transform_min=935.05 G=1402 R=180 loop_s_min=0.236 redone=0 ivcsw=3
+T type=double k=11 variant=Tp_1 min=0.4174 med=0.4203 max=0.4842 net_min=0.4159 net_med=0.4187 spread_med_pct=0.7 spread_max_pct=16.0 ns_per_transform_min=854.92 G=1478 R=180 loop_s_min=0.227 redone=0 ivcsw=6
+T type=double k=11 variant=Np_1 min=0.4575 med=0.4661 max=0.5818 net_min=0.4560 net_med=0.4645 spread_med_pct=1.9 spread_max_pct=27.2 ns_per_transform_min=937.04 G=1339 R=180 loop_s_min=0.226 redone=0 ivcsw=4
+T type=double k=11 variant=NFp_1 min=0.4410 med=0.4466 max=0.6172 net_min=0.4395 net_med=0.4450 spread_med_pct=1.3 spread_max_pct=39.9 ns_per_transform_min=903.24 G=1399 R=180 loop_s_min=0.227 redone=0 ivcsw=6
+T type=double k=11 variant=Gp_1 min=0.4394 med=0.4443 max=0.5102 net_min=0.4378 net_med=0.4427 spread_med_pct=1.1 spread_max_pct=16.1 ns_per_transform_min=899.82 G=1438 R=180 loop_s_min=0.233 redone=0 ivcsw=4
+T type=double k=11 variant=Tw_1 min=0.3779 med=0.3916 max=0.5727 net_min=0.3763 net_med=0.3900 spread_med_pct=3.6 spread_max_pct=51.5 ns_per_transform_min=774.01 G=1564 R=180 loop_s_min=0.218 redone=0 ivcsw=2
+T type=double k=11 variant=Nw_1 min=0.4085 med=0.4115 max=0.5138 net_min=0.4069 net_med=0.4100 spread_med_pct=0.7 spread_max_pct=25.8 ns_per_transform_min=836.67 G=1518 R=180 loop_s_min=0.229 redone=0 ivcsw=2
+T type=double k=11 variant=NFw_1 min=0.3823 med=0.3862 max=0.4544 net_min=0.3807 net_med=0.3847 spread_med_pct=1.0 spread_max_pct=18.8 ns_per_transform_min=783.01 G=1630 R=180 loop_s_min=0.230 redone=0 ivcsw=2
+T type=double k=11 variant=Gw_1 min=0.3861 med=0.3993 max=0.4533 net_min=0.3845 net_med=0.3977 spread_med_pct=3.4 spread_max_pct=17.4 ns_per_transform_min=790.80 G=1548 R=180 loop_s_min=0.220 redone=0 ivcsw=4
+T type=double k=11 variant=Twp_1 min=0.3780 med=0.3835 max=0.4404 net_min=0.3764 net_med=0.3819 spread_med_pct=1.5 spread_max_pct=16.5 ns_per_transform_min=774.17 G=1585 R=180 loop_s_min=0.221 redone=0 ivcsw=1
+T type=double k=11 variant=Nwp_1 min=0.4100 med=0.4136 max=0.5715 net_min=0.4084 net_med=0.4120 spread_med_pct=0.9 spread_max_pct=39.4 ns_per_transform_min=839.62 G=1480 R=180 loop_s_min=0.224 redone=0 ivcsw=3
+T type=double k=11 variant=NFwp_1 min=0.3901 med=0.3970 max=0.5754 net_min=0.3885 net_med=0.3954 spread_med_pct=1.8 spread_max_pct=47.5 ns_per_transform_min=798.97 G=1565 R=180 loop_s_min=0.225 redone=0 ivcsw=3
+T type=double k=11 variant=Gwp_1 min=0.3944 med=0.3980 max=0.4851 net_min=0.3929 net_med=0.3964 spread_med_pct=0.9 spread_max_pct=23.0 ns_per_transform_min=807.82 G=1596 R=180 loop_s_min=0.232 redone=0 ivcsw=3
+E type=double k=11 variant=empty min=0.0016 med=0.0016 max=0.0018 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=13.7 ns_per_transform_min=3.25 G=404983 R=180 loop_s_min=0.237 redone=0 ivcsw=1
+A type=double k=11 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=10.4 allcpus_busy_pct=56.4 wall_s=76.3 attempt=1 cpu=1 load=4.45,4.54,4.69
+# done
+## exit code 0
+## after: 2026-10-11 17:55:31 UTC; uptime: 17:55:31 up 1 day, 3 min,  0 user,  load average: 4.45, 4.54, 4.69
+## after: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   6   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   7   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334

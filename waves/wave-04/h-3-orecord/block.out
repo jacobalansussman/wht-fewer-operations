@@ -1,0 +1,9 @@
+all characters trivial on bits 0,1 (N/4 centres) N=8   centres=2  orthogonal=True  non-zeros per row of R: [4]  entries of R: ['-1/2', '0', '1/2']  rows of H kept: 0  row supports of H*R: [2]
+one centre                                     N=8   centres=1  orthogonal=True  non-zeros per row of R: [8]  entries of R: ['-1/4', '1/4', '3/4']  rows of H kept: 4  row supports of H*R: [2, 8]
+all characters trivial on bits 0,1 (N/4 centres) N=16  centres=4  orthogonal=True  non-zeros per row of R: [4]  entries of R: ['-1/2', '0', '1/2']  rows of H kept: 0  row supports of H*R: [4]
+one centre                                     N=16  centres=1  orthogonal=True  non-zeros per row of R: [16]  entries of R: ['-1/8', '1/8', '7/8']  rows of H kept: 12  row supports of H*R: [4, 16]
+characters trivial on bits 0,1,2 (N/8 centres) N=16  centres=2  orthogonal=True  non-zeros per row of R: [8]  entries of R: ['-1/4', '0', '1/4', '3/4']  rows of H kept: 8  row supports of H*R: [4, 16]
+all characters trivial on bits 0,1 (N/4 centres) N=32  centres=8  orthogonal=True  non-zeros per row of R: [4]  entries of R: ['-1/2', '0', '1/2']  rows of H kept: 0  row supports of H*R: [8]
+one centre                                     N=32  centres=1  orthogonal=True  non-zeros per row of R: [32]  entries of R: ['-1/16', '1/16', '15/16']  rows of H kept: 28  row supports of H*R: [8, 32]
+characters trivial on bits 0,1,2 (N/8 centres) N=32  centres=4  orthogonal=True  non-zeros per row of R: [8]  entries of R: ['-1/4', '0', '1/4', '3/4']  rows of H kept: 16  row supports of H*R: [8, 32]
+LIGHT label=h3-block exit=0 time=1s waited=38s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:30 cmd=python3 -B block.py

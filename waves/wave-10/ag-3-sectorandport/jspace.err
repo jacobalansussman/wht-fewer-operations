@@ -1,0 +1,1 @@
+LIGHT label=ag3-jspace exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:49:47 cmd=python3 -B jspace.py 2,1,1 2,2,1 2,3,1 3,2,1 3,2,7

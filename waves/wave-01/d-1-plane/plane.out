@@ -1,0 +1,44 @@
+==== N=4 q=2 ====
+lines: 6  not through origin: 3  = the N-1 cyclic shifts of one set D of logs: True
+D (logs base theta, Tr_{N/q}=1) = [1, 2]
+differences: each value once: True  missing exactly the multiples of q+1 (the subgroup F_q^*): True
+tower law  {Tr_{N/2}=1} = {Tr_{N/q}=1} * {s in F_q: Tr_{q/2}(s)=1}  with every coefficient 1: True  sizes 2 = 2 * 1
+polar: one point of D on each non-trivial angle: True  ; symmetric under angle -> -angle: True  ; radii used = trace-one set of F_q: True  (1 radii)
+  D as (radius log, angle log): [(0, 1), (0, 2)]
+components of D modulo cyclotomic polynomials Phi_d:
+   d=1[angular only]: 1 terms [(0, 2)] | d=3[angular only]: 1 terms [(0, -1)]
+line sum over c + d F_q  =  (1/q) sum over w in d^-1 F_q of chi_w(c) X(w): True
+Rad upper bounds: naive folds 6 ; through transforms, count O: 8 + 3*2 + 6 scalings = 20 ; count G (16 points = 56): see note
+==== N=16 q=4 ====
+lines: 20  not through origin: 15  = the N-1 cyclic shifts of one set D of logs: True
+D (logs base theta, Tr_{N/q}=1) = [1, 2, 4, 8]
+differences: each value once: True  missing exactly the multiples of q+1 (the subgroup F_q^*): True
+tower law  {Tr_{N/2}=1} = {Tr_{N/q}=1} * {s in F_q: Tr_{q/2}(s)=1}  with every coefficient 1: True  sizes 8 = 4 * 2
+polar: one point of D on each non-trivial angle: True  ; symmetric under angle -> -angle: True  ; radii used = trace-one set of F_q: True  (2 radii)
+  D as (radius log, angle log): [(1, 1), (2, 2), (2, 3), (1, 4)]
+components of D modulo cyclotomic polynomials Phi_d:
+   d=1[angular only]: 1 terms [(0, 4)] | d=3[radial only]: 1 terms [(0, -2)] | d=5[angular only]: 1 terms [(0, -1)] | d=15[mixed]: 7 terms
+20x16 incidence: rank over Q = 16  so relations among the 20 line sums = 4
+R^T R = q I + J: True
+line sum over c + d F_q  =  (1/q) sum over w in d^-1 F_q of chi_w(c) X(w): True
+Rad upper bounds: naive folds 60 ; through transforms, count O: 64 + 5*8 + 20 scalings = 124 ; count G (16 points = 56): see note
+==== N=64 q=8 ====
+lines: 72  not through origin: 63  = the N-1 cyclic shifts of one set D of logs: True
+D (logs base theta, Tr_{N/q}=1) = [11, 21, 22, 25, 37, 42, 44, 50]
+differences: each value once: True  missing exactly the multiples of q+1 (the subgroup F_q^*): True
+tower law  {Tr_{N/2}=1} = {Tr_{N/q}=1} * {s in F_q: Tr_{q/2}(s)=1}  with every coefficient 1: True  sizes 32 = 8 * 4
+polar: one point of D on each non-trivial angle: True  ; symmetric under angle -> -angle: True  ; radii used = trace-one set of F_q: True  (4 radii)
+  D as (radius log, angle log): [(2, 1), (4, 2), (0, 3), (1, 4), (1, 5), (0, 6), (4, 7), (2, 8)]
+components of D modulo cyclotomic polynomials Phi_d:
+   d=1[angular only]: 1 terms [(0, 8)] | d=3[angular only]: 1 terms [(0, -1)] | d=7[radial only]: 4 terms [(0, 2), (1, 2), (2, 2), (4, 2)] | d=9[angular only]: 1 terms [(0, -1)] | d=21[mixed]: 6 terms | d=63[mixed]: 15 terms
+line sum over c + d F_q  =  (1/q) sum over w in d^-1 F_q of chi_w(c) X(w): True
+Rad upper bounds: naive folds 504 ; through transforms, count O: 384 + 9*24 + 72 scalings = 672 ; count G (16 points = 56): see note
+==== N=256 q=16 ====
+lines: 272  not through origin: 255  = the N-1 cyclic shifts of one set D of logs: True
+differences: each value once: True  missing exactly the multiples of q+1 (the subgroup F_q^*): True
+tower law  {Tr_{N/2}=1} = {Tr_{N/q}=1} * {s in F_q: Tr_{q/2}(s)=1}  with every coefficient 1: True  sizes 128 = 16 * 8
+polar: one point of D on each non-trivial angle: True  ; symmetric under angle -> -angle: True  ; radii used = trace-one set of F_q: True  (8 radii)
+components of D modulo cyclotomic polynomials Phi_d:
+   d=1[angular only]: 1 terms [(0, 16)] | d=3[radial only]: 1 terms [(0, 4)] | d=5[radial only]: 1 terms [(0, -4)] | d=15[radial only]: 7 terms | d=17[angular only]: 1 terms [(0, -1)] | d=51[mixed]: 17 terms | d=85[mixed]: 46 terms | d=255[mixed]: 86 terms
+Rad upper bounds: naive folds 4080 ; through transforms, count O: 2048 + 17*64 + 272 scalings = 3408 ; count G (16 points = 56): see note
+LIGHT label=d-1-plane exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:28:19 cmd=/usr/bin/python3 -I -B plane.py

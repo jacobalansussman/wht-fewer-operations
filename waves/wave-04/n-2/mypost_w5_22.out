@@ -1,0 +1,4 @@
+K = 22 ; vectors before symmetry: 218
+21 moves: 1 classes; clique-excluded 1, zero-form-excluded 0, survive 0; largest joined set histogram [(13, 1)]
+22 moves: 7 classes; clique-excluded 7, zero-form-excluded 0, survive 0; largest joined set histogram [(12, 2), (13, 3), (15, 1), (17, 1)]
+LIGHT label=n2-w5p22 exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:20:36 cmd=python3 -B mypost.py 22 w5_22.txt

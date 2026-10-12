@@ -1,0 +1,2 @@
+pool coset: 20 vectors (levels 4,12,4); least gates for the 4 characters: 8
+pool stab: 24 vectors (levels 4,12,8); least gates for the 4 characters: 7; for the 4 characters times the sign pattern (-1)^(x1 x2): 7

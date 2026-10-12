@@ -1,0 +1,8 @@
+ports: 120, weights {3: 84, 7: 36}, all distinct: True
+diagonal of M all 1: True ; off-diagonal entries: {'1/2': 3360, '0': 7560, '-1/2': 3360}
+M[t][s] != 0 exactly when the ports of t and s overlap evenly (t knows s), s != t: True
+each target knows: {56: 120}
+rank of M over the rationals: 8 ; M M = 15 M: True ; symmetric: True ; sources per total kappa = v / rank = 15
+largest set of ports no two of which know each other: 8  (so every scatter matrix for these ports and these hyperplanes has rank >= that)
+largest set of ports that all know each other (an orthonormal set): 8  (h = 9)
+the design gains when kappa > 5h/4 = 11.25 (five-stage word); with only the 9 coordinate directions as ports kappa <= 9

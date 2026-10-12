@@ -1,0 +1,8 @@
+flat gates, n=4, 40 wires, coefficients solved exactly: (|a|,|b|)=(1, 1) c=1 same residue=False: 540; (|a|,|b|)=(1, 1) c=2 same residue=True: 116; (|a|,|b|)=(1, 2) c=1 same residue=False: 232
+flat gates, n=5, 121 wires, coefficients solved exactly: (|a|,|b|)=(1, 1) c=1 same residue=False: 4020; (|a|,|b|)=(1, 1) c=2 same residue=True: 660; (|a|,|b|)=(1, 2) c=1 same residue=False: 1320
+ledger, n=4, orders (1, 2, 3, 4): 2100 gates, 227 with even content, 38 of weight below 0; violations of 'largest minor of each order grows by at most max(1,(|a|+|b|)/c)': 0; minors that grew on a gate of weight below 0: 0
+ledger, n=5, orders (5,): 1400 gates, 128 with even content, 16 of weight below 0; violations of 'largest minor of each order grows by at most max(1,(|a|+|b|)/c)': 0; minors that grew on a gate of weight below 0: 0
+ledger, n=6, orders (6,): 420 gates, 21 with even content, 6 of weight below 0; violations of 'largest minor of each order grows by at most max(1,(|a|+|b|)/c)': 0; minors that grew on a gate of weight below 0: 0
+19 gates at 8 points: computes the transform: True; every wire flat: True; gate factors (|a|+|b|)/c: {'2': 7, '3': 12}; total weight 26.02; the determinant asks 12
+4 points, flat wires, halvings free: least total weight = 8.0 (states settled 19113); the determinant asks 4, the textbook spends 8
+LIGHT label=ai2-flat exit=0 time=30s waited=0s peak_rss_mb=14 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=09:33:40 cmd=python3 -B flat.py

@@ -1,0 +1,2 @@
+LIGHT label=ad3-k6B3c1 exit=0 time=487s waited=0s peak_rss_mb=3 peak_footprint_mb=2 lowest_cap_mb=1500 stopped=- start=06:45:33 cmd=./k6r B 3 2 0 492
+exit 0

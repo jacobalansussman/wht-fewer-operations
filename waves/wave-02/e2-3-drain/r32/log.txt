@@ -1,0 +1,2 @@
+drain N=32 seed=1 K=300 cs=2 target=H: bestU=484 at gate 62; ended g=62 P=422; gates draining >=N/2: 24, ==N: 0; 9s
+drain N=32 seed=2 K=300 cs=2 target=H: bestU=490 at gate 69; ended g=69 P=421; gates draining >=N/2: 23, ==N: 0; 11s

@@ -1,0 +1,7 @@
+mode=2 N=8 restart=0 best=12 recount rows=12 cols=12 | whole-number: odd cells 12, checkerboards 12, other 0
+BEST 12
+rows 7 3 5 1 6 2 4 0 
+cols 6 7 4 5 3 2 1 0 
+mode=2 N=8 restart=1 best=12 recount rows=12 cols=12 | whole-number: odd cells 12, checkerboards 12, other 0
+mode=2 N=8 restart=2 best=12 recount rows=12 cols=12 | whole-number: odd cells 12, checkerboards 12, other 0
+mode=2 N=8 restart=3 best=12 recount rows=12 cols=12 | whole-number: odd cells 12, checkerboards 12, other 0

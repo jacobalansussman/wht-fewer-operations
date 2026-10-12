@@ -1,0 +1,32 @@
+m = 5: 32768 symmetric matrices, 17856 legal blocks in 333 orbits; 16384 forms with q(I)=1 in 272 orbits
+  z = 1.000000: LP value 0.775000000
+    blocks per array 1.250000  rank 1  orbit size 10  example 11100/11100/11100/00000/00000  (I+S has rank 4)
+    blocks per array 1.250000  rank 1  orbit size 10  example 11000/11000/00000/00000/00000  (I+S has rank 5)
+    blocks per array 0.625000  rank 1  orbit size 5  example 10000/00000/00000/00000/00000  (I+S has rank 4)
+    blocks per array 0.625000  rank 1  orbit size 5  example 11110/11110/11110/11110/00000  (I+S has rank 5)
+    blocks per array 0.125000  rank 1  orbit size 1  example 11111/11111/11111/11111/11111  (I+S has rank 4)
+    dual weight 0.250000 on form orbit (size 20) example Q = 11000/10000/00000/00000/00000 (rank of its bilinear form: see text)
+    dual weight 0.212500 on form orbit (size 20) example Q = 11110/10000/10000/10000/00000 (rank of its bilinear form: see text)
+    dual weight 0.175000 on form orbit (size 15) example Q = 11111/10011/10011/11100/11100 (rank of its bilinear form: see text)
+    dual weight 0.112500 on form orbit (size 20) example Q = 10010/01010/00110/11100/00000 (rank of its bilinear form: see text)
+    dual weight 0.025000 on form orbit (size 5) example Q = 11111/10000/10000/10000/10000 (rank of its bilinear form: see text)
+LP(m=5, z=1) = 0.775000000   (the plain schedule has value 1)
+LP(m=5, z=0.9) = 0.910329681
+LP(m=5, z=0.5) = 1.341640786
+LP(m=5, z=0.0) = 2.000000000
+FLOOR z_LP(m=5) = 0.841627  (saving at most 0.158373)
+  z = 0.841627: LP value 1.000000000
+    blocks per array 1.250000  rank 1  orbit size 10  example 11100/11100/11100/00000/00000  (I+S has rank 4)
+    blocks per array 1.250000  rank 1  orbit size 10  example 11000/11000/00000/00000/00000  (I+S has rank 5)
+    blocks per array 0.625000  rank 1  orbit size 5  example 10000/00000/00000/00000/00000  (I+S has rank 4)
+    blocks per array 0.625000  rank 1  orbit size 5  example 11110/11110/11110/11110/00000  (I+S has rank 5)
+    blocks per array 0.125000  rank 1  orbit size 1  example 11111/11111/11111/11111/11111  (I+S has rank 4)
+    dual weight 0.396191 on form orbit (size 20) example Q = 11000/10000/00000/00000/00000 (rank of its bilinear form: see text)
+    dual weight 0.196107 on form orbit (size 30) example Q = 11100/10000/10000/00000/00000 (rank of its bilinear form: see text)
+    dual weight 0.096135 on form orbit (size 20) example Q = 10010/01010/00110/11100/00000 (rank of its bilinear form: see text)
+    dual weight 0.087680 on form orbit (size 60) example Q = 11110/10110/11000/11000/00000 (rank of its bilinear form: see text)
+    dual weight 0.083843 on form orbit (size 30) example Q = 11100/10100/11000/00000/00000 (rank of its bilinear form: see text)
+    dual weight 0.061318 on form orbit (size 20) example Q = 11110/10000/10000/10000/00000 (rank of its bilinear form: see text)
+    dual weight 0.032258 on form orbit (size 10) example Q = 10011/01011/00111/11100/11100 (rank of its bilinear form: see text)
+    dual weight 0.029700 on form orbit (size 15) example Q = 11111/10011/10011/11100/11100 (rank of its bilinear form: see text)
+    dual weight 0.016769 on form orbit (size 10) example Q = 10011/01011/00111/11101/11110 (rank of its bilinear form: see text)

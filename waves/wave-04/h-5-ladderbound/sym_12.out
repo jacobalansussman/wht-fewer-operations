@@ -1,0 +1,1 @@
+LIGHT label=h5-symY2 exit=124 time=402s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>400s start=00:26:53 cmd=./pairex4 pool_sym.txt 12

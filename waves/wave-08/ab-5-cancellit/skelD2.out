@@ -1,0 +1,4 @@
+skeleton D2 (lower 9 and upper 9: both halves without the chains of their totals): built in advance 18 gates; remaining budget 12 -> total 30 : NO (exhaustive)   (0 s)
+skeleton D2 (lower 9 and upper 9: both halves without the chains of their totals): built in advance 18 gates; remaining budget 13 -> total 31 : NO (exhaustive)   (101 s)
+LIGHT label=ab5-D2 exit=0 time=101s waited=0s peak_rss_mb=48 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=05:09:49 cmd=python3 -B skel16b.py D2
+done

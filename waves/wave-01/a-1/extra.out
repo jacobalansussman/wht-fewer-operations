@@ -1,0 +1,27 @@
+sym middle alone q=4 brick=0: 28 gates, every row of the symmetric square produced exactly once: True
+sym middle alone q=4 brick=1: 26 gates, every row of the symmetric square produced exactly once: True
+sym middle alone q=8 brick=0: 160 gates, every row of the symmetric square produced exactly once: True
+sym middle alone q=8 brick=1: 142 gates, every row of the symmetric square produced exactly once: True
+sym middle alone q=16 brick=0: 848 gates, every row of the symmetric square produced exactly once: True
+sym middle alone q=16 brick=1: 772 gates, every row of the symmetric square produced exactly once: True
+antisymmetric square in the basis {01, 03-12, 23 | 02, 03+12, 13} (one butterfly away from the pair basis):
+    [-2, -4, -2, 0, 0, 0]
+    [-2, 0, 2, 0, 0, 0]
+    [-2, 4, -2, 0, 0, 0]
+    [0, 0, 0, -2, -4, -2]
+    [0, 0, 0, -2, 0, 2]
+    [0, 0, 0, -2, 4, -2]
+   block-diagonal: True
+   Krawtchouk matrix K = Sym^2 of [[1,1],[1,-1]] in the basis e0^2, e0e1, e1^2 : [[1, 2, 1], [1, 0, -1], [1, -2, 1]]  K^2 = 4I: True
+  points     textbook        route 7-gate blocks   route/tb  blocks/tb
+     2^2            8            8            7    1.00000    0.87500
+     2^4           64           62           56    0.96875    0.87500
+     2^6          384          352          336    0.91667    0.87500
+     2^8         2048         1912         1792    0.93359    0.87500
+    2^10        10240         9216         8960    0.90000    0.87500
+    2^16      1048576       950144       917504    0.90613    0.87500
+    2^32 137438953472 122406535168 120259084288    0.89062    0.87500
+    2^64 1180591620717411303424 1042241040162442182656 1033017668127734890496    0.88281    0.87500
+   2^128 43556142965880123323311949751266331066368 38281766278605577139620419964037069012992 38111625095145107907897956032358039683072    0.87891    0.87500
+random price lists with T(q) <= 2T(q/2) + q: cases where the route beats the plain product 2 q T(q): 0 of 20000
+LIGHT label=a1-extra exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:27:52 cmd=python3 -B extra.py

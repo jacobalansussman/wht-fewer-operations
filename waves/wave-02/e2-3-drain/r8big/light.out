@@ -1,0 +1,1 @@
+LIGHT label=e2-3-drain exit=124 time=302s waited=0s peak_rss_mb=4 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>300s start=22:47:18 cmd=./batch2.sh

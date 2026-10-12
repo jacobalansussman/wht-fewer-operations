@@ -1,0 +1,3 @@
+PART A.  pi = number of fixed addresses, chi = pi - 2 (character of V).  <pi^m, 1> = orbits on m-tuples.
+K = 64: orbits on 1-, 2-, 3-tuples 2 5 16; <chi,chi> = 1; copies of V in V x V = 2; copies in the table c = 6; Rest = 3719; ab-6 formula 126; c + 2 ceil(Rest/d) = 126; 2K - 2 = 126; textbook 128; telescoping 96
+LIGHT label=ac-1-orb6 exit=0 time=3s waited=0s peak_rss_mb=20 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:27:23 cmd=python3 -B orb6.py

@@ -1,0 +1,41 @@
+pool: 304 wires (degree <= 3), 288 candidate helpers, 8 outputs
+known circuit, plan (2, 1): 14 helpers, all pool wires; gates = 22, outputs missing 0, helpers not derivable 0
+known circuit, plan (1, 2): 14 helpers, all pool wires; gates = 22, outputs missing 0, helpers not derivable 0
+   seed 0 t=0s: circuit with 22 gates
+   seed 0 t=0s: circuit with 21 gates
+   seed 0 t=9s: circuit with 19 gates
+   seed 0 t=0s: circuit with 23 gates
+   seed 0 t=0s: circuit with 22 gates
+   seed 0 t=1s: circuit with 21 gates
+   seed 0 t=19s: circuit with 20 gates
+   seed 0 t=19s: circuit with 19 gates
+   seed 0 t=0s: circuit with 23 gates
+   seed 0 t=0s: circuit with 22 gates
+   seed 0 t=1s: circuit with 21 gates
+   seed 0 t=0s: circuit with 23 gates
+   seed 0 t=0s: circuit with 22 gates
+   seed 0 t=0s: circuit with 21 gates
+restarts: 4
+seed 0 start known: 1436216 moves; best circuit 19 gates; feasible states visited by gate count: [(19, 1237), (20, 1887), (21, 765), (22, 414), (23, 301), (24, 179), (25, 48), (26, 6), (27, 3), (28, 1)]
+   wires of the best circuit in order of derivation (s, s', vector):
+      help (2,4) [1, 0, 0, 0, 0, 0, 0, 1]
+      help (2,4) [0, 1, 0, 0, 0, 0, 1, 0]
+      help (2,4) [0, 0, 1, 0, 0, -1, 0, 0]
+      help (2,4) [0, 0, 0, 1, -1, 0, 0, 0]
+      help (4,2) [1, -1, 0, 0, 0, 0, -1, 1]
+      help (4,2) [0, 0, 1, 1, -1, -1, 0, 0]
+      help (8,4) [1, -1, -1, -1, 1, 1, -1, 1]
+      help (8,8) [1, -1, -1, -1, 1, 1, -1, -1]
+      help (8,8) [1, -1, -1, -1, 1, -1, -1, 1]
+      help (8,4) [1, -1, -1, -1, 1, 1, 1, -1]
+      help (8,4) [1, -1, -1, -1, -1, -1, -1, 1]
+      OUT  (8,1) [1, -1, -1, 1, -1, 1, 1, -1]
+      OUT  (8,1) [1, -1, -1, 1, 1, -1, -1, 1]
+      OUT  (8,1) [1, -1, 1, -1, -1, 1, -1, 1]
+      OUT  (8,1) [1, -1, 1, -1, 1, -1, 1, -1]
+      OUT  (8,1) [1, 1, -1, -1, -1, -1, 1, 1]
+      OUT  (8,1) [1, 1, -1, -1, 1, 1, -1, -1]
+      OUT  (8,1) [1, 1, 1, 1, -1, -1, -1, -1]
+      OUT  (8,1) [1, 1, 1, 1, 1, 1, 1, 1]
+   exhaustive exchange around it (remove 1; remove 2 and add any 1 of 288): 15356 states tested, 0 circuits with 18 gates
+LIGHT label=g1-sa-k0 exit=0 time=244s waited=0s peak_rss_mb=14 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=23:00:41 cmd=python3 -B sa8.py 240 0 known 3 0.3

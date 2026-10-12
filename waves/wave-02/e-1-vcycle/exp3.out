@@ -1,0 +1,1 @@
+LIGHT label=e1-exp3 exit=124 time=402s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=time>400s start=21:57:34 cmd=python3 -B exp3.py

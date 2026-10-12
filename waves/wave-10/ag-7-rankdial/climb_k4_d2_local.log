@@ -1,0 +1,4 @@
+k=4 d=1 p=2 m=0 : RESULT p=2: YES, circuit with 15 gates. points in order (after the 6 inputs):
+k=4 d=2 p=2 m=3 : RESULT p=2: NO circuit with 18 gates (exhaustive over GF(2))
+k=4 d=2 p=2 m=4 : RESULT p=2: NO circuit with 19 gates (exhaustive over GF(2))
+LIGHT label=ag7-k4d2 exit=124 time=302s waited=0s peak_rss_mb=38 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>300s start=07:43:00 cmd=sh -c ./climb.sh 2 4 1 2; ./climb.sh 2 4 2 6 3

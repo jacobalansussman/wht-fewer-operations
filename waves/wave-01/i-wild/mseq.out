@@ -1,0 +1,5 @@
+k=4 period 15: Hankel rank of one period 8 of 8;  wrapped circulant rank 15 of 15
+k=5 period 31: Hankel rank of one period 16 of 16;  wrapped circulant rank 31 of 31
+k=6 period 63: Hankel rank of one period 31 of 32;  wrapped circulant rank 63 of 63
+k=7 period 127: Hankel rank of one period 64 of 64;  wrapped circulant rank 127 of 127
+LIGHT label=i-wild-mseq exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:07:02 cmd=python3 -B mseq.py

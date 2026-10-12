@@ -1,0 +1,28 @@
+slp_16.txt: N=16 gates=52 | tight gate wires T=40, over-limit V=12 | saved=12 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   over-limit hub3   s=4 s'=16 s*s'/N=4 entangled bits [0, 1] read by 2: p4(4,4) p5(4,4)   [1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit hub8   s=4 s'=16 s*s'/N=4 entangled bits [0, 1] read by 2: p9(4,4) p10(4,4)   [0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit hub11  s=8 s'=8 s*s'/N=4 entangled bits [1, 2] read by 2: p12(8,2) p13(8,2)   [1, 1, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit hub14  s=8 s'=8 s*s'/N=4 entangled bits [1, 2] read by 2: p15(8,2) p16(8,2)   [1, -1, 1, -1, 1, -1, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+   over-limit hub19  s=4 s'=16 s*s'/N=4 entangled bits [0, 1] read by 2: p20(4,4) p21(4,4)   [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, -1, 1, 0, 0, 0, 0]
+   over-limit hub24  s=4 s'=16 s*s'/N=4 entangled bits [0, 1] read by 2: p25(4,4) p26(4,4)   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, -1]
+   over-limit hub27  s=8 s'=8 s*s'/N=4 entangled bits [1, 2] read by 2: p28(8,2) p29(8,2)   [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, -1, -1]
+   over-limit hub30  s=8 s'=8 s*s'/N=4 entangled bits [1, 2] read by 2: p31(8,2) p32(8,2)   [0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 1, -1, -1, 1, 1, -1]
+   over-limit hub33  s=16 s'=4 s*s'/N=4 entangled bits [2, 3] read by 2: y34(16,1)=OUT y36(16,1)=OUT   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1
+   over-limit hub38  s=16 s'=4 s*s'/N=4 entangled bits [2, 3] read by 2: y39(16,1)=OUT y41(16,1)=OUT   [1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, -1, 
+   over-limit hub43  s=16 s'=4 s*s'/N=4 entangled bits [2, 3] read by 2: y44(16,1)=OUT y46(16,1)=OUT   [1, 1, -1, -1, 1, 1, -1, -1, 1, 1, -1, -1, -1, 
+   over-limit hub48  s=16 s'=4 s*s'/N=4 entangled bits [2, 3] read by 2: y49(16,1)=OUT y51(16,1)=OUT   [1, -1, -1, 1, 1, -1, -1, 1, 1, -1, -1, 1, -1, 
+slp_16.txt: N=16 gates=52 | tight gate wires T=40, over-limit V=12 | saved=12 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   transposed: 52 gates (fixed wires 52, nodes with 3 or more terms: [], association orders 1)
+   TRANSPOSE of slp_16.txt: N=16 gates=52 | tight gate wires T=40, over-limit V=12 | saved=12 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+      over-limit t(hub48)     s=4 s'=16 s*s'/N=4 entangled bits [2, 3]  [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0, 1]
+      over-limit t(hub43)     s=4 s'=16 s*s'/N=4 entangled bits [2, 3]  [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0, 1, 0]
+      over-limit t(hub38)     s=4 s'=16 s*s'/N=4 entangled bits [2, 3]  [0, -1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0]
+      over-limit t(hub33)     s=4 s'=16 s*s'/N=4 entangled bits [2, 3]  [-1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0]
+      over-limit t(hub30)     s=8 s'=8 s*s'/N=4 entangled bits [1, 2]  [0, -1, 0, 1, 0, 1, 0, 1, 0, 1, 0, -1, 0, -1, 0, -1]
+      over-limit t(hub27)     s=8 s'=8 s*s'/N=4 entangled bits [1, 2]  [-1, 0, -1, 0, 1, 0, -1, 0, 1, 0, 1, 0, -1, 0, 1, 0]
+      over-limit t(hub24)     s=16 s'=4 s*s'/N=4 entangled bits [0, 1]  [-1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1]
+      over-limit t(hub19)     s=16 s'=4 s*s'/N=4 entangled bits [0, 1]  [1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1]
+      over-limit t(hub14)     s=8 s'=8 s*s'/N=4 entangled bits [1, 2]  [0, 1, 0, 1, 0, -1, 0, 1, 0, 1, 0, 1, 0, -1, 0, 1]
+      over-limit t(hub11)     s=8 s'=8 s*s'/N=4 entangled bits [1, 2]  [1, 0, -1, 0, -1, 0, -1, 0, 1, 0, -1, 0, -1, 0, -1, 0]
+      over-limit t(hub8)      s=16 s'=4 s*s'/N=4 entangled bits [0, 1]  [-1, -1, 1, -1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1]
+      over-limit t(hub3)      s=16 s'=4 s*s'/N=4 entangled bits [0, 1]  [1, -1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1]

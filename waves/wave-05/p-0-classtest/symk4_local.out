@@ -1,0 +1,16 @@
+k=4 p=11 tau=10 m=4 gates=9
+visited states by remaining budget: j=4:1 j=3:100 j=2:8061 j=1:1364736
+RESULT p=11: NO circuit with 9 gates (exhaustive over GF(11))
+LIGHT label=p0-k4 exit=0 time=9s waited=0s peak_rss_mb=44 peak_footprint_mb=41 lowest_cap_mb=1500 stopped=- start=00:25:00 cmd=../g-5-k3/mincirc_odd 11 5 4 rows_k4_10.txt
+k=4 p=11 tau=3 m=4 gates=9
+visited states by remaining budget: j=4:1 j=3:100 j=2:7950 j=1:1319799
+RESULT p=11: NO circuit with 9 gates (exhaustive over GF(11))
+LIGHT label=p0-k4 exit=0 time=3s waited=0s peak_rss_mb=44 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:25:09 cmd=../g-5-k3/mincirc_odd 11 5 4 rows_k4_3.txt
+k=4 p=11 tau=10 m=5 gates=10
+visited states by remaining budget: j=5:1 j=4:12 j=3:1403 j=2:234956 j=1:50401971
+RESULT p=11: YES, circuit with 10 gates. points in order (after the 5 inputs):
+LIGHT label=p0-k4 exit=0 time=412s waited=0s peak_rss_mb=30 peak_footprint_mb=30 lowest_cap_mb=1500 stopped=- start=00:25:12 cmd=../g-5-k3/mincirc_odd 11 5 5 rows_k4_10.t
+k=4 p=11 tau=3 m=5 gates=10
+LIGHT label=p0-k4 exit=124 time=422s waited=0s peak_rss_mb=35 peak_footprint_mb=42 lowest_cap_mb=1500 stopped=time>420s start=00:32:05 cmd=../g-5-k3/mincirc_odd 11 5 5 ro
+k=4 p=11 tau=10 m=6 gates=11
+(script stopped by me after the m=5 runs: m=6 would not finish inside the time box)

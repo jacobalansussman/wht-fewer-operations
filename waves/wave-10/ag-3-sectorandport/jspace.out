@@ -1,0 +1,73 @@
+h=2 f=1 port 01  scalars only                                               : dim of the J space = 0
+h=2 f=1 port 01  shifts and sign patterns (alike on all columns)            : dim of the J space = 0
+h=2 f=1 port 01  CONTROL: the move D itself free                            : dim of the J space = 0
+h=2 f=1 port 01  + address shear along p (x2 -> x2 + p)                     : dim of the J space = 0
+h=2 f=1 port 01  + address map exchanging p and q                           : dim of the J space = 0
+h=2 f=1 port 01  + every address map (all of GL(2,2))                       : dim of the J space = 0
+
+h=2 f=2 port 01  scalars only                                               : dim of the J space = 32 ; smallest orbit has 1 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=2 f=2 port 01  shifts and sign patterns (alike on all columns)            : dim of the J space = 4 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=2 f=2 port 01  CONTROL: the move D itself free                            : dim of the J space = 0
+h=2 f=2 port 01  CONTROL: + a permutation of two columns                    : dim of the J space = 4 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=2 f=2 port 01  + address shear along p (x2 -> x2 + p)                     : dim of the J space = 2 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=2 f=2 port 01  + address map exchanging p and q                           : dim of the J space = 1 ; smallest orbit has 4 pairs, e.g. J sends configuration (3, 3) to (0, 0)
+h=2 f=2 port 01  + every address map (all of GL(2,2))                       : dim of the J space = 0
+h=2 f=2 port 01  + shift along p on column 0 only                           : dim of the J space = 0
+h=2 f=2 port 01  + shift along p on EACH column separately                  : dim of the J space = 0
+h=2 f=2 port 01  + shift along p on each column but one                     : dim of the J space = 0
+h=2 f=2 port 01  + shift along p on each column but two                     : dim of the J space = 4 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=2 f=2 port 01  + every sign pattern on column 0 only                      : dim of the J space = 0
+h=2 f=2 port 01  + every sign pattern on EACH column separately             : dim of the J space = 0
+h=2 f=2 port 01  + every sign pattern on each column but two                : dim of the J space = 4 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=2 f=2 port 01  + shifts and signs on each column but two                  : dim of the J space = 4 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+
+h=2 f=3 port 01  scalars only                                               : dim of the J space = 768 ; smallest orbit has 1 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+h=2 f=3 port 01  shifts and sign patterns (alike on all columns)            : dim of the J space = 96 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+h=2 f=3 port 01  CONTROL: the move D itself free                            : dim of the J space = 0
+h=2 f=3 port 01  CONTROL: + a permutation of two columns                    : dim of the J space = 52 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+h=2 f=3 port 01  + address shear along p (x2 -> x2 + p)                     : dim of the J space = 48 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+h=2 f=3 port 01  + address map exchanging p and q                           : dim of the J space = 21 ; smallest orbit has 4 pairs, e.g. J sends configuration (3, 3, 0) to (0, 0, 0)
+h=2 f=3 port 01  + every address map (all of GL(2,2))                       : dim of the J space = 2 ; smallest orbit has 24 pairs, e.g. J sends configuration (2, 3, 1) to (0, 0, 0)
+h=2 f=3 port 01  + shift along p on column 0 only                           : dim of the J space = 32 ; smallest orbit has 4 pairs, e.g. J sends configuration (0, 1, 1) to (0, 0, 0)
+h=2 f=3 port 01  + shift along p on EACH column separately                  : dim of the J space = 0
+h=2 f=3 port 01  + shift along p on each column but one                     : dim of the J space = 0
+h=2 f=3 port 01  + shift along p on each column but two                     : dim of the J space = 32 ; smallest orbit has 4 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+h=2 f=3 port 01  + every sign pattern on column 0 only                      : dim of the J space = 8 ; smallest orbit has 16 pairs, e.g. J sends configuration (0, 1, 1) to (0, 0, 0)
+h=2 f=3 port 01  + every sign pattern on EACH column separately             : dim of the J space = 0
+h=2 f=3 port 01  + every sign pattern on each column but two                : dim of the J space = 8 ; smallest orbit has 16 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+h=2 f=3 port 01  + shifts and signs on each column but two                  : dim of the J space = 4 ; smallest orbit has 16 pairs, e.g. J sends configuration (1, 1, 0) to (0, 0, 0)
+
+h=3 f=2 port 001  scalars only                                               : dim of the J space = 512 ; smallest orbit has 1 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  shifts and sign patterns (alike on all columns)            : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  CONTROL: the move D itself free                            : dim of the J space = 0
+h=3 f=2 port 001  CONTROL: + a permutation of two columns                    : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  + orthogonal maps fixing p (swap of bits 2,3)              : dim of the J space = 10 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  + all maps fixing p and psi = p (GL(2,2) on bits 2,3)      : dim of the J space = 5 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  + address shear along p (x2 -> x2 + p)                     : dim of the J space = 8 ; smallest orbit has 16 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  + address map exchanging p and q (bits 1,2)                : dim of the J space = 4 ; smallest orbit has 8 pairs, e.g. J sends configuration (3, 3) to (0, 0)
+h=3 f=2 port 001  + every orthogonal map (all permutations of bits)          : dim of the J space = 1 ; smallest orbit has 8 pairs, e.g. J sends configuration (7, 7) to (0, 0)
+h=3 f=2 port 001  + every address map (all of GL(3,2))                       : dim of the J space = 0
+h=3 f=2 port 001  + shift along p on column 0 only                           : dim of the J space = 0
+h=3 f=2 port 001  + shift along p on EACH column separately                  : dim of the J space = 0
+h=3 f=2 port 001  + shift along p on each column but one                     : dim of the J space = 0
+h=3 f=2 port 001  + shift along p on each column but two                     : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  + every sign pattern on column 0 only                      : dim of the J space = 0
+h=3 f=2 port 001  + every sign pattern on EACH column separately             : dim of the J space = 0
+h=3 f=2 port 001  + every sign pattern on each column but two                : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 001  + shifts and signs on each column but two                  : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+
+h=3 f=2 port 111  scalars only                                               : dim of the J space = 512 ; smallest orbit has 1 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 111  shifts and sign patterns (alike on all columns)            : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 111  CONTROL: the move D itself free                            : dim of the J space = 0
+h=3 f=2 port 111  CONTROL: + a permutation of two columns                    : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 111  + every orthogonal map (they all fix p = 111)              : dim of the J space = 5 ; smallest orbit has 8 pairs, e.g. J sends configuration (7, 7) to (0, 0)
+h=3 f=2 port 111  + every address map (all of GL(3,2))                       : dim of the J space = 0
+h=3 f=2 port 111  + shift along p on column 0 only                           : dim of the J space = 0
+h=3 f=2 port 111  + shift along p on EACH column separately                  : dim of the J space = 0
+h=3 f=2 port 111  + shift along p on each column but one                     : dim of the J space = 0
+h=3 f=2 port 111  + shift along p on each column but two                     : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 111  + every sign pattern on column 0 only                      : dim of the J space = 0
+h=3 f=2 port 111  + every sign pattern on EACH column separately             : dim of the J space = 0
+h=3 f=2 port 111  + every sign pattern on each column but two                : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+h=3 f=2 port 111  + shifts and signs on each column but two                  : dim of the J space = 16 ; smallest orbit has 8 pairs, e.g. J sends configuration (1, 1) to (0, 0)
+

@@ -1,0 +1,33 @@
+## H4 p=5 gates=6
+RESULT p=5: NO circuit with 6 gates (exhaustive over GF(5))
+## H4 p=5 gates=7
+RESULT p=5: YES, circuit with 7 gates. points in order (after the 4 inputs):
+## H4 p=13 gates=6
+RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13))
+## H4 p=13 gates=7
+RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs):
+## Fourier4 p=5 gates=5
+RESULT p=5: NO circuit with 5 gates (exhaustive over GF(5))
+## Fourier4 p=5 gates=6
+RESULT p=5: NO circuit with 6 gates (exhaustive over GF(5))
+## Fourier4 p=5 gates=7
+RESULT p=5: YES, circuit with 7 gates. points in order (after the 4 inputs):
+## Fourier4 p=5 gates=8
+RESULT p=5: YES, circuit with 8 gates. points in order (after the 4 inputs):
+## Fourier4 p=13 gates=5
+RESULT p=13: NO circuit with 5 gates (exhaustive over GF(13))
+## Fourier4 p=13 gates=6
+RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13))
+## Fourier4 p=13 gates=7
+RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13))
+## Fourier4 p=13 gates=8
+RESULT p=13: YES, circuit with 8 gates. points in order (after the 4 inputs):
+## Fourier4 p=17 gates=5
+RESULT p=17: NO circuit with 5 gates (exhaustive over GF(17))
+## Fourier4 p=17 gates=6
+RESULT p=17: NO circuit with 6 gates (exhaustive over GF(17))
+## Fourier4 p=17 gates=7
+RESULT p=17: NO circuit with 7 gates (exhaustive over GF(17))
+## Fourier4 p=17 gates=8
+RESULT p=17: YES, circuit with 8 gates. points in order (after the 4 inputs):
+DONE

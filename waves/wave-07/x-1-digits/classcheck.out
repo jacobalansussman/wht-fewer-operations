@@ -1,0 +1,6 @@
+s=  4 (s-1=  3): every window [0,d], k=3..6, congruent to T_s modulo (s-1)^(d+1) and exact at d=k: True ; gates at d=k: k=3:24 k=4:64 k=5:160 k=6:384
+s= -2 (s-1= -3): every window [0,d], k=3..6, congruent to T_s modulo (s-1)^(d+1) and exact at d=k: True ; gates at d=k: k=3:24 k=4:64 k=5:160 k=6:384
+s=  3 (s-1=  2): every window [0,d], k=3..6, congruent to T_s modulo (s-1)^(d+1) and exact at d=k: True ; gates at d=k: k=3:24 k=4:64 k=5:160 k=6:384
+s=  0 (s-1= -1): every window [0,d], k=3..6, congruent to T_s modulo (s-1)^(d+1) and exact at d=k: True ; gates at d=k: k=3:24 k=4:64 k=5:160 k=6:384
+s=  7 (s-1=  6): every window [0,d], k=3..6, congruent to T_s modulo (s-1)^(d+1) and exact at d=k: True ; gates at d=k: k=3:24 k=4:64 k=5:160 k=6:384
+LIGHT label=x1-class exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:54:19 cmd=python3 -B classcheck.py

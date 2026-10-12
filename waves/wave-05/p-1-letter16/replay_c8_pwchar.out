@@ -1,0 +1,13 @@
+design c8   N 8  tau 13  matrix identity exact: True  circuit gates (G): 19  N-2+tau: 19  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['-1', '1', '-1', '1', '1', '1', '-1', '-1']  c: ['1', '1', '1', '1', '1', '1', '-1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '-2'), 4), ((1, 4, '-2'), 2), ((2, 1, '-2'), 4), ((4, 1, '-2'), 2), ((8, 8, '1'), 1)]
+design c8   N 8  tau 13  matrix identity exact: True  circuit gates (G): 19  N-2+tau: 19  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '-1', '-1', '1', '1', '1', '1', '1']  c: ['1', '1', '1', '1', '1', '1', '-1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '2'), 4), ((1, 4, '2'), 2), ((2, 1, '2'), 4), ((4, 1, '2'), 2), ((8, 8, '-1'), 1)]
+design dual16 pwchar tile  N 16  tau 45  matrix identity exact: True  circuit gates (G): 59  N-2+tau: 59  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '-1', '1', '-1', '1', '-1', '1', '-1', '1', '1', '1', '1', '1', '1', '1', '1']  c: ['1', '1', '1', '1', '1', '1', '1', '1', '1', '-1', '1', '-1', '1', '-1', '1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '-2'), 16), ((1, 4, '-2'), 4), ((1, 8, '-2'), 2), ((2, 1, '-2'), 16), ((4, 1, '-2'), 4), ((8, 1, '-2'), 2), ((16, 16, '1'), 1)]
+design dual16 pwchar gen  N 16  tau 46  matrix identity exact: True  circuit gates (G): 59  N-2+tau: 60  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '-1', '1', '-1', '1', '-1', '1', '-1', '1', '1', '1', '1', '1', '1', '1', '1']  c: ['1', '1', '1', '1', '1', '1', '1', '1', '1', '-1', '1', '-1', '1', '-1', '1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '-2'), 8), ((1, 2, '2'), 8), ((1, 4, '-2'), 2), ((1, 4, '2'), 2), ((1, 8, '-2'), 1), ((1, 8, '2'), 1), ((2, 1, '-2'), 8), ((2, 1, '2'), 8), ((4, 1, '-2'), 2), ((4, 1, '2'), 2), ((8, 1, '-2'), 1), ((8, 1, '2'), 1), ((8, 16, '-1'), 1), ((8, 16, '1'), 1)]
+LIGHT label=p1replay5 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:50:11 cmd=python3 -B replay.py c8_tile.out c8_gen.out pwchar.out

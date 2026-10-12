@@ -1,0 +1,12 @@
+8_ours_c_w8: wire n_g7 one bit too narrow                                1352 of 102273 vectors differ; first at vector 101 (corner cases are vectors 0 to 2272)   CAUGHT
+8_ours_c_w8: wire n_g5 one bit too narrow                                8565 of 102273 vectors differ; first at vector 37 (corner cases are vectors 0 to 2272)   CAUGHT
+8_ours_c_w8: one sign changed in n_g10                                 101482 of 102273 vectors differ; first at vector 1 (corner cases are vectors 0 to 2272)   CAUGHT
+8_ours_c_w8: a doubling dropped in n_y3                                101555 of 102273 vectors differ; first at vector 1 (corner cases are vectors 0 to 2272)   CAUGHT
+8_ours_p_w8: one delay register skipped (x6 taken one stage early)     101505 of 102273 vectors differ; first at vector 0 (corner cases are vectors 0 to 2272)   CAUGHT
+8_ours_p_w8: valid one stage short                                       3356 of 102273 vectors differ; first at vector 6 (corner cases are vectors 0 to 2272)   CAUGHT
+8_cfl1994_c_w8: wire n_t3 one bit too narrow                             8666 of 102273 vectors differ; first at vector 2 (corner cases are vectors 0 to 2272)   CAUGHT
+8_cfl1994_c_w8 (undamaged)                                                  0 of 102273 vectors differ   OK
+8_ours_c_w8 (undamaged)                                                     0 of 102273 vectors differ   OK
+8_ours_p_w8 (undamaged)                                                     0 of 102273 vectors differ   OK
+16_ours_c_w8: wire n_p12 one bit too narrow                              1390 of 102591 vectors differ; first at vector 1 (corner cases are vectors 0 to 2590)   CAUGHT
+16_ours_c_w8 (undamaged)                                                    0 of 102591 vectors differ   OK

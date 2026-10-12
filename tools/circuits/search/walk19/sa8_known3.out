@@ -1,0 +1,50 @@
+pool: 304 wires (degree <= 3), 288 candidate helpers, 8 outputs
+known circuit, plan (2, 1): 14 helpers, all pool wires; gates = 22, outputs missing 0, helpers not derivable 0
+known circuit, plan (1, 2): 14 helpers, all pool wires; gates = 22, outputs missing 0, helpers not derivable 0
+   seed 3 t=0s: circuit with 22 gates
+   seed 3 t=0s: circuit with 21 gates
+   seed 3 t=0s: circuit with 20 gates
+   seed 3 t=0s: circuit with 19 gates
+   seed 3 t=0s: circuit with 23 gates
+   seed 3 t=0s: circuit with 22 gates
+   seed 3 t=0s: circuit with 21 gates
+   seed 3 t=1s: circuit with 20 gates
+   seed 3 t=13s: circuit with 19 gates
+   seed 3 t=0s: circuit with 23 gates
+   seed 3 t=0s: circuit with 22 gates
+   seed 3 t=0s: circuit with 21 gates
+   seed 3 t=25s: circuit with 20 gates
+   seed 3 t=25s: circuit with 19 gates
+   seed 3 t=0s: circuit with 23 gates
+   seed 3 t=0s: circuit with 22 gates
+   seed 3 t=2s: circuit with 21 gates
+   seed 3 t=5s: circuit with 20 gates
+   seed 3 t=5s: circuit with 19 gates
+   seed 3 t=0s: circuit with 23 gates
+   seed 3 t=0s: circuit with 22 gates
+   seed 3 t=0s: circuit with 21 gates
+   seed 3 t=4s: circuit with 20 gates
+   seed 3 t=7s: circuit with 19 gates
+restarts: 5
+seed 3 start known: 1240321 moves; best circuit 19 gates; feasible states visited by gate count: [(19, 4199), (20, 6391), (21, 2915), (22, 1579), (23, 921), (24, 495), (25, 238), (26, 96), (27, 15), (28, 2)]
+   wires of the best circuit in order of derivation (s, s', vector):
+      help (2,4) [1, -1, 0, 0, 0, 0, 0, 0]
+      help (2,4) [0, 0, 0, 0, 1, 1, 0, 0]
+      help (2,4) [0, 0, 1, -1, 0, 0, 0, 0]
+      help (2,4) [0, 0, 0, 0, 0, 0, 1, 1]
+      help (4,2) [0, 0, 0, 0, 1, 1, -1, -1]
+      help (4,2) [1, -1, 1, -1, 0, 0, 0, 0]
+      help (8,4) [1, -1, 1, -1, 1, 1, -1, -1]
+      help (8,8) [1, -1, 1, 1, 1, 1, -1, -1]
+      help (8,8) [1, -1, 1, -1, 1, 1, -1, 1]
+      OUT  (8,1) [1, -1, 1, -1, -1, 1, -1, 1]
+      OUT  (8,1) [1, -1, 1, -1, 1, -1, 1, -1]
+      OUT  (8,1) [1, 1, -1, -1, -1, -1, 1, 1]
+      OUT  (8,1) [1, 1, -1, -1, 1, 1, -1, -1]
+      help (8,4) [1, 1, 1, 1, 1, 1, -1, -1]
+      help (8,4) [1, -1, 1, -1, 1, -1, -1, 1]
+      OUT  (8,1) [1, -1, -1, 1, -1, 1, 1, -1]
+      OUT  (8,1) [1, -1, -1, 1, 1, -1, -1, 1]
+      OUT  (8,1) [1, 1, 1, 1, -1, -1, -1, -1]
+      OUT  (8,1) [1, 1, 1, 1, 1, 1, 1, 1]
+   exhaustive exchange around it (remove 1; remove 2 and add any 1 of 288): 15356 states tested, 0 circuits with 18 gates

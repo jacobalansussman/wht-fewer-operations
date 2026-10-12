@@ -1,0 +1,6 @@
+supports of size 1 that carry a non-zero polynomial of degree <= 2: 0
+supports of size 2 that carry a non-zero polynomial of degree <= 2: 0
+supports of size 3 that carry a non-zero polynomial of degree <= 2: 0
+supports of size 4 that carry a non-zero polynomial of degree <= 2: 100
+size <= 3: 0 (claim 0) ; size 4: 24 faces with constant value (there are 24 faces), 76 of any other kind (claim 0)
+LIGHT label=aacross-h1s exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:11:56 cmd=python3 -B h1_support.py

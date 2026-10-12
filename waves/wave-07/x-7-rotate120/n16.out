@@ -1,0 +1,33 @@
+N=4  R^3 = 1: True ; trace R = 1
+  dimension of {X : X R = R^-1 X} = 6 ; expected (fixed)^2 + 2 (rest/2)^2 = 6
+  D                                  mirror=True trace=2 row non-zeros=[1] total=4
+  D R = H/sqrt N                     mirror=True trace=2 row non-zeros=[4] total=16
+  D R^2 = D H D/sqrt N               mirror=True trace=2 row non-zeros=[4] total=16
+N=16  R^3 = 1: True ; trace R = 1
+  dimension of {X : X R = R^-1 X} = 86 ; expected (fixed)^2 + 2 (rest/2)^2 = 86
+  D                                  mirror=True trace=4 row non-zeros=[1] total=16
+  D R = H/sqrt N                     mirror=True trace=4 row non-zeros=[16] total=256
+  D R^2 = D H D/sqrt N               mirror=True trace=4 row non-zeros=[16] total=256
+  R_4 (x) R_rest == R : True
+  R_rest (x) R_4 == R : True
+  rows-then-columns pair:  S1 S2 == R : True
+  S1 = D (x) D H D/sqrt              mirror=True trace=4 row non-zeros=[4] total=64
+  S2 = H/sqrt (x) D                  mirror=True trace=4 row non-zeros=[4] total=64
+  third mirror S1 R^2                mirror=True trace=4 row non-zeros=[16] total=256
+  other split: S1 S2 == R : True ; mirror=True trace=4 row non-zeros=[4] total=64 ; mirror=True trace=4 row non-zeros=[4] total=64
+  swap pair, a = D: mirror=True trace=4 row non-zeros=[1] total=16 ; partner mirror=True trace=4 row non-zeros=[16] total=256
+  swap pair, a = D R (= H/2): mirror=True trace=4 row non-zeros=[16] total=256 ; partner mirror=True trace=4 row non-zeros=[16] total=256
+  swap pair, a = R^... D R^2: mirror=True trace=4 row non-zeros=[16] total=256 ; partner mirror=True trace=4 row non-zeros=[1] total=16
+  D with the sign flipped on the fixed vectors living on Q = 1: mirror=True trace=6 row non-zeros=[1, 6] total=46 ; partner mirror=True trace=6 row non-zeros=[16] total=256
+N=64  R^3 = 1: True ; trace R = 1
+  D                                  mirror=True trace=8 row non-zeros=[1] total=64
+  D R = H/sqrt N                     mirror=True trace=8 row non-zeros=[64] total=4096
+  D R^2 = D H D/sqrt N               mirror=True trace=8 row non-zeros=[64] total=4096
+  R_4 (x) R_rest == R : True
+  R_rest (x) R_4 == R : True
+  rows-then-columns pair:  S1 S2 == R : True
+  S1 = D (x) D H D/sqrt              mirror=True trace=8 row non-zeros=[16] total=1024
+  S2 = H/sqrt (x) D                  mirror=True trace=8 row non-zeros=[4] total=256
+  third mirror S1 R^2                mirror=True trace=8 row non-zeros=[64] total=4096
+  other split: S1 S2 == R : True ; mirror=True trace=8 row non-zeros=[4] total=256 ; mirror=True trace=8 row non-zeros=[16] total=1024
+LIGHT label=x7-n16 exit=0 time=21s waited=0s peak_rss_mb=19 peak_footprint_mb=16 lowest_cap_mb=1500 stopped=- start=03:25:32 cmd=python3 -B n16.py

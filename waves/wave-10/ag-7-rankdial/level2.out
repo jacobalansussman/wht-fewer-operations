@@ -1,0 +1,10 @@
+k=3 d=3: 2802 minimum circuits, 6960 complete derivations (0 circuits cut off at 3000 derivations each)
+  helper gates by shape, summed: internal 0, own group + outside wire 10272, both operands outside the group: 19032 for wires that sit in a group with an edge, 5496 for isolated wires
+  the outside wire x of an 'own group + outside' gate is isolated 9708 times, sits in a group with an edge 564 times
+  derivations that break claim (1): 0; claim (2): 0; claim (3): 0; gates that break claim (4): 0
+  most groups (isolated wires included) in one derivation: 6
+k=3 d=2: 654 minimum circuits, 1608 complete derivations (0 circuits cut off at 3000 derivations each)
+  helper gates by shape, summed: internal 186, own group + outside wire 2724, both operands outside the group: 3060 for wires that sit in a group with an edge, 192 for isolated wires
+  the outside wire x of an 'own group + outside' gate is isolated 2286 times, sits in a group with an edge 282 times
+  derivations that break claim (1): 0; claim (2): 156; claim (3): 0; gates that break claim (4): 270
+  most groups (isolated wires included) in one derivation: 5

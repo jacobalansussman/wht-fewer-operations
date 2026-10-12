@@ -1,0 +1,4 @@
+class pool at 8 points: inputs 8 helpers 48 (pieces 16, hubs 32) outputs 8
+one-gate derivations inside the class: 568
+status 1 Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
+no program found; HiGHS lower bound None

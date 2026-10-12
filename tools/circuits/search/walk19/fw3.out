@@ -1,0 +1,17 @@
+N = 8: 21 chains of subgroups; designs sampled at random (any sign vectors); count (G)
+   t=0s design 1: 19 gates (replayed exactly: 19 gates, all 8 characters present: True)  F0 = [1, -1, -1, -1, 1, 1, -1, 1]  chain = (7, 1)
+N = 8: 852 designs; gates found (count: designs): [(19, 55), (20, 54), (21, 300), (22, 364), (23, 79)]
+best: 19 gates = 7 (merge tree) + 12 (flip steps); textbook 24; F0 = [1, -1, -1, -1, 1, 1, -1, 1]; chain = (7, 1)
+flip steps (new difference set <- old difference set, toggled set):
+   11100100 <- 11111100  toggling 00011000
+   11111100 <- 11111110  toggling 00000010
+   11011000 <- 11111100  toggling 00100100
+   01001110 <- 00110000  toggling 10000001
+   00110000 <- 00100000  toggling 00010000
+   01110010 <- 00110000  toggling 01000010
+   00010100 <- 00101000  toggling 11000011
+   00100000 <- 00000000  toggling 00100000
+   00101000 <- 00100000  toggling 00001000
+   10000010 <- 10111110  toggling 00111100
+   11111110 <- 00000000  toggling 00000001
+   10111110 <- 11111110  toggling 01000000

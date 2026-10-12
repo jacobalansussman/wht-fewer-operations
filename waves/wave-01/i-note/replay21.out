@@ -1,0 +1,4 @@
+gates: 21 | all 8 outputs equal the Walsh-Hadamard rows exactly: True
+wires with s*s' > 8 (not tight): [('g14', 8, 4), ('g15', 8, 8), ('g16', 8, 4), ('g17', 8, 8), ('g25', 3, 8), ('g27', 8, 3)]
+tight wires: 15 of 21
+LIGHT label=i-note-replay21 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:36:00 cmd=python3 -B waves/wave-01/i-note/replay21.py waves/wave-02/e-2-density/h8_21gates.txt

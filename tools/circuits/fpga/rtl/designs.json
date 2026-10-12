@@ -1,0 +1,2307 @@
+{
+ "designs": [
+  {
+   "size": "8",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_8.txt",
+   "N": 8,
+   "W": 8,
+   "OW": 11,
+   "adders": 24,
+   "depth": 3,
+   "adder_bits": 240,
+   "chain_bits": 240,
+   "width_histogram": {
+    "9": 8,
+    "10": 8,
+    "11": 8
+   },
+   "every": 1,
+   "latency": 3,
+   "reg_after_adders": 240,
+   "reg_delay": 0,
+   "reg_data": 240,
+   "reg_valid": 3,
+   "r_reg_data": 152,
+   "r_reg_valid": 2,
+   "p2_latency": 2,
+   "p2_reg_after_adders": 168,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 168,
+   "files": {
+    "c": {
+     "file": "v/8_textbook_c_w8.v",
+     "module": "wht_8_textbook_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_textbook_p_w8.v",
+     "module": "wht_8_textbook_p_w8",
+     "latency": 3
+    },
+    "p2": {
+     "file": "v/8_textbook_p2_w8.v",
+     "module": "wht_8_textbook_p2_w8",
+     "latency": 2
+    },
+    "r": {
+     "file": "v/8_textbook_r_w8.v",
+     "module": "wht_8_textbook_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_8.txt",
+   "N": 8,
+   "W": 12,
+   "OW": 15,
+   "adders": 24,
+   "depth": 3,
+   "adder_bits": 336,
+   "chain_bits": 336,
+   "width_histogram": {
+    "13": 8,
+    "14": 8,
+    "15": 8
+   },
+   "every": 1,
+   "latency": 3,
+   "reg_after_adders": 336,
+   "reg_delay": 0,
+   "reg_data": 336,
+   "reg_valid": 3,
+   "r_reg_data": 216,
+   "r_reg_valid": 2,
+   "p2_latency": 2,
+   "p2_reg_after_adders": 232,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 232,
+   "files": {
+    "c": {
+     "file": "v/8_textbook_c_w12.v",
+     "module": "wht_8_textbook_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_textbook_p_w12.v",
+     "module": "wht_8_textbook_p_w12",
+     "latency": 3
+    },
+    "p2": {
+     "file": "v/8_textbook_p2_w12.v",
+     "module": "wht_8_textbook_p2_w12",
+     "latency": 2
+    },
+    "r": {
+     "file": "v/8_textbook_r_w12.v",
+     "module": "wht_8_textbook_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_8.txt",
+   "N": 8,
+   "W": 16,
+   "OW": 19,
+   "adders": 24,
+   "depth": 3,
+   "adder_bits": 432,
+   "chain_bits": 432,
+   "width_histogram": {
+    "17": 8,
+    "18": 8,
+    "19": 8
+   },
+   "every": 1,
+   "latency": 3,
+   "reg_after_adders": 432,
+   "reg_delay": 0,
+   "reg_data": 432,
+   "reg_valid": 3,
+   "r_reg_data": 280,
+   "r_reg_valid": 2,
+   "p2_latency": 2,
+   "p2_reg_after_adders": 296,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 296,
+   "files": {
+    "c": {
+     "file": "v/8_textbook_c_w16.v",
+     "module": "wht_8_textbook_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_textbook_p_w16.v",
+     "module": "wht_8_textbook_p_w16",
+     "latency": 3
+    },
+    "p2": {
+     "file": "v/8_textbook_p2_w16.v",
+     "module": "wht_8_textbook_p2_w16",
+     "latency": 2
+    },
+    "r": {
+     "file": "v/8_textbook_r_w16.v",
+     "module": "wht_8_textbook_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8_cfl1994.txt",
+   "N": 8,
+   "W": 8,
+   "OW": 11,
+   "adders": 22,
+   "depth": 5,
+   "adder_bits": 226,
+   "chain_bits": 220,
+   "width_histogram": {
+    "9": 2,
+    "10": 12,
+    "11": 8
+   },
+   "every": 1,
+   "latency": 5,
+   "reg_after_adders": 226,
+   "reg_delay": 198,
+   "reg_data": 424,
+   "reg_valid": 5,
+   "r_reg_data": 152,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 168,
+   "p2_reg_delay": 86,
+   "p2_reg_data": 254,
+   "files": {
+    "c": {
+     "file": "v/8_cfl1994_c_w8.v",
+     "module": "wht_8_cfl1994_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_cfl1994_p_w8.v",
+     "module": "wht_8_cfl1994_p_w8",
+     "latency": 5
+    },
+    "p2": {
+     "file": "v/8_cfl1994_p2_w8.v",
+     "module": "wht_8_cfl1994_p2_w8",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_cfl1994_r_w8.v",
+     "module": "wht_8_cfl1994_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8_cfl1994.txt",
+   "N": 8,
+   "W": 12,
+   "OW": 15,
+   "adders": 22,
+   "depth": 5,
+   "adder_bits": 314,
+   "chain_bits": 308,
+   "width_histogram": {
+    "13": 2,
+    "14": 12,
+    "15": 8
+   },
+   "every": 1,
+   "latency": 5,
+   "reg_after_adders": 314,
+   "reg_delay": 294,
+   "reg_data": 608,
+   "reg_valid": 5,
+   "r_reg_data": 216,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 232,
+   "p2_reg_delay": 126,
+   "p2_reg_data": 358,
+   "files": {
+    "c": {
+     "file": "v/8_cfl1994_c_w12.v",
+     "module": "wht_8_cfl1994_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_cfl1994_p_w12.v",
+     "module": "wht_8_cfl1994_p_w12",
+     "latency": 5
+    },
+    "p2": {
+     "file": "v/8_cfl1994_p2_w12.v",
+     "module": "wht_8_cfl1994_p2_w12",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_cfl1994_r_w12.v",
+     "module": "wht_8_cfl1994_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8_cfl1994.txt",
+   "N": 8,
+   "W": 16,
+   "OW": 19,
+   "adders": 22,
+   "depth": 5,
+   "adder_bits": 402,
+   "chain_bits": 396,
+   "width_histogram": {
+    "17": 2,
+    "18": 12,
+    "19": 8
+   },
+   "every": 1,
+   "latency": 5,
+   "reg_after_adders": 402,
+   "reg_delay": 390,
+   "reg_data": 792,
+   "reg_valid": 5,
+   "r_reg_data": 280,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 296,
+   "p2_reg_delay": 166,
+   "p2_reg_data": 462,
+   "files": {
+    "c": {
+     "file": "v/8_cfl1994_c_w16.v",
+     "module": "wht_8_cfl1994_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_cfl1994_p_w16.v",
+     "module": "wht_8_cfl1994_p_w16",
+     "latency": 5
+    },
+    "p2": {
+     "file": "v/8_cfl1994_p2_w16.v",
+     "module": "wht_8_cfl1994_p2_w16",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_cfl1994_r_w16.v",
+     "module": "wht_8_cfl1994_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "cfl1994b",
+   "primary": false,
+   "source": "tools/circuits/fpga/rtl/circuits/8_cfl1994b.txt",
+   "N": 8,
+   "W": 8,
+   "OW": 11,
+   "adders": 22,
+   "depth": 5,
+   "adder_bits": 224,
+   "chain_bits": 218,
+   "width_histogram": {
+    "9": 8,
+    "10": 2,
+    "11": 12
+   },
+   "every": 1,
+   "latency": 5,
+   "reg_after_adders": 224,
+   "reg_delay": 220,
+   "reg_data": 444,
+   "reg_valid": 5,
+   "r_reg_data": 152,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 202,
+   "p2_reg_delay": 76,
+   "p2_reg_data": 278,
+   "files": {
+    "c": {
+     "file": "v/8_cfl1994b_c_w8.v",
+     "module": "wht_8_cfl1994b_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_cfl1994b_p_w8.v",
+     "module": "wht_8_cfl1994b_p_w8",
+     "latency": 5
+    },
+    "p2": {
+     "file": "v/8_cfl1994b_p2_w8.v",
+     "module": "wht_8_cfl1994b_p2_w8",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_cfl1994b_r_w8.v",
+     "module": "wht_8_cfl1994b_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "cfl1994b",
+   "primary": false,
+   "source": "tools/circuits/fpga/rtl/circuits/8_cfl1994b.txt",
+   "N": 8,
+   "W": 12,
+   "OW": 15,
+   "adders": 22,
+   "depth": 5,
+   "adder_bits": 312,
+   "chain_bits": 306,
+   "width_histogram": {
+    "13": 8,
+    "14": 2,
+    "15": 12
+   },
+   "every": 1,
+   "latency": 5,
+   "reg_after_adders": 312,
+   "reg_delay": 316,
+   "reg_data": 628,
+   "reg_valid": 5,
+   "r_reg_data": 216,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 282,
+   "p2_reg_delay": 108,
+   "p2_reg_data": 390,
+   "files": {
+    "c": {
+     "file": "v/8_cfl1994b_c_w12.v",
+     "module": "wht_8_cfl1994b_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_cfl1994b_p_w12.v",
+     "module": "wht_8_cfl1994b_p_w12",
+     "latency": 5
+    },
+    "p2": {
+     "file": "v/8_cfl1994b_p2_w12.v",
+     "module": "wht_8_cfl1994b_p2_w12",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_cfl1994b_r_w12.v",
+     "module": "wht_8_cfl1994b_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "cfl1994b",
+   "primary": false,
+   "source": "tools/circuits/fpga/rtl/circuits/8_cfl1994b.txt",
+   "N": 8,
+   "W": 16,
+   "OW": 19,
+   "adders": 22,
+   "depth": 5,
+   "adder_bits": 400,
+   "chain_bits": 394,
+   "width_histogram": {
+    "17": 8,
+    "18": 2,
+    "19": 12
+   },
+   "every": 1,
+   "latency": 5,
+   "reg_after_adders": 400,
+   "reg_delay": 412,
+   "reg_data": 812,
+   "reg_valid": 5,
+   "r_reg_data": 280,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 362,
+   "p2_reg_delay": 140,
+   "p2_reg_data": 502,
+   "files": {
+    "c": {
+     "file": "v/8_cfl1994b_c_w16.v",
+     "module": "wht_8_cfl1994b_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_cfl1994b_p_w16.v",
+     "module": "wht_8_cfl1994b_p_w16",
+     "latency": 5
+    },
+    "p2": {
+     "file": "v/8_cfl1994b_p2_w16.v",
+     "module": "wht_8_cfl1994b_p2_w16",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_cfl1994b_r_w16.v",
+     "module": "wht_8_cfl1994b_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ar2023",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8_ar2023.txt",
+   "N": 8,
+   "W": 8,
+   "OW": 11,
+   "adders": 22,
+   "depth": 6,
+   "adder_bits": 226,
+   "chain_bits": 216,
+   "width_histogram": {
+    "9": 7,
+    "10": 2,
+    "11": 13
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 226,
+   "reg_delay": 394,
+   "reg_data": 620,
+   "reg_valid": 6,
+   "r_reg_data": 152,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 182,
+   "p2_reg_delay": 130,
+   "p2_reg_data": 312,
+   "files": {
+    "c": {
+     "file": "v/8_ar2023_c_w8.v",
+     "module": "wht_8_ar2023_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ar2023_p_w8.v",
+     "module": "wht_8_ar2023_p_w8",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8_ar2023_p2_w8.v",
+     "module": "wht_8_ar2023_p2_w8",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_ar2023_r_w8.v",
+     "module": "wht_8_ar2023_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ar2023",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8_ar2023.txt",
+   "N": 8,
+   "W": 12,
+   "OW": 15,
+   "adders": 22,
+   "depth": 6,
+   "adder_bits": 314,
+   "chain_bits": 304,
+   "width_histogram": {
+    "13": 7,
+    "14": 2,
+    "15": 13
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 314,
+   "reg_delay": 574,
+   "reg_data": 888,
+   "reg_valid": 6,
+   "r_reg_data": 216,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 254,
+   "p2_reg_delay": 190,
+   "p2_reg_data": 444,
+   "files": {
+    "c": {
+     "file": "v/8_ar2023_c_w12.v",
+     "module": "wht_8_ar2023_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ar2023_p_w12.v",
+     "module": "wht_8_ar2023_p_w12",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8_ar2023_p2_w12.v",
+     "module": "wht_8_ar2023_p2_w12",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_ar2023_r_w12.v",
+     "module": "wht_8_ar2023_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ar2023",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8_ar2023.txt",
+   "N": 8,
+   "W": 16,
+   "OW": 19,
+   "adders": 22,
+   "depth": 6,
+   "adder_bits": 402,
+   "chain_bits": 392,
+   "width_histogram": {
+    "17": 7,
+    "18": 2,
+    "19": 13
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 402,
+   "reg_delay": 754,
+   "reg_data": 1156,
+   "reg_valid": 6,
+   "r_reg_data": 280,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 326,
+   "p2_reg_delay": 250,
+   "p2_reg_data": 576,
+   "files": {
+    "c": {
+     "file": "v/8_ar2023_c_w16.v",
+     "module": "wht_8_ar2023_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ar2023_p_w16.v",
+     "module": "wht_8_ar2023_p_w16",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8_ar2023_p2_w16.v",
+     "module": "wht_8_ar2023_p2_w16",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_ar2023_r_w16.v",
+     "module": "wht_8_ar2023_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ar2023l",
+   "primary": false,
+   "source": "tools/circuits/fpga/rtl/circuits/8_ar2023l.txt",
+   "N": 8,
+   "W": 8,
+   "OW": 11,
+   "adders": 22,
+   "depth": 8,
+   "adder_bits": 235,
+   "chain_bits": 221,
+   "width_histogram": {
+    "9": 3,
+    "10": 1,
+    "11": 18
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 235,
+   "reg_delay": 561,
+   "reg_data": 796,
+   "reg_valid": 8,
+   "r_reg_data": 152,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 169,
+   "p2_reg_delay": 225,
+   "p2_reg_data": 394,
+   "files": {
+    "c": {
+     "file": "v/8_ar2023l_c_w8.v",
+     "module": "wht_8_ar2023l_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ar2023l_p_w8.v",
+     "module": "wht_8_ar2023l_p_w8",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/8_ar2023l_p2_w8.v",
+     "module": "wht_8_ar2023l_p2_w8",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/8_ar2023l_r_w8.v",
+     "module": "wht_8_ar2023l_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ar2023l",
+   "primary": false,
+   "source": "tools/circuits/fpga/rtl/circuits/8_ar2023l.txt",
+   "N": 8,
+   "W": 12,
+   "OW": 15,
+   "adders": 22,
+   "depth": 8,
+   "adder_bits": 323,
+   "chain_bits": 309,
+   "width_histogram": {
+    "13": 3,
+    "14": 1,
+    "15": 18
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 323,
+   "reg_delay": 825,
+   "reg_data": 1148,
+   "reg_valid": 8,
+   "r_reg_data": 216,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 233,
+   "p2_reg_delay": 333,
+   "p2_reg_data": 566,
+   "files": {
+    "c": {
+     "file": "v/8_ar2023l_c_w12.v",
+     "module": "wht_8_ar2023l_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ar2023l_p_w12.v",
+     "module": "wht_8_ar2023l_p_w12",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/8_ar2023l_p2_w12.v",
+     "module": "wht_8_ar2023l_p2_w12",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/8_ar2023l_r_w12.v",
+     "module": "wht_8_ar2023l_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ar2023l",
+   "primary": false,
+   "source": "tools/circuits/fpga/rtl/circuits/8_ar2023l.txt",
+   "N": 8,
+   "W": 16,
+   "OW": 19,
+   "adders": 22,
+   "depth": 8,
+   "adder_bits": 411,
+   "chain_bits": 397,
+   "width_histogram": {
+    "17": 3,
+    "18": 1,
+    "19": 18
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 411,
+   "reg_delay": 1089,
+   "reg_data": 1500,
+   "reg_valid": 8,
+   "r_reg_data": 280,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 297,
+   "p2_reg_delay": 441,
+   "p2_reg_data": 738,
+   "files": {
+    "c": {
+     "file": "v/8_ar2023l_c_w16.v",
+     "module": "wht_8_ar2023l_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ar2023l_p_w16.v",
+     "module": "wht_8_ar2023l_p_w16",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/8_ar2023l_p2_w16.v",
+     "module": "wht_8_ar2023l_p2_w16",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/8_ar2023l_r_w16.v",
+     "module": "wht_8_ar2023l_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/h8_19gates.txt",
+   "N": 8,
+   "W": 8,
+   "OW": 11,
+   "adders": 19,
+   "depth": 6,
+   "adder_bits": 199,
+   "chain_bits": 189,
+   "width_histogram": {
+    "9": 4,
+    "10": 2,
+    "11": 13
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 199,
+   "reg_delay": 402,
+   "reg_data": 601,
+   "reg_valid": 6,
+   "r_reg_data": 152,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 166,
+   "p2_reg_delay": 136,
+   "p2_reg_data": 302,
+   "files": {
+    "c": {
+     "file": "v/8_ours_c_w8.v",
+     "module": "wht_8_ours_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ours_p_w8.v",
+     "module": "wht_8_ours_p_w8",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8_ours_p2_w8.v",
+     "module": "wht_8_ours_p2_w8",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_ours_r_w8.v",
+     "module": "wht_8_ours_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/h8_19gates.txt",
+   "N": 8,
+   "W": 12,
+   "OW": 15,
+   "adders": 19,
+   "depth": 6,
+   "adder_bits": 275,
+   "chain_bits": 265,
+   "width_histogram": {
+    "13": 4,
+    "14": 2,
+    "15": 13
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 275,
+   "reg_delay": 586,
+   "reg_data": 861,
+   "reg_valid": 6,
+   "r_reg_data": 216,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 230,
+   "p2_reg_delay": 200,
+   "p2_reg_data": 430,
+   "files": {
+    "c": {
+     "file": "v/8_ours_c_w12.v",
+     "module": "wht_8_ours_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ours_p_w12.v",
+     "module": "wht_8_ours_p_w12",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8_ours_p2_w12.v",
+     "module": "wht_8_ours_p2_w12",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_ours_r_w12.v",
+     "module": "wht_8_ours_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/h8_19gates.txt",
+   "N": 8,
+   "W": 16,
+   "OW": 19,
+   "adders": 19,
+   "depth": 6,
+   "adder_bits": 351,
+   "chain_bits": 341,
+   "width_histogram": {
+    "17": 4,
+    "18": 2,
+    "19": 13
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 351,
+   "reg_delay": 770,
+   "reg_data": 1121,
+   "reg_valid": 6,
+   "r_reg_data": 280,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 294,
+   "p2_reg_delay": 264,
+   "p2_reg_data": 558,
+   "files": {
+    "c": {
+     "file": "v/8_ours_c_w16.v",
+     "module": "wht_8_ours_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8_ours_p_w16.v",
+     "module": "wht_8_ours_p_w16",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8_ours_p2_w16.v",
+     "module": "wht_8_ours_p2_w16",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8_ours_r_w16.v",
+     "module": "wht_8_ours_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_16.txt",
+   "N": 16,
+   "W": 8,
+   "OW": 12,
+   "adders": 64,
+   "depth": 4,
+   "adder_bits": 672,
+   "chain_bits": 672,
+   "width_histogram": {
+    "9": 16,
+    "10": 16,
+    "11": 16,
+    "12": 16
+   },
+   "every": 1,
+   "latency": 4,
+   "reg_after_adders": 672,
+   "reg_delay": 0,
+   "reg_data": 672,
+   "reg_valid": 4,
+   "r_reg_data": 320,
+   "r_reg_valid": 2,
+   "p2_latency": 2,
+   "p2_reg_after_adders": 352,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 352,
+   "files": {
+    "c": {
+     "file": "v/16_textbook_c_w8.v",
+     "module": "wht_16_textbook_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_textbook_p_w8.v",
+     "module": "wht_16_textbook_p_w8",
+     "latency": 4
+    },
+    "p2": {
+     "file": "v/16_textbook_p2_w8.v",
+     "module": "wht_16_textbook_p2_w8",
+     "latency": 2
+    },
+    "r": {
+     "file": "v/16_textbook_r_w8.v",
+     "module": "wht_16_textbook_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_16.txt",
+   "N": 16,
+   "W": 12,
+   "OW": 16,
+   "adders": 64,
+   "depth": 4,
+   "adder_bits": 928,
+   "chain_bits": 928,
+   "width_histogram": {
+    "13": 16,
+    "14": 16,
+    "15": 16,
+    "16": 16
+   },
+   "every": 1,
+   "latency": 4,
+   "reg_after_adders": 928,
+   "reg_delay": 0,
+   "reg_data": 928,
+   "reg_valid": 4,
+   "r_reg_data": 448,
+   "r_reg_valid": 2,
+   "p2_latency": 2,
+   "p2_reg_after_adders": 480,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 480,
+   "files": {
+    "c": {
+     "file": "v/16_textbook_c_w12.v",
+     "module": "wht_16_textbook_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_textbook_p_w12.v",
+     "module": "wht_16_textbook_p_w12",
+     "latency": 4
+    },
+    "p2": {
+     "file": "v/16_textbook_p2_w12.v",
+     "module": "wht_16_textbook_p2_w12",
+     "latency": 2
+    },
+    "r": {
+     "file": "v/16_textbook_r_w12.v",
+     "module": "wht_16_textbook_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_16.txt",
+   "N": 16,
+   "W": 16,
+   "OW": 20,
+   "adders": 64,
+   "depth": 4,
+   "adder_bits": 1184,
+   "chain_bits": 1184,
+   "width_histogram": {
+    "17": 16,
+    "18": 16,
+    "19": 16,
+    "20": 16
+   },
+   "every": 1,
+   "latency": 4,
+   "reg_after_adders": 1184,
+   "reg_delay": 0,
+   "reg_data": 1184,
+   "reg_valid": 4,
+   "r_reg_data": 576,
+   "r_reg_valid": 2,
+   "p2_latency": 2,
+   "p2_reg_after_adders": 608,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 608,
+   "files": {
+    "c": {
+     "file": "v/16_textbook_c_w16.v",
+     "module": "wht_16_textbook_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_textbook_p_w16.v",
+     "module": "wht_16_textbook_p_w16",
+     "latency": 4
+    },
+    "p2": {
+     "file": "v/16_textbook_p2_w16.v",
+     "module": "wht_16_textbook_p2_w16",
+     "latency": 2
+    },
+    "r": {
+     "file": "v/16_textbook_r_w16.v",
+     "module": "wht_16_textbook_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/16_cfl1994.txt",
+   "N": 16,
+   "W": 8,
+   "OW": 12,
+   "adders": 56,
+   "depth": 8,
+   "adder_bits": 608,
+   "chain_bits": 584,
+   "width_histogram": {
+    "9": 4,
+    "10": 24,
+    "11": 4,
+    "12": 24
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 608,
+   "reg_delay": 888,
+   "reg_data": 1496,
+   "reg_valid": 8,
+   "r_reg_data": 320,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 451,
+   "p2_reg_delay": 290,
+   "p2_reg_data": 741,
+   "files": {
+    "c": {
+     "file": "v/16_cfl1994_c_w8.v",
+     "module": "wht_16_cfl1994_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_cfl1994_p_w8.v",
+     "module": "wht_16_cfl1994_p_w8",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/16_cfl1994_p2_w8.v",
+     "module": "wht_16_cfl1994_p2_w8",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/16_cfl1994_r_w8.v",
+     "module": "wht_16_cfl1994_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/16_cfl1994.txt",
+   "N": 16,
+   "W": 12,
+   "OW": 16,
+   "adders": 56,
+   "depth": 8,
+   "adder_bits": 832,
+   "chain_bits": 808,
+   "width_histogram": {
+    "13": 4,
+    "14": 24,
+    "15": 4,
+    "16": 24
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 832,
+   "reg_delay": 1272,
+   "reg_data": 2104,
+   "reg_valid": 8,
+   "r_reg_data": 448,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 615,
+   "p2_reg_delay": 418,
+   "p2_reg_data": 1033,
+   "files": {
+    "c": {
+     "file": "v/16_cfl1994_c_w12.v",
+     "module": "wht_16_cfl1994_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_cfl1994_p_w12.v",
+     "module": "wht_16_cfl1994_p_w12",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/16_cfl1994_p2_w12.v",
+     "module": "wht_16_cfl1994_p2_w12",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/16_cfl1994_r_w12.v",
+     "module": "wht_16_cfl1994_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/16_cfl1994.txt",
+   "N": 16,
+   "W": 16,
+   "OW": 20,
+   "adders": 56,
+   "depth": 8,
+   "adder_bits": 1056,
+   "chain_bits": 1032,
+   "width_histogram": {
+    "17": 4,
+    "18": 24,
+    "19": 4,
+    "20": 24
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 1056,
+   "reg_delay": 1656,
+   "reg_data": 2712,
+   "reg_valid": 8,
+   "r_reg_data": 576,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 779,
+   "p2_reg_delay": 546,
+   "p2_reg_data": 1325,
+   "files": {
+    "c": {
+     "file": "v/16_cfl1994_c_w16.v",
+     "module": "wht_16_cfl1994_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_cfl1994_p_w16.v",
+     "module": "wht_16_cfl1994_p_w16",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/16_cfl1994_p2_w16.v",
+     "module": "wht_16_cfl1994_p2_w16",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/16_cfl1994_r_w16.v",
+     "module": "wht_16_cfl1994_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/h16_52gates.txt",
+   "N": 16,
+   "W": 8,
+   "OW": 12,
+   "adders": 52,
+   "depth": 8,
+   "adder_bits": 564,
+   "chain_bits": 544,
+   "width_histogram": {
+    "9": 8,
+    "10": 12,
+    "11": 12,
+    "12": 20
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 564,
+   "reg_delay": 856,
+   "reg_data": 1420,
+   "reg_valid": 8,
+   "r_reg_data": 320,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 564,
+   "p2_reg_delay": 216,
+   "p2_reg_data": 780,
+   "files": {
+    "c": {
+     "file": "v/16_ours_c_w8.v",
+     "module": "wht_16_ours_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_ours_p_w8.v",
+     "module": "wht_16_ours_p_w8",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/16_ours_p2_w8.v",
+     "module": "wht_16_ours_p2_w8",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/16_ours_r_w8.v",
+     "module": "wht_16_ours_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/h16_52gates.txt",
+   "N": 16,
+   "W": 12,
+   "OW": 16,
+   "adders": 52,
+   "depth": 8,
+   "adder_bits": 772,
+   "chain_bits": 752,
+   "width_histogram": {
+    "13": 8,
+    "14": 12,
+    "15": 12,
+    "16": 20
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 772,
+   "reg_delay": 1208,
+   "reg_data": 1980,
+   "reg_valid": 8,
+   "r_reg_data": 448,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 772,
+   "p2_reg_delay": 312,
+   "p2_reg_data": 1084,
+   "files": {
+    "c": {
+     "file": "v/16_ours_c_w12.v",
+     "module": "wht_16_ours_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_ours_p_w12.v",
+     "module": "wht_16_ours_p_w12",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/16_ours_p2_w12.v",
+     "module": "wht_16_ours_p2_w12",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/16_ours_r_w12.v",
+     "module": "wht_16_ours_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "16",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/h16_52gates.txt",
+   "N": 16,
+   "W": 16,
+   "OW": 20,
+   "adders": 52,
+   "depth": 8,
+   "adder_bits": 980,
+   "chain_bits": 960,
+   "width_histogram": {
+    "17": 8,
+    "18": 12,
+    "19": 12,
+    "20": 20
+   },
+   "every": 1,
+   "latency": 8,
+   "reg_after_adders": 980,
+   "reg_delay": 1560,
+   "reg_data": 2540,
+   "reg_valid": 8,
+   "r_reg_data": 576,
+   "r_reg_valid": 2,
+   "p2_latency": 4,
+   "p2_reg_after_adders": 980,
+   "p2_reg_delay": 408,
+   "p2_reg_data": 1388,
+   "files": {
+    "c": {
+     "file": "v/16_ours_c_w16.v",
+     "module": "wht_16_ours_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/16_ours_p_w16.v",
+     "module": "wht_16_ours_p_w16",
+     "latency": 8
+    },
+    "p2": {
+     "file": "v/16_ours_p2_w16.v",
+     "module": "wht_16_ours_p2_w16",
+     "latency": 4
+    },
+    "r": {
+     "file": "v/16_ours_r_w16.v",
+     "module": "wht_16_ours_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_64.txt",
+   "N": 64,
+   "W": 8,
+   "OW": 14,
+   "adders": 384,
+   "depth": 6,
+   "adder_bits": 4416,
+   "chain_bits": 4416,
+   "width_histogram": {
+    "9": 64,
+    "10": 64,
+    "11": 64,
+    "12": 64,
+    "13": 64,
+    "14": 64
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 4416,
+   "reg_delay": 0,
+   "reg_data": 4416,
+   "reg_valid": 6,
+   "r_reg_data": 1408,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 2304,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 2304,
+   "files": {
+    "c": {
+     "file": "v/64_textbook_c_w8.v",
+     "module": "wht_64_textbook_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_textbook_p_w8.v",
+     "module": "wht_64_textbook_p_w8",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/64_textbook_p2_w8.v",
+     "module": "wht_64_textbook_p2_w8",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/64_textbook_r_w8.v",
+     "module": "wht_64_textbook_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_64.txt",
+   "N": 64,
+   "W": 12,
+   "OW": 18,
+   "adders": 384,
+   "depth": 6,
+   "adder_bits": 5952,
+   "chain_bits": 5952,
+   "width_histogram": {
+    "13": 64,
+    "14": 64,
+    "15": 64,
+    "16": 64,
+    "17": 64,
+    "18": 64
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 5952,
+   "reg_delay": 0,
+   "reg_data": 5952,
+   "reg_valid": 6,
+   "r_reg_data": 1920,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 3072,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 3072,
+   "files": {
+    "c": {
+     "file": "v/64_textbook_c_w12.v",
+     "module": "wht_64_textbook_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_textbook_p_w12.v",
+     "module": "wht_64_textbook_p_w12",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/64_textbook_p2_w12.v",
+     "module": "wht_64_textbook_p2_w12",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/64_textbook_r_w12.v",
+     "module": "wht_64_textbook_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/O_textbook_64.txt",
+   "N": 64,
+   "W": 16,
+   "OW": 22,
+   "adders": 384,
+   "depth": 6,
+   "adder_bits": 7488,
+   "chain_bits": 7488,
+   "width_histogram": {
+    "17": 64,
+    "18": 64,
+    "19": 64,
+    "20": 64,
+    "21": 64,
+    "22": 64
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 7488,
+   "reg_delay": 0,
+   "reg_data": 7488,
+   "reg_valid": 6,
+   "r_reg_data": 2432,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 3840,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 3840,
+   "files": {
+    "c": {
+     "file": "v/64_textbook_c_w16.v",
+     "module": "wht_64_textbook_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_textbook_p_w16.v",
+     "module": "wht_64_textbook_p_w16",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/64_textbook_p2_w16.v",
+     "module": "wht_64_textbook_p2_w16",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/64_textbook_r_w16.v",
+     "module": "wht_64_textbook_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/64_cfl1994.txt",
+   "N": 64,
+   "W": 8,
+   "OW": 14,
+   "adders": 336,
+   "depth": 12,
+   "adder_bits": 3984,
+   "chain_bits": 3840,
+   "width_histogram": {
+    "9": 16,
+    "10": 96,
+    "11": 16,
+    "12": 96,
+    "13": 16,
+    "14": 96
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 3984,
+   "reg_delay": 5952,
+   "reg_data": 9936,
+   "reg_valid": 12,
+   "r_reg_data": 1408,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 3002,
+   "p2_reg_delay": 1948,
+   "p2_reg_data": 4950,
+   "files": {
+    "c": {
+     "file": "v/64_cfl1994_c_w8.v",
+     "module": "wht_64_cfl1994_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_cfl1994_p_w8.v",
+     "module": "wht_64_cfl1994_p_w8",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/64_cfl1994_p2_w8.v",
+     "module": "wht_64_cfl1994_p2_w8",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/64_cfl1994_r_w8.v",
+     "module": "wht_64_cfl1994_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/64_cfl1994.txt",
+   "N": 64,
+   "W": 12,
+   "OW": 18,
+   "adders": 336,
+   "depth": 12,
+   "adder_bits": 5328,
+   "chain_bits": 5184,
+   "width_histogram": {
+    "13": 16,
+    "14": 96,
+    "15": 16,
+    "16": 96,
+    "17": 16,
+    "18": 96
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 5328,
+   "reg_delay": 8256,
+   "reg_data": 13584,
+   "reg_valid": 12,
+   "r_reg_data": 1920,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 4002,
+   "p2_reg_delay": 2716,
+   "p2_reg_data": 6718,
+   "files": {
+    "c": {
+     "file": "v/64_cfl1994_c_w12.v",
+     "module": "wht_64_cfl1994_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_cfl1994_p_w12.v",
+     "module": "wht_64_cfl1994_p_w12",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/64_cfl1994_p2_w12.v",
+     "module": "wht_64_cfl1994_p2_w12",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/64_cfl1994_r_w12.v",
+     "module": "wht_64_cfl1994_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "cfl1994",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/64_cfl1994.txt",
+   "N": 64,
+   "W": 16,
+   "OW": 22,
+   "adders": 336,
+   "depth": 12,
+   "adder_bits": 6672,
+   "chain_bits": 6528,
+   "width_histogram": {
+    "17": 16,
+    "18": 96,
+    "19": 16,
+    "20": 96,
+    "21": 16,
+    "22": 96
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 6672,
+   "reg_delay": 10560,
+   "reg_data": 17232,
+   "reg_valid": 12,
+   "r_reg_data": 2432,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 5002,
+   "p2_reg_delay": 3484,
+   "p2_reg_data": 8486,
+   "files": {
+    "c": {
+     "file": "v/64_cfl1994_c_w16.v",
+     "module": "wht_64_cfl1994_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_cfl1994_p_w16.v",
+     "module": "wht_64_cfl1994_p_w16",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/64_cfl1994_p2_w16.v",
+     "module": "wht_64_cfl1994_p2_w16",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/64_cfl1994_r_w16.v",
+     "module": "wht_64_cfl1994_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/G_family_64.txt",
+   "N": 64,
+   "W": 8,
+   "OW": 14,
+   "adders": 304,
+   "depth": 12,
+   "adder_bits": 3616,
+   "chain_bits": 3488,
+   "width_histogram": {
+    "9": 32,
+    "10": 48,
+    "11": 48,
+    "12": 48,
+    "13": 48,
+    "14": 80
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 3616,
+   "reg_delay": 5824,
+   "reg_data": 9440,
+   "reg_valid": 12,
+   "r_reg_data": 1408,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 3616,
+   "p2_reg_delay": 1600,
+   "p2_reg_data": 5216,
+   "files": {
+    "c": {
+     "file": "v/64_ours_c_w8.v",
+     "module": "wht_64_ours_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_ours_p_w8.v",
+     "module": "wht_64_ours_p_w8",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/64_ours_p2_w8.v",
+     "module": "wht_64_ours_p2_w8",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/64_ours_r_w8.v",
+     "module": "wht_64_ours_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/G_family_64.txt",
+   "N": 64,
+   "W": 12,
+   "OW": 18,
+   "adders": 304,
+   "depth": 12,
+   "adder_bits": 4832,
+   "chain_bits": 4704,
+   "width_histogram": {
+    "13": 32,
+    "14": 48,
+    "15": 48,
+    "16": 48,
+    "17": 48,
+    "18": 80
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 4832,
+   "reg_delay": 8000,
+   "reg_data": 12832,
+   "reg_valid": 12,
+   "r_reg_data": 1920,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 4832,
+   "p2_reg_delay": 2240,
+   "p2_reg_data": 7072,
+   "files": {
+    "c": {
+     "file": "v/64_ours_c_w12.v",
+     "module": "wht_64_ours_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_ours_p_w12.v",
+     "module": "wht_64_ours_p_w12",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/64_ours_p2_w12.v",
+     "module": "wht_64_ours_p2_w12",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/64_ours_r_w12.v",
+     "module": "wht_64_ours_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "64",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/G_family_64.txt",
+   "N": 64,
+   "W": 16,
+   "OW": 22,
+   "adders": 304,
+   "depth": 12,
+   "adder_bits": 6048,
+   "chain_bits": 5920,
+   "width_histogram": {
+    "17": 32,
+    "18": 48,
+    "19": 48,
+    "20": 48,
+    "21": 48,
+    "22": 80
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 6048,
+   "reg_delay": 10176,
+   "reg_data": 16224,
+   "reg_valid": 12,
+   "r_reg_data": 2432,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 6048,
+   "p2_reg_delay": 2880,
+   "p2_reg_data": 8928,
+   "files": {
+    "c": {
+     "file": "v/64_ours_c_w16.v",
+     "module": "wht_64_ours_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/64_ours_p_w16.v",
+     "module": "wht_64_ours_p_w16",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/64_ours_p2_w16.v",
+     "module": "wht_64_ours_p2_w16",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/64_ours_r_w16.v",
+     "module": "wht_64_ours_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8x8",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8x8_textbook.txt",
+   "N": 64,
+   "W": 8,
+   "OW": 14,
+   "adders": 384,
+   "depth": 6,
+   "adder_bits": 4416,
+   "chain_bits": 4416,
+   "width_histogram": {
+    "9": 64,
+    "10": 64,
+    "11": 64,
+    "12": 64,
+    "13": 64,
+    "14": 64
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 4416,
+   "reg_delay": 0,
+   "reg_data": 4416,
+   "reg_valid": 6,
+   "r_reg_data": 1408,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 2304,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 2304,
+   "files": {
+    "c": {
+     "file": "v/8x8_textbook_c_w8.v",
+     "module": "wht_8x8_textbook_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8x8_textbook_p_w8.v",
+     "module": "wht_8x8_textbook_p_w8",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8x8_textbook_p2_w8.v",
+     "module": "wht_8x8_textbook_p2_w8",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8x8_textbook_r_w8.v",
+     "module": "wht_8x8_textbook_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8x8",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8x8_textbook.txt",
+   "N": 64,
+   "W": 12,
+   "OW": 18,
+   "adders": 384,
+   "depth": 6,
+   "adder_bits": 5952,
+   "chain_bits": 5952,
+   "width_histogram": {
+    "13": 64,
+    "14": 64,
+    "15": 64,
+    "16": 64,
+    "17": 64,
+    "18": 64
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 5952,
+   "reg_delay": 0,
+   "reg_data": 5952,
+   "reg_valid": 6,
+   "r_reg_data": 1920,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 3072,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 3072,
+   "files": {
+    "c": {
+     "file": "v/8x8_textbook_c_w12.v",
+     "module": "wht_8x8_textbook_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8x8_textbook_p_w12.v",
+     "module": "wht_8x8_textbook_p_w12",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8x8_textbook_p2_w12.v",
+     "module": "wht_8x8_textbook_p2_w12",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8x8_textbook_r_w12.v",
+     "module": "wht_8x8_textbook_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8x8",
+   "design": "textbook",
+   "primary": true,
+   "source": "tools/circuits/fpga/rtl/circuits/8x8_textbook.txt",
+   "N": 64,
+   "W": 16,
+   "OW": 22,
+   "adders": 384,
+   "depth": 6,
+   "adder_bits": 7488,
+   "chain_bits": 7488,
+   "width_histogram": {
+    "17": 64,
+    "18": 64,
+    "19": 64,
+    "20": 64,
+    "21": 64,
+    "22": 64
+   },
+   "every": 1,
+   "latency": 6,
+   "reg_after_adders": 7488,
+   "reg_delay": 0,
+   "reg_data": 7488,
+   "reg_valid": 6,
+   "r_reg_data": 2432,
+   "r_reg_valid": 2,
+   "p2_latency": 3,
+   "p2_reg_after_adders": 3840,
+   "p2_reg_delay": 0,
+   "p2_reg_data": 3840,
+   "files": {
+    "c": {
+     "file": "v/8x8_textbook_c_w16.v",
+     "module": "wht_8x8_textbook_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8x8_textbook_p_w16.v",
+     "module": "wht_8x8_textbook_p_w16",
+     "latency": 6
+    },
+    "p2": {
+     "file": "v/8x8_textbook_p2_w16.v",
+     "module": "wht_8x8_textbook_p2_w16",
+     "latency": 3
+    },
+    "r": {
+     "file": "v/8x8_textbook_r_w16.v",
+     "module": "wht_8x8_textbook_r_w16",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8x8",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/G_layers_64.txt",
+   "N": 64,
+   "W": 8,
+   "OW": 14,
+   "adders": 304,
+   "depth": 12,
+   "adder_bits": 3640,
+   "chain_bits": 3480,
+   "width_histogram": {
+    "9": 32,
+    "10": 16,
+    "11": 104,
+    "12": 32,
+    "13": 16,
+    "14": 104
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 3640,
+   "reg_delay": 7584,
+   "reg_data": 11224,
+   "reg_valid": 12,
+   "r_reg_data": 1408,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 3024,
+   "p2_reg_delay": 2624,
+   "p2_reg_data": 5648,
+   "files": {
+    "c": {
+     "file": "v/8x8_ours_c_w8.v",
+     "module": "wht_8x8_ours_c_w8",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8x8_ours_p_w8.v",
+     "module": "wht_8x8_ours_p_w8",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/8x8_ours_p2_w8.v",
+     "module": "wht_8x8_ours_p2_w8",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/8x8_ours_r_w8.v",
+     "module": "wht_8x8_ours_r_w8",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8x8",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/G_layers_64.txt",
+   "N": 64,
+   "W": 12,
+   "OW": 18,
+   "adders": 304,
+   "depth": 12,
+   "adder_bits": 4856,
+   "chain_bits": 4696,
+   "width_histogram": {
+    "13": 32,
+    "14": 16,
+    "15": 104,
+    "16": 32,
+    "17": 16,
+    "18": 104
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 4856,
+   "reg_delay": 10528,
+   "reg_data": 15384,
+   "reg_valid": 12,
+   "r_reg_data": 1920,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 4040,
+   "p2_reg_delay": 3664,
+   "p2_reg_data": 7704,
+   "files": {
+    "c": {
+     "file": "v/8x8_ours_c_w12.v",
+     "module": "wht_8x8_ours_c_w12",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8x8_ours_p_w12.v",
+     "module": "wht_8x8_ours_p_w12",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/8x8_ours_p2_w12.v",
+     "module": "wht_8x8_ours_p2_w12",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/8x8_ours_r_w12.v",
+     "module": "wht_8x8_ours_r_w12",
+     "latency": 2
+    }
+   }
+  },
+  {
+   "size": "8x8",
+   "design": "ours",
+   "primary": true,
+   "source": "tools/circuits/programs/generated/G_layers_64.txt",
+   "N": 64,
+   "W": 16,
+   "OW": 22,
+   "adders": 304,
+   "depth": 12,
+   "adder_bits": 6072,
+   "chain_bits": 5912,
+   "width_histogram": {
+    "17": 32,
+    "18": 16,
+    "19": 104,
+    "20": 32,
+    "21": 16,
+    "22": 104
+   },
+   "every": 1,
+   "latency": 12,
+   "reg_after_adders": 6072,
+   "reg_delay": 13472,
+   "reg_data": 19544,
+   "reg_valid": 12,
+   "r_reg_data": 2432,
+   "r_reg_valid": 2,
+   "p2_latency": 6,
+   "p2_reg_after_adders": 5056,
+   "p2_reg_delay": 4704,
+   "p2_reg_data": 9760,
+   "files": {
+    "c": {
+     "file": "v/8x8_ours_c_w16.v",
+     "module": "wht_8x8_ours_c_w16",
+     "latency": 0
+    },
+    "p": {
+     "file": "v/8x8_ours_p_w16.v",
+     "module": "wht_8x8_ours_p_w16",
+     "latency": 12
+    },
+    "p2": {
+     "file": "v/8x8_ours_p2_w16.v",
+     "module": "wht_8x8_ours_p2_w16",
+     "latency": 6
+    },
+    "r": {
+     "file": "v/8x8_ours_r_w16.v",
+     "module": "wht_8x8_ours_r_w16",
+     "latency": 2
+    }
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "size": "8",
+   "N": 8,
+   "W": 8,
+   "file": "v/8_def_c_w8.v",
+   "module": "wht_8_def_c_w8"
+  },
+  {
+   "size": "8",
+   "N": 8,
+   "W": 12,
+   "file": "v/8_def_c_w12.v",
+   "module": "wht_8_def_c_w12"
+  },
+  {
+   "size": "8",
+   "N": 8,
+   "W": 16,
+   "file": "v/8_def_c_w16.v",
+   "module": "wht_8_def_c_w16"
+  },
+  {
+   "size": "16",
+   "N": 16,
+   "W": 8,
+   "file": "v/16_def_c_w8.v",
+   "module": "wht_16_def_c_w8"
+  },
+  {
+   "size": "16",
+   "N": 16,
+   "W": 12,
+   "file": "v/16_def_c_w12.v",
+   "module": "wht_16_def_c_w12"
+  },
+  {
+   "size": "16",
+   "N": 16,
+   "W": 16,
+   "file": "v/16_def_c_w16.v",
+   "module": "wht_16_def_c_w16"
+  },
+  {
+   "size": "64",
+   "N": 64,
+   "W": 8,
+   "file": "v/64_def_c_w8.v",
+   "module": "wht_64_def_c_w8"
+  },
+  {
+   "size": "64",
+   "N": 64,
+   "W": 12,
+   "file": "v/64_def_c_w12.v",
+   "module": "wht_64_def_c_w12"
+  },
+  {
+   "size": "64",
+   "N": 64,
+   "W": 16,
+   "file": "v/64_def_c_w16.v",
+   "module": "wht_64_def_c_w16"
+  }
+ ]
+}

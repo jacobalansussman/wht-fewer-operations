@@ -1,0 +1,40 @@
+START gates 20 valid True
+   helper (0, 0, 0, 0, 0, 0, 1, 1) support 2 outputs one gate away 1
+   helper (0, 0, 0, 0, 1, -1, 0, 0) support 2 outputs one gate away 1
+   helper (0, 0, 1, 1, 0, 0, 0, 0) support 2 outputs one gate away 1
+   helper (1, -1, 0, 0, 0, 0, 0, 0) support 2 outputs one gate away 1
+   helper (0, 0, 0, 0, 1, -1, -1, -1) support 4 outputs one gate away 0
+   helper (0, 0, 0, 0, 1, -1, 1, -1) support 4 outputs one gate away 2
+   helper (0, 0, 0, 0, 1, 1, 1, 1) support 4 outputs one gate away 2
+   helper (1, -1, -1, -1, 0, 0, 0, 0) support 4 outputs one gate away 0
+   helper (1, -1, -1, 1, 0, 0, 0, 0) support 4 outputs one gate away 2
+   helper (1, 1, -1, -1, 0, 0, 0, 0) support 4 outputs one gate away 2
+   helper (1, -1, -1, 1, -1, 1, -1, 1) support 8 outputs one gate away 2
+   helper (1, 1, -1, -1, -1, -1, -1, -1) support 8 outputs one gate away 2
+step 1 gates 20 neighbours 2 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 2
+step 2 gates 20 neighbours 1 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 5
+step 3 gates 20 neighbours 3 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 7
+step 4 gates 20 neighbours 2 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 9
+step 5 gates 20 neighbours 2 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 11
+step 6 gates 20 neighbours 2 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 14
+step 7 gates 20 neighbours 1 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 16
+step 8 gates 20 neighbours 1 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 18
+step 9 gates 20 neighbours 1 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 20
+step 10 gates 20 neighbours 1 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 22
+step 11 gates 20 neighbours 1 support multiset (2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8) time 25
+no unseen neighbour at step 12
+END gates 20 valid True
+   helper (0, 0, 0, 0, 0, 0, 1, 1) support 2 outputs one gate away 1
+   helper (0, 0, 0, 0, 1, -1, 0, 0) support 2 outputs one gate away 1
+   helper (0, 0, 1, 1, 0, 0, 0, 0) support 2 outputs one gate away 1
+   helper (1, -1, 0, 0, 0, 0, 0, 0) support 2 outputs one gate away 1
+   helper (0, 0, 0, 0, 1, -1, 1, -1) support 4 outputs one gate away 2
+   helper (0, 0, 0, 0, 1, -1, 1, 1) support 4 outputs one gate away 0
+   helper (0, 0, 0, 0, 1, 1, 1, 1) support 4 outputs one gate away 2
+   helper (1, -1, -1, 1, 0, 0, 0, 0) support 4 outputs one gate away 2
+   helper (1, -1, 1, 1, 0, 0, 0, 0) support 4 outputs one gate away 0
+   helper (1, 1, -1, -1, 0, 0, 0, 0) support 4 outputs one gate away 2
+   helper (1, -1, -1, 1, -1, 1, -1, 1) support 8 outputs one gate away 2
+   helper (1, 1, -1, -1, 1, 1, 1, 1) support 8 outputs one gate away 2
+visited 12 best gates 20 support signatures {(2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8): 11}
+LIGHT label=e2-0-walk-pm1 exit=0 time=28s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=22:41:03 cmd=python3 -B walk.py pm1 560 2 P20.json

@@ -1,0 +1,4 @@
+skeleton A' (lower half complete, upper half without the chain of its total): built in advance 21 gates; remaining budget 9 -> total 30 : NO (exhaustive)
+skeleton A' (lower half complete, upper half without the chain of its total): built in advance 21 gates; remaining budget 10 -> total 31 : NO (exhaustive)
+skeleton A' (lower half complete, upper half without the chain of its total): built in advance 21 gates; remaining budget 11 -> total 32 : YES
+LIGHT label=ab5-Ap exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:11:51 cmd=python3 -B skel16c.py

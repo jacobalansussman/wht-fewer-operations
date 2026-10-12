@@ -1,0 +1,46 @@
+== gcert1-e8-r783.json.gz
+  batch: W = 1263 arrays (480 data = 4v, 783 helpers), each of n = 2^(45 f) points, any f
+  separately: W m = 56835 moves.  unit: 56715 moves in 20830 blocks (16.49 blocks per array, mean rank 2.72 of 45)
+  moves by class (x, y: the two data arrays of a pair; s: helpers; c: scratch copies; idle: twins): {'x': 4800, 'y': 4800, 's': 35235, 'c': 360, 'idle': 11520}
+  D = 120 moves saved; move ratio (batch / separate at z = 1) = 1 - 2.111375e-03
+  saved moves per array: 0.0950 of 45;  per data array: 0.2500
+  fragmentation F = sum (r/m) ln(m/r) / W = 2.40665130 nats  (a whole transform cut into blocks of mean size m/e^F)
+  exponent from the block list (no table-fill correction): z = 0.999123751713, saving 0.0008762482
+  first-order check: (D / W m) / F = 0.0008773082
+  two-round rate theta = 2^z - 1 = 0.9987856307
+    for z = 0.99 with the same block shapes: 0.0218 of all blocks deleted, i.e. 0.98 moves saved per array of 45 (now 0.0950)
+    for z = 0.9 with the same block shapes: 0.2159 of all blocks deleted, i.e. 9.70 moves saved per array of 45 (now 0.0950)
+    for z = 0.5 with the same block shapes: 0.7292 of all blocks deleted, i.e. 32.75 moves saved per array of 45 (now 0.0950)
+    for z = 0.9 with blocks of one rank: rank 1: fewer than 30.75 blocks = 30.8 moves per array; rank 2: fewer than 16.48 blocks = 33.0 moves per array; rank 4: fewer than 8.83 blocks = 35.3 moves per array; rank 9: fewer than 4.26 blocks = 38.3 moves per array; rank 15: fewer than 2.69 blocks = 40.3 moves per array; rank 22: fewer than 1.90 blocks = 41.9 moves per array; rank 44: fewer than 1.02 blocks = 44.9 moves per array
+    for z = 0.5 with blocks of one rank: rank 1: fewer than 6.71 blocks = 6.7 moves per array; rank 2: fewer than 4.74 blocks = 9.5 moves per array; rank 4: fewer than 3.35 blocks = 13.4 moves per array; rank 9: fewer than 2.24 blocks = 20.1 moves per array; rank 15: fewer than 1.73 blocks = 26.0 moves per array; rank 22: fewer than 1.43 blocks = 31.5 moves per array; rank 44: fewer than 1.01 blocks = 44.5 moves per array
+== gcert1-p11-pr193.json.gz
+  batch: W = 14692 arrays (5280 data = 4v, 9412 helpers), each of n = 2^(110 f) points, any f
+  separately: W m = 1616120 moves.  unit: 1613040 moves in 361405 blocks (24.60 blocks per array, mean rank 4.46 of 110)
+  moves by class (x, y: the two data arrays of a pair; s: helpers; c: scratch copies; idle: twins): {'x': 138600, 'y': 138600, 's': 1035320, 'c': 2200, 'idle': 298320}
+  D = 3080 moves saved; move ratio (batch / separate at z = 1) = 1 - 1.905799e-03
+  saved moves per array: 0.2096 of 110;  per data array: 0.5833
+  fragmentation F = sum (r/m) ln(m/r) / W = 2.54680969 nats  (a whole transform cut into blocks of mean size m/e^F)
+  exponent from the block list (no table-fill correction): z = 0.999252545055, saving 0.0007474549
+  first-order check: (D / W m) / F = 0.0007483083
+  two-round rate theta = 2^z - 1 = 0.9989640758
+    for z = 0.99 with the same block shapes: 0.0234 of all blocks deleted, i.e. 2.57 moves saved per array of 110 (now 0.2096)
+    for z = 0.9 with the same block shapes: 0.2287 of all blocks deleted, i.e. 25.11 moves saved per array of 110 (now 0.2096)
+    for z = 0.5 with the same block shapes: 0.7631 of all blocks deleted, i.e. 83.79 moves saved per array of 110 (now 0.2096)
+    for z = 0.9 with blocks of one rank: rank 1: fewer than 68.75 blocks = 68.7 moves per array; rank 2: fewer than 36.84 blocks = 73.7 moves per array; rank 4: fewer than 19.74 blocks = 79.0 moves per array; rank 22: fewer than 4.26 blocks = 93.6 moves per array; rank 36: fewer than 2.73 blocks = 98.4 moves per array; rank 55: fewer than 1.87 blocks = 102.6 moves per array; rank 109: fewer than 1.01 blocks = 109.9 moves per array
+    for z = 0.5 with blocks of one rank: rank 1: fewer than 10.49 blocks = 10.5 moves per array; rank 2: fewer than 7.42 blocks = 14.8 moves per array; rank 4: fewer than 5.24 blocks = 21.0 moves per array; rank 22: fewer than 2.24 blocks = 49.2 moves per array; rank 36: fewer than 1.75 blocks = 62.9 moves per array; rank 55: fewer than 1.41 blocks = 77.8 moves per array; rank 109: fewer than 1.00 blocks = 109.5 moves per array
+== c2-combine-best-h16.json
+  batch: W = 9362 arrays (2240 data = 4v, 7122 helpers), each of n = 2^(80 f) points, any f
+  separately: W m = 748960 moves.  unit: 747925 moves in 190910 blocks (20.39 blocks per array, mean rank 3.92 of 80)
+  moves by class (x, y: the two data arrays of a pair; s: helpers; c: scratch copies; idle: twins): {'x': 42000, 'y': 42000, 's': 569760, 'c': 1205, 'idle': 92960}
+  D = 1035 moves saved; move ratio (batch / separate at z = 1) = 1 - 1.381916e-03
+  saved moves per array: 0.1106 of 80;  per data array: 0.4621
+  fragmentation F = sum (r/m) ln(m/r) / W = 2.55745206 nats  (a whole transform cut into blocks of mean size m/e^F)
+  exponent from the block list (no table-fill correction): z = 0.999460077353, saving 0.0005399226
+  first-order check: (D / W m) / F = 0.0005403488
+  two-round rate theta = 2^z - 1 = 0.9992516483
+    for z = 0.99 with the same block shapes: 0.0240 of all blocks deleted, i.e. 1.92 moves saved per array of 80 (now 0.1106)
+    for z = 0.9 with the same block shapes: 0.2285 of all blocks deleted, i.e. 18.25 moves saved per array of 80 (now 0.1106)
+    for z = 0.5 with the same block shapes: 0.7524 of all blocks deleted, i.e. 60.11 moves saved per array of 80 (now 0.1106)
+    for z = 0.9 with blocks of one rank: rank 1: fewer than 51.62 blocks = 51.6 moves per array; rank 2: fewer than 27.66 blocks = 55.3 moves per array; rank 4: fewer than 14.82 blocks = 59.3 moves per array; rank 16: fewer than 4.26 blocks = 68.1 moves per array; rank 26: fewer than 2.75 blocks = 71.5 moves per array; rank 40: fewer than 1.87 blocks = 74.6 moves per array; rank 79: fewer than 1.01 blocks = 79.9 moves per array
+    for z = 0.5 with blocks of one rank: rank 1: fewer than 8.94 blocks = 8.9 moves per array; rank 2: fewer than 6.32 blocks = 12.6 moves per array; rank 4: fewer than 4.47 blocks = 17.9 moves per array; rank 16: fewer than 2.24 blocks = 35.8 moves per array; rank 26: fewer than 1.75 blocks = 45.6 moves per array; rank 40: fewer than 1.41 blocks = 56.6 moves per array; rank 79: fewer than 1.01 blocks = 79.5 moves per array
+LIGHT label=e2-2-unit exit=0 time=3s waited=0s peak_rss_mb=59 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:42:35 cmd=python3 -B unit_batch.py

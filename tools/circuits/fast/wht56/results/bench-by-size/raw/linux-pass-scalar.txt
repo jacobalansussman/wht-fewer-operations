@@ -1,0 +1,17 @@
+machine: linux; Linux 6.6.122+ x86_64
+compiler: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+build scalar: gcc -std=c11 -O2 -fno-tree-vectorize -o bench_pass_scalar bench_pass.c -lm
+start: Sun Oct 11 02:17:11 PM UTC 2026
+load:  14:17:11 up 20:25,  0 user,  load average: 4.40, 4.53, 4.73
+# bench_pass: one 8-point pass over 2048 doubles, 9 rounds; ns per point for one pass, copy taken off
+# PASS stride t8_min t8_med o8_min o8_med o8s_min o8s_med  o8/t8  o8s/t8  shortest_loop_s
+PASS 1 0.7762 0.7955 0.8727 0.8807 1.1620 1.1766  1.124  1.497  0.119
+PASS 2 0.9769 1.0103 0.8523 0.8726 1.3480 1.3762  0.872  1.380  0.101
+PASS 4 0.8587 0.9284 0.9093 0.9470 1.2645 1.3070  1.059  1.473  0.099
+PASS 8 0.7990 0.8037 0.8944 0.9012 1.2116 1.2171  1.119  1.516  0.119
+PASS 16 0.7718 0.8125 0.8731 0.8913 1.1800 1.1867  1.131  1.529  0.118
+PASS 64 0.7564 0.7846 0.8726 0.9053 1.1592 1.2024  1.154  1.532  0.101
+PASS 256 0.7469 0.7516 0.8611 0.8725 1.1497 1.1569  1.153  1.539  0.119
+CHECK OK: at every stride the new pass gave half the textbook pass, exactly
+end: Sun Oct 11 02:17:45 PM UTC 2026
+load:  14:17:45 up 20:26,  0 user,  load average: 4.35, 4.50, 4.72

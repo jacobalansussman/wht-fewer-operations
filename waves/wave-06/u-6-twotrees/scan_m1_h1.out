@@ -1,0 +1,6 @@
+F0 quad 0  G0 quad 0 lin 0 | held 28 | MST 62 (lb 31) | after 0 rounds 62 shifts | GATES <= 91
+F0 quad 0  G0 quad 1 lin 0 | held 28 | MST 61 (lb 31) | after 0 rounds 61 shifts | GATES <= 91
+F0 quad 0  G0 quad 2 lin 0 | held 28 | MST 49 (lb 25) | after 0 rounds 49 shifts | GATES <= 79
+F0 quad 2  G0 quad 1 lin 0 | held 28 | MST 48 (lb 24) | after 0 rounds 48 shifts | GATES <= 78
+F0 quad 2  G0 quad 8 lin 0 | held 28 | MST 46 (lb 23) | after 0 rounds 46 shifts | GATES <= 76
+F0 quad 2  G0 quad 16 lin 0 | held 28 | MST 44 (lb 22) | after 0 rounds 44 shifts | GATES <= 74

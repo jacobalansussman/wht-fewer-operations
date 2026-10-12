@@ -1,0 +1,15 @@
+# u-4-zdz: H = Z D Z^T, cat3_4.out assoc=run p2=same; 14 gates (G); outputs: H0=1*y0 H1=1*y1 H2=1*y2 H3=1*bf3
+af1 = 1 * x1 + 1 * x0
+af2 = 1 * af1 + 1 * x3
+af3 = 1 * af2 + 1 * x2
+v2 = 1 * af3 + -1 * af1
+ar1_0 = 1 * af2 + -1 * af3
+v3 = 1 * v2 + 1 * ar1_0
+v1 = 1 * v3 + 1 * x1
+bf1 = -2 * v2 + 4 * v3
+bf2 = 1 * bf1 + 1 * af3
+bf3 = 1 * bf2 + -2 * v1
+y1 = 1 * bf3 + -1 * bf1
+br1_0 = 1 * bf2 + -1 * bf3
+y0 = 1 * y1 + 1 * br1_0
+y2 = 1 * y0 + -2 * v2

@@ -1,0 +1,12 @@
+k=4: planes 35, nondegenerate 20, by type {'pair3': 6, 'triangle': 4, 'pair1': 6, 'mixed': 4}
+   splittings into 2 planes: 6 {('pair3', 'pair3'): 3, ('pair1', 'pair1'): 3}
+   (0 s)
+k=6: planes 651, nondegenerate 336, by type {'hyperbolic': 60, 'pair3': 100, 'mixed': 120, 'triangle': 20, 'pair1': 36}
+   splittings into 3 planes: 280
+      ('hyperbolic', 'hyperbolic', 'pair3') 90  invariants sum to 6 mod 8 (k mod 8 = 6)
+      ('hyperbolic', 'pair1', 'triangle') 60  invariants sum to 6 mod 8 (k mod 8 = 6)
+      ('pair1', 'pair1', 'pair1') 30  invariants sum to 6 mod 8 (k mod 8 = 6)
+      ('pair1', 'pair3', 'pair3') 90  invariants sum to 6 mod 8 (k mod 8 = 6)
+      ('pair3', 'triangle', 'triangle') 10  invariants sum to 6 mod 8 (k mod 8 = 6)
+   (0 s)
+LIGHT label=d3-planes exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:43:40 cmd=python3 -B waves/wave-01/d-3-mod4/planes.py

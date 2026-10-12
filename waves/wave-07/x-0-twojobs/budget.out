@@ -1,0 +1,33 @@
+M=1 dimension 2 (4 primitive vectors): bound 4M^2 = 4
+   any gate      : largest (|a|+|b|)/g = 3 = 1.585 units  e.g. u=(0, 1) v=(1, -1) w=(1, 1) = (2 u, 1 v)/1
+   w a form      : largest             = 3 = 1.585 units  e.g. u=(0, 1) v=(1, -1) w=(1, 1) = (2 u, 1 v)/1
+   merge (u, v on disjoint sets): largest = 2 = 1.000 units  e.g. u=(0, 1) v=(1, 0) w=(1, -1) = (1 u, 1 v)/1
+M=1 dimension 3 (13 primitive vectors): bound 4M^2 = 4
+   any gate      : largest (|a|+|b|)/g = 3 = 1.585 units  e.g. u=(0, 0, 1) v=(0, 1, -1) w=(0, 1, 1) = (2 u, 1 v)/1
+   w a form      : largest             = 3 = 1.585 units  e.g. u=(0, 0, 1) v=(0, 1, -1) w=(0, 1, 1) = (2 u, 1 v)/1
+   merge (u, v on disjoint sets): largest = 2 = 1.000 units  e.g. u=(0, 0, 1) v=(0, 1, 0) w=(0, 1, -1) = (1 u, 1 v)/1
+M=2 dimension 2 (8 primitive vectors): bound 4M^2 = 16
+   any gate      : largest (|a|+|b|)/g = 8 = 3.000 units  e.g. u=(1, -2) v=(1, -1) w=(2, 1) = (3 u, 5 v)/1
+   w a form      : largest             = 5 = 2.322 units  e.g. u=(1, -2) v=(1, -1) w=(1, 1) = (2 u, 3 v)/1
+   merge (u, v on disjoint sets): largest = 3 = 1.585 units  e.g. u=(0, 1) v=(1, 0) w=(1, -2) = (2 u, 1 v)/1
+M=2 dimension 3 (49 primitive vectors): bound 4M^2 = 16
+   any gate      : largest (|a|+|b|)/g = 8 = 3.000 units  e.g. u=(0, 1, -2) v=(0, 1, -1) w=(0, 2, 1) = (3 u, 5 v)/1
+   w a form      : largest             = 5 = 2.322 units  e.g. u=(0, 1, -2) v=(0, 1, -1) w=(0, 1, 1) = (2 u, 3 v)/1
+   merge (u, v on disjoint sets): largest = 3 = 1.585 units  e.g. u=(0, 0, 1) v=(0, 1, 0) w=(0, 1, -2) = (2 u, 1 v)/1
+M=3 dimension 2 (16 primitive vectors): bound 4M^2 = 36
+   any gate      : largest (|a|+|b|)/g = 21 = 4.392 units  e.g. u=(1, -2) v=(2, -3) w=(3, 2) = (13 u, 8 v)/1
+   w a form      : largest             = 8 = 3.000 units  e.g. u=(1, -2) v=(2, -3) w=(1, 1) = (5 u, 3 v)/1
+   merge (u, v on disjoint sets): largest = 5 = 2.322 units  e.g. u=(0, 1) v=(1, 0) w=(2, -3) = (3 u, 2 v)/1
+M=4 dimension 2 (24 primitive vectors): bound 4M^2 = 64
+   any gate      : largest (|a|+|b|)/g = 43 = 5.426 units  e.g. u=(2, -3) v=(3, -4) w=(4, 3) = (25 u, 18 v)/1
+   w a form      : largest             = 12 = 3.585 units  e.g. u=(2, -3) v=(3, -4) w=(1, 1) = (7 u, 5 v)/1
+   merge (u, v on disjoint sets): largest = 7 = 2.807 units  e.g. u=(0, 1) v=(1, 0) w=(3, -4) = (4 u, 3 v)/1
+M=5 dimension 2 (40 primitive vectors): bound 4M^2 = 100
+   any gate      : largest (|a|+|b|)/g = 73 = 6.190 units  e.g. u=(3, -4) v=(4, -5) w=(5, 4) = (41 u, 32 v)/1
+   w a form      : largest             = 16 = 4.000 units  e.g. u=(3, -4) v=(4, -5) w=(1, 1) = (9 u, 7 v)/1
+   merge (u, v on disjoint sets): largest = 9 = 3.170 units  e.g. u=(0, 1) v=(1, 0) w=(4, -5) = (5 u, 4 v)/1
+M=7 dimension 2 (72 primitive vectors): bound 4M^2 = 196
+   any gate      : largest (|a|+|b|)/g = 157 = 7.295 units  e.g. u=(5, -6) v=(6, -7) w=(7, 6) = (85 u, 72 v)/1
+   w a form      : largest             = 24 = 4.585 units  e.g. u=(5, -6) v=(6, -7) w=(1, 1) = (13 u, 11 v)/1
+   merge (u, v on disjoint sets): largest = 13 = 3.700 units  e.g. u=(0, 1) v=(1, 0) w=(6, -7) = (7 u, 6 v)/1
+LIGHT label=x0-budget exit=0 time=2s waited=10s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:28 cmd=python3 -B budget.py

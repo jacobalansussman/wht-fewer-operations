@@ -1,0 +1,5 @@
+slp16_52_from54.txt | gates 52 | frames tested 800
+      1 frames: correct at tau=-1 | rank dF/dtheta = 52 of 52 unknowns | MOVES to first order
+    799 frames: correct at tau=-1 | rank dF/dtheta = 52 of 52 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [((6, 3, 1, 8), 7)] 
+LIGHT label=p0-ds2 exit=0 time=245s waited=0s peak_rss_mb=15 peak_footprint_mb=12 lowest_cap_mb=1500 stopped=- start=00:46:37 cmd=python3 -B deform_sample.py ../h-1-staircase3/slp16_52_from54.txt 4 sample 800 2

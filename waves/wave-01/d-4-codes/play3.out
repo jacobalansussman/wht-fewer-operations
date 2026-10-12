@@ -1,0 +1,8 @@
+N=  4: g_a^3 = +I for 3 forms, -I for 1;  e_a = +1 exactly for hyperbolic: True; rank of every P_a: [Fraction(2, 1)] (N+2)/3 = 2;  S P_a = e_a T_a P_a: True
+       sum_a e_a T_a P_a = c * S/sqrtN with c in [Fraction(4, 3), Fraction(4, 1)]  (predicted (N+2)/3 = 2)
+N= 16: g_a^3 = +I for 10 forms, -I for 6;  e_a = +1 exactly for hyperbolic: True; rank of every P_a: [Fraction(6, 1)] (N+2)/3 = 6;  S P_a = e_a T_a P_a: True
+       sum_a e_a T_a P_a = c * S/sqrtN with c in [Fraction(16, 3), Fraction(16, 1)]  (predicted (N+2)/3 = 6)
+       totally singular lines: 6  their indicators lie in U_0: True  rank: 5
+       points with Q0 = 1: 6 ; dimension of U_0 inside the vectors supported there: 1
+       rank of P_0: 6  P_0 distinct entries: [Fraction(-1, 6), Fraction(0, 1), Fraction(1, 6), Fraction(1, 2)]
+LIGHT label=d4-play3 exit=0 time=1s waited=4s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:36:51 cmd=python3 -B play3.py

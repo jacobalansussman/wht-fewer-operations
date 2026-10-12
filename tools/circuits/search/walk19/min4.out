@@ -1,0 +1,2 @@
+4 points, 6 gates, all coefficients: 60 (first output, tree) cases; outputs reachable with the two forced helpers: [(2, 60)]; all four ever reached: False
+   => no 6-gate circuit over any field of characteristic 0; with the 7-gate circuit (ledger.py replays it) the minimum in count (G) is exactly 7.

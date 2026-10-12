@@ -1,0 +1,5 @@
+k=4 weight (neighbour sums' spectrum): 306 flats; single flats that determine it: 0; pairs of flats that determine it: 0
+k=4 quadric sign, weight mod 4 in {0,1} (the transform's spectrum): 306 flats; single flats that determine it: 0; pairs of flats that determine it: 10
+k=5 weight (neighbour sums' spectrum): 2450 flats; single flats that determine it: 0; pairs of flats that determine it: 0
+k=5 quadric sign, weight mod 4 in {0,1} (the transform's spectrum): 2450 flats; single flats that determine it: 0; pairs of flats that determine it: 10
+LIGHT label=ab3-thm exit=0 time=5s waited=0s peak_rss_mb=8 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=05:13:07 cmd=python3 -B thmcheck.py

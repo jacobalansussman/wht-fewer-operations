@@ -1,0 +1,10 @@
+wht56 is part of the repository "The Walsh-Hadamard transform with fewer operations"
+(wht-fewer-operations), Copyright 2026 Jacob Sussman, and is under the licence of that
+repository: the Apache License, Version 2.0.  The text of the licence is the file LICENSE at
+the top of the repository, and the file NOTICE there says where each part of the repository
+comes from.
+
+Every file of this folder was written for this result.  The six text files in circuits/ are
+copies, byte for byte, of files under tools/circuits/programs/ of the same repository
+(circuits/SHA256SUMS).  Nothing in this folder is taken from another project.
+fast.py and some tests use NumPy, which is not part of this repository.

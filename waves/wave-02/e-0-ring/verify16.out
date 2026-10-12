@@ -1,0 +1,8 @@
+mask                         : [0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1]
+-(1+t+t^4)(1+t^2+t^8)+J-C3+C5: [0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1]
+IDENTITY HOLDS exactly in Z[t]/(t^15 - 1).
+The matrix (-1)^Trace(xy) is the 16-point Walsh-Hadamard matrix up to relabelling; its non-zero block is the circulant of
+   M = 2 (1+t+t^4)(1+t^2+t^8) - J + 2 C3 - 2 C5   (read along i + j).
+mask + t^10 (1 - t - t^4)^2 = [2, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, -1, 2, 1, -1]  (must vanish on the mixed piece only: checked in unit16.py)
+gates (G) for the two trinomial passes alone: 60  (textbook 64, best known 56): the identity is NOT a cheaper circuit at 16 points.
+LIGHT label=e0-verify16 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:05:18 cmd=python3 -B verify16.py

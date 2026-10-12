@@ -1,0 +1,4 @@
+n = 2: targets 9, start points 5 (rank 5; 3^n - 2^n = 5), gates 6, helper points 2 ; span of the targets: 5
+n = 3: targets 27, start points 19 (rank 19; 3^n - 2^n = 19), gates 30, helper points 22 ; span of the targets: 19
+n = 4: targets 81, start points 65 (rank None; 3^n - 2^n = 65), gates 114, helper points 98 ; span of the targets: not run
+LIGHT label=p2-type3 exit=0 time=1s waited=32s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:36:17 cmd=python3 -B type3.py

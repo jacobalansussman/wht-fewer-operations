@@ -1,0 +1,3 @@
+optimal 8-point pairs: 168 ; middle outputs form one hexagon walk (0 and 7 skipped): 84 ; middle inputs: 84 ; neighbouring middle outputs that are not hexagon neighbours (total): 12
+deletion never increases corners: 1200 random tests, violations: 0
+LIGHT label=u1-last exit=0 time=1s waited=40s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:59:35 cmd=python3 -B lastchecks.py

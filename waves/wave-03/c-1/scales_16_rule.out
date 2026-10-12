@@ -1,0 +1,5 @@
+  start rule target common cost at the start 60
+N 16 target common : cheapest pricing found 60 operations (gates 52 + scaled copies 8); output exponents [-2] | e2-0 rule: 60 | textbook for H x: 64
+  start rule target exact cost at the start 76
+N 16 target exact : cheapest pricing found 76 operations (gates 52 + scaled copies 24); output exponents [0] | e2-0 rule: 76 | textbook for H x: 64
+LIGHT label=c1-scales exit=0 time=29s waited=2s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=00:16:15 cmd=python3 -B scales.py 16 40 2 rule

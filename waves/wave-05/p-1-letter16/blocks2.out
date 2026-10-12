@@ -1,0 +1,15 @@
+N 8  random sign pairs: violations of #flat = #checker and #vertical = #horizontal: 0   values of #checker seen: min 0 max 8  blocks in all: 16
+N 16  random sign pairs: violations of #flat = #checker and #vertical = #horizontal: 0   values of #checker seen: min 4 max 25  blocks in all: 64
+N 32  random sign pairs: violations of #flat = #checker and #vertical = #horizontal: 0   values of #checker seen: min 52 max 89  blocks in all: 256
+N 64  random sign pairs: violations of #flat = #checker and #vertical = #horizontal: 0   values of #checker seen: min 214 max 284  blocks in all: 1024
+  45-design (rank-2 forms) {'flat': 0, 'vertical': 32, 'horizontal': 32, 'checker': 0}
+  bent x0x1+x2x3 with its transform {'flat': 16, 'vertical': 16, 'horizontal': 16, 'checker': 16}
+  all ones {'flat': 16, 'vertical': 16, 'horizontal': 16, 'checker': 16}
+  8 points, the 13-design {'flat': 0, 'vertical': 8, 'horizontal': 8, 'checker': 0}
+k-cross design 1 (49 rectangles): row pairs along 5, column pairs along 13: {'flat': 16, 'vertical': 16, 'horizontal': 16, 'checker': 16}
+k-cross design 2 (49 rectangles): row pairs along 15, column pairs along 12: {'flat': 16, 'vertical': 16, 'horizontal': 16, 'checker': 16}
+bent x0x3+x1x2 on both sides, standard chains (73 rectangles): {'flat': 32, 'vertical': 0, 'horizontal': 0, 'checker': 32}  its transform equals itself: True
+bent x0x1+x2x3 with its transform, standard chains: {'flat': 16, 'vertical': 16, 'horizontal': 16, 'checker': 16}
+the design with pair bound 32 (exact cover 49): {'flat': 0, 'vertical': 32, 'horizontal': 32, 'checker': 0}
+the 28 bent quadratic forms (no linear part) with their transforms, standard chains: checkerboard count -> how many forms: [(16, 24), (32, 4)]
+LIGHT label=p1blocks2 exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:44:05 cmd=python3 -B blocks2.py

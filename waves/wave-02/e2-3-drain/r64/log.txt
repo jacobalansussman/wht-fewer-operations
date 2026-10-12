@@ -1,0 +1,1 @@
+drain N=64 seed=1 K=60 cs=2 target=H: bestU=1999 at gate 154; ended g=154 P=1845; gates draining >=N/2: 45, ==N: 0; 101s

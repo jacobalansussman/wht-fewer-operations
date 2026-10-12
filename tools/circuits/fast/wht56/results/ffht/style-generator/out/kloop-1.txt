@@ -1,0 +1,51 @@
+## step kloop: 2026-10-11 17:14:29 UTC; uptime: 17:14:29 up 23:22,  0 user,  load average: 6.20, 6.32, 5.63; pinned to: 1
+## step kloop: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   6   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.8   7   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.8   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+##     949528 99.6   5  10 /usr/bin/python3 -B (another job)/tools/circuits/tables.py
+##     953860 99.2   2  15 build3/harness check -k 21 24
+# kloop: 2026-10-11 17:14:29 UTC; gcc 13.3.0; 15 repeats; a loop aims at 0.25 s x 1.15
+K type=float log_n=9 bytes=2048 kernel=T ns_per_block_min=6.220 med=10.850 max=11.449 net_min=5.696 cycles_per_block_net_min=15.03 net_med=27.25 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=H20 ns_per_block_min=7.656 med=10.655 max=12.121 net_min=7.132 cycles_per_block_net_min=18.82 net_med=26.73 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=H20x ns_per_block_min=10.415 med=13.319 max=14.705 net_min=9.891 cycles_per_block_net_min=26.10 net_med=33.76 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=H20xr ns_per_block_min=10.446 med=13.390 max=15.085 net_min=9.922 cycles_per_block_net_min=26.18 net_med=33.95 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=F19m ns_per_block_min=7.043 med=10.854 max=11.881 net_min=6.518 cycles_per_block_net_min=17.20 net_med=27.26 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=F19r ns_per_block_min=6.991 med=11.436 max=12.078 net_min=6.467 cycles_per_block_net_min=17.07 net_med=28.79 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=S20 ns_per_block_min=5.358 med=9.935 max=10.397 net_min=4.834 cycles_per_block_net_min=12.76 net_med=24.83 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=D24 ns_per_block_min=7.985 med=11.457 max=12.522 net_min=7.460 cycles_per_block_net_min=19.69 net_med=28.85 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=9 bytes=2048 kernel=copy ns_per_block_min=0.525 med=0.970 max=1.018 net_min=0.000 cycles_per_block_net_min=0.00 net_med=0.00 ns_per_cycle=0.3789 (0.7958 before, 0.3789 after) repeats=15 shortest_loop_s=0.148
+K type=float log_n=12 bytes=16384 kernel=T ns_per_block_min=6.016 med=6.384 max=11.106 net_min=5.821 cycles_per_block_net_min=15.52 net_med=16.50 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=H20 ns_per_block_min=7.349 med=7.791 max=11.324 net_min=7.153 cycles_per_block_net_min=19.08 net_med=20.26 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=H20x ns_per_block_min=10.231 med=10.661 max=14.348 net_min=10.036 cycles_per_block_net_min=26.77 net_med=27.91 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=H20xr ns_per_block_min=10.184 med=10.371 max=14.050 net_min=9.988 cycles_per_block_net_min=26.64 net_med=27.14 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=F19m ns_per_block_min=6.736 med=6.960 max=13.717 net_min=6.541 cycles_per_block_net_min=17.44 net_med=18.04 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=F19r ns_per_block_min=6.900 med=7.199 max=11.153 net_min=6.705 cycles_per_block_net_min=17.88 net_med=18.68 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=S20 ns_per_block_min=5.074 med=5.202 max=10.130 net_min=4.879 cycles_per_block_net_min=13.01 net_med=13.35 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=D24 ns_per_block_min=7.629 med=7.992 max=11.796 net_min=7.433 cycles_per_block_net_min=19.82 net_med=20.79 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=float log_n=12 bytes=16384 kernel=copy ns_per_block_min=0.196 med=0.218 max=0.447 net_min=0.000 cycles_per_block_net_min=0.00 net_med=0.00 ns_per_cycle=0.3750 (0.3810 before, 0.3750 after) repeats=15 shortest_loop_s=0.230
+K type=double log_n=8 bytes=2048 kernel=T ns_per_block_min=6.266 med=6.490 max=11.021 net_min=5.743 cycles_per_block_net_min=15.17 net_med=15.76 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=H20 ns_per_block_min=7.620 med=8.458 max=11.558 net_min=7.096 cycles_per_block_net_min=18.74 net_med=20.96 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=H20x ns_per_block_min=10.536 med=11.059 max=14.583 net_min=10.012 cycles_per_block_net_min=26.45 net_med=27.83 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=H20xr ns_per_block_min=10.450 med=10.866 max=14.417 net_min=9.926 cycles_per_block_net_min=26.22 net_med=27.32 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=F19m ns_per_block_min=6.961 med=8.226 max=11.675 net_min=6.438 cycles_per_block_net_min=17.01 net_med=20.35 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=F19r ns_per_block_min=7.050 med=7.512 max=14.028 net_min=6.526 cycles_per_block_net_min=17.24 net_med=18.46 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=S20 ns_per_block_min=5.405 med=6.708 max=12.660 net_min=4.881 cycles_per_block_net_min=12.89 net_med=16.34 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=D24 ns_per_block_min=8.019 med=8.329 max=16.027 net_min=7.496 cycles_per_block_net_min=19.80 net_med=20.62 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=8 bytes=2048 kernel=copy ns_per_block_min=0.524 med=0.585 max=1.046 net_min=0.000 cycles_per_block_net_min=0.00 net_med=0.00 ns_per_cycle=0.3786 (0.3786 before, 0.7924 after) repeats=15 shortest_loop_s=0.280
+K type=double log_n=11 bytes=16384 kernel=T ns_per_block_min=10.519 med=10.711 max=11.651 net_min=10.240 cycles_per_block_net_min=12.93 net_med=13.17 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=H20 ns_per_block_min=9.962 med=11.417 max=13.793 net_min=9.683 cycles_per_block_net_min=12.23 net_med=14.06 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=H20x ns_per_block_min=11.890 med=14.398 max=14.942 net_min=11.612 cycles_per_block_net_min=14.66 net_med=17.83 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=H20xr ns_per_block_min=12.921 med=14.352 max=16.970 net_min=12.643 cycles_per_block_net_min=15.96 net_med=17.77 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=F19m ns_per_block_min=7.219 med=11.459 max=12.932 net_min=6.940 cycles_per_block_net_min=8.76 net_med=14.12 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=F19r ns_per_block_min=9.714 med=10.612 max=11.707 net_min=9.436 cycles_per_block_net_min=11.91 net_med=13.05 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=S20 ns_per_block_min=7.538 med=10.363 max=11.223 net_min=7.260 cycles_per_block_net_min=9.17 net_med=12.73 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=D24 ns_per_block_min=10.063 med=11.880 max=11.992 net_min=9.785 cycles_per_block_net_min=12.36 net_med=14.65 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+K type=double log_n=11 bytes=16384 kernel=copy ns_per_block_min=0.278 med=0.447 max=0.487 net_min=0.000 cycles_per_block_net_min=0.00 net_med=0.00 ns_per_cycle=0.7919 (0.7936 before, 0.7919 after) repeats=15 shortest_loop_s=0.176
+# done
+## step kloop-end: 2026-10-11 17:17:20 UTC; uptime: 17:17:20 up 23:25,  0 user,  load average: 6.29, 6.27, 5.72; pinned to: 1
+## step kloop-end: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   5   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.8   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.8   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+##     949528 99.6   4  10 /usr/bin/python3 -B (another job)/tools/circuits/tables.py

@@ -1,0 +1,18 @@
+CH ((1, 1, 4, 4), (1, 4, 1, 4), (1, 4, 4, 1)) 7
+new best 7 gates, choice {1: ((1, 0, 1), (1, 0, 4), (1, 2, 1))}
+k=4 p=5 layers=[1] wires=4(+0 dummy) targets=4  bases tried 3875 (all)
+histogram {gates: number of bases}  (None = more than targets+4): {7: 1}
+BEST 7 gates. wires (subset masks): [1, 2, 4, 8]
+choice (coefficients on valence-bond heads): {1: ((1, 0, 1), (1, 0, 4), (1, 2, 1))}
+p=5 n=4 rows=4 non-input distinct targets=4  intermediates allowed m=3  => gate budget 7
+visited states by remaining budget: j=3:1 j=2:1 j=1:9
+RESULT p=5: YES, circuit with 7 gates. points in order (after the 4 inputs):
+  g4  inter  = [0 0 1 1]  from #3 + 1*#2 (projectively)
+  g5  inter  = [0 1 1 1]  from #4 + 1*#1 (projectively)
+  g6  TARGET = [1 1 1 1]  from #5 + 1*#0 (projectively)
+  g7  TARGET = [1 1 4 4]  from #6 + 3*#4 (projectively)
+  g8  inter  = [1 1 4 1]  from #6 + 3*#2 (projectively)
+  g9  TARGET = [1 4 1 4]  from #8 + 3*#0 (projectively)
+  g10 TARGET = [1 4 4 1]  from #8 + 3*#1 (projectively)
+
+LIGHT label=g2-walsh-l1 exit=0 time=1s waited=24s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:49:00 cmd=python3 -B fam2.py 4 5 1 4

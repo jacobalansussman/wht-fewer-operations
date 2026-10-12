@@ -1,0 +1,2 @@
+m = 2 : 8 quadratic forms; on the prescribed columns every move acts as (-1)^Q(z), every shift as +1, the kernel as (-1)^<Q,I>: True
+m = 3 : 72 quadratic forms; on the prescribed columns every move acts as (-1)^Q(z), every shift as +1, the kernel as (-1)^<Q,I>: True

@@ -1,0 +1,6 @@
+budget 62 gates q in [2, 4, 5, 6, 8] seed 0: best Phi 62.0000 of 64 at cost 62, 10 gates of sizes [2, 2, 2, 4, 4, 4, 4, 4, 4, 4], 562628 iterations
+budget 62 gates q in [2, 4, 5, 6, 8] seed 1: best Phi 60.5853 of 64 at cost 62, 14 gates of sizes [2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 5, 5], 640744 iterations
+budget 62 gates q in [2, 4, 5, 6, 8] seed 2: best Phi 58.7058 of 64 at cost 62, 8 gates of sizes [2, 4, 4, 4, 4, 4, 4, 6], 624918 iterations
+budget 62 gates q in [2, 4, 5, 6, 8] seed 3: best Phi 58.8925 of 64 at cost 62, 12 gates of sizes [2, 2, 2, 2, 2, 2, 2, 4, 4, 5, 5, 6], 669558 iterations
+budget 62 gates q in [2, 4, 5, 6, 8] seed 4: best Phi 62.0000 of 64 at cost 62, 10 gates of sizes [2, 2, 2, 4, 4, 4, 4, 4, 4, 4], 619846 iterations
+LIGHT label=e5-anneal-62 exit=0 time=301s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=22:29:19 cmd=python3 -I -B anneal16.py 62 60 2,4,5,6,8 5

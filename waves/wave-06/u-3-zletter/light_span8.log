@@ -1,0 +1,1 @@
+LIGHT label=u3-span8 exit=124 time=593s waited=36s peak_rss_mb=8 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>590s start=02:04:18 cmd=./span8.sh

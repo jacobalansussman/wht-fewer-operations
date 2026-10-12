@@ -1,0 +1,33 @@
+flats of the 16-point address space: 307
+affine classes of 6-sets: 3
+class  size  representative(points)  D  bent  start
+   0    840  {0 1 2 3 4 5 }  D=3    START(hyperplane minus line)
+   1   6720  {0 1 2 3 4 8 }  D=2    
+   2    448  {1 2 4 6 8 9 }  D=2  BENT(quadric)  
+
+== class c=1 : 540 counted exchanges (distinct (u,T), T a union of at most 1 flats unchanged by u, not affine)
+D-lemma check (D falls by at most c per exchange) on all 8008 sets x all exchanges: violations 0 ; largest fall seen 1 ; falls of 0,1,2: 3921120 201600 0
+distance matrix between affine classes (rows: from, columns: to):
+       0  1  2
+   0:  0  1  2
+     ^ start; j(4,1) = 2
+   1:  1  0  1
+   2:  2  1  0
+
+== class c=2 : 2220 counted exchanges (distinct (u,T), T a union of at most 2 flats unchanged by u, not affine)
+D-lemma check (D falls by at most c per exchange) on all 8008 sets x all exchanges: violations 0 ; largest fall seen 1 ; falls of 0,1,2: 16164960 806400 0
+distance matrix between affine classes (rows: from, columns: to):
+       0  1  2
+   0:  0  1  2
+     ^ start; j(4,2) = 2
+   1:  1  0  1
+   2:  2  1  0
+
+== class c=3 : 3480 counted exchanges (distinct (u,T), T a union of at most 3 flats unchanged by u, not affine)
+D-lemma check (D falls by at most c per exchange) on all 8008 sets x all exchanges: violations 0 ; largest fall seen 1 ; falls of 0,1,2: 25368000 1249920 0
+distance matrix between affine classes (rows: from, columns: to):
+       0  1  2
+   0:  0  1  2
+     ^ start; j(4,3) = 2
+   1:  1  0  1
+   2:  2  1  0

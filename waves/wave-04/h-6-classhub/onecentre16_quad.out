@@ -1,0 +1,9 @@
+centre code 0 (monomials) F0mask 0 | distinct non-input targets 15 | MST of targets 85 (lower bound for this centre: 15 + 43) | with 6 Steiner vertices: 59 | GATES <= 74
+  vertices: 0 43690 52428 26214 61680 23130 15420 38550 65280 21930 13260 39270 4080 42330 49980 27030 86 13116 22102 43350 240 828
+centre code 2 (monomials 5) F0mask 41120 | distinct non-input targets 16 | MST of targets 66 (lower bound for this centre: 15 + 33) | with 6 Steiner vertices: 52 | GATES <= 67
+  vertices: 0 41120 2570 27756 50886 20560 64250 40092 13878 24480 62730 37740 14790 44880 1530 25500 51510 1334 20588 1284 1590 2358 20544
+centre code 8 (monomials 9) F0mask 43520 | distinct non-input targets 16 | MST of targets 64 (lower bound for this centre: 15 + 32) | with 6 Steiner vertices: 50 | GATES <= 65
+  vertices: 0 43520 170 26316 52326 23280 61530 38460 15510 21760 65450 39372 13158 42480 3930 26940 50070 854 22028 84 870 918 21504
+histogram of the upper bound over 64 centres: 65:4 67:20 72:2 73:1 74:5 75:32
+BEST upper bound in this model and heuristic: 65 gates (record 52, textbook 64)
+done-quad

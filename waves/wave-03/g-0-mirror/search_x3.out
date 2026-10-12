@@ -1,0 +1,2 @@
+RESULT x=3: 4060 sets of roots tried, 0 generate all 16 targets from 6 points  => gates for C^T = 13, for C = 23
+LIGHT label=g0-search3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:46:24 cmd=./search 3 6

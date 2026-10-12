@@ -1,0 +1,46 @@
+## symmetric square S6 of K3 (6 wires, 6 targets); tie value 8 gates = m 2
+p=3 m=0
+visited states by remaining budget:
+RESULT p=3: NO circuit with 6 gates (exhaustive over GF(3))
+p=3 m=1
+visited states by remaining budget: j=1:1
+RESULT p=3: NO circuit with 7 gates (exhaustive over GF(3))
+p=3 m=2
+visited states by remaining budget: j=2:1 j=1:30
+RESULT p=3: NO circuit with 8 gates (exhaustive over GF(3))
+p=3 m=3
+visited states by remaining budget: j=3:1 j=2:30 j=1:696
+RESULT p=3: NO circuit with 9 gates (exhaustive over GF(3))
+p=3 m=4
+visited states by remaining budget: j=4:1 j=3:30 j=2:696 j=1:32535
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+p=5 m=0
+visited states by remaining budget:
+RESULT p=5: NO circuit with 6 gates (exhaustive over GF(5))
+p=5 m=1
+visited states by remaining budget: j=1:1
+RESULT p=5: NO circuit with 7 gates (exhaustive over GF(5))
+p=5 m=2
+visited states by remaining budget: j=2:1 j=1:60
+RESULT p=5: NO circuit with 8 gates (exhaustive over GF(5))
+p=5 m=3
+visited states by remaining budget: j=3:1 j=2:60 j=1:2781
+RESULT p=5: NO circuit with 9 gates (exhaustive over GF(5))
+p=5 m=4
+visited states by remaining budget: j=4:1 j=3:60 j=2:2781 j=1:264151
+RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+p=7 m=0
+visited states by remaining budget:
+RESULT p=7: NO circuit with 6 gates (exhaustive over GF(7))
+p=7 m=1
+visited states by remaining budget: j=1:1
+RESULT p=7: NO circuit with 7 gates (exhaustive over GF(7))
+p=7 m=2
+visited states by remaining budget: j=2:1 j=1:90
+RESULT p=7: NO circuit with 8 gates (exhaustive over GF(7))
+p=7 m=3
+visited states by remaining budget: j=3:1 j=2:90 j=1:6246
+RESULT p=7: NO circuit with 9 gates (exhaustive over GF(7))
+p=7 m=4
+visited states by remaining budget: j=4:1 j=3:90 j=2:6246 j=1:893183
+RESULT p=7: NO circuit with 10 gates (exhaustive over GF(7))

@@ -1,0 +1,4 @@
+random circuits: N=6 gates each=12 trials=600 coefficients up to 4 seed=2
+   gate lines 7200 ; merges 2714 ; quotient gates (g>1) 593 ; gates with negative budget 93 ; tallest wire 40
+   circuits that end connected 348 ; circuits whose merge count is not N - (groups left) 0
+   VIOLATIONS of (volume <= max(0,budget)) or (merge factor <= max(|a|,|b|)) or (budget <= 4 M^2): 0

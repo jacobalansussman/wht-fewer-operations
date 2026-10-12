@@ -1,0 +1,12 @@
+k=4 edges=0 rank=5 graph=- degrees=[0, 0, 0, 0] triangles=0 : gates = 15 outputs + 0 helpers
+k=4 edges=1 rank=6 graph=01 degrees=[1, 1, 0, 0] triangles=0 : gates = 15 outputs + 1 helpers
+k=4 edges=2 rank=7 graph=01 02 degrees=[2, 1, 1, 0] triangles=0 : gates = 15 outputs + 2 helpers
+k=4 edges=2 rank=7 graph=01 23 degrees=[1, 1, 1, 1] triangles=0 : gates = 15 outputs + 2 helpers
+k=4 edges=3 rank=8 graph=01 02 03 degrees=[3, 1, 1, 1] triangles=0 : gates = 15 outputs + 3 helpers
+k=4 edges=3 rank=8 graph=01 02 12 degrees=[2, 2, 2, 0] triangles=1 : gates = 15 outputs + 4 helpers
+k=4 edges=3 rank=8 graph=01 02 13 degrees=[2, 2, 1, 1] triangles=0 : gates = 15 outputs + 3 helpers
+k=4 edges=4 rank=9 graph=01 02 03 12 degrees=[3, 2, 2, 1] triangles=1 : gates = 15 outputs + > 4 helpers (not decided)
+k=4 edges=4 rank=9 graph=01 02 13 23 degrees=[2, 2, 2, 2] triangles=0 : gates = 15 outputs + > 4 helpers (not decided)
+k=4 edges=5 rank=10 graph=01 02 03 12 13 degrees=[3, 3, 2, 2] triangles=2 : gates = 15 outputs + > 4 helpers (not decided)
+k=4 edges=6 rank=11 graph=01 02 03 12 13 23 degrees=[3, 3, 3, 3] triangles=4 : gates = 15 outputs + > 4 helpers (not decided)
+LIGHT label=ag7-g4 exit=0 time=5s waited=0s peak_rss_mb=11 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=07:52:59 cmd=python3 graphs.py 4 4

@@ -1,0 +1,40 @@
+Sun Oct 11 01:05:03 PM UTC 2026
+Linux 6.6.122+ x86_64
+Python 3.13.16
+numpy 2.1.3
+ 13:05:03 up 19:13,  0 user,  load average: 11.35, 12.04, 11.16
+test_bad_lengths (wht56.tests.test_wht56.TestAgainstTheMatrix.test_bad_lengths) ... ok
+test_every_unit_vector_up_to_64 (wht56.tests.test_wht56.TestAgainstTheMatrix.test_every_unit_vector_up_to_64) ... ok
+test_length_1_and_2 (wht56.tests.test_wht56.TestAgainstTheMatrix.test_length_1_and_2) ... ok
+test_random_integers_up_to_1024 (wht56.tests.test_wht56.TestAgainstTheMatrix.test_random_integers_up_to_1024) ... ok
+test_the_four_c_transforms_agree (wht56.tests.test_wht56.TestC.test_the_four_c_transforms_agree) ... ok
+test_a_spoiled_circuit_is_refused (wht56.tests.test_wht56.TestCircuitFiles.test_a_spoiled_circuit_is_refused) ... ok
+test_files_are_the_copies (wht56.tests.test_wht56.TestCircuitFiles.test_files_are_the_copies) ... ok
+test_units (wht56.tests.test_wht56.TestCircuitFiles.test_units) ... ok
+test_formulas_agree_with_plans (wht56.tests.test_wht56.TestCounts.test_formulas_agree_with_plans) ... ok
+test_powers_of_8_count_O (wht56.tests.test_wht56.TestCounts.test_powers_of_8_count_O) ... ok
+test_published_table_count_G (wht56.tests.test_wht56.TestCounts.test_published_table_count_G) ... ok
+test_published_table_count_O (wht56.tests.test_wht56.TestCounts.test_published_table_count_O) ... ok
+test_textbook (wht56.tests.test_wht56.TestCounts.test_textbook) ... ok
+test_c_straight_line (wht56.tests.test_wht56.TestGenerator.test_c_straight_line) ... ok
+test_kernels_header_is_current (wht56.tests.test_wht56.TestGenerator.test_kernels_header_is_current) ... ok
+test_python_straight_line (wht56.tests.test_wht56.TestGenerator.test_python_straight_line) ... ok
+test_H_H_is_N (wht56.tests.test_wht56.TestInverse.test_H_H_is_N) ... ok
+test_ortho_twice_is_identity (wht56.tests.test_wht56.TestInverse.test_ortho_twice_is_identity) ... ok
+test_against_the_matrix_up_to_1024 (wht56.tests.test_wht56.TestNumpy.test_against_the_matrix_up_to_1024) ... ok
+test_norms_inverse_inplace_batch (wht56.tests.test_wht56.TestNumpy.test_norms_inverse_inplace_batch) ... ok
+test_random_to_2_15_against_the_textbook (wht56.tests.test_wht56.TestNumpy.test_random_to_2_15_against_the_textbook) ... ok
+test_the_numpy_kernels_do_the_counted_operations (wht56.tests.test_wht56.TestNumpy.test_the_numpy_kernels_do_the_counted_operations) ... ok
+test_floats_and_complex (wht56.tests.test_wht56.TestRandomInputs.test_floats_and_complex) ... ok
+test_fractions (wht56.tests.test_wht56.TestRandomInputs.test_fractions) ... ok
+test_halved_form_on_integers_is_exact (wht56.tests.test_wht56.TestRandomInputs.test_halved_form_on_integers_is_exact) ... ok
+test_integers_every_size_to_2_15 (wht56.tests.test_wht56.TestRandomInputs.test_integers_every_size_to_2_15) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 31.427s
+
+OK
+
+real	0m31.854s
+user	0m30.641s
+sys	0m0.403s

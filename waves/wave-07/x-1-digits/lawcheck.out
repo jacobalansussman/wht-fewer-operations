@@ -1,0 +1,2 @@
+all four formulas hold on 176 windows, k = 2..12: True
+LIGHT label=x1-law exit=0 time=2s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:07:35 cmd=python3 -B lawcheck.py

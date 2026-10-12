@@ -1,0 +1,9 @@
+== p=19 k=3 m=3 (7 gates); 18 = -1, 17 = -2, 9 = -1/2, 2, 10 = 1/2, 3, 8 = a sixth root
+k=3 tau=18 (1/tau=18): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 16 distinct helper sets, gates 7  [fixpoint tests 111660120]
+k=3 tau=17 (1/tau=9): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 113872500]
+k=3 tau=9 (1/tau=17): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 113872500]
+k=3 tau=2 (1/tau=10): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 111660120]
+k=3 tau=10 (1/tau=2): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 111660120]
+k=3 tau=3 (1/tau=13): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 111660120]
+k=3 tau=8 (1/tau=12): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 111660120]
+LIGHT label=r2-w3c exit=0 time=85s waited=0s peak_rss_mb=205 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:48:16 cmd=bash -c echo "== p=19 k=3 m=3 (7 gates); 18 = -1, 17 = -2, 9 = -1/2, 2, 10 = 1/2, 3, 8 = a sixth root"; ./run_weight.sh 3 3 2 19 18 17 9 2 10 3 8

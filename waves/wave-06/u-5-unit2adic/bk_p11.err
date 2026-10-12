@@ -1,0 +1,1 @@
+LIGHT label=u5-bk-p11 exit=0 time=30s waited=0s peak_rss_mb=472 peak_footprint_mb=413 lowest_cap_mb=1500 stopped=- start=02:17:19 cmd=python3 -I -B batchkinds.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-p11-pr193.json.gz

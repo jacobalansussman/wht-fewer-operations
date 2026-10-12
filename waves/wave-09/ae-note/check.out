@@ -1,0 +1,25 @@
+== bar per block (FLOAT): a block standing for share beta pays for itself at saving e iff it skips >= 1 - beta^(e/(1-e))
+  half             7.41 %
+  third            11.49 %
+  fifth            16.37 %
+  one move of 45   34.49 %
+  44 of 45         0.25 %
+== bar as moves per single-move block (FLOAT): m^e/(1-e) - 1
+  m = 45: 0.626
+  m = 80: 0.722
+  m = 110: 0.778
+== rates of the fourth result from ad-0's exact counts
+  data arrays per block 16/127 0.12598425196850394
+  data arrays per block beyond two per array 0.16842105263157894
+  helpers 0  copies -9  unit 0.005760921747479597
+  best stage block keeps 1/9 = 0.1111111111111111
+  cascade product 77.73216000000001  ratio 6.82e-2/8.7625e-4 = 77.83166904422254
+== line sums (count G)
+  N=16: half log = 2.0, floor 20 = 1.25/pt, adding-only 60 = 3.75/pt, through transform 87 = 5.44/pt, (9/8)k+1/2 = 5.00, target T(N)-(q+1)T(q) = 17
+  N=64: half log = 3.0, floor 72 = 1.12/pt, adding-only 504 = 7.88/pt, through transform 475 = 7.42/pt, (9/8)k+1/2 = 7.25, target T(N)-(q+1)T(q) = 133
+  N=256: half log = 4.0, floor 272 = 1.06/pt, adding-only 4080 = 15.94/pt, through transform 2484 = 9.70/pt, (9/8)k+1/2 = 9.50, target T(N)-(q+1)T(q) = 716
+== af-2 family 2 N log2 N - 3N + 4
+   [8, 28, 84, 228, 580, 1412]
+== textbook N log2 N and the 3/4 family (3/4) N k + N/4
+   [(4, 8, 7), (16, 64, 52), (64, 384, 304), (256, 2048, 1600)]
+LIGHT label=ae-note exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:51:11 cmd=python3 -B check.py

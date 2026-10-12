@@ -1,0 +1,5 @@
+T1 and T2 share 4 addresses; the merged set has 24 addresses; unchanged by u: True
+flats inside the merged set, unchanged by u: 93 (sizes [2, 4, 8])
+least number of flats whose union is the merged set: 3
+   [3, 4, 8, 15, 50, 53, 57, 62] | [6, 13, 17, 26, 32, 43, 55, 60] | [7, 12, 23, 28, 38, 45, 54, 61]
+replay with the merged exchange (3 exchanges) ends in the 4-path's quadric: True

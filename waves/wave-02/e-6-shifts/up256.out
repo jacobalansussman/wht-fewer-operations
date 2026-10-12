@@ -1,0 +1,24 @@
+256-point program, kernel=seven, gates(G)=1792
+  diagonal: digit1=digit3, digit2=digit4         K-perp basis ['0x11', '0x22', '0x44', '0x88']  new directions per pass [2, 2, 0, 0]  predicted 56  collapse(strict, greedy) 56  classes 112  embedding ok=True  [1s]
+  digit1=digit2, digit3=digit4                   K-perp basis ['0x5', '0xa', '0x50', '0xa0']  new directions per pass [2, 0, 2, 0]  predicted 56  collapse(strict, greedy) 56  classes 112  embedding ok=True  [2s]
+  K-perp = digits 1,2 (plain: x on digits 1,2)   K-perp basis ['0x1', '0x2', '0x4', '0x8']  new directions per pass [2, 2, 0, 0]  predicted 56  collapse(strict, greedy) 56  classes 72  embedding ok=True  [3s]
+  random                                         K-perp basis ['0xcc', '0x93', '0xd3', '0x15']  new directions per pass [2, 1, 0, 1]  predicted 60  collapse(strict, greedy) 60  classes 96  embedding ok=True  [4s]
+  random                                         K-perp basis ['0x7d', '0xc4', '0x43', '0xa']  new directions per pass [2, 1, 1, 0]  predicted 60  collapse(strict, greedy) 60  classes 96  embedding ok=True  [5s]
+  random                                         K-perp basis ['0x1', '0x26', '0xaa', '0x97']  new directions per pass [2, 1, 1, 0]  predicted 60  collapse(strict, greedy) 60  classes 88  embedding ok=True  [6s]
+  random                                         K-perp basis ['0x79', '0xf8', '0xc3', '0xbd']  new directions per pass [2, 2, 0, 0]  predicted 56  collapse(strict, greedy) 56  classes 112  embedding ok=True  [7s]
+  random                                         K-perp basis ['0x60', '0x52', '0xc6', '0x6']  new directions per pass [1, 1, 1, 1]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [8s]
+  random                                         K-perp basis ['0x46', '0x7e', '0xce', '0x33']  new directions per pass [2, 1, 1, 0]  predicted 60  collapse(strict, greedy) 60  classes 96  embedding ok=True  [9s]
+  random                                         K-perp basis ['0xbb', '0xe0', '0x6a', '0xea']  new directions per pass [2, 0, 1, 1]  predicted 60  collapse(strict, greedy) 60  classes 96  embedding ok=True  [10s]
+  random                                         K-perp basis ['0x8a', '0x8b', '0xaf', '0x19']  new directions per pass [2, 2, 0, 0]  predicted 56  collapse(strict, greedy) 56  classes 104  embedding ok=True  [11s]
+  random                                         K-perp basis ['0x32', '0x91', '0x8e', '0xb4']  new directions per pass [2, 2, 0, 0]  predicted 56  collapse(strict, greedy) 56  classes 96  embedding ok=True  [12s]
+  random                                         K-perp basis ['0xcf', '0xbb', '0x44', '0xaa']  new directions per pass [2, 1, 1, 0]  predicted 60  collapse(strict, greedy) 60  classes 96  embedding ok=True  [13s]
+  random                                         K-perp basis ['0xce', '0x9d', '0xb0', '0x17']  new directions per pass [2, 1, 1, 0]  predicted 60  collapse(strict, greedy) 60  classes 96  embedding ok=True  [14s]
+256-point program, kernel=text, gates(G)=2048
+  diagonal: digit1=digit3, digit2=digit4         K-perp basis ['0x11', '0x22', '0x44', '0x88']  new directions per pass [2, 2, 0, 0]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [15s]
+  digit1=digit2, digit3=digit4                   K-perp basis ['0x5', '0xa', '0x50', '0xa0']  new directions per pass [2, 0, 2, 0]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [16s]
+  K-perp = digits 1,2 (plain: x on digits 1,2)   K-perp basis ['0x1', '0x2', '0x4', '0x8']  new directions per pass [2, 2, 0, 0]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [17s]
+  random                                         K-perp basis ['0xd9', '0x6d', '0x56', '0xfe']  new directions per pass [2, 2, 0, 0]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [19s]
+  random                                         K-perp basis ['0x18', '0x5d', '0xcd', '0x69']  new directions per pass [1, 2, 1, 0]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [20s]
+  random                                         K-perp basis ['0xcf', '0x41', '0x72', '0xb4']  new directions per pass [2, 2, 0, 0]  predicted 64  collapse(strict, greedy) 64  classes 80  embedding ok=True  [21s]
+LIGHT label=e6-up256 exit=0 time=22s waited=0s peak_rss_mb=21 peak_footprint_mb=17 lowest_cap_mb=1500 stopped=- start=22:25:42 cmd=/usr/bin/python3 -I -B waves/wave-02/e-6-shifts/up256.py
+exit 0

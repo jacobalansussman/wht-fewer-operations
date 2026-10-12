@@ -1,0 +1,33 @@
+## waited 887 s for the lock (one hold for all runs)
+## MBUF=1 taskset -c 1 b/reftime 5 12,15,26 ffht,T,G19
+## before: 2026-10-11 17:01:50 UTC; load 4.37 4.50 4.83 6/534 944740
+##    pid 839050 99.9% cpu2 nice5 python3
+##    pid 839938 99.9% cpu1 nice5 python3
+##    pid 839000 99.9% cpu3 nice5 python3
+# cycle counter: 2.1998 GHz against the monotonic clock over the run of 25.4 s
+S k=12 arrays=1 bytes=16384 G=7120 R=15 cpu=1 sibling=5 sibling_busy=13% loadavg_at_start=[4.37 4.50 4.83 7/525 944745]
+V k=12 ffht     min=0.5655 med=0.6212 max=0.6843 ns/point  shortest_loop=0.247s  all: 0.6449 0.6486 0.6212 0.5719 0.6843 0.6515 0.6201 0.5655 0.6089
+V k=12 T        min=0.4897 med=0.4980 max=0.5319 ns/point  shortest_loop=0.214s  all: 0.4980 0.5097 0.5081 0.4931 0.5200 0.5319 0.4897 0.4977 0.4923
+V k=12 G19      min=0.5210 med=0.5387 max=0.5895 ns/point  shortest_loop=0.228s  all: 0.5324 0.5895 0.5789 0.5387 0.5667 0.5749 0.5242 0.5210 0.5222
+P k=12 T/ffht best/best=0.8661 med/med=0.8016  repeat-by-repeat: min=0.7598 med=0.8086 max=0.8802
+P k=12 G19/ffht best/best=0.9214 med/med=0.8671  repeat-by-repeat: min=0.8256 med=0.8825 max=0.9420
+P k=12 G19/T best/best=1.0639 med/med=1.0817  repeat-by-repeat: min=1.0468 med=1.0810 max=1.1565
+S k=15 arrays=1 bytes=131072 G=836 R=12 cpu=1 sibling=5 sibling_busy=2% loadavg_at_start=[4.42 4.51 4.83 4/522 944793]
+V k=15 ffht     min=0.7393 med=0.7493 max=0.7679 ns/point  shortest_loop=0.243s  all: 0.7393 0.7549 0.7679 0.7457 0.7491 0.7573 0.7493 0.7491 0.7626
+V k=15 T        min=0.6428 med=0.6545 max=0.6677 ns/point  shortest_loop=0.211s  all: 0.6506 0.6664 0.6490 0.6635 0.6627 0.6545 0.6434 0.6677 0.6428
+V k=15 G19      min=0.6647 med=0.6698 max=0.6797 ns/point  shortest_loop=0.219s  all: 0.6669 0.6789 0.6764 0.6797 0.6698 0.6695 0.6722 0.6652 0.6647
+P k=15 T/ffht best/best=0.8694 med/med=0.8735  repeat-by-repeat: min=0.8429 med=0.8800 max=0.8913
+P k=15 G19/ffht best/best=0.8990 med/med=0.8938  repeat-by-repeat: min=0.8716 med=0.8941 max=0.9115
+P k=15 G19/T best/best=1.0341 med/med=1.0233  repeat-by-repeat: min=0.9964 med=1.0244 max=1.0448
+S k=26 arrays=1 bytes=268435456 G=1 R=2 cpu=1 sibling=5 sibling_busy=78% loadavg_at_start=[4.43 4.51 4.82 4/526 944854]
+V k=26 ffht     min=2.2593 med=2.9401 max=2.9502 ns/point  shortest_loop=0.303s  all: 2.2593 2.5333 2.6646 2.7212 2.9429 2.9427 2.9401 2.9459 2.9502
+V k=26 T        min=2.2186 med=2.5999 max=3.0065 ns/point  shortest_loop=0.298s  all: 2.2186 2.5091 2.5999 2.4920 2.3569 3.0065 2.8341 2.7886 2.8652
+V k=26 G19      min=2.1676 med=2.6442 max=2.9370 ns/point  shortest_loop=0.291s  all: 2.3155 2.5123 2.3749 2.1676 2.6442 2.7597 2.7575 2.7656 2.9370
+P k=26 T/ffht best/best=0.9820 med/med=0.8843  repeat-by-repeat: min=0.8009 med=0.9712 max=1.0217
+P k=26 G19/ffht best/best=0.9594 med/med=0.8994  repeat-by-repeat: min=0.7966 med=0.9379 max=1.0248
+P k=26 G19/T best/best=0.9770 med/med=1.0170  repeat-by-repeat: min=0.8698 med=0.9918 max=1.1219
+## exit 0
+## after: 2026-10-11 17:02:15 UTC; load 4.43 4.51 4.82 4/526 945061
+##    pid 839050 99.9% cpu5 nice5 python3
+##    pid 839938 99.9% cpu3 nice5 python3
+##    pid 839000 99.9% cpu2 nice5 python3

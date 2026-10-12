@@ -1,0 +1,8 @@
+# n=3 wires, coefficients up to 4, in place; way restricted to rowmass <= infinity
+# m new | up = max Phi (positive side) | PUMP max|Phi| (per move) | LAND max Phi with all p in [0,1] (per move) | ORTH max Phi, orthogonal rows (per move) | max rowmass | witnesses
+1 132 | up 0.000 | 0.000 (0.000) | 0.000 (0.000) | 0.000 (0.000) | 1.0 | pump (0,1,0)(0,1,1)(1,0,0) land (0,1,0)(0,1,1)(1,0,0)
+2 12081 | up 2.000 | -10.974 (5.487) | 2.000 (1.000) | 2.000 (1.000) | 33.0 | pump (0,4,3)(0,17,12)(1,0,0) land (0,1,-1)(0,1,1)(1,0,0) orth (0,1,-1)(0,1,1)(1,0,0)
+3 925242 | up 2.000 | -19.230 (6.410) | 2.000 (0.667) | 0.000 (0.000) | 577.0 | pump (0,12,17)(0,17,24)(1,0,0) land (0,1,1)(1,0,0)(1,1,-1)
+pool full
+4 31062544 | up 113.092 | -142.863 (35.716) | 4.000 (1.000) | 3.837 (0.959) | 10369.0 | pump (3,16,4)(12,63,16)(48,248,63) land (0,1,1)(1,-1,1)(1,1,-1) orth (0,1,1)(1,1,-1)(2,-1,1)  [POOL FULL: this depth incomplete]
+LIGHT label=x8-t4 exit=0 time=12s waited=0s peak_rss_mb=794 peak_footprint_mb=789 lowest_cap_mb=1500 stopped=- start=04:11:46 cmd=./rt3 3 4 5 0 32000000

@@ -1,0 +1,2 @@
+two nested calls give A X A^T for every 2 x 2 reflection tested: 65 exact cases
+LIGHT label=scross-refl2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:16:13 cmd=python3 -B refl2.py

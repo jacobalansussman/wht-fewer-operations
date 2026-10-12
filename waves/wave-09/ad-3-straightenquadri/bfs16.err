@@ -1,0 +1,1 @@
+LIGHT label=ad3-bfs16b exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:45:02 cmd=./bfs16

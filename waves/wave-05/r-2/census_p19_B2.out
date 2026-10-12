@@ -1,0 +1,9 @@
+tau=18 (1/tau=18): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 228 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=2 (1/tau=10): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 134 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=10 (1/tau=2): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 134 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=8 (1/tau=12): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 142 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=12 (1/tau=8): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 142 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=3 (1/tau=13): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=5 (1/tau=4): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 111660120]
+tau=7 (1/tau=11): R2 p=19 n=4 points=7240 lines=137922 targets=4 helpers m=3 (last 2 over all points): 126 distinct helper sets, gates 7  [fixpoint tests 111660120]
+LIGHT label=r2-c19 exit=0 time=80s waited=0s peak_rss_mb=204 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:36:42 cmd=./run_census.sh 2 19 18 2 10 8 12 3 5 7

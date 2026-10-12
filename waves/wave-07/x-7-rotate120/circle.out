@@ -1,0 +1,10 @@
+N=4 (a,b,c)=(2/3,2/3,-1/3) on the circle: True ; S^2 = 1: True ; S R S = R^-1: True
+N=4 (a,b,c)=(6/7,3/7,-2/7) on the circle: True ; S^2 = 1: True ; S R S = R^-1: True
+N=4 (a,b,c)=(1/2,1/2,0) on the circle: False ; S^2 = 1: False ; S R S = R^-1: False
+N=16 (a,b,c)=(2/3,2/3,-1/3) on the circle: True ; S^2 = 1: True ; S R S = R^-1: True
+N=16 (a,b,c)=(6/7,3/7,-2/7) on the circle: True ; S^2 = 1: True ; S R S = R^-1: True
+N=16 (a,b,c)=(1/2,1/2,0) on the circle: False ; S^2 = 1: False ; S R S = R^-1: False
+N=64 (a,b,c)=(2/3,2/3,-1/3) on the circle: True ; S^2 = 1: True ; S R S = R^-1: True
+N=64 (a,b,c)=(6/7,3/7,-2/7) on the circle: True ; S^2 = 1: True ; S R S = R^-1: True
+N=64 (a,b,c)=(1/2,1/2,0) on the circle: False ; S^2 = 1: False ; S R S = R^-1: False
+LIGHT label=x7-circle exit=0 time=6s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=03:47:50 cmd=python3 -B circle.py

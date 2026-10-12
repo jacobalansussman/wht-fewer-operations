@@ -1,0 +1,17 @@
+16_textbook.txt: N=16 adders(G)=64 [add 32, sub 32] factor 1 labels_are_rows=True checks: packed (all 16 unit vectors); dense; 4 random vectors
+16_cfl1994.txt: N=16 adders(G)=56 [add 48, sub 8] factor 1 labels_are_rows=True checks: packed (all 16 unit vectors); dense; 4 random vectors
+16_family.txt: N=16 adders(G)=52 [add 20, sub 32] factor 1 labels_are_rows=True checks: packed (all 16 unit vectors); dense; 4 random vectors
+32_textbook.txt: N=32 adders(G)=160 [add 80, sub 80] factor 1 labels_are_rows=True checks: packed (all 32 unit vectors); dense; 4 random vectors
+32_cfl1994.txt: N=32 adders(G)=144 [add 112, sub 32] factor 1 labels_are_rows=True checks: packed (all 32 unit vectors); dense; 4 random vectors
+32_family.txt: N=32 adders(G)=128 [add 48, sub 80] factor 1 labels_are_rows=True checks: packed (all 32 unit vectors); dense; 4 random vectors
+32_cfl1994b.txt: N=32 adders(G)=144 [add 112, sub 32] factor 1 labels_are_rows=True checks: packed (all 32 unit vectors); dense; 4 random vectors
+64_textbook.txt: N=64 adders(G)=384 [add 192, sub 192] factor 1 labels_are_rows=True checks: packed (all 64 unit vectors); dense; 4 random vectors
+64_cfl1994.txt: N=64 adders(G)=336 [add 288, sub 48] factor 1 labels_are_rows=True checks: packed (all 64 unit vectors); dense; 4 random vectors
+64_family.txt: N=64 adders(G)=304 [add 112, sub 192] factor 1 labels_are_rows=True checks: packed (all 64 unit vectors); dense; 4 random vectors
+128_textbook.txt: N=128 adders(G)=896 [add 448, sub 448] factor 1 labels_are_rows=True checks: packed (all 128 unit vectors); 4 random vectors
+128_cfl1994.txt: N=128 adders(G)=800 [add 640, sub 160] factor 1 labels_are_rows=True checks: packed (all 128 unit vectors); 4 random vectors
+128_family.txt: N=128 adders(G)=704 [add 256, sub 448] factor 1 labels_are_rows=True checks: packed (all 128 unit vectors); 4 random vectors
+128_cfl1994b.txt: N=128 adders(G)=800 [add 640, sub 160] factor 1 labels_are_rows=True checks: packed (all 128 unit vectors); 4 random vectors
+256_textbook.txt: N=256 adders(G)=2048 [add 1024, sub 1024] factor 1 labels_are_rows=True checks: packed (all 256 unit vectors); 4 random vectors
+256_cfl1994.txt: N=256 adders(G)=1792 [add 1536, sub 256] factor 1 labels_are_rows=True checks: packed (all 256 unit vectors); 4 random vectors
+256_family.txt: N=256 adders(G)=1600 [add 576, sub 1024] factor 1 labels_are_rows=True checks: packed (all 256 unit vectors); 4 random vectors

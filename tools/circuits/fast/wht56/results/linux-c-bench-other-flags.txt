@@ -1,0 +1,59 @@
+ 13:31:08 up 19:39,  0 user,  load average: 4.74, 4.30, 6.50
+== gcc -std=c11 -O2
+# best of 15 runs; nanoseconds per point for one transform; copy time taken off
+points   variant                            best     median   spread   cpu best     reps
+2^9      copy only                         0.205      0.254      24%      0.205    16384
+2^9      textbook radix 2                  5.626      8.647      54%      5.626    16384
+2^9      textbook radix 8                  2.791      4.697      68%      2.791    16384
+2^9      k8 raw (20 ops)                   3.662      3.777       3%      3.662    16384
+2^9      k8 exact (20 ops + scale)         3.929      4.229       8%      3.928    16384
+2^12     copy only                         0.211      0.244      16%      0.211     2048
+2^12     textbook radix 2                  5.664     11.481     103%      5.664     2048
+2^12     textbook radix 8                  3.149      6.307     100%      3.149     2048
+2^12     k8 raw (20 ops)                   3.217      5.666      76%      3.216     2048
+2^12     k8 exact (20 ops + scale)         3.450      5.140      49%      3.450     2048
+2^15     copy only                         0.205      0.256      25%      0.205      256
+2^15     textbook radix 2                  6.986      8.282      19%      6.977      256
+2^15     textbook radix 8                  3.580      4.034      13%      3.580      256
+2^15     k8 raw (20 ops)                   4.107      5.129      25%      4.107      256
+2^15     k8 exact (20 ops + scale)         4.383      6.370      45%      4.383      256
+CHECK OK: the four transforms agree at every size above
+== gcc -std=c11 -O3 -march=native -fno-tree-vectorize
+# best of 15 runs; nanoseconds per point for one transform; copy time taken off
+points   variant                            best     median   spread   cpu best     reps
+2^9      copy only                         0.140      0.256      83%      0.140    16384
+2^9      textbook radix 2                  5.790      8.938      54%      5.789    16384
+2^9      textbook radix 8                  2.225      3.999      80%      2.225    16384
+2^9      k8 raw (20 ops)                   2.674      3.830      43%      2.673    16384
+2^9      k8 exact (20 ops + scale)         2.919      4.172      43%      2.918    16384
+2^12     copy only                         0.232      0.261      12%      0.232     2048
+2^12     textbook radix 2                  8.237     11.307      37%      8.237     2048
+2^12     textbook radix 8                  3.298      4.132      25%      3.284     2048
+2^12     k8 raw (20 ops)                   3.939      4.413      12%      3.939     2048
+2^12     k8 exact (20 ops + scale)         3.993      4.740      19%      3.993     2048
+2^15     copy only                         0.225      0.245       9%      0.225      256
+2^15     textbook radix 2                 12.477     15.967      28%     12.470      256
+2^15     textbook radix 8                  5.056      6.398      27%      5.056      256
+2^15     k8 raw (20 ops)                   5.741      6.186       8%      5.674      256
+2^15     k8 exact (20 ops + scale)         5.905      6.492      10%      5.905      256
+CHECK OK: the four transforms agree at every size above
+== gcc -std=c11 -O1
+# best of 15 runs; nanoseconds per point for one transform; copy time taken off
+points   variant                            best     median   spread   cpu best     reps
+2^9      copy only                         0.235      0.248       6%      0.235    16384
+2^9      textbook radix 2                  7.830      8.241       5%      7.803    16384
+2^9      textbook radix 8                  4.297      4.627       8%      4.297    16384
+2^9      k8 raw (20 ops)                   3.462      3.944      14%      3.461    16384
+2^9      k8 exact (20 ops + scale)         4.312      4.377       2%      4.305    16384
+2^12     copy only                         0.232      0.248       7%      0.232     2048
+2^12     textbook radix 2                  9.977     10.597       6%      9.974     2048
+2^12     textbook radix 8                  5.681      5.992       5%      5.675     2048
+2^12     k8 raw (20 ops)                   5.032      5.194       3%      5.031     2048
+2^12     k8 exact (20 ops + scale)         5.333      5.615       5%      5.323     2048
+2^15     copy only                         0.225      0.265      18%      0.225      256
+2^15     textbook radix 2                 12.070     13.128       9%     12.001      256
+2^15     textbook radix 8                  6.657      7.657      15%      6.657      256
+2^15     k8 raw (20 ops)                   5.951      6.619      11%      5.929      256
+2^15     k8 exact (20 ops + scale)         6.340      6.922       9%      6.322      256
+CHECK OK: the four transforms agree at every size above
+ 13:31:42 up 19:40,  0 user,  load average: 5.78, 4.60, 6.52

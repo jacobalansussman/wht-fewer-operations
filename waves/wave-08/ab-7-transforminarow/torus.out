@@ -1,0 +1,10 @@
+Z16: functions with c(0)=+1 whose convolution matrix is Hadamard: 0; of these equal to the transform up to signs and relabellings: 0
+Z8xZ2: functions with c(0)=+1 whose convolution matrix is Hadamard: 192; of these equal to the transform up to signs and relabellings: 64
+   one such kernel c, listed over the group elements 8x2 in dictionary order: +--+--++-+-+++++
+Z4xZ4: functions with c(0)=+1 whose convolution matrix is Hadamard: 192; of these equal to the transform up to signs and relabellings: 192
+   one such kernel c, listed over the group elements 4x4 in dictionary order: +--+-+-+--++++++
+Z4xZ2xZ2: functions with c(0)=+1 whose convolution matrix is Hadamard: 448; of these equal to the transform up to signs and relabellings: 448
+   one such kernel c, listed over the group elements 4x2x2 in dictionary order: +--+-+-+--++++++
+Z2^4: functions with c(0)=+1 whose convolution matrix is Hadamard: 448; of these equal to the transform up to signs and relabellings: 448
+   one such kernel c, listed over the group elements 2x2x2x2 in dictionary order: +--+-+-+--++++++
+LIGHT label=ab7-torus exit=0 time=2s waited=0s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:02:41 cmd=python3 -B torus.py

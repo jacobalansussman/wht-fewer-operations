@@ -1,0 +1,2 @@
+N=16 per-node limits (leaf first) 2222 mode T (tiling) maxrect 36: STOPPED (not exhaustive) after 301 s, 363855872 search nodes, deepest row completed 8 | Hadamard matrices of this form (children sorted): 0, fewest rectangles 999 (tau 1000, gates 1014) | of them the transform up to relabelling and signs: 0, fewest rectangles 999 (tau 1000, gates 1014)
+LIGHT label=p4-g3 exit=0 time=332s waited=6s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:35:23 cmd=./pernode 4 300 36 2222 T

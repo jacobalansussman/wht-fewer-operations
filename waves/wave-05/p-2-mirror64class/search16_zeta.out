@@ -1,0 +1,64 @@
+kernel [[1, 1], [1, 0]]  N = 16, r = 6  N' = 15  D = 11  N'' = 15  D' = 11
+ read points (columns of the mirror matrix), which inputs carry them:
+   c0  (1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  inputs [1, 2, 3]
+   c1  (1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)  inputs [4, 8, 12]
+   c2  (1, 0, 1, 0, 0, -1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0)  inputs [5]
+   c3  (1, 1, 0, 0, 0, 0, -1, 0, 1, 1, 0, 0, 0, 0, 0, 0)  inputs [6]
+   c4  (1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0)  inputs [7]
+   c5  (1, 0, 1, 0, 1, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0)  inputs [9]
+   c6  (1, 1, 0, 0, 1, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0)  inputs [10]
+   c7  (1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0)  inputs [11]
+   c8  (1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0)  inputs [13]
+   c9  (1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0)  inputs [14]
+   c10 (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)  inputs [15]
+ zero columns (inputs the mirror never reads): [0]
+ write points (rows), which outputs carry them:
+   e0  (0, 1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, 1, 1, -1)  outputs [0]
+   e1  (0, 1, 1, -1, 0, 0, -1, 1, 0, 0, -1, 1, 0, 0, 1, -1)  outputs [1]
+   e2  (0, 1, 1, -1, 0, -1, 0, 1, 0, -1, 0, 1, 0, 1, 0, -1)  outputs [2]
+   e3  (0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, -1)  outputs [3, 7, 11]
+   e4  (0, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, 1, -1, 1, 1, -1)  outputs [4]
+   e5  (0, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 1, 0, 0, 1, -1)  outputs [5]
+   e6  (0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 1, 0, 1, 0, -1)  outputs [6]
+   e7  (0, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, 0, -1, 1, 1, -1)  outputs [8]
+   e8  (0, 0, 0, 0, 0, 0, 1, -1, 0, -1, 0, 0, 0, 0, -1, 1)  outputs [9]
+   e9  (0, 0, 0, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, -1, 0, 1)  outputs [10]
+   e10 (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, -1)  outputs [12, 13, 14]
+ zero rows (outputs equal to their input): [15]
+ table: write point e_s against read point c_t; '.' = perpendicular
+   e0  x x x x x x x x x x x
+   e1  x . . x x . x x . x x
+   e2  x . x . x x . x x . x
+   e3  . . . . x . . x . . x
+   e4  . x . . . x x x x x x
+   e5  . . x . . . x x . x x
+   e6  . . . x . x . x x . x
+   e7  . x x x x . . . x x x
+   e8  . . . x x x . . . x x
+   e9  . . x . x . x . x . x
+   e10 . . . . . . . . x x x
+  [read] targets 11 in dimension 6; collinear triples of targets: 0
+  [read] four targets in a plane, no three on a line (4-term relations): 11
+  [read] pool (points on at least two secants): 19 ; by number of secants through them: [(2, 12), (3, 7)]
+  [read] collinear triples in targets + pool: 69
+  [read] x = 0: helper sets tried 1; (helper set, start set) pairs that generate everything: 0
+  [read] x = 1: helper sets tried 19; (helper set, start set) pairs that generate everything: 0
+  [read] x = 2: helper sets tried 171; (helper set, start set) pairs that generate everything: 0
+  [read] x = 3: helper sets tried 969; (helper set, start set) pairs that generate everything: 50280
+  [write] targets 11 in dimension 6; collinear triples of targets: 0
+  [write] four targets in a plane, no three on a line (4-term relations): 11
+  [write] pool (points on at least two secants): 19 ; by number of secants through them: [(2, 12), (3, 7)]
+  [write] collinear triples in targets + pool: 69
+  [write] x = 0: helper sets tried 1; (helper set, start set) pairs that generate everything: 0
+  [write] x = 1: helper sets tried 19; (helper set, start set) pairs that generate everything: 0
+  [write] x = 2: helper sets tried 171; (helper set, start set) pairs that generate everything: 0
+  [write] x = 3: helper sets tried 969; (helper set, start set) pairs that generate everything: 50280
+ READ: least helpers x = 3  => forward gates N' + D - 2r + x = 17 (floor 14)
+ WRITE: least helpers x' = 3 => gates D' - r + x' = 8 (floor 5)
+ MIDDLE over 400 x 400 (read, write) solution pairs: rows of the middle table with two or more non-zeros (each costs at least one gate), histogram: [(1, 1), (2, 172), (3, 3417), (4, 26064), (5, 75879), (6, 54467)]
+ best pair: middle has 1 rows with >= 2 non-zeros, 8 non-zeros in all (cost between 1 and 2)
+   read helpers [(0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0), (0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0), (2, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)]
+   read start ['c0', 'c3', 'c6', 'c7', (0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0), (2, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)]
+   write helpers [(0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, -2), (0, 0, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, -1, 1, 0, 0), (0, 0, 0, 0, 1, 0, -1, 0, 1, 0, -1, 0, -1, 0, 1, 0)]
+   write start ['e2', 'e3', 'e8', 'e9', 'e10', (0, 0, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, -1, 1, 0, 0)]
+ THREE-BOX TOTAL at 16 points: final adds 15 + read 17 + middle >= 1 + write 8 = >= 41   (floor of the route 34)

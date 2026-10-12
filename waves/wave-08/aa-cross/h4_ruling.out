@@ -1,0 +1,4 @@
+zeros of the form: 10 ; planes inside the zero set: 6 ; triples of planes meeting pairwise in 0 that cover it: 2
+quadric signs(x + y) = -1 + 2 * (number of the three planes containing x + y) - 4 * [x = y] on all 256 entries: True
+so the 16-point convolution with quadric signs = -J + 2 * (three families of plane sums, spread back) - 4 * identity
+LIGHT label=aacross-h4r exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:17:15 cmd=python3 -B h4_ruling.py

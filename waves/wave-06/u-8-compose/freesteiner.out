@@ -1,0 +1,8 @@
+N = 4  vertices 8  moves 6  spanning tree of the 4 rows: 4 moves   exact Steiner minimum: 4 moves   (N/2) log2 N = 4
+   so a one-centre circuit on the bit-order tree has at least 7 gates, agreement rule or not; floor N - 1 + (N/2) log2 N = 7
+LIGHT label=u-8-free4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:17:38 cmd=python3 -B freesteiner.py 4
+exit 0
+N = 8  vertices 128  moves 14  spanning tree of the 8 rows: 12 moves   exact Steiner minimum: 12 moves   (N/2) log2 N = 12
+   so a one-centre circuit on the bit-order tree has at least 19 gates, agreement rule or not; floor N - 1 + (N/2) log2 N = 19
+LIGHT label=u-8-free8 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:17:39 cmd=python3 -B freesteiner.py 8
+exit 0

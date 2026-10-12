@@ -1,0 +1,2 @@
+mx_12.txt      N=4096   operations=45056   (+ 20480, - 18432, * 6144; constants {1/2: 2048, 16: 4096})  textbook=49152   outputs = 1 * (row j of H), j in Sylvester order: A OK, B OK
+LIGHT label=n0-4096 exit=0 time=20s waited=0s peak_rss_mb=295 peak_footprint_mb=168 lowest_cap_mb=1500 stopped=- start=01:10:35 cmd=python3 -B check.py (a temporary folder)/n0/mx_12.txt

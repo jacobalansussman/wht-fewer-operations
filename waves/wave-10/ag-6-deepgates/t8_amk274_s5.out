@@ -1,0 +1,111 @@
+# tjd (ag-6): tj with the gates restricted to coefficient sizes in mask AMK=274 (0 = unrestricted); division by the common factor stays free
+# tj N=8 ALLOW=1023 (largest entry 9, coefficient box 40, 10 coefficient pairs) seconds=300 seed=5 start=s24.txt helpers=16
+CIRCUIT deep148-start  N=8 gates=24  floor f(N)=19  excess=5
+w1 = 1*x0 + 1*x1   # [1 1 0 0 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x0 + -1*x1   # [1 -1 0 0 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w3 = 1*x2 + 1*x3   # [0 0 1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x2 + -1*x3   # [0 0 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w5 = 1*x4 + 1*x5   # [0 0 0 0 1 1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*x4 + -1*x5   # [0 0 0 0 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w7 = 1*x6 + 1*x7   # [0 0 0 0 0 0 1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 1*x6 + -1*x7   # [0 0 0 0 0 0 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w9 = 1*w1 + 1*w3   # [1 1 1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w10 = 1*w1 + -1*w3   # [1 1 -1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w11 = 1*w2 + 1*w4   # [1 -1 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w12 = 1*w2 + -1*w4   # [1 -1 -1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w13 = 1*w5 + 1*w7   # [0 0 0 0 1 1 1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w14 = 1*w5 + -1*w7   # [0 0 0 0 1 1 -1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w15 = 1*w6 + 1*w8   # [0 0 0 0 1 -1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w16 = 1*w6 + -1*w8   # [0 0 0 0 1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w17 = 1*w9 + 1*w13   # [1 1 1 1 1 1 1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w18 = 1*w9 + -1*w13   # [1 1 1 1 -1 -1 -1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w19 = 1*w10 + 1*w14   # [1 1 -1 -1 1 1 -1 -1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w20 = 1*w10 + -1*w14   # [1 1 -1 -1 -1 -1 1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w21 = 1*w11 + 1*w15   # [1 -1 1 -1 1 -1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w22 = 1*w11 + -1*w15   # [1 -1 1 -1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w23 = 1*w12 + 1*w16   # [1 -1 -1 1 1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w24 = 1*w12 + -1*w16   # [1 -1 -1 1 -1 1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+SUMMARY deep148-start  gates=24 excess=5  budget=24.00  volume=12.00 (needed 12)  joins=24 of which carry volume=12  merges=7 of which carry volume=0  coefficient-2 gates=0 bringing 0.00 units (0.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=1  gates that bring volume=12  most units from one gate=1.000
+# 200 states, 5 s, current 24 gates, best 24, distinct states seen 95
+# 400 states, 10 s, current 25 gates, best 24, distinct states seen 119
+# 800 states, 22 s, current 25 gates, best 24, distinct states seen 142
+# 1000 states, 27 s, current 25 gates, best 24, distinct states seen 149
+# 1200 states, 33 s, current 25 gates, best 24, distinct states seen 153
+# 1400 states, 37 s, current 25 gates, best 24, distinct states seen 156
+# 1600 states, 41 s, current 25 gates, best 24, distinct states seen 156
+# 1800 states, 46 s, current 25 gates, best 24, distinct states seen 156
+# 2000 states, 50 s, current 24 gates, best 24, distinct states seen 158
+# 2600 states, 63 s, current 25 gates, best 24, distinct states seen 160
+# 2800 states, 68 s, current 25 gates, best 24, distinct states seen 161
+# 3000 states, 72 s, current 24 gates, best 24, distinct states seen 161
+# 3200 states, 76 s, current 25 gates, best 24, distinct states seen 161
+# 3400 states, 80 s, current 25 gates, best 24, distinct states seen 161
+# 3600 states, 85 s, current 25 gates, best 24, distinct states seen 161
+# 3800 states, 89 s, current 25 gates, best 24, distinct states seen 161
+# 4000 states, 93 s, current 25 gates, best 24, distinct states seen 161
+# 4200 states, 97 s, current 24 gates, best 24, distinct states seen 161
+# 4400 states, 102 s, current 24 gates, best 24, distinct states seen 161
+# 5000 states, 118 s, current 25 gates, best 24, distinct states seen 161
+# 5200 states, 123 s, current 25 gates, best 24, distinct states seen 161
+# 5400 states, 127 s, current 25 gates, best 24, distinct states seen 161
+# 5600 states, 133 s, current 25 gates, best 24, distinct states seen 161
+# 6000 states, 143 s, current 25 gates, best 24, distinct states seen 161
+# 6200 states, 149 s, current 24 gates, best 24, distinct states seen 161
+# 6400 states, 153 s, current 24 gates, best 24, distinct states seen 161
+# 6600 states, 158 s, current 25 gates, best 24, distinct states seen 161
+# 7000 states, 167 s, current 25 gates, best 24, distinct states seen 161
+# 7200 states, 171 s, current 25 gates, best 24, distinct states seen 161
+# 7400 states, 176 s, current 24 gates, best 24, distinct states seen 161
+# 7600 states, 181 s, current 25 gates, best 24, distinct states seen 161
+# 7800 states, 186 s, current 25 gates, best 24, distinct states seen 161
+# 8000 states, 190 s, current 25 gates, best 24, distinct states seen 161
+# 8200 states, 195 s, current 25 gates, best 24, distinct states seen 161
+# 8800 states, 209 s, current 25 gates, best 24, distinct states seen 161
+# 9000 states, 213 s, current 25 gates, best 24, distinct states seen 161
+# 9200 states, 218 s, current 25 gates, best 24, distinct states seen 161
+# 9400 states, 222 s, current 25 gates, best 24, distinct states seen 161
+# 9600 states, 227 s, current 24 gates, best 24, distinct states seen 161
+# 9800 states, 231 s, current 24 gates, best 24, distinct states seen 161
+# 10000 states, 235 s, current 25 gates, best 24, distinct states seen 161
+# 10200 states, 239 s, current 24 gates, best 24, distinct states seen 161
+# 10400 states, 243 s, current 25 gates, best 24, distinct states seen 161
+# 10600 states, 247 s, current 25 gates, best 24, distinct states seen 161
+# 10800 states, 251 s, current 25 gates, best 24, distinct states seen 161
+# 11000 states, 255 s, current 24 gates, best 24, distinct states seen 161
+# 11200 states, 260 s, current 24 gates, best 24, distinct states seen 161
+# 11400 states, 265 s, current 25 gates, best 24, distinct states seen 161
+# 11600 states, 269 s, current 24 gates, best 24, distinct states seen 161
+# 11800 states, 273 s, current 25 gates, best 24, distinct states seen 161
+# 12000 states, 278 s, current 25 gates, best 24, distinct states seen 161
+# 12200 states, 285 s, current 25 gates, best 24, distinct states seen 161
+# 12400 states, 290 s, current 25 gates, best 24, distinct states seen 161
+# 12600 states, 296 s, current 25 gates, best 24, distinct states seen 161
+# END states=12744 distinct=161 two-swaps=2229 rounds without a move=3467 best=24 gates, current=24, 300 s
+# kicks=714
+CIRCUIT deep148-last  N=8 gates=24  floor f(N)=19  excess=5
+w1 = 1*x0 + 1*x1   # [1 1 0 0 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x0 + -1*x1   # [1 -1 0 0 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w3 = 1*x2 + 1*x3   # [0 0 1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x2 + -1*x3   # [0 0 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w5 = 1*x4 + 1*x5   # [0 0 0 0 1 1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*x4 + -1*x5   # [0 0 0 0 1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w7 = 1*x6 + -1*x7   # [0 0 0 0 0 0 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = 1*x6 + 1*x7   # [0 0 0 0 0 0 1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w9 = 1*w1 + -1*w3   # [1 1 -1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w10 = 1*w1 + 1*w3   # [1 1 1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w11 = 1*w2 + 1*w4   # [1 -1 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w12 = 1*w2 + -1*w4   # [1 -1 -1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w13 = 1*w5 + 1*w8   # [0 0 0 0 1 1 1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w14 = 1*w5 + -1*w8   # [0 0 0 0 1 1 -1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w15 = 1*w6 + 1*w7   # [0 0 0 0 1 -1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w16 = 1*w6 + -1*w7   # [0 0 0 0 1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w17 = 1*w9 + 1*w14   # [1 1 -1 -1 1 1 -1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w18 = 1*w9 + -1*w14   # [1 1 -1 -1 -1 -1 1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w19 = 1*w10 + 1*w13   # [1 1 1 1 1 1 1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w20 = 1*w10 + -1*w13   # [1 1 1 1 -1 -1 -1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w21 = 1*w11 + 1*w15   # [1 -1 1 -1 1 -1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w22 = 1*w11 + -1*w15   # [1 -1 1 -1 -1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w23 = 1*w12 + 1*w16   # [1 -1 -1 1 1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w24 = 1*w12 + -1*w16   # [1 -1 -1 1 -1 1 1 -1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+SUMMARY deep148-last  gates=24 excess=5  budget=24.00  volume=12.00 (needed 12)  joins=24 of which carry volume=12  merges=7 of which carry volume=0  coefficient-2 gates=0 bringing 0.00 units (0.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=1  gates that bring volume=12  most units from one gate=1.000
+LIGHT label=ag6u exit=0 time=303s waited=0s peak_rss_mb=69 peak_footprint_mb=69 lowest_cap_mb=1500 stopped=- start=07:52:30 cmd=./tjd8 1023 300 5 s24.txt 0 deep148 0 0 20

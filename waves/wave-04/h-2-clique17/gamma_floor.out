@@ -1,0 +1,12 @@
+m = 5, W = 4; plain 20 moves; without address maps counting allows 16 and the lemmas of h-2.md force 20
+  no address map                                                 invariant forms with q(I)=1: 16384 of 16384; fewest moves 16 (status 0, solver's lower bound 16.0)  e.g. 00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:1 11010:1 11100:1 11111:1
+  one swap of two address bits                                   invariant forms with q(I)=1:  1024 of 16384; fewest moves 12 (status 0, solver's lower bound 12.0)  e.g. 00100:4 01000:4 10000:4
+  one map z -> z + (a.z) a, a = 01111 (orthogonal)               invariant forms with q(I)=1:  1024 of 16384; fewest moves 12 (status 0, solver's lower bound 12.0)  e.g. 10011:4 11001:4 11010:4
+  two disjoint swaps at once                                     invariant forms with q(I)=1:   256 of 16384; fewest moves 4 (status 0, solver's lower bound 4.0)  e.g. 10000:4
+  one 3-cycle of address bits                                    invariant forms with q(I)=1:    64 of 16384; fewest moves 12 (status 0, solver's lower bound 12.0)  e.g. 00001:4 01000:4 10000:4
+  one 5-cycle of address bits                                    invariant forms with q(I)=1:     4 of 16384; fewest moves 4 (status 0, solver's lower bound 4.0)  e.g. 00001:4
+  all permutations of 3 address bits                             invariant forms with q(I)=1:    64 of 16384; fewest moves 12 (status 0, solver's lower bound 12.0)  e.g. 00001:4 01000:4 10000:4
+  all 120 permutations of the address bits                       invariant forms with q(I)=1:     2 of 16384; fewest moves 4 (status 0, solver's lower bound 4.0)  e.g. 00001:4
+  the whole orthogonal group (720 maps)                          invariant forms with q(I)=1:     1 of 16384; fewest moves 4 (status 0, solver's lower bound 4.0)  e.g. 00001:4
+  one shear: bit 2 added into bit 1 (not orthogonal)             invariant forms with q(I)=1:  1024 of 16384; fewest moves 15 (status 0, solver's lower bound 15.000000000000004)  e.g. 00010:1 00100:1 00110:1 01001:1 01010:1 01101:1 01110:1 10000:1 10010:1 10100:1 10110:1 11001:1 11010:1 11101:1 11110:1
+  one map of order 31 (multiplication in the field of 32 elements) invariant forms with q(I)=1: 0 -> counting says nothing (floor 0)

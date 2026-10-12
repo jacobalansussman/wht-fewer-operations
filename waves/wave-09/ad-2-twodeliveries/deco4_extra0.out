@@ -1,0 +1,9 @@
+n = 4 (cut of 8 points), source all4: derivations (C'', one per way of deriving each wire) = 8
+wires by rank of their slot transfers (longest bus without an idle injection) -> count: {1: 38, 2: 20, 3: 6}
+structures with n independent classes and a wire with >= 3 classes : 42
+(tree, delivery set) pairs that pass the census filter : 12
+least pure gates over these structures -> count (the lower half alone costs 4; a saving needs <= 3): {'no delivery set passes the census filter: pure >= 4': 36, 5: 6}
+one best structure: pure gates 5 ; injected wires ["x'0+x'1", "x'1", "x'1+x'2+x'3", "x'1+x'3"] ; deliveries used ["x'0+x'1+x'2+x'3"]
+   C'' = [('1100', '1000', '0100'), ('1010', '1000', '0010'), ('1110', '0100', '1010'), ('1111', '0001', '1110')]
+   classes (wire, slots, tau) and forced offsets: [('1000', (0,), '0100', "x'0+x'1"), ('1000', (1,), '0011', "x'0+x'1+x'2+x'3"), ('1000', (2,), '1000', "x'0"), ('1010', (1,), '0010', "x'1+x'3")]
+LIGHT label=ad2-deco4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:04:54 cmd=python3 -B deco.py 4 all4

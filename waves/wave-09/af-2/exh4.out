@@ -1,0 +1,12 @@
+mode 0: subspaces 67, signed flats up to a factor 1072
+  target a multiple of one flat: 0 ; pairs 574056, pairs spanning the target: 0
+  covering triples 10251120 (linearly dependent triples among them 480, covered by the pair test) ; independent triples spanning the target: 0 (unsigned: 0)
+LIGHT label=af2-exh4 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:40:08 cmd=./exh4 0
+mode 1: subspaces 67, signed flats up to a factor 1072
+  target a multiple of one flat: 0 ; pairs 574056, pairs spanning the target: 0
+  covering triples 10251120 (linearly dependent triples among them 480, covered by the pair test) ; independent triples spanning the target: 145 (unsigned: 1)
+LIGHT label=af2-exh4 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:40:09 cmd=./exh4 1
+mode 2: subspaces 67, signed flats up to a factor 1072
+  target a multiple of one flat: 0 ; pairs 574056, pairs spanning the target: 1
+  covering triples 10251120 (linearly dependent triples among them 480, covered by the pair test) ; independent triples spanning the target: 1160 (unsigned: 335)
+LIGHT label=af2-exh4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:40:10 cmd=./exh4 2

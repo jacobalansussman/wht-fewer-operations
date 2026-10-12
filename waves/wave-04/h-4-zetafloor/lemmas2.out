@@ -1,0 +1,11 @@
+TRI: p + q == w : True
+   p = [1, 1, 0, 0, 0, 0, -1, -1]  symmetric bits [0]  entangled bits [1, 2]
+   q = [0, -1, 0, -1, 1, 0, 1, 0]  symmetric bits [1]  entangled bits [0, 2]
+   w = [1, 0, 0, -1, 1, 0, 0, -1]  symmetric bits [2]  entangled bits [0, 1]
+   kills [2] => kappa 1 with an entangled output: a hub born by a useful gate from hubs of two other types
+CUBE k=2: outputs are indicators of {p_S = 0}: True ; inputs are signed indicators of up-sets: True
+CUBE k=3: outputs are indicators of {p_S = 0}: True ; inputs are signed indicators of up-sets: True
+CUBE k=4: outputs are indicators of {p_S = 0}: True ; inputs are signed indicators of up-sets: True
+CUBE: L(w) = facets on which the function vanishes: 8551 wires tested, 0 mismatches
+CUBE: the 4-point hub (1,1,1,0) as a function on the square (p = 00, 10, 01, 11): [1, 0, 0, -1]  = delta_00 - delta_11
+LIGHT label=h4-lemmas2 exit=0 time=1s waited=36s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:02:30 cmd=python3 -B lemmas2.py

@@ -1,0 +1,5 @@
+k=5 N=32 chains=1 start MST=84
+BEST MST=69  replay terms=69 (per chain 69 0 0) replay exact | held 31 | GATES = held + MST - 1 = 99 | Yates 80 | MST/N = 2.156
+chain 0: 4 6 14 12 15 7 5 13 9 1 25 29 21 17 16 20 22 23 19 18 2 3 11 27 26 10 8 24 28 30 31 0
+edge costs: 1:6 2:18 3:5 4:3
+WITH EXTRA VERTICES (lattice intervals, greedy, 211 candidates): MST 69 -> 69 with 0 extra vertices | GATES = 99 | terms per output 2.156

@@ -1,0 +1,28 @@
+t = 2: 19 gates replay OK; kinds {(1, 2, 1): 4, (1, 3, 1): 4, (1, 3, 2): 2, (1, 6, 1): 2, (2, 1, 1): 3, (2, 3, 1): 4}; sum of gate depths 15; |det of the primitive outputs| = 531441 = 2^0 * 531441; gates of depth >= 2: 0; Morgenstern for coefficients 1, 2 without division: at least 12 gates
+t = 3: 19 gates replay OK; kinds {(1, 3, 1): 4, (1, 8, 1): 4, (1, 8, 3): 2, (1, 24, 1): 2, (3, 1, 1): 3, (3, 8, 1): 4}; sum of gate depths 36; |det of the primitive outputs| = 68719476736 = 2^36 * 1; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 23 gates
+   g1   = (3, 0, 0, 0, 0, 0, 0, 1)   kind (3,1)/1  depth 0
+   g2   = (0, 3, 0, 0, 0, 0, 1, 0)   kind (3,1)/1  depth 0
+   g3   = (0, 0, 1, 0, 0, 3, 0, 0)   kind (1,3)/1  depth 0
+   g4   = (0, 0, 0, 1, 3, 0, 0, 0)   kind (1,3)/1  depth 0
+   g5   = (3, 9, 0, 0, 0, 0, 3, 1)   kind (1,3)/1  depth 0
+   g6   = (0, 0, 3, 1, 3, 9, 0, 0)   kind (3,1)/1  depth 0
+   g7   = (3, 9, 9, 3, 9, 27, 3, 1)   kind (1,3)/1  depth 0
+   g8   = (1, 3, 3, 1, 3, 9, 1, 3)   kind (1,8)/3  depth 3
+   g9   = (3, 9, 9, 3, 9, 3, 3, 1)   kind (1,24)/1  depth 3
+   g10  = (1, 3, 3, 1, 3, 9, 9, 3)   kind (1,8)/1  depth 3
+   g11  = (3, 9, 9, 3, 1, 3, 3, 1)   kind (1,8)/1  depth 3
+   y7   = (1, 3, 3, 9, 27, 9, 9, 3)   kind (1,8)/1  depth 3
+   y1   = (3, 9, 1, 3, 9, 3, 27, 9)   kind (3,8)/1  depth 3
+   y6   = (9, 3, 27, 9, 3, 9, 1, 3)   kind (3,8)/1  depth 3
+   y0   = (27, 9, 9, 3, 1, 3, 3, 9)   kind (1,8)/1  depth 3
+   y2   = (3, 1, 9, 3, 9, 27, 3, 9)   kind (3,8)/1  depth 3
+   y4   = (9, 3, 3, 1, 3, 9, 9, 27)   kind (3,8)/1  depth 3
+   y3   = (3, 9, 9, 27, 9, 3, 3, 1)   kind (1,24)/1  depth 3
+   y5   = (9, 27, 3, 9, 3, 1, 9, 3)   kind (1,8)/3  depth 3
+t = 5: 19 gates replay OK; kinds {(1, 5, 1): 4, (1, 24, 1): 4, (1, 24, 5): 2, (1, 120, 1): 2, (5, 1, 1): 3, (5, 24, 1): 4}; sum of gate depths 36; |det of the primitive outputs| = 36520347436056576 = 2^36 * 531441; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 35 gates
+t = 7: 19 gates replay OK; kinds {(1, 7, 1): 4, (1, 48, 1): 4, (1, 48, 7): 2, (1, 336, 1): 2, (7, 1, 1): 3, (7, 48, 1): 4}; sum of gate depths 48; |det of the primitive outputs| = 149587343098087735296 = 2^48 * 531441; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 43 gates
+t = 9: 19 gates replay OK; kinds {(1, 9, 1): 4, (1, 80, 1): 4, (1, 80, 9): 2, (1, 720, 1): 2, (9, 1, 1): 3, (9, 80, 1): 4}; sum of gate depths 48; |det of the primitive outputs| = 68719476736000000000000 = 2^48 * 244140625; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 48 gates
+t = 15: 19 gates replay OK; kinds {(1, 15, 1): 4, (1, 224, 1): 4, (1, 224, 15): 2, (1, 3360, 1): 2, (15, 1, 1): 3, (15, 224, 1): 4}; sum of gate depths 60; |det of the primitive outputs| = 15957917665472413585874354176 = 2^60 * 13841287201; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 60 gates
+t = 17: 19 gates replay OK; kinds {(1, 17, 1): 4, (1, 288, 1): 4, (1, 288, 17): 2, (1, 4896, 1): 2, (17, 1, 1): 3, (17, 288, 1): 4}; sum of gate depths 60; |det of the primitive outputs| = 325619086145088897570576531456 = 2^60 * 282429536481; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 62 gates
+t = 31: 19 gates replay OK; kinds {(1, 31, 1): 4, (1, 960, 1): 4, (1, 960, 31): 2, (1, 29760, 1): 2, (31, 1, 1): 3, (31, 960, 1): 4}; sum of gate depths 72; |det of the primitive outputs| = 612709757329767363772416000000000000 = 2^72 * 129746337890625; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 76 gates
+t = 63: 19 gates replay OK; kinds {(1, 63, 1): 4, (1, 3968, 1): 4, (1, 3968, 63): 2, (1, 249984, 1): 2, (63, 1, 1): 3, (63, 3968, 1): 4}; sum of gate depths 84; |det of the primitive outputs| = 15235614023544207510174475892255845280382976 = 2^84 * 787662783788549761; gates of depth >= 2: 12; Morgenstern for coefficients 1, 2 without division: at least 91 gates

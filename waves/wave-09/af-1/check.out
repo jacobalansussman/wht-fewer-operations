@@ -1,0 +1,19 @@
+Part A
+N =    4  q =  2 : spread and plane ok True ; lines 6 ; slice identity on all 6 rows True ; transform = small transforms of line sums True ; line sums = small transforms of the transform / q True
+N =   16  q =  4 : spread and plane ok True ; lines 20 ; slice identity on all 20 rows True ; transform = small transforms of line sums True ; line sums = small transforms of the transform / q True
+N =   64  q =  8 : spread and plane ok True ; lines 72 ; slice identity on all 72 rows True ; transform = small transforms of line sums True ; line sums = small transforms of the transform / q True
+N =  256  q = 16 : spread and plane ok True ; lines 272 ; slice identity on all 272 rows True ; transform = small transforms of line sums True ; line sums = small transforms of the transform / q True
+N = 1024  q = 32 : spread and plane ok True ; lines 1056 ; slice identity on all 1056 rows True ; transform = small transforms of line sums True ; line sums = small transforms of the transform / q True
+N = 4096  q = 64 : spread and plane ok True ; lines 4160 ; slice identity on all 4160 rows True ; transform = small transforms of line sums True ; line sums = small transforms of the transform / q True
+Part B  count (G); T = best KNOWN upper bounds tonight (7, 19, 52, 304 built; 1600 and beyond = the formula (3/4) N k + N/4, not built)
+   N      floor N+q   T(N)-(q+1)T(q)  per point   T(N)+(q+1)T(q)  per point   adding-only (N+q)(q-1)   (1/2)(3/4) k
+   2^4   20          17              1.062       87              5.438       60                       1.500
+   2^6   72          133             2.078       475             7.422       504                      2.250
+   2^8   272         716             2.797       2484            9.703       4080                     3.000
+   2^10  1056        3712            3.625       12160           11.875      32736                    3.750
+   2^12  4160        18128           4.426       57648           14.074      262080                   4.500
+   2^16  65792       391616          5.976       1214016         18.524      16776960                 6.000
+   2^32  4295032832  51538804736     12.000      156767109120    36.500      281474976645120          12.000
+   The lower column is NOT a lower bound on R: it uses upper bounds on T(N). With a proved lower bound on T(N)
+   (nothing above linear is known) the inequality gives nothing above the floor N + q.
+LIGHT label=af1-check exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:39:25 cmd=python3 -B check.py 6

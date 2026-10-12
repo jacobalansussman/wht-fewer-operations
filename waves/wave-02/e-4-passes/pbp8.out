@@ -1,0 +1,3 @@
+d = 8  column orders up to GL: 30
+  full row orders that passed the row test: 0   PBP solutions: 0
+LIGHT label=e4-pbp8 exit=0 time=1s waited=54s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:15:52 cmd=python3 -B pbp.py pbp 8

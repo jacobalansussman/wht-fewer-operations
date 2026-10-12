@@ -1,0 +1,1 @@
+LIGHT label=p3-quad3 exit=0 time=5s waited=4s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=00:24:38 cmd=python3 -B quad3.py

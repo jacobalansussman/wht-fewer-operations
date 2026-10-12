@@ -1,0 +1,6 @@
+W=19 seed=1: least number of underivable wires reached 0 after 33466 moves  -> a legal play with 19 wires: [(3, 1), (12, 4), (15, 5), (48, 0), (192, 64), (240, 64), (255, 67), (255, 70), (255, 74), (255, 75), (255, 79)]
+LIGHT label=u9-g19 exit=0 time=7s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:41:21 cmd=python3 -B game8.py 19 60000 1
+W=19 seed=2: least number of underivable wires reached 0 after 22725 moves  -> a legal play with 19 wires: [(3, 0), (12, 0), (15, 3), (48, 0), (192, 0), (240, 48), (255, 12), (255, 34), (255, 38), (255, 50), (255, 86)]
+LIGHT label=u9-g19 exit=0 time=5s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:41:28 cmd=python3 -B game8.py 19 60000 2
+W=19 seed=3: least number of underivable wires reached 0 after 31667 moves  -> a legal play with 19 wires: [(3, 0), (12, 4), (15, 7), (48, 0), (192, 64), (240, 112), (255, 88), (255, 103), (255, 115), (255, 119), (255, 127)]
+LIGHT label=u9-g19 exit=0 time=6s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:41:34 cmd=python3 -B game8.py 19 60000 3

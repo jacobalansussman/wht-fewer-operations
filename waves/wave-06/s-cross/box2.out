@@ -1,0 +1,6 @@
+involution  calls r=3: 24 starts, best rms residual 3.109e-01, starts below 1e-9: 0
+   first hit reflection r=3: residual 7.89e-16, on 6 fresh boxes 4.94e-16
+reflection  calls r=3: 24 starts, best rms residual 3.392e-16, starts below 1e-9: 24
+involution  calls r=2: 12 starts, best rms residual 5.467e-01, starts below 1e-9: 0
+   first hit reflection r=2: residual 5.29e-16, on 6 fresh boxes 1.19e-15
+reflection  calls r=2: 12 starts, best rms residual 2.415e-16, starts below 1e-9: 12

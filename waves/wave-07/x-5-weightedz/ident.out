@@ -1,0 +1,36 @@
+== 1, 2: U Z = L Z - Z L and A = H L' H / N, on every basis vector ==
+  k=1  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=2  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=3  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=4  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=5  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=6  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=7  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+  k=8  U Z = L Z - Z L: True    H L' H = N * (neighbour sum): True
+== 3: the potential (d+1) d (d-1)/3 ==
+  k= 2  tower 2  balanced 2  lopsided 2  potential 2  all equal: True   N (k - E[d]) = 2 (E[d] = 1.5000)
+  k= 3  tower 8  balanced 8  lopsided 8  potential 8  all equal: True   N (k - E[d]) = 8 (E[d] = 2.0000)
+  k= 4  tower 26  balanced 26  lopsided 26  potential 26  all equal: True   N (k - E[d]) = 26 (E[d] = 2.3750)
+  k= 5  tower 72  balanced 72  lopsided 72  potential 72  all equal: True   N (k - E[d]) = 72 (E[d] = 2.7500)
+  k= 6  tower 188  balanced 188  lopsided 188  potential 188  all equal: True   N (k - E[d]) = 188 (E[d] = 3.0625)
+  k= 7  tower 464  balanced 464  lopsided 464  potential 464  all equal: True   N (k - E[d]) = 464 (E[d] = 3.3750)
+  k= 8  tower 1114  balanced 1114  lopsided 1114  potential 1114  all equal: True   N (k - E[d]) = 1114 (E[d] = 3.6484)
+  k=12  tower 30148  balanced 30148  lopsided 30148  potential 30148  all equal: True   N (k - E[d]) = 30148 (E[d] = 4.6396)
+  k=16  tower 689402  balanced 689402  lopsided 689402  potential 689402  all equal: True   N (k - E[d]) = 689402 (E[d] = 5.4806)
+  k=24  tower 286926756  balanced 286926756  lopsided 286926756  potential 286926756  all equal: True   N (k - E[d]) = 286926756 (E[d] = 6.8978)
+== 4: volume budget of the tower, per point ==
+  k=  4  gates/N    1.625  budget/N     1.896  budget per gate 1.167  log2|det of the integer basis|/N     1.146  (the transform needs k/2 = 2.0;  (k/4) log2 k = 2.0)
+  k=  8  gates/N    4.352  budget/N     5.714  budget per gate 1.313  log2|det of the integer basis|/N     3.874  (the transform needs k/2 = 4.0;  (k/4) log2 k = 6.0)
+  k= 16  gates/N   10.519  budget/N    15.428  budget per gate 1.467  log2|det of the integer basis|/N    11.389  (the transform needs k/2 = 8.0;  (k/4) log2 k = 16.0)
+  k= 32  gates/N   23.903  budget/N    38.963  budget per gate 1.630  log2|det of the integer basis|/N    30.758  (the transform needs k/2 = 16.0;  (k/4) log2 k = 40.0)
+  k= 64  gates/N   52.184  budget/N    94.207  budget per gate 1.805  log2|det of the integer basis|/N    78.351  (the transform needs k/2 = 32.0;  (k/4) log2 k = 96.0)
+  k=128  gates/N  110.911  budget/N   220.958  budget per gate 1.992  log2|det of the integer basis|/N   191.300  (the transform needs k/2 = 64.0;  (k/4) log2 k = 224.0)
+  k=256  gates/N  231.443  budget/N   506.850  budget per gate 2.190  log2|det of the integer basis|/N   452.474  (the transform needs k/2 = 128.0;  (k/4) log2 k = 512.0)
+== 5: H = N V^T D^-1 V for an H-orthogonal basis V, and the covering count ==
+  k=1  Moebius rows: V H V^T diagonal True, diagonal = (-2)^|S| True, N V^T D^-1 V = H True, covering 1 >= 1
+  k=2  Moebius rows: V H V^T diagonal True, diagonal = (-2)^|S| True, N V^T D^-1 V = H True, covering 8 >= 6
+  k=3  Moebius rows: V H V^T diagonal True, diagonal = (-2)^|S| True, N V^T D^-1 V = H True, covering 49 >= 28
+  k=4  Moebius rows: V H V^T diagonal True, diagonal = (-2)^|S| True, N V^T D^-1 V = H True, covering 272 >= 120
+  k=5  Moebius rows: V H V^T diagonal True, diagonal = (-2)^|S| True, N V^T D^-1 V = H True, covering 1441 >= 496
+  k=6  Moebius rows: V H V^T diagonal True, diagonal = (-2)^|S| True, N V^T D^-1 V = H True, covering 7448 >= 2016
+LIGHT label=x5-ident exit=0 time=2s waited=80s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:34:45 cmd=python3 -B ident.py

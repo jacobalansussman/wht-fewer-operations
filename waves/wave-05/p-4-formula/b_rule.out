@@ -1,0 +1,17 @@
+k=2 cyclic rule: rectangles off the centre 4 -> tau 5 gates 7 | shapes [(1, 2, -1), (1, 2, 1), (2, 1, -1), (2, 1, 1)]
+k=3 cyclic rule: rectangles off the centre 12 -> tau 13 gates 19 | shapes [(1, 2, -1), (1, 2, -1), (1, 2, 1), (1, 2, 1), (1, 4, -1), (1, 4, 1), (2, 1, -1), (2, 1, -1), (2, 1, 1), (2, 1, 1), (4, 1, -1), (4, 1, 1)]
+   the twelve rectangles of the rule ARE k-cross's twelve (as sets of rows x sets of columns): True | values +1: 6  -1: 6
+   formula checked on all 64 cells: m = X1Y3 + X2Y2 + X3Y1 - X3(1-X1) - X1X2 - Y1Y3 : True
+   quadrant X1=0 Y1=0: values of m [-1, 0, 1], rectangles inside 3
+   quadrant X1=0 Y1=1: values of m [-1, 0, 1], rectangles inside 3
+   quadrant X1=1 Y1=0: values of m [-1, 0, 1], rectangles inside 3
+   quadrant X1=1 Y1=1: values of m [-1, 0, 1], rectangles inside 3
+k=4, inner brick = four single cells : values of m [-2, -1, 0, 1, 2] non-zero cells 144 | fewest tree rectangles found (greedy tiling, all 24x24 bit orders): 56 -> tau 57 gates 71 | row order (0, 1, 2, 3) column order (0, 1, 2, 3) | laminar True True
+k=4, inner brick = cyclic form : values of m [-2, -1, 0, 1, 2] non-zero cells 160 | fewest tree rectangles found (greedy tiling, all 24x24 bit orders): 60 -> tau 61 gates 75 | row order (0, 1, 2, 3) column order (0, 1, 2, 3) | laminar True True
+   k=4 replay, [[1,2],[3,4]] : rho = 2/3 | all 256 entries equal: True | rectangles whose constant rho^v - 1 is zero: 0
+   k=4 replay, [[2,7],[5,3]] : rho = 6/35 | all 256 entries equal: True | rectangles whose constant rho^v - 1 is zero: 0
+   k=4 replay, the transform [[1,1],[1,-1]] : rho = -1 | all 256 entries equal: True | rectangles whose constant rho^v - 1 is zero: 8
+ideal count of the rule (no tree asked), T(k) = 8 T(k-2) - 3 : even k: [1, 5, 37, 293, 2341]  odd k: [2, 13, 101, 805]  | textbook tau: 2 6 18 50 130 322 770 1794
+mismatch, j = 1 : total mismatch over the 4 blocks, all 16 choices of centre: [4] (always j*4^j = 4 ) | least sum of 2^mismatch: 8 = 8^j: True | textbook choice gives 9
+mismatch, j = 2 : total mismatch over the 16 blocks, all 65536 choices of centre: [32] (always j*4^j = 32 ) | least sum of 2^mismatch: 64 = 8^j: True | textbook choice gives 81
+LIGHT label=p4-b exit=0 time=4s waited=28s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:10:42 cmd=python3 -B b_rule.py

@@ -1,0 +1,1 @@
+LIGHT label=ag1-x60p4 exit=-15 time=187s waited=0s peak_rss_mb=2 peak_footprint_mb=2 lowest_cap_mb=1500 stopped=- start=08:09:21 cmd=./lifth 4 rows_B4.txt 1

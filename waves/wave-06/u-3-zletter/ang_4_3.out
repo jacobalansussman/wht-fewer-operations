@@ -1,0 +1,18 @@
+K 4 gates 32 (= N-1 + 17) tau 27 deg0 10
+65535 61680 53328 20560 4176 4112 8352 8224 3855 1807 1292 1280 12 515 3 
+row 0 from 16 cost 1
+row 1 from 16 cost 1
+row 2 from 16 cost 2
+row 3 from 16 cost 2
+row 4 from 16 cost 2
+row 5 from 16 cost 3
+row 6 from 2 cost 2
+row 7 from 5 cost 3
+row 8 from 16 cost 2
+row 9 from 16 cost 2
+row 10 from 2 cost 1
+row 11 from 16 cost 1
+row 12 from 8 cost 1
+row 13 from 9 cost 2
+row 14 from 10 cost 1
+row 15 from 16 cost 1

@@ -1,0 +1,1 @@
+LIGHT label=p8grp exit=0 time=30s waited=0s peak_rss_mb=19 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:43:41 cmd=sh -c ./dws 4 < in16_best_groups.txt > out16_best_groups.txt

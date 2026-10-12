@@ -1,0 +1,5 @@
+M=5 dim=3 primitive vectors (up to sign)=577  bound 4M^2=100  formula 4M^2-6M+3=73  4M-4=16  2M-1=9
+   any gate : 73   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(0), np.int64(3), np.int64(-4)), (np.int64(0), np.int64(4), np.int64(-5)), (np.int64(0), np.int64(5), np.int64(4)), -41, 32, 1)
+   w a form : 16   ((np.int64(0), np.int64(3), np.int64(-4)), (np.int64(0), np.int64(4), np.int64(-5)), (np.int64(0), np.int64(1), np.int64(1)), -9, 7, 1)
+   u,v disjoint: 9   ((np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(1), np.int64(0)), (np.int64(0), np.int64(4), np.int64(-5)), 5, -4, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(0), np.int64(1)), (np.int64(0), np.int64(3), np.int64(-5)), (np.int64(0), np.int64(1), np.int64(-2)), 1, -1, -3)

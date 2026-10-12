@@ -1,0 +1,2 @@
+points 64 derivations 568 cap 20
+LIGHT label=b0-walldfs20b exit=124 time=332s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=time>330s start=23:56:53 cmd=python3 -B wall_dfs.py 20

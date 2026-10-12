@@ -1,0 +1,5 @@
+sets read 2772, replay exactly with 12 gates: 2748
+least number of Q (or E) gates over all orders and parent choices: [(0, 2748)]
+circuits by number of wires that CAN be read as born by a Q gate (some parent pair with one support): [(0, 2748)]
+example with least Q = 0: set 0 helpers [' 0 0 0 0 0 0 1 1', ' 0 0 0 0 1 0 1 0', ' 0 0 0 0 1 1 0 0', ' 0 0 0 0 1 1 1 1', ' 0 1 0 1 0 0 0 0']
+LIGHT label=u7-qe exit=0 time=7s waited=50s peak_rss_mb=13 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=02:02:49 cmd=python3 -B u-7-quotient/qe.py waves/wave-06

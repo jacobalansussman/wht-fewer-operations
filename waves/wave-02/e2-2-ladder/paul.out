@@ -1,0 +1,44 @@
+== Strassen 1969: 13 additions of half-size blocks per level
+     n  separate, lower  separate, upper recipe down to 1x1   recipe, best cut   theta_lo   theta_hi
+     2                2                4                 13                  4     1.0000     2.0000
+     4               36               48                143                 48     1.0000     1.3333
+     8              392              448               1209                448     1.0000     1.1429
+    16             3600             3840               9295               3840     1.0000     1.0667
+    32            30752            31744              68393              30208     0.9516     0.9823
+    64           254016           258048             492063             224768     0.8710     0.8849
+   128          2064512          2080768            3497689            1626624     0.7817     0.7879
+   256         16646400         16711680           24696815           11599360     0.6941     0.6968
+   512        133693952        133955584          173729673           82047488     0.6125     0.6137
+  1024       1071645696       1072693248         1219515583          577740288     0.5386     0.5391
+  2048       8581548032       8585740288         8550240569         4057813504     0.4726     0.4729
+  4096      68685926400      68702699520        59906209935        28459220480     0.4142     0.4143
+first n at which the batch is below the LOWER count of n separate copies: 32
+
+== Winograd's variant: 11 additions of half-size blocks per level
+     n  separate, lower  separate, upper recipe down to 1x1   recipe, best cut   theta_lo   theta_hi
+     2                2                4                 11                  4     1.0000     2.0000
+     4               36               48                121                 48     1.0000     1.3333
+     8              392              448               1023                448     1.0000     1.1429
+    16             3600             3840               7865               3840     1.0000     1.0667
+    32            30752            31744              57871              29696     0.9355     0.9657
+    64           254016           258048             416361             219136     0.8492     0.8627
+   128          2064512          2080768            2959583            1579008     0.7589     0.7648
+   256         16646400         16711680           20897305           11233280     0.6722     0.6748
+   512        133693952        133955584          147002031           79353856     0.5924     0.5935
+  1024       1071645696       1072693248         1031897801          558360576     0.5205     0.5210
+  2048       8581548032       8585740288         7234818943         3920058368     0.4566     0.4568
+  4096      68685926400      68702699520        50689869945        27486545920     0.4001     0.4002
+first n at which the batch is below the LOWER count of n separate copies: 32
+
+== the transform in the same recipe (derived by hand, see e2-2.md section 4)
+left factors of Strassen's seven products on [[H,H],[H,-H]]: 2H? no: H+(-H)=0 ... three vanish, four are multiples of H  [j-manyatonce]
+left factors on the 4-point brick 2I - J split into 2 x 2 blocks A11 = A22 = [[1,-1],[-1,1]], A12 = A21 = -J:
+   A11+A22  = [[2, -2], [-2, 2]]     rank one: 1 gate per column
+   A21+A22  = [[0, -2], [-2, 0]]     a signed permutation with scaling (free)
+   A11      = [[1, -1], [-1, 1]]     rank one: 1 gate per column
+   A22      = [[1, -1], [-1, 1]]     rank one: 1 gate per column
+   A11+A12  = [[0, -2], [-2, 0]]     a signed permutation with scaling (free)
+   A21-A11  = [[-2, 0], [0, -2]]     a signed permutation with scaling (free)
+   A12-A22  = [[-2, 0], [0, -2]]     a signed permutation with scaling (free)
+   products: 6 gates for four 4-point arrays; additions of the recipe: 13 * 4 = 52 (Strassen) or 44 (Winograd); four bricks separately: 28
+LIGHT label=e2-2-paul exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:43:30 cmd=python3 -B paul.py

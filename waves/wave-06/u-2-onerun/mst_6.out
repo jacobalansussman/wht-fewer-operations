@@ -1,0 +1,6 @@
+N=64: Yates 192; a tree of one-run steps would have weight at most 2N = 128
+  input order = counting order: W = 365;  Gray order: W = 237
+  input order of q-cross's best picture (cat3g_64.out): W = 210
+  best after 8000 moves: W = 210; W/N = 3.281; edges by weight [(1, 5), (2, 26), (3, 3), (4, 17), (5, 3), (6, 9), (7, 1)]; outputs hung on nothing 1; gates (G) = 272
+  input order: [32, 34, 42, 40, 8, 24, 56, 57, 41, 45, 37, 33, 1, 5, 13, 9, 25, 29, 61, 21, 53, 49, 17, 16, 48, 52, 20, 4, 12, 28, 30, 14, 6, 22, 23, 55, 54, 38, 36, 44, 60, 62, 46, 47, 39, 35, 43, 58, 59, 51, 50, 19, 18, 2, 3, 7, 15, 11, 10, 26, 27, 31, 63, 0]
+LIGHT label=u2-onerun exit=0 time=17s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=02:01:53 cmd=python3 -B mst.py 6 8000 1

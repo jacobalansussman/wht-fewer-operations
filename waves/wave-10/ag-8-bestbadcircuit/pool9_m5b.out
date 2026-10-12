@@ -1,0 +1,2 @@
+pool of 32 wires with entries 0, +1, -1; m=5 helpers (9 gates): 201376 of 201376 helper sets examined in 21 s; 2928 irredundant: 2928 of the class, 0 SPECIAL, 0 undecided; shapes met 43, shapes tested with wsolve 43
+verdicts by shape: {'class': 43, 'special': 0, 'undecided': 0, 'CONTROL-FAILED': 0}

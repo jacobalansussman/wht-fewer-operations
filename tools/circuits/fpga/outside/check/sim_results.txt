@@ -1,0 +1,10 @@
+PASS dut=wht_8_xk265_c_w8 N=8 W=8 latency=0 vectors=20032
+PASS dut=wht_8_xk265_r_w8 N=8 W=8 latency=2 vectors=20032
+PASS dut=wht_8_xk265_c_w9 N=8 W=9 latency=0 vectors=20032
+PASS dut=wht_8_xk265_r_w9 N=8 W=9 latency=2 vectors=20032
+PASS dut=wht_8_xk265_c_w12 N=8 W=12 latency=0 vectors=20032
+PASS dut=wht_8_xk265_r_w12 N=8 W=12 latency=2 vectors=20032
+PASS dut=wht_8_xk265_c_w16 N=8 W=16 latency=0 vectors=20032
+PASS dut=wht_8_xk265_r_w16 N=8 W=16 latency=2 vectors=20032
+PASS dut=wht_16_xk264_c_w9 N=16 W=9 latency=0 vectors=20064
+PASS dut=wht_16_xk264_r_w9 N=16 W=9 latency=2 vectors=20064

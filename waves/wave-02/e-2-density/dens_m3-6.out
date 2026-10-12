@@ -1,0 +1,11 @@
+count G throughout. f = 16 - m + 2^r + iota.  sub = subspace law 16+(d-1)2^d in count O where m = 2^d
+m=3 S=(0, 1, 2) orbit=560 r=2 | trivial lower bound f>=17 | constructions: g<=5 (walk) so f<=18 iota<=1 | GF(3): iota=1 EXACT, f=18 | GF(5): iota=1 EXACT, f=18 |
+m=4 S=(0, 1, 2, 3) orbit=140 r=2 | trivial lower bound f>=18 | constructions: g<=8 (trie) so f<=20 iota<=4 | GF(3): iota=3 EXACT, f=19 | GF(5): iota=3 EXACT, f=19 |
+m=4 S=(0, 1, 2, 4) orbit=1680 r=3 | trivial lower bound f>=20 | constructions: g<=10 (walk) so f<=22 iota<=2 | GF(3): iota=2 EXACT, f=22 | GF(5): iota=2 EXACT, f=22 |
+m=5 S=(0, 1, 2, 3, 4) orbit=1680 r=3 | trivial lower bound f>=19 | constructions: g<=15 (trie) so f<=26 iota<=7 | GF(3): iota=4 EXACT, f=23 | GF(5): iota=4 EXACT, f=23 |
+m=5 S=(0, 1, 2, 4, 8) orbit=2688 r=4 | trivial lower bound f>=27 | constructions: g<=19 (walk) so f<=30 iota<=3 | GF(3): iota=3 EXACT, f=30 | GF(5): iota=3 EXACT, f=30 |
+m=6 S=(0, 1, 2, 3, 4, 5) orbit=840 r=3 | trivial lower bound f>=20 | constructions: g<=18 (trie) so f<=28 iota<=10 | GF(3): iota=6 EXACT, f=24 | GF(5): iota=6 EXACT, f=24 |
+m=6 S=(0, 1, 2, 3, 4, 8) orbit=6720 r=4 | trivial lower bound f>=26 | constructions: g<=24 (walk) so f<=34 iota<=8 | GF(3): iota=5 EXACT, f=31 | GF(5): iota=5 EXACT, f=31 |
+m=6 S=(0, 3, 4, 6, 8, 9) orbit=448 r=4 | trivial lower bound f>=26 | constructions: g<=28 (trie) so f<=38 iota<=12 | GF(3): iota=6 EXACT, f=32 | GF(5): iota>=5 proved, k=5 timed out |
+LIGHT label=e2-dens56 exit=0 time=112s waited=0s peak_rss_mb=41 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=21:56:48 cmd=python3 -B dens.py 3,4,5,6 3,5 40
+exit 0

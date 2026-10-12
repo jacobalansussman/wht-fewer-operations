@@ -1,0 +1,27 @@
+== A. Z_4 against Z_2 x Z_2 (exact)
+bridge F4.H4^-1 =
+ [[1. +0.j  0. +0.j  0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0.5+0.5j 0.5-0.5j]
+ [0. +0.j  1. +0.j  0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0.5-0.5j 0.5+0.5j]]
+blocks: [1, 1, 2]  non-zeros: 6
+2x2 block squared = swap: True
+m=2: n=16, untouched points 4 (= 2^m), block sizes [1, 2, 4], gates (G) 16 = 1.000 per point; transform itself 4 per point
+m=3: n=64, untouched points 8 (= 2^m), block sizes [1, 2, 4, 8], gates (G) 96 = 1.500 per point; transform itself 6 per point
+m=4: n=256, untouched points 16 (= 2^m), block sizes [1, 2, 4, 8, 16], gates (G) 512 = 2.000 per point; transform itself 8 per point
+== B. cyclic group of order 2^k against Z_2^k (floating point)
+k=3: blocks of F_n.H_n^-1 with both in natural order: [1, 1, 2, 4]
+k=4: blocks of F_n.H_n^-1 with both in natural order: [1, 1, 2, 4, 8]
+k=5: blocks of F_n.H_n^-1 with both in natural order: [1, 1, 2, 4, 8, 16]
+== C. the five groups of order 8 against Z_2^3 (exact)
+D4 unitary up to 8: True  blocks of F_G.H_8^-1: [1, 1, 1, 1, 4]  non-zeros: 20
+Q8 unitary up to 8: True  blocks of F_G.H_8^-1: [1, 1, 1, 1, 4]  non-zeros: 20
+== D. counts
+k=8: layers per point: Z_2^k 8;  extraspecial 2^(1+6) (order 2^7): 5.5 of 7;  Heisenberg over GF(2^2) (order 2^6): about 4;  floor of the chain method k/2 = 4.0
+k=16: layers per point: Z_2^k 16;  extraspecial 2^(1+14) (order 2^15): 11.5 of 15;  Heisenberg over GF(2^5) (order 2^15): about 10;  floor of the chain method k/2 = 8.0
+k=24: layers per point: Z_2^k 24;  extraspecial 2^(1+22) (order 2^23): 17.5 of 23;  Heisenberg over GF(2^8) (order 2^24): about 16;  floor of the chain method k/2 = 12.0
+k=32: layers per point: Z_2^k 32;  extraspecial 2^(1+30) (order 2^31): 23.5 of 31;  Heisenberg over GF(2^10) (order 2^30): about 20;  floor of the chain method k/2 = 16.0
+tensor-train form: butterflies needed to transform all cores, per n:
+  k=8: 1.328
+  k=16: 1.333
+  k=24: 1.333

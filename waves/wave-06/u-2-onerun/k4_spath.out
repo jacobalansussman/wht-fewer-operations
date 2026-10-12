@@ -1,0 +1,6 @@
+k=4 signed path, last output of size 0: nodes 153926, solutions found 0 of which with a step between incomparable outputs 0 (cumulative)
+k=4 signed path, last output of size 1: nodes 97405, solutions found 0 of which with a step between incomparable outputs 0 (cumulative)
+k=4 signed path, last output of size 2: nodes 31651, solutions found 0 of which with a step between incomparable outputs 0 (cumulative)
+k=4 signed path, last output of size 3: nodes 37957, solutions found 0 of which with a step between incomparable outputs 0 (cumulative)
+k=4 signed path, last output of size 4: nodes 149098, solutions found 0 of which with a step between incomparable outputs 0 (cumulative)
+total nodes 470037, consecutive-ones tests 853668

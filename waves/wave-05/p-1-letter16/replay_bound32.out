@@ -1,0 +1,10 @@
+design dual16 bound32 tile  N 16  tau 49  matrix identity exact: True  circuit gates (G): 63  N-2+tau: 63  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '-1', '1', '-1', '-1', '1', '1', '-1', '-1', '-1', '-1', '-1', '1', '1', '-1', '-1']  c: ['1', '-1', '1', '1', '1', '1', '-1', '1', '1', '1', '1', '-1', '1', '-1', '-1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '-2'), 16), ((1, 4, '-2'), 8), ((2, 1, '-2'), 16), ((4, 1, '-2'), 8), ((16, 16, '1'), 1)]
+design dual16 bound32 gen  N 16  tau 49  matrix identity exact: True  circuit gates (G): 63  N-2+tau: 63  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '-1', '1', '-1', '-1', '1', '1', '-1', '-1', '-1', '-1', '-1', '1', '1', '-1', '-1']  c: ['1', '-1', '1', '1', '1', '1', '-1', '1', '1', '1', '1', '-1', '1', '-1', '-1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '-2'), 12), ((1, 2, '2'), 4), ((1, 4, '-2'), 4), ((1, 8, '-2'), 4), ((2, 1, '-2'), 11), ((2, 1, '2'), 5), ((4, 1, '-2'), 3), ((8, 1, '-2'), 5), ((16, 16, '1'), 1)]
+design c8 centre c8 free real rows  N 8  tau 13  matrix identity exact: True  circuit gates (G): 19  N-2+tau: 19  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 32
+   scalings r: ['16', '-16', '-16', '-16', '-16', '16', '-16', '-16']  c: ['1', '1', '1', '-1', '1', '-1', '1', '1']
+   shapes (rows, columns, number): count  [((1, 2, '-32'), 4), ((1, 4, '-32'), 2), ((2, 1, '-32'), 4), ((4, 1, '-32'), 2), ((8, 8, '16'), 1)]
+LIGHT label=p1replay4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:47:06 cmd=python3 -B replay.py bound32.out rr_c8.out

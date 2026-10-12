@@ -1,0 +1,4 @@
+N = 8: 9105 random gates (3561 with P >= N^2/2): s s' < N: 0; s(out) > (1 + 2P/N) min s(in): 0 (largest ratio 0.727); 'largest support <= sum of the other two' fails (either side): 0
+N = 16: 18675 random gates (2478 with P >= N^2/2): s s' < N: 0; s(out) > (1 + 2P/N) min s(in): 0 (largest ratio 0.727); 'largest support <= sum of the other two' fails (either side): 0
+N = 32: 37870 random gates (911 with P >= N^2/2): s s' < N: 0; s(out) > (1 + 2P/N) min s(in): 0 (largest ratio 0.727); 'largest support <= sum of the other two' fails (either side): 0
+LIGHT label=g1-slack exit=0 time=4s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:48:04 cmd=python3 -B ref.py slack

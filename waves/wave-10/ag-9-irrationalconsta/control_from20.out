@@ -1,0 +1,15 @@
+p=41 N=8 W=19 pool=1 seed=1 T0=0.3: best 0 after 1093648 moves
+p=41 N=8 W=19 pool=1 seed=2 T0=0.3: best 0 after 1163686 moves
+p=41 N=8 W=19 pool=1 seed=3 T0=0.3: best 0 after 642641 moves
+p=41 N=8 W=19 pool=2 seed=1 T0=0.3: best 1 after 1500000 moves
+p=41 N=8 W=19 pool=2 seed=2 T0=0.3: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=2 seed=3 T0=0.3: best 3 after 1500000 moves
+p=41 N=8 W=19 pool=0 seed=1 T0=0.3: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=0 seed=2 T0=0.3: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=0 seed=3 T0=0.3: best 0 after 1218714 moves
+p=41 N=8 W=19 pool=2 seed=1 T0=0.15: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=2 seed=2 T0=0.15: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=2 seed=3 T0=0.15: best 0 after 1007748 moves
+p=41 N=8 W=19 pool=0 seed=1 T0=0.15: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=0 seed=2 T0=0.15: best 8 after 1500000 moves
+p=41 N=8 W=19 pool=0 seed=3 T0=0.15: best 0 after 1185387 moves

@@ -1,0 +1,2 @@
+p=17 N=8 W=19 pool=0 seed=1 T0=0.6: least number of underivable wires 8 after 3000000 moves
+LIGHT label=ag9-c19b exit=0 time=47s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:48:43 cmd=./fpgame 17 8 19 3000000 1 0.6 0

@@ -1,0 +1,13 @@
+K = Z Z^T: True    H = Z diag(1,-2) Z^T: True
+H = L K with L = [[1,0],[3,-2]] (triangular): True
+K = L^-1 H with L^-1 = [[1,0],[3/2,-1/2]]: True
+over Q(sqrt2): K = D1 H diag(a,b) H D1, D1 = diag(1,sqrt2), a = 1/21/4*sqrt(2)  b = 1/2-1/4*sqrt(2) : True
+2a^2+9a+8 = 0
+over Q(sqrt17): diag(1,x) K diag(a,1) K diag(1,x) = p * H: True   a = -9/41/4*sqrt(17)  x = 3/4-1/4*sqrt(17)  p = -5/41/4*sqrt(17)
+kernel H              quasi-probabilities [['1/2', '1/2'], ['1/2', '1/2']]  entropy per kernel 2.0000 (per row 1.0000)  sum|p| per row 1
+kernel K              quasi-probabilities [['2', '-1'], ['-1', '2']]  entropy per kernel -4.0000 (per row -2.0000)  sum|p| per row 3
+kernel Z              quasi-probabilities [['1', '0'], ['0', '1']]  entropy per kernel -0.0000 (per row -0.0000)  sum|p| per row 1
+kernel [[2,1],[1,1]]  quasi-probabilities [['2', '-1'], ['-1', '2']]  entropy per kernel -4.0000 (per row -2.0000)  sum|p| per row 3
+kernel [[1,2],[3,4]]  quasi-probabilities [['-2', '3'], ['3', '-2']]  entropy per kernel -5.5098 (per row -2.7549)  sum|p| per row 5
+kernel [[1,1],[1,3]]  quasi-probabilities [['3/2', '-1/2'], ['-1/2', '3/2']]  entropy per kernel -2.7549 (per row -1.3774)  sum|p| per row 2
+LIGHT label=p5-words exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:06:06 cmd=python3 -B words.py

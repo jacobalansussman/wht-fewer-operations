@@ -1,0 +1,26 @@
+centre c, by kernel column x = 0..7 : ['a^2 c^1', 'a^1 b^1 c^1', 'a^1 b^1 c^1', 'a^1 b^1 d^1', 'a^2 d^1', 'a^1 b^1 d^1', 'b^2 c^1', 'b^2 d^1']
+row scaling, by kernel row y = 0..7 : ['a^1 c^-1', '1', '1', 'a^-1 c^1', '1', 'a^-1 c^1', 'b^-1 d^1', 'a^-1 b^-1 c^1 d^1']
+rectangle: kernel rows [0, 1, 2, 3] x kernel columns [4] : K/(a c) = a^-1 b^1 c^1 d^-1  so the constant is ( a^-1 b^1 c^1 d^-1 ) - 1
+rectangle: kernel rows [4, 5, 6, 7] x kernel columns [6] : K/(a c) = a^1 b^-1 c^-1 d^1  so the constant is ( a^1 b^-1 c^-1 d^1 ) - 1
+rectangle: kernel rows [0, 2] x kernel columns [5] : K/(a c) = a^-1 b^1 c^1 d^-1  so the constant is ( a^-1 b^1 c^1 d^-1 ) - 1
+rectangle: kernel rows [5, 7] x kernel columns [7] : K/(a c) = a^1 b^-1 c^-1 d^1  so the constant is ( a^1 b^-1 c^-1 d^1 ) - 1
+rectangle: kernel rows [4, 6] x kernel columns [3] : K/(a c) = a^-1 b^1 c^1 d^-1  so the constant is ( a^-1 b^1 c^1 d^-1 ) - 1
+rectangle: kernel rows [1, 3] x kernel columns [1] : K/(a c) = a^1 b^-1 c^-1 d^1  so the constant is ( a^1 b^-1 c^-1 d^1 ) - 1
+rectangle: kernel rows [7] x kernel columns [0, 4] : K/(a c) = a^-1 b^1 c^1 d^-1  so the constant is ( a^-1 b^1 c^1 d^-1 ) - 1
+rectangle: kernel rows [5] x kernel columns [1, 5] : K/(a c) = a^1 b^-1 c^-1 d^1  so the constant is ( a^1 b^-1 c^-1 d^1 ) - 1
+rectangle: kernel rows [2] x kernel columns [2, 6] : K/(a c) = a^1 b^-1 c^-1 d^1  so the constant is ( a^1 b^-1 c^-1 d^1 ) - 1
+rectangle: kernel rows [0] x kernel columns [3, 7] : K/(a c) = a^-1 b^1 c^1 d^-1  so the constant is ( a^-1 b^1 c^1 d^-1 ) - 1
+rectangle: kernel rows [6] x kernel columns [0, 1, 4, 5] : K/(a c) = a^-1 b^1 c^1 d^-1  so the constant is ( a^-1 b^1 c^1 d^-1 ) - 1
+rectangle: kernel rows [3] x kernel columns [2, 3, 6, 7] : K/(a c) = a^1 b^-1 c^-1 d^1  so the constant is ( a^1 b^-1 c^-1 d^1 ) - 1
+cells on rectangles: 32 ; K/(a c) on the other 32 cells: ['1']
+
+m(y,x) = exponent of rho = ad/(bc) in K/(a c), rows y = 0..7 (bits y3 y2 y1), columns x = 0..7:
+  y=000   0  0  0 -1 -1 -1  0 -1
+  y=001   0  1  0  0 -1  0  0  0
+  y=010   0  0  1  0 -1 -1  1  0
+  y=011   0  1  1  1 -1  0  1  1
+  y=100   0  0  0 -1  0  0  1  0
+  y=101   0  1  0  0  0  1  1  1
+  y=110  -1 -1  0 -1 -1 -1  1  0
+  y=111  -1  0  0  0 -1  0  1  1
+LIGHT label=p4-a2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:46:55 cmd=python3 -B a_symbolic.py

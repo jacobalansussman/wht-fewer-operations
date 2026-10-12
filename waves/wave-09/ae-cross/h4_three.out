@@ -1,0 +1,5 @@
+k 5 three helpers: classes 44 of N = 32 rank 29 | every monomial of degree d is a sum of three helper functions: {0: True, 1: True, 2: True, 3: True, 4: False}
+k 6 three helpers: classes 84 of N = 64 rank 57 | every monomial of degree d is a sum of three helper functions: {0: True, 1: True, 2: True, 3: True, 4: False}
+k 6, V = 32 classes, h = 2 : smallest set of outputs with fewer classes than outputs (5 random drawings): [5, 4, 5, 4, 3]
+k 6, V = 32 classes, h = 3 : smallest set of outputs with fewer classes than outputs (5 random drawings): ['>5', '>5', '>5', '>5', '>5']
+LIGHT label=ae-h4_three exit=0 time=26s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=07:24:47 cmd=python3 -B h4_three.py

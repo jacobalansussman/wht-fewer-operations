@@ -1,0 +1,43 @@
+tower: 2 colours, atoms of 1 bits, 0 extra bits: y has 3 bits; level starts [0, 1]
+   formula: colour 0: 1 atoms; (i) non-zero 0 of 3 ; (ii) non-zero 0 of 1 ; random points that differ 0 of 60
+   formula: colour 1: 2 atoms; (i) non-zero 0 of 4 ; (ii) non-zero 0 of 2 ; random points that differ 0 of 60
+FORMULA: holds (10 coefficient identities checked)   (0 s)
+   control A' = 0: colour 0: 1 atoms; (i) non-zero 2 of 3 ; (ii) non-zero 1 of 1 ; random points that differ 60 of 60
+   control A' = 0: colour 1: 2 atoms; (i) non-zero 2 of 4 ; (ii) non-zero 2 of 2 ; random points that differ 60 of 60
+CONTROL: fails as it must
+tower: 2 colours, atoms of 2 bits, 0 extra bits: y has 10 bits; level starts [0, 2]
+   formula: colour 0: 1 atoms; (i) non-zero 0 of 20 ; (ii) non-zero 0 of 2 ; random points that differ 0 of 60
+   formula: colour 1: 4 atoms; (i) non-zero 0 of 64 ; (ii) non-zero 0 of 8 ; random points that differ 0 of 60
+FORMULA: holds (94 coefficient identities checked)   (0 s)
+   control A' = 0: colour 0: 1 atoms; (i) non-zero 18 of 20 ; (ii) non-zero 2 of 2 ; random points that differ 60 of 60
+   control A' = 0: colour 1: 4 atoms; (i) non-zero 56 of 64 ; (ii) non-zero 8 of 8 ; random points that differ 60 of 60
+CONTROL: fails as it must
+tower: 3 colours, atoms of 1 bits, 0 extra bits: y has 11 bits; level starts [0, 1, 3]
+   formula: colour 0: 1 atoms; (i) non-zero 0 of 11 ; (ii) non-zero 0 of 1 ; random points that differ 0 of 60
+   formula: colour 1: 2 atoms; (i) non-zero 0 of 20 ; (ii) non-zero 0 of 2 ; random points that differ 0 of 60
+   formula: colour 2: 8 atoms; (i) non-zero 0 of 64 ; (ii) non-zero 0 of 8 ; random points that differ 0 of 60
+FORMULA: holds (106 coefficient identities checked)   (0 s)
+   control A' = 0: colour 0: 1 atoms; (i) non-zero 10 of 11 ; (ii) non-zero 1 of 1 ; random points that differ 60 of 60
+   control A' = 0: colour 1: 2 atoms; (i) non-zero 18 of 20 ; (ii) non-zero 2 of 2 ; random points that differ 60 of 60
+   control A' = 0: colour 2: 8 atoms; (i) non-zero 56 of 64 ; (ii) non-zero 8 of 8 ; random points that differ 60 of 60
+CONTROL: fails as it must
+tower: 3 colours, atoms of 2 bits, 0 extra bits: y has 2058 bits; level starts [0, 2, 10]
+   formula: colour 0: 1 atoms; (i) non-zero 0 of 4116 ; (ii) non-zero 0 of 2 ; random points that differ 0 of 60
+   formula: colour 1: 4 atoms; (i) non-zero 0 of 16448 ; (ii) non-zero 0 of 8 ; random points that differ 0 of 60
+   formula: colour 2: 1024 atoms; (i) non-zero 0 of 4194304 ; (ii) non-zero 0 of 2048 ; random points that differ 0 of 60
+FORMULA: holds (4216926 coefficient identities checked)   (38 s)
+   control A' = 0: colour 0: 1 atoms; (i) non-zero 4114 of 4116 ; (ii) non-zero 2 of 2 ; random points that differ 60 of 60
+   control A' = 0: colour 1: 4 atoms; (i) non-zero 16440 of 16448 ; (ii) non-zero 8 of 8 ; random points that differ 60 of 60
+   control A' = 0: colour 2: 1024 atoms; (i) non-zero 4192256 of 4194304 ; (ii) non-zero 2048 of 2048 ; random points that differ 60 of 60
+CONTROL: fails as it must
+tower: 4 colours, atoms of 1 bits, 0 extra bits: y has 2059 bits; level starts [0, 1, 3, 11]
+   formula: colour 0: 1 atoms; (i) non-zero 0 of 2059 ; (ii) non-zero 0 of 1 ; random points that differ 0 of 60
+   formula: colour 1: 2 atoms; (i) non-zero 0 of 4116 ; (ii) non-zero 0 of 2 ; random points that differ 0 of 60
+   formula: colour 2: 8 atoms; (i) non-zero 0 of 16448 ; (ii) non-zero 0 of 8 ; random points that differ 0 of 60
+   formula: colour 3: 2048 atoms; (i) non-zero 0 of 4194304 ; (ii) non-zero 0 of 2048 ; random points that differ 0 of 60
+FORMULA: holds (4218986 coefficient identities checked)   (25 s)
+   control A' = 0: colour 0: 1 atoms; (i) non-zero 2058 of 2059 ; (ii) non-zero 1 of 1 ; random points that differ 60 of 60
+   control A' = 0: colour 1: 2 atoms; (i) non-zero 4114 of 4116 ; (ii) non-zero 2 of 2 ; random points that differ 60 of 60
+   control A' = 0: colour 2: 8 atoms; (i) non-zero 16440 of 16448 ; (ii) non-zero 8 of 8 ; random points that differ 60 of 60
+   control A' = 0: colour 3: 2048 atoms; (i) non-zero 4192256 of 4194304 ; (ii) non-zero 2048 of 2048 ; random points that differ 60 of 60
+CONTROL: fails as it must

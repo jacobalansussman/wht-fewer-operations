@@ -1,0 +1,36 @@
+1. K3 (x) H2 on 6 numbers: 12 gates, every output proportional to its row: True  (textbook 14; with the 7-gate brick 13)
+     n6 = (1)*n4 + (1)*n5 = ['0', '0', '0', '0', '1', '1']
+     n7 = (1)*n6 + (1)*n1 = ['0', '1', '0', '0', '1', '1']
+     n8 = (1)*n0 + (-1)*n7 = ['1', '-1', '0', '0', '-1', '-1']
+     n9 = (1)*n8 + (2)*n1 = ['1', '1', '0', '0', '-1', '-1']
+     n10 = (1)*n8 + (2)*n5 = ['1', '-1', '0', '0', '-1', '1']
+     n11 = (1)*n2 + (1)*n3 = ['0', '0', '1', '1', '0', '0']
+     n12 = (1)*n8 + (1)*n11 = ['1', '-1', '1', '1', '-1', '-1']
+     n13 = (1)*n12 + (2)*n7 = ['1', '1', '1', '1', '1', '1']
+     n14 = (1)*n12 + (-2)*n0 = ['-1', '-1', '1', '1', '-1', '-1']
+     n15 = (1)*n12 + (2)*n4 = ['1', '-1', '1', '1', '1', '-1']
+     n16 = (1)*n15 + (-2)*n3 = ['1', '-1', '1', '-1', '1', '-1']
+     n17 = (1)*n15 + (-2)*n2 = ['1', '-1', '-1', '1', '1', '-1']
+     coefficient sizes used: 1 and 2 only; wires flat on all six inputs: n12 (h1), n13 (t00), n14 (t20), n15 (h2), n16, n17
+2. 8-point transform = split one pair (4) + brick12 (12) + one butterfly on the antisymmetric line (2) + merge (4): 22 gates, correct: True  (best known 22, textbook 24)
+3. K3 cubed on 27 numbers with two layers of brick12: 96 gates, correct: True  (textbook 108; with 7-gate bricks 98)
+4. formula: 8^t points = split t pairs (orbit transforms) + middle (K3(x)H2 bricks; plain transforms on antisymmetric lines) + merge
+   t  points  textbook  7-gate-brick product  pair route with brick12 (orbit and antisymmetric transforms by 7-gate bricks)  ratio to textbook
+     1  2^3  ratio brick product 0.91667   pair route 0.91667   
+        exact: textbook 24, brick product 22, pair route 22
+     2  2^6  ratio brick product 0.87500   pair route 0.89323   
+        exact: textbook 384, brick product 336, pair route 343
+     3  2^9  ratio brick product 0.88889   pair route 0.88455   BELOW the brick product
+        exact: textbook 4608, brick product 4096, pair route 4076
+     4  2^12  ratio brick product 0.87500   pair route 0.87988   
+     6  2^18  ratio brick product 0.87500   pair route 0.87495   BELOW the brick product
+     8  2^24  ratio brick product 0.87500   pair route 0.87239   BELOW the brick product
+    12  2^36  ratio brick product 0.87500   pair route 0.86979   BELOW the brick product
+    16  2^48  ratio brick product 0.87500   pair route 0.86849   BELOW the brick product
+    24  2^72  ratio brick product 0.87500   pair route 0.86719   BELOW the brick product
+    32  2^96  ratio brick product 0.87500   pair route 0.86654   BELOW the brick product
+    48  2^144  ratio brick product 0.87500   pair route 0.86589   BELOW the brick product
+    64  2^192  ratio brick product 0.87500   pair route 0.86556   BELOW the brick product
+   128  2^384  ratio brick product 0.87500   pair route 0.86507   BELOW the brick product
+   256  2^768  ratio brick product 0.87500   pair route 0.86483   BELOW the brick product
+   limits: brick product 7/8 = 0.875 ; this route (10/24)(7/8) + (14/24)(12/14) = 83/96 = 0.86458 ; applied to itself: 6/7 = 0.85714

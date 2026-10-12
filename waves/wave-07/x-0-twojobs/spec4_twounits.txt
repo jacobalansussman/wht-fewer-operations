@@ -1,0 +1,9 @@
+w1 = 1*x0 + -1*x1   # [1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x3   # [0 1 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = -1*x2 + 1*w1   # [1 -1 -1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + 1*w3   # [1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 1.000
+w5 = 2*w1 + -1*w4   # [1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 0.000
+w6 = 2*w2 + 1*w3   # [1 1 -1 2] kind (1,2)/1 budget 1.58 vol 1.000
+w7 = 2*w2 + 1*w5   # [1 1 1 1] kind (1,2)/1 budget 1.58 vol 0.000
+w8 = -3*x3 + 1*w6   # [1 1 -1 -1] kind (1,3)/1 budget 2.00 vol 2.000
+# from n4_A7.out, circuit N4-A7-profile55

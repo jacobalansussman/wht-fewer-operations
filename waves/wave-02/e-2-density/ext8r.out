@@ -1,0 +1,2 @@
+[ran] over 60 orders, least number of extra gates for outputs 6 and 7 (None = more than 5): [(5, 56), (None, 4)]
+LIGHT label=e2-ext8r exit=0 time=36s waited=0s peak_rss_mb=52 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:11:30 cmd=python3 -B ext8r.py 60

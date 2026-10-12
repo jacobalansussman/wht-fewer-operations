@@ -1,0 +1,10 @@
+skeleton A (upper half transformed alone, lower half without the chain of its total): built in advance 21 gates (21 free wires); remaining budget 9 -> total 30 : NO (exhaustive)
+skeleton A (upper half transformed alone, lower half without the chain of its total): built in advance 21 gates (21 free wires); remaining budget 10 -> total 31 : NO (exhaustive)
+skeleton A (upper half transformed alone, lower half without the chain of its total): built in advance 21 gates (21 free wires); remaining budget 11 -> total 32 : YES
+skeleton B (sums t_j first, then Yates on them; lower half without the chain of its total): built in advance 29 gates (29 free wires); remaining budget 1 -> total 30 : NO (exhaustive)
+skeleton B (sums t_j first, then Yates on them; lower half without the chain of its total): built in advance 29 gates (29 free wires); remaining budget 2 -> total 31 : NO (exhaustive)
+skeleton B (sums t_j first, then Yates on them; lower half without the chain of its total): built in advance 29 gates (29 free wires); remaining budget 3 -> total 32 : YES
+skeleton C (lower 9 and the 8 sums t_j only): built in advance 17 gates (17 free wires); remaining budget 8 -> total 25 : NO (exhaustive)
+skeleton C (lower 9 and the 8 sums t_j only): built in advance 17 gates (17 free wires); remaining budget 9 -> total 26 : NO (exhaustive)
+skeleton C (lower 9 and the 8 sums t_j only): built in advance 17 gates (17 free wires); remaining budget 10 -> total 27 : NO (exhaustive)
+LIGHT label=ab5-skel exit=0 time=1s waited=34s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:07:59 cmd=python3 -B skel16.py

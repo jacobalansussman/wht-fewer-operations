@@ -1,0 +1,3 @@
+forms with q(I)=1: 16384; product forms: 240; a point lies in at most 64 of them; K = 18
+nodes 11069626, leaves 118
+LIGHT label=h2-cover18 exit=0 time=157s waited=0s peak_rss_mb=2 peak_footprint_mb=2 lowest_cap_mb=1500 stopped=- start=23:45:03 cmd=./cover 18 leaves18_mac.txt

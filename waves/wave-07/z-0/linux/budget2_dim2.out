@@ -1,0 +1,70 @@
+M=1 dim=2 primitive vectors (up to sign)=4  bound 4M^2=4  formula 4M^2-6M+3=1  4M-4=0  2M-1=1
+   any gate : 3   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(-1)), (np.int64(1), np.int64(1)), -2, -1, -1)
+   w a form : 3   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(-1)), (np.int64(1), np.int64(1)), -2, -1, -1)
+   u,v disjoint: 2   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(1), np.int64(-1)), 1, -1, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: None
+M=2 dim=2 primitive vectors (up to sign)=8  bound 4M^2=16  formula 4M^2-6M+3=7  4M-4=4  2M-1=3
+   any gate : 8   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(1), np.int64(-2)), (np.int64(1), np.int64(-1)), (np.int64(2), np.int64(1)), -3, 5, 1)
+   w a form : 5   ((np.int64(1), np.int64(-2)), (np.int64(1), np.int64(-1)), (np.int64(1), np.int64(1)), -2, 3, 1)
+   u,v disjoint: 3   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(1), np.int64(-2)), 2, -1, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(1), np.int64(-2)), (np.int64(1), np.int64(1)), (np.int64(0), np.int64(1)), -1, 1, 3)
+M=3 dim=2 primitive vectors (up to sign)=16  bound 4M^2=36  formula 4M^2-6M+3=21  4M-4=8  2M-1=5
+   any gate : 21   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(1), np.int64(-2)), (np.int64(2), np.int64(-3)), (np.int64(3), np.int64(2)), -13, 8, 1)
+   w a form : 8   ((np.int64(1), np.int64(-2)), (np.int64(2), np.int64(-3)), (np.int64(1), np.int64(1)), -5, 3, 1)
+   u,v disjoint: 5   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(2), np.int64(-3)), 3, -2, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-2)), (np.int64(1), np.int64(-1)), 1, -1, -3)
+M=4 dim=2 primitive vectors (up to sign)=24  bound 4M^2=64  formula 4M^2-6M+3=43  4M-4=12  2M-1=7
+   any gate : 43   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(2), np.int64(-3)), (np.int64(3), np.int64(-4)), (np.int64(4), np.int64(3)), -25, 18, 1)
+   w a form : 12   ((np.int64(2), np.int64(-3)), (np.int64(3), np.int64(-4)), (np.int64(1), np.int64(1)), -7, 5, 1)
+   u,v disjoint: 7   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(3), np.int64(-4)), 4, -3, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-4)), (np.int64(1), np.int64(-1)), -1, -1, -3)
+M=5 dim=2 primitive vectors (up to sign)=40  bound 4M^2=100  formula 4M^2-6M+3=73  4M-4=16  2M-1=9
+   any gate : 73   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(3), np.int64(-4)), (np.int64(4), np.int64(-5)), (np.int64(5), np.int64(4)), -41, 32, 1)
+   w a form : 16   ((np.int64(3), np.int64(-4)), (np.int64(4), np.int64(-5)), (np.int64(1), np.int64(1)), -9, 7, 1)
+   u,v disjoint: 9   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(4), np.int64(-5)), 5, -4, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-5)), (np.int64(1), np.int64(-2)), 1, -1, -3)
+M=6 dim=2 primitive vectors (up to sign)=48  bound 4M^2=144  formula 4M^2-6M+3=111  4M-4=20  2M-1=11
+   any gate : 111   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(4), np.int64(-5)), (np.int64(5), np.int64(-6)), (np.int64(6), np.int64(5)), -61, 50, 1)
+   w a form : 20   ((np.int64(4), np.int64(-5)), (np.int64(5), np.int64(-6)), (np.int64(1), np.int64(1)), -11, 9, 1)
+   u,v disjoint: 11   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(5), np.int64(-6)), 6, -5, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-5)), (np.int64(1), np.int64(-2)), 1, -1, -3)
+M=7 dim=2 primitive vectors (up to sign)=72  bound 4M^2=196  formula 4M^2-6M+3=157  4M-4=24  2M-1=13
+   any gate : 157   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(5), np.int64(-6)), (np.int64(6), np.int64(-7)), (np.int64(7), np.int64(6)), -85, 72, 1)
+   w a form : 24   ((np.int64(5), np.int64(-6)), (np.int64(6), np.int64(-7)), (np.int64(1), np.int64(1)), -13, 11, 1)
+   u,v disjoint: 13   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(6), np.int64(-7)), 7, -6, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-7)), (np.int64(1), np.int64(-2)), -1, -1, -3)
+M=8 dim=2 primitive vectors (up to sign)=88  bound 4M^2=256  formula 4M^2-6M+3=211  4M-4=28  2M-1=15
+   any gate : 211   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(6), np.int64(-7)), (np.int64(7), np.int64(-8)), (np.int64(8), np.int64(7)), -113, 98, 1)
+   w a form : 28   ((np.int64(6), np.int64(-7)), (np.int64(7), np.int64(-8)), (np.int64(1), np.int64(1)), -15, 13, 1)
+   u,v disjoint: 15   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(7), np.int64(-8)), 8, -7, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-8)), (np.int64(1), np.int64(-3)), 1, -1, -3)
+M=9 dim=2 primitive vectors (up to sign)=112  bound 4M^2=324  formula 4M^2-6M+3=273  4M-4=32  2M-1=17
+   any gate : 273   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(7), np.int64(-8)), (np.int64(8), np.int64(-9)), (np.int64(9), np.int64(8)), -145, 128, 1)
+   w a form : 32   ((np.int64(7), np.int64(-8)), (np.int64(8), np.int64(-9)), (np.int64(1), np.int64(1)), -17, 15, 1)
+   u,v disjoint: 17   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(8), np.int64(-9)), 9, -8, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-8)), (np.int64(1), np.int64(-3)), 1, -1, -3)
+M=10 dim=2 primitive vectors (up to sign)=128  bound 4M^2=400  formula 4M^2-6M+3=343  4M-4=36  2M-1=19
+   any gate : 343   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(8), np.int64(-9)), (np.int64(9), np.int64(-10)), (np.int64(10), np.int64(9)), -181, 162, 1)
+   w a form : 36   ((np.int64(8), np.int64(-9)), (np.int64(9), np.int64(-10)), (np.int64(1), np.int64(1)), -19, 17, 1)
+   u,v disjoint: 19   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(9), np.int64(-10)), 10, -9, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-10)), (np.int64(1), np.int64(-3)), -1, -1, -3)
+M=11 dim=2 primitive vectors (up to sign)=168  bound 4M^2=484  formula 4M^2-6M+3=421  4M-4=40  2M-1=21
+   any gate : 421   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(9), np.int64(-10)), (np.int64(10), np.int64(-11)), (np.int64(11), np.int64(10)), -221, 200, 1)
+   w a form : 40   ((np.int64(9), np.int64(-10)), (np.int64(10), np.int64(-11)), (np.int64(1), np.int64(1)), -21, 19, 1)
+   u,v disjoint: 21   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(10), np.int64(-11)), 11, -10, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-11)), (np.int64(1), np.int64(-4)), 1, -1, -3)
+M=12 dim=2 primitive vectors (up to sign)=184  bound 4M^2=576  formula 4M^2-6M+3=507  4M-4=44  2M-1=23
+   any gate : 507   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(10), np.int64(-11)), (np.int64(11), np.int64(-12)), (np.int64(12), np.int64(11)), -265, 242, 1)
+   w a form : 44   ((np.int64(10), np.int64(-11)), (np.int64(11), np.int64(-12)), (np.int64(1), np.int64(1)), -23, 21, 1)
+   u,v disjoint: 23   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(11), np.int64(-12)), 12, -11, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-11)), (np.int64(1), np.int64(-4)), 1, -1, -3)
+M=16 dim=2 primitive vectors (up to sign)=320  bound 4M^2=1024  formula 4M^2-6M+3=931  4M-4=60  2M-1=31
+   any gate : 931   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(14), np.int64(-15)), (np.int64(15), np.int64(-16)), (np.int64(16), np.int64(15)), -481, 450, 1)
+   w a form : 60   ((np.int64(14), np.int64(-15)), (np.int64(15), np.int64(-16)), (np.int64(1), np.int64(1)), -31, 29, 1)
+   u,v disjoint: 31   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(15), np.int64(-16)), 16, -15, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-16)), (np.int64(1), np.int64(-5)), -1, -1, -3)
+M=20 dim=2 primitive vectors (up to sign)=512  bound 4M^2=1600  formula 4M^2-6M+3=1483  4M-4=76  2M-1=39
+   any gate : 1483   D*w = A*u + B*v : u,v,w,A,B,D = ((np.int64(18), np.int64(-19)), (np.int64(19), np.int64(-20)), (np.int64(20), np.int64(19)), -761, 722, 1)
+   w a form : 76   ((np.int64(18), np.int64(-19)), (np.int64(19), np.int64(-20)), (np.int64(1), np.int64(1)), -39, 37, 1)
+   u,v disjoint: 39   ((np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(19), np.int64(-20)), 20, -19, -1)
+   a gate with (|a|+|b|)/g < 1 (negative budget), first met: ((np.int64(0), np.int64(1)), (np.int64(3), np.int64(-20)), (np.int64(1), np.int64(-7)), 1, -1, -3)

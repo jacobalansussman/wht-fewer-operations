@@ -1,0 +1,109 @@
+== rows=rows_e2_k3.txt p=2 m=0
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=0  => gate budget 7
+visited states by remaining budget:
+RESULT p=2: NO circuit with 7 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=24s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:34:39 cmd=waves/wave-01/d-0-zeta/mincirc 2 8 0 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=2 m=1
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=1  => gate budget 8
+visited states by remaining budget: j=1:1
+RESULT p=2: NO circuit with 8 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:34:40 cmd=waves/wave-01/d-0-zeta/mincirc 2 8 1 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=2 m=2
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=2  => gate budget 9
+visited states by remaining budget: j=2:1 j=1:40
+RESULT p=2: NO circuit with 9 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:34:41 cmd=waves/wave-01/d-0-zeta/mincirc 2 8 2 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=2 m=3
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=3  => gate budget 10
+visited states by remaining budget: j=3:1 j=2:40 j=1:1113
+RESULT p=2: NO circuit with 10 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:34:43 cmd=waves/wave-01/d-0-zeta/mincirc 2 8 3 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=2 m=4
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=4  => gate budget 11
+visited states by remaining budget: j=4:1 j=3:5 j=2:186 j=1:10137
+RESULT p=2: YES, circuit with 11 gates. points in order (after the 8 inputs):
+  g8  TARGET = [1 1 0 0 0 0 0 0]  from #1 + 1*#0 (projectively)
+  g9  TARGET = [1 0 1 0 0 0 0 0]  from #2 + 1*#0 (projectively)
+  g10 TARGET = [1 0 0 0 1 0 0 0]  from #4 + 1*#0 (projectively)
+  g11 inter  = [0 0 0 0 1 0 1 0]  from #6 + 1*#4 (projectively)
+  g12 TARGET = [1 0 1 0 1 0 1 0]  from #11 + 1*#9 (projectively)
+== rows=rows_e2_k3.txt p=3 m=0
+p=3 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=0  => gate budget 7
+visited states by remaining budget:
+RESULT p=3: NO circuit with 7 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=1s waited=34s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:35:19 cmd=waves/wave-01/d-0-zeta/mincirc 3 8 0 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=3 m=1
+p=3 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=1  => gate budget 8
+visited states by remaining budget: j=1:1
+RESULT p=3: NO circuit with 8 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:35:20 cmd=waves/wave-01/d-0-zeta/mincirc 3 8 1 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=3 m=2
+p=3 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=2  => gate budget 9
+visited states by remaining budget: j=2:1 j=1:89
+RESULT p=3: NO circuit with 9 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:35:21 cmd=waves/wave-01/d-0-zeta/mincirc 3 8 2 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=3 m=3
+p=3 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=3  => gate budget 10
+visited states by remaining budget: j=3:1 j=2:89 j=1:5449
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=16 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:35:22 cmd=waves/wave-01/d-0-zeta/mincirc 3 8 3 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=3 m=4
+light.py: x1-e2 found no free slot in 90 s. Nothing was run. Do other work and retry in a few minutes.
+== rows=rows_e2_k3.txt p=5 m=0
+p=5 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=0  => gate budget 7
+visited states by remaining budget:
+RESULT p=5: NO circuit with 7 gates (exhaustive over GF(5))
+LIGHT label=x1-e2 exit=0 time=1s waited=28s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:22 cmd=waves/wave-01/d-0-zeta/mincirc 5 8 0 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=5 m=1
+p=5 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=1  => gate budget 8
+visited states by remaining budget: j=1:1
+RESULT p=5: NO circuit with 8 gates (exhaustive over GF(5))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:23 cmd=waves/wave-01/d-0-zeta/mincirc 5 8 1 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=5 m=2
+p=5 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=2  => gate budget 9
+visited states by remaining budget: j=2:1 j=1:187
+RESULT p=5: NO circuit with 9 gates (exhaustive over GF(5))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:24 cmd=waves/wave-01/d-0-zeta/mincirc 5 8 2 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=5 m=3
+p=5 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=3  => gate budget 10
+visited states by remaining budget: j=3:1 j=2:187 j=1:23940
+RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:25 cmd=waves/wave-01/d-0-zeta/mincirc 5 8 3 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=5 m=4
+p=5 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=4  => gate budget 11
+visited states by remaining budget: j=4:1 j=3:17 j=2:3432 j=1:887387
+RESULT p=5: YES, circuit with 11 gates. points in order (after the 8 inputs):
+  g8  TARGET = [1 1 0 0 0 0 0 0]  from #1 + 1*#0 (projectively)
+  g9  TARGET = [1 0 1 0 0 0 0 0]  from #2 + 1*#0 (projectively)
+  g10 TARGET = [1 0 0 0 1 0 0 0]  from #4 + 1*#0 (projectively)
+  g11 inter  = [0 0 0 0 1 0 1 0]  from #6 + 1*#4 (projectively)
+  g12 TARGET = [1 0 1 0 1 0 1 0]  from #11 + 1*#9 (projectively)
+== rows=rows_e2_k3.txt p=7 m=0
+p=7 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=0  => gate budget 7
+visited states by remaining budget:
+RESULT p=7: NO circuit with 7 gates (exhaustive over GF(7))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:34 cmd=waves/wave-01/d-0-zeta/mincirc 7 8 0 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=7 m=1
+p=7 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=1  => gate budget 8
+visited states by remaining budget: j=1:1
+RESULT p=7: NO circuit with 8 gates (exhaustive over GF(7))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:35 cmd=waves/wave-01/d-0-zeta/mincirc 7 8 1 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=7 m=2
+p=7 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=2  => gate budget 9
+visited states by remaining budget: j=2:1 j=1:285
+RESULT p=7: NO circuit with 9 gates (exhaustive over GF(7))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:36 cmd=waves/wave-01/d-0-zeta/mincirc 7 8 2 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=7 m=3
+p=7 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=3  => gate budget 10
+visited states by remaining budget: j=3:1 j=2:285 j=1:55539
+RESULT p=7: NO circuit with 10 gates (exhaustive over GF(7))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:37:37 cmd=waves/wave-01/d-0-zeta/mincirc 7 8 3 rows_e2_k3.txt
+== rows=rows_e2_k3.txt p=7 m=4
+p=7 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=4  => gate budget 11
+visited states by remaining budget: j=4:1 j=3:25 j=2:7836 j=1:3090963
+RESULT p=7: YES, circuit with 11 gates. points in order (after the 8 inputs):
+  g8  TARGET = [1 1 0 0 0 0 0 0]  from #1 + 1*#0 (projectively)
+  g9  TARGET = [1 0 1 0 0 0 0 0]  from #2 + 1*#0 (projectively)
+  g10 TARGET = [1 0 0 0 1 0 0 0]  from #4 + 1*#0 (projectively)
+  g11 inter  = [0 0 0 0 1 0 1 0]  from #6 + 1*#4 (projectively)
+  g12 TARGET = [1 0 1 0 1 0 1 0]  from #11 + 1*#9 (projectively)

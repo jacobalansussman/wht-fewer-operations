@@ -1,0 +1,9 @@
+# half problem on 8 points: pieces of size 8 with a2=1, and the size-4 piece of character a on four-block f(a), f=(1, 0, 0, 1)
+1 1 1 1 -1 -1 -1 -1
+1 -1 1 -1 -1 1 -1 1
+1 1 -1 -1 -1 -1 1 1
+1 -1 -1 1 -1 1 1 -1
+0 0 0 0 1 1 1 1
+1 -1 1 -1 0 0 0 0
+1 1 -1 -1 0 0 0 0
+0 0 0 0 1 -1 -1 1

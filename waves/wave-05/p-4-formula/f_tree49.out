@@ -1,0 +1,6 @@
+[[1,2],[3,4]] rho 2/3 : rectangles off the centre 48 | identity on all 256 cells: True | constants that are zero: 0 | crossing pairs among the row sets: 0 , among the column sets: 0
+[[2,7],[5,3]] rho 6/35 : rectangles off the centre 48 | identity on all 256 cells: True | constants that are zero: 0 | crossing pairs among the row sets: 0 , among the column sets: 0
+the transform rho -1 : rectangles off the centre 48 | identity on all 256 cells: True | constants that are zero: 0 | crossing pairs among the row sets: 0 , among the column sets: 0
+[[1,1],[1,5]] rho 5 : rectangles off the centre 48 | identity on all 256 cells: True | constants that are zero: 0 | crossing pairs among the row sets: 0 , among the column sets: 0
+row sets by size: [(1, 16), (2, 8), (8, 2)]  column sets by size: [(1, 16), (2, 8), (8, 2)]
+LIGHT label=p4-f2 exit=0 time=1s waited=76s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:32:01 cmd=python3 -B f_tree49.py

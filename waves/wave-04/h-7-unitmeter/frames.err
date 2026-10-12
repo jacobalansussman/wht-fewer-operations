@@ -1,0 +1,1 @@
+LIGHT label=h7-frames exit=0 time=2s waited=0s peak_rss_mb=56 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:58:06 cmd=python3 -I -B frames.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-e8-r783.json.gz not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-p11-pr193.json.gz

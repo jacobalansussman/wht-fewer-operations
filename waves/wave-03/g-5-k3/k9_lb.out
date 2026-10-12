@@ -1,0 +1,19 @@
+## K9 = K3 (x) K3 (9 wires, 9 targets): exhaustive lower bound, gates = 9 + m
+p=3 m=0
+visited states by remaining budget:
+RESULT p=3: NO circuit with 9 gates (exhaustive over GF(3))
+p=3 m=1
+visited states by remaining budget: j=1:1
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+p=3 m=2
+visited states by remaining budget: j=2:1 j=1:72
+RESULT p=3: NO circuit with 11 gates (exhaustive over GF(3))
+p=3 m=3
+visited states by remaining budget: j=3:1 j=2:72 j=1:3564
+RESULT p=3: NO circuit with 12 gates (exhaustive over GF(3))
+p=3 m=4
+visited states by remaining budget: j=4:1 j=3:72 j=2:3564 j=1:352515
+RESULT p=3: NO circuit with 13 gates (exhaustive over GF(3))
+p=3 m=5
+visited states by remaining budget: j=5:1 j=4:72 j=3:3564 j=2:352515 j=1:40198062
+RESULT p=3: NO circuit with 14 gates (exhaustive over GF(3))

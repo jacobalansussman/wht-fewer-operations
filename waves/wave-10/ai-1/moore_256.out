@@ -1,0 +1,15 @@
+exact; every figure is rounded DOWN; 'cert' = the threshold was confirmed by two exact whole-number tests
+k    d   rank/N      V/N >= (A)  V/N >= (B)  gates/N >=   cert   ag-7 law.out gates/N
+256  2   2.84e-73    0.0000      0.0000      1.0000       yes    
+256  3   2.42e-71    0.0000      0.0000      1.0000       yes    
+256  4   1.53e-69    0.0000      0.0000      1.0000       yes    
+256  5   7.76e-68    0.0065      0.0077      1.0077       yes    
+256  6   3.26e-66    0.1130      0.1055      1.1130       yes    
+256  7   1.17e-64    0.3977      0.2868      1.3977       yes    
+256  8   3.65e-63    0.6673      0.4010      1.6673       yes    
+256  9   1.01e-61    0.8297      0.4537      1.8297       yes    
+256  10  2.51e-60    0.9146      0.4778      1.9146       yes    
+256  11  5.64e-59    0.9574      0.4891      1.9574       yes    
+256  12  1.16e-57    0.9788      0.4946      1.9788       yes    
+
+LIGHT label=ai1-m256 exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:37:20 cmd=python3 -B moore_exact.py 256

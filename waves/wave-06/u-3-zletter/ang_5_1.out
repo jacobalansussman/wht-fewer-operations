@@ -1,0 +1,34 @@
+K 5 gates 82 (= N-1 + 51) tau 64 deg0 13
+4294967295 252645135 83952897 83951616 16842752 1281 257 168692238 168690190 167903746 33686018 33554946 514 786444 786436 262148 4042322160 1894838512 61488 45104 12336 8240 48 1894777024 821035200 12583104 12582912 192 808452096 806354944 269484032 
+row 0 from 32 cost 1
+row 1 from 32 cost 2
+row 2 from 32 cost 2
+row 3 from 1 cost 2
+row 4 from 32 cost 2
+row 5 from 1 cost 1
+row 6 from 2 cost 2
+row 7 from 3 cost 2
+row 8 from 32 cost 1
+row 9 from 32 cost 2
+row 10 from 32 cost 2
+row 11 from 10 cost 3
+row 12 from 32 cost 3
+row 13 from 9 cost 1
+row 14 from 10 cost 4
+row 15 from 11 cost 2
+row 16 from 32 cost 2
+row 17 from 1 cost 2
+row 18 from 16 cost 1
+row 19 from 17 cost 1
+row 20 from 4 cost 2
+row 21 from 17 cost 3
+row 22 from 20 cost 3
+row 23 from 21 cost 2
+row 24 from 32 cost 2
+row 25 from 24 cost 1
+row 26 from 32 cost 2
+row 27 from 32 cost 1
+row 28 from 12 cost 2
+row 29 from 25 cost 2
+row 30 from 14 cost 5
+row 31 from 32 cost 1

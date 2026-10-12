@@ -1,0 +1,10 @@
+K 3 gates 12 (= N-1 + 5) tau 12 deg0 7
+255 213 85 81 17 42 34 
+row 0 from 8 cost 1
+row 1 from 8 cost 2
+row 2 from 8 cost 2
+row 3 from 1 cost 2
+row 4 from 8 cost 1
+row 5 from 8 cost 2
+row 6 from 8 cost 1
+row 7 from 8 cost 1

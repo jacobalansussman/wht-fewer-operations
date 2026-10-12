@@ -1,0 +1,3 @@
+Clebsch form: M M^T = 16 I: True
+rook form J - 2A equals (J-2I)x(J-2I): True
+LIGHT label=i-play-clebsch exit=0 time=1s waited=0s peak_rss_mb=4 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:07:27 cmd=/usr/bin/python3 -I -B clebsch.py

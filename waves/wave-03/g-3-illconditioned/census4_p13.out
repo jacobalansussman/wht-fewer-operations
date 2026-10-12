@@ -1,0 +1,13 @@
+a=1 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs): | in place: -
+a=2 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13)) | in place: -
+a=3 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs): | in place: -
+a=4 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs): | in place: -
+a=5 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13)) | in place: -
+a=6 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13)) | in place: -
+a=7 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13)) | in place: -
+a=8 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13)) | in place: -
+a=9 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs): | in place: -
+a=10 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs): | in place: -
+a=11 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: NO circuit with 7 gates (exhaustive over GF(13)) | in place: -
+a=12 | RESULT p=13: NO circuit with 6 gates (exhaustive over GF(13)) | RESULT p=13: YES, circuit with 7 gates. points in order (after the 4 inputs): | in place: -
+LIGHT label=g3-census13 exit=0 time=2s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:54:31 cmd=./census4.sh 13

@@ -1,0 +1,31 @@
+k= 2 N=    4 chains=   2 lengths=[(1, 1), (3, 1)] | pass cost N-chains=    2 | nnz Z=      9  nnz(P^-1 Z)=      6  nnz(Z P^-1)=      6 | textbook gates      4 | off-diagonal entries left 2, rows already done 2, rank(P^-1 Z - I)=2, rank(Z - I)=2
+k= 3 N=    8 chains=   3 lengths=[(2, 2), (4, 1)] | pass cost N-chains=    5 | nnz Z=     27  nnz(P^-1 Z)=     16  nnz(Z P^-1)=     16 | textbook gates     12 | off-diagonal entries left 8, rows already done 2, rank(P^-1 Z - I)=5, rank(Z - I)=5
+k= 4 N=   16 chains=   6 lengths=[(1, 2), (3, 3), (5, 1)] | pass cost N-chains=   10 | nnz Z=     81  nnz(P^-1 Z)=     48  nnz(Z P^-1)=     48 | textbook gates     32 | off-diagonal entries left 32, rows already done 2, rank(P^-1 Z - I)=10, rank(Z - I)=10
+   the 6 chains of the 4-cube and the rows of P^-1 Z (sets written as digit strings):
+    chain: 0 < 1 < 12 < 123 < 1234
+    chain: 2 < 23 < 234
+    chain: 3 < 13 < 134
+    chain: 4 < 14 < 124
+    chain: 24
+    chain: 34
+    y'_0     = sum of x_T over T in {0}
+    y'_1     = sum of x_T over T in {1}
+    y'_2     = sum of x_T over T in {0,2}
+    y'_12    = sum of x_T over T in {2,12}
+    y'_3     = sum of x_T over T in {0,3}
+    y'_13    = sum of x_T over T in {1,13}
+    y'_23    = sum of x_T over T in {3,23}
+    y'_123   = sum of x_T over T in {3,13,23,123}
+    y'_4     = sum of x_T over T in {0,4}
+    y'_14    = sum of x_T over T in {1,14}
+    y'_24    = sum of x_T over T in {0,2,4,24}
+    y'_124   = sum of x_T over T in {2,12,24,124}
+    y'_34    = sum of x_T over T in {0,3,4,34}
+    y'_134   = sum of x_T over T in {4,14,34,134}
+    y'_234   = sum of x_T over T in {4,24,34,234}
+    y'_1234  = sum of x_T over T in {4,14,24,124,34,134,234,1234}
+k= 5 N=   32 chains=  10 lengths=[(2, 5), (4, 4), (6, 1)] | pass cost N-chains=   22 | nnz Z=    243  nnz(P^-1 Z)=    136  nnz(Z P^-1)=    136 | textbook gates     80 | off-diagonal entries left 104, rows already done 2, rank(P^-1 Z - I)=21, rank(Z - I)=22
+k= 6 N=   64 chains=  20 lengths=[(1, 5), (3, 9), (5, 5), (7, 1)] | pass cost N-chains=   44 | nnz Z=    729  nnz(P^-1 Z)=    408  nnz(Z P^-1)=    408 | textbook gates    192 | off-diagonal entries left 344, rows already done 2, rank(P^-1 Z - I)=44, rank(Z - I)=44
+k= 8 N=  256 chains=  70 lengths=[(1, 14), (3, 28), (5, 20), (7, 7), (9, 1)] | pass cost N-chains=  186 | nnz Z=   6561  nnz(P^-1 Z)=   3552  nnz(Z P^-1)=   3552 | textbook gates   1024
+k=10 N= 1024 chains= 252 lengths=[(1, 42), (3, 90), (5, 75), (7, 35), (9, 9), (11, 1)] | pass cost N-chains=  772 | nnz Z=  59049  nnz(P^-1 Z)=  31296  nnz(Z P^-1)=  31296 | textbook gates   5120
+LIGHT label=d0-scd exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:32:49 cmd=python3 -B scd.py

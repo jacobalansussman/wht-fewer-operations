@@ -1,0 +1,8 @@
+slp16_52_from54.txt | gates 52 | frames tested 500
+    500 frames: correct at tau=-1 | rank dF/dtheta = 52 of 52 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [] 
+slp_16.txt | gates 52 | frames tested 500
+      7 frames: correct at tau=-1 | rank dF/dtheta = 52 of 52 unknowns | MOVES to first order
+    493 frames: correct at tau=-1 | rank dF/dtheta = 52 of 52 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [((1, 2, 4, 8), 0), ((8, 1, 13, 11), 13), ((1, 5, 9, 2), 13), ((2, 4, 1, 8), 4), ((1, 3, 5, 11), 7), ((8, 1, 10, 4), 1), ((4, 5, 12, 2), 5)] 
+LIGHT label=p0-ds exit=0 time=306s waited=0s peak_rss_mb=17 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:41:02 cmd=sh -c python3 -B deform_sample.py ../h-1-staircase3/slp16_52_from54.txt 4 sample 500 1; python3 -B deform_sample.py ../e2-0-pieces/slp_16.txt 4 sample 500 1

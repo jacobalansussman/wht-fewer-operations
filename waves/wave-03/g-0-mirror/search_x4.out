@@ -1,0 +1,8 @@
+FOUND x=4 roots: [0,0,0,0,1,-1] [0,0,0,0,1,1] [0,0,0,1,-1,0] [0,0,1,-1,0,0]  basis points: t0 t1 t2 t4 t5 t8
+FOUND x=4 roots: [0,0,0,0,1,-1] [0,0,0,0,1,1] [0,0,0,1,-1,0] [0,0,1,0,-1,0]  basis points: t0 t1 t2 t4 t5 t8
+FOUND x=4 roots: [0,0,0,0,1,-1] [0,0,0,0,1,1] [0,0,0,1,-1,0] [0,0,1,0,0,-1]  basis points: t0 t1 t2 t4 t5 t8
+FOUND x=4 roots: [0,0,0,0,1,-1] [0,0,0,0,1,1] [0,0,0,1,-1,0] [0,0,1,0,0,1]  basis points: t0 t1 t2 t4 t5 t8
+FOUND x=4 roots: [0,0,0,0,1,-1] [0,0,0,0,1,1] [0,0,0,1,-1,0] [0,0,1,0,1,0]  basis points: t0 t1 t2 t4 t5 t8
+FOUND x=4 roots: [0,0,0,0,1,-1] [0,0,0,0,1,1] [0,0,0,1,-1,0] [0,0,1,1,0,0]  basis points: t0 t1 t2 t4 t5 t8
+RESULT x=4: 27405 sets of roots tried, 4680 generate all 16 targets from 6 points  => gates for C^T = 14, for C = 24
+LIGHT label=g0-search4 exit=0 time=70s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:46:25 cmd=./search 4 6

@@ -1,0 +1,5 @@
+c19: 19 gates, cost 24; start circuit replays: True
+   removals of 2 helpers done: tested so far 2918, hits 0
+   removals of 3 helpers done: tested so far 12904, hits 0
+c19: remove 2 or 3 helpers (weight >= 3), add one wire with any coefficients: 12904 candidate points in all, 12904 tested, 0 circuits with cost < 24
+   sets of |entries| among the tested wires (the pool is not bounded in advance): [((1,), 9288), ((1, 3), 3460), ((1, 2), 156)]

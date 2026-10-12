@@ -1,0 +1,2 @@
+CANDIDATE r=4 K=4 (floats, replay exactly): 808:0 2080:0 5000:0 ffff:0
+sym K=4 p=2: 488 orbits tested. g in span(orbit): 0 ; orbit + 1 invariant flat: 0 ; orbit + 2 invariant flats: 30   (flats: 2, 3, 4)

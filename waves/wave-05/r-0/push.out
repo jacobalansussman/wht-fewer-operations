@@ -1,0 +1,31 @@
+pairs first, then the second 52 twice: 32 points, 136 gates (G); exact replay, every row of the transform is a wire: True
+   2 letter(s): none; stopped at the node limit, NOT a proof (400001 nodes)
+   3 letter(s): assignment found (137 nodes)
+   letter 1: 62 gates (30 up, 32 down); matrix 35 x 32; rectangles 60 (of them 8 free pass-throughs/up forms leaving); dead 0; row family 40 sets, column family 58 sets; nested: yes; matches replay: yes
+   letter 2: 52 gates (24 up, 28 down); matrix 35 x 35; rectangles 53 (of them 13 free pass-throughs/up forms leaving); dead 0; row family 40 sets, column family 45 sets; nested: yes; matches replay: yes
+   letter 3: 22 gates (10 up, 12 down); matrix 32 x 35; rectangles 41 (of them 21 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 35 sets; nested: yes; matches replay: yes
+   product of the 3 letter matrices = H_32 exactly: yes
+the second 52 on each half, pairs last: 32 points, 136 gates (G); exact replay, every row of the transform is a wire: True
+   2 letter(s): none; stopped at the node limit, NOT a proof (400001 nodes)
+   3 letter(s): assignment found (137 nodes)
+   letter 1: 60 gates (28 up, 32 down); matrix 38 x 32; rectangles 56 (of them 16 free pass-throughs/up forms leaving); dead 0; row family 48 sets, column family 52 sets; nested: yes; matches replay: yes
+   letter 2: 54 gates (25 up, 29 down); matrix 32 x 38; rectangles 55 (of them 5 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 43 sets; nested: yes; matches replay: yes
+   letter 3: 22 gates (11 up, 11 down); matrix 32 x 32; rectangles 43 (of them 21 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 43 sets; nested: yes; matches replay: yes
+   product of the 3 letter matrices = H_32 exactly: yes
+e2-0 slp_16: 16 points, 52 gates (G); exact replay, every row of the transform is a wire: True
+   2 letter(s): none; stopped at the node limit, NOT a proof (400001 nodes)
+   3 letter(s): assignment found (53 nodes)
+   letter 1: 20 gates (12 up, 8 down); matrix 16 x 16; rectangles 24 (of them 8 free pass-throughs/up forms leaving); dead 0; row family 16 sets, column family 20 sets; nested: yes; matches replay: yes
+   letter 2: 22 gates (10 up, 12 down); matrix 16 x 16; rectangles 24 (of them 4 free pass-throughs/up forms leaving); dead 0; row family 16 sets, column family 22 sets; nested: yes; matches replay: yes
+   letter 3: 10 gates (4 up, 6 down); matrix 16 x 16; rectangles 20 (of them 10 free pass-throughs/up forms leaving); dead 0; row family 16 sets, column family 18 sets; nested: yes; matches replay: yes
+   product of the 3 letter matrices = H_16 exactly: yes
+e2-0 slp_32: 32 points, 128 gates (G); exact replay, every row of the transform is a wire: True
+   2 letter(s): none; stopped at the node limit, NOT a proof (400001 nodes)
+   3 letter(s): none; stopped at the node limit, NOT a proof (400001 nodes)
+   4 letter(s): assignment found (129 nodes)
+   letter 1: 40 gates (24 up, 16 down); matrix 32 x 32; rectangles 48 (of them 16 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 40 sets; nested: yes; matches replay: yes
+   letter 2: 36 gates (20 up, 16 down); matrix 32 x 32; rectangles 48 (of them 16 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 44 sets; nested: yes; matches replay: yes
+   letter 3: 42 gates (18 up, 24 down); matrix 32 x 32; rectangles 48 (of them 8 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 42 sets; nested: yes; matches replay: yes
+   letter 4: 10 gates (4 up, 6 down); matrix 32 x 32; rectangles 36 (of them 26 free pass-throughs/up forms leaving); dead 0; row family 32 sets, column family 34 sets; nested: yes; matches replay: yes
+   product of the 4 letter matrices = H_32 exactly: yes
+LIGHT label=r0-push exit=0 time=4s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:34:51 cmd=python3 -B check.py push 400000

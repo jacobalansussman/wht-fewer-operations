@@ -1,0 +1,7 @@
+n=2 S=3 H=1 mode=seq targets=1,1                    starts  20 hits  14 best residual 4.13e-16
+n=2 S=2 H=1 mode=seq targets=1,1                    starts  20 hits   0 best residual 1.71e-03
+n=3 S=2 H=1 mode=seq targets=1,1,0                  starts  30 hits  12 best residual 1.21e-15
+n=3 S=2 H=1 mode=seq targets=1,1,1                  starts  30 hits   0 best residual 1.37e+00
+n=4 S=2 H=1 mode=seq targets=1,1,1,1                starts  30 hits   0 best residual 2.09e-03
+n=3 S=3 H=1 mode=seq targets=1,1,1                  starts  30 hits   0 best residual 1.37e+00
+n=2 S=3 H=2 mode=seq targets=12,12                  starts  30 hits   0 best residual 2.84e-03

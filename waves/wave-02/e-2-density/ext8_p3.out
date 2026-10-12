@@ -1,0 +1,19 @@
+[ran] transposed circuit: 16 gates compute outputs 0..5 of the 8-point transform over GF(3) (replayed: each output is its row of +-1)
+   output 0 over the integers: [1, 1, -2, -2, 1, 1, -2, -2]  (NOT its row)
+   output 1 over the integers: [-2, -1, 1, 2, -2, -1, 1, 2]  (NOT its row)
+   output 2 over the integers: [1, 1, -1, -1, 1, 1, -1, -1]  (= 1 x its row)
+   output 3 over the integers: [-2, -1, 2, 1, -2, -1, 2, 1]  (NOT its row)
+   output 4 over the integers: [1, 1, -2, 1, 2, -1, -1, -1]  (NOT its row)
+   output 5 over the integers: [-2, -1, 1, 2, -1, -2, 2, 1]  (NOT its row)
+[ran] exact integer replay of the 16-gate circuit for outputs 0..5: FAIL (a modular accident)
+    output 6 alone: NO with 1 more gates
+    output 6 alone: NO with 2 more gates
+  output 6 alone: 3 more gates suffice and 2 do not (GF(3), exhaustive, reusing this one circuit): total 19
+    output 7 alone: NO with 1 more gates
+    output 7 alone: NO with 2 more gates
+  output 7 alone: 3 more gates suffice and 2 do not (GF(3), exhaustive, reusing this one circuit): total 19
+    outputs 6 and 7: NO with 2 more gates
+    outputs 6 and 7: NO with 3 more gates
+    outputs 6 and 7: NO with 4 more gates
+  outputs 6 and 7: 5 more gates suffice and 4 do not (GF(3), exhaustive, reusing this one circuit): total 21
+LIGHT label=e2-ext8p3 exit=0 time=1s waited=64s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:08:46 cmd=python3 -B ext8.py 3 4 100

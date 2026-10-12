@@ -1,0 +1,4 @@
+half of n = 16 points (N = 32 ):  L(n) = 54   so tau >= 2 L = 108   gates >= N - 2 + 2L = 138    [one half only, no choice: min sum = 64 ]   distinct profiles: 2249
+     profiles at the minimum: ['2', '4', '5', '5', '3', '4', '5', '5', '3', '4', '5', '5', '3', '4', '5', '5'] ['5', '5', '2', '4', '5', '5', '3', '4', '5', '5', '3', '4', '5', '5', '3', '4']
+LIGHT label=p1lb16 exit=0 time=182s waited=20s peak_rss_mb=42 peak_footprint_mb=38 lowest_cap_mb=1500 stopped=- start=00:33:14 cmd=python3 -B lb16.py
+done

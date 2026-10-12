@@ -1,0 +1,46 @@
+4 points, in place, 4 wires, 8 moves: every shortest program with coefficients +-1, +-2, +-1/2, exact rationals
+(modulo 7 these six values are all the non-zero residues, so the GF(7) dump guides the exact search; only programs
+ that end EXACTLY at the transform's rows over the rationals are kept)
+end states reached: 41  of which the exact target: 1
+layer  exact_states_on_programs  potentials_seen(bits)                                 max_mass  max_cond(rows scaled)
+    0                         1  [0.0]                                                    1.000     1.000
+    1                        24  [0.0]                                                    1.000     2.414
+    2                       246  [0.0, 2.0]                                               1.000     3.890
+    3                      1080  [0.0, 2.0]                                               1.000     5.397
+    4                      1635  [-1.377, 0.0, 1.0, 2.0, 4.0]                             1.500     6.975
+    5                       792  [0.623, 2.0, 3.0, 4.0]                                   1.500     5.397
+    6                       246  [3.811, 4.0, 6.0]                                        1.125     3.890
+    7                        24  [6.0]                                                    1.000     2.414
+    8                         1  [8.0]                                                    1.000     1.000
+exact shortest programs (as sequences of moves): 91296
+  of these, with no negative entry in any intermediate table L (mass 1 throughout): 75264
+potential gained per move, by move number (number of programs):
+  move 1 {0.0: 91296}
+  move 2 {0.0: 75936, 2.0: 15360}
+  move 3 {0.0: 60576, 2.0: 30720}
+  move 4 {-1.377: 768, 0.0: 37920, 1.0: 2304, 2.0: 50304}
+  move 5 {-1.377: 1536, 0.0: 44160, 1.0: 4608, 2.0: 40992}
+  move 6 {0.0: 30720, 0.811: 2304, 1.0: 4608, 1.811: 6816, 2.0: 44544, 3.189: 2304}
+  move 7 {0.0: 15360, 2.0: 64512, 2.189: 11424}
+  move 8 {2.0: 91296}
+a shortest program through the largest single gain (3.189 bits at move 6):
+   after move 0: pot   0.000          mass  1.000 cond   1.000   wires [[0, 0, 0, 1], [0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 0, 0]]
+   after move 1: pot   0.000  +0.000  mass  1.000 cond   2.414   wires [[0, 0, 1, 0], [0, 0, 1, 1], [0, 1, 0, 0], [1, 0, 0, 0]]
+   after move 2: pot   0.000  +0.000  mass  1.000 cond   3.732   wires [[0, 0, 1, 1], [0, 1, 0, 0], [0, 1, 1, 0], [1, 0, 0, 0]]
+   after move 3: pot   0.000  +0.000  mass  1.000 cond   5.027   wires [[0, 0, 1, 1], [0, 1, 1, 0], [1, 0, 0, 0], [1, 1, 0, 0]]
+   after move 4: pot   2.000  +2.000  mass  1.000 cond   3.732   wires [[0, 0, 1, 1], [0, 1, 1, 0], [1, -1, 0, 0], [1, 1, 0, 0]]
+   after move 5: pot   0.623  -1.377  mass  1.500 cond   5.027   wires [[0, 0, 1, 1], [0, 1, 1, 0], [1, -1, 0, 0], [1, 1, -1, -1]]
+   after move 6: pot   3.811  +3.189  mass  1.125 cond   3.732   wires [[0, 1, 1, 0], [1, -1, 0, 0], [1, 1, -1, -1], [1, 1, 1, 1]]
+   after move 7: pot   6.000  +2.189  mass  1.000 cond   2.414   wires [[1, -1, -1, 1], [1, -1, 0, 0], [1, 1, -1, -1], [1, 1, 1, 1]]
+   after move 8: pot   8.000  +2.000  mass  1.000 cond   1.000   wires [[1, -1, -1, 1], [1, -1, 1, -1], [1, 1, -1, -1], [1, 1, 1, 1]]
+a shortest program through the state of largest mass (1.500):
+   after move 0: pot   0.000          mass  1.000 cond   1.000   wires [[0, 0, 0, 1], [0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 0, 0]]
+   after move 1: pot   0.000  +0.000  mass  1.000 cond   2.414   wires [[0, 0, 1, 0], [0, 0, 1, 1], [0, 1, 0, 0], [1, 0, 0, 0]]
+   after move 2: pot   0.000  +0.000  mass  1.000 cond   3.732   wires [[0, 0, 1, 1], [0, 1, 0, 0], [0, 1, 1, 0], [1, 0, 0, 0]]
+   after move 3: pot   0.000  +0.000  mass  1.000 cond   5.027   wires [[0, 0, 1, 1], [0, 1, 1, 0], [1, -1, 0, 0], [1, 0, 0, 0]]
+   after move 4: pot  -1.377  -1.377  mass  1.500 cond   6.540   wires [[0, 0, 1, 1], [0, 1, 1, 0], [1, -1, 0, 0], [2, 0, -1, -1]]
+   after move 5: pot   0.623  +2.000  mass  1.500 cond   5.027   wires [[0, 0, 1, 1], [0, 1, 1, 0], [1, -1, 0, 0], [1, 1, -1, -1]]
+   after move 6: pot   3.811  +3.189  mass  1.125 cond   3.732   wires [[0, 1, 1, 0], [1, -1, 0, 0], [1, 1, -1, -1], [1, 1, 1, 1]]
+   after move 7: pot   6.000  +2.189  mass  1.000 cond   2.414   wires [[1, -1, -1, 1], [1, -1, 0, 0], [1, 1, -1, -1], [1, 1, 1, 1]]
+   after move 8: pot   8.000  +2.000  mass  1.000 cond   1.000   wires [[1, -1, -1, 1], [1, -1, 1, -1], [1, 1, -1, -1], [1, 1, 1, 1]]
+LIGHT label=g3-all4 exit=0 time=16s waited=0s peak_rss_mb=17 peak_footprint_mb=14 lowest_cap_mb=1500 stopped=- start=22:51:07 cmd=python3 -B profile.py all4 onpath7.txt

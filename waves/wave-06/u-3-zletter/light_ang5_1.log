@@ -1,0 +1,1 @@
+LIGHT label=u3-ang5-1 exit=0 time=116s waited=58s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:55:28 cmd=./ang.sh 5 1 2000000 1.0

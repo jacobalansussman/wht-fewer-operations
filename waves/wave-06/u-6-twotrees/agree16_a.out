@@ -1,0 +1,14 @@
+== AGREE, one tree control, all 64 quadratic centres, MST only (h-6: MST 64 to 85)
+F0 quad 0  G0 quad 0 lin 0 | held 14 | MST 85 (lb 43) | after 0 rounds 85 shifts | GATES <= 100
+F0 quad 1  G0 quad 1 lin 0 | held 14 | MST 74 (lb 37) | after 0 rounds 74 shifts | GATES <= 89
+F0 quad 2  G0 quad 2 lin 0 | held 14 | MST 66 (lb 33) | after 0 rounds 66 shifts | GATES <= 81
+F0 quad 8  G0 quad 8 lin 0 | held 14 | MST 64 (lb 32) | after 0 rounds 64 shifts | GATES <= 79
+histogram of the upper bound: 79:16 81:8 87:16 89:16 95:2 97:4 99:1 100:1
+BEST upper bound: 79 gates ; least MST of terminals: 64
+== AGREE, two trees (8 4 2 1),(2 1 8 4), ONE centre for both (G0 = F0), MST only
+F0 quad 0  G0 quad 0 lin 0 | held 28 | MST 62 (lb 31) | after 0 rounds 62 shifts | GATES <= 91
+F0 quad 1  G0 quad 1 lin 0 | held 28 | MST 56 (lb 28) | after 0 rounds 56 shifts | GATES <= 85
+F0 quad 2  G0 quad 2 lin 0 | held 28 | MST 54 (lb 27) | after 0 rounds 54 shifts | GATES <= 83
+F0 quad 4  G0 quad 4 lin 0 | held 28 | MST 50 (lb 25) | after 0 rounds 50 shifts | GATES <= 79
+histogram of the upper bound: 79:4 81:4 83:8 85:16 86:1 87:4 89:16 91:1 95:2 97:8
+BEST upper bound: 79 gates ; least MST of terminals: 50

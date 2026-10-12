@@ -1,0 +1,27 @@
+== A. N=16, three self-dual codes ==
+atoms: 48 distinct: 48  rank of all 48: 16
+H maps every atom to +-4 x an atom of the SAME code: True  atoms fixed up to sign: 12  transposed pairs: 18  (+4 eigen-atoms: 6, -4: 6)
+transfer 12|34 -> 13|24: non-zeros per row [4], inner products [-2, 0, 2], blocks: [4, 4, 4, 4]
+transfer 12|34 -> 14|23: non-zeros per row [4], inner products [-2, 0, 2], blocks: [4, 4, 4, 4]
+transfer 13|24 -> 14|23: non-zeros per row [4], inner products [-2, 0, 2], blocks: [4, 4, 4, 4]
+48 atoms split into mutually orthogonal families of sizes [12, 12, 12, 12]  ranks [4, 4, 4, 4]
+   family of 12 atoms: |inner products| [0, 2] (norm 4), codes per family [0, 1, 2], H keeps the family: [True]
+   family of 12 atoms: |inner products| [0, 2] (norm 4), codes per family [0, 1, 2], H keeps the family: [False]
+   family of 12 atoms: |inner products| [0, 2] (norm 4), codes per family [0, 1, 2], H keeps the family: [False]
+   family of 12 atoms: |inner products| [0, 2] (norm 4), codes per family [0, 1, 2], H keeps the family: [True]
+orthogonal bases of 16 atoms taken from the 48: 81 (pure: 3); closed under H: 27
+== B. Lagrangians of the phase space of 4 bits ==
+Lagrangians: 2295
+kept by the swap X<->Z (H is monomial in that basis): 39  of which real: 14  (all real Lagrangians: 270)
+   dim(L meet standard) = 0, real = False, code-type (C+C) = False : 16
+   dim(L meet standard) = 0, real = True, code-type (C+C) = False : 4
+   dim(L meet standard) = 1, real = False, code-type (C+C) = False : 9
+   dim(L meet standard) = 1, real = True, code-type (C+C) = False : 7
+   dim(L meet standard) = 2, real = True, code-type (C+C) = True : 3
+   => distance from the standard basis (4 - dim) of any basis in which H is monomial: min 2
+== C. reflections ==
+H4' = 2I - u u^T rows: [[1, -1, -1, 1], [-1, 1, -1, 1], [-1, -1, 1, 1], [1, 1, 1, 1]]  is Hadamard: True
+product of the 8 support-4 reflections == (H4' x H4')/4: True  rank of the 8 vectors: 7  rank(I - g): 6
+g == I - V S^-1 V^T (S = half-Gram, upper triangular): True  non-zeros: V 32, S 24
+Gram of the 8 vectors, distinct off-diagonal values: [-1, 0, 1]
+LIGHT label=d4-play1 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:32:01 cmd=python3 -B play1.py

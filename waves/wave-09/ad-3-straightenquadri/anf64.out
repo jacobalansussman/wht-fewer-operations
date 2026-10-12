@@ -1,0 +1,11 @@
+   pattern: y3 + y4 + y5 + y0y3 + y0y4 + y0y5 + y3y4 + y3y5 + y4y5 + y0y3y4 + y0y3y5 + y0y4y5 + y3y4y5 + y0y3y4y5
+exchange u=1 on the flat {y1=0, y2=0}  (16 points)
+   pattern: y0y3 + y0y4 + y0y5 + y1y3 + y1y4 + y1y5 + y2y3 + y2y4 + y2y5 + y0y3y4 + y0y3y5 + y0y4y5 + y1y2y3 + y1y2y4 + y1y2y5 + y1y3y4 + y1y3y5 + y1y4y5 + y2y3y4 + y2y3y5 + y2y4y5 + y0y3y4y5 + y1y2y3y4 + y1y2y3y5 + y1y2y4y5 + y1y3y4y5 + y2y3y4y5 + y1y2y3y4y5
+exchange u=9 on the flat {y1+y4=0, y2+y5=0}  (16 points)
+   pattern: 1 + y0 + y1 + y2 + y3 + y4 + y5 + y0y1 + y0y2 + y0y3 + y1y2 + y1y4 + y2y5 + y3y4 + y3y5 + y4y5 + y0y1y2 + y0y1y4 + y0y1y5 + y0y2y4 + y0y2y5 + y0y3y4 + y0y3y5 + y1y2y4 + y1y2y5 + y1y4y5 + y2y4y5 + y3y4y5 + y0y1y2y4 + y0y1y2y5 + y0y1y4y5 + y0y2y4y5 + y0y3y4y5 + y1y2y4y5 + y0y1y2y4y5
+exchange u=2 on the flat {y0=0, y3=0, y5=1}  (8 points)
+   pattern: 1 + y0 + y1 + y2 + y3 + y4 + y0y1 + y0y2 + y0y3 + y0y5 + y1y2 + y1y4 + y2y5 + y3y4 + y4y5 + y0y1y2 + y0y1y4 + y0y1y5 + y0y2y4 + y0y2y5 + y0y3y4 + y1y2y4 + y1y2y5 + y1y4y5 + y2y4y5 + y3y4y5 + y0y1y2y4 + y0y1y2y5 + y0y1y4y5 + y0y2y4y5 + y0y3y4y5 + y1y2y4y5 + y0y1y2y4y5
+exchange u=4 on the flat {y0=0, y3=0, y4=1, y5=0}  (4 points)
+   pattern: 1 + y0 + y1 + y2 + y3 + y0y1 + y0y2 + y0y3 + y0y4 + y0y5 + y1y2 + y1y4 + y2y5 + y0y1y2 + y0y1y4 + y0y1y5 + y0y2y4 + y0y2y5 + y0y4y5 + y1y2y4 + y1y2y5 + y1y4y5 + y2y4y5 + y0y1y2y4 + y0y1y2y5 + y0y1y4y5 + y0y2y4y5 + y1y2y4y5 + y0y1y2y4y5
+exchange u=8 on the flat {y0=0, y1=0, y2=0, y4=0, y5=0}  (2 points)
+   pattern: y3 + y4 + y5 + y0y3 + y1y5 + y2y4 + y4y5

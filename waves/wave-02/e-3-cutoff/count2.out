@@ -1,0 +1,7 @@
+  [ran] k=8 w=1: ball program equals H on the ball: True   M=9  additions 16 = 1.78 M   (M log2 M = 29)
+  [ran] k=8 w=2: ball program equals H on the ball: True   M=37  additions 128 = 3.46 M   (M log2 M = 193)
+  [ran] k=8 w=3: ball program equals H on the ball: True   M=93  additions 464 = 4.99 M   (M log2 M = 608)
+  [ran] k=6 window [0,2]: H*T*H nonzero entries 154, of which with |x union y| > d: 0 ; entry = (-1)^(|x|+|y|) * function of |x union y| only: True
+  [ran] k=6 window [1,3]: H*T*H nonzero entries 154, of which with |x union y| > d: 0 ; entry = (-1)^(|x|+|y|) * function of |x union y| only: True
+  [ran] k=6 window [1,4]: H*T*H nonzero entries 694, of which with |x union y| > d: 0 ; entry = (-1)^(|x|+|y|) * function of |x union y| only: True
+LIGHT label=e3-count2 exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:11:18 cmd=python3 -B waves/wave-02/e-3-cutoff/count2.py

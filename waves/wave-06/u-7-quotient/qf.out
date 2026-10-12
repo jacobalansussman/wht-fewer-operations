@@ -1,0 +1,6 @@
+F1. E8: pairs of lines 7140 ; pairs whose sum or difference is a root: 3360 ; times each line occurs as such a sum or difference: min 28 max 28
+     so 120 wires in 8 dimensions: 3360 differences fall on 120 values; in the transform circuits every difference is distinct
+F2. 256 points: |S| = 120 = (256 - 16)/2 ; neighbours of each point inside S: [56]
+     block M = ((-1)^B(s,t)) on S x S: M^2 + 8 M - 128 I = 0 exactly: True ; trace 120  => eigenvalue 8 with multiplicity 85, -16 with multiplicity 35
+     so M = 8 I - 24 P with P a projection of rank 35: a 120 x 120 block of the 256-point transform is a diagonal plus rank 35
+LIGHT label=u7-qf exit=0 time=1s waited=16s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:05:21 cmd=python3 -B u-7-quotient/qf.py

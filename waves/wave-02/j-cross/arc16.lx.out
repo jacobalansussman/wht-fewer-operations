@@ -1,0 +1,43 @@
+k=4  c = +++-++--+-+----  subfield exponents: multiples of 5
+  start  3 lost 1 | v = 0 0 -1 0 1 0 -1 1
+      support exponents [5, 7, 9, 10] | sums over rays (mod 5): ['0', '0', '1', '0', '-1'] | over circles (mod 3): ['-1', '2', '-1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 0 4 0 -4 0 4 -4 | at the origin: 0 | zeros: 12 of 16
+  start  4 lost 2 | v = 0 -1 0 1 0 -1 1 0
+      support exponents [5, 7, 9, 10] | sums over rays (mod 5): ['0', '0', '1', '0', '-1'] | over circles (mod 3): ['-1', '2', '-1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 0 4 0 -4 0 4 -4 | at the origin: 0 | zeros: 12 of 16
+  start  4 lost 2 | v = 0 -1 -1 1 1 -1 0 1
+      support exponents [5, 6, 7, 8, 9, 11] | sums over rays (mod 5): ['-1', '0', '1', '1', '-1'] | over circles (mod 3): ['-2', '1', '1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 4 4 -4 -4 4 0 -4 | at the origin: 0 | zeros: 10 of 16
+  start  5 lost 2 | v = -1 0 1 0 -1 1 0 0
+      support exponents [5, 7, 9, 10] | sums over rays (mod 5): ['0', '0', '1', '0', '-1'] | over circles (mod 3): ['-1', '2', '-1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 0 4 0 -4 0 4 -4 | at the origin: 0 | zeros: 12 of 16
+  start  5 lost 2 | v = -1 -1 1 1 -1 0 1 0
+      support exponents [5, 6, 7, 8, 9, 11] | sums over rays (mod 5): ['-1', '0', '1', '1', '-1'] | over circles (mod 3): ['-2', '1', '1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 4 4 -4 -4 4 0 -4 | at the origin: 0 | zeros: 10 of 16
+  start  6 lost 1 | v = -1 0 1 0 -1 1 0 0
+      support exponents [6, 8, 10, 11] | sums over rays (mod 5): ['-1', '0', '0', '1', '0'] | over circles (mod 3): ['-1', '-1', '2']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 4 0 -4 0 4 -4 0 | at the origin: 0 | zeros: 12 of 16
+  start 11 lost 1 | v = 1 0 0 0 0 1 1 1
+      support exponents [11, 1, 2, 3] | sums over rays (mod 5): ['0', '2', '1', '1', '0'] | over circles (mod 3): ['1', '1', '2']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 0 0 -4 -4 0 0 4 | at the origin: 4 | zeros: 12 of 16
+  start 12 lost 1 | v = 1 0 0 0 0 1 1 1
+      support exponents [12, 2, 3, 4] | sums over rays (mod 5): ['0', '0', '2', '1', '1'] | over circles (mod 3): ['2', '1', '1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 0 -4 -4 0 0 4 0 | at the origin: 4 | zeros: 12 of 16
+  start 13 lost 1 | v = 1 0 0 0 0 1 1 1
+      support exponents [13, 3, 4, 5] | sums over rays (mod 5): ['1', '0', '0', '2', '1'] | over circles (mod 3): ['1', '2', '1']
+      transform at exponents 0..14: 0 0 0 0 0 0 0 0 -4 -4 0 0 4 0 0 | at the origin: 4 | zeros: 12 of 16
+  singular starting points: 7 of 15
+k=6  c = +++++-++++--+++-+-++----+-+++---++-++-+--+---+--++--+-+-+------  subfield exponents: multiples of 9
+  start  1 lost 1 | v = 1 -1 0 0 0 0 -1 0 -1 -1 -1 0 -1 -1 -1 0 0 -1 0 -1 0 0 0 0 -1 0 0 0 0 0 1 1
+      support exponents [1, 2, 7, 9, 10, 11, 13, 14, 15, 18, 20, 25, 31, 32] | sums over rays (mod 9): ['-2', '0', '-3', '0', '0', '0', '-1', '-2', '0'] | over circles (mod 7): ['-2', '0', '-2', '0', '-2', '0', '-2']
+      transform at exponents 0..62: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 8 0 8 0 8 0 0 8 0 0 0 8 0 0 0 8 0 0 0 -8 0 -8 0 -8 -8 0 0 0 -8 -8 | at the origin: -8 | zeros: 50 of 64
+  start 23 lost 1 | v = 0 0 0 0 -1 0 0 1 0 0 -1 0 1 0 0 0 -1 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 1
+      support exponents [27, 30, 33, 35, 39, 40, 53, 54] | sums over rays (mod 9): ['0', '0', '0', '0', '1', '0', '-1', '0', '0'] | over circles (mod 7): ['1', '0', '1', '0', '-2', '1', '-1']
+      transform at exponents 0..62: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 0 -8 0 0 8 0 -8 0 0 0 8 -8 0 0 0 0 0 0 0 0 0 0 0 0 8 -8 | at the origin: 0 | zeros: 56 of 64
+  start 24 lost 2 | v = 0 0 0 -1 0 0 1 0 0 -1 0 1 0 0 0 -1 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 1 0
+      support exponents [27, 30, 33, 35, 39, 40, 53, 54] | sums over rays (mod 9): ['0', '0', '0', '0', '1', '0', '-1', '0', '0'] | over circles (mod 7): ['1', '0', '1', '0', '-2', '1', '-1']
+      transform at exponents 0..62: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 0 -8 0 0 8 0 -8 0 0 0 8 -8 0 0 0 0 0 0 0 0 0 0 0 0 8 -8 | at the origin: 0 | zeros: 56 of 64
+  start 24 lost 2 | v = 0 0 0 -1 -1 0 1 1 0 -1 -1 1 1 0 0 -1 0 1 0 0 0 0 0 0 0 0 0 0 0 -1 0 1
+      support exponents [27, 28, 30, 31, 33, 34, 35, 36, 39, 41, 53, 55] | sums over rays (mod 9): ['0', '0', '0', '0', '1', '1', '-1', '-1', '0'] | over circles (mod 7): ['0', '1', '1', '1', '-2', '-1', '0']
+      transform at exponents 0..62: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 8 0 -8 -8 0 8 8 -8 -8 0 0 8 0 -8 0 0 0 0 0 0 0 0 0 0 0 8 0 -8 | at the origin: 0 | zeros: 52 of 64
+  singular starting points: 27 of 63

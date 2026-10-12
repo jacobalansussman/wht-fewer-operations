@@ -1,0 +1,12 @@
+cross-ratio (e0,e1;r0,r1) with this convention, and the symmetries of the four points:
+tau=-1    cross-ratio=-1    symmetries= 8  of which neither keep nor swap inputs|outputs: 0
+tau=2     cross-ratio=1/2   symmetries= 8  of which neither keep nor swap inputs|outputs: 4
+       {'e0': 'e0', 'e1': 'r0', 'r0': 'e1', 'r1': 'r1'} matrix [['-1', '1'], ['0', '1']]
+       {'e0': 'e1', 'e1': 'r1', 'r0': 'e0', 'r1': 'r0'} matrix [['0', '1'], ['-2', '2']]
+tau=1/2   cross-ratio=2     symmetries= 8  of which neither keep nor swap inputs|outputs: 4
+       {'e0': 'e0', 'e1': 'r1', 'r0': 'r0', 'r1': 'e1'} matrix [['-1', '2'], ['0', '1']]
+       {'e0': 'e1', 'e1': 'r0', 'r0': 'r1', 'r1': 'e0'} matrix [['0', '1'], ['-1/2', '1']]
+tau=3     cross-ratio=1/3   symmetries= 4  of which neither keep nor swap inputs|outputs: 0
+tau=-2    cross-ratio=-1/2  symmetries= 4  of which neither keep nor swap inputs|outputs: 0
+tau=5/7   cross-ratio=7/5   symmetries= 4  of which neither keep nor swap inputs|outputs: 0
+tau=1/3   cross-ratio=3     symmetries= 4  of which neither keep nor swap inputs|outputs: 0

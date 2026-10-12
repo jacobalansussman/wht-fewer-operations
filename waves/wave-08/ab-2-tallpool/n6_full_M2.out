@@ -1,0 +1,7 @@
+# tallmin NN=6 m=2 pool(height<=2)=7442 candidates targets=32 group=46080 MLAST=1000 full=1 hcap=5
+# orbits=3  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:0 h=4:3 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=6 m=3 pool(height<=2)=7442 candidates targets=32 group=46080 MLAST=1000 full=1 hcap=5
+# orbits=5  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:0 h=4:3 h=5:2  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+LIGHT label=ab2-n6f exit=124 time=502s waited=0s peak_rss_mb=9 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>500s start=04:52:35 cmd=sh -c ./tallmin6 2 2 1000 1; ./tallmin6 3 2 1000 1; ./tallmin6 4 2 1000 1

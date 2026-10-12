@@ -1,0 +1,12 @@
+(0) coefficient of F on the shift by u is ((1+i)/2)^h (-i)^weight(u): True
+(1) orthonormal bases of the 4-bit addresses: 2 (coordinate basis included); product of their moves equals F for 2 of them
+    the bases: [('0001', '0010', '0100', '1000'), ('0111', '1011', '1101', '1110')]
+    all 840 bases of the addresses, each move taken forwards or backwards: the product equals F for 2 of them; all of those orthonormal: True
+(2) kernel a + b*shift with (a, b) = ((1 + 0 i), (2 + 0 i)): coordinate product = product along the weight-3 basis with kernel (unit*b, unit*a) for 0 of 16 choices of units
+(2) kernel a + b*shift with (a, b) = ((1 + 0 i), (1 + 1 i)): coordinate product = product along the weight-3 basis with kernel (unit*b, unit*a) for 0 of 16 choices of units
+(2) kernel a + b*shift with (a, b) = ((1 + 0 i), (0 + -1 i)): coordinate product = product along the weight-3 basis with kernel (unit*b, unit*a) for 4 of 16 choices of units
+(3) ports = the 8 odd words; for each an orthonormal basis of p-perp exists and F = (move along p) x (moves along that basis): True
+    F^-1 (sum_t c_t G_t X_t) = sum_t c_t (inverse move along p_t) X_t : True    [8 different port moves delivered by 4 moves on one array]
+    ports and bases: [('0001', ('0010', '0100', '1000')), ('0010', ('0001', '0100', '1000')), ('0100', ('0001', '0010', '1000')), ('0111', ('1011', '1101', '1110')), ('1000', ('0001', '0010', '0100')), ('1011', ('0111', '1101', '1110')), ('1101', ('0111', '1011', '1110')), ('1110', ('0111', '1011', '1101'))]
+(4) three shears = 3 calls (D^-1, D, D^-1): X ends as -D Y: True, Y ends as D^-1 X: True ; the same job with sealed boxes: 2 calls (D on Y, D^-1 on X)
+    D^-1 = D x shift_p (a free relabelling): True ; D^2 = shift_p: True

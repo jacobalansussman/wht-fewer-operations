@@ -1,0 +1,1 @@
+LIGHT label=x5-v8p5m5 exit=124 time=403s waited=0s peak_rss_mb=30 peak_footprint_mb=29 lowest_cap_mb=1500 stopped=time>400s start=03:40:06 cmd=../d-0-zeta/mincirc 5 8 5 rows_v8_p5.txt

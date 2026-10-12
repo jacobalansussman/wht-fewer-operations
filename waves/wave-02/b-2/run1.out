@@ -1,0 +1,33 @@
+=== 1. the two ingredients, exhaustively over all subsets T, N = 4 and 16 ===
+N=4 identity remainder (M = H): symmetric True, M^2 = N*I True, rank(H-S) = dim E_minus = 2
+   subsets violating  dim <= |T|^2/N : 0 of 16;  violating my sharper  dim <= dimE - s + s^2/N (s = N-|T|): 0
+   |T| : largest dim found / floor(|T|^2/N) / floor(sharper) : 0:0/0/0 1:0/0/0 2:1/1/1 3:1/2/1 4:2/4/2
+   middle of 2 numbers: slack r = 0; e-7's chain forces nnz(A) >= 4 (at t = 1 columns), sharper chain >= 4
+   EXACT sparsest basis of E_minus itself (3 minimal-support vectors examined): column weights [2, 3], total 5 = 5/4 per row on average, max per row 2
+N=4 best relabelling (M = H Q^T): symmetric True, M^2 = N*I True, rank(H-S) = dim E_minus = 1
+   subsets violating  dim <= |T|^2/N : 0 of 16;  violating my sharper  dim <= dimE - s + s^2/N (s = N-|T|): 0
+   |T| : largest dim found / floor(|T|^2/N) / floor(sharper) : 0:0/0/0 1:0/0/0 2:0/1/0 3:0/2/0 4:1/4/1
+   middle of 2 numbers: slack r = 1; e-7's chain forces nnz(A) >= 2 (at t = 2 columns), sharper chain >= 4
+   EXACT sparsest basis of E_minus itself (1 minimal-support vectors examined): column weights [4], total 4 = 1 per row on average, max per row 1
+N=16 identity remainder (M = H): symmetric True, M^2 = N*I True, rank(H-S) = dim E_minus = 8
+   subsets violating  dim <= |T|^2/N : 0 of 65536;  violating my sharper  dim <= dimE - s + s^2/N (s = N-|T|): 0
+   |T| : largest dim found / floor(|T|^2/N) / floor(sharper) : 0:0/0/0 1:0/0/0 2:0/0/0 3:0/0/0 4:1/1/1 5:1/1/1 6:2/2/2 7:2/3/3 8:3/4/4 9:3/5/4 10:4/6/4 11:4/7/4 12:5/9/5 13:5/10/5 14:6/12/6 15:7/14/7 16:8/16/8
+   middle of 8 numbers: slack r = 0; e-7's chain forces nnz(A) >= 32 (at t = 1 columns), sharper chain >= 32
+   EXACT sparsest basis of E_minus itself (1055 minimal-support vectors examined): column weights [4, 4, 4, 6, 6, 6, 6, 6], total 42 = 21/8 per row on average, max per row 8
+N=16 best relabelling (M = H Q^T): symmetric True, M^2 = N*I True, rank(H-S) = dim E_minus = 6
+   subsets violating  dim <= |T|^2/N : 0 of 65536;  violating my sharper  dim <= dimE - s + s^2/N (s = N-|T|): 0
+   |T| : largest dim found / floor(|T|^2/N) / floor(sharper) : 0:0/0/0 1:0/0/0 2:0/0/0 3:0/0/0 4:0/1/1 5:0/1/1 6:1/2/2 7:1/3/2 8:1/4/2 9:1/5/2 10:2/6/2 11:2/7/2 12:3/9/3 13:3/10/3 14:4/12/4 15:5/14/5 16:6/16/6
+   middle of 8 numbers: slack r = 2; e-7's chain forces nnz(A) >= 12 (at t = 4 columns), sharper chain >= 20
+   EXACT sparsest basis of E_minus itself (142 minimal-support vectors examined): column weights [6, 6, 6, 6, 6, 6], total 36 = 9/4 per row on average, max per row 4
+
+=== 2. the door, A-side only: a 3N/4-dimensional space V containing E_minus(H_N), spanned by sparse vectors ===
+sparsest bases: E_minus(4) [[0, -1, 1, 0], [-1, 2, 0, 1]]  E_plus(4) [[1, 0, 0, 1], [2, 1, 1, 0]] ; E_minus(16) column weights [4, 4, 4, 6, 6, 6, 6, 6]  E_plus(16) [4, 4, 4, 6, 6, 6, 6, 6]
+N=16 = 4 x 4: A has 12 columns (3N/4 = 12); K = E_plus(4) (x) E_plus(4) has 4 vectors, rank mod p >= 4; H k = sqrt(N) k exactly: True; A^T k = 0 exactly: True; rank(A) mod p >= 12
+   => col(A) = orthogonal complement of K, which contains E_minus(H_16).  nnz(A) = 30 = 1.875 per row on average, max per row 4, column weights from 2 to 3;  Lemma 4 allows 0.75 per row
+N=64 = 4 x 16: A has 48 columns (3N/4 = 48); K = E_plus(4) (x) E_plus(16) has 16 vectors, rank mod p >= 16; H k = sqrt(N) k exactly: True; A^T k = 0 exactly: True; rank(A) mod p >= 48
+   => col(A) = orthogonal complement of K, which contains E_minus(H_64).  nnz(A) = 164 = 2.562 per row on average, max per row 10, column weights from 2 to 6;  Lemma 4 allows 0.75 per row
+N=64 = 16 x 4: A has 48 columns (3N/4 = 48); K = E_plus(16) (x) E_plus(4) has 16 vectors, rank mod p >= 16; H k = sqrt(N) k exactly: True; A^T k = 0 exactly: True; rank(A) mod p >= 48
+   => col(A) = orthogonal complement of K, which contains E_minus(H_64).  nnz(A) = 208 = 3.250 per row on average, max per row 8, column weights from 2 to 6;  Lemma 4 allows 0.75 per row
+N=256 = 16 x 16: A has 192 columns (3N/4 = 192); K = E_plus(16) (x) E_plus(16) has 64 vectors, rank mod p >= 64; H k = sqrt(N) k exactly: True; A^T k = 0 exactly: True; rank(A) mod p >= 192
+   => col(A) = orthogonal complement of K, which contains E_minus(H_256).  nnz(A) = 1008 = 3.938 per row on average, max per row 13, column weights from 4 to 6;  Lemma 4 allows 0.75 per row
+LIGHT label=b-2-a exit=0 time=3s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:43:02 cmd=python3 -B b2.py big

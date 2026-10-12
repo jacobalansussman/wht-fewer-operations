@@ -1,0 +1,1 @@
+LIGHT label=p8p5 exit=0 time=48s waited=0s peak_rss_mb=200 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:45:56 cmd=sh -c ./dw 5 3 < in8_p5_nonsign.txt > out8_p5_nonsign.txt

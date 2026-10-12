@@ -1,0 +1,2 @@
+c19: 11 helpers; removed wire found among the candidates and restores the circuit: 11 of 11; candidates in all 955; other single wires that restore a circuit: 2, of which cheaper (tight in place of over-limit): 0
+c20: 12 helpers; removed wire found among the candidates and restores the circuit: 12 of 12; candidates in all 1452; other single wires that restore a circuit: 4, of which cheaper (tight in place of over-limit): 0

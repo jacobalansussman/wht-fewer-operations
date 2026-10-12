@@ -1,0 +1,17 @@
+T1 s = -1: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 7 gates, textbook 8
+T1 s = 0: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 5 gates, textbook 4
+T1 s = 2: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 7 gates, textbook 8
+T1 s = 3: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 7 gates, textbook 8
+T1 s = -5/7: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 7 gates, textbook 8
+T1 s = 1/2: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 7 gates, textbook 8
+T1 s = 7: square of the kernel = b b^T + (1-s) P, b = (1,1,1,s): True ; brick 7 gates, textbook 8
+T1 all exact: True
+T2 Z_16 = D(1,3/5) H D(1,-1/2) H D(1,1/3) H D(1,5/4) exactly: True
+T2 gates (G): 3 x 52 = 156 with the 52-gate 16-point transform of e2-0, 3 x 64 = 192 with the textbook; Yates 32
+T3 k=1: (R^k)^3 = 1 mod 2: True ; R^k is Z with a relabelling of inputs or outputs: True ; E = 1 + M + M^2 is an idempotent mod 2 of rank 0 of 2 = (N + 2(-1)^k)/3
+T3 k=2: (R^k)^3 = 1 mod 2: True ; R^k is Z with a relabelling of inputs or outputs: True ; E = 1 + M + M^2 is an idempotent mod 2 of rank 2 of 4 = (N + 2(-1)^k)/3
+T3 k=3: (R^k)^3 = 1 mod 2: True ; R^k is Z with a relabelling of inputs or outputs: True ; E = 1 + M + M^2 is an idempotent mod 2 of rank 2 of 8 = (N + 2(-1)^k)/3
+T3 k=4: (R^k)^3 = 1 mod 2: True ; R^k is Z with a relabelling of inputs or outputs: True ; E = 1 + M + M^2 is an idempotent mod 2 of rank 6 of 16 = (N + 2(-1)^k)/3
+T3 k=5: (R^k)^3 = 1 mod 2: True ; R^k is Z with a relabelling of inputs or outputs: True ; E = 1 + M + M^2 is an idempotent mod 2 of rank 10 of 32 = (N + 2(-1)^k)/3
+T4 two passes of the s = 0 brick at 16 points: 2 passes x 4 bricks x 5 gates = 40 gates (G); Yates 32; generic kernel 2 x 4 x 7 = 56 against 64
+LIGHT label=ab5-tests exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:58:28 cmd=python3 -B tests.py

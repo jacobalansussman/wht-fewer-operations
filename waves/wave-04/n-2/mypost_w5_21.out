@@ -1,0 +1,3 @@
+K = 21 ; vectors before symmetry: 6
+21 moves: 1 classes; clique-excluded 1, zero-form-excluded 0, survive 0; largest joined set histogram [(13, 1)]
+LIGHT label=n2-w5p21 exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:12:18 cmd=python3 -B mypost.py 21 w5_21.txt

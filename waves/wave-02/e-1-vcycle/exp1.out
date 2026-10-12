@@ -1,0 +1,17 @@
+== S (relabelled, minus space 6)  trace 16
+ sizes (2,) atoms 240 | minus vectors (distinct up to scale) 150 rank 6 | plus 240 rank 10 | non-zeros of minus vector: histogram {8: 120, 10: 120}
+ sizes (4,) atoms 560 | minus vectors (distinct up to scale) 46 rank 6 | plus 310 rank 10 | non-zeros of minus vector: histogram {0: 60, 6: 320, 8: 180}
+ sizes (8,) atoms 240 | minus vectors (distinct up to scale) 150 rank 6 | plus 240 rank 10 | non-zeros of minus vector: histogram {8: 120, 10: 120}
+ sizes (2, 8) atoms 480 | minus vectors (distinct up to scale) 150 rank 6 | plus 240 rank 10 | non-zeros of minus vector: histogram {8: 240, 10: 240}
+ sizes (2, 4, 8) atoms 1040 | minus vectors (distinct up to scale) 166 rank 6 | plus 550 rank 10 | non-zeros of minus vector: histogram {0: 60, 6: 320, 8: 420, 10: 240}
+ sizes (1, 16) atoms 32 | minus vectors (distinct up to scale) 16 rank 6 | plus 16 rank 10 | non-zeros of minus vector: histogram {16: 32}
+ sizes (1, 2, 4, 8, 16) atoms 1072 | minus vectors (distinct up to scale) 182 rank 6 | plus 566 rank 10 | non-zeros of minus vector: histogram {0: 60, 6: 320, 8: 420, 10: 240, 16: 32}
+== H (plain, minus space 8)  trace 0
+ sizes (2,) atoms 240 | minus vectors (distinct up to scale) 225 rank 8 | plus 225 rank 8 | non-zeros of minus vector: histogram {8: 56, 9: 128, 10: 56}
+ sizes (4,) atoms 560 | minus vectors (distinct up to scale) 206 rank 8 | plus 206 rank 8 | non-zeros of minus vector: histogram {0: 6, 4: 54, 6: 208, 7: 160, 8: 132}
+ sizes (8,) atoms 240 | minus vectors (distinct up to scale) 225 rank 8 | plus 225 rank 8 | non-zeros of minus vector: histogram {8: 56, 9: 128, 10: 56}
+ sizes (2, 8) atoms 480 | minus vectors (distinct up to scale) 225 rank 8 | plus 225 rank 8 | non-zeros of minus vector: histogram {8: 112, 9: 256, 10: 112}
+ sizes (2, 4, 8) atoms 1040 | minus vectors (distinct up to scale) 418 rank 8 | plus 418 rank 8 | non-zeros of minus vector: histogram {0: 6, 4: 54, 6: 208, 7: 160, 8: 244, 9: 256, 10: 112}
+ sizes (1, 16) atoms 32 | minus vectors (distinct up to scale) 16 rank 8 | plus 16 rank 8 | non-zeros of minus vector: histogram {16: 32}
+ sizes (1, 2, 4, 8, 16) atoms 1072 | minus vectors (distinct up to scale) 434 rank 8 | plus 434 rank 8 | non-zeros of minus vector: histogram {0: 6, 4: 54, 6: 208, 7: 160, 8: 244, 9: 256, 10: 112, 16: 32}
+LIGHT label=e1-exp1 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:53:21 cmd=python3 -B exp1.py

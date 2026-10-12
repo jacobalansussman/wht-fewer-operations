@@ -1,0 +1,8 @@
+k 3 N 8 low inputs 4 | high block = transposed low-low block, relabelled: True | low block spans exactly the characters of weight <= k/2: True
+k 5 N 32 low inputs 16 | high block = transposed low-low block, relabelled: True | low block spans exactly the characters of weight <= k/2: True
+k 7 N 128 low inputs 64 | high block = transposed low-low block, relabelled: True | low block spans exactly the characters of weight <= k/2: True
+affine code, k 3 : systematic encoder correct: True gates 6 (N - 2); floor N - (k+1) = 4
+affine code, k 4 : systematic encoder correct: True gates 14 (N - 2); floor N - (k+1) = 11
+affine code, k 5 : systematic encoder correct: True gates 30 (N - 2); floor N - (k+1) = 26
+affine code, k 6 : systematic encoder correct: True gates 62 (N - 2); floor N - (k+1) = 57
+LIGHT label=ae-h3b exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:27:41 cmd=python3 -B h3_rm.py

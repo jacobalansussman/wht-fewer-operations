@@ -1,0 +1,16 @@
+trace-one mask at 16 points: [3, 6, 7, 9, 11, 12, 13, 14]
+36 of 36 pairs (f1, f2) pass the absolute-value test with exponents in -2..2
+EXACT on the mixed piece:  mask = (-1) * t^0 * (+1*t^0 +1*t^1 +1*t^4) * (+1*t^0 +1*t^2 +1*t^8) * prod(1 - t^a)^e,  numerators [] denominators []   [0 two-term letters]
+EXACT on the mixed piece:  mask = (-1) * t^10 * (+1*t^0 -1*t^1 -1*t^4) * (+1*t^0 -1*t^1 -1*t^4) * prod(1 - t^a)^e,  numerators [] denominators []   [0 two-term letters]
+EXACT on the mixed piece:  mask = (1) * t^0 * (+1*t^0 -1*t^1 -1*t^4) * (+1*t^0 -1*t^2 -1*t^8) * prod(1 - t^a)^e,  numerators [] denominators []   [0 two-term letters]
+EXACT on the mixed piece:  mask = (-1) * t^5 * (+1*t^0 -1*t^2 -1*t^8) * (+1*t^0 -1*t^2 -1*t^8) * prod(1 - t^a)^e,  numerators [] denominators []   [0 two-term letters]
+EXACT on the mixed piece:  mask = (1) * t^13 * (+1*t^0 +1*t^1 +1*t^4) * (+1*t^0 +1*t^1 -1*t^4) * prod(1 - t^a)^e,  numerators [(1, 1)] denominators []   [1 two-term letters]
+EXACT on the mixed piece:  mask = (1) * t^7 * (+1*t^0 +1*t^1 +1*t^4) * (+1*t^0 -1*t^1 +1*t^4) * prod(1 - t^a)^e,  numerators [(4, 1)] denominators []   [1 two-term letters]
+EXACT on the mixed piece:  mask = (1) * t^13 * (+1*t^0 +1*t^1 -1*t^4) * (+1*t^0 -1*t^1 -1*t^4) * prod(1 - t^a)^e,  numerators [] denominators [(4, 1)]   [1 two-term letters]
+EXACT on the mixed piece:  mask = (-1) * t^3 * (+1*t^0 +1*t^1 -1*t^4) * (+1*t^0 -1*t^2 -1*t^8) * prod(1 - t^a)^e,  numerators [] denominators [(4, 1)]   [1 two-term letters]
+EXACT on the mixed piece:  mask = (1) * t^7 * (+1*t^0 -1*t^1 +1*t^4) * (+1*t^0 -1*t^1 -1*t^4) * prod(1 - t^a)^e,  numerators [] denominators [(1, 1)]   [1 two-term letters]
+EXACT on the mixed piece:  mask = (-1) * t^12 * (+1*t^0 -1*t^1 +1*t^4) * (+1*t^0 -1*t^2 -1*t^8) * prod(1 - t^a)^e,  numerators [] denominators [(1, 1)]   [1 two-term letters]
+EXACT on the mixed piece:  mask = (1) * t^13 * (+1*t^0 -1*t^1 -1*t^4) * (+1*t^0 +1*t^2 -1*t^8) * prod(1 - t^a)^e,  numerators [] denominators [(7, 1)]   [1 two-term letters]
+EXACT on the mixed piece:  mask = (-1) * t^9 * (+1*t^0 -1*t^1 -1*t^4) * (+1*t^0 -1*t^2 +1*t^8) * prod(1 - t^a)^e,  numerators [] denominators [(2, 1)]   [1 two-term letters]
+exact identities found: 36 (of 36 candidates)
+LIGHT label=e0-unit16 exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:00:34 cmd=python3 -B unit16.py

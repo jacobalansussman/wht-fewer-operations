@@ -1,0 +1,5 @@
+16 moves: 1 count vectors pass counting (up to the 720 maps); excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+17 moves: 3 count vectors pass counting (up to the 720 maps); excluded by the clique lemma 3, by the zero-form lemma 0, SURVIVE 0
+18 moves: 12 count vectors pass counting (up to the 720 maps); excluded by the clique lemma 12, by the zero-form lemma 0, SURVIVE 0
+19 moves: 52 count vectors pass counting (up to the 720 maps); excluded by the clique lemma 51, by the zero-form lemma 1, SURVIVE 0
+     ZERO: 00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:2 11010:2 11100:2 11111:1   [tight selections 27, largest joined set 4, odd-weight directions used 16 of 16]  form with q(I)=0 selecting 5 moves contains a joined set of 3: ['10101', '10110', '11100', '11111']

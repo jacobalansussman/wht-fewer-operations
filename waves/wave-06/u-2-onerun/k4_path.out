@@ -1,0 +1,6 @@
+k=4 path, last output of size 0: nodes 73234, solutions found 0 (cap 1000000000)
+k=4 path, last output of size 1: nodes 62723, solutions found 0 (cap 1000000000)
+k=4 path, last output of size 2: nodes 22811, solutions found 0 (cap 1000000000)
+k=4 path, last output of size 3: nodes 31019, solutions found 0 (cap 1000000000)
+k=4 path, last output of size 4: nodes 149098, solutions found 0 (cap 1000000000)
+total nodes 338885, consecutive-ones tests 634248, cut by the three-set lemma first 456224

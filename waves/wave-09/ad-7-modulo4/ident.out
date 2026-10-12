@@ -1,0 +1,5 @@
+k=2: (a) True  (b) True  (c) True
+k=3: (a) True  (b) True  (c) True
+k=4: (a) True  (b) True  (c) True
+k=5: (a) True  (b) True  (c) True
+LIGHT label=ad7-ident exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:52:07 cmd=python3 -B ident.py

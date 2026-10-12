@@ -1,0 +1,17 @@
+closed form to first order in s/m^z : d/s = m^e/(1-e) - 1   (e = saving, s = blocks of rank 1 per array, d = moves saved per array)
+  saving 0.01 : moves to save per extra block, m = 4, 9, 45, 110, 1000 : 0.024  0.033  0.049  0.059  0.082
+  saving 0.05 : moves to save per extra block, m = 4, 9, 45, 110, 1000 : 0.128  0.175  0.273  0.332  0.487
+  saving 0.10 : moves to save per extra block, m = 4, 9, 45, 110, 1000 : 0.276  0.384  0.626  0.778  1.217
+  saving 0.20 : moves to save per extra block, m = 4, 9, 45, 110, 1000 : 0.649  0.940  1.676  2.200  3.976
+  saving 0.50 : moves to save per extra block, m = 4, 9, 45, 110, 1000 : 3.000  5.000  12.416  19.976  62.246
+exact d needed for saving 0.1 at m = 45 with s single blocks:
+  s=1: 0.623  s=2: 1.240  s=3: 1.850  s=5: 3.052  s=8: 4.802  s=12: 7.027  s=15: 8.600
+ab-1's table (s = 1, saving 0.1): m=4: 0.254  m=9: 0.373  m=45: 0.623  m=110: 0.776
+the published unit as ab-1 and x-6 quote it (d = 0.095 moves per array, 16.5 blocks per array, m = 45) IF its blocks were one big block and 15.5 singles:
+  d/s = 0.0061 ; saving by the law for that shape 1.326e-03 ; first-order formula d/(s (ln m + 1)) = 1.275e-03 ; published 8.7625e-4
+the same d = 0.095 in fewer blocks: s=1: 0.0189  s=2: 0.0097  s=4: 0.0049  s=8: 0.0025  s=15.5: 0.0013
+linear size in this law: z -> 0 needs sum of (rank/m)^0 = number of blocks = 1, i.e. one block per array of rank < m; with 2 blocks z > 0 always:
+  two equal blocks, share skipped 0.50 : z = 1.0000
+  two equal blocks, share skipped 0.90 : z = 0.3010
+  two equal blocks, share skipped 0.99 : z = 0.1505
+LIGHT label=aacross-h3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:04:08 cmd=python3 -B h3_rate.py

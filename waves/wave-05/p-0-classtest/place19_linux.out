@@ -1,0 +1,9 @@
+P = 1000000093
+tau = 3      : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (82 s)
+tau = 2      : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (107 s)
+tau = 1/2    : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (121 s)
+tau = w6     : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (104 s)
+tau = i      : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (255 s)
+tau = w3     : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (113 s)
+tau = -2     : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (106 s)
+tau = 5/7    : placements passing the necessary conditions   3264 ; passing the FULL test modulo P    288   (106 s)

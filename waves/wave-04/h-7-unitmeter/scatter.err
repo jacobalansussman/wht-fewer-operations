@@ -1,0 +1,1 @@
+LIGHT label=h7-scatter exit=0 time=8s waited=0s peak_rss_mb=18 peak_footprint_mb=13 lowest_cap_mb=1500 stopped=- start=23:45:28 cmd=python3 -I -B scatter.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-e8-r783.json.gz

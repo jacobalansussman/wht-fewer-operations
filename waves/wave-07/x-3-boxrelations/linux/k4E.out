@@ -1,0 +1,2 @@
+K=4 perm      part=full  (dim 16) r=7: unknowns 1488, boxes 20, starts 1, best rms residual 9.47e-04, hits (also right on 10 fresh boxes) 0, 111 s
+K=4 perm      part=full  (dim 16) r=6: unknowns 1264, boxes 17, starts 1, best rms residual 6.43e-02, hits (also right on 10 fresh boxes) 0, 150 s

@@ -1,0 +1,14 @@
+k=3, hubs of degree <= 2: (codimension of the flipped flat, number of targets served by one hub): number of (hub, target class) pairs
+    ('none', 0) 8
+    (2, 4) 56
+k=3, hubs of degree <= 3: (codimension of the flipped flat, number of targets served by one hub): number of (hub, target class) pairs
+    ('none', 0) 8
+    (2, 4) 56
+    (3, 1) 64
+k=4, hubs of degree <= 2: (codimension of the flipped flat, number of targets served by one hub): number of (hub, target class) pairs
+    ('none', 0) 232
+    (2, 4) 280
+k=4, hubs of degree <= 3: (codimension of the flipped flat, number of targets served by one hub): number of (hub, target class) pairs
+    ('none', 0) 6952
+    (2, 4) 280
+    (3, 1) 960

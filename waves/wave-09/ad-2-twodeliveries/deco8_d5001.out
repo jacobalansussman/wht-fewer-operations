@@ -1,0 +1,8 @@
+n = 8 (cut of 16 points), source z8_sets.txt: derivations (C'', one per way of deriving each wire) = 5001
+wires by rank of their slot transfers (longest bus without an idle injection) -> count: {1: 10, 2: 8, 3: 2}
+structures with n independent classes and a wire with >= 3 classes : 29316
+(tree, delivery set) pairs that pass the census filter : 26100
+least pure gates over these structures -> count (the lower half alone costs 12; a saving needs <= 11): {'no delivery set passes the census filter: pure >= 12': 21232, 14: 3906, 15: 3623, 16: 536, 17: 19}
+one best structure: pure gates 14 ; injected wires ["x'0+x'4", "x'2+x'3", "x'1+x'4", "x'0", "x'1+x'5", "x'2+x'3+x'6+x'7", "x'1+x'3", "x'2+x'6"] ; deliveries used ["x'0+x'1+x'2+x'3"]
+   C'' = [('11000000', '10000000', '01000000'), ('11100000', '00100000', '11000000'), ('11110000', '00010000', '11100000'), ('11001000', '00001000', '11000000'), ('11001100', '00000100', '11001000'), ('11011100', '00010000', '11001100'), ('00100010', '00100000', '00000010'), ('11111110', '11011100', '00100010'), ('11111111', '00000001', '11111110'), ('10100000', '01000000', '11100000'), ('10001000', '01000000', '11001000'), ('10101010', '10001000', '00100010')]
+   classes (wire, slots, tau) and forced offsets: [('11000000', (0,), '00110000', "x'0+x'1+x'2+x'3"), ('11000000', (1,), '00001111', "x'0+x'4"), ('11000000', (2,), '01000000', "x'0+x'1"), ('10000000', (1,), '10000000', "x'0"), ('00000100', (0,), '00000101', "x'1+x'5"), ('11111111', (0,), '00000001', "x'2+x'3+x'6+x'7"), ('10100000', (0,), '00100000', "x'1+x'3"), ('10101010', (0,), '00000010', "x'2+x'6")]

@@ -1,0 +1,25 @@
+# 8-point Walsh-Hadamard transform, scaled by 1/2, in 20 operations, every operation charged:
+# every line is ONE operation of OpenAI's circuit model:  t = u + v ,  t = u - v ,  or  t = c * u .
+# It is the 19-gate circuit h8_19gates.txt (which counts a*u + b*v as one operation) with its centre g7 halved once:
+# every later line "w -/+ 2*p" of that circuit becomes "w/2 -/+ p".  19 additions or subtractions, 1 halving.
+# inputs x0..x7 ; the wire z<j> holds (1/2) * sum over l of (-1)^(number of common 1-bits of j and l) * x_l .
+g1  = x0 + x7
+g2  = x1 + x6
+g3  = x2 - x5
+g4  = x3 - x4
+g5  = g1 - g2
+g6  = g3 + g4
+g7  = g5 - g6
+h   = 1/2 * g7
+a8  = h - x7
+a9  = h - x5
+a10 = a8 + x6
+a11 = a9 - x4
+z7  = a10 + g4
+z3  = a9 + x3
+z5  = g5 - z3
+z1  = a10 + g3
+z6  = a11 + g2
+z2  = a8 + x1
+z4  = z2 + g6
+z0  = g1 - a11

@@ -1,0 +1,4 @@
+p=7 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=4  => gate budget 11
+visited states by remaining budget: j=4:1 j=3:285 j=2:55539 j=1:21899892
+RESULT p=7: NO circuit with 11 gates (exhaustive over GF(7))
+LIGHT label=d0-z8p7 exit=0 time=366s waited=0s peak_rss_mb=88 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=21:26:17 cmd=sh -c ./mincirc 7 8 4 < rows_zeta3.txt

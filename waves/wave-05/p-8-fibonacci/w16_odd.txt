@@ -1,0 +1,31 @@
+22
+  edge 43521 -- 43520  node 1
+  edge 43585 -- 43521  node 64
+  edge 43589 -- 43585  node 4
+  edge 43605 -- 43589  node 16
+  edge 21845 -- 43605  node 65280
+  terminal #0 at 21845
+  terminal #4 at 43605
+  edge 43593 -- 43585  node 8
+  edge 43625 -- 43593  node 32
+  edge 27241 -- 43625  node 49152
+  edge 26985 -- 27241  node 768
+  terminal #3 at 26985
+  edge 39529 -- 43625  node 12288
+  edge 38505 -- 39529  node 3072
+  terminal #7 at 38505
+  edge 43649 -- 43521  node 128
+  edge 43657 -- 43649  node 8
+  edge 43673 -- 43657  node 16
+  edge 39577 -- 43673  node 12288
+  edge 39321 -- 39577  node 768
+  terminal #1 at 39321
+  edge 27289 -- 43673  node 49152
+  edge 26265 -- 27289  node 3072
+  terminal #5 at 26265
+  edge 43653 -- 43649  node 4
+  edge 43685 -- 43653  node 32
+  edge 42405 -- 43685  node 3840
+  terminal #2 at 42405
+  edge 23205 -- 43685  node 61440
+  terminal #6 at 23205

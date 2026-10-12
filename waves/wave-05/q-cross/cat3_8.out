@@ -1,0 +1,9 @@
+N=8 seed=0 best nnz=13 gates=19
+N=8 seed=1 best nnz=13 gates=19
+N=8 seed=2 best nnz=13 gates=19
+N=8 seed=3 best nnz=13 gates=19
+N=8 seed=4 best nnz=13 gates=19
+BEST 8 nnz 13 gates 19 textbook 24 values {-1: 6, 1: 7}
+rows [5, 4, 6, 2, 3, 1, 0, 7] r [-1, -1, -1, -1, -1, -1, -1, -1]
+cols [4, 6, 2, 3, 1, 5, 7, 0] c [-1, -1, -1, -1, -1, -1, -1, -1]
+replay exact: True

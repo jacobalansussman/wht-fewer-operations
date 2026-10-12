@@ -1,0 +1,14 @@
+(1) degree 2 on N points in a row
+  N=    4:     5 gates (G) ; all N values exact: True ; finite differences 6 ; largest coefficient used 3
+  N=    8:     9 gates (G) ; all N values exact: True ; finite differences 14 ; largest coefficient used 7
+  N=   16:    17 gates (G) ; all N values exact: True ; finite differences 30 ; largest coefficient used 15
+  N=   64:    65 gates (G) ; all N values exact: True ; finite differences 126 ; largest coefficient used 63
+  N=  256:   257 gates (G) ; all N values exact: True ; finite differences 510 ; largest coefficient used 255
+  N= 1024:  1025 gates (G) ; all N values exact: True ; finite differences 2046 ; largest coefficient used 1023
+  N= 4096:  4097 gates (G) ; all N values exact: True ; finite differences 8190 ; largest coefficient used 4095
+(2) the cube: helper directions of all pairs
+  k=2: 6 pairs, 6 different helper directions, pairs sharing one: 0
+  k=3: 28 pairs, 28 different helper directions, pairs sharing one: 0
+  k=4: 120 pairs, 120 different helper directions, pairs sharing one: 0
+  k=5: 496 pairs, 496 different helper directions, pairs sharing one: 0
+LIGHT label=x1-conic exit=0 time=1s waited=90s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:42:04 cmd=python3 -B conic.py

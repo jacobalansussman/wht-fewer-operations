@@ -1,0 +1,3 @@
+p=2 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=1  => gate budget 8
+visited states by remaining budget: j=1:1
+RESULT p=2: NO circuit with 8 gates (exhaustive over GF(2))

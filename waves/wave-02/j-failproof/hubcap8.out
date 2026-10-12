@@ -1,0 +1,4 @@
+trees tried 125  histogram of outputs gained by one extra helper: [(0, 140607), (1, 546), (2, 51)]
+gain 2 example: tree sets [[0, 3, 4, 7], [0, 7], [1, 2, 5, 6], [1, 5, 6], [1, 6], [3, 4]]
+    helper (1, -1, 1, 1, 1, 1, -1, 1) from ((0, 1, 0, 0, 0, 0, 1, 0), (1, 1, 1, 1, 1, 1, 1, 1)) outputs held after [0, 3, 5, 6]
+LIGHT label=jf-hub2 exit=0 time=86s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=22:09:35 cmd=python3 -B hubcap8.py

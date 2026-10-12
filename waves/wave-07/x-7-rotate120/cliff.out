@@ -1,0 +1,24 @@
+N=4: bit matrix of R has order 3, no fixed label; D inverts it; j(D)=0 j(H)=2 j(D R^2)=2
+N=16: bit matrix of R has order 3, no fixed label; D inverts it; j(D)=0 j(H)=4 j(D R^2)=4
+16-point bit matrices = two copies of the 4-point ones (same layout): True
+N=4: maps commuting with R found: 18  (the unitary group of dimension 2 over the field of 4 elements has 18)
+  stabilizer mirrors (as bit matrices): 12 ; of these conjugate to D: 3
+  triples (j of S, S R, S R^2) sorted : count ; each mirror is N/2^j copies of the 2^j-point transform up to free maps
+   (0, 2, 2) : 12   least pair sum 2 (k = 2)   textbook price of the best pair = N * 2
+  pairs violating j1 + j2 >= k : 0
+N=16: maps commuting with R found: 77760  (the unitary group of dimension 4 over the field of 4 elements has 77760)
+  stabilizer mirrors (as bit matrices): 1728 ; of these conjugate to D: 108
+  triples (j of S, S R, S R^2) sorted : count ; each mirror is N/2^j copies of the 2^j-point transform up to free maps
+   (0, 4, 4) : 228   least pair sum 4 (k = 4)   textbook price of the best pair = N * 4
+   (2, 2, 4) : 960   least pair sum 4 (k = 4)   textbook price of the best pair = N * 4
+   (2, 4, 4) : 540   least pair sum 6 (k = 4)   textbook price of the best pair = N * 6
+  pairs violating j1 + j2 >= k : 0
+N=64: 40000 random conjugates of D by maps commuting with R (28708 distinct)
+  triples (j of S, S R, S R^2) sorted : count ; each mirror is N/2^j copies of the 2^j-point transform up to free maps
+   (0, 6, 6) : 462   least pair sum 6 (k = 6)   textbook price of the best pair = N * 6
+   (2, 4, 6) : 16415   least pair sum 6 (k = 6)   textbook price of the best pair = N * 6
+   (2, 6, 6) : 5676   least pair sum 8 (k = 6)   textbook price of the best pair = N * 8
+   (4, 4, 4) : 3287   least pair sum 8 (k = 6)   textbook price of the best pair = N * 8
+   (6, 6, 6) : 2868   least pair sum 12 (k = 6)   textbook price of the best pair = N * 12
+  pairs violating j1 + j2 >= k : 0
+LIGHT label=x7-cliff exit=0 time=27s waited=86s peak_rss_mb=34 peak_footprint_mb=30 lowest_cap_mb=1500 stopped=- start=03:37:14 cmd=python3 -B cliff.py 40000

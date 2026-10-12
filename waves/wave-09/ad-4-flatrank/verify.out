@@ -1,0 +1,23 @@
+A. 16 points
+   g = 1 - 2 [z1 z2 = 11] - 2 [z3 z4 = 11] + 4 [z = 1111] : True  (4 unsigned flats: whole space, two planes, one point)
+   totally singular planes: 6 ; spreads (3 planes, pairwise meeting in 0): 2 ; g = -1 + 2 (3 planes) - 4 [z = 0] : True  (5 unsigned flats)
+B. 16 points doubled = 256 points plain: orthogonal spread from a Kerdock set
+   alternating 4 x 4 matrices: 64, invertible: 28 ; Kerdock set found (pairwise differences invertible, with 0): 8 matrices
+   H_16(x, y) = -1 + 2 [x = 0] + 2 sum_S [y = S x] - 16 [x = y = 0] on all 256 entries: True  (11 flats of the doubled space: the whole space, 9 subspaces of 4 bits, 1 point)
+   price of this sum, pieces computed separately and added at the outputs: 136 gates (G) at 16 points  [textbook 64, tonight's best 52]; in general N - 1 + (N - 1) N / 2 + 1
+   flats: 4 at 4 points (5 rectangles), at most 8 at 8 points (13 rectangles), at most 11 at 16 points (49 rectangles)
+C/D. replay of ls4_r4.out
+   r=4 K=4 exact: coefficients 4 -2 -1 1 ; dimensions [0, 2, 3, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 2 flats still meet the 4-point restriction
+   r=4 K=4 exact: coefficients 1 -1 1 2 ; dimensions [2, 2, 3, 1] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 2 flats still meet the 4-point restriction
+   r=4 K=4 exact: coefficients -2 1 4 1 ; dimensions [2, 3, 0, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 2 flats still meet the 4-point restriction
+   r=4 K=4 exact: coefficients 2 1 1 1 ; dimensions [1, 2, 3, 2] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 2 flats still meet the 4-point restriction
+   r=4 K=4 exact: coefficients 1 1 -1 1 ; dimensions [2, 2, 2, 2] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 2 flats still meet the 4-point restriction
+   r=4 K=4 exact: coefficients -1 1 1 1 ; dimensions [2, 2, 2, 2] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 2 flats still meet the 4-point restriction
+C/D. replay of ls6_r8_ctl.out
+   r=8 K=6 exact: coefficients 1 1 -1 1 -1 1 1 1 ; dimensions [3, 3, 3, 3, 3, 3, 3, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 5 flats still meet the 16-point restriction
+   r=8 K=6 exact: coefficients 1 1 1 1 1 1 1 -1 ; dimensions [3, 3, 3, 3, 3, 3, 3, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 5 flats still meet the 16-point restriction
+   r=8 K=6 exact: coefficients 1 1 2 1 1 1 1 1 ; dimensions [3, 3, 2, 4, 3, 3, 3, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 5 flats still meet the 16-point restriction
+   r=8 K=6 exact: coefficients 1 2 1 -1 1 -1 -1 1 ; dimensions [3, 2, 3, 3, 3, 3, 4, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 4 flats still meet the 16-point restriction
+   r=8 K=6 exact: coefficients 1 1 1 -1 -1 1 1 1 ; dimensions [3, 3, 3, 3, 3, 3, 3, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 6 flats still meet the 16-point restriction
+   r=8 K=6 exact: coefficients 1 1 -1 1 1 1 1 1 ; dimensions [3, 3, 3, 3, 3, 3, 3, 3] ; primal pair-kill True, dual pair-kill True, all cosets of one Lagrangian False ; after one primal kill 6 flats still meet the 16-point restriction
+LIGHT label=ad4-verify exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:38:22 cmd=python3 -B verify.py ls4_r4.out ls6_r8_ctl.out

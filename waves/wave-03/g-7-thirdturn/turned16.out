@@ -1,0 +1,6 @@
+support size 1: forms in the turned part: 0 ; (size, non-zeros of the other two members) -> count, example
+support size 2: forms in the turned part: 15 ; (size, non-zeros of the other two members) -> count, example
+     (2, 8, 8) 15 ((5, 7), ['1', '1'])
+support size 3: forms in the turned part: 0 ; (size, non-zeros of the other two members) -> count, example
+support size 4: forms in the turned part: 15 ; (size, non-zeros of the other two members) -> count, example
+     (4, 10, 10) 15 ((0, 1, 4, 15), ['-1', '1', '1', '1'])

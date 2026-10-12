@@ -1,0 +1,4 @@
+control: 16 points, r=2, tensor arrangement (exists, exact): hits 1 of 12 single starts ; errors 1e+00 2e+00 1e+00 1e+00 2e+00 1e-16 1e+00 1e+00 1e+00 2e+00 1e+00 1e+00
+control: 16 points, r=1 (derived: impossible): hits 0 of 6 ; errors 2e+00 1e+00 2e+00 2e+00 2e+00 2e+00
+control: 8 points, r=3, one pair then one bit twice (exists by derivation): hits 0 of 12 single starts ; errors 3e-06 1e+00 1e+00 1e+00 1e+00 1e+00 1e+00 1e+00 1e+00 1e+00 1e+00 1e+00
+8 points, r=2: 50 solves over 3528 configurations (round 1), hits 0 in 0 distinct configurations ; smallest miss 1.000e+00, median miss 1.241e+00

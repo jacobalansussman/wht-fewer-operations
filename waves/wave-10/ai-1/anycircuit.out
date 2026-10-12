@@ -1,0 +1,13 @@
+k=3 d=2 delta=8: 400 random circuits, gates 11 to 21; outputs of kind a / b: 1516 / 1284; two outputs added: 0; repeated label or edge: 0; shortest cycle: 6 (claim: at least 6)
+k=4 d=2 delta=8: 300 random circuits, gates 37 to 73; outputs of kind a / b: 1769 / 2731; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 6)
+k=4 d=3 delta=16: 300 random circuits, gates 52 to 97; outputs of kind a / b: 1589 / 2911; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 14)
+k=5 d=2 delta=8: 120 random circuits, gates 118 to 209; outputs of kind a / b: 1080 / 2640; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 6)
+k=5 d=3 delta=16: 120 random circuits, gates 196 to 312; outputs of kind a / b: 887 / 2833; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 14)
+k=5 d=4 delta=32: 120 random circuits, gates 228 to 367; outputs of kind a / b: 878 / 2842; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 30)
+k=6 d=2 delta=8: 40 random circuits, gates 424 to 544; outputs of kind a / b: 547 / 1973; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 6)
+k=6 d=3 delta=16: 40 random circuits, gates 701 to 931; outputs of kind a / b: 444 / 2076; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 14)
+k=6 d=4 delta=32: 40 random circuits, gates 799 to 1156; outputs of kind a / b: 355 / 2165; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 30)
+k=6 d=5 delta=64: 40 random circuits, gates 864 to 1284; outputs of kind a / b: 367 / 2153; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 62)
+k=7 d=3 delta=16: 10 random circuits, gates 2316 to 2748; outputs of kind a / b: 135 / 1135; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 14)
+k=7 d=5 delta=64: 10 random circuits, gates 3460 to 4430; outputs of kind a / b: 130 / 1140; two outputs added: 0; repeated label or edge: 0; shortest cycle: none (claim: at least 62)
+LIGHT label=ai1-any exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:37:17 cmd=python3 -B anycircuit.py 7

@@ -1,0 +1,20 @@
+e2-0 family : N=4, 7 gates ; outputs found (rows of H up to sign): 4 of 4 ; wires not primitive: 0 ; gates with a division by 2: 0
+     gates by the powers of 2 in their two coefficients (0 = odd): (2^0, 2^0) x3, (2^0, 2^1) x4
+     gates left modulo 2, 4, 8, ... : 3 7 7 7
+e2-0 family : N=8, 20 gates ; outputs found (rows of H up to sign): 8 of 8 ; wires not primitive: 0 ; gates with a division by 2: 0
+     gates by the powers of 2 in their two coefficients (0 = odd): (2^0, 2^0) x8, (2^0, 2^1) x12
+     gates left modulo 2, 4, 8, ... : 7 20 20 20 20
+e2-0 family : N=16, 52 gates ; outputs found (rows of H up to sign): 16 of 16 ; wires not primitive: 0 ; gates with a division by 2: 0
+     gates by the powers of 2 in their two coefficients (0 = odd): (2^0, 2^0) x20, (2^0, 2^1) x32
+     gates left modulo 2, 4, 8, ... : 15 52 52 52 52 52
+e2-0 family : N=32, 128 gates ; outputs found (rows of H up to sign): 32 of 32 ; wires not primitive: 0 ; gates with a division by 2: 0
+     gates by the powers of 2 in their two coefficients (0 = odd): (2^0, 2^0) x48, (2^0, 2^1) x80
+     gates left modulo 2, 4, 8, ... : 31 128 128 128 128 128 128
+e2-0 family : N=64, 304 gates ; outputs found (rows of H up to sign): 64 of 64 ; wires not primitive: 0 ; gates with a division by 2: 0
+     gates by the powers of 2 in their two coefficients (0 = odd): (2^0, 2^0) x112, (2^0, 2^1) x192
+     gates left modulo 2, 4, 8, ... : 63 304 304 304 304 304 304 304
+g-1 19 gates : N=8, 19 gates ; outputs found (rows of H up to sign): 8 of 8 ; wires not primitive: 0 ; gates with a division by 2: 0
+     gates by the powers of 2 in their two coefficients (0 = odd): (2^0, 2^0) x7, (2^0, 2^1) x12
+     gates left modulo 2, 4, 8, ... : 7 19 19 19 19
+for comparison, x-1's route [read]: modulo 4: 7, 18, 41, 88, 183 at 4 to 64 points; modulo 8: 23, 57, 130, 282 at 8 to 64; modulo 16: 63, 152, 346 at 16 to 64
+LIGHT label=ad7-census exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:47:47 cmd=python3 -B census.py

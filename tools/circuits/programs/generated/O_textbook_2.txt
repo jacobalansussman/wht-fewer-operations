@@ -1,0 +1,5 @@
+# textbook, 2 points, 2 operations in either count; output yJ = row J of H
+t1 = x0 + x1
+t2 = x0 - x1
+y0 = t1
+y1 = t2

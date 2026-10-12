@@ -1,0 +1,8 @@
+d=4 fourth-root phases seed=1 iters=20000: best non-zeros 7  (d*m-1 = 7)  gates (G) 9  textbook 8  best known (G) 7
+  row order [2, 3, 1, 0] phase exponents [2, 0, 0, 2]
+  col order [3, 1, 0, 2] phase exponents [1, 3, 3, 1]
+  non-zeros per row [1, 1, 3, 2]  rows using i: 4
+       0+1i      0      0      0
+          0      0   0-2i      0
+       0-2i   0+2i      0   0+2i
+          0      0   0+2i   0-4i

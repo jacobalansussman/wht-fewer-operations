@@ -1,0 +1,76 @@
+# exh8 ALLOW=7: 6 possible centres on the line g5, g6; this run: centre 1 = [1 -1 -1 -1 1 1 -1 1]
+# CONTROL: g8 of the 19 added as a fixed helper, so circuits found have 19 gates
+# first free helper: 731 candidates
+# first helper 0 of 731, pairs 773, circuits found 0, 0 s
+# first helper 100 of 731, pairs 73979, circuits found 0, 54 s
+# first helper 200 of 731, pairs 137249, circuits found 0, 101 s
+CIRCUIT exh8-found  N=8 gates=19  floor f(N)=19  excess=0
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = -2*x7 + 1*w7   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = 2*x2 + 1*w7   # [1 -1 1 -1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x6 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x1 + 1*w8   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x3 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = -2*x4 + 1*w9   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w6 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w2 + 1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + -1*w13   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY exh8-found  gates=19 excess=0  budget=26.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+CIRCUIT exh8-found  N=8 gates=19  floor f(N)=19  excess=0
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = -2*x7 + 1*w7   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = 2*x2 + 1*w7   # [1 -1 1 -1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x6 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x1 + 1*w8   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x3 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = -2*x4 + 1*w9   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w6 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w2 + 1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + -1*w13   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY exh8-found  gates=19 excess=0  budget=26.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+# first helper 300 of 731, pairs 190755, circuits found 2, 142 s
+CIRCUIT exh8-found  N=8 gates=19  floor f(N)=19  excess=0
+w1 = 1*x0 + 1*x7   # [1 0 0 0 0 0 0 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x1 + 1*x6   # [0 1 0 0 0 0 1 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x2 + -1*x5   # [0 0 1 0 0 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x3 + -1*x4   # [0 0 0 1 -1 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 -1 0 0 0 0 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 1 1 -1 -1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 1*w5 + -1*w6   # [1 -1 -1 -1 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w8 = -2*x7 + 1*w7   # [1 -1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = 2*x3 + 1*w7   # [1 -1 -1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x6 + 1*w8   # [1 -1 -1 -1 1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 2*x1 + 1*w8   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w12 = 2*x2 + 1*w9   # [1 -1 1 1 1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w13 = -2*x5 + 1*w9   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w3 + 1*w10   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w10   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = 2*w6 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w2 + 1*w12   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w1 + -1*w12   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w5 + -1*w13   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY exh8-found  gates=19 excess=0  budget=26.02  volume=12.00 (needed 12)  joins=7 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+# first helper 400 of 731, pairs 234232, circuits found 6, 175 s
+# first helper 500 of 731, pairs 267643, circuits found 8, 199 s
+# first helper 600 of 731, pairs 290626, circuits found 8, 214 s
+# first helper 700 of 731, pairs 303462, circuits found 8, 222 s
+# END centre 1: first helpers done 731 of 731 (COMPLETE), pairs of helpers tried 305275, circuits found (19 gates) 8, with one gate fewer 0, 223 s
+LIGHT label=x0-e8ctl exit=0 time=225s waited=0s peak_rss_mb=98 peak_footprint_mb=98 lowest_cap_mb=1500 stopped=- start=03:49:29 cmd=./exh8ctl 7 s19.txt 1 240 ctl

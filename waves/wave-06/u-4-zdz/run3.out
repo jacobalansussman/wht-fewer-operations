@@ -1,0 +1,17 @@
+== hubparity4.txt
+   N=4  gates (G)=8  [textbook N log2 N=8, (3/4) N log2 N=6]  exact replay as the transform on 4 basis vectors: True
+   classes (inputs included)=9  [2N-1=7]   pairs of classes that overlap without nesting=5 of 36
+   pass 1: gates=8  J/S/Q/E=5/3/0/0  survivors=5 dead=3  orders of dead gates=[(1, 3)]
+   pass 2: gates=0  J/S/Q/E=0/0/0/0  survivors=0 dead=0  orders of dead gates=[]
+   total: survivors=5 [one tree: N-1=3]  dead=3 [(N/2) log2 N=4; textbook N log2 N-N+1=5]  dead-(N/2)log2N=-1
+   highest order=1  Q gates=0  E gates=0  gates that cancel powers of 2 (pass, kind, powers): []
+   over-limit gate wires V=0 of 8   h-0 sum: gates+V-N log2 N=0   gates reading two over-limit wires=0
+== ../h-6-classhub/brick_m1.txt
+   N=4  gates (G)=7  [textbook N log2 N=8, (3/4) N log2 N=6]  exact replay as the transform on 4 basis vectors: True
+   classes (inputs included)=7  [2N-1=7]   pairs of classes that overlap without nesting=0 of 21
+   pass 1: gates=7  J/S/Q/E=3/4/0/0  survivors=3 dead=4  orders of dead gates=[(1, 4)]
+   pass 2: gates=0  J/S/Q/E=0/0/0/0  survivors=0 dead=0  orders of dead gates=[]
+   total: survivors=3 [one tree: N-1=3]  dead=4 [(N/2) log2 N=4; textbook N log2 N-N+1=5]  dead-(N/2)log2N=0
+   highest order=1  Q gates=0  E gates=0  gates that cancel powers of 2 (pass, kind, powers): []
+   over-limit gate wires V=1 of 7   h-0 sum: gates+V-N log2 N=0   gates reading two over-limit wires=0
+LIGHT label=u4-zdz-c exit=0 time=1s waited=34s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:49:55 cmd=python3 -B meterfile.py hubparity4.txt ../h-6-classhub/brick_m1.txt

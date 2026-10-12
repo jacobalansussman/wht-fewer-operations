@@ -1,0 +1,19 @@
+CALIBRATION 1b: two helpers, degree 2, 16 points, known optimum 14 = 8 + 6 classes
+k 4 d 2 K = top2 dim K 3 | balanced pairs 16 irreducible balanced 4-sets 132 | target rank N - dim K = 13 | classes wanted [8, 6]
+  tries 119 best rank 13 classes 14 of N = 16 sizes [8, 6] | good iff rank = 13
+  EXACT CHECK degree 2 : rank M 13 missing dimensions 0
+  EXACT CHECK degree 3 : rank M 13 missing dimensions 2
+  PARTS= [[(0, 8), (1, 5), (2, 6), (3, 7), (4, 12), (9, 13), (10, 14), (11, 15)], [(0, 2, 13, 15), (1, 9), (3, 11), (4, 5, 7, 10), (6, 14), (8, 12)]]
+CALIBRATION 2b: two helpers, degree 3, 32 points, known optimum 30 = 16 + 14 classes
+k 5 d 3 K = top2 dim K 3 | balanced pairs 64 irreducible balanced 4-sets 2192 | target rank N - dim K = 29 | classes wanted [16, 14]
+  tries 300 best rank 28 classes 30 of N = 32 sizes [16, 14] | good iff rank = 29
+two helpers, degree 4, 64 points: 62 = 32 + 30
+k 6 d 4 K = top2 dim K 3 | balanced pairs 256 irreducible balanced 4-sets 35904 | target rank N - dim K = 61 | classes wanted [32, 30]
+  tries 300 best rank 58 classes 62 of N = 64 sizes [32, 30] | good iff rank = 61
+two helpers, degree 4, 64 points: 61 with the kernel of dimension 4
+k 6 d 4 K = top3 dim K 4 | balanced pairs 128 irreducible balanced 4-sets 13600 | target rank N - dim K = 60 | classes wanted [32, 29]
+  no exact cover found with [0, 3] fours (random DFS, not exhaustive)
+  tries 233 best rank 53 classes 61 of N = 64 sizes [32, 29] | good iff rank = 60
+k 6 d 4 K = top3 dim K 4 | balanced pairs 128 irreducible balanced 4-sets 13600 | target rank N - dim K = 60 | classes wanted [31, 30]
+  no exact cover found with [1, 2] fours (random DFS, not exhaustive)
+  tries 548 best rank 53 classes 61 of N = 64 sizes [31, 30] | good iff rank = 60

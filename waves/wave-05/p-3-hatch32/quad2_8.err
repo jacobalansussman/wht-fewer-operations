@@ -1,0 +1,1 @@
+LIGHT label=p3-quad2 exit=0 time=7s waited=38s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=00:24:01 cmd=python3 -B quad2.py 8

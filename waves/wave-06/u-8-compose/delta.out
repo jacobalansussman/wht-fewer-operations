@@ -1,0 +1,49 @@
+      projections: left 2 gates (e = 0), right 2 gates (e = 0);  e(left) + e(right) + delta = 1
+textbook 4               N=  4 gates=   8  sign vectors=True affine supports=True nested or disjoint=True (3 supports)  full wires=  4  n_L= 0 n_R= 0  distinct images=  2  delta=  1   e=  1
+      projections: left 2 gates (e = 0), right 2 gates (e = 0);  e(left) + e(right) + delta = 0
+brick                    N=  4 gates=   7  sign vectors=True affine supports=True nested or disjoint=True (3 supports)  full wires=  5  n_L= 1 n_R= 1  distinct images=  3  delta=  0   e=  0
+      projections: left 7 gates (e = 0), right 7 gates (e = 0);  e(left) + e(right) + delta = 0
+the 19                   N=  8 gates=  19  sign vectors=True affine supports=True nested or disjoint=True (7 supports)  full wires= 13  n_L= 4 n_R= 4  distinct images=  9  delta=  0   e=  0
+      projections: left 7 gates (e = 0), right 7 gates (e = 0);  e(left) + e(right) + delta = 1
+staircase 8              N=  8 gates=  20  sign vectors=True affine supports=True nested or disjoint=True (7 supports)  full wires= 10  n_L= 2 n_R= 2  distinct images=  6  delta=  1   e=  1
+      projections: left 20 gates (e = 1), right 20 gates (e = 1);  e(left) + e(right) + delta = 5
+staircase 16             N= 16 gates=  52  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 20  n_L= 4 n_R= 4  distinct images= 12  delta=  3   e=  5
+      projections: left 52 gates (e = 5), right 52 gates (e = 5);  e(left) + e(right) + delta = 17
+staircase 32             N= 32 gates= 128  sign vectors=True affine supports=True nested or disjoint=True (31 supports)  full wires= 40  n_L= 8 n_R= 8  distinct images= 24  delta=  7   e= 17
+      projections: left 128 gates (e = 17), right 128 gates (e = 17);  e(left) + e(right) + delta = 49
+staircase 64             N= 64 gates= 304  sign vectors=True affine supports=True nested or disjoint=True (63 supports)  full wires= 80  n_L=16 n_R=16  distinct images= 48  delta= 15   e= 49
+      projections: left 19 gates (e = 0), right 19 gates (e = 0);  e(left) + e(right) + delta = 5
+second 52 (h-1)          N= 16 gates=  52  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 22  n_L= 3 n_R= 5  distinct images= 14  delta=  5   e=  5
+      projections: left 24 gates (e = 5), right 24 gates (e = 5);  e(left) + e(right) + delta = 17
+textbook 16              N= 16 gates=  64  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 16  n_L= 0 n_R= 0  distinct images=  8  delta=  7   e= 17
+      projections: left 22 gates (e = 3), right 22 gates (e = 3);  e(left) + e(right) + delta = 13
+brick x textbook4        N= 16 gates=  60  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 16  n_L= 0 n_R= 0  distinct images=  8  delta=  7   e= 13
+      projections: left 24 gates (e = 5), right 24 gates (e = 5);  e(left) + e(right) + delta = 13
+textbook4 x brick        N= 16 gates=  60  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 20  n_L= 4 n_R= 4  distinct images= 12  delta=  3   e= 13
+      projections: left 22 gates (e = 3), right 22 gates (e = 3);  e(left) + e(right) + delta = 9
+brick x brick            N= 16 gates=  56  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 20  n_L= 4 n_R= 4  distinct images= 12  delta=  3   e=  9
+      projections: left 20 gates (e = 1), right 20 gates (e = 1);  e(left) + e(right) + delta = 9
+staircase8 x t2          N= 16 gates=  56  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 16  n_L= 0 n_R= 0  distinct images=  8  delta=  7   e=  9
+      projections: left 22 gates (e = 3), right 22 gates (e = 3);  e(left) + e(right) + delta = 9
+t2 x staircase8          N= 16 gates=  56  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 20  n_L= 4 n_R= 4  distinct images= 12  delta=  3   e=  9
+      projections: left 19 gates (e = 0), right 19 gates (e = 0);  e(left) + e(right) + delta = 7
+19 x t2                  N= 16 gates=  54  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 16  n_L= 0 n_R= 0  distinct images=  8  delta=  7   e=  7
+      projections: left 22 gates (e = 3), right 22 gates (e = 3);  e(left) + e(right) + delta = 7
+t2 x 19                  N= 16 gates=  54  sign vectors=True affine supports=True nested or disjoint=True (15 supports)  full wires= 26  n_L= 8 n_R= 8  distinct images= 18  delta=  1   e=  7
+      projections: left 56 gates (e = 9), right 56 gates (e = 9);  e(left) + e(right) + delta = 21
+brick x 19               N= 32 gates= 132  sign vectors=True affine supports=True nested or disjoint=True (31 supports)  full wires= 52  n_L=16 n_R=16  distinct images= 36  delta=  3   e= 21
+      projections: left 54 gates (e = 7), right 54 gates (e = 7);  e(left) + e(right) + delta = 21
+19 x brick               N= 32 gates= 132  sign vectors=True affine supports=True nested or disjoint=True (31 supports)  full wires= 40  n_L= 8 n_R= 8  distinct images= 24  delta=  7   e= 21
+      projections: left 56 gates (e = 9), right 56 gates (e = 9);  e(left) + e(right) + delta = 25
+brick x staircase8       N= 32 gates= 136  sign vectors=True affine supports=True nested or disjoint=True (31 supports)  full wires= 40  n_L= 8 n_R= 8  distinct images= 24  delta=  7   e= 25
+      projections: left 56 gates (e = 9), right 56 gates (e = 9);  e(left) + e(right) + delta = 25
+staircase8 x brick       N= 32 gates= 136  sign vectors=True affine supports=True nested or disjoint=True (31 supports)  full wires= 40  n_L= 8 n_R= 8  distinct images= 24  delta=  7   e= 25
+      projections: left 132 gates (e = 21), right 132 gates (e = 21);  e(left) + e(right) + delta = 49
+19 x 19                  N= 64 gates= 304  sign vectors=True affine supports=True nested or disjoint=True (63 supports)  full wires=104  n_L=32 n_R=32  distinct images= 72  delta=  7   e= 49
+      projections: left 136 gates (e = 25), right 136 gates (e = 25);  e(left) + e(right) + delta = 65
+staircase8 x staircase8  N= 64 gates= 320  sign vectors=True affine supports=True nested or disjoint=True (63 supports)  full wires= 80  n_L=16 n_R=16  distinct images= 48  delta= 15   e= 65
+      projections: left 136 gates (e = 25), right 136 gates (e = 25);  e(left) + e(right) + delta = 65
+brick x staircase16      N= 64 gates= 320  sign vectors=True affine supports=True nested or disjoint=True (63 supports)  full wires= 80  n_L=16 n_R=16  distinct images= 48  delta= 15   e= 65
+      projections: left 136 gates (e = 25), right 136 gates (e = 25);  e(left) + e(right) + delta = 65
+staircase16 x brick      N= 64 gates= 320  sign vectors=True affine supports=True nested or disjoint=True (63 supports)  full wires= 80  n_L=16 n_R=16  distinct images= 48  delta= 15   e= 65
+LIGHT label=u-8-delta exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:24:55 cmd=python3 -B delta.py

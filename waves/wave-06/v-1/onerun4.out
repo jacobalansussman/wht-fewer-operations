@@ -1,0 +1,18 @@
+last output 0 done: paths 0 nodes 73234 longest 13
+last output 1 done: paths 0 nodes 135957 longest 13
+last output 2 done: paths 0 nodes 198680 longest 13
+last output 3 done: paths 0 nodes 221491 longest 13
+last output 4 done: paths 0 nodes 284214 longest 13
+last output 5 done: paths 0 nodes 307025 longest 13
+last output 6 done: paths 0 nodes 329836 longest 13
+last output 7 done: paths 0 nodes 360855 longest 13
+last output 8 done: paths 0 nodes 423578 longest 13
+last output 9 done: paths 0 nodes 446389 longest 13
+last output 10 done: paths 0 nodes 469200 longest 13
+last output 11 done: paths 0 nodes 500219 longest 13
+last output 12 done: paths 0 nodes 523030 longest 13
+last output 13 done: paths 0 nodes 554049 longest 13
+last output 14 done: paths 0 nodes 585068 longest 13
+last output 15 done: paths 0 nodes 734166 longest 13
+K=4: one-run paths found 0 ; nodes 734166 ; tests 2465786 ; states 1875890790 ; longest partial path 13 of 16
+LIGHT label=v1-or4 exit=0 time=17s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=03:28:17 cmd=./onerun4

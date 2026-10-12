@@ -1,0 +1,7 @@
+12 gates, all 8 subset sums exact: True
+P_int 2 ['y001', 'y100']
+P_c 1 ['y101']
+M3 5 ['y010', 'y011', 'b', 'w', 'h']
+M2 4 ['u', 'y110', 'z', 'y111']
+pure gates 3 against 4 for the lower half alone; injections 5 against the 4 that are forced; M2 4
+LIGHT label=ab5-d0cut exit=0 time=1s waited=10s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:11:31 cmd=python3 -B d0cut.py

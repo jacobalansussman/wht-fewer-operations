@@ -1,0 +1,13 @@
+configuration: (((7, (5, (4, 6))), ((3, 1), (0, 2))), {0: [1, 3, 2, 0], 1: [2, 0, 3, 1]}, (((3, 2), (7, 6)), ((5, 4), (1, 0))), {0: [0, 1], 1: [0, 1], 2: [0, 1], 3: [0, 1]})
+start 2 leg 0: squared residual 1.272e-07  largest middle term 4.958e+01  largest |unknown| 5.512e+01
+start 2 leg 1: squared residual 1.883e-08  largest middle term 5.145e+01  largest |unknown| 1.303e+02
+start 2 leg 2: squared residual 9.007e-09  largest middle term 5.192e+01  largest |unknown| 1.846e+02
+start 2 leg 3: squared residual 4.869e-09  largest middle term 5.230e+01  largest |unknown| 2.471e+02
+start 2 leg 4: squared residual 2.385e-09  largest middle term 5.275e+01  largest |unknown| 3.466e+02
+start 2 leg 5: squared residual 1.335e-09  largest middle term 5.309e+01  largest |unknown| 4.567e+02
+start 1 leg 0: squared residual 6.001e+00  largest middle term 3.129e+02  largest |unknown| 1.804e+03
+start 1 leg 1: squared residual 6.000e+00  largest middle term 3.469e+02  largest |unknown| 6.201e+03
+start 1 leg 2: squared residual 6.000e+00  largest middle term 3.868e+02  largest |unknown| 4.052e+04
+start 1 leg 3: squared residual 6.000e+00  largest middle term 4.400e+02  largest |unknown| 1.801e+05
+start 1 leg 4: squared residual 6.000e+00  largest middle term 5.142e+02  largest |unknown| 6.387e+05
+start 1 leg 5: squared residual 6.000e+00  largest middle term 6.252e+02  largest |unknown| 1.846e+06

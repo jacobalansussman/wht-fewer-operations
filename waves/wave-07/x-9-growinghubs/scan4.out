@@ -1,0 +1,8 @@
+k 4 values per level 9 runs 729 every run replayed exactly as H
+  gates 52: 2 schedules; e.g. 1,1,1  -1,1,1
+  gates 60: 39 schedules; e.g. 1,1,-1  1,1,i  1,1,-i  1,1,2  1,1,1/2  1,1,1+i
+  gates 68: 240 schedules; e.g. 1,-1,-1  1,-1,i  1,-1,-i  1,-1,2  1,-1,1/2  1,-1,1+i
+  gates 76: 448 schedules; e.g. i,-1,-1  i,-1,i  i,-1,-i  i,-1,2  i,-1,1/2  i,-1,1+i
+  ALL schedules with the least count 52: 1,1,1  -1,1,1
+LIGHT label=x9s4 exit=0 time=114s waited=0s peak_rss_mb=22 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=04:08:58 cmd=python3 -B scan.py 4
+exit 0

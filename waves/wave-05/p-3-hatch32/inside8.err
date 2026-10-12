@@ -1,0 +1,1 @@
+LIGHT label=p3-inside8 exit=0 time=1s waited=36s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:35:08 cmd=python3 -B inside8.py

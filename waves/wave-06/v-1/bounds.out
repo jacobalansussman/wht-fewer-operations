@@ -1,0 +1,22 @@
+u-2: exact sum_j (j/k)^2 C(k,j)(2^(k-j)-1/2)^2 >= 5^k/100 for k = 1..300; least ratio to 5^k: 0.04053333333333333 (limit 1/25 = 0.04 )
+u-2 bound (5/2)^k/(400(1+ln N)) first exceeds: {'N': 43, '3N': 48, 'Yates (N/2)k+1': 59}  (float)
+  k=16  u-2 bound / N = 0.007346
+  k=32  u-2 bound / N = 0.1361
+  k=64  u-2 bound / N = 87.8
+  k=100  u-2 bound / N = 1.745e+05
+  k=101  u-2 bound / N = 2.16e+05
+u-1 window bound, my optimisation: corners >= (r+1) * (steps with top size >= s0  -  those allowed <= r runs)
+  k=16  bound/N = 1.041 at (s0, r) = (10, 1) ;  Yates/N = 8
+  k=19  bound/N = 1.219 at (s0, r) = (10, 1) ;  Yates/N = 9.5
+  k=20  bound/N = 1.276 at (s0, r) = (10, 1) ;  Yates/N = 10
+  k=24  bound/N = 1.526 at (s0, r) = (11, 1) ;  Yates/N = 12
+  k=32  bound/N = 1.952 at (s0, r) = (15, 2) ;  Yates/N = 16
+  k=40  bound/N = 2.775 at (s0, r) = (20, 4) ;  Yates/N = 20
+  k=48  bound/N = 4.233 at (s0, r) = (24, 8) ;  Yates/N = 24
+  k=64  bound/N = 10.69 at (s0, r) = (34, 32) ;  Yates/N = 32
+  k=96  bound/N = 110.4 at (s0, r) = (48, 256) ;  Yates/N = 48
+  k=128  bound/N = 1229 at (s0, r) = (66, 4096) ;  Yates/N = 64
+u-1 method, exponent h(sigma) + alpha*(sigma) (float):
+  at sigma = 1/2: alpha* = 0.1028, exponent 1.1028;  best over sigma: exponent 1.1127 at sigma = 0.555 (alpha* = 0.1215)
+  u-2 exponent log2(5/2) = 1.3219 ; upper bound log2 3 = 1.5850
+LIGHT label=v1-bounds exit=0 time=4s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:29:48 cmd=python3 -B check.py bounds

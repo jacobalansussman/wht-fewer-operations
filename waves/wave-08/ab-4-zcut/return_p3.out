@@ -1,0 +1,6 @@
+p=3: 2748 circuits
+number of trees (of 6) for which the circuit has a derivation with no return : circuits
+   0 : 534   e.g. ['00000011', '00001010', '00001100', '11101100', '11111100']
+   6 : 2214   e.g. ['00000011', '00001010', '00001100', '00001111', '01010000']
+circuits with a cancellation-free derivation: 2214; of these, no return in all 6 trees: 2214
+LIGHT label=ab4-ret exit=0 time=62s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=05:18:21 cmd=python3 -B zreturn.py 3 z8_p3_full.out

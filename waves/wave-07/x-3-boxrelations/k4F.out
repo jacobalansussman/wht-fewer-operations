@@ -1,0 +1,6 @@
+K=4 perm      part=skew  (dim  6) r=2: unknowns 148, boxes 15, starts 40, best rms residual 1.67e-01, hits (also right on 10 fresh boxes) 0, 3 s
+K=4 perm      part=skew  (dim  6) r=3: unknowns 228, boxes 21, starts 17, best rms residual 1.62e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 perm      part=skew  (dim  6) r=4: unknowns 324, boxes 29, starts 37, best rms residual 1.38e-16, hits (also right on 10 fresh boxes) 33 [fresh rms 4.9e-16], 25 s
+K=4 perm      part=sym   (dim 10) r=2: unknowns 276, boxes 12, starts 6, best rms residual 1.41e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 perm      part=sym   (dim 10) r=3: unknowns 388, boxes 14, starts 40, best rms residual 4.94e-17, hits (also right on 10 fresh boxes) 40 [fresh rms 6.5e-15], 17 s
+K=4 perm      part=sym   (dim 10) r=4: unknowns 516, boxes 18, starts 8, best rms residual 8.63e-17, hits (also right on 10 fresh boxes) 7 [fresh rms 2.1e-16], 25 s

@@ -1,0 +1,8 @@
+K(x)K p=5 m=2: RESULT p=5: NO circuit with 6 gates (exhaustive over GF(5))
+K(x)K p=5 m=2: LIGHT label=p5-mc exit=0 time=1s waited=14s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:08:02 cmd=waves/wave-01/d-0-zeta/mincirc 5 4 2 rows_K2.txt
+K(x)K p=5 m=3: RESULT p=5: YES, circuit with 7 gates. points in order (after the 4 inputs):
+K(x)K p=5 m=3: LIGHT label=p5-mc exit=0 time=1s waited=82s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:09:25 cmd=waves/wave-01/d-0-zeta/mincirc 5 4 3 rows_K2.txt
+K(x)K p=7 m=2: RESULT p=7: NO circuit with 6 gates (exhaustive over GF(7))
+K(x)K p=7 m=2: LIGHT label=p5-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:09:26 cmd=waves/wave-01/d-0-zeta/mincirc 7 4 2 rows_K2.txt
+K(x)K p=7 m=3: RESULT p=7: YES, circuit with 7 gates. points in order (after the 4 inputs):
+K(x)K p=7 m=3: LIGHT label=p5-mc exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:09:28 cmd=waves/wave-01/d-0-zeta/mincirc 7 4 3 rows_K2.txt

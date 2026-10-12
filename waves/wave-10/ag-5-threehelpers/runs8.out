@@ -1,0 +1,2 @@
+three helpers, degree 4, 64 points, 60 classes (= the ag-5 lower bound), no class shared by two partitions
+k 6 d 4 K = top5 dim K 6 | balanced pairs 32 irreducible balanced 4-sets 1936 | target rank N - dim K = 58 | classes wanted [20, 20, 20]

@@ -1,0 +1,14 @@
+class (7,2): 2667 subspaces of dimension 2, ports (meet their perpendicular only in 0): 1344  by type {'alt': 336, 'gen': 1008}   [0s]
+   star sets: X_odd = 8 odd words pairwise overlapping oddly; X_even = 7 even words pairwise overlapping oddly
+   a port of type alt knows: {'alt': 20, 'gen': 60}
+   a port of type gen knows: {'alt': 20, 'gen': 60}
+   type alt :     336 ports ; star X_odd holds       0, star X_even holds      91  ->  kappa <= 3.692
+   type gen :    1008 ports ; star X_odd holds     224, star X_even holds     112  ->  kappa <= 4.500
+   knows graph built: 1344 ports, degrees [80]
+   ALL:  1344 ports; largest set with no two knowing each other: >= 220 (search not finished) (greedy 220)  ->  size/alpha = 6.109
+   alt:   336 ports; largest set with no two knowing each other: >= 91 (search not finished) (greedy 91)  ->  size/alpha = 3.692
+   gen:  1008 ports; largest set with no two knowing each other: >= 175 (search not finished) (greedy 175)  ->  size/alpha = 5.760
+TYPE 7 2 alt 3.6923
+TYPE 7 2 gen 4.5000
+CEIL 7 2 8.1923   (every sub-family, types mixed: sum of the per-type ceilings)
+   [7s]

@@ -1,0 +1,3 @@
+4 points, 6 gates, all coefficients: 60 (first output, tree) cases; outputs reachable with the two forced helpers: [(2, 60)]; all four ever reached: False
+   => no 6-gate circuit over any field of characteristic 0; with the 7-gate circuit (ledger.py replays it) the minimum in count (G) is exactly 7.
+LIGHT label=g1-min4 exit=0 time=1s waited=2s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:48:03 cmd=python3 -B ref.py min4

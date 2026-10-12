@@ -1,0 +1,5 @@
+k=2: subspaces by dimension {0: 1, 1: 3, 2: 1}; largest flat with constant weight: dimension 1; largest flat with constant quadric sign (weight mod 4 in {0,1} or in {2,3}): dimension 1; k/2 = 1.0
+k=3: subspaces by dimension {0: 1, 1: 7, 2: 7, 3: 1}; largest flat with constant weight: dimension 1; largest flat with constant quadric sign (weight mod 4 in {0,1} or in {2,3}): dimension 1; k/2 = 1.5
+k=4: subspaces by dimension {0: 1, 1: 15, 2: 35, 3: 15, 4: 1}; largest flat with constant weight: dimension 2; largest flat with constant quadric sign (weight mod 4 in {0,1} or in {2,3}): dimension 2; k/2 = 2.0
+k=5: subspaces by dimension {0: 1, 1: 31, 2: 155, 3: 155, 4: 31, 5: 1}; largest flat with constant weight: dimension 2; largest flat with constant quadric sign (weight mod 4 in {0,1} or in {2,3}): dimension 3; k/2 = 2.5
+LIGHT label=ab3-flat exit=0 time=1s waited=88s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:09:48 cmd=python3 -B flatwall.py

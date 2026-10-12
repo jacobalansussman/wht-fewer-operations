@@ -1,0 +1,32 @@
+## controls (known: 4-point transform needs exactly 7 gates, count G)
+n=4 RESULT p=3: NO circuit with 6 gates (exhaustive over GF(3))
+n=5 (dummy wire) RESULT p=3: NO circuit with 6 gates (exhaustive over GF(3))
+n=4 RESULT p=3: YES, circuit with 7 gates. points in order (after the 4 inputs):
+n=5 (dummy wire) RESULT p=3: YES, circuit with 7 gates. points in order (after the 5 inputs):
+n=4 RESULT p=5: NO circuit with 6 gates (exhaustive over GF(5))
+n=5 (dummy wire) RESULT p=5: NO circuit with 6 gates (exhaustive over GF(5))
+n=4 RESULT p=5: YES, circuit with 7 gates. points in order (after the 4 inputs):
+n=5 (dummy wire) RESULT p=5: YES, circuit with 7 gates. points in order (after the 5 inputs):
+## K3 (3 wires)
+RESULT p=3: NO circuit with 3 gates (exhaustive over GF(3))
+RESULT p=3: YES, circuit with 4 gates. points in order (after the 3 inputs):
+RESULT p=5: NO circuit with 3 gates (exhaustive over GF(5))
+RESULT p=5: YES, circuit with 4 gates. points in order (after the 3 inputs):
+RESULT p=7: NO circuit with 3 gates (exhaustive over GF(7))
+RESULT p=7: YES, circuit with 4 gates. points in order (after the 3 inputs):
+RESULT p=11: NO circuit with 3 gates (exhaustive over GF(11))
+RESULT p=11: YES, circuit with 4 gates. points in order (after the 3 inputs):
+## two copies of K3 on disjoint data (6 wires)
+RESULT p=3: NO circuit with 7 gates (exhaustive over GF(3))
+RESULT p=3: YES, circuit with 8 gates. points in order (after the 6 inputs):
+RESULT p=5: NO circuit with 7 gates (exhaustive over GF(5))
+RESULT p=5: YES, circuit with 8 gates. points in order (after the 6 inputs):
+RESULT p=7: NO circuit with 7 gates (exhaustive over GF(7))
+RESULT p=7: YES, circuit with 8 gates. points in order (after the 6 inputs):
+## antisymmetric square A3 = -2 K3^T (3 wires)
+RESULT p=3: NO circuit with 3 gates (exhaustive over GF(3))
+RESULT p=3: YES, circuit with 4 gates. points in order (after the 3 inputs):
+RESULT p=5: NO circuit with 3 gates (exhaustive over GF(5))
+RESULT p=5: YES, circuit with 4 gates. points in order (after the 3 inputs):
+RESULT p=7: NO circuit with 3 gates (exhaustive over GF(7))
+RESULT p=7: YES, circuit with 4 gates. points in order (after the 3 inputs):

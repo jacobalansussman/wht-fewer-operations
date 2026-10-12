@@ -1,0 +1,24 @@
+(a) n = 4
+  m=3: 8 sets pay excess
+    rows ((1, 1, 1, 1), (1, 1, -1, -1), (1, -1, 1, -1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, 1, 1), (1, 1, -1, -1), (1, -1, -1, 1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, 1, 1), (1, -1, 1, -1), (1, -1, -1, 1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, 1, -1), (1, 1, -1, 1), (1, -1, 1, 1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, 1, -1), (1, 1, -1, 1), (1, -1, -1, -1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, 1, -1), (1, -1, 1, 1), (1, -1, -1, -1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, -1, 1), (1, -1, 1, 1), (1, -1, -1, -1)) pairwise distances (up to sign) [2, 2, 2]  
+    rows ((1, 1, -1, -1), (1, -1, 1, -1), (1, -1, -1, 1)) pairwise distances (up to sign) [2, 2, 2]  
+  m=4: 2 sets pay excess
+    rows ((1, 1, 1, 1), (1, 1, -1, -1), (1, -1, 1, -1), (1, -1, -1, 1)) pairwise distances (up to sign) [2, 2, 2, 2, 2, 2] det -16
+    rows ((1, 1, 1, -1), (1, 1, -1, 1), (1, -1, 1, 1), (1, -1, -1, -1)) pairwise distances (up to sign) [2, 2, 2, 2, 2, 2] det 16
+  zero-excess 4-row sets: 68; |det| histogram [(0, 12), (8, 56)]
+  most orthogonal pairs in a zero-excess 4-row set: 3 of 6
+(b) n = 5
+  full-rank 5-row sets: 3008.  |det| : (sets, zero-excess sets) [(16, [2672, 2672]), (32, [320, 0]), (48, [16, 0])]
+(c) excess per point f(2k) = 2(1 - 1/N)^2 + (2/rho) f(k), N = 2^k, from f(2) = 1/4 (the 7-gate brick)
+  rho=1  k=2: 0.250  k=4: 1.625  k=8: 5.008  k=16: 12.000  k=32: 26.000  k=64: 54.000  k=128: 110.000  k=256: 222.000  k=512: 446.000  k=1024: 894.000
+  rho=3/2  k=2: 0.250  k=4: 1.458  k=8: 3.702  k=16: 6.921  k=32: 11.228  k=64: 16.970  k=128: 24.627  k=256: 34.836  k=512: 48.448  k=1024: 66.597
+  rho=2  k=2: 0.250  k=4: 1.375  k=8: 3.133  k=16: 5.117  k=32: 7.117  k=64: 9.117  k=128: 11.117  k=256: 13.117  k=512: 15.117  k=1024: 17.117
+  rho=3  k=2: 0.250  k=4: 1.292  k=8: 2.619  k=16: 3.730  k=32: 4.487  k=64: 4.991  k=128: 5.327  k=256: 5.552  k=512: 5.701  k=1024: 5.801
+  rho=4  k=2: 0.250  k=4: 1.250  k=8: 2.383  k=16: 3.176  k=32: 3.588  k=64: 3.794  k=128: 3.897  k=256: 3.948  k=512: 3.974  k=1024: 3.987
+LIGHT label=d-6-more exit=0 time=7s waited=0s peak_rss_mb=11 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=21:34:32 cmd=/usr/bin/python3 -B more.py

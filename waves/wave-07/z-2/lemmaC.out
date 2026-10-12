@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "waves/wave-07/z-2/lemmaC.py", line 6, in <module>
+    import numpy as np, sys
+ModuleNotFoundError: No module named 'numpy'
+LIGHT label=z2-C exit=1 time=1s waited=10s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:59:04 cmd=python3 -B lemmaC.py
+exit 1

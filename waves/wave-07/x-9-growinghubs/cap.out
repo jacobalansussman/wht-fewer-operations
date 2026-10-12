@@ -1,0 +1,18 @@
+N=4 modulo 5, all 624 wires M: most rows one gate away with a witness of support <= s:
+   s=1: 4 rows (Parseval cap 4.00)  e.g. M = [1, 1, 1, -1]
+   s=2: 4 rows (Parseval cap no cap)  e.g. M = [0, 1, 1, 1]
+N=4 modulo 7, all 2400 wires M: most rows one gate away with a witness of support <= s:
+   s=1: 4 rows (Parseval cap 4.00)  e.g. M = [1, 1, 1, -1]
+   s=2: 4 rows (Parseval cap no cap)  e.g. M = [0, 1, 1, 1]
+N=8 modulo 3, all 6560 wires M: most rows one gate away with a witness of support <= s:
+   s=1: 1 rows (Parseval cap 1.78)  e.g. M = [0, 1, 1, 1, 1, 1, 1, 1]
+   s=2: 4 rows (Parseval cap 4.00)  e.g. M = [1, 1, 1, 1, 1, 1, -1, -1]
+   s=3: 8 rows (Parseval cap 16.00)  e.g. M = [1, 1, 1, 1, 1, 1, 1, -1]
+   s=4: 8 rows (Parseval cap no cap)  e.g. M = [0, 1, 1, 1, 1, 1, 1, 1]
+N=8 modulo 5, all 390624 wires M: most rows one gate away with a witness of support <= s:
+   s=1: 1 rows (Parseval cap 1.78)  e.g. M = [0, 1, 1, 1, 1, 1, 1, 1]
+   s=2: 4 rows (Parseval cap 4.00)  e.g. M = [1, 1, 1, 1, 1, 1, -1, -1]
+   s=3: 8 rows (Parseval cap 16.00)  e.g. M = [1, 1, 1, 1, 1, 1, 1, -1]
+   s=4: 8 rows (Parseval cap no cap)  e.g. M = [0, 1, 1, 1, 1, 1, 1, 1]
+LIGHT label=x9c exit=0 time=16s waited=0s peak_rss_mb=8 peak_footprint_mb=4 lowest_cap_mb=1500 stopped=- start=04:09:40 cmd=python3 -B cap.py
+exit 0

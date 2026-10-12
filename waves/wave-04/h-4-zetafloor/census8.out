@@ -1,0 +1,486 @@
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 1, 1, 0, 1, 0, 0, 2)
+     0 0 0 0 0 0 1 1 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 1 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=1 excess=1  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 2, 0, 0, 2)
+     0 0 0 0 0 0 1 1 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 1 1 0 0 1 1 kappa=0 kills=[]  entangled bits: out [1, 2], in [] []  helper
+     1 1 1 1 1 1 1 1 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 1, 1, 0, 2, 1, 1, 2)
+     0 0 0 0 0 0 1 1 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 0 1 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] [1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=1 excess=1  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 3, 0, 0, 2)
+     0 0 0 0 0 0 1 1 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 1 0 kappa=0 kills=[]  entangled bits: out [1, 2], in [] []  helper
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+     1 1 1 1 0 0 1 1 kappa=0 kills=[]  entangled bits: out [1, 2], in [] []  helper
+     1 1 1 1 1 1 1 1 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 3, 1, 1, 2)
+     0 0 0 0 0 0 1 1 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 1 0 kappa=0 kills=[]  entangled bits: out [1, 2], in [] []  helper
+     1 1 1 0 1 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] [1, 2]  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 2, 1, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 1 0 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 3, 1, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 3, 0, 1, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 2], in [] []  helper
+     1 1 0 0 1 1 1 1 kappa=1 kills=[0]  entangled bits: out [1, 2], in [0, 1] [0, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 3, 3, 0, 3, 2, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 1 1-1 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 3, 1, 1, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 4, 4, 0, 4, 1, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 2], in [] []  helper
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=4 excess=4  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 4, 4, 0, 4, 2, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 2], in [] []  helper
+     1 1 1 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 2]  helper
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=4 excess=4  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 4, 4, 0, 4, 2, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 1 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     0 0 1 1-1 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1]  helper
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=4 excess=4  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 3, 2, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 1 0 0 0 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 2, 2, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 1 0 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 3, 2, 1, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 0 1 0 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 0 1 1 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 2, 2, 0, 2, 1, 0, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 0 0 1 1 1 1 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  helper
+     0 1 0 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 0-1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 2, 1, 0, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 0 0 1 1 1 1 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  helper
+     0 1 0 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [0, 1] []  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 3, 3, 0, 3, 1, 0, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 0 0 1 1 1 1 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 0-1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 3, 1, 0, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     0 0 0 0 1 1 1 1 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [0, 1] []  helper
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 4, 1, 4, 2, 1, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [0, 1] []  helper
+     1 1 1 0 1 1 1 0 kappa=1 kills=[2]  entangled bits: out [0, 1], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1]  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 5] (need >= 4 each) idle=3 excess=4  => gates - (N/2)k = 0 = idle - excess + surplus kills (1)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 4, 4, 0, 4, 3, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [0, 1] []  helper
+     1 1 0 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [0, 1] [0, 1, 2]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=4 excess=4  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 2, 2, 0, 3, 2, 1, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 1 1-1 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 0 1 0 1 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 3, 3, 0, 3, 3, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     0 0 1 1-1 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 2, 2, 0, 3, 2, 1, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 0 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 1 1 kappa=1 kills=[0]  entangled bits: out [1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[1, 2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=2 excess=2  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 3, 3, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 1 0 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 0 0 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 1, 1, 0, 3, 1, 2, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     0 0 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 0 1 0 1 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 0 0 kappa=1 kills=[0]  entangled bits: out [1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] [1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=1 excess=1  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 4, 2, 1, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 1 1 0 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     0 0 1 1 0 0 1 0 kappa=0 kills=[]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 4, 1, 1, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 2], in [] []  helper
+     1 1 1 0 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 0 0 0 1 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 0 1 0 1 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 1 1 1 1 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (0, 3, 3, 0, 4, 2, 1, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 1 0 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 2], in [] []  helper
+     1 1 1 0 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 2]  helper
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 1 0 1 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 3, 3, 0, 4, 2, 1, 2)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 1 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     0 0 1 1-1 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1]  helper
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 0 1 0 1 kappa=1 kills=[1]  entangled bits: out [0, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=2 kills=[0, 2]  entangled bits: out [], in [] [0, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=3 excess=3  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+example for class (signed helpers, idle, excess, surplus kills, entangled wires, entangled on >=3 bits, FREE entangled wires, largest kappa) = (1, 4, 4, 0, 4, 3, 0, 3)
+     0 0 0 0 1 0 1 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  helper
+     1 1 0 0 0 0 0 0 kappa=1 kills=[0]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 0 0 0 0 kappa=1 kills=[1]  entangled bits: out [], in [] []  OUTPUT
+     1 0 0 0 1 0 0 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 0 1 0 1 0 kappa=1 kills=[2]  entangled bits: out [], in [] []  OUTPUT
+     1 0 1 1 0 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1], in [] []  helper
+     1 1 1 1 0 0 0 0 kappa=2 kills=[0, 1]  entangled bits: out [], in [] [0, 1]  OUTPUT
+     0 0 1 1-1 0 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1]  helper
+     1 1 1 1 0 1 0 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] []  helper
+     1 1 1 1 1 1 1 0 kappa=0 kills=[]  entangled bits: out [0, 1, 2], in [] [0, 1, 2]  helper
+     1 1 0 0 1 1 0 0 kappa=2 kills=[0, 2]  entangled bits: out [], in [0, 1, 2] [0, 1, 2]  OUTPUT
+     1 1 1 1 1 1 1 1 kappa=3 kills=[0, 1, 2]  entangled bits: out [], in [] [0, 1, 2]  OUTPUT
+    ok=True gates=12 kills per bit=[4, 4, 4] (need >= 4 each) idle=4 excess=4  => gates - (N/2)k = 0 = idle - excess + surplus kills (0)
+sets read 2772 ; replayed over Q with the full gate count 2748 ; did not lift with -1 for 2: 24
+classes: (signed helpers, idle gates, excess kills, surplus kills, entangled wires, wires entangled on >= 3 bits, FREE entangled wires, largest kappa) : number of circuits
+identity checked on every circuit: gates - (N/2)k = idle - excess + surplus
+    (0, 0, 0, 0, 0, 0, 0, 1) : 24
+    (0, 1, 1, 0, 1, 0, 0, 2) : 156
+    (0, 1, 1, 0, 2, 1, 1, 2) : 72
+    (0, 1, 1, 0, 3, 1, 2, 2) : 6
+    (0, 2, 2, 0, 2, 0, 0, 2) : 324
+    (0, 2, 2, 0, 2, 1, 0, 2) : 12
+    (0, 2, 2, 0, 2, 1, 0, 3) : 120
+    (0, 2, 2, 0, 2, 2, 0, 3) : 48
+    (0, 2, 2, 0, 3, 0, 1, 2) : 12
+    (0, 2, 2, 0, 3, 1, 1, 2) : 198
+    (0, 2, 2, 0, 3, 1, 1, 3) : 18
+    (0, 2, 2, 0, 3, 2, 1, 2) : 6
+    (0, 2, 2, 0, 3, 2, 1, 3) : 48
+    (0, 3, 3, 0, 3, 0, 0, 2) : 216
+    (0, 3, 3, 0, 3, 1, 0, 2) : 18
+    (0, 3, 3, 0, 3, 1, 0, 3) : 426
+    (0, 3, 3, 0, 3, 2, 0, 3) : 204
+    (0, 3, 3, 0, 3, 3, 0, 3) : 12
+    (0, 3, 3, 0, 4, 1, 1, 2) : 108
+    (0, 3, 3, 0, 4, 2, 1, 2) : 12
+    (0, 3, 3, 0, 4, 2, 1, 3) : 78
+    (0, 3, 4, 1, 4, 2, 1, 3) : 6
+    (0, 4, 4, 0, 4, 1, 0, 3) : 324
+    (0, 4, 4, 0, 4, 2, 0, 3) : 156
+    (0, 4, 4, 0, 4, 3, 0, 3) : 18
+    (1, 2, 2, 0, 2, 1, 0, 2) : 12
+    (1, 2, 2, 0, 3, 2, 1, 2) : 6
+    (1, 3, 3, 0, 3, 1, 0, 2) : 18
+    (1, 3, 3, 0, 3, 2, 0, 3) : 30
+    (1, 3, 3, 0, 3, 3, 0, 3) : 6
+    (1, 3, 3, 0, 4, 2, 1, 2) : 6
+    (1, 4, 4, 0, 4, 2, 0, 3) : 42
+    (1, 4, 4, 0, 4, 3, 0, 3) : 6
+gate counts of the replayed circuits: {12: 2748}
+LIGHT label=h4-census8 exit=0 time=5s waited=28s peak_rss_mb=12 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=00:08:09 cmd=python3 -B killmeter.py 8 z8_p3_full.local.out

@@ -1,0 +1,31 @@
+N = 64  q = 8  D = [11, 21, 22, 25, 37, 42, 44, 50]
+valuation of D at the prime a equals  digits(b) - digits(b mod (q-1))  [or - j when q-1 divides b], b = +1 * a, on every prime: False
+valuation of D at the prime a equals  digits(b) - digits(b mod (q-1))  [or - j when q-1 divides b], b = -1 * a, on every prime: True
+sum of the valuations over all N - 1 roots of unity: 84  (N-1) j / 2 = 94.5
+component (order of the root of unity) : valuations of D at its primes
+      1 trivial     primes   1  valuations {3: 1}  spread 0
+      3 angle only  primes   1  valuations {0: 1}  spread 0
+      7 radius only primes   2  valuations {1: 1, 2: 1}  spread 1
+      9 angle only  primes   1  valuations {0: 1}  spread 0
+     21 MIXED       primes   2  valuations {0: 1, 3: 1}  spread 3
+     63 MIXED       primes   6  valuations {0: 2, 1: 1, 2: 1, 3: 2}  spread 3
+top component: 6 primes, target valuations (3, 3, 1, 2, 0, 0)
+trinomials 1 + c1 t^e + c2 t^f, all e < f, c1 and c2 in every odd class modulo 8:
+   largest valuation at any prime: 8 (8 = the cap = exactly zero)  cases with valuation >= 2: 2056   all of them at primes where t^e and t^f are cube roots of unity: True
+   examples (e, f, c1, c2, prime a, valuation, cube-root case): [(1, 2, 1, 1, 21, 8, True), (1, 5, 1, 1, 21, 8, True), (1, 8, 1, 1, 21, 8, True)]
+   distinct zero patterns on the top component (trinomials that are exactly zero there are left out): 8
+   number of top primes one trinomial vanishes at, values seen: [1, 3] of 6
+      pattern (0, 0, 0, 0, 0, 1)  e.g. 1 + t^1 + t^58
+      pattern (0, 0, 0, 0, 1, 0)  e.g. 1 + t^1 + t^39
+      pattern (0, 0, 0, 1, 0, 0)  e.g. 1 + t^1 + t^56
+      pattern (0, 0, 1, 0, 0, 0)  e.g. 1 + t^1 + t^8
+      pattern (0, 1, 0, 0, 0, 0)  e.g. 1 + t^1 + t^25
+      pattern (1, 0, 0, 0, 0, 0)  e.g. 1 + t^1 + t^6
+      pattern (0, 1, 0, 1, 0, 1)  e.g. 1 + t^9 + t^27
+      pattern (1, 0, 1, 0, 1, 0)  e.g. 1 + t^9 + t^45
+   total valuation of D on the top component (in primes): 9   so at least 3 trinomials by count and 3 by spread
+   reachable sums with 0..4 signed patterns: [1, 16, 117, 544, 1885]
+   LEAST number of trinomial factors (inverses allowed, a power of 2 free) with D's valuations on the top component: 7 (scalar shift -2)
+four-term factors 1 + c1 t^e + c2 t^f + c3 t^g (3 gates per point), odd classes modulo 8, exact zeros left out:
+   largest valuation at a top prime, by number of (e, f, coefficient) cases: {0: 28096, 1: 86400, 2: 2544, 3: 78, 4: 2}
+   largest total valuation on the top component by one factor: 12  example (9, 18, 36, 3, 3, 3, (4, 0, 4, 0, 4, 0))  (D itself: 9 with 7 gates per point)

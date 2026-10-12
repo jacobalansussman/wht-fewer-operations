@@ -1,0 +1,4 @@
+p=3 n=8 rows=8 non-input distinct targets=4  intermediates allowed m=2  => gate budget 6
+visited states by remaining budget: j=2:1 j=1:56
+RESULT p=3: NO circuit with 6 gates (exhaustive over GF(3))
+LIGHT label=ab3-mc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:04:58 cmd=waves/wave-01/d-0-zeta/mincirc 3 8 2 rows_mid_k3.txt

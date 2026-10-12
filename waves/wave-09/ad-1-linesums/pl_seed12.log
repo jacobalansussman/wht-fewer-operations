@@ -1,0 +1,3 @@
+steiner_PL16_s12_seed best 61 exact 61 t 0.2
+steiner_PL16_s12_seed best 60 exact 60 t 54.5
+steiner_PL16_s12_seed DONE evaluated 52191 best 60 hist {60: 6928, 61: 19820, 62: 9861, 63: 6631, 64: 3870, 65: 2057, 66: 1171, 67: 706}

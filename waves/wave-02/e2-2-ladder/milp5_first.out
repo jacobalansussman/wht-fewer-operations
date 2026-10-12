@@ -1,0 +1,5 @@
+m = 5: 11536 covering constraints after removing implied ones (lightest has 8 ones, heaviest 16)
+W = 1: plain 5 moves; with parity: 5 moves (status 0), 5.000 per array, z if realised with single moves 1.0000; without parity: 5 moves (status 0), 5.000 per array, z if realised with single moves 1.0000; 
+W = 2: plain 10 moves; with parity: 10 moves (status 0), 5.000 per array, z if realised with single moves 1.0000; without parity: 10 moves (status 0), 5.000 per array, z if realised with single moves 1.0000; 
+W = 3: plain 15 moves; with parity: 16 moves (status 1), 5.333 per array, z if realised with single moves 1.0401; without parity: 15 moves (status 1), 5.000 per array, z if realised with single moves 1.0000; 
+W = 4: plain 20 moves; with parity: 16 moves (status 0), 4.000 per array, z if realised with single moves 0.8614; without parity: 16 moves (status 0), 4.000 per array, z if realised with single moves 0.8614; 

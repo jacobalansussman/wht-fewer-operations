@@ -1,0 +1,3 @@
+start (L): pair-sharing count of B = 192 (per form 3.000)
+DONE 64 points start=L seed=21 states=3292 best=192 (per form 3.000) histogram(lowest)={193: 5, 194: 2, 195: 11, 196: 33, 197: 35, 198: 52, 199: 63, 200: 84}
+LIGHT label=g7-s64-L exit=0 time=301s waited=0s peak_rss_mb=43 peak_footprint_mb=39 lowest_cap_mb=1500 stopped=- start=23:06:32 cmd=python3 -B search64.py 300 21 L

@@ -1,0 +1,3 @@
+{6,5}: products tried 1792, flat 0, best entropy 19.0281 of 24
+{5,5,butterfly}: products tried 301056, flat 0, best entropy 20.2363 of 24
+LIGHT label=e5-n8 exit=0 time=31s waited=0s peak_rss_mb=15 peak_footprint_mb=12 lowest_cap_mb=1500 stopped=- start=22:29:33 cmd=python3 -I -B n8class.py

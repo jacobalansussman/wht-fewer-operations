@@ -1,0 +1,49 @@
+slp_4.txt: N=4 gates=7 outputs=4 helpers=3
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: True
+  exact fractions, tau = 5/7, identity frame: True
+  exact fractions, tau = -2, identity frame: True
+slp_8.txt: N=8 gates=20 outputs=8 helpers=12
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: None
+  exact fractions, tau = 5/7, identity frame: None
+  exact fractions, tau = -2, identity frame: None
+h8_19gates.txt: N=8 gates=19 outputs=8 helpers=11
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: NO y5
+  random tau modulo 2^61-1, identity frame: NO y5
+  exact fractions, tau = 3, identity frame: None
+  exact fractions, tau = 5/7, identity frame: None
+  exact fractions, tau = -2, identity frame: None
+slp_16.txt: N=16 gates=52 outputs=16 helpers=36
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: None
+  exact fractions, tau = 5/7, identity frame: None
+  exact fractions, tau = -2, identity frame: None
+slp_32.txt: N=32 gates=128 outputs=32 helpers=96
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: None
+  exact fractions, tau = 5/7, identity frame: None
+  exact fractions, tau = -2, identity frame: None
+slp_64.txt: N=64 gates=304 outputs=64 helpers=240
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: None
+  exact fractions, tau = 5/7, identity frame: None
+  exact fractions, tau = -2, identity frame: None
+slp_4.txt: N=4 gates=7 outputs=4 helpers=3
+  control tau=-1, identity frame: YES
+  frames tried: 576   YES: 48   undecided/degenerate: 0
+   e.g. inputs [0, 1, 2, 3] outputs [0, 1, 2, 3] | second random tau: YES | exact tau=3: True  tau=5/7: True
+   e.g. inputs [0, 1, 2, 3] outputs [1, 0, 3, 2] | second random tau: YES | exact tau=3: True  tau=5/7: True
+   e.g. inputs [0, 1, 2, 3] outputs [2, 3, 0, 1] | second random tau: YES | exact tau=3: True  tau=5/7: True
+LIGHT label=ag8-rec exit=0 time=7s waited=26s peak_rss_mb=19 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=08:05:51 cmd=./rec.sh

@@ -1,0 +1,8 @@
+singular non-zero addresses: 135  zeros of Q in all: 136
+totally singular subspaces of 4 bits: 270
+largest family found of such subspaces meeting pairwise in 0: 9
+their union is the zero set of Q: True
+identity (-1)^Q(z) = -1 + 2 * (number of subspaces containing z) - 16 * [z = 0] on all 256 addresses: True
+each of the 9 is its own perpendicular for Q's pairing: True
+addresses left over: 120 (a spread would need 8 more subspaces of 15 non-zero addresses each)
+LIGHT label=ad1-ruling exit=0 time=10s waited=0s peak_rss_mb=8 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=06:40:03 cmd=python3 -B ruling256.py

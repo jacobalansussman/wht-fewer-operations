@@ -1,0 +1,39 @@
+m = 3 : 64 forms in 20 orbits ; block forms: 9 orbits ; characters with <Q,I> = 1: 10 orbits   [0 s]
+   least moves per live array (LP):  3.000000   (plain schedule: 3 ; ratio 1.0000)
+   least blocks per live array (LP): 2.000000   (plain schedule: 2)
+      z = 1.00 : least price per live array 1.000000
+      z = 0.95 : least price per live array 1.032476
+      z = 0.90 : least price per live array 1.066294
+      z = 0.80 : least price per live array 1.138225
+      z = 0.70 : least price per live array 1.216361
+      z = 0.50 : least price per live array 1.393847
+   the LP price reaches 1 at z = 1.000000 : the character inequalities allow no saving above 0.000000 in the sub-game at block size 3
+   minimising fractional unit just above that z, by rank: blocks per array {1: 3.0} ; total blocks 3.0000 ; moves 3.0000
+   minimising fractional unit for moves, by rank: {1: 3.0}
+   [0 s]
+m = 4 : 1024 forms in 62 orbits ; block forms: 32 orbits ; characters with <Q,I> = 1: 28 orbits   [0 s]
+   least moves per live array (LP):  3.750000   (plain schedule: 4 ; ratio 0.9375)
+   least blocks per live array (LP): 2.000000   (plain schedule: 2)
+      z = 1.00 : least price per live array 0.937500
+      z = 0.95 : least price per live array 1.004788
+      z = 0.90 : least price per live array 1.059064
+      z = 0.80 : least price per live array 1.124295
+      z = 0.70 : least price per live array 1.196533
+      z = 0.50 : least price per live array 1.366025
+   the LP price reaches 1 at z = 0.953445 : the character inequalities allow no saving above 0.046555 in the sub-game at block size 4
+   minimising fractional unit just above that z, by rank: blocks per array {1: 3.75} ; total blocks 3.7500 ; moves 3.7500
+   minimising fractional unit for moves, by rank: {1: 3.75}
+   [0 s]
+m = 5 : 32768 forms in 156 orbits ; block forms: 95 orbits ; characters with <Q,I> = 1: 78 orbits   [0 s]
+   least moves per live array (LP):  3.875000   (plain schedule: 5 ; ratio 0.7750)
+   least blocks per live array (LP): 2.000000   (plain schedule: 2)
+      z = 1.00 : least price per live array 0.775000
+      z = 0.95 : least price per live array 0.839944
+      z = 0.90 : least price per live array 0.910330
+      z = 0.80 : least price per live array 1.069290
+      z = 0.70 : least price per live array 1.179519
+      z = 0.50 : least price per live array 1.341641
+   the LP price reaches 1 at z = 0.841627 : the character inequalities allow no saving above 0.158373 in the sub-game at block size 5
+   minimising fractional unit just above that z, by rank: blocks per array {1: 3.875} ; total blocks 3.8750 ; moves 3.8750
+   minimising fractional unit for moves, by rank: {1: 3.875}
+   [1 s]

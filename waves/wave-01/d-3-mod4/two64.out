@@ -1,0 +1,21 @@
+k=3: maps keeping |y| mod 4: 6 (permutations alone: 6; check True) ; keeping the dot product: 6 ; orbits on frequencies: [(1, [0]), (1, [3]), (3, [1]), (3, [2])]
+k=4: maps keeping |y| mod 4: 24 (permutations alone: 24; check True) ; keeping the dot product: 48 ; orbits on frequencies: [(1, [0]), (1, [0]), (4, [1]), (4, [3]), (6, [2])]
+k=5: maps keeping |y| mod 4: 120 (permutations alone: 120; check True) ; keeping the dot product: 720 ; orbits on frequencies: [(1, [0]), (1, [1]), (5, [0]), (5, [1]), (10, [2]), (10, [3])]
+k=6: maps keeping |y| mod 4: 1440 (permutations alone: 720; check True) ; keeping the dot product: 23040 ; orbits on frequencies: [(1, [0]), (1, [2]), (12, [1]), (15, [0]), (15, [2]), (20, [3])]
+distinct two-level functions: 19719  (4 s)
+first-flag representatives (top hyperplane c = 1..1 0..0): 2079
+solutions with first flag a representative: 184  (19 s)
+all three-flag identities at 64 points using top two levels only: 280   predicted by the rule: 120
+shapes: (|c|, |d|, |c+d|, alpha, beta) per flag -> how many
+   ((2, 1, 1, 1, 2), (2, 1, 1, 1, 2), (2, 1, 1, 1, 2)) 15
+   ((2, 1, 1, 1, 2), (2, 3, 3, 3, 2), (2, 3, 3, 3, 2)) 45
+   ((2, 2, 2, 2, 2), (2, 2, 2, 2, 2), (6, 3, 3, 3, 2)) 10
+   ((2, 2, 2, 2, 2), (2, 4, 4, 0, 2), (6, 1, 5, 1, 2)) 50
+   ((2, 2, 2, 2, 2), (2, 4, 4, 0, 2), (6, 5, 1, 1, 2)) 10
+   ((2, 3, 3, 3, 2), (2, 3, 3, 3, 2), (2, 5, 5, 1, 2)) 45
+   ((2, 4, 4, 0, 2), (2, 4, 4, 0, 2), (6, 3, 3, 3, 2)) 90
+   ((2, 5, 5, 1, 2), (2, 5, 5, 1, 2), (2, 5, 5, 1, 2)) 15
+of the predicted kind (orthonormal basis in pairs of equal weight mod 4): 120 of 280
+of these, identities that hold for the exact weight with values 0..3 as integers: 15
+total time 26 s
+LIGHT label=d3-two64 exit=0 time=27s waited=0s peak_rss_mb=47 peak_footprint_mb=37 lowest_cap_mb=1500 stopped=- start=21:30:06 cmd=python3 -B waves/wave-01/d-3-mod4/two64.py

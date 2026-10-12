@@ -1,0 +1,9 @@
+N = 4: 20 coset characters, by level [(0, 4), (1, 12), (2, 4)]; s = 2^level and s s' = N for every one: True
+   dependent triples of tight wires: 64; levels more than one apart: 0; shapes (relative levels): [((0, 0, 0), 16), ((0, 0, 1), 24), ((0, 1, 1), 24)]
+N = 8: 128 coset characters, by level [(0, 8), (1, 56), (2, 56), (3, 8)]; s = 2^level and s s' = N for every one: True
+   dependent triples of tight wires: 1008; levels more than one apart: 0; shapes (relative levels): [((0, 0, 0), 448), ((0, 0, 1), 280), ((0, 1, 1), 280)]
+N = 16: 1072 coset characters, by level [(0, 16), (1, 240), (2, 560), (3, 240), (4, 16)]; s = 2^level and s s' = N for every one: True
+   dependent triples of tight wires: 18880; levels more than one apart: 0; shapes (relative levels): [((0, 0, 0), 11200), ((0, 0, 1), 3840), ((0, 1, 1), 3840)]
+N = 4: 40 vectors with entries 0, 1, -1 (up to sign): s s' < N: 0; s s' = N: 20, of which coset characters: 20; histogram of s s': [(4, 20), (12, 16), (16, 4)]
+N = 8: 3280 vectors with entries 0, 1, -1 (up to sign): s s' < N: 0; s s' = N: 128, of which coset characters: 128; histogram of s s': [(8, 128), (20, 448), (24, 448), (32, 112), (36, 672), (40, 896), (56, 512), (64, 64)]
+LIGHT label=g1-tight exit=0 time=16s waited=12s peak_rss_mb=10 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:48:23 cmd=python3 -B ref.py tight

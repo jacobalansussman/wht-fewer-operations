@@ -1,0 +1,1 @@
+LIGHT label=ad0-shears exit=0 time=10s waited=0s peak_rss_mb=139 peak_footprint_mb=136 lowest_cap_mb=1500 stopped=- start=06:43:55 cmd=python3 -I -B shears.py

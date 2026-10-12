@@ -1,0 +1,24 @@
+# tallmin NN=4 m=1 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=1  forms helpers histogram: h=0:0 h=1:0 h=2:1 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=2 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=2  forms helpers histogram: h=0:0 h=1:0 h=2:2 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=3 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=2  forms helpers histogram: h=0:0 h=1:0 h=2:1 h=3:1 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=4 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=4  forms helpers histogram: h=0:0 h=1:0 h=2:3 h=3:1 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=5 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=2  forms helpers histogram: h=0:0 h=1:0 h=2:2 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=6 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=2  forms helpers histogram: h=0:0 h=1:0 h=2:2 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=7 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=1  forms helpers histogram: h=0:0 h=1:0 h=2:1 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# tallmin NN=4 m=8 pool(height<=3)=1116 candidates targets=8 group=384 MLAST=1000 full=1 hcap=5
+# orbits=1  forms helpers histogram: h=0:0 h=1:0 h=2:1 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0

@@ -1,0 +1,16 @@
+1. Pascal(m) = diag(j!) Toeplitz(1/(j-i)!) diag(1/i!), m = 1..40: True
+2. Krawtchouk(u) = Pascal-lower * diag((-2)^i) * Pascal-upper, u = 0..24: True
+3. c=0: (e_0 - e_1 + c e_01) with the string of e_{} is a Jordan basis of U: True ; H keeps the short string: True ; Z keeps it: True
+3. c=1: (e_0 - e_1 + c e_01) with the string of e_{} is a Jordan basis of U: True ; H keeps the short string: False ; Z keeps it: True
+   so with c = 1 the transform is NOT block diagonal in a Jordan basis of U (smallest case: 4 points); Z always is.
+4. middle per entry for H (two fixed-vector products per block + 3 scalings per entry):
+      k      dense    m log2 m model    FFT count    best of dense/FFT    (1/2)log2 k    blocks where FFT wins hold this share of entries
+        4       5.38       1.62         59.00          5.38             1.0   0.0000
+       16       8.48       2.55         79.12          8.48             2.0   0.0000
+       64      14.82       3.53         96.99         14.82             3.0   0.0000
+      256      27.56       4.53        114.38         27.56             4.0   0.0000
+     1024      53.08       5.53        131.71         53.03             5.0   0.0042
+     4096     104.14       6.53        149.05         99.84             6.0   0.1744
+    16384     206.26       7.53        166.39        150.55             7.0   0.6727
+    65536     410.52       8.53        183.73        181.02             8.0   0.9404
+LIGHT label=a0-middle exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:23:45 cmd=python3 -B a0_middle.py

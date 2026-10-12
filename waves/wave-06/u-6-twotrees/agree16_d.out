@@ -1,0 +1,17 @@
+== AGREE, two trees, ONE shared centre (64 quadratic centres), MST only; second tree varies
+-- second tree rows 2 1 8 4
+BEST upper bound: 79 gates ; least MST of terminals: 50
+-- second tree rows 1 2 4 8
+BEST upper bound: 79 gates ; least MST of terminals: 50
+-- second tree rows 4 8 1 2
+BEST upper bound: 77 gates ; least MST of terminals: 52
+-- second tree rows 3 1 8 4
+BEST upper bound: 78 gates ; least MST of terminals: 49
+-- second tree rows 10 5 8 4
+BEST upper bound: 79 gates ; least MST of terminals: 50
+-- second tree rows 9 6 3 1
+BEST upper bound: 79 gates ; least MST of terminals: 50
+-- second tree rows 15 7 3 1
+BEST upper bound: 79 gates ; least MST of terminals: 50
+-- second tree rows 6 3 12 8
+BEST upper bound: 78 gates ; least MST of terminals: 49

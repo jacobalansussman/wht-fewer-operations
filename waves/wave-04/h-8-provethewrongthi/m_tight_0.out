@@ -1,0 +1,6 @@
+pool tight wires 128 over the limit 0 j <= 0
+lines with 3 or more pool wires: 588  directed gates: 2856
+variables 3096 constraints 11321
+solver status: 1 Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)  seconds 502
+solver lower bound (floating point): None  gap: None
+no circuit found

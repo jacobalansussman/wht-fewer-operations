@@ -1,0 +1,37 @@
+N=8: factorisations tried 171360, impossible (singular pivot) 135264
+histogram {(non-zeros of L below the blocks, number of 2x2 blocks): how many}:
+    (10, 4) 192   bound on the transform: 28 gates
+    (11, 3) 192   bound on the transform: 28 gates
+    (12, 3) 576   bound on the transform: 30 gates
+    (13, 2) 576   bound on the transform: 30 gates
+    (13, 3) 576   bound on the transform: 32 gates
+    (14, 2) 528   bound on the transform: 32 gates
+    (14, 3) 1536   bound on the transform: 34 gates
+    (14, 4) 1056   bound on the transform: 36 gates
+    (15, 1) 528   bound on the transform: 32 gates
+    (15, 2) 2328   bound on the transform: 34 gates
+    (15, 3) 2640   bound on the transform: 36 gates
+    (15, 4) 288   bound on the transform: 38 gates
+    (16, 2) 792   bound on the transform: 36 gates
+    (16, 3) 1152   bound on the transform: 38 gates
+    (17, 1) 576   bound on the transform: 36 gates
+    (17, 2) 1416   bound on the transform: 38 gates
+    (17, 3) 816   bound on the transform: 40 gates
+    (18, 1) 576   bound on the transform: 38 gates
+    (18, 2) 2304   bound on the transform: 40 gates
+    (18, 3) 2784   bound on the transform: 42 gates
+    (19, 0) 528   bound on the transform: 38 gates
+    (19, 1) 2928   bound on the transform: 40 gates
+    (19, 2) 5736   bound on the transform: 42 gates
+    (19, 3) 1872   bound on the transform: 44 gates
+    (20, 1) 288   bound on the transform: 42 gates
+    (20, 2) 1152   bound on the transform: 44 gates
+    (20, 3) 144   bound on the transform: 46 gates
+    (21, 1) 336   bound on the transform: 44 gates
+    (21, 2) 816   bound on the transform: 46 gates
+    (21, 3) 288   bound on the transform: 48 gates
+    (22, 0) 48   bound on the transform: 44 gates
+    (22, 1) 240   bound on the transform: 46 gates
+    (22, 2) 288   bound on the transform: 48 gates
+least bound 2*nonzeros + 2*blocks = 28  (subset sums: 38 by non-zeros, 24 by Yates; textbook 24)
+   order (0, 1, 2, 3, 4, 5, 6, 7) cut (2, 2, 2, 1, 1) L entries (row, column, value): [(2, 0, '1'), (3, 1, '1'), (4, 0, '1'), (5, 1, '1'), (6, 0, '1'), (7, 1, '1'), (6, 2, '1'), (7, 3, '1'), (6, 4, '1'), (7, 5, '1'), (7, 6, '1')]

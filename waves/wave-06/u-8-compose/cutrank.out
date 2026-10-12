@@ -1,0 +1,23 @@
+brick                  N=  4 gates=   7 saved vs textbook=  1  over-limit wires=  1  sum(maxrank-1)=  1  wires by maxrank [(1, 6), (2, 1)]
+      node excess by support size (sum over the nodes of that size): 2: -2, 4: +2   total = 0  (e = 0)
+the 19                 N=  8 gates=  19 saved vs textbook=  5  over-limit wires=  5  sum(maxrank-1)= 11  wires by maxrank [(1, 8), (2, 11)]
+      node excess by support size (sum over the nodes of that size): 2: -4, 4: -4, 8: +8   total = 0  (e = 0)
+staircase 8            N=  8 gates=  20 saved vs textbook=  4  over-limit wires=  4  sum(maxrank-1)=  4  wires by maxrank [(1, 16), (2, 4)]
+      node excess by support size (sum over the nodes of that size): 2: -4, 4: +0, 8: +5   total = 1  (e = 1)
+staircase 16           N= 16 gates=  52 saved vs textbook= 12  over-limit wires= 12  sum(maxrank-1)= 12  wires by maxrank [(1, 40), (2, 12)]
+      node excess by support size (sum over the nodes of that size): 2: -8, 4: +0, 8: +2, 16: +11   total = 5  (e = 5)
+staircase 32           N= 32 gates= 128 saved vs textbook= 32  over-limit wires= 32  sum(maxrank-1)= 32  wires by maxrank [(1, 96), (2, 32)]
+      node excess by support size (sum over the nodes of that size): 2: -16, 4: +0, 8: +4, 16: +6, 32: +23   total = 17  (e = 17)
+second 52 (h-1)        N= 16 gates=  52 saved vs textbook= 12  over-limit wires= 16  sum(maxrank-1)= 32  wires by maxrank [(1, 24), (2, 24), (3, 4)]
+      node excess by support size (sum over the nodes of that size): 2: -8, 4: -8, 8: +8, 16: +13   total = 5  (e = 5)
+brick x brick          N= 16 gates=  56 saved vs textbook=  8  over-limit wires=  8  sum(maxrank-1)=  8  wires by maxrank [(1, 48), (2, 8)]
+      node excess by support size (sum over the nodes of that size): 2: -8, 4: +8, 8: -2, 16: +11   total = 9  (e = 9)
+19 x t2                N= 16 gates=  54 saved vs textbook= 10  over-limit wires= 10  sum(maxrank-1)= 22  wires by maxrank [(1, 32), (2, 22)]
+      node excess by support size (sum over the nodes of that size): 2: -8, 4: -8, 8: +16, 16: +7   total = 7  (e = 7)
+t2 x 19                N= 16 gates=  54 saved vs textbook= 10  over-limit wires= 10  sum(maxrank-1)= 22  wires by maxrank [(1, 32), (2, 22)]
+      node excess by support size (sum over the nodes of that size): 2: +0, 4: -4, 8: -6, 16: +17   total = 7  (e = 7)
+brick x 19             N= 32 gates= 132 saved vs textbook= 28  over-limit wires= 28  sum(maxrank-1)= 52  wires by maxrank [(1, 80), (2, 52)]
+      node excess by support size (sum over the nodes of that size): 2: -16, 4: +16, 8: -4, 16: -10, 32: +35   total = 21  (e = 21)
+19 x brick             N= 32 gates= 132 saved vs textbook= 28  over-limit wires= 28  sum(maxrank-1)= 52  wires by maxrank [(1, 80), (2, 52)]
+      node excess by support size (sum over the nodes of that size): 2: -16, 4: -16, 8: +32, 16: -2, 32: +23   total = 21  (e = 21)
+LIGHT label=u-8-cutrank exit=0 time=2s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:14:29 cmd=python3 -B cutrank.py

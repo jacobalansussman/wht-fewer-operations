@@ -1,0 +1,9 @@
+== rows=rows_e2_k3.txt p=3 m=4
+p=3 n=8 rows=8 non-input distinct targets=7  intermediates allowed m=4  => gate budget 11
+visited states by remaining budget: j=4:1 j=3:9 j=2:820 j=1:100563
+RESULT p=3: YES, circuit with 11 gates. points in order (after the 8 inputs):
+  g8  TARGET = [1 1 0 0 0 0 0 0]  from #1 + 1*#0 (projectively)
+  g9  TARGET = [1 0 1 0 0 0 0 0]  from #2 + 1*#0 (projectively)
+  g10 TARGET = [1 0 0 0 1 0 0 0]  from #4 + 1*#0 (projectively)
+  g11 inter  = [0 0 0 0 1 0 1 0]  from #6 + 1*#4 (projectively)
+  g12 TARGET = [1 0 1 0 1 0 1 0]  from #11 + 1*#9 (projectively)

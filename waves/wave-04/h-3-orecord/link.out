@@ -1,0 +1,31 @@
+4 points, brick hub: N=4 centre +++-
+   Walsh spectrum of the centre (values: how many rows): {-2: 1, 2: 3}
+   M = H * R_N(centre): rows equal to a row of H: 0; supports of the rows of M: [1, 1, 1, 1]
+   bits made by R_N on fresh data: 8.0000 of 8  (1.0000 per operation at 2N = 8 operations (O)); bits left: 0.0000
+8 points, g-1 centre: N=8 centre +---++-+
+   Walsh spectrum of the centre (values: how many rows): {-4: 1, 0: 4, 4: 3}
+   M = H * R_N(centre): rows equal to a row of H: 4; supports of the rows of M: [2, 2, 2, 2, 8, 8, 8, 8]
+   bits made by R_N on fresh data: 17.7353 of 24  (1.1085 per operation at 2N = 16 operations (O)); bits left: 6.2647
+      row 0 of M:  1  1  1  1  1  1  1  1
+      row 1 of M:  1 -1  1 -1  1 -1  1 -1
+      row 2 of M:  0  2  0  0  0  0  0 -2
+      row 3 of M:  0  0  0  2  0 -2  0  0
+      row 4 of M:  2  0  0  0  0  0 -2  0
+      row 5 of M:  0  0  2  0 -2  0  0  0
+      row 6 of M:  1  1 -1 -1 -1 -1  1  1
+      row 7 of M:  1 -1 -1  1 -1  1  1 -1
+16 points, hub x hub (bent): N=16 centre +++-+++-+++----+
+   Walsh spectrum of the centre (values: how many rows): {-4: 6, 4: 10}
+   M = H * R_N(centre): rows equal to a row of H: 0; supports of the rows of M: [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+   bits made by R_N on fresh data: 27.2198 of 64  (0.8506 per operation at 2N = 32 operations (O)); bits left: 36.7802
+16 points, hub x (+,+) x (+,-): N=16 centre +-+-+-+-+-+--+-+
+   Walsh spectrum of the centre (values: how many rows): {-8: 1, 0: 12, 8: 3}
+   M = H * R_N(centre): rows equal to a row of H: 12; supports of the rows of M: [4, 4, 4, 4, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+   bits made by R_N on fresh data: 27.2198 of 64  (0.8506 per operation at 2N = 32 operations (O)); bits left: 36.7802
+16 points, g-1 centre x (+,+): N=16 centre ++------++++--++
+   Walsh spectrum of the centre (values: how many rows): {-8: 1, 0: 12, 8: 3}
+   M = H * R_N(centre): rows equal to a row of H: 12; supports of the rows of M: [4, 4, 4, 4, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16]
+   bits made by R_N on fresh data: 27.2198 of 64  (0.8506 per operation at 2N = 32 operations (O)); bits left: 36.7802
+
+unit of 20 operations: 24 bits (a flat 8-point transform up to one common scale), 24/20 = 1.2000 bits per operation
+LIGHT label=h3-link exit=0 time=1s waited=16s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:52:24 cmd=python3 -B link.py

@@ -1,0 +1,4 @@
+n=4 m=4: classes where a helper of height<=2 saves a gate: 2 ; height<=3: 2 ; last helper any height: 2
+n=4 m=5: classes where a helper of height<=2 saves a gate: 3 ; height<=3: 3 ; last helper any height: 3
+n=4 m=6: classes where a helper of height<=2 saves a gate: 18 ; height<=3: 18 ; last helper any height: 18
+n=4 m=7: classes where a helper of height<=2 saves a gate: 70 ; height<=3: 70 ; last helper any height: 70

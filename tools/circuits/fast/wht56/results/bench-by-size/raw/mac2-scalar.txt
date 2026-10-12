@@ -1,0 +1,154 @@
+machine: mac2; Darwin 25.6.0 arm64
+compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+build scalar: cc -std=c11 -O2 -fno-vectorize -fno-slp-vectorize -o bench_size_scalar bench_size.c wht56.c -lm
+start: Sun Oct 11 10:06:08 EDT 2026
+BEFORE
+load: 10:06  up 40 days, 16:25, 6 users, load averages: 5.57 5.06 5.85
+other processes above 50% of a processor:
+   100.0 65786 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python
+   100.0 67199 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python
+   100.0 67295 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python
+   count: 3
+# bench_size: 11 rounds per cell, target 0.30 s per timed loop; times in ns per point, copy included
+# ROW k N variant reps loop_s_min wall_min wall_median wall_max cpu_min
+CHECK k=3 N=8 integer input: new_exact = r2, r8 = r2, new_scaled*2 = r2, exactly, on all 8 outputs; r2 = definition in 64-bit integers: yes, all outputs; largest |output| 2698
+CHECK k=3 real input: largest difference from r2 8.88e-16 (allowed 8e-12)
+REP k=3 copy 0.2595 0.2678 0.2873 0.2668 0.2873 0.2742 0.2792 0.2836 0.2694 0.2730 0.2592
+REP k=3 r2 1.1653 1.2060 1.1973 1.1718 1.1943 1.1350 1.1812 1.2279 1.1709 1.1806 1.1691
+REP k=3 r8 1.1733 1.1694 1.1780 1.1611 1.1418 1.1815 1.1811 1.2054 1.2072 1.2082 1.1748
+REP k=3 new_exact 1.2520 1.2232 1.2186 1.2065 1.2158 1.1818 1.2186 1.2780 1.2700 1.2884 1.2575
+REP k=3 new_scaled 1.1851 1.1390 1.1787 1.1581 1.2028 1.1683 1.1955 1.2378 1.2448 1.2045 1.1754
+ROW 3 8 copy 142616914 0.296 0.2592 0.2730 0.2873 0.2591
+ROW 3 8 r2 31073522 0.282 1.1350 1.1806 1.2279 1.1349
+ROW 3 8 r8 32739865 0.299 1.1418 1.1780 1.2082 1.1412
+ROW 3 8 new_exact 31872419 0.301 1.1818 1.2232 1.2884 1.1816
+ROW 3 8 new_scaled 31834922 0.290 1.1390 1.1851 1.2448 1.1386
+CHECK k=6 N=64 integer input: new_exact = r2, r8 = r2, new_scaled*4 = r2, exactly, on all 64 outputs; r2 = definition in 64-bit integers: yes, all outputs; largest |output| 14616
+CHECK k=6 real input: largest difference from r2 1.78e-15 (allowed 6.4e-11)
+REP k=6 copy 0.1128 0.1161 0.1185 0.1160 0.1178 0.1165 0.1161 0.1157 0.1171 0.1165 0.1135
+REP k=6 r2 1.4670 1.4227 1.4509 1.4400 1.4743 1.4534 1.4378 1.4579 1.4485 1.4499 1.4008
+REP k=6 r8 0.6988 0.7019 0.7048 0.7083 0.7116 0.7183 0.7216 0.6992 0.7103 0.6974 0.6745
+REP k=6 new_exact 0.7271 0.7332 0.7229 0.7286 0.7339 0.7296 0.7369 0.7086 0.6895 0.7130 0.6958
+REP k=6 new_scaled 0.6737 0.6835 0.6759 0.6927 0.6833 0.6875 0.6941 0.6711 0.6897 0.6818 0.6488
+ROW 6 64 copy 39881183 0.288 0.1128 0.1161 0.1185 0.1128
+ROW 6 64 r2 3203585 0.287 1.4008 1.4499 1.4743 1.4006
+ROW 6 64 r8 6488713 0.280 0.6745 0.7048 0.7216 0.6745
+ROW 6 64 new_exact 6342066 0.280 0.6895 0.7271 0.7369 0.6894
+ROW 6 64 new_scaled 7166321 0.298 0.6488 0.6833 0.6941 0.6487
+CHECK k=9 N=512 integer input: new_exact = r2, r8 = r2, new_scaled*8 = r2, exactly, on all 512 outputs; r2 = definition in 64-bit integers: yes, all outputs; largest |output| 42995
+CHECK k=9 real input: largest difference from r2 1.07e-14 (allowed 5.12e-10)
+REP k=9 copy 0.0966 0.1005 0.1022 0.0991 0.1007 0.1011 0.1011 0.0967 0.0945 0.0983 0.0995
+REP k=9 r2 1.8013 1.8748 1.8985 1.8769 1.8942 1.8470 1.9211 1.8551 1.7461 1.8450 1.8419
+REP k=9 r8 0.7738 0.8277 0.8234 0.8231 0.8160 0.8231 0.8041 0.7871 0.7709 0.8113 0.8109
+REP k=9 new_exact 0.7837 0.8313 0.8341 0.8246 0.8260 0.8217 0.8203 0.7957 0.7795 0.7969 0.8041
+REP k=9 new_scaled 0.7481 0.7924 0.7836 0.7817 0.7840 0.7896 0.7534 0.7478 0.7205 0.7450 0.7776
+ROW 9 512 copy 5882615 0.285 0.0945 0.0995 0.1022 0.0945
+ROW 9 512 r2 330974 0.296 1.7461 1.8551 1.9211 1.7459
+ROW 9 512 r8 757496 0.299 0.7709 0.8113 0.8277 0.7707
+ROW 9 512 new_exact 764611 0.305 0.7795 0.8203 0.8341 0.7794
+ROW 9 512 new_scaled 818229 0.302 0.7205 0.7776 0.7924 0.7204
+CHECK k=10 N=1024 integer input: new_exact = r2, r8 = r2, new_scaled*8 = r2, exactly, on all 1024 outputs; r2 = definition in 64-bit integers: yes, all outputs; largest |output| 80929
+CHECK k=10 real input: largest difference from r2 2.13e-14 (allowed 1.02e-09)
+REP k=10 copy 0.0981 0.0897 0.0916 0.0976 0.0963 0.0983 0.0963 0.0956 0.0934 0.0941 0.0952
+REP k=10 r2 1.9391 1.9383 1.9999 2.0522 2.0539 2.0514 2.0649 2.0351 2.0084 1.9925 2.0176
+REP k=10 r8 0.9810 0.9488 0.9590 1.0287 1.0218 1.0026 1.0108 1.0040 0.9732 1.0178 1.0061
+REP k=10 new_exact 0.9709 0.9496 0.9673 0.9950 1.0249 1.0020 1.0030 0.9898 1.0105 1.0450 1.0026
+REP k=10 new_scaled 0.9122 0.9154 0.9043 0.9629 0.9619 0.9535 0.9592 0.9993 0.9697 0.9696 1.0174
+ROW 10 1024 copy 3241014 0.298 0.0897 0.0956 0.0983 0.0897
+ROW 10 1024 r2 141490 0.281 1.9383 2.0176 2.0649 1.9338
+ROW 10 1024 r8 288417 0.280 0.9488 1.0040 1.0287 0.9467
+ROW 10 1024 new_exact 280476 0.273 0.9496 1.0020 1.0450 0.9491
+ROW 10 1024 new_scaled 270870 0.251 0.9043 0.9619 1.0174 0.9041
+CHECK k=12 N=4096 integer input: new_exact = r2, r8 = r2, new_scaled*16 = r2, exactly, on all 4096 outputs; r2 = definition in 64-bit integers: yes, all outputs; largest |output| 145098
+CHECK k=12 real input: largest difference from r2 4.26e-14 (allowed 4.1e-09)
+REP k=12 copy 0.0911 0.0910 0.0936 0.0925 0.0936 0.0988 0.0923 0.0999 0.0934 0.0945 0.0904
+REP k=12 r2 2.4097 2.3146 2.3220 2.3972 2.3981 2.3433 2.3654 2.3786 2.3532 2.3758 2.3370
+REP k=12 r8 1.0343 0.9763 0.9941 1.0101 1.0172 1.0039 0.9917 0.9938 1.0051 0.9886 1.0008
+REP k=12 new_exact 1.0090 0.9688 0.9851 0.9960 1.0064 0.9879 0.9763 1.0201 0.9988 0.9837 1.0026
+REP k=12 new_scaled 0.9718 0.9335 0.9490 0.9718 0.9634 0.9428 0.9308 1.0407 1.0577 0.9586 0.9641
+ROW 12 4096 copy 763378 0.283 0.0904 0.0934 0.0999 0.0904
+ROW 12 4096 r2 31299 0.297 2.3146 2.3654 2.4097 2.3137
+ROW 12 4096 r8 68898 0.276 0.9763 1.0008 1.0343 0.9756
+ROW 12 4096 new_exact 69855 0.277 0.9688 0.9960 1.0201 0.9684
+ROW 12 4096 new_scaled 79036 0.301 0.9308 0.9634 1.0577 0.9297
+CHECK k=15 N=32768 integer input: new_exact = r2, r8 = r2, new_scaled*32 = r2, exactly, on all 32768 outputs; r2 = definition in 64-bit integers: not run (k > 12); largest |output| 470438
+CHECK k=15 real input: largest difference from r2 1.42e-13 (allowed 3.28e-08)
+REP k=15 copy 0.1113 0.1144 0.1144 0.1169 0.1107 0.1095 0.1144 0.1154 0.1166 0.1169 0.1164
+REP k=15 r2 3.1037 3.1489 3.2021 3.2099 3.0199 3.0179 3.0544 3.1315 3.2038 3.1287 3.2354
+REP k=15 r8 1.4036 1.4155 1.4261 1.4368 1.3737 1.3721 1.3744 1.4316 1.4602 1.4353 1.4795
+REP k=15 new_exact 1.3695 1.4220 1.3982 1.3943 1.3707 1.3646 1.3568 1.4136 1.4407 1.4640 1.4866
+REP k=15 new_scaled 1.3709 1.4052 1.3813 1.3816 1.3641 1.3429 1.3711 1.3826 1.3994 1.4128 1.4461
+ROW 15 32768 copy 80168 0.288 0.1095 0.1144 0.1169 0.1095
+ROW 15 32768 r2 2992 0.296 3.0179 3.1315 3.2354 3.0168
+ROW 15 32768 r8 6586 0.296 1.3721 1.4261 1.4795 1.3721
+ROW 15 32768 new_exact 6783 0.302 1.3568 1.3982 1.4866 1.3566
+ROW 15 32768 new_scaled 6884 0.303 1.3429 1.3816 1.4461 1.3428
+CHECK k=16 N=65536 integer input: new_exact = r2, r8 = r2, new_scaled*32 = r2, exactly, on all 65536 outputs; r2 = definition in 64-bit integers: not run (k > 12); largest |output| 715072
+CHECK k=16 real input: largest difference from r2 2.27e-13 (allowed 6.55e-08)
+REP k=16 copy 0.1185 0.1161 0.1155 0.1140 0.1129 0.1170 0.1141 0.1136 0.1150 0.1185 0.1134
+REP k=16 r2 3.3956 3.3708 3.4457 3.4400 3.2889 3.2398 3.4095 3.3961 3.3908 3.4311 3.3420
+REP k=16 r8 1.6620 1.7102 1.6963 1.6871 1.6286 1.6341 1.6720 1.6984 1.6964 1.6557 1.6629
+REP k=16 new_exact 1.6948 1.7296 1.6584 1.6502 1.6046 1.6378 1.6222 1.6709 1.6970 1.6345 1.6232
+REP k=16 new_scaled 1.6840 1.6699 1.6658 1.6634 1.6812 1.6629 1.6552 1.6616 1.6622 1.6772 1.6150
+ROW 16 65536 copy 39588 0.293 0.1129 0.1150 0.1185 0.1129
+ROW 16 65536 r2 1330 0.282 3.2398 3.3956 3.4457 3.2394
+ROW 16 65536 r8 2725 0.291 1.6286 1.6720 1.7102 1.6284
+ROW 16 65536 new_exact 2698 0.284 1.6046 1.6502 1.7296 1.6045
+ROW 16 65536 new_scaled 2767 0.293 1.6150 1.6634 1.6840 1.6147
+CHECK k=18 N=262144 integer input: new_exact = r2, r8 = r2, new_scaled*64 = r2, exactly, on all 262144 outputs; r2 = definition in 64-bit integers: not run (k > 12); largest |output| 1284723
+CHECK k=18 real input: largest difference from r2 5.26e-13 (allowed 2.62e-07)
+REP k=18 copy 0.1181 0.1165 0.1174 0.1161 0.1139 0.1193 0.1177 0.1126 0.1098 0.1154 0.1144
+REP k=18 r2 3.8756 3.8590 3.9880 3.7856 3.8952 3.9172 3.8854 3.8514 3.7780 3.8592 3.8690
+REP k=18 r8 1.7009 1.7759 1.7636 1.7025 1.7649 1.7649 1.7343 1.6792 1.6984 1.7435 1.7573
+REP k=18 new_exact 1.6924 1.7166 1.7237 1.8037 1.7566 1.6913 1.7470 1.6281 1.6633 1.7438 1.6968
+REP k=18 new_scaled 1.6533 1.6951 1.7296 1.7835 1.6755 1.7329 1.7834 1.6283 1.6069 1.6612 1.6293
+ROW 18 262144 copy 10025 0.289 0.1098 0.1161 0.1193 0.1098
+ROW 18 262144 r2 298 0.295 3.7780 3.8690 3.9880 3.7773
+ROW 18 262144 r8 703 0.309 1.6792 1.7435 1.7759 1.6786
+ROW 18 262144 new_exact 633 0.270 1.6281 1.7166 1.8037 1.6278
+ROW 18 262144 new_scaled 662 0.279 1.6069 1.6755 1.7835 1.6068
+CHECK k=20 N=1048576 integer input: new_exact = r2, r8 = r2, new_scaled*64 = r2, exactly, on all 1048576 outputs; r2 = definition in 64-bit integers: not run (k > 12); largest |output| 2924521
+CHECK k=20 real input: largest difference from r2 1.14e-12 (allowed 1.05e-06)
+REP k=20 copy 0.1157 0.1219 0.1182 0.1130 0.1146 0.1145 0.1144 0.1131 0.1182 0.1196 0.1215
+REP k=20 r2 4.2956 4.2724 4.3942 4.2351 4.2539 4.3627 4.3210 4.2748 4.2769 4.3214 4.3410
+REP k=20 r8 2.1551 2.2010 2.2517 2.1738 2.1586 2.1250 2.1474 2.3501 2.1371 2.2000 2.1843
+REP k=20 new_exact 2.2144 2.1612 2.1932 2.2196 2.1745 2.1310 2.1499 2.1789 2.2112 2.2248 2.1845
+REP k=20 new_scaled 2.2694 2.2253 2.2234 2.1656 2.1390 2.1291 2.1650 2.1242 2.2592 2.1759 2.1668
+ROW 20 1048576 copy 2506 0.297 0.1130 0.1157 0.1219 0.1130
+ROW 20 1048576 r2 71 0.315 4.2351 4.2956 4.3942 4.2344
+ROW 20 1048576 r8 137 0.305 2.1250 2.1738 2.3501 2.1250
+ROW 20 1048576 new_exact 136 0.304 2.1310 2.1845 2.2248 2.1310
+ROW 20 1048576 new_scaled 132 0.294 2.1242 2.1668 2.2694 2.1240
+CHECK k=21 N=2097152 integer input: new_exact = r2, r8 = r2, new_scaled*128 = r2, exactly, on all 2097152 outputs; r2 = definition in 64-bit integers: not run (k > 12); largest |output| 4391852
+CHECK k=21 real input: largest difference from r2 1.76e-12 (allowed 2.1e-06)
+REP k=21 copy 0.1542 0.1513 0.1571 0.1461 0.1570 0.1570 0.1532 0.1529 0.1491 0.1546 0.1524
+REP k=21 r2 4.5889 4.5259 4.7007 4.6460 4.6205 4.6803 4.6749 4.6243 4.4436 4.6112 4.5064
+REP k=21 r8 2.0378 2.0742 2.1084 2.0634 2.1622 2.0778 2.0600 2.1363 2.0750 2.2222 2.1321
+REP k=21 new_exact 2.0359 2.0309 2.0617 2.0787 2.0983 2.1624 2.0185 2.0643 2.1561 2.1208 2.0873
+REP k=21 new_scaled 2.0231 2.0297 2.1205 2.1148 2.1347 2.0453 2.0105 2.0692 2.0601 2.0185 2.1026
+ROW 21 2097152 copy 919 0.282 0.1461 0.1532 0.1571 0.1459
+ROW 21 2097152 r2 32 0.298 4.4436 4.6205 4.7007 4.4424
+ROW 21 2097152 r8 71 0.303 2.0378 2.0778 2.2222 2.0378
+ROW 21 2097152 new_exact 72 0.305 2.0185 2.0787 2.1624 2.0183
+ROW 21 2097152 new_scaled 72 0.304 2.0105 2.0601 2.1347 2.0097
+CHECK k=24 N=16777216 integer input: new_exact = r2, r8 = r2, new_scaled*256 = r2, exactly, on all 16777216 outputs; r2 = definition in 64-bit integers: not run (k > 12); largest |output| 12902402
+CHECK k=24 real input: largest difference from r2 5.46e-12 (allowed 1.68e-05)
+REP k=24 copy 0.1768 0.1754 0.1786 0.1779 0.1759 0.1768 0.1757 0.1768 0.1778 0.1733 0.1792
+REP k=24 r2 5.2812 5.2447 5.4998 5.3984 5.4916 5.4727 5.2858 5.3016 5.3870 5.3897 5.4276
+REP k=24 r8 2.4059 2.4281 2.4256 2.4196 2.5266 2.4890 2.4402 2.4825 2.4179 2.5379 2.5406
+REP k=24 new_exact 2.3958 2.4113 2.4712 2.4641 2.4880 2.5036 2.4780 2.4518 2.3985 2.4780 2.5165
+REP k=24 new_scaled 2.3925 2.3689 2.4659 2.4928 2.4268 2.4699 2.4028 2.4165 2.4225 2.3626 2.4651
+ROW 24 16777216 copy 102 0.297 0.1733 0.1768 0.1792 0.1733
+ROW 24 16777216 r2 4 0.352 5.2447 5.3897 5.4998 5.2427
+ROW 24 16777216 r8 8 0.323 2.4059 2.4402 2.5406 2.4053
+ROW 24 16777216 new_exact 8 0.322 2.3958 2.4712 2.5165 2.3950
+ROW 24 16777216 new_scaled 8 0.317 2.3626 2.4225 2.4928 2.3621
+CHECK OK: all checks passed at every size above
+end: Sun Oct 11 10:09:27 EDT 2026
+AFTER
+load: 10:09  up 40 days, 16:29, 6 users, load averages: 4.87 5.04 5.68
+other processes above 50% of a processor:
+   100.0 67199 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python
+   100.0 67295 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python
+   100.0 67650 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python
+   count: 3

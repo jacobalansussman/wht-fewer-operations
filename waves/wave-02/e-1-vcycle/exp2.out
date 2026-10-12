@@ -1,0 +1,54 @@
+== S minus vectors 166 target dim 6
+ orthogonality graph: degrees min/median/max 41 41 60
+ orthogonal frames (cliques of size m): 705
+ histogram (s_R greedy, non-zeros, subgroup sizes used): count
+   (34, 48, (2, 2, 2, 2, 2, 2)) 15  total program 2*s_R+m = 74
+   (34, 52, (2, 2, 2, 2, 2, 2)) 180  total program 2*s_R+m = 74
+   (34, 56, (2, 2, 2, 2, 2, 2)) 390  total program 2*s_R+m = 74
+   (34, 60, (2, 2, 2, 2, 2, 2)) 120  total program 2*s_R+m = 74
+ best frame: s_R 34 total 74 (textbook 64, known 56)
+    (0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, -1, 1, 1, 1) (2, 8, 4)
+    (0, 0, 1, -1, 0, 0, -1, 1, 0, 0, -1, 1, 0, 0, -1, 1) (2, 2, 1)
+    (0, 0, 1, 1, 0, 0, -1, -1, -1, 1, 0, 0, -1, 1, 0, 0) (2, 2, 1)
+    (1, -1, -1, -1, 1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0) (2, 0, 0)
+    (1, -1, 0, 0, -1, 1, 0, 0, 0, 0, -1, -1, 0, 0, -1, -1) (2, 0, 0)
+    (1, 1, 0, 0, -1, -1, 0, 0, -1, -1, 0, 0, -1, -1, 0, 0) (2, 0, 0)
+== H minus vectors 418 target dim 8
+ orthogonality graph: degrees min/median/max 104 127 185
+ orthogonal frames (cliques of size m): 2108
+ histogram (s_R greedy, non-zeros, subgroup sizes used): count
+   (36, 56, (2, 2, 2, 2, 2, 4, 4, 4)) 3  total program 2*s_R+m = 80
+   (36, 56, (2, 2, 4, 4, 4, 4, 4, 4)) 2  total program 2*s_R+m = 80
+   (36, 58, (2, 2, 2, 2, 2, 4, 4, 4)) 24  total program 2*s_R+m = 80
+   (36, 58, (2, 2, 4, 4, 4, 4, 4, 4)) 8  total program 2*s_R+m = 80
+   (36, 60, (2, 2, 2, 2, 2, 2, 4, 4)) 12  total program 2*s_R+m = 80
+   (36, 60, (2, 2, 2, 2, 2, 4, 4, 4)) 72  total program 2*s_R+m = 80
+   (36, 60, (2, 2, 2, 2, 4, 4, 4, 4)) 8  total program 2*s_R+m = 80
+   (36, 60, (2, 2, 4, 4, 4, 4, 4, 4)) 14  total program 2*s_R+m = 80
+   (36, 62, (2, 2, 2, 2, 2, 2, 4, 4)) 72  total program 2*s_R+m = 80
+   (36, 62, (2, 2, 2, 2, 2, 4, 4, 4)) 120  total program 2*s_R+m = 80
+   (36, 62, (2, 2, 2, 2, 4, 4, 4, 4)) 48  total program 2*s_R+m = 80
+   (36, 64, (2, 2, 2, 2, 2, 2, 4, 4)) 156  total program 2*s_R+m = 80
+   (36, 64, (2, 2, 2, 2, 2, 4, 4, 4)) 150  total program 2*s_R+m = 80
+   (36, 64, (2, 2, 2, 2, 4, 4, 4, 4)) 64  total program 2*s_R+m = 80
+   (36, 66, (2, 2, 2, 2, 2, 2, 4, 4)) 192  total program 2*s_R+m = 80
+   (36, 66, (2, 2, 2, 2, 2, 4, 4, 4)) 48  total program 2*s_R+m = 80
+   (36, 68, (2, 2, 2, 2, 2, 2, 4, 4)) 120  total program 2*s_R+m = 80
+   (37, 60, (2, 2, 2, 2, 4, 4, 4, 4)) 16  total program 2*s_R+m = 82
+   (37, 62, (2, 2, 2, 2, 4, 4, 4, 4)) 68  total program 2*s_R+m = 82
+   (38, 56, (2, 2, 4, 4, 4, 4, 4, 4)) 4  total program 2*s_R+m = 84
+   (38, 58, (2, 2, 4, 4, 4, 4, 4, 4)) 20  total program 2*s_R+m = 84
+   (38, 60, (2, 2, 2, 2, 2, 4, 4, 4)) 36  total program 2*s_R+m = 84
+   (38, 60, (2, 2, 2, 2, 4, 4, 4, 4)) 24  total program 2*s_R+m = 84
+   (38, 64, (2, 2, 2, 2, 2, 2, 4, 4)) 48  total program 2*s_R+m = 84
+   (38, 64, (2, 2, 2, 2, 2, 4, 4, 4)) 107  total program 2*s_R+m = 84
+ best frame: s_R 36 total 80 (textbook 64, known 56)
+    (0, 0, 0, 0, 1, 0, 0, 1, -1, 0, 0, -1, 0, 0, 0, 0) (4, 4, 5)
+    (0, 0, 0, 0, 1, 1, 1, -1, -1, -1, -1, 1, 0, 0, 0, 0) (2, 5, 4)
+    (0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0) (4, 0, 0)
+    (0, 1, -1, 0, 0, 1, -1, 0, 0, 1, -1, 0, 0, -1, 1, 0) (2, 5, 1)
+    (0, 1, 1, 0, -1, 0, 0, 1, -1, 0, 0, 1, 0, -1, -1, 0) (4, 1, 4)
+    (1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1) (2, 0, 0)
+    (1, 0, 0, -1, 0, -1, -1, 0, 0, -1, -1, 0, -1, 0, 0, 1) (2, 0, 0)
+    (1, 0, 0, 1, -1, 0, 0, -1, -1, 0, 0, -1, -1, 0, 0, -1) (2, 0, 0)
+LIGHT label=e1-exp2 exit=0 time=28s waited=0s peak_rss_mb=17 peak_footprint_mb=13 lowest_cap_mb=1500 stopped=- start=21:53:48 cmd=python3 -B exp2.py

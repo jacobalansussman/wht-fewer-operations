@@ -1,0 +1,8 @@
+N = 8: 4000 random tight-only circuits, pruned to the wires the outputs use
+  least number of gates seen: 27   (N log2 N = 24)
+  sizes seen (size: how often), smallest ten: [(27, 3), (28, 2), (29, 4), (30, 12), (31, 10), (32, 17), (33, 10), (34, 26), (35, 22), (36, 31)]
+LIGHT label=a2-rand3 exit=0 time=36s waited=8s peak_rss_mb=15 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=22:25:58 cmd=python3 -B tight.py rand 3 4000
+N = 16: 300 random tight-only circuits, pruned to the wires the outputs use
+  least number of gates seen: 245   (N log2 N = 64)
+  sizes seen (size: how often), smallest ten: [(245, 1), (271, 1), (277, 1), (283, 1), (287, 1), (289, 1), (293, 1), (297, 1), (299, 1), (300, 1)]
+LIGHT label=a2-rand4 exit=0 time=85s waited=0s peak_rss_mb=80 peak_footprint_mb=76 lowest_cap_mb=1500 stopped=- start=22:26:34 cmd=python3 -B tight.py rand 4 300

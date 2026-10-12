@@ -1,0 +1,4 @@
+Clebsch (4 pairings x 35 lines): (zero points on the line, strict collapse) -> count: [((0, 7), 40), ((1, 8), 60), ((2, 7), 40)]
+two-pass: (points of the first digit on the line, strict collapse) -> count: [((0, 7), 16), ((1, 8), 18), ((3, 7), 1)]
+rook: ((points of digit 1, points of digit 2) on the line, strict collapse) -> count: [(((0, 0), 7), 6), (((0, 1), 7), 9), (((0, 3), 7), 1), (((1, 0), 7), 9), (((1, 1), 8), 9), (((3, 0), 7), 1)]
+LIGHT label=e6-geom exit=0 time=3s waited=0s peak_rss_mb=14 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:33:58 cmd=/usr/bin/python3 -I -B waves/wave-02/e-6-shifts/geom.py

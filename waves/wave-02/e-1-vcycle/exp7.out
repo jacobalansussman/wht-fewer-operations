@@ -1,0 +1,5 @@
+sign function of each support is an eigenvector of S with eigenvalue: {'+4': 10, '-4': 6}  (so each support is a quadric), and S v = 4 T v on all 16
+sum of v v^T == 8 I - 2 S (= 16 * projector): True
+Gram values [-2, 2, 6]  -> 16 equiangular lines in a 6-dimensional space, cosine 1/3
+rank of the 16 x 16 matrix of these vectors: 6
+LIGHT label=e1-exp7 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:09:02 cmd=python3 -B exp7.py

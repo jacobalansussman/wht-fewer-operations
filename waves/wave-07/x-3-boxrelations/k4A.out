@@ -1,0 +1,20 @@
+K=4 orth      part=skew  (dim  6) r=2: unknowns 148, boxes 15, starts 24, best rms residual 2.28e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 orth      part=skew  (dim  6) r=3: unknowns 228, boxes 21, starts 24, best rms residual 2.10e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 orth      part=skew  (dim  6) r=4: unknowns 324, boxes 29, starts 14, best rms residual 1.55e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 orth      part=skew  (dim  6) r=5: unknowns 436, boxes 39, starts 2, best rms residual 1.05e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 orth      part=skew  (dim  6) r=6: unknowns 564, boxes 49, starts 2, best rms residual 6.15e-02, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 orth      part=symtl (dim  9) r=3: unknowns 345, boxes 15, starts 15, best rms residual 1.98e-01, hits (also right on 10 fresh boxes) 0, 40 s
+K=4 orth      part=symtl (dim  9) r=4: unknowns 465, boxes 20, starts 11, best rms residual 1.43e-01, hits (also right on 10 fresh boxes) 0, 40 s
+K=4 orth      part=symtl (dim  9) r=5: unknowns 601, boxes 25, starts 7, best rms residual 9.61e-02, hits (also right on 10 fresh boxes) 0, 40 s
+K=4 orth      part=symtl (dim  9) r=6: unknowns 753, boxes 30, starts 7, best rms residual 1.70e-16, hits (also right on 10 fresh boxes) 6 [fresh rms 8.0e-15], 40 s
+K=4 orth      part=symtl (dim  9) r=7: unknowns 921, boxes 37, starts 5, best rms residual 1.37e-16, hits (also right on 10 fresh boxes) 4 [fresh rms 2.1e-16], 40 s
+K=4 refl      part=skew  (dim  6) r=2: unknowns 148, boxes 15, starts 13, best rms residual 2.56e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 refl      part=skew  (dim  6) r=3: unknowns 228, boxes 21, starts 6, best rms residual 2.23e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 refl      part=skew  (dim  6) r=4: unknowns 324, boxes 29, starts 3, best rms residual 1.36e-01, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 refl      part=skew  (dim  6) r=5: unknowns 436, boxes 39, starts 14, best rms residual 2.13e-16, hits (also right on 10 fresh boxes) 12 [fresh rms 6.8e-14], 25 s
+K=4 refl      part=skew  (dim  6) r=6: unknowns 564, boxes 49, starts 1, best rms residual 1.97e-03, hits (also right on 10 fresh boxes) 0, 25 s
+K=4 refl      part=symtl (dim  9) r=3: unknowns 345, boxes 15, starts 3, best rms residual 2.19e-01, hits (also right on 10 fresh boxes) 0, 40 s
+K=4 refl      part=symtl (dim  9) r=4: unknowns 465, boxes 20, starts 12, best rms residual 1.82e-01, hits (also right on 10 fresh boxes) 0, 40 s
+K=4 refl      part=symtl (dim  9) r=5: unknowns 601, boxes 25, starts 11, best rms residual 1.37e-01, hits (also right on 10 fresh boxes) 0, 40 s
+K=4 refl      part=symtl (dim  9) r=6: unknowns 753, boxes 30, starts 7, best rms residual 3.58e-16, hits (also right on 10 fresh boxes) 3 [fresh rms 1.9e-15], 40 s
+K=4 refl      part=symtl (dim  9) r=7: unknowns 921, boxes 37, starts 5, best rms residual 8.67e-16, hits (also right on 10 fresh boxes) 4 [fresh rms 1.1e-15], 40 s

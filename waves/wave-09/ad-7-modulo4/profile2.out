@@ -1,0 +1,9 @@
+line sums of the affine plane, N=64 : 72 x 64, rational rank 64
+     invariant factors: 1 (x27), 2 (x9), 4 (x9), 8 (x19)
+     powers of 2: 2^0 x27, 2^1 x9, 2^2 x9, 2^3 x19   odd parts: 1 x64
+     r_j (factors not divisible by 2^j), j = 1.. : 27 36 45 64
+block of neighbour sums, k=8 : 128 x 128, rational rank 93
+     invariant factors: 1 (x64), 2 (x21), 6 (x7), 12 (x1)
+     powers of 2: 2^0 x64, 2^1 x28, 2^2 x1   odd parts: 1 x85, 3 x8
+     r_j (factors not divisible by 2^j), j = 1.. : 64 92 93
+LIGHT label=ad7-profile2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:42:45 cmd=python3 -B profile.py L64 B8

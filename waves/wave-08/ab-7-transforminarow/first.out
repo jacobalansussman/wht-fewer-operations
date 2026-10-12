@@ -1,0 +1,27 @@
+== N=4
+  D'=(-2)^t: largest entry 11; difference from H: 2-adic valuation 1, rank over Q 3; entries wrong mod 4: 4/16; entries wrong mod 8: 8/16; entries wrong mod 16: 8/16; rank mod 2 of difference/2^1: 1
+   P D P^T = [[1, 1, 1, 1], [1, -1, -3, -5], [1, -3, -3, 1], [1, -5, 1, 11]]
+  D''=(-2)^ones(t): largest entry 31; difference from H: 2-adic valuation 2, rank over Q 3; entries wrong mod 4: 0/16; entries wrong mod 8: 4/16; entries wrong mod 16: 5/16; rank mod 2 of difference/2^2: 2
+   P D P^T = [[1, 1, 1, 1], [1, -1, -3, -5], [1, -3, -9, -17], [1, -5, -17, -31]]
+  W = Z^-1 P: closed form checked; non-zeros 6 (Z has 9, P has 10); largest entry 2; W = I mod 2; rank mod 2 of (W-I)/2: 2; non-zeros of (W-I)/2 mod 2: 2; rank over Q of W-I: 2
+  (P-Z)/2: rank over Q 2, rank mod 2 2, odd entries 3, non-zero entries 3
+  H = P Mid P^T: Mid has 6 off-diagonal non-zeros of 12; diagonal [1, -2, -10, -36]
+   Mid = [[1, 0, 0, 0], [0, -2, 4, -8], [0, 4, -10, 20], [0, -8, 20, -36]]
+== N=8
+  D'=(-2)^t: largest entry 393; difference from H: 2-adic valuation 1, rank over Q 7; entries wrong mod 4: 24/64; entries wrong mod 8: 38/64; entries wrong mod 16: 46/64; rank mod 2 of difference/2^1: 2
+  D''=(-2)^ones(t): largest entry 3423; difference from H: 2-adic valuation 2, rank over Q 7; entries wrong mod 4: 0/64; entries wrong mod 8: 24/64; entries wrong mod 16: 38/64; rank mod 2 of difference/2^2: 4
+  W = Z^-1 P: closed form checked; non-zeros 24 (Z has 27, P has 36); largest entry 16; W = I mod 2; rank mod 2 of (W-I)/2: 5; non-zeros of (W-I)/2 mod 2: 8; rank over Q of W-I: 6
+  (P-Z)/2: rank over Q 6, rank mod 2 5, odd entries 14, non-zero entries 21
+  H = P Mid P^T: Mid has 42 off-diagonal non-zeros of 56; diagonal [1, -2, -10, -36, -74, -140, -532, -1864]
+== N=16
+  D'=(-2)^t: largest entry 2539989; difference from H: 2-adic valuation 1, rank over Q 15; entries wrong mod 4: 112/256; entries wrong mod 8: 164/256; entries wrong mod 16: 194/256; rank mod 2 of difference/2^1: 3
+  D''=(-2)^ones(t): largest entry 158636511; difference from H: 2-adic valuation 2, rank over Q 15; entries wrong mod 4: 0/256; entries wrong mod 8: 112/256; entries wrong mod 16: 178/256; rank mod 2 of difference/2^2: 6
+  W = Z^-1 P: closed form checked; non-zeros 104 (Z has 81, P has 136); largest entry 2528; W = I mod 2; rank mod 2 of (W-I)/2: 12; non-zeros of (W-I)/2 mod 2: 24; rank over Q of W-I: 14
+  (P-Z)/2: rank over Q 14, rank mod 2 12, odd entries 57, non-zero entries 105
+  H = P Mid P^T: Mid has 210 off-diagonal non-zeros of 240; diagonal [1, -2, -10, -36, -74, -140, -532, -1864, -1354, 25620, 169540, 576552, 845676, -2945048, -26073512, -97261200]
+== N=32
+  D'=(-2)^t: largest entry 86669538756181; difference from H: 2-adic valuation 1, rank over Q 31; entries wrong mod 4: 480/1024; entries wrong mod 8: 680/1024; entries wrong mod 16: 796/1024; rank mod 2 of difference/2^1: 4
+  D''=(-2)^ones(t): largest entry 696102845583964895; difference from H: 2-adic valuation 2, rank over Q 31; entries wrong mod 4: 0/1024; entries wrong mod 8: 480/1024; entries wrong mod 16: 744/1024; rank mod 2 of difference/2^2: 8
+  W = Z^-1 P: closed form checked; non-zeros 448 (Z has 243, P has 528); largest entry 111102464; W = I mod 2; rank mod 2 of (W-I)/2: 27; non-zeros of (W-I)/2 mod 2: 64; rank over Q of W-I: 30
+  (P-Z)/2: rank over Q 30, rank mod 2 27, odd entries 208, non-zero entries 465
+LIGHT label=ab7-first exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:15:37 cmd=python3 -B first.py

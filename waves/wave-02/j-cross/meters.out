@@ -1,0 +1,41 @@
+G N=4 gates=7 clean=3 cancelling=4 | outputs at cancellation depth 1..2 | saving=1, (N/4)*Dmax=2, (N/4)*(k-1)=1
+   wires not tight: 1 of 7; values of s*s'/N among them: [4]
+   a-2 slack sum = 15.85 against N log2 N = 8
+   wires by number of entangled address bits: {0: 6, 2: 1} | |coefficients| used: ['1', '2']
+      hub3 entangled on bits [0, 1] s*s'/N = 4
+G N=8 gates=20 clean=8 cancelling=12 | outputs at cancellation depth 2..3 | saving=4, (N/4)*Dmax=6, (N/4)*(k-1)=4
+   wires not tight: 4 of 20; values of s*s'/N among them: [4]
+   a-2 slack sum = 50.72 against N log2 N = 24
+   wires by number of entangled address bits: {0: 16, 2: 4} | |coefficients| used: ['1', '2']
+      hub3 entangled on bits [0, 1] s*s'/N = 4
+      hub8 entangled on bits [0, 1] s*s'/N = 4
+      hub11 entangled on bits [1, 2] s*s'/N = 4
+      hub16 entangled on bits [1, 2] s*s'/N = 4
+G N=16 gates=52 clean=20 cancelling=32 | outputs at cancellation depth 3..4 | saving=12, (N/4)*Dmax=16, (N/4)*(k-1)=12
+   wires not tight: 12 of 52; values of s*s'/N among them: [4]
+   a-2 slack sum = 139.48 against N log2 N = 64
+   wires by number of entangled address bits: {0: 40, 2: 12} | |coefficients| used: ['1', '2']
+      hub3 entangled on bits [0, 1] s*s'/N = 4
+      hub8 entangled on bits [0, 1] s*s'/N = 4
+      hub11 entangled on bits [1, 2] s*s'/N = 4
+      hub14 entangled on bits [1, 2] s*s'/N = 4
+      hub19 entangled on bits [0, 1] s*s'/N = 4
+      hub24 entangled on bits [0, 1] s*s'/N = 4
+      hub27 entangled on bits [1, 2] s*s'/N = 4
+      hub30 entangled on bits [1, 2] s*s'/N = 4
+      hub33 entangled on bits [2, 3] s*s'/N = 4
+      hub38 entangled on bits [2, 3] s*s'/N = 4
+      hub43 entangled on bits [2, 3] s*s'/N = 4
+      hub48 entangled on bits [2, 3] s*s'/N = 4
+G N=32 gates=128 clean=48 cancelling=80 | outputs at cancellation depth 4..5 | saving=32, (N/4)*Dmax=40, (N/4)*(k-1)=32
+   wires not tight: 32 of 128; values of s*s'/N among them: [4]
+   a-2 slack sum = 355.03 against N log2 N = 160
+   wires by number of entangled address bits: {0: 96, 2: 32} | |coefficients| used: ['1', '2']
+G N=64 gates=304 clean=112 cancelling=192 | outputs at cancellation depth 5..6 | saving=80, (N/4)*Dmax=96, (N/4)*(k-1)=80
+   wires not tight: 80 of 304; values of s*s'/N among them: [4]
+   a-2 slack sum = 862.22 against N log2 N = 384
+   wires by number of entangled address bits: {0: 224, 2: 80} | |coefficients| used: ['1', '2']
+O N=4 operations=8 {'+': 3, '-': 4, '*': 1} constants={'1/2': 1} | outputs are exactly the rows of H/2: True | textbook for H: 8 | bits per operation N log2 N / ops = 1.0000
+O N=16 operations=60 {'+': 20, '-': 32, '*': 8} constants={'1/2': 8} | outputs are exactly the rows of H/4: True | textbook for H: 64 | bits per operation N log2 N / ops = 1.0667
+O N=64 operations=352 {'+': 112, '-': 192, '*': 48} constants={'1/2': 48} | outputs are exactly the rows of H/8: True | textbook for H: 384 | bits per operation N log2 N / ops = 1.0909
+LIGHT label=jx-meters exit=0 time=1s waited=32s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:17:07 cmd=python3 -B meters.py

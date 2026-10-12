@@ -1,0 +1,12 @@
+k=3 tau=-1: rank of the low columns 4 of 4; rank together with the transform's low columns 4 (equal to 4 means the same space); rank on the even-weight points 4
+k=3 tau=3: rank of the low columns 4 of 4; rank together with the transform's low columns 4 (equal to 4 means the same space); rank on the even-weight points 4
+k=3 tau=5/7: rank of the low columns 4 of 4; rank together with the transform's low columns 4 (equal to 4 means the same space); rank on the even-weight points 4
+k=3 tau=-2: rank of the low columns 4 of 4; rank together with the transform's low columns 4 (equal to 4 means the same space); rank on the even-weight points 4
+k=3 tau=2: rank of the low columns 4 of 4; rank together with the transform's low columns 4 (equal to 4 means the same space); rank on the even-weight points 4
+k=5 tau=-1: rank of the low columns 16 of 16; rank together with the transform's low columns 16 (equal to 16 means the same space); rank on the even-weight points 16
+k=5 tau=3: rank of the low columns 16 of 16; rank together with the transform's low columns 16 (equal to 16 means the same space); rank on the even-weight points 16
+k=5 tau=5/7: rank of the low columns 16 of 16; rank together with the transform's low columns 16 (equal to 16 means the same space); rank on the even-weight points 16
+k=5 tau=-2: rank of the low columns 16 of 16; rank together with the transform's low columns 16 (equal to 16 means the same space); rank on the even-weight points 16
+k=5 tau=2: rank of the low columns 16 of 16; rank together with the transform's low columns 16 (equal to 16 means the same space); rank on the even-weight points 16
+LIGHT label=ah-h3 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:17:28 cmd=python3 -B h3_onecode.py
+h3 exit 0

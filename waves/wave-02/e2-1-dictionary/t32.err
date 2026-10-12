@@ -1,0 +1,1 @@
+LIGHT label=e2-1-t32 exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:46:15 cmd=python3 -B t32.py

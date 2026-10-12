@@ -1,0 +1,13 @@
+textbook: correct=True  additions=64 scalings=0  count(O)=64  count(G)=64  excess(G)=34
+   sum over made wires of log2(support*co-support) = 256.000 ; wires on the curve support*co-support=16: 64 of 64
+   (support, co-support) histogram: [((2, 8), 16), ((4, 4), 16), ((8, 2), 16), ((16, 1), 16)]
+Grover two passes: correct=True  additions=56 scalings=8  count(O)=64  count(G)=56  excess(G)=26
+   sum over made wires of log2(support*co-support) = 300.680 ; wires on the curve support*co-support=16: 40 of 64
+   (support, co-support) histogram: [((2, 8), 4), ((3, 16), 4), ((4, 4), 16), ((4, 16), 8), ((8, 2), 4), ((12, 4), 4), ((16, 1), 16), ((16, 4), 8)]
+N=4^1=4: additions 7 + scalings 1 = 8 ; N log2 N = 8
+N=4^2=16: additions 56 + scalings 8 = 64 ; N log2 N = 64
+N=4^3=64: additions 336 + scalings 48 = 384 ; N log2 N = 384
+N=4^4=256: additions 1792 + scalings 256 = 2048 ; N log2 N = 2048
+N=4^5=1024: additions 8960 + scalings 1280 = 10240 ; N log2 N = 10240
+N=4^6=4096: additions 43008 + scalings 6144 = 49152 ; N log2 N = 49152
+LIGHT label=e5-tab16 exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:25:35 cmd=python3 -I -B tab16.py

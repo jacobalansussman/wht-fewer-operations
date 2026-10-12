@@ -1,0 +1,21 @@
+certificate h=9 v=120 R=783 cst=72 moves=9039 ; replay ends with x_t alone and y_t + x_t: True
+additions that are gates: 3093 (free copies into an empty register: 783; results that are zero: 0)
+  phase A       additions   930  budget   1013.65  per addition 1.090  with g > 1 (quotient): 0
+  phase scatter additions   736  budget    879.49  per addition 1.195  with g > 1 (quotient): 84
+  phase B       additions  1427  budget   1438.03  per addition 1.008  with g > 1 (quotient): 120
+  kinds (A,B)/g of the additions, all phases:
+     (1,1)/1         2214   budget each 1.000
+     (1,2)/1          591   budget each 1.585
+     (1,1)/2          120   budget each 0.000
+     (1,1)/3           56   budget each -0.585
+     (1,6)/1           56   budget each 2.807
+     (1,3)/1           28   budget each 2.000
+     (1,2)/3           28   budget each 0.000
+  largest coefficient in any addition: 6 at ('scatter', 148, 6, 1, 1) ; largest entry of any primitive content vector: 7
+moves: up 9087 (of which 120 the prologue of the sources' port moves), down 72
+ONE INVOCATION as one gate list (G), 122880 points: gates 6273024 ; budget 6376533 ; per gate 1.0165
+   quotient gates (g of size > 1): 141312 = (72 moves down + 204 additions) x 2^9 ; they bring 18432 of the budget
+   needed for the 2v data outputs (log2 of the determinant of their primitive forms): 522240 ; budget / needed = 12.21
+   the same with the helpers' own moves left out (data registers and copies only): gates 2664960 budget 2768469 per gate 1.0388
+PLAIN schedule for the same job (one copy move down and one addition per pair): gates 4775424 ; budget 4744704 ; per gate 0.9936 ; budget / needed = 9.09
+   without the helpers' moves: gates 1167360 budget 1136640 per gate 0.9737

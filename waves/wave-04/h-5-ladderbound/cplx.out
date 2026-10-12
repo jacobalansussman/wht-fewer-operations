@@ -1,0 +1,7 @@
+hub (4 points)   (1, 1, -1, 1) : real part of c * product of (1, +-i): signs (1, -1), c = 1-1i
+g7 centre        (1, -1, -1, -1, 1, 1, -1, 1) : not of that form
+g8               (1, -1, -1, -1, 1, 1, -1, -1) : not of that form
+g9               (1, -1, -1, -1, 1, -1, -1, 1) : not of that form
+g10              (1, -1, -1, -1, 1, 1, 1, -1) : real part of c * product of (1, +-i): signs (1, 1, -1), c = 1+1i
+g11              (1, -1, -1, -1, -1, -1, -1, 1) : real part of c * product of (1, +-i): signs (1, 1, 1), c = 1+1i
+hub11 of the 20  (1, 1, 1, 1, 1, 1, -1, -1) : not of that form

@@ -1,0 +1,8 @@
+(a) D_z D_z = shift_z for every z: True ; D_z^-1 = D_z shift_z: True
+(b) non-zeros per row: F_perp [4] (squared modulus [Fraction(1, 4)]); F_perp D_p^-1, what the y-array receives from the x-array, [8] (squared modulus [Fraction(1, 8)]); the product of all three D [8]
+    note: in this toy the frames are plain products of D, so D_1 D_2 D_4 and F_perp D_p are different operators; the engine makes
+    one operator per subspace with free address maps and phases (h-7 section 1). Statement (e) of an earlier draft (every D_z
+    diagonal at the full frame) was FALSE in this toy and is withdrawn: F commutes with D_z, so F D_z F^-1 = D_z.
+(c) x-array after the invocation = F_perp(X raw): True ; y-array = F_perp(Y) + F_perp D_p^-1 X = F_perp(Y) + F_perp D_p (shift_p X): True
+(d) three shears: X ends as -D Y: True ; Y ends as D^-1 X = D (shift X): True
+(f) (2A+U)(2a+u) - U u = 272 = 2 (A u + U a) + 4 A a: the wanted product A a carries the factor 4 True

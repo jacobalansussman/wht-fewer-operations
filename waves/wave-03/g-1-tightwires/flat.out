@@ -1,0 +1,8 @@
+N = 4, entries 0, 1, -1: 80 vectors; least a_i + a_j over all vectors and pairs of outputs = 2 (theorem: >= N/2 = 2)
+N = 4, entries 1, i, -1, -i: 64 vectors; least a_i + a_j over all vectors and pairs of outputs = 2 (theorem: >= N/2 = 2)
+   flat on both sides: 16; sorted partner supports to the 4 outputs: [((1, 1, 1, 1), 4), ((2, 2, 2, 2), 12)]
+N = 8, entries 0, 1, -1: 6560 vectors; least a_i + a_j over all vectors and pairs of outputs = 4 (theorem: >= N/2 = 4)
+N = 8, entries 1, i, -1, -i: 16384 vectors; least a_i + a_j over all vectors and pairs of outputs = 4 (theorem: >= N/2 = 4)
+   flat on both sides: 224; sorted partner supports to the 8 outputs: [((5, 5, 5, 5, 5, 5, 5, 5), 224)]
+N = 16, sign vectors flat on both sides (first entry +1): 448; sorted partner supports to the 16 outputs: [((6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6), 448)]
+LIGHT label=g1-flat exit=0 time=2s waited=0s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:02:10 cmd=python3 -B flat.py 16

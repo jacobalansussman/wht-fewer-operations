@@ -1,0 +1,6 @@
+M[g][h] = r[g] s[h] (-1)^(pi(g).sigma(h)) on all 256 entries: True
+pi (address of group element (a,b), a on the 8-cycle): {(0, 0): '0000', (0, 1): '0001', (1, 0): '0010', (1, 1): '0100', (2, 0): '1000', (2, 1): '1001', (3, 0): '1100', (3, 1): '1010', (4, 0): '0111', (4, 1): '0110', (5, 0): '0101', (5, 1): '0011', (6, 0): '1111', (6, 1): '1110', (7, 0): '1011', (7, 1): '1101'}
+add-one on the 8-cycle is (bit matrix) x address + shift: True ; shift 0010 ; bit matrix columns ['0110', '1010', '1011', '1110'] ; order of the map 8
+(matrix - identity)^2 non-zero: True ; ^3 non-zero: True ; ^4 non-zero: False
+second generator: shift only: False ; shift 0001
+LIGHT label=ab7-replay exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:17:37 cmd=python3 -B replay16.py

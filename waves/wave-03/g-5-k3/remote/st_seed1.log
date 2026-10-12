@@ -1,0 +1,2 @@
+steiner_K9_s1_seed best 22 exact 22 t 0.0
+steiner_K9_s1_seed DONE evaluated 24566 best 22 hist {22: 4, 23: 11, 24: 8, 25: 35, 26: 187, 27: 866, 28: 1731, 29: 2186}

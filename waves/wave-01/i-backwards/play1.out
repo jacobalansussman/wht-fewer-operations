@@ -1,0 +1,40 @@
+== A. Householder form ==
+signed column relabelling (0, 2, 1, 3) (1, 1, 1, 1)
+   [1, 1, 1, 1]
+   [1, 1, -1, -1]
+   [1, -1, 1, -1]
+   [1, -1, -1, 1]
+rank(H4' - 2I) = 1  rows of H4'-2I: [-1, 1, 1, 1] [1, -1, -1, -1]
+N=16: rank(H' - sqrtN I) = 6   (N/2 - sqrtN/2 = 6),  rank(H' + sqrtN I) = 10
+N=64: rank(H' - sqrtN I) = 28   (N/2 - sqrtN/2 = 28),  rank(H' + sqrtN I) = 36
+plain Sylvester N=16: rank(H-4I) = 8
+u = [1, -1, -1, -1]  H4' = 2I - u u^T : True -> 3 additions for u.x, 4 for 2x_i - u_i (u.x): 7 additions (textbook 8); 16 points: 8 calls = 56 (textbook 64)
+== B. LDU: H = Z D Z^T ==
+k=2: Z D Z^T == H : True  nnz(Z) = 9 = 3^k, sum of log2|D| = 4 = (N/2) log2 N = 4
+k=4: Z D Z^T == H : True  nnz(Z) = 81 = 3^k, sum of log2|D| = 32 = (N/2) log2 N = 32
+  k=4 keep |T|<=0: rank(low part) =  1, non-zeros of remainder = 120, remainder lives on |x&y| > 0 : True
+  k=4 keep |T|<=1: rank(low part) =  5, non-zeros of remainder =  67, remainder lives on |x&y| > 1 : True
+  k=4 keep |T|<=2: rank(low part) = 11, non-zeros of remainder =  13, remainder lives on |x&y| > 2 : True
+  k=4 keep |T|<=3: rank(low part) = 15, non-zeros of remainder =   1, remainder lives on |x&y| > 3 : True
+  k=4 keep |T|<=4: rank(low part) = 16, non-zeros of remainder =   0, remainder lives on |x&y| > 4 : True
+== C. minimal-support eigenvectors of H16 ==
+  eigenvalue +4: eigenvectors with support exactly 1: 0
+  eigenvalue +4: eigenvectors with support exactly 2: 0
+  eigenvalue +4: eigenvectors with support exactly 3: 0
+  eigenvalue +4: eigenvectors with support exactly 4: 6
+  eigenvalue +4: span of the support-4 eigenvectors has dimension 3 (eigenspace: 8)
+   support types: {('affine plane', (Fraction(0, 1), Fraction(1, 1))): 6}
+  eigenvalue -4: eigenvectors with support exactly 1: 0
+  eigenvalue -4: eigenvectors with support exactly 2: 0
+  eigenvalue -4: eigenvectors with support exactly 3: 0
+  eigenvalue -4: eigenvectors with support exactly 4: 6
+  eigenvalue -4: span of the support-4 eigenvectors has dimension 3 (eigenspace: 8)
+   support types: {('affine plane', (Fraction(0, 1), Fraction(1, 1))): 6}
+== D. Zak basis of a self-dual code ==
+  V = diagonal {(v,v)} self-dual: True; 16 functions g_{a,b}, rank 16; H g_{a,b} = +-4 g_{b,a} for all: True; fixed (a=b) signs: [4, -4, -4, 4]
+  V = {0000,1100,0011,1111} self-dual: True; 16 functions g_{a,b}, rank 16; H g_{a,b} = +-4 g_{b,a} for all: True; fixed (a=b) signs: [4, -4, -4, 4]
+== E. wire profiles (support, co-support) ==
+  textbook wires (support, co-support): count  [((1, 16), 16), ((2, 8), 16), ((4, 4), 16), ((8, 2), 16), ((16, 1), 16)]
+  Householder inner-product wires u.x on one digit (support, co-support w.r.t. H16'): [((4, 16), 4)]
+  wire u(x)u . x: support 16, co-support 16
+LIGHT label=i-backwards-play1 exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:00:49 cmd=python3 -B waves/wave-01/i-backwards/play1.py

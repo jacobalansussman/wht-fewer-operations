@@ -1,0 +1,20 @@
+flats: 306 by size {1: 16, 2: 120, 4: 140, 8: 30, 16: 0}
+t     2  crude size 161 = P 94 + inverse 67 (largest entry 1) sizes of the flats (1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8, 8)
+t     5  crude size 160 = P 104 + inverse 56 (largest entry 1) sizes of the flats (1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 8, 8)
+t    17  crude size 157 = P 102 + inverse 55 (largest entry 2) sizes of the flats (1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8)
+t    25  crude size 156 = P 100 + inverse 56 (largest entry 1) sizes of the flats (1, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8)
+t    72  crude size 155 = P 98 + inverse 57 (largest entry 3) sizes of the flats (1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 8)
+t   165  crude size 152 = P 94 + inverse 58 (largest entry 1) sizes of the flats (1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8)
+local optima reached (crude size, flat sizes): count ; ten smallest:
+   ((152, (1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8)), 1)
+   ((155, (1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 8)), 1)
+   ((155, (1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 8, 8)), 1)
+   ((155, (1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 8, 8, 8)), 1)
+   ((156, (1, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 8)), 1)
+   ((156, (1, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 8, 8)), 1)
+   ((156, (1, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 8, 8, 8)), 1)
+   ((156, (1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 8)), 2)
+   ((156, (1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8)), 2)
+   ((157, (1, 1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 8)), 1)
+best basis: [[4, 6, 12, 14], [4, 6, 8, 10], [0, 6, 8, 14], [14], [0, 3, 5, 6, 8, 11, 13, 14], [6, 7, 8, 9], [9, 14], [8, 9, 14, 15], [1, 4, 9, 12], [3, 6, 8, 13], [3, 5, 8, 14], [4, 14], [6, 8], [6, 14], [3, 8], [2, 6, 9, 13]]
+LIGHT label=ad1-flats exit=0 time=240s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=06:58:54 cmd=python3 -B flatsearch.py 240 1

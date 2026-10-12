@@ -1,0 +1,2 @@
+== rows=rows_tri_n2.txt p=2 m=6
+LIGHT label=x1-e2 exit=124 time=172s waited=0s peak_rss_mb=3 peak_footprint_mb=2 lowest_cap_mb=1500 stopped=time>170s start=04:04:26 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 6 rows_tri_n2.txt

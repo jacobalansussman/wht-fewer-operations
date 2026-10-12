@@ -1,0 +1,10 @@
+== AGREE, two trees (8 4 2 1),(2 1 8 4), two centres: F0 quadratic, G0 quadratic + linear part (65,536 pairs), G0 not a terminal, MST only
+F0 quad 0  G0 quad 0 lin 0 | held 28 | MST 62 (lb 31) | after 0 rounds 62 shifts | GATES <= 91
+F0 quad 0  G0 quad 1 lin 0 | held 28 | MST 61 (lb 31) | after 0 rounds 61 shifts | GATES <= 90
+F0 quad 0  G0 quad 2 lin 0 | held 28 | MST 45 (lb 23) | after 0 rounds 45 shifts | GATES <= 74
+F0 quad 2  G0 quad 16 lin 0 | held 28 | MST 44 (lb 22) | after 0 rounds 44 shifts | GATES <= 73
+F0 quad 4  G0 quad 2 lin 0 | held 28 | MST 42 (lb 21) | after 0 rounds 42 shifts | GATES <= 71
+== the same, G0 made as a second hub (one more gate, one more terminal)
+F0 quad 0  G0 quad 0 lin 0 | held 28 | MST 62 (lb 31) | after 0 rounds 62 shifts | GATES <= 91
+F0 quad 0  G0 quad 1 lin 0 | held 28 | MST 61 (lb 31) | after 0 rounds 61 shifts | GATES <= 91
+F0 quad 0  G0 quad 2 lin 0 | held 28 | MST 49 (lb 25) | after 0 rounds 49 shifts | GATES <= 79

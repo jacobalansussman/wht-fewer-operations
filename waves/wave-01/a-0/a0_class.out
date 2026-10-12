@@ -1,0 +1,11 @@
+k=1  four-call word equals Z: True
+k=1  THREE-call word diag(1/4,1/5) H diag(3/2,-1/2) H diag(2,1) H diag(1,5/3) equals Z: True
+k=1 N= 2  four-call:True  three-call:True  H = Z D Z^T:True  Z^T = X Z X:True  Z is the subset-sum matrix:True
+k=2 N= 4  four-call:True  three-call:True  H = Z D Z^T:True  Z^T = X Z X:True  Z is the subset-sum matrix:True
+k=3 N= 8  four-call:True  three-call:True  H = Z D Z^T:True  Z^T = X Z X:True  Z is the subset-sum matrix:True
+k=4 N=16  four-call:True  three-call:True  H = Z D Z^T:True  Z^T = X Z X:True  Z is the subset-sum matrix:True
+k=5 N=32  four-call:True  three-call:True  H = Z D Z^T:True  Z^T = X Z X:True  Z is the subset-sum matrix:True
+two-call words D H D H D: entries (a+b, a-b; a-b, a+b) up to scalings; exactly one zero is impossible [derived]
+class lemma over Q, 2000 random M (no zero entry, tau not 1 or -1): Z-shape from two calls of M: True ; M = L D U from two calls of Z: True ; k=3 tensor form: True
+two calls of H over Q: every tau reached on the grid is a rational square: True ; tau = 2 reached: False ; tau = -1 (H itself) reached: False
+LIGHT label=a0-class exit=0 time=2s waited=36s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:22:24 cmd=python3 -B a0_class.py

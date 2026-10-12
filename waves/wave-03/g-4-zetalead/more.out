@@ -1,0 +1,16 @@
+== 1. Walsh tables of all permutations ==
+   N=2:      2 permutations, rows with exactly two non-zeros: 0 ; rows by number of non-zeros: {1: 4}
+   N=4:     24 permutations, rows with exactly two non-zeros: 0 ; rows by number of non-zeros: {1: 96}
+   N=8:  40320 permutations, rows with exactly two non-zeros: 0 ; rows by number of non-zeros: {1: 96768, 4: 225792}
+   subset sums need k rows with exactly two non-zeros (the one-element sets), so no two-call form exists at these sizes;
+   for every k the same follows from a^2 + b^2 = 4^k having only the solutions with a = 0 or b = 0.
+   a^2 + b^2 = 4^k with a, b > 0: no solution for k = 1..12 (by search; for all k by descent on the factor 4)
+== 2. Z as a limit of two calls ==
+   m = 10        two-call kernel = [[1, 1/m^2],[1,1]] exactly; k = 4: largest entry of (its 4th power - Z_16) = 1/100
+   m = 1000      two-call kernel = [[1, 1/m^2],[1,1]] exactly; k = 4: largest entry of (its 4th power - Z_16) = 1/1000000
+   m = 1000000   two-call kernel = [[1, 1/m^2],[1,1]] exactly; k = 4: largest entry of (its 4th power - Z_16) = 1/1000000000000
+   so: two calls reach Z in the limit, three calls reach it exactly, and the limit cannot be attained (section 1 above).
+== 3. the integer k 2^(k-1) three times ==
+   k = 1..10: Yates's additions = log2 |det H_N| = doublings in D(1,-2)^(tensor k) = k 2^(k-1): True
+done
+LIGHT label=g4-more exit=0 time=4s waited=8s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:49:46 cmd=python3 -B more.py

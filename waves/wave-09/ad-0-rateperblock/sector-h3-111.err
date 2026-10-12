@@ -1,0 +1,1 @@
+LIGHT label=ad0-sector3b exit=0 time=348s waited=0s peak_rss_mb=1323 peak_footprint_mb=1321 lowest_cap_mb=1500 stopped=- start=07:02:22 cmd=python3 -I -B sector.py 111

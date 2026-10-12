@@ -1,0 +1,1 @@
+LIGHT label=wcross-nbr4-p5-m5 exit=124 time=423s waited=0s peak_rss_mb=39 peak_footprint_mb=39 lowest_cap_mb=1500 stopped=time>420s start=04:43:04 cmd=waves/wave-01/d-0-zeta/mincirc 5 8 5 rows_nbr4half.txt

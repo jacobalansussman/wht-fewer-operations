@@ -1,0 +1,8 @@
+[G] 8 points: 19 gates, every output y_j equals row j of H_8 exactly (factor 1): True
+[G] entries of all 19 wires in the inputs: absolute values [0, 1] ; coefficients used: [1, 2]
+[O] 8 points: 20 gates (19 add/sub, 1 scale); computes exactly H_8 / 2: True
+[G] 16 points, plan (3, 1): 54 gates, computes exactly H_16 (every output factor 1): True ; textbook 64 ; ratio 0.8438
+[G] 64 points, plan (3, 3): 304 gates, computes exactly H_64 (every output factor 1): True ; textbook 384 ; ratio 0.7917
+[G] 512 points, plan (3, 3, 3): 3648 gates, computes exactly H_512 (every output factor 1): True ; textbook 4608 ; ratio 0.7917
+LIGHT label=c0-tensorG exit=0 time=1s waited=90s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:14:22 cmd=python3 -B tensorG.py
+exit 0

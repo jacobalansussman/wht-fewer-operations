@@ -1,0 +1,19 @@
+Part A: the 7 listed circuits, replayed exactly
+  kernel [['1', '2'], ['2', '1']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+  kernel [['1', '3'], ['3', '1']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+  kernel [['1', '2'], ['3', '4']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+  kernel [['1', '2'], ['2', '3']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+  kernel [['2', '7'], ['5', '3']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+  kernel [['1', '1'], ['1', '-1']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+  kernel [['1', '100'], ['1', '1']]: 19 gates; a_j * y_j = row pi[j] of K (x) K (x) K for all j: True
+Part B: the fixed wiring, coefficients solved by me, kernel by kernel
+  [[1,1],[1,-1]] transform                      (True, 'replayed')
+  [[1,1],[1,0]] subset sums (a zero entry)      (False, 'zero entry')
+  [[1,1],[0,1]] (a zero entry)                  (False, 'zero entry')
+  [[1,1],[1,1]] rank one                        (True, 'replayed')
+  [[1,2],[3,4]]                                 (True, 'replayed')
+  [[1,2],[2,4]] rank one                        (True, 'replayed')
+  [[1,1],[1,2]]                                 (True, 'replayed')
+  [[1,1],[-1,1]]                                (True, 'replayed')
+  300 random kernels with nonzero rational entries: circuit exists and replays for 300 ; distinct values of the cross ratio ad/(bc): 297 ; failures: []
+LIGHT label=c0-klass exit=0 time=2s waited=34s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:06:07 cmd=python3 -B klass.py

@@ -1,0 +1,18 @@
+class (4,2): 35 subspaces of dimension 2, ports (meet their perpendicular only in 0): 20  by type {'alt': 4, 'gen': 12, 'one': 4}   [0s]
+   star sets: X_odd = 2 odd words pairwise overlapping oddly; X_even = 3 even words pairwise overlapping oddly
+   a port of type alt knows: {'one': 1}
+   a port of type gen knows: {'gen': 1}
+   a port of type one knows: {'alt': 1}
+   type alt :       4 ports ; star X_odd holds       0, star X_even holds       3  ->  kappa <= 1.333
+   type gen :      12 ports ; star X_odd holds       6, star X_even holds       6  ->  kappa <= 2.000
+   type one :       4 ports ; star X_odd holds       2, star X_even holds       0  ->  kappa <= 2.000
+   knows graph built: 20 ports, degrees [1]
+   ALL:    20 ports; largest set with no two knowing each other: 10 EXACT (greedy 10)  ->  size/alpha = 2.000
+   alt:     4 ports; largest set with no two knowing each other: 4 EXACT (greedy 4)  ->  size/alpha = 1.000
+   gen:    12 ports; largest set with no two knowing each other: 6 EXACT (greedy 6)  ->  size/alpha = 2.000
+   one:     4 ports; largest set with no two knowing each other: 4 EXACT (greedy 4)  ->  size/alpha = 1.000
+TYPE 4 2 alt 1.0000
+TYPE 4 2 gen 2.0000
+TYPE 4 2 one 1.0000
+CEIL 4 2 4.0000   (every sub-family, types mixed: sum of the per-type ceilings)
+   [0s]

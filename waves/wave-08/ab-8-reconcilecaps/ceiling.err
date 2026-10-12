@@ -1,0 +1,1 @@
+LIGHT label=ab8-ceiling exit=0 time=7s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=05:44:38 cmd=python3 -B ceiling.py

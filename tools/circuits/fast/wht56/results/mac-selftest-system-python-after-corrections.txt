@@ -1,0 +1,37 @@
+Sun Oct 11 09:46:00 EDT 2026
+ 9:46  up 40 days, 16:05, 6 users, load averages: 4.12 4.80 9.19
+test_bad_lengths (wht56.tests.test_wht56.TestAgainstTheMatrix) ... ok
+test_every_unit_vector_up_to_64 (wht56.tests.test_wht56.TestAgainstTheMatrix) ... ok
+test_length_1_and_2 (wht56.tests.test_wht56.TestAgainstTheMatrix) ... ok
+test_random_integers_up_to_1024 (wht56.tests.test_wht56.TestAgainstTheMatrix) ... ok
+test_count_must_be_O_or_G (wht56.tests.test_wht56.TestBadArguments) ... ok
+test_double_negative_gate_is_refused_by_the_generator (wht56.tests.test_wht56.TestBadArguments) ... ok
+test_method_is_checked_at_every_length (wht56.tests.test_wht56.TestBadArguments) ... skipped 'numpy is not installed'
+test_a_length_that_is_not_a_power_of_two_is_left_alone (wht56.tests.test_wht56.TestC) ... ok
+test_the_four_c_transforms_agree (wht56.tests.test_wht56.TestC) ... ok
+test_a_spoiled_circuit_is_refused (wht56.tests.test_wht56.TestCircuitFiles) ... ok
+test_files_are_the_copies (wht56.tests.test_wht56.TestCircuitFiles) ... ok
+test_units (wht56.tests.test_wht56.TestCircuitFiles) ... ok
+test_formulas_agree_with_plans (wht56.tests.test_wht56.TestCounts) ... ok
+test_powers_of_8_count_O (wht56.tests.test_wht56.TestCounts) ... ok
+test_published_table_count_G (wht56.tests.test_wht56.TestCounts) ... ok
+test_published_table_count_O (wht56.tests.test_wht56.TestCounts) ... ok
+test_textbook (wht56.tests.test_wht56.TestCounts) ... ok
+test_c_straight_line (wht56.tests.test_wht56.TestGenerator) ... ok
+test_kernels_header_is_current (wht56.tests.test_wht56.TestGenerator) ... ok
+test_python_straight_line (wht56.tests.test_wht56.TestGenerator) ... ok
+test_H_H_is_N (wht56.tests.test_wht56.TestInverse) ... ok
+test_ortho_twice_is_identity (wht56.tests.test_wht56.TestInverse) ... ok
+test_against_the_matrix_up_to_1024 (wht56.tests.test_wht56.TestNumpy) ... skipped 'numpy is not installed'
+test_norms_inverse_inplace_batch (wht56.tests.test_wht56.TestNumpy) ... skipped 'numpy is not installed'
+test_random_to_2_15_against_the_textbook (wht56.tests.test_wht56.TestNumpy) ... skipped 'numpy is not installed'
+test_the_numpy_kernels_do_the_counted_operations (wht56.tests.test_wht56.TestNumpy) ... skipped 'numpy is not installed'
+test_floats_and_complex (wht56.tests.test_wht56.TestRandomInputs) ... ok
+test_fractions (wht56.tests.test_wht56.TestRandomInputs) ... ok
+test_halved_form_on_integers_is_exact (wht56.tests.test_wht56.TestRandomInputs) ... ok
+test_integers_every_size_to_2_15 (wht56.tests.test_wht56.TestRandomInputs) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 8.206s
+
+OK (skipped=5)

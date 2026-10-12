@@ -1,0 +1,3 @@
+# exh4 ALLOW=7 pool=264 wires, helpers=2, gates=6
+# tested 34716 helper sets, circuits 0
+LIGHT label=x0-exh exit=0 time=1s waited=26s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:35:23 cmd=./exh4 7 2

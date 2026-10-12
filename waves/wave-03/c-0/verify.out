@@ -1,0 +1,6 @@
+[G] 8 points: 19 gates, every output y_j equals row j of H_8 exactly (factor 1): True
+[G] entries of all 19 wires in the inputs: absolute values [0, 1] ; coefficients used: [1, 2]
+[O] 8 points: 20 gates (19 add/sub, 1 scale); computes exactly H_8 / 2: True
+[O] 64 points, plan (3, 3), final multiplications by 4 RUN: 384 gates, computes exactly H_64: True ; textbook 384 ; formula (5/6) n log2 n + n = 384
+[O] 512 points, plan (3, 3, 3), final multiplications by 8 RUN: 4352 gates, computes exactly H_512: True ; textbook 4608 ; formula (5/6) n log2 n + n = 4352
+LIGHT label=c0-verify exit=0 time=3s waited=24s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:18:19 cmd=python3 -B verify.py

@@ -1,0 +1,86 @@
+=== k=8 N=256   count used: additions (the same number in (G) and (O)); the M scalings in the middle are extra in (O), free in (G)
+  d=0  M=C(k,<=d)=   1  sums:    255 adds = 0.996 N (law 255, (d+1)N=256)   spread:      0 adds = 0.000 N (= sums - N + M: True)   whole cut-off form 0.996 N  against k N = 8 N
+  d=1  M=C(k,<=d)=   9  sums:    502 adds = 1.961 N (law 502, (d+1)N=512)   spread:    255 adds = 0.996 N (= sums - N + M: True)   whole cut-off form 2.957 N  against k N = 8 N
+  d=2  M=C(k,<=d)=  37  sums:    721 adds = 2.816 N (law 721, (d+1)N=768)   spread:    502 adds = 1.961 N (= sums - N + M: True)   whole cut-off form 4.777 N  against k N = 8 N
+  d=3  M=C(k,<=d)=  93  sums:    884 adds = 3.453 N (law 884, (d+1)N=1024)   spread:    721 adds = 2.816 N (= sums - N + M: True)   whole cut-off form 6.270 N  against k N = 8 N
+  d=4  M=C(k,<=d)= 163  sums:    977 adds = 3.816 N (law 977, (d+1)N=1280)   spread:    884 adds = 3.453 N (= sums - N + M: True)   whole cut-off form 7.270 N  against k N = 8 N
+  d=5  M=C(k,<=d)= 219  sums:   1014 adds = 3.961 N (law 1014, (d+1)N=1536)   spread:    977 adds = 3.816 N (= sums - N + M: True)   whole cut-off form 7.777 N  against k N = 8 N
+  d=6  M=C(k,<=d)= 247  sums:   1023 adds = 3.996 N (law 1023, (d+1)N=1792)   spread:   1014 adds = 3.961 N (= sums - N + M: True)   whole cut-off form 7.957 N  against k N = 8 N
+  d=7  M=C(k,<=d)= 255  sums:   1024 adds = 4.000 N (law 1024, (d+1)N=2048)   spread:   1023 adds = 3.996 N (= sums - N + M: True)   whole cut-off form 7.996 N  against k N = 8 N
+  d=8  M=C(k,<=d)= 256  sums:   1024 adds = 4.000 N (law 1024, (d+1)N=2304)   spread:   1024 adds = 4.000 N (= sums - N + M: True)   whole cut-off form 8.000 N  against k N = 8 N
+=== k=10 N=1024   count used: additions (the same number in (G) and (O)); the M scalings in the middle are extra in (O), free in (G)
+  d=0  M=C(k,<=d)=   1  sums:   1023 adds = 0.999 N (law 1023, (d+1)N=1024)   spread:      0 adds = 0.000 N (= sums - N + M: True)   whole cut-off form 0.999 N  against k N = 10 N
+  d=1  M=C(k,<=d)=  11  sums:   2036 adds = 1.988 N (law 2036, (d+1)N=2048)   spread:   1023 adds = 0.999 N (= sums - N + M: True)   whole cut-off form 2.987 N  against k N = 10 N
+  d=2  M=C(k,<=d)=  56  sums:   3004 adds = 2.934 N (law 3004, (d+1)N=3072)   spread:   2036 adds = 1.988 N (= sums - N + M: True)   whole cut-off form 4.922 N  against k N = 10 N
+  d=3  M=C(k,<=d)= 176  sums:   3852 adds = 3.762 N (law 3852, (d+1)N=4096)   spread:   3004 adds = 2.934 N (= sums - N + M: True)   whole cut-off form 6.695 N  against k N = 10 N
+  d=4  M=C(k,<=d)= 386  sums:   4490 adds = 4.385 N (law 4490, (d+1)N=5120)   spread:   3852 adds = 3.762 N (= sums - N + M: True)   whole cut-off form 8.146 N  against k N = 10 N
+  d=5  M=C(k,<=d)= 638  sums:   4876 adds = 4.762 N (law 4876, (d+1)N=6144)   spread:   4490 adds = 4.385 N (= sums - N + M: True)   whole cut-off form 9.146 N  against k N = 10 N
+  d=6  M=C(k,<=d)= 848  sums:   5052 adds = 4.934 N (law 5052, (d+1)N=7168)   spread:   4876 adds = 4.762 N (= sums - N + M: True)   whole cut-off form 9.695 N  against k N = 10 N
+  d=7  M=C(k,<=d)= 968  sums:   5108 adds = 4.988 N (law 5108, (d+1)N=8192)   spread:   5052 adds = 4.934 N (= sums - N + M: True)   whole cut-off form 9.922 N  against k N = 10 N
+  d=8  M=C(k,<=d)=1013  sums:   5119 adds = 4.999 N (law 5119, (d+1)N=9216)   spread:   5108 adds = 4.988 N (= sums - N + M: True)   whole cut-off form 9.987 N  against k N = 10 N
+  d=9  M=C(k,<=d)=1023  sums:   5120 adds = 5.000 N (law 5120, (d+1)N=10240)   spread:   5119 adds = 4.999 N (= sums - N + M: True)   whole cut-off form 9.999 N  against k N = 10 N
+  d=10  M=C(k,<=d)=1024  sums:   5120 adds = 5.000 N (law 5120, (d+1)N=11264)   spread:   5120 adds = 5.000 N (= sums - N + M: True)   whole cut-off form 10.000 N  against k N = 10 N
+=== k=8: leftover of the LOWER window [0,d]:  is it N times the inverse of H on the heavy addresses (weight > d)?
+  d=0  heavy addresses 255   R_HH * H_HH = N*I on 12 rows checked: True   nonzero entries of R: 32640 of 65536
+  d=1  heavy addresses 247   R_HH * H_HH = N*I on 12 rows checked: True   nonzero entries of R: 41479 of 65536
+  d=2  heavy addresses 219   R_HH * H_HH = N*I on 12 rows checked: True   nonzero entries of R: 21067 of 65536
+  d=3  heavy addresses 163   R_HH * H_HH = N*I on 163 rows checked: True   nonzero entries of R: 7459 of 65536
+  d=4  heavy addresses  93   R_HH * H_HH = N*I on 93 rows checked: True   nonzero entries of R: 1789 of 65536
+  d=5  heavy addresses  37   R_HH * H_HH = N*I on 37 rows checked: True   nonzero entries of R: 277 of 65536
+  d=6  heavy addresses   9   R_HH * H_HH = N*I on 9 rows checked: True   nonzero entries of R: 25 of 65536
+  d=7  heavy addresses   1   R_HH * H_HH = N*I on 1 rows checked: True   nonzero entries of R: 1 of 65536
+=== k=8: centred window, ranks (mod P) of the cheap part and of the leftover
+  window [0,2]  c=[1, -2, 4]  wrong entries 21067 (32.1%)  rank leftover (mod P) 219  predicted N - sum of C(k,j) over levels with c_j=(-2)^j: 219   leftover r(t), t=0..k: [0, 0, 0, -8, -16, -32, -48, -72, -96]
+  window [1,3]  c=[-7, 6, -4]  wrong entries 14020 (21.4%)  rank leftover (mod P) 256  predicted N - sum of C(k,j) over levels with c_j=(-2)^j: 256   leftover r(t), t=0..k: [8, 0, 0, 0, 8, 16, 32, 48, 72]
+  window [1,4]  c=[-15, 14, -12, 8]  wrong entries  8350 (12.7%)  rank leftover (mod P) 256  predicted N - sum of C(k,j) over levels with c_j=(-2)^j: 256   leftover r(t), t=0..k: [16, 0, 0, 0, 0, -16, -48, -112, -208]
+  window [0,3]  c=[1, -2, 4, -8]  wrong entries  7459 (11.4%)  rank leftover (mod P) 163  predicted N - sum of C(k,j) over levels with c_j=(-2)^j: 163   leftover r(t), t=0..k: [0, 0, 0, 0, 16, 48, 112, 208, 352]
+  window [0,4]  c=[1, -2, 4, -8, 16]  wrong entries  1789 (2.7%)  rank leftover (mod P) 93  predicted N - sum of C(k,j) over levels with c_j=(-2)^j: 93   leftover r(t), t=0..k: [0, 0, 0, 0, 0, -32, -128, -352, -768]
+  window [1,5]  c=[-31, 30, -28, 24, -16]  wrong entries  6838 (10.4%)  rank leftover (mod P) 256  predicted N - sum of C(k,j) over levels with c_j=(-2)^j: 256   leftover r(t), t=0..k: [32, 0, 0, 0, 0, 0, 32, 128, 352]
+=== k=8: weight-class pairs (w,v), w<=v.  window [1,3] (d=2).  columns: overlaps that occur; rank of H block; rank of leftover block; wrong entries; share
+  (0,0) size  1x 1  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong    1 of    1   one own form of degree 0 is exact  <= d: yes
+  (0,1) size  1x 8  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong    8 of    8   one own form of degree 0 is exact  <= d: yes
+  (0,2) size  1x28  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong   28 of   28   one own form of degree 0 is exact  <= d: yes
+  (0,3) size  1x56  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong   56 of   56   one own form of degree 0 is exact  <= d: yes
+  (0,4) size  1x70  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong   70 of   70   one own form of degree 0 is exact  <= d: yes
+  (0,5) size  1x56  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong   56 of   56   one own form of degree 0 is exact  <= d: yes
+  (0,6) size  1x28  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong   28 of   28   one own form of degree 0 is exact  <= d: yes
+  (0,7) size  1x 8  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong    8 of    8   one own form of degree 0 is exact  <= d: yes
+  (0,8) size  1x 1  overlaps 0..0 (1 values)  rank H  1  rank leftover  1  wrong    1 of    1   one own form of degree 0 is exact  <= d: yes
+  (1,1) size  8x 8  overlaps 0..1 (2 values)  rank H  8  rank leftover  8  wrong   56 of   64   one own form of degree 1 is exact  <= d: yes
+  (1,2) size  8x28  overlaps 0..1 (2 values)  rank H  8  rank leftover  8  wrong  168 of  224   one own form of degree 1 is exact  <= d: yes
+  (1,3) size  8x56  overlaps 0..1 (2 values)  rank H  8  rank leftover  8  wrong  280 of  448   one own form of degree 1 is exact  <= d: yes
+  (1,4) size  8x70  overlaps 0..1 (2 values)  rank H  7  rank leftover  8  wrong  280 of  560   one own form of degree 1 is exact  <= d: yes
+  (1,5) size  8x56  overlaps 0..1 (2 values)  rank H  8  rank leftover  8  wrong  168 of  448   one own form of degree 1 is exact  <= d: yes
+  (1,6) size  8x28  overlaps 0..1 (2 values)  rank H  8  rank leftover  8  wrong   56 of  224   one own form of degree 1 is exact  <= d: yes
+  (1,7) size  8x 8  overlaps 0..1 (2 values)  rank H  8  rank leftover  8  wrong    8 of   64   one own form of degree 1 is exact  <= d: yes
+  (1,8) size  8x 1  overlaps 1..1 (1 values)  rank H  1  rank leftover  0  wrong    0 of    8   one own form of degree 0 is exact  <= d: yes
+  (2,2) size 28x28  overlaps 0..2 (3 values)  rank H 28  rank leftover 28  wrong  420 of  784   one own form of degree 2 is exact  <= d: yes
+  (2,3) size 28x56  overlaps 0..2 (3 values)  rank H 28  rank leftover 28  wrong  560 of 1568   one own form of degree 2 is exact  <= d: yes
+  (2,4) size 28x70  overlaps 0..2 (3 values)  rank H 21  rank leftover 28  wrong  420 of 1960   one own form of degree 2 is exact  <= d: yes
+  (2,5) size 28x56  overlaps 0..2 (3 values)  rank H 28  rank leftover 28  wrong  168 of 1568   one own form of degree 2 is exact  <= d: yes
+  (2,6) size 28x28  overlaps 0..2 (3 values)  rank H 28  rank leftover 28  wrong   28 of  784   one own form of degree 2 is exact  <= d: yes
+  (2,7) size 28x 8  overlaps 1..2 (2 values)  rank H  8  rank leftover  0  wrong    0 of  224   one own form of degree 1 is exact  <= d: yes
+  (2,8) size 28x 1  overlaps 2..2 (1 values)  rank H  1  rank leftover  0  wrong    0 of   28   one own form of degree 0 is exact  <= d: yes
+  (3,3) size 56x56  overlaps 0..3 (4 values)  rank H 56  rank leftover 56  wrong  560 of 3136   one own form of degree 3 is exact
+  (3,4) size 56x70  overlaps 0..3 (4 values)  rank H 35  rank leftover 56  wrong  280 of 3920   one own form of degree 3 is exact
+  (3,5) size 56x56  overlaps 0..3 (4 values)  rank H 56  rank leftover 56  wrong   56 of 3136   one own form of degree 3 is exact
+  (3,6) size 56x28  overlaps 1..3 (3 values)  rank H 28  rank leftover  0  wrong    0 of 1568   one own form of degree 2 is exact  <= d: yes
+  (3,7) size 56x 8  overlaps 2..3 (2 values)  rank H  8  rank leftover  0  wrong    0 of  448   one own form of degree 1 is exact  <= d: yes
+  (3,8) size 56x 1  overlaps 3..3 (1 values)  rank H  1  rank leftover  0  wrong    0 of   56   one own form of degree 0 is exact  <= d: yes
+  (4,4) size 70x70  overlaps 0..4 (5 values)  rank H 35  rank leftover 35  wrong  140 of 4900   one own form of degree 4 is exact
+  (4,5) size 70x56  overlaps 1..4 (4 values)  rank H 35  rank leftover 56  wrong  280 of 3920   one own form of degree 3 is exact
+  (4,6) size 70x28  overlaps 2..4 (3 values)  rank H 21  rank leftover 28  wrong  420 of 1960   one own form of degree 2 is exact  <= d: yes
+  (4,7) size 70x 8  overlaps 3..4 (2 values)  rank H  7  rank leftover  8  wrong  280 of  560   one own form of degree 1 is exact  <= d: yes
+  (4,8) size 70x 1  overlaps 4..4 (1 values)  rank H  1  rank leftover  1  wrong   70 of   70   one own form of degree 0 is exact  <= d: yes
+  (5,5) size 56x56  overlaps 2..5 (4 values)  rank H 56  rank leftover 56  wrong  896 of 3136   one own form of degree 3 is exact
+  (5,6) size 56x28  overlaps 3..5 (3 values)  rank H 28  rank leftover  8  wrong 1008 of 1568   one own form of degree 2 is exact  <= d: yes
+  (5,7) size 56x 8  overlaps 4..5 (2 values)  rank H  8  rank leftover  8  wrong  448 of  448   one own form of degree 1 is exact  <= d: yes
+  (5,8) size 56x 1  overlaps 5..5 (1 values)  rank H  1  rank leftover  1  wrong   56 of   56   one own form of degree 0 is exact  <= d: yes
+  (6,6) size 28x28  overlaps 4..6 (3 values)  rank H 28  rank leftover 28  wrong  784 of  784   one own form of degree 2 is exact  <= d: yes
+  (6,7) size 28x 8  overlaps 5..6 (2 values)  rank H  8  rank leftover  8  wrong  224 of  224   one own form of degree 1 is exact  <= d: yes
+  (6,8) size 28x 1  overlaps 6..6 (1 values)  rank H  1  rank leftover  1  wrong   28 of   28   one own form of degree 0 is exact  <= d: yes
+  (7,7) size  8x 8  overlaps 6..7 (2 values)  rank H  8  rank leftover  8  wrong   64 of   64   one own form of degree 1 is exact  <= d: yes
+  (7,8) size  8x 1  overlaps 7..7 (1 values)  rank H  1  rank leftover  1  wrong    8 of    8   one own form of degree 0 is exact  <= d: yes
+  (8,8) size  1x 1  overlaps 8..8 (1 values)  rank H  1  rank leftover  1  wrong    1 of    1   one own form of degree 0 is exact  <= d: yes
+  share of all entries in class pairs with at most d+1=3 overlaps: 0.4946
+LIGHT label=e3-mat exit=0 time=5s waited=0s peak_rss_mb=14 peak_footprint_mb=10 lowest_cap_mb=1500 stopped=- start=21:59:35 cmd=python3 -B waves/wave-02/e-3-cutoff/mat.py

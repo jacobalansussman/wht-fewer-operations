@@ -1,0 +1,7 @@
+m = 4: 8 moves, W = 2 (plain 8); product forms: fewest moves selected 2, tight ones 48, every pair of moves joined: False -> not decided by product forms
+m = 5: 16 moves, W = 4 (plain 20); product forms: fewest moves selected 4, tight ones 225, every pair of moves joined: True -> clique 16 > W: EXCLUDED
+m = 6: 32 moves, W = 8 (plain 48); product forms: fewest moves selected 8, tight ones 960, every pair of moves joined: True -> clique 32 > W: EXCLUDED
+m = 7: 64 moves, W = 16 (plain 112); product forms: fewest moves selected 16, tight ones 3969, every pair of moves joined: True -> clique 64 > W: EXCLUDED
+m = 8: 128 moves, W = 32 (plain 256); product forms: fewest moves selected 32, tight ones 16128, every pair of moves joined: True -> clique 128 > W: EXCLUDED
+m = 9: 256 moves, W = 64 (plain 576); product forms: fewest moves selected 64, tight ones 65025, every pair of moves joined: True -> clique 256 > W: EXCLUDED
+LIGHT label=b1-odd exit=0 time=2s waited=0s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:45:36 cmd=python3 -B oddgen.py 9

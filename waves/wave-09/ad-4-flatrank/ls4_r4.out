@@ -1,0 +1,9 @@
+K=4 subspaces 67 flats 1072 (signed)
+CANDIDATE r=4 K=4 (floats, replay exactly): 1:0 c3:42 3333:330 cccc:4848
+CANDIDATE r=4 K=4 (floats, replay exactly): 4812:4800 1248:240 a5a5:2184 104:0
+CANDIDATE r=4 K=4 (floats, replay exactly): 8228:8020 ff0:aa0 200:0 f00f:f000
+CANDIDATE r=4 K=4 (floats, replay exactly): 820:800 550:0 5aa5:50a0 a00a:2008
+CANDIDATE r=4 K=4 (floats, replay exactly): 8241:0 4812:4800 1428:420 2184:2080
+CANDIDATE r=4 K=4 (floats, replay exactly): 2148:140 8214:0 1482:1080 4821:4800
+ls K=4 r=4 flats=1072 seed=1: restarts 6, slot optimisations 38, candidates 6, least residual |.|^2 seen -0.000000 (g has |g|^2 = 16)
+LIGHT label=ad4-ls4 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:30:15 cmd=./fr 4 ls 4 5 1

@@ -1,0 +1,21 @@
+# 3-in-4-out rectangle (4-point transform with one input column removed): one copy, then two copies with one gate fewer than twice
+NONE p=3 n=3 targets=4 nontarget<=0 (total gates <= 4) part 0/1 nodes=1 leaves=1
+FOUND p=3 n=3 nontarget=1 total_gates=5
+FOUND p=3 n=3 nontarget=1 total_gates=5
+NONE p=5 n=3 targets=4 nontarget<=0 (total gates <= 4) part 0/1 nodes=1 leaves=1
+FOUND p=5 n=3 nontarget=1 total_gates=5
+FOUND p=5 n=3 nontarget=1 total_gates=5
+NONE p=7 n=3 targets=4 nontarget<=0 (total gates <= 4) part 0/1 nodes=1 leaves=1
+FOUND p=7 n=3 nontarget=1 total_gates=5
+FOUND p=7 n=3 nontarget=1 total_gates=5
+NONE p=3 n=6 targets=8 nontarget<=1 (total gates <= 9) part 0/1 nodes=31 leaves=30
+FOUND p=3 n=6 nontarget=2 total_gates=10
+NONE p=5 n=6 targets=8 nontarget<=1 (total gates <= 9) part 0/1 nodes=61 leaves=60
+FOUND p=5 n=6 nontarget=2 total_gates=10
+NONE p=7 n=6 targets=8 nontarget<=1 (total gates <= 9) part 0/1 nodes=91 leaves=90
+FOUND p=7 n=6 nontarget=2 total_gates=10
+# three copies: 14 gates or fewer?
+NONE p=3 n=9 targets=12 nontarget<=2 (total gates <= 14) part 0/1 nodes=4465 leaves=4392
+FOUND p=3 n=9 nontarget=3 total_gates=15
+NONE p=5 n=9 targets=12 nontarget<=2 (total gates <= 14) part 0/1 nodes=16345 leaves=16200
+FOUND p=5 n=9 nontarget=3 total_gates=15

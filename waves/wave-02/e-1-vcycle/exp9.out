@@ -1,0 +1,6 @@
+minus vectors kept: 2016 with 12 non-zeros (rank 28 ) and 600 of the 21420 with 16; rank of all kept 28
+  analysis cost 192  t=145s
+64 points: cheapest analysis found for a frame of the minus space: 192 gates  | (3/8) N log2 N = 144 | tensor orthogonal frame 246 | non-zeros 344
+Gram: non-zeros 564 of 784 | inverse non-zeros 720
+dual frame: non-zeros 1508 greedy cost 692 | program = frame + dual + m = 912 | references: 336 (one reflection per digit, G), 384 textbook
+LIGHT label=e1-exp9 exit=0 time=245s waited=14s peak_rss_mb=34 peak_footprint_mb=30 lowest_cap_mb=1500 stopped=- start=22:13:02 cmd=python3 -B exp9.py 1 240

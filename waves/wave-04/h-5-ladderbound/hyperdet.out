@@ -1,0 +1,10 @@
+== ../g-1-tightwires/h8_19gates.txt
+  g1     1  0  0  0  0  0  0  1    width 3, hyperdeterminant     1 : sum of two product wires
+  g2     0  1  0  0  0  0  1  0    width 3, hyperdeterminant     1 : sum of two product wires
+  g3     0  0  1  0  0 -1  0  0    width 3, hyperdeterminant     1 : sum of two product wires
+  g4     0  0  0  1 -1  0  0  0    width 3, hyperdeterminant     1 : sum of two product wires
+  g7     1 -1 -1 -1  1  1 -1  1    width 3, hyperdeterminant    16 : sum of two product wires
+  g8     1 -1 -1 -1  1  1 -1 -1    width 3, hyperdeterminant     4 : sum of two product wires
+  g9     1 -1 -1 -1  1 -1 -1  1    width 3, hyperdeterminant     4 : sum of two product wires
+  g10    1 -1 -1 -1  1  1  1 -1    width 3, hyperdeterminant   -16 : sum of two products only with complex numbers
+  g11    1 -1 -1 -1 -1 -1 -1  1    width 3, hyperdeterminant   -16 : sum of two products only with complex numbers

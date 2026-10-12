@@ -1,0 +1,1 @@
+LIGHT label=z-1-zexact exit=0 time=288s waited=0s peak_rss_mb=53 peak_footprint_mb=49 lowest_cap_mb=1500 stopped=- start=04:55:38 cmd=python3 -B -I zexact.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-e8-r783.json.gz not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-p11-pr193.json.gz

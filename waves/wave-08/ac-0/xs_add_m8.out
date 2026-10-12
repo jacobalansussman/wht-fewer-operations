@@ -1,0 +1,4 @@
+mode=adding-only m=8 gates=16 : YES
+nodes by remaining budget: 8:1 7:1 6:5 5:115 4:1853 3:21704 2:201455 1:1555954 0:10303802
+first solution, vectors after the inputs (bit j = input j): 03 41 82 0c 4d* 8e* 14 17* 28 2b* 30 71* b2* c0 d4* e8*
+LIGHT label=ac0-xs-mono8 exit=0 time=6s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:27:51 cmd=./xs 8 1 1

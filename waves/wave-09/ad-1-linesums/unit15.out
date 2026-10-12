@@ -1,0 +1,10 @@
+norm of D on the order-15 part: 256 = 2^8
+trinomial 1 + t^1 + t^4 : norm 16 ; D / trinomial^2 has whole coefficients: True ; its norm: 1
+trinomial 1 + t^3 + t^4 : norm 16 ; D / trinomial^2 has whole coefficients: False ; its norm: -
+trinomial 1 + t^1 + t^12 : norm 16 ; D / trinomial^2 has whole coefficients: False ; its norm: -
+trinomial 1 + t^11 + t^12 : norm 16 ; D / trinomial^2 has whole coefficients: True ; its norm: 1
+trinomial 1 + t^2 + t^8 : norm 16 ; D / trinomial^2 has whole coefficients: True ; its norm: 1
+trinomial 1 + t^7 + t^8 : norm 25 ; D / trinomial^2 has whole coefficients: False ; its norm: -
+so D = u * (1 + t^1 + t^4)^2 with u a unit; u = [1, 0, 1, -1, 0, 0, 0, 1] (coefficients of 1, t, ..., t^7)
+u as  sign * t^shift * (1-t)^a (1-t^2)^b (1-t^4)^c (1-t^7)^d , exponents in [-3,3]: 5 ways; shortest: [(4, (0, -2, 0, -2), 9, 1), (4, (1, -1, 1, -1), 2, 1), (4, (2, 0, 2, 0), 10, 1)]
+LIGHT label=ad1-unit exit=0 time=8s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=06:53:49 cmd=python3 -B unit15.py

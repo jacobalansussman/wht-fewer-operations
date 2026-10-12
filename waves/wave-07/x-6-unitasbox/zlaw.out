@@ -1,0 +1,50 @@
+== certificate h=9 v=120 R=783 : five-stage word, m = 5h
+published unit (all blocks)                                                    W=  1263 m= 45 blocks/array  16.49 moves/array a=  44.905  saving 8.7624e-04  (fill 2^13)
+published unit (all blocks), fill -> infinity                                  W=  1263 m= 45 blocks/array  16.49 moves/array a=  44.905  saving 8.7625e-04
+WHAT-IF no scratch copies                                                      W=  1263 m= 45 blocks/array  16.46 moves/array a=  44.620  saving 3.5071e-03  (fill 2^13)
+WHAT-IF no copies and no helpers, data blocks split as in the certificate      W=   480 m= 45 blocks/array   7.94 moves/array a=  44.000  saving 1.3105e-02
+WHAT-IF no copies, no helpers, every data array one whole block of rank h-1 per invocation W=   480 m= 45 blocks/array   4.50 moves/array a=  44.000  saving 1.5758e-02
+WHAT-IF the same with ports of dimension r = 1 (blocks h-r; catch-up 4r)       W=   480 m= 45 blocks/array   4.50 moves/array a=  44.000  saving 1.5758e-02
+WHAT-IF the same with ports of dimension r = 2 (blocks h-r; catch-up 4r)       W=   480 m= 45 blocks/array   4.50 moves/array a=  43.000  saving 3.1433e-02
+WHAT-IF the same with ports of dimension r = 3 (blocks h-r; catch-up 4r)       W=   480 m= 45 blocks/array   4.50 moves/array a=  42.000  saving 4.8287e-02
+WHAT-IF the same with ports of dimension r = 4 (blocks h-r; catch-up 4r)       W=   480 m= 45 blocks/array   4.50 moves/array a=  41.000  saving 6.7482e-02
+== certificate h=22 v=1320 R=9412 : five-stage word, m = 5h
+published unit (all blocks)                                                    W= 14692 m=110 blocks/array  24.60 moves/array a= 109.790  saving 7.4745e-04  (fill 2^13)
+published unit (all blocks), fill -> infinity                                  W= 14692 m=110 blocks/array  24.60 moves/array a= 109.790  saving 7.4745e-04
+WHAT-IF no scratch copies                                                      W= 14692 m=110 blocks/array  24.59 moves/array a= 109.641  saving 1.2815e-03  (fill 2^13)
+WHAT-IF no copies and no helpers, data blocks split as in the certificate      W=  5280 m=110 blocks/array  10.75 moves/array a= 109.000  saving 5.5451e-03
+WHAT-IF no copies, no helpers, every data array one whole block of rank h-1 per invocation W=  5280 m=110 blocks/array   4.50 moves/array a= 109.000  saving 6.5794e-03
+WHAT-IF the same with ports of dimension r = 1 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 109.000  saving 6.5794e-03
+WHAT-IF the same with ports of dimension r = 2 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 108.000  saving 1.2948e-02
+WHAT-IF the same with ports of dimension r = 3 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 107.000  saving 1.9274e-02
+WHAT-IF the same with ports of dimension r = 4 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 106.000  saving 2.5653e-02
+WHAT-IF the same with ports of dimension r = 5 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 105.000  saving 3.2166e-02
+WHAT-IF the same with ports of dimension r = 6 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 104.000  saving 3.8883e-02
+WHAT-IF the same with ports of dimension r = 7 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 103.000  saving 4.5880e-02
+WHAT-IF the same with ports of dimension r = 8 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 102.000  saving 5.3234e-02
+WHAT-IF the same with ports of dimension r = 9 (blocks h-r; catch-up 4r)       W=  5280 m=110 blocks/array   4.50 moves/array a= 101.000  saving 6.1036e-02
+WHAT-IF the same with ports of dimension r = 10 (blocks h-r; catch-up 4r)      W=  5280 m=110 blocks/array   4.50 moves/array a= 100.000  saving 6.9393e-02
+WHAT-IF the same with ports of dimension r = 11 (blocks h-r; catch-up 4r)      W=  5280 m=110 blocks/array   4.50 moves/array a=  99.000  saving 7.8432e-02
+== shapes that do not depend on h (rho = r/h, the share of a stage that the port covers); all WHAT-IF, shears and helpers free
+   rho = 0.02 : five-stage bridged word 0.0029 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.0058
+   rho = 0.05 : five-stage bridged word 0.0072 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.0137
+   rho = 0.10 : five-stage bridged word 0.0142 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.0259
+   rho = 0.20 : five-stage bridged word 0.0282 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.0485
+   rho = 0.30 : five-stage bridged word 0.0430 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.0707
+   rho = 0.40 : five-stage bridged word 0.0594 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.0940
+   rho = 0.50 : five-stage bridged word 0.0784 ; three-stage word (3 blocks of h-r, one catch-up of 2r) 0.1198
+== k equal blocks per array, a share rho of the directions never moved along: saving = ln(1/(1-rho)) / (ln k + ln(1/(1-rho)))
+   k =  1 : rho 0.022 -> 1.0000 ; rho 0.050 -> 1.0000 ; rho 0.100 -> 1.0000 ; rho 0.200 -> 1.0000 ; rho 0.500 -> 1.0000
+   k =  2 : rho 0.022 -> 0.0314 ; rho 0.050 -> 0.0689 ; rho 0.100 -> 0.1319 ; rho 0.200 -> 0.2435 ; rho 0.500 -> 0.5000
+   k =  3 : rho 0.022 -> 0.0200 ; rho 0.050 -> 0.0446 ; rho 0.100 -> 0.0875 ; rho 0.200 -> 0.1688 ; rho 0.500 -> 0.3869
+   k =  6 : rho 0.022 -> 0.0124 ; rho 0.050 -> 0.0278 ; rho 0.100 -> 0.0555 ; rho 0.200 -> 0.1107 ; rho 0.500 -> 0.2789
+   k = 20 : rho 0.022 -> 0.0074 ; rho 0.050 -> 0.0168 ; rho 0.100 -> 0.0340 ; rho 0.200 -> 0.0693 ; rho 0.500 -> 0.1879
+   needed share rho for saving 0.1 : k = 2 : 0.074 ; k = 3 : 0.115 ; k = 6 : 0.181 ; k = 20 : 0.283 ; k = 100 : 0.401
+== three-stage word with the two paid port blocks merged into the next stage's climb (3 blocks per array: h-r, h, h); WHAT-IF, nobody has such a word
+   rho = 0.111 : saving 0.0333   (four blocks, unmerged: 0.0285)
+   rho = 0.200 : saving 0.0593   (four blocks, unmerged: 0.0485)
+   rho = 0.300 : saving 0.0884   (four blocks, unmerged: 0.0707)
+   rho = 0.333 : saving 0.0980   (four blocks, unmerged: 0.0783)
+   rho = 0.400 : saving 0.1174   (four blocks, unmerged: 0.0940)
+   rho = 0.500 : saving 0.1467   (four blocks, unmerged: 0.1198)
+== one-dimensional port, three merged blocks (h-1, h, h), by h: h=3: 0.0980 ; h=5: 0.0593 ; h=9: 0.0333 ; h=16: 0.0188 ; h=22: 0.0137

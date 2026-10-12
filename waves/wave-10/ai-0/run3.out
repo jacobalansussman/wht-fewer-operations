@@ -1,0 +1,40 @@
+tower: 3 real colours of 4, atoms of 1 bits, 0 extra bits: y has 11 bits, k = 13, N = 8192, classes 7168 = 0.8750 N
+   coefficients containing a bit of the forgotten atom, formed and found to be the zero form: 8
+   inputs 378 ; gates (G) 23766 = 2.9011 N ; outputs wrong on some unit input: 0 of 8192
+      outputs                                           8190 = 0.9998 N
+      helper A (cubic at the P1 classes)                6064 = 0.7402 N
+      helper B (quadratic on each piece)                5052 = 0.6167 N
+      helper B, colours that forget nothing             4083 = 0.4984 N
+      coefficients                                       273 = 0.0333 N
+      coefficients per piece                             104 = 0.0127 N
+   textbook for degree 3 on k bits (same recursion): 24469 = 2.9869 N   (1 s)
+tower: 3 real colours of 4, atoms of 1 bits, 0 extra bits: y has 11 bits, k = 13, N = 8192, classes 7168 = 0.8750 N
+   coefficients containing a bit of the forgotten atom, formed and found to be the zero form: 0
+   inputs 378 ; gates (G) 23766 = 2.9011 N ; count only, nothing replayed
+      outputs                                           8190 = 0.9998 N
+      helper A (cubic at the P1 classes)                6064 = 0.7402 N
+      helper B (quadratic on each piece)                5052 = 0.6167 N
+      helper B, colours that forget nothing             4083 = 0.4984 N
+      coefficients                                       273 = 0.0333 N
+      coefficients per piece                             104 = 0.0127 N
+   textbook for degree 3 on k bits (same recursion): 24469 = 2.9869 N   (0 s)
+tower: 3 real colours of 4, atoms of 1 bits, 4 extra bits: y has 15 bits, k = 17, N = 131072, classes 114688 = 0.8750 N
+   coefficients containing a bit of the forgotten atom, formed and found to be the zero form: 0
+   inputs 834 ; gates (G) 377109 = 2.8771 N ; count only, nothing replayed
+      outputs                                         131040 = 0.9998 N
+      helper A (cubic at the P1 classes)               98166 = 0.7489 N
+      helper B (quadratic on each piece)               81777 = 0.6239 N
+      helper B, colours that forget nothing            65519 = 0.4999 N
+      coefficients                                       451 = 0.0034 N
+      coefficients per piece                             156 = 0.0012 N
+   textbook for degree 3 on k bits (same recursion): 393043 = 2.9987 N   (2 s)
+tower: 3 real colours of 4, atoms of 1 bits, 2 extra bits: y has 13 bits, k = 15, N = 32768, classes 28672 = 0.8750 N
+   coefficients containing a bit of the forgotten atom, formed and found to be the zero form: 8
+   inputs 576 ; gates (G) 94467 = 2.8829 N ; outputs wrong on some unit input: 0 of 32768
+      outputs                                          32760 = 0.9998 N
+      helper A (cubic at the P1 classes)               24469 = 0.7467 N
+      helper B (quadratic on each piece)               20379 = 0.6219 N
+      helper B, colours that forget nothing            16369 = 0.4995 N
+      coefficients                                       360 = 0.0110 N
+      coefficients per piece                             130 = 0.0040 N
+   textbook for degree 3 on k bits (same recursion): 98166 = 2.9958 N   (5 s)

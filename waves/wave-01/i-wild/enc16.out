@@ -1,0 +1,31 @@
+== A: Sylvester H16, eigenvalue -4
+H16 eigenvalue -4 eigenspace dim 8
+ information sets: 7280 of 12870
+ nnz(Gamma_T) histogram: [(37, 832), (38, 576), (39, 576), (40, 976), (41, 384), (43, 384), (44, 96), (45, 384), (46, 832), (47, 768), (48, 640), (50, 192), (52, 128), (54, 384), (56, 48), (64, 80)]
+ min nnz(Gamma_T) = 37 attained by 832 sets; affine-span dims of those T: [4]
+ entry values in best Gamma: ['-1', '-2', '0', '1', '2']
+ example T = ['0000', '0001', '0010', '0011', '0100', '0101', '0110', '1111']
+     +  .  .  .  .  .  .  -  -  -  -  .  -  .  .  .
+     .  +  .  .  .  .  .  +  -  .  .  .  .  .  -  .
+     .  .  +  .  .  .  .  +  -  .  .  .  .  -  .  .
+     .  .  .  +  .  .  .  -  .  .  .  -  -  +  +  .
+     .  .  .  .  +  .  .  +  -  .  .  -  .  .  .  .
+     .  .  .  .  .  +  .  -  .  .  -  +  .  -  +  .
+     .  .  .  .  .  .  +  -  .  -  .  +  .  +  -  .
+     .  .  .  .  .  .  . -2  +  -  -  +  -  +  +  +
+ T inside an affine 3-space: count 16 nnz values [64]
+== B: bent form G = D_f H P_B D_f (same matrix up to free signed relabelling), trace 16
+G16 eigenvalue -4 eigenspace dim 6
+ information sets: 4048 of 8008
+ nnz(Gamma_T) histogram: [(30, 192), (34, 2880), (39, 960), (60, 16)]
+ min nnz(Gamma_T) = 30 attained by 192 sets; affine-span dims of those T: [4]
+ entry values in best Gamma: ['-1', '0', '1']
+ example T = ['0000', '0001', '0010', '0100', '1001', '1110']
+     +  .  .  .  .  -  -  +  -  .  .  .  +  .  .  .
+     .  +  .  .  .  -  .  .  -  .  +  -  .  +  .  .
+     .  .  +  .  .  .  -  .  .  .  -  .  +  -  .  +
+     .  .  .  +  +  -  -  .  .  .  .  -  .  .  .  +
+     .  .  .  -  .  .  .  +  -  +  +  .  .  .  .  -
+     .  .  .  +  .  .  .  -  .  .  .  -  -  +  +  .
+ T inside an affine 3-space: count 0 nnz values []
+LIGHT label=i-wild-enc16 exit=0 time=21s waited=0s peak_rss_mb=18 peak_footprint_mb=14 lowest_cap_mb=1500 stopped=- start=20:59:10 cmd=python3 -B enc16.py best.pkl

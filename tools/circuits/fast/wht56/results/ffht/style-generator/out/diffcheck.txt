@@ -1,0 +1,8 @@
+gen/gT/fht_avx.c: 571 pieces; 571 the same; 0 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/g20x/fht_avx.c: 571 pieces; 334 the same; 236 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/g20s/fht_avx.c: 571 pieces; 334 the same; 236 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/g19f/fht_avx.c: 571 pieces; 334 the same; 236 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/g19r/fht_avx.c: 571 pieces; 334 the same; 236 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/a20x/fht_avx.c: 565 pieces; 321 the same; 243 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/a20s/fht_avx.c: 565 pieces; 321 the same; 243 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences
+gen/a19f/fht_avx.c: 565 pieces; 321 the same; 243 blocks of 8 registers differ in their three levels between registers (and in the registers stored, and by the constants); 0 other differences

@@ -1,0 +1,12 @@
+N = 4: tight wires by definition: 20 (N times the number of subgroups = 20)
+  each has s = 2^level and s s' = N: yes
+  support pairs with |S||T| < N: 96, all with no non-zero form (so s s' >= N)
+  support pairs with |S||T| = N: 24 empty, 20 carrying exactly one form up to a scalar
+  the forms found are exactly the coset characters: True (20)
+LIGHT label=a2-ds2 exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:24:58 cmd=python3 -B tight.py ds 2
+N = 8: tight wires by definition: 128 (N times the number of subgroups = 128)
+  each has s = 2^level and s s' = N: yes
+  support pairs with |S||T| < N: 7920, all with no non-zero form (so s s' >= N)
+  support pairs with |S||T| = N: 3808 empty, 128 carrying exactly one form up to a scalar
+  the forms found are exactly the coset characters: True (128)
+LIGHT label=a2-ds3 exit=0 time=2s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:24:59 cmd=python3 -B tight.py ds 3

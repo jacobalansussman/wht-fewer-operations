@@ -1,0 +1,10 @@
+m = 5, W = 4: 16384 covering constraints
+  direction 00001 forced to be used 0 times: fewest moves found 23, solver's lower bound 18.0, status 1 (0 = proved optimal)
+  direction 00001 forced to be used >= 2 times: fewest moves found 17, solver's lower bound 17.0, status 0 (0 = proved optimal)
+  direction 00111 forced to be used 0 times: fewest moves found 22, solver's lower bound 18.0, status 1 (0 = proved optimal)
+  direction 00111 forced to be used >= 2 times: fewest moves found 17, solver's lower bound 16.999999999999993, status 0 (0 = proved optimal)
+  direction 11111 forced to be used 0 times: fewest moves found 21, solver's lower bound 18.0, status 1 (0 = proved optimal)
+  direction 11111 forced to be used >= 2 times: fewest moves found 17, solver's lower bound 17.0, status 0 (0 = proved optimal)
+  direction 00011 forced to be used >= 1 times: fewest moves found 17, solver's lower bound 17.0, status 0 (0 = proved optimal)
+  direction 01111 forced to be used >= 1 times: fewest moves found 17, solver's lower bound 17.00000000000014, status 0 (0 = proved optimal)
+odd-weight design is the only 16-move count vector: YES (every forced case has lower bound above 16)

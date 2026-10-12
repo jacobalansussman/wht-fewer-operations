@@ -1,0 +1,4 @@
+K=6 subspaces 2825 flats 180800 (signed)
+sym2 K=6 p=3: 59552 orbits, 2144 invariant flats, part 0 of 1
+sym2 K=6 p=3 seed=2 part 0/1: 59552 orbits, 2144 invariant flats. two orbits (6 flats): 2915880 covering pairs tested exactly, 0 span g ; two orbits + 1 invariant flat (7 flats): 0 covering triples tested exactly, 0 span g
+LIGHT label=ad4-sym2b exit=0 time=3s waited=0s peak_rss_mb=512 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:56:43 cmd=./fr 6 sym2 3 2 0 1

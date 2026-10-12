@@ -1,0 +1,65 @@
+helpers at the end: 0 hold nothing; contents held by the others, x / y / helper values: [7808, 0, 8040]
+certificate h=9 v=120 R=783; registers 1023; addresses per register 2^9 = 512; n = 523776 points
+FULL contents replayed.  At the end: x_t holds x_t alone: True;  y_t holds y_t + x_t: False;  every helper holds its own value alone: False
+   helpers that end with something else: 783, e.g. [(240, 30), (241, 6), (242, 4), (243, 6), (244, 30)]
+final frames: x dim [9], y dim [8], helpers dim [9]; port_t outside the final frame of y_t for all t: True
+
+(1) THE GATE LIST, one layer = 2^h = 512 gates (G)
+  prologue (x: 0 -> <port>)              layers    120  gates     61440  survivors    30720  dead     30720 | kinds {'J move': 61440} | dead by order {1: 30720}
+  phase A                                layers   3823  gates   1957376  survivors   377906  dead   1579470 | kinds {'J disjoint': 669696, 'J move': 1208832, 'J nested': 2560, 'S': 76288} | dead by order {1: 1579470}
+  cut (copies of the totals come down)   layers     72  gates     36864  survivors     8176  dead     28688 | kinds {'Q move down': 36864} | dead by order {1: 28688}
+  scatter                                layers    736  gates    376832  survivors   103936  dead    272896 | kinds {'J cross': 204800, 'J disjoint': 14336, 'S': 157696} | dead by order {1: 272896}
+  phase B                                layers   6619  gates   3388928  survivors   254332  dead   3134596 | kinds {'J cross': 340992, 'J disjoint': 376832, 'J move': 2529792, 'J nested': 26624, 'S': 114688} | dead by order {1: 3124356, 6: 10240}
+  final blocks                           layers   1665  gates    852480  survivors     7395  dead    845085 | kinds {'J move': 852480} | dead by order {1: 845085}
+  ALL                                    layers  13035  gates   6673920  survivors   782465  dead   5891455 | kinds {'J cross': 545792, 'J disjoint': 1060864, 'J move': 4652544, 'J nested': 29184, 'Q move down': 36864, 'S': 348672} | dead by order {1: 5881215, 6: 10240}
+
+reading: every register holds its own value; input registers 1023; free events: {'layers of order above 1 whose content is exactly a scalar multiple of one held before at that label': 20}
+
+(2) FIVE NUMBERS, whole invocation, n = 523776
+  classes: 1306241   (2n - 1 = 1047551; groups (B, U): 12800; distinct B: 3942; distinct U: 3388)
+  survivors (= classes - n): 782465   against n - 1 = 523775
+  Q gates: 36864  (move down 36864, additions 0);  E gates: 0
+  dead gates of order above 1: 10240  (by order: {1: 5881215, 6: 10240})
+  dead gates: 5891455   against (n/2) log2 n = 4975503  and against the plain schedule's dead gates
+  plain schedule (every register alone from frame 0 to its final frame): 9087 moves = 4652544 gates, survivors 522633, dead 4129911
+  this gate list: 6673920 gates = 9087 move layers up + 72 down + 3876 addition layers
+  kinds of all gates: {'J cross': 545792, 'J disjoint': 1060864, 'J move': 4652544, 'J nested': 29184, 'Q move down': 36864, 'S': 348672}
+
+(3) FIRST LAYER IN PROGRAM ORDER THAT BREAKS EACH PROPERTY (layer index; phases end at [120, 3943, 4015, 4751, 11370, 13035])
+  [  2502] J gate whose parents are nested (result = their difference modulo 2)
+           A: addition s505 += (-1) * x48 at dim 9 | classes: target {x1,x2,x3,x5,x17,x21,x24,x29,x30,x31,x32,x34,x35,x36,... (22)}, source {x48}, result {x1,x2,x3,x5,x17,x21,x24,x29,x30,x31,x32,x34,x35,x36,... (21)}
+  [  3943] Q gate
+           cut: move DOWN on the scratch copy of total 0, dim 9 -> 8, content class {x0,x1,x2,x3,x4,x5,x7,x8,x9,x10,x11,x13,x14,x15,... (57)} (t=58); parents: the wires (copy, a) and (copy, a+z), both of class (B, a+U+z)
+  [  4016] J gate whose parents overlap without nesting (a join that cancels modulo 2)
+           scatter: addition y120 += (1/3) * copy1 at dim 0 | classes: target {x0,x1,x2,x3,x4,x5,x7,x8,x9,x10,x11,x13,x14,x15,... (58)}, source {x0,x1,x2,x3,x4,x5,x12,x17,x21,x24,x26,x27,x28,x29,... (57)}, result {x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,... (59)}
+  [  8383] dead gate of order above 1
+           B: addition s358 += (1) * s244 at dim 3 | classes: target {x49,x50,s118,s120}, source {x2,x3,x49,x50,s4,s7,s118,s120}, result {x2,x3,s4,s7} | order 6
+
+(4) BATCH SHADOW (frames forgotten; one gate per addition term; inputs = the 1023 registers)
+  gates 3876; kinds and new/dead: {'J cross': 1066, 'J disjoint': 2072, 'J nested': 57, 'S': 681, 'dead order 1': 937, 'dead order 6': 20, 'new': 2919}
+  classes: 3942  against 2 * 1023 - 1 = 2045
+  pairs of batch classes: nested 112603, overlapping without nesting 2234181, of 7767711
+
+(5) THE SCATTER ALONE (the 120 targets right after the scatter, full contents)
+  classes: 120 distinct of 120, sizes {61: 56, 62: 28, 58: 28, 57: 8}; own value y_t in its class: False; source x_t in its class: False
+  pairs overlapping without nesting: 7140 of 7140;  2-adic values of the entries of one row: {0: 5, -1: 61}
+  scatter gates (batch shadow): 736; kinds {'J disjoint': 28, 'J cross': 400, 'S': 308}; new/dead {'new': 203, 'dead order 1': 533}
+
+(6) LEDGER: every addition term, number of contents on both sides before and after (full contents; x-only in the file)
+  additions by phase and effect on the number of contents: {('A', 'cancel'): 5, ('A', 'grow'): 1322, ('A', 'same'): 135, ('B', 'cancel'): 215, ('B', 'grow'): 1059, ('B', 'same'): 404, ('scatter', 'cancel'): 198, ('scatter', 'grow'): 495, ('scatter', 'same'): 43}
+  sum over additions of log2(after / smaller side), by phase: {'A': 3680.8, 'scatter': 1100.4, 'B': 3139.4}; largest single rise 5.88
+  a-2's count for this gate list (per 2^h gates): moves up 9087 (rise 1 each) + additions 7920.6 = 17007.6; needed for the registers' final frames: 9087
+
+(7) PAIRS OF CLASSES THAT OVERLAP WITHOUT NESTING, by where the crossing is (groups in program order)
+  all pairs of classes: 853132121920
+    1448147284  batch classes cross and frames cross
+                first pair: group 1852: B={x21,s51} at dim 2, first made in layer 840 (J move)  x  group 1712: B={x21,x42,s49} at dim 2, first made in layer 698 (J disjoint)
+    1022735841  batch classes cross, frames nested or equal (batch side alone)
+                first pair: group 1148: B={x1,s3} at dim 1, first made in layer 125 (J disjoint)  x  group 1147: B={x1,s2} at dim 1, first made in layer 124 (J disjoint)
+     148093436  batch classes nested, frames cross (address side alone)
+                first pair: group 1852: B={x21,s51} at dim 2, first made in layer 840 (J move)  x  group 1711: B={x21} at dim 2, first made in layer 697 (J move)
+      74014878  batch classes nested one way, frames nested the other way (needs both sides)
+                first pair: group 1660: B={x19} at dim 2, first made in layer 640 (J move)  x  group 1223: B={x19,s45} at dim 1, first made in layer 200 (J disjoint)
+        154032  same batch class, frames cross (address side alone)
+                first pair: group 2409: B={x20,x22,s47,s52} at dim 3, first made in layer 1407 (J move)  x  group 2387: B={x20,x22,s47,s52} at dim 3, first made in layer 1385 (J move)
+  total overlapping without nesting: 2693145471

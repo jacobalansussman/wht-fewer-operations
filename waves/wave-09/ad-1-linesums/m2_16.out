@@ -1,0 +1,16 @@
+(1) circuit over the two-element field: gates = 57  all 20 line sums correct modulo 2: True
+    adding-only count (exact, no two lines share two points): 60
+(2) same wiring, whole numbers, every gate u + v:
+    line y = 1 x + 1 : computed - wanted = (2, 0, 0, 0, 0, 2, 0, 0, 2, 2, 2, 0, 2, 2, 0, 2)
+    line y = 2 x + 3 : computed - wanted = (2, 0, 0, 0, 2, 0, 2, 2, 2, 2, 2, 0, 0, 0, 2, 0)
+    lines wrong over the whole numbers: 9 of 9
+    identity L_m(c) = h_c - L_m(0) - V_(c/m) - V_0 + 2 * (rectangle {0, c/m} x {0, c}) over the whole numbers: True
+    the nine rectangles cost 21 gates more (3 + 9 + 9), and each line needs one more gate: 57 + 21 + 9 = 87 > 60
+(3) rank of the 20 x 16 matrix: rationals 16  modulo 2: 9  modulo 3: 16
+    over the rationals: 20 - 16 = 4 relations = 'the five parallel classes have the same total' and nothing else
+    modulo 2, rank of the lines of the first 1 directions: 4
+    modulo 2, rank of the lines of the first 2 directions: 7
+    modulo 2, rank of the lines of the first 3 directions: 8
+    modulo 2, rank of the lines of the first 4 directions: 9
+    modulo 2, rank of the lines of the first 5 directions: 9
+LIGHT label=ad1-m2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:37:41 cmd=python3 -B m2_16.py

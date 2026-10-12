@@ -1,0 +1,4 @@
+anneal p=2 n=16 targets=15 helpers m=19 => gate budget 34 ; 300 s ; seed 51 ; T 0.40 -> 0.40
+start file: 19 helpers
+start: missing 0 reached helpers 19 => gates 34
+LIGHT label=h4-walk16p2pad exit=-15 time=121s waited=42s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:15:25 cmd=./walk 2 16 19 300 51 rows_zeta4.txt 0.4 0.4 yates16_pad.txt

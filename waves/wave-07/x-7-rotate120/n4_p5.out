@@ -1,0 +1,25 @@
+p=5: dimension of {X : X R = R^-1 X} = 6 (expected 6 = 2^2 + 2*1^2)
+mirrors (S^2 = 1, S R S = R^-1) over GF(5): 192
+fact (i) checked on all of them: S R is an involution, S * (S R) = R, and S R inverts R too
+cost triples (cost S, cost S R, cost S R^2), sorted, with how many mirrors S have them, and one example S (rows), its trace mod p and non-zeros:
+  triple (0, 7, 7)  two cheapest sum to 7  count 24   example [[0, 4, 0, 0], [4, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 4]]  trace 0  nnz 4 / S R nnz 16 / S R^2 nnz 16
+  triple (3, 7, 7)  two cheapest sum to 10  count 36   example [[1, 2, 3, 0], [0, 1, 0, 0], [0, 2, 4, 0], [0, 0, 0, 4]]  trace 0  nnz 7 / S R nnz 15 / S R^2 nnz 15
+  triple (4, 6, 6)  two cheapest sum to 10  count 72   example [[3, 4, 2, 3], [3, 0, 0, 2], [3, 1, 4, 2], [3, 2, 2, 3]]  trace 0  nnz 14 / S R nnz 14 / S R^2 nnz 8
+  triple (4, 7, 7)  two cheapest sum to 11  count 36   example [[2, 1, 4, 3], [4, 0, 1, 2], [1, 3, 0, 2], [3, 2, 2, 3]]  trace 0  nnz 14 / S R nnz 14 / S R^2 nnz 9
+  triple (5, 6, 6)  two cheapest sum to 11  count 24   example [[0, 4, 4, 3], [4, 0, 1, 2], [4, 1, 0, 2], [3, 2, 2, 3]]  trace 3  nnz 13 / S R nnz 13 / S R^2 nnz 10
+least cost(S) + cost(S R) over all pairs, GF(5): 7   (the trivial pair D, H/2 gives 0 + 7)
+pairs by (cost S, cost S R) unsorted:
+   (0, 7) 8
+   (3, 7) 12
+   (4, 6) 24
+   (4, 7) 12
+   (5, 6) 8
+   (6, 4) 24
+   (6, 5) 8
+   (6, 6) 32
+   (7, 0) 8
+   (7, 3) 12
+   (7, 4) 12
+   (7, 7) 32
+distinct matrices priced: 78
+LIGHT label=x7-n4p5 exit=0 time=2s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:22:43 cmd=python3 -B n4.py 5

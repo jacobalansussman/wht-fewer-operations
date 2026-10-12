@@ -1,0 +1,9 @@
+k 2 N 4 mode 0 m 2 limits 3 99 99 3 valset 1 best_nnz 3
+A
+1 -1 
+1 -1 
+1 -1 
+-2 0 
+B
+-4 0 0 0 
+2 2 2 -2 

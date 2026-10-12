@@ -1,0 +1,20 @@
+e2-0-pieces/slp_8.txt N = 8
+   duplicate join: hub16  = 1*p5 + 1*p10   support  8, wire 1 -1 1 -1 1 -1 -1 1 ; same class as hub11 = 1 1 1 1 1 1 -1 -1
+e2-0-pieces/slp_16.txt N = 16
+   duplicate join: hub14  = 1*p5 + 1*p10   support  8, wire 1 -1 1 -1 1 -1 -1 1 0 0 0 0 0 0 0 0 ; same class as hub11 = 1 1 1 1 -1 -1 1 1 0 0 0 0 0 0 0 0
+   duplicate join: hub30  = 1*p21 + -1*p26   support  8, wire 0 0 0 0 0 0 0 0 1 -1 1 -1 -1 1 1 -1 ; same class as hub27 = 0 0 0 0 0 0 0 0 1 1 1 1 1 1 -1 -1
+   duplicate join: hub38  = 1*p15 + 1*p31   support 16, wire 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 -1 1 -1 1 ; same class as hub33 = 1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 -1
+   duplicate join: hub43  = 1*p13 + 1*p29   support 16, wire 1 1 -1 -1 1 1 -1 -1 1 1 -1 -1 -1 -1 1 1 ; same class as hub33 = 1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 -1
+   duplicate join: hub48  = 1*p16 + 1*p32   support 16, wire 1 -1 -1 1 1 -1 -1 1 1 -1 -1 1 -1 1 1 -1 ; same class as hub33 = 1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 -1
+h-1-staircase3/slp16_52_from54.txt N = 16
+   duplicate join: h31    = 1*h22 + 1*h14   support 16, wire 1 1 1 1 -1 -1 -1 -1 1 1 -1 -1 1 1 -1 -1 ; same class as h29 = 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 -1 -1 -1 1 1
+   duplicate join: h32    = 1*h27 + -1*h21   support 16, wire 1 -1 1 -1 -1 1 -1 1 -1 1 1 -1 -1 1 1 -1 ; same class as h29 = 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 -1 -1 -1 1 1
+   duplicate join: h33    = 1*h30 + 1*h25   support 16, wire 1 -1 -1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 1 ; same class as h29 = 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 -1 -1 -1 1 1
+   duplicate join: h46    = 1*h28 + 1*h26   support 16, wire 1 -1 -1 -1 1 1 1 -1 1 -1 -1 1 -1 1 1 -1 ; same class as h29 = 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 -1 -1 -1 1 1
+   duplicate join: h47    = 1*h45 + 1*h18   support 16, wire 1 -1 1 -1 1 -1 1 -1 1 -1 -1 -1 1 1 1 -1 ; same class as h29 = 1 -1 -1 -1 -1 -1 -1 1 1 1 -1 -1 -1 -1 1 1
+h-8-provethewrongthi/h8_21_three_hubs.txt N = 8
+   duplicate join: y17    = 1*p5 + 1*q1   support  8, wire 1 -1 1 -1 1 -1 1 -1 ; same class as hub11 = 1 1 1 1 1 1 -1 -1
+   duplicate join: y18    = 1*p5 + -1*q1   support  8, wire 1 -1 1 -1 -1 1 -1 1 ; same class as hub11 = 1 1 1 1 1 1 -1 -1
+   duplicate join: y19    = 1*q2 + 1*p10   support  8, wire 1 -1 -1 1 1 -1 -1 1 ; same class as hub11 = 1 1 1 1 1 1 -1 -1
+   duplicate join: y20    = 1*q2 + -1*p10   support  8, wire 1 -1 -1 1 -1 1 1 -1 ; same class as hub11 = 1 1 1 1 1 1 -1 -1
+LIGHT label=m-cross-dups exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:57:09 cmd=python3 -B m-cross/dups.py m-cross/meter2.py e2-0-pieces/slp_8.txt e2-0-pieces/slp_16.txt h-1-staircase3/slp16_52_from54.txt h-8-provethewrongthi/h8_21_three_hubs.txt

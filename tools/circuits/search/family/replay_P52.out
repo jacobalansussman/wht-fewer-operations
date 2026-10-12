@@ -1,0 +1,2 @@
+P52 (helper set only, order and coefficients re-derived) gates 52 (helpers 36 + outputs 16) symbolic replay True random replay True
+p=run(H,16,'P52 (helper set only, order 

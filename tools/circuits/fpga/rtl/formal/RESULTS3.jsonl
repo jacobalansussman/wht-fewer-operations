@@ -1,0 +1,18 @@
+{"step": "A1", "claim": "every wire of wide fits its exact width", "solver": "z3", "verdict": "PASSED", "seconds": 0.4, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:36 EDT"}
+{"step": "A1", "claim": "every wire of wide fits its exact width", "solver": "yices", "verdict": "PASSED", "seconds": 0.11, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:37 EDT"}
+{"step": "A2", "claim": "design = wide wherever every wire fits", "solver": "bitwuzla", "verdict": "PASSED", "seconds": 0.26, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:37 EDT"}
+{"step": "B", "claim": "wide = definition", "solver": "z3", "verdict": "PASSED", "seconds": 0.11, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:37 EDT"}
+{"step": "B", "claim": "wide = definition", "solver": "yices", "verdict": "PASSED", "seconds": 0.1, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:37 EDT"}
+{"step": "control-A1", "claim": "wire n_t25 fits 9 bits, one fewer than it needs (must FAIL)", "solver": "z3", "verdict": "FAILED", "seconds": 0.12, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:37 EDT"}
+{"step": "control-A2", "claim": "design with wire n_t25 one bit too narrow = wide wherever every wire fits (must FAIL)", "solver": "bitwuzla", "verdict": "FAILED", "seconds": 0.27, "size": "16", "design": "textbook", "W": 8, "when": "2026-10-11 11:57:38 EDT"}
+{"step": "A1", "claim": "every wire of wide fits its exact width", "solver": "z3", "verdict": "PASSED", "seconds": 0.16, "size": "16", "design": "cfl1994", "W": 8, "when": "2026-10-11 11:57:38 EDT"}
+{"step": "A1", "claim": "every wire of wide fits its exact width", "solver": "yices", "verdict": "PASSED", "seconds": 0.1, "size": "16", "design": "cfl1994", "W": 8, "when": "2026-10-11 11:57:38 EDT"}
+{"step": "A2", "claim": "design = wide wherever every wire fits", "solver": "bitwuzla", "verdict": "PASSED", "seconds": 4.78, "size": "16", "design": "cfl1994", "W": 8, "when": "2026-10-11 11:57:43 EDT"}
+{"step": "B", "claim": "wide = definition", "solver": "z3", "verdict": "PASSED", "seconds": 0.11, "size": "16", "design": "cfl1994", "W": 8, "when": "2026-10-11 11:57:43 EDT"}
+{"step": "B", "claim": "wide = definition", "solver": "yices", "verdict": "PASSED", "seconds": 0.1, "size": "16", "design": "cfl1994", "W": 8, "when": "2026-10-11 11:57:43 EDT"}
+{"step": "A1", "claim": "every wire of wide fits its exact width", "solver": "z3", "verdict": "PASSED", "seconds": 0.33, "size": "16", "design": "ours", "W": 8, "when": "2026-10-11 11:57:43 EDT"}
+{"step": "A1", "claim": "every wire of wide fits its exact width", "solver": "yices", "verdict": "PASSED", "seconds": 0.12, "size": "16", "design": "ours", "W": 8, "when": "2026-10-11 11:57:44 EDT"}
+{"step": "A2", "claim": "design = wide wherever every wire fits", "solver": "bitwuzla", "verdict": "PASSED", "seconds": 11.17, "size": "16", "design": "ours", "W": 8, "when": "2026-10-11 11:57:55 EDT"}
+{"step": "B", "claim": "wide = definition", "solver": "z3", "verdict": "PASSED", "seconds": 0.12, "size": "16", "design": "ours", "W": 8, "when": "2026-10-11 11:57:55 EDT"}
+{"step": "B", "claim": "wide = definition", "solver": "yices", "verdict": "TIMEOUT", "seconds": 30.01, "size": "16", "design": "ours", "W": 8, "when": "2026-10-11 11:58:25 EDT"}
+{"step": "B", "claim": "wide = definition, one output at a time", "solver": "yices-per-output", "verdict": "PASSED", "outputs_passed": "16 of 16", "seconds": 2.11, "size": "16", "design": "ours", "W": 8, "when": "2026-10-11 11:58:28 EDT"}

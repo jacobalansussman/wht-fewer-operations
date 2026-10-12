@@ -1,0 +1,4 @@
+K = 18: 118 leaves read
+  16 moves: 1 count vectors up to the 720 maps; largest joined set -> number of vectors: [(16, 1)]; NOT excluded by the clique lemma: 0
+  17 moves: 3 count vectors up to the 720 maps; largest joined set -> number of vectors: [(15, 2), (16, 1)]; NOT excluded by the clique lemma: 0
+  18 moves: 12 count vectors up to the 720 maps; largest joined set -> number of vectors: [(14, 3), (15, 6), (16, 3)]; NOT excluded by the clique lemma: 0

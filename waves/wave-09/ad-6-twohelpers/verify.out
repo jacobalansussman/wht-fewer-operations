@@ -1,0 +1,94 @@
+== control of the test itself (rank test of h1_graph.py in fractions against the walk), k = 3..5
+  k=3 theta  degree<=1 : walk says True  rank test says missing 0  agree
+  k=3 theta  degree<=2 : walk says True  rank test says missing 0  agree
+  k=3 theta  degree<=3 : walk says False rank test says missing 1  agree
+  k=3 halves degree<=1 : walk says True  rank test says missing 0  agree
+  k=3 halves degree<=2 : walk says False rank test says missing 2  agree
+  k=3 halves degree<=3 : walk says False rank test says missing 3  agree
+  k=4 theta  degree<=1 : walk says True  rank test says missing 0  agree
+  k=4 theta  degree<=2 : walk says True  rank test says missing 0  agree
+  k=4 theta  degree<=3 : walk says False rank test says missing 2  agree
+  k=4 halves degree<=1 : walk says True  rank test says missing 0  agree
+  k=4 halves degree<=2 : walk says False rank test says missing 4  agree
+  k=4 halves degree<=3 : walk says False rank test says missing 8  agree
+  k=5 theta  degree<=1 : walk says True  rank test says missing 0  agree
+  k=5 theta  degree<=2 : walk says True  rank test says missing 0  agree
+  k=5 theta  degree<=3 : walk says False rank test says missing 3  agree
+  k=5 halves degree<=1 : walk says True  rank test says missing 0  agree
+  k=5 halves degree<=2 : walk says False rank test says missing 6  agree
+  k=5 halves degree<=3 : walk says False rank test says missing 15  agree
+== selector-and-atoms family, degree 2 (exact walk).  columns: k, N, t, classes, classes/N, good for degree 2, good for degree 3, components
+  k= 3 N=     8 t=1 classes      8 = 1.0000 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 3 N=     8 t=2 classes      9 = 1.1250 N   degree 2: True   degree 3: True   components 1
+  k= 4 N=    16 t=1 classes     14 = 0.8750 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 4 N=    16 t=2 classes     16 = 1.0000 N   degree 2: True   degree 3: False   components 1
+  k= 4 N=    16 t=3 classes     17 = 1.0625 N   degree 2: True   degree 3: True   components 1
+  k= 5 N=    32 t=1 classes     24 = 0.7500 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 5 N=    32 t=2 classes     28 = 0.8750 N   degree 2: True   degree 3: False   components 1
+  k= 5 N=    32 t=3 classes     32 = 1.0000 N   degree 2: True   degree 3: False   components 1
+  k= 6 N=    64 t=1 classes     44 = 0.6875 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 6 N=    64 t=2 classes     48 = 0.7500 N   degree 2: True   degree 3: False   components 1
+  k= 6 N=    64 t=3 classes     60 = 0.9375 N   degree 2: True   degree 3: False   components 1
+  k= 7 N=   128 t=1 classes     80 = 0.6250 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 7 N=   128 t=2 classes     88 = 0.6875 N   degree 2: True   degree 3: False   components 1
+  k= 7 N=   128 t=3 classes    112 = 0.8750 N   degree 2: True   degree 3: False   components 1
+  k= 8 N=   256 t=1 classes    152 = 0.5938 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 8 N=   256 t=2 classes    160 = 0.6250 N   degree 2: True   degree 3: False   components 1
+  k= 8 N=   256 t=3 classes    208 = 0.8125 N   degree 2: True   degree 3: False   components 1
+  k= 9 N=   512 t=1 classes    288 = 0.5625 N   degree 2: True   degree 3: False   components 1   <- best t
+  k= 9 N=   512 t=2 classes    288 = 0.5625 N   degree 2: True   degree 3: False   components 1
+  k= 9 N=   512 t=3 classes    384 = 0.7500 N   degree 2: True   degree 3: False   components 1
+  k=10 N=  1024 t=1 classes    560 = 0.5469 N   degree 2: True   degree 3: False   components 1
+  k=10 N=  1024 t=2 classes    512 = 0.5000 N   degree 2: True   degree 3: False   components 1   <- best t
+  k=10 N=  1024 t=3 classes    704 = 0.6875 N   degree 2: True   degree 3: False   components 1
+  k=11 N=  2048 t=1 classes   1088 = 0.5312 N   degree 2: True   degree 3: None   components 1
+  k=11 N=  2048 t=2 classes    960 = 0.4688 N   degree 2: True   degree 3: None   components 1   <- best t
+  k=11 N=  2048 t=3 classes   1280 = 0.6250 N   degree 2: True   degree 3: None   components 1
+  k=12 N=  4096 t=1 classes   2144 = 0.5234 N   degree 2: True   degree 3: None   components 1
+  k=12 N=  4096 t=2 classes   1792 = 0.4375 N   degree 2: True   degree 3: None   components 1   <- best t
+  k=12 N=  4096 t=3 classes   2432 = 0.5938 N   degree 2: True   degree 3: None   components 1
+== small cases against the rank test (fractions): selector family k = 3..6, every t
+  k=3 t=1 classes 8 : missing degree<=2: 0 ; degree<=3: 1
+  k=3 t=2 classes 9 : missing degree<=2: 0 ; degree<=3: 0
+  k=4 t=1 classes 14 : missing degree<=2: 0 ; degree<=3: 2
+  k=4 t=2 classes 16 : missing degree<=2: 0 ; degree<=3: 1
+  k=4 t=3 classes 17 : missing degree<=2: 0 ; degree<=3: 0
+  k=5 t=1 classes 24 : missing degree<=2: 0 ; degree<=3: 4
+  k=5 t=2 classes 28 : missing degree<=2: 0 ; degree<=3: 3
+  k=5 t=3 classes 32 : missing degree<=2: 0 ; degree<=3: 1
+  k=5 t=4 classes 33 : missing degree<=2: 0 ; degree<=3: 0
+  k=6 t=1 classes 44 : missing degree<=2: 0 ; degree<=3: 6
+  k=6 t=2 classes 48 : missing degree<=2: 0 ; degree<=3: 6
+  k=6 t=3 classes 60 : missing degree<=2: 0 ; degree<=3: 3
+  k=6 t=4 classes 64 : missing degree<=2: 0 ; degree<=3: 1
+  k=6 t=5 classes 65 : missing degree<=2: 0 ; degree<=3: 0
+== 'one more degree': P1 forgets one bit, P2 = a good pair for degree d-1 on the rest, glued by that bit
+  k= 4 degree 3: classes    16 = 1.0000 N good True (degree 4: False)
+  k= 5 degree 3: classes    30 = 0.9375 N good True (degree 4: False) ; degree 4: classes    32 = 1.0000 N good True
+  k= 6 degree 3: classes    56 = 0.8750 N good True (degree 4: False) ; degree 4: classes    62 = 0.9688 N good True
+  k= 7 degree 3: classes   108 = 0.8438 N good True (degree 4: False) ; degree 4: classes   120 = 0.9375 N good True
+  k= 8 degree 3: classes   208 = 0.8125 N good True (degree 4: False) ; degree 4: classes   236 = 0.9219 N good True
+  k= 9 degree 3: classes   408 = 0.7969 N good True (degree 4: False) ; degree 4: classes   464 = 0.9062 N good True
+  k=10 degree 3: classes   800 = 0.7812 N good True (degree 4: False) ; degree 4: classes   920 = 0.8984 N good True
+  k=11 degree 3: classes  1536 = 0.7500 N good True (degree 4: False) ; degree 4: classes  1824 = 0.8906 N good True
+== the table V2upper(k) = least count in the family over t (formula 2^(k-t) + sum over atoms of 2^(k-t-size))
+  k= 3 t=1 classes/N = 1.00000   (theta family 3N/4+2: 1.00000)   2 log2(k)/k = 1.05664
+  k= 4 t=1 classes/N = 0.87500   (theta family 3N/4+2: 0.87500)   2 log2(k)/k = 1.00000
+  k= 5 t=1 classes/N = 0.75000   (theta family 3N/4+2: 0.81250)   2 log2(k)/k = 0.92877
+  k= 6 t=1 classes/N = 0.68750   (theta family 3N/4+2: 0.78125)   2 log2(k)/k = 0.86165
+  k= 7 t=1 classes/N = 0.62500   (theta family 3N/4+2: 0.76562)   2 log2(k)/k = 0.80210
+  k= 8 t=1 classes/N = 0.59375   (theta family 3N/4+2: 0.75781)   2 log2(k)/k = 0.75000
+  k= 9 t=1 classes/N = 0.56250   (theta family 3N/4+2: 0.75391)   2 log2(k)/k = 0.70443
+  k=10 t=2 classes/N = 0.50000   (theta family 3N/4+2: 0.75195)   2 log2(k)/k = 0.66439
+  k=11 t=2 classes/N = 0.46875   (theta family 3N/4+2: 0.75098)   2 log2(k)/k = 0.62899
+  k=12 t=2 classes/N = 0.43750   (theta family 3N/4+2: 0.75049)   2 log2(k)/k = 0.59749
+  k=13 t=2 classes/N = 0.40625   (theta family 3N/4+2: 0.75024)   2 log2(k)/k = 0.56930
+  k=14 t=2 classes/N = 0.37500   (theta family 3N/4+2: 0.75012)   2 log2(k)/k = 0.54391
+  k=15 t=2 classes/N = 0.35938   (theta family 3N/4+2: 0.75006)   2 log2(k)/k = 0.52092
+  k=16 t=2 classes/N = 0.34375   (theta family 3N/4+2: 0.75003)   2 log2(k)/k = 0.50000
+  k=17 t=2 classes/N = 0.32812   (theta family 3N/4+2: 0.75002)   2 log2(k)/k = 0.48088
+  k=18 t=2 classes/N = 0.31250   (theta family 3N/4+2: 0.75001)   2 log2(k)/k = 0.46333
+  k=19 t=2 classes/N = 0.30469   (theta family 3N/4+2: 0.75000)   2 log2(k)/k = 0.44715
+  k=20 t=2 classes/N = 0.29688   (theta family 3N/4+2: 0.75000)   2 log2(k)/k = 0.43219
+  k=21 t=2 classes/N = 0.28906   (theta family 3N/4+2: 0.75000)   2 log2(k)/k = 0.41832
+LIGHT label=ad6-verify exit=137 time=46s waited=0s peak_rss_mb=1957 peak_footprint_mb=1054 lowest_cap_mb=1500 stopped=memory>1500MB start=06:33:08 cmd=python3 -B verify.py 12

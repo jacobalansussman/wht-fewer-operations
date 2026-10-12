@@ -1,0 +1,8 @@
+1. expansion identity on random words with mixing and scratch: 1878 selections tested, 0 failures
+2. unit with random mixing, m=3, W=2 live + 0 scratch arrays, 6 moves: unit condition for all selections True; tight selections 3, triangular table on them True; forms with q(I)=0: 3, rank U + rank W <= |A0| in all: True
+2. unit with random mixing, m=3, W=2 live + 1 scratch arrays, 9 moves: unit condition for all selections True; tight selections 0, triangular table on them True; forms with q(I)=0: 3, rank U + rank W <= |A0| in all: True
+2. unit with random mixing, m=4, W=3 live + 0 scratch arrays, 12 moves: unit condition for all selections True; tight selections 4, triangular table on them True; forms with q(I)=0: 7, rank U + rank W <= |A0| in all: True
+2. unit with random mixing, m=5, W=4 live + 0 scratch arrays, 20 moves: unit condition for all selections True; tight selections 5, triangular table on them True; forms with q(I)=0: 15, rank U + rank W <= |A0| in all: True
+2. unit with random mixing, m=5, W=2 live + 2 scratch arrays, 20 moves: unit condition for all selections True; tight selections 0, triangular table on them True; forms with q(I)=0: 15, rank U + rank W <= |A0| in all: True
+3. h-2's converse (any u, w, c realised by reflections with one scratch array per move): failures 0
+LIGHT label=n2-exp exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:11:21 cmd=python3 -B expand_test.py

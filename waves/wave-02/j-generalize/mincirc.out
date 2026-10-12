@@ -1,0 +1,16 @@
+quad8 p=3 m=3:
+RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+quad8 p=3 m=4:
+RESULT p=3: YES, circuit with 11 gates. points in order (after the 8 inputs):
+quad8 p=5 m=3:
+RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+quad8 p=5 m=4:
+RESULT p=5: YES, circuit with 11 gates. points in order (after the 8 inputs):
+indep4_T p=5 m=1:
+RESULT p=5: NO circuit with 9 gates (exhaustive over GF(5))
+indep4_T p=5 m=2:
+RESULT p=5: YES, circuit with 10 gates. points in order (after the 4 inputs):
+indep4_T p=7 m=1:
+RESULT p=7: NO circuit with 9 gates (exhaustive over GF(7))
+indep4_T p=7 m=2:
+RESULT p=7: YES, circuit with 10 gates. points in order (after the 4 inputs):

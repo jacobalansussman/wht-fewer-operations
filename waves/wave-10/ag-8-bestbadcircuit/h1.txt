@@ -1,0 +1,9 @@
+# ae-cross hybrid 1: the 8-gate circuit for the 4-point transform (a=x0, b=x1, c=x2, d=x3)
+g1 = x0 + x1
+g2 = x2 + x3
+g3 = g1 + g2
+g4 = x1 + x3
+g5 = g3 - 2*g4
+g6 = g3 - 2*g2
+g7 = x1 + x2
+g8 = g3 - 2*g7

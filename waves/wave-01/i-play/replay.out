@@ -1,0 +1,10 @@
+J-2I = D1 H4 P D2 with perm, signs: ((0, 2, 1, 3), (1, -1, -1, -1, -1, 1, 1, 1))
+n=4 plan 4 gates=7 textbook=8 ratio=7/8  Hadamard(+-1, M M^T = n I): True
+n=8 plan 4+2 gates=22 textbook=24 ratio=11/12  Hadamard(+-1, M M^T = n I): True
+n=16 plan 4+4 gates=56 textbook=64 ratio=7/8  Hadamard(+-1, M M^T = n I): True
+n=64 plan 4+4+4 gates=336 textbook=384 ratio=7/8  Hadamard(+-1, M M^T = n I): True
+(J-2I)^(x1): n=4 rank(M - 2I)=3 rank(M + 2I)=1
+(J-2I)^(x2): n=16 rank(M - 4I)=6 rank(M + 4I)=10
+(J-2I)^(x3): n=64 rank(M - 8I)=36 rank(M + 8I)=28
+F3 - (rank one r c^T) = [[(0, 0), (1, -1), (1, -1)], [(2, 1), (-1, 1), (-2, -1)], [(2, 1), (-2, -1), (-1, 1)]]  -> off-diagonal all zero: False
+LIGHT label=i-play-replay exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=20:57:56 cmd=/usr/bin/python3 -I -B replay.py

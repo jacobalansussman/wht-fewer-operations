@@ -1,0 +1,24 @@
+tower: 3 real colours of 4, atoms of 1 bits, 0 extra bits: y has 11 bits, k = 13, N = 8192, classes 7168 = 0.8750 N
+   inputs 378 ; gates (G) 23779 = 2.9027 N ; outputs wrong on some unit input: 0 of 8192
+      outputs                                           8190 = 0.9998 N
+      helper A (cubic at the P1 classes)                6064 = 0.7402 N
+      helper B (quadratic on each piece)                5052 = 0.6167 N
+      helper B, colours that forget nothing             4083 = 0.4984 N
+      coefficients                                       273 = 0.0333 N
+      coefficients per piece                             117 = 0.0143 N
+   textbook for degree 3 on k bits (same recursion): 24469 = 2.9869 N   (1 s)
+tower: 3 real colours of 4, atoms of 1 bits, 0 extra bits: y has 11 bits, k = 13, N = 8192, classes 7168 = 0.8750 N
+   degree <= 2 : good True  classes counted 7168  components 1   (0 s)
+   degree <= 3 : good True  classes counted 7168  components 1   (1 s)
+   degree <= 4 : good False  classes counted 7168  components None   (1 s)
+tower: 3 real colours of 4, atoms of 1 bits, 2 extra bits: y has 13 bits, k = 15, N = 32768, classes 28672 = 0.8750 N
+   degree <= 2 : good True  classes counted 28672  components 4   (1 s)
+   degree <= 3 : good True  classes counted 28672  components 4   (2 s)
+Traceback (most recent call last):
+  File "waves/wave-10/ai-0/check.py", line 228, in <module>
+    C, D, bad = build(T, replay=(mode == "build"))
+                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "waves/wave-10/ai-0/check.py", line 190, in build
+    else: raise AssertionError("structural: active atom coefficient formed in count mode")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: structural: active atom coefficient formed in count mode

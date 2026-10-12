@@ -1,0 +1,1 @@
+LIGHT label=ab3-mc exit=124 time=303s waited=0s peak_rss_mb=17 peak_footprint_mb=18 lowest_cap_mb=1500 stopped=time>300s start=05:05:07 cmd=waves/wave-01/d-0-zeta/mincirc 3 8 6 rows_mid_k3.txt

@@ -1,0 +1,8 @@
+p=5 total gates 1: forward depth 1 (49 states), backward depth 0 (16 states), meet: False
+p=5 total gates 2: forward depth 1 (49 states), backward depth 1 (784 states), meet: False
+p=5 total gates 3: forward depth 2 (1429 states), backward depth 1 (784 states), meet: False
+p=5 total gates 4: forward depth 2 (1429 states), backward depth 2 (22432 states), meet: False
+p=5 total gates 5: forward depth 3 (28149 states), backward depth 2 (22432 states), meet: False
+p=5 total gates 6: forward depth 3 (28149 states), backward depth 3 (432864 states), meet: False
+p=5 total gates 7: forward depth 4 (385089 states), backward depth 3 (432864 states), meet: False
+LIGHT label=g7-inplace5 exit=137 time=53s waited=0s peak_rss_mb=1639 peak_footprint_mb=1636 lowest_cap_mb=1500 stopped=memory>1500MB start=22:59:17 cmd=python3 -B inplace4.py 5 8

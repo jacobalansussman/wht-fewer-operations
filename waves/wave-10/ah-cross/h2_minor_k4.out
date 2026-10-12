@@ -1,0 +1,3 @@
+k=4 Z: largest |minor| found by hill climbing (lower bound only): 5 order 9 ([1, 2, 4, 7, 8, 11, 13, 14, 15], [0, 1, 2, 4, 7, 8, 11, 13, 14])
+k=4 H: determinant 4294967296 = 2^32; k=3 H: 8^4 = 4096
+LIGHT label=ah-h2b exit=0 time=37s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=09:19:09 cmd=python3 -B h2_minor_long.py 4 1500

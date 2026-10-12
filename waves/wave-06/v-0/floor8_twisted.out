@@ -1,0 +1,9 @@
+tree=twisted (left half split along bit 2, right half along bit 1)  sets of four-wires examined (size<=6, both sides non-empty): 14400
+  |F|=2: least number of full wires = 13 (attained by 60 sets)  -> gates >= 4 + 2 + 13 = 19
+  |F|=3: least number of full wires = 12 (attained by 32 sets)  -> gates >= 4 + 3 + 12 = 19
+  |F|=4: least number of full wires = 12 (attained by 464 sets)  -> gates >= 4 + 4 + 12 = 20
+  |F|=5: least number of full wires = 11 (attained by 160 sets)  -> gates >= 4 + 5 + 11 = 20
+  |F|=6: least number of full wires = 10 (attained by 56 sets)  -> gates >= 4 + 6 + 10 = 20
+  least |F| + full wires over all sets = 15 (92 sets)  => every circuit of the class on this tree has >= 19 gates (partners not charged)
+  (|F| >= 7 gives >= 4 + 7 + 8 without computation)
+LIGHT label=v0-floor8t exit=0 time=25s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=03:24:26 cmd=./floor8 1 6

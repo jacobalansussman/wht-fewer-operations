@@ -1,0 +1,27 @@
+== 1. H_4 in 7 gates (gate = a*u+b*v) and H_4 as ONE diffusion I - J/2
+   7-gate circuit equals H_4 on 1296 integer inputs: True
+   G=I-J/2: entries [-0.5, 0.5] G*G=I: True
+   I-(2/8)J on 8 points: entry set [-0.25, 0.75] eigs: 1 (x7), -1
+   I-(4/8)J on 8 points: entry set [-0.5, 0.5] eigs: 1 (x7), -3.0
+   I-(2/16)J on 16 points: entry set [-0.125, 0.875] eigs: 1 (x15), -1
+   I-(8/16)J on 16 points: entry set [-0.5, 0.5] eigs: 1 (x15), -7.0
+== 2. C^{(x)k} = R*Q, R on antipodal pairs, Q real, flat, depends on distance mod 4
+   k=4: Q real:True  Q^2=I:True  trace=-4  sqrt(N)*Q by distance: {0: [-1.0], 1: [1.0], 2: [1.0], 3: [-1.0], 4: [-1.0]}
+   k=6: Q real:True  Q^2=I:True  trace=-8  sqrt(N)*Q by distance: {0: [-1.0], 1: [-1.0], 2: [1.0], 3: [1.0], 4: [-1.0], 5: [-1.0], 6: [1.0]}
+== 3. Type II code (extended Hamming [8,4,4]): kernel (-i)^d on coset x coset blocks has rank 1
+   code size 16 weights [0, 4, 8]
+   cosets: 16  blocks: 256  rank-1 violations: 0
+   singly-even self-dual code (pairs): rank-1 violations in the 0-block: 0
+== 4. Schur-Weyl: H^{(x)k} is a direct sum of Krawtchouk blocks of size k-2j+1, multiplicity C(k,j)-C(k,j-1)
+   k=   4: dense-block work per point = 3.38 ; fast-block work per point (log2 b) = 1.62 ; textbook = 4
+   k=  16: dense-block work per point = 6.48 ; fast-block work per point (log2 b) = 2.55 ; textbook = 16
+   k=  64: dense-block work per point = 12.82 ; fast-block work per point (log2 b) = 3.53 ; textbook = 64
+   k= 256: dense-block work per point = 25.56 ; fast-block work per point (log2 b) = 4.53 ; textbook = 256
+== 5. entropy of one column after one diffusion I-(c/|D|)J, per addition spent
+   |D|= 2 c=2: entropy 0.000 bits, adds per point 1.500, bits per add 0.000
+   |D|= 4 c=2: entropy 2.000 bits, adds per point 1.750, bits per add 1.143
+   |D|= 8 c=2: entropy 2.217 bits, adds per point 1.875, bits per add 1.182
+   |D|=16 c=2: entropy 1.701 bits, adds per point 1.938, bits per add 0.878
+   |D|=32 c=2: entropy 1.132 bits, adds per point 1.969, bits per add 0.575
+   textbook butterfly: 1 bit, 1 add per point, 1.000
+LIGHT label=i-represent-play exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:04:59 cmd=python3 -B waves/wave-01/i-represent/play.py

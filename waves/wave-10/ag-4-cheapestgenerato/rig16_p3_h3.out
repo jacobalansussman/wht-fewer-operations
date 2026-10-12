@@ -1,0 +1,1 @@
+LIGHT label=ag4-rig16b exit=124 time=403s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=time>400s start=07:57:08 cmd=python3 -B rig.py 3 4 3

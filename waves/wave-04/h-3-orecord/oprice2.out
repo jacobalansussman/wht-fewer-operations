@@ -1,0 +1,17 @@
+sa8_known0.out: 19 wires after the inputs (19 gates); ways to write each wire as one gate: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; combinations 1, priced 1
+   best price (O) for H x / 2           : 20  [searches complete]
+   best price (O) for H x itself        : 28  [searches complete]
+   best price (O) for 2 * H x (up unit) : 28  [searches complete]
+sa8_known1.out: 19 wires after the inputs (19 gates); ways to write each wire as one gate: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; combinations 1, priced 1
+   best price (O) for H x / 2           : 20  [searches complete]
+   best price (O) for H x itself        : 28  [searches complete]
+   best price (O) for 2 * H x (up unit) : 28  [searches complete]
+sa8_known2.out: 19 wires after the inputs (19 gates); ways to write each wire as one gate: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; combinations 1, priced 1
+   best price (O) for H x / 2           : 20  [searches complete]
+   best price (O) for H x itself        : 28  [searches complete]
+   best price (O) for 2 * H x (up unit) : 28  [searches complete]
+sa8_known3.out: 19 wires after the inputs (19 gates); ways to write each wire as one gate: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; combinations 1, priced 1
+   best price (O) for H x / 2           : 20  [searches complete]
+   best price (O) for H x itself        : 28  [searches complete]
+   best price (O) for 2 * H x (up unit) : 28  [searches complete]
+LIGHT label=h3-oprice2 exit=0 time=1s waited=68s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:09:29 cmd=python3 -B oprice2.py waves/wave-03/g-1-tightwires/sa8_known0.out waves/wave-03/g-1-tightwires/sa8_known1.out waves/wave-03/g-1-tightwires/sa8_known2.out [path cut short]

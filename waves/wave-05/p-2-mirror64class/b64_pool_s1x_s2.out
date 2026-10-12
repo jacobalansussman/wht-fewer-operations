@@ -1,0 +1,5 @@
+m=3 N=64 side=read kernel=[[1, 1], [1, 0]]: non-zero 63, distinct targets D=57, dimension r=28 ; gates needed D - r + x = 29 + x
+collinear triples of targets: 0
+coplanar quadruples of targets (4-term relations): 33  (14 s)
+pool (points on at least two secants): 57 ; by number of secants through them: [(2, 36), (3, 21)]
+extra pool points: 3556  all points: 3670

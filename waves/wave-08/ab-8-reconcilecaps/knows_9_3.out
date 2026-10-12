@@ -1,0 +1,10 @@
+class (9,3): 788035 subspaces of dimension 3, ports (meet their perpendicular only in 0): 348160  by type {'gen': 342720, 'one': 5440}   [3s]
+   star sets: X_odd = 16 odd words pairwise overlapping oddly; X_even = 9 even words pairwise overlapping oddly
+   a port of type gen knows: {'gen': 640}
+   a port of type one knows: nobody
+   type gen :  342720 ports ; star X_odd holds   73920, star X_even holds   34020  ->  kappa <= 4.636
+   type one :    5440 ports ; star X_odd holds    5440, star X_even holds     540  ->  kappa <= 1.000
+TYPE 9 3 gen 4.6364
+TYPE 9 3 one 1.0000
+CEIL 9 3 5.6364   (every sub-family, types mixed: sum of the per-type ceilings)
+   [3s]

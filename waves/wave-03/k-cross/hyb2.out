@@ -1,0 +1,17 @@
+== A. rectangle lemma on the 13-term form: rank H[A,B] <= 2 + (terms strictly inside A x B) ==
+ holds on all 49 node pairs: True ; met with equality on 0
+ every block has the least rank |A||B|/N (or 1 when |A||B| < N): True
+== B. every 2x2 kernel times a relabelling-with-scalings is traceless, so its square is a number ==
+ (K*diag(1,-a/d))^2 is a multiple of the identity for 200 random rational kernels: True
+== C. the subset-sum kernel: mirror matrix has zero entries ==
+  kernel [[1,1],[1,0]] (subset sums up to relabelling)  N = 4  rank 1  zero entries 7 of 16
+  kernel [[1,1],[1,0]] (subset sums up to relabelling)  N = 16  rank 6  zero entries 167 of 256
+  kernel [[1,1],[1,0]] (subset sums up to relabelling)  N = 64  rank 28  zero entries 3319 of 4096
+== D. the 19-gate shape for other kernels: all 8! input wirings x all output labellings, necessary conditions ==
+   the transform itself (control) : input wirings tried 40320 of 40320; wirings with at least one output labelling passing: 2688 ; passing pairs: 43008  (3 s)
+   t = i (control: the transform up to phases) : input wirings tried 40320 of 40320; wirings with at least one output labelling passing: 2688 ; passing pairs: 43008  (3 s)
+   t = 2 : input wirings tried 40320 of 40320; wirings with at least one output labelling passing: 1008 ; passing pairs: 3264  (2 s)
+   t = 3 : input wirings tried 40320 of 40320; wirings with at least one output labelling passing: 1008 ; passing pairs: 3264  (2 s)
+   t = -2 : input wirings tried 40320 of 40320; wirings with at least one output labelling passing: 1008 ; passing pairs: 3264  (2 s)
+   t = 1/2 : input wirings tried 40320 of 40320; wirings with at least one output labelling passing: 1008 ; passing pairs: 3264  (2 s)
+LIGHT label=k-cross-hyb2 exit=0 time=15s waited=0s peak_rss_mb=16 peak_footprint_mb=13 lowest_cap_mb=1500 stopped=- start=23:41:12 cmd=python3 -B hyb2.py

@@ -1,0 +1,24 @@
+tower: 2 real colours of 2, atoms of 1 bits, 0 extra bits: y has 3 bits, k = 4, N = 16, classes 16 = 1.0000 N
+   inputs 15 ; gates (G) 37 = 2.3125 N ; outputs wrong on some unit input: 0 of 16
+      outputs                                             14 = 0.8750 N
+      helper A (cubic at the P1 classes)                  12 = 0.7500 N
+      coefficients                                         5 = 0.3125 N
+      helper B (quadratic on each piece)                   4 = 0.2500 N
+      coefficients per piece                               2 = 0.1250 N
+   textbook for degree 3 on k bits (same recursion): 31 = 1.9375 N   (0 s)
+tower: 2 real colours of 2, atoms of 1 bits, 0 extra bits: y has 3 bits, k = 4, N = 16, classes 16 = 1.0000 N
+   degree <= 2 : good True  classes counted 16  components 1   (0 s)
+   degree <= 3 : good True  classes counted 16  components 1   (0 s)
+   degree <= 4 : good False  classes counted 16  components None   (0 s)
+tower: 2 real colours of 2, atoms of 2 bits, 0 extra bits: y has 10 bits, k = 11, N = 2048, classes 1536 = 0.7500 N
+   inputs 232 ; gates (G) 5875 = 2.8687 N ; outputs wrong on some unit input: 0 of 2048
+      helper A (cubic at the P1 classes)                3004 = 1.4668 N
+      outputs                                           2044 = 0.9980 N
+      helper B (quadratic on each piece)                 746 = 0.3643 N
+      coefficients                                        50 = 0.0244 N
+      coefficients per piece                              31 = 0.0151 N
+   textbook for degree 3 on k bits (same recursion): 6064 = 2.9609 N   (0 s)
+tower: 2 real colours of 2, atoms of 2 bits, 0 extra bits: y has 10 bits, k = 11, N = 2048, classes 1536 = 0.7500 N
+   degree <= 2 : good True  classes counted 1536  components 1   (0 s)
+   degree <= 3 : good True  classes counted 1536  components 1   (0 s)
+   degree <= 4 : good False  classes counted 1536  components None   (0 s)

@@ -1,0 +1,6 @@
+N=8: 21 pairs m1, m2 with m1.m2 = 0;  (solutions, m1 == m2) -> pairs: [((2, True), 3), ((4, False), 6), ((36, False), 12)];  pairs whose solutions are NOT exactly p = +psi and p = -psi: 18
+N=16: 105 pairs m1, m2 with m1.m2 = 0;  (solutions, m1 == m2) -> pairs: [((2, False), 80), ((2, True), 7), ((3, False), 18)];  pairs whose solutions are NOT exactly p = +psi and p = -psi: 18
+N=32: 465 pairs m1, m2 with m1.m2 = 0;  (solutions, m1 == m2) -> pairs: [((2, False), 450), ((2, True), 15)];  pairs whose solutions are NOT exactly p = +psi and p = -psi: 0
+N=64: 85 pairs m1, m2 with m1.m2 = 0;  (solutions, m1 == m2) -> pairs: [((2, False), 82), ((2, True), 3)];  pairs whose solutions are NOT exactly p = +psi and p = -psi: 0
+LIGHT label=z2-C2 exit=0 time=2s waited=0s peak_rss_mb=9 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:00:46 cmd=python3 -B lemmaC2.py
+exit 0

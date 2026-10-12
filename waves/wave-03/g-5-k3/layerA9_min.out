@@ -1,0 +1,5 @@
+## layer A of K3 (x) K3 alone (4-point transform, two butterflies, one idle wire; 9 wires): 11 known; gates = 8 + m
+p=3 m=2: RESULT p=3: NO circuit with 10 gates (exhaustive over GF(3))
+p=3 m=3: RESULT p=3: YES, circuit with 11 gates. points in order (after the 9 inputs):
+p=5 m=2: RESULT p=5: NO circuit with 10 gates (exhaustive over GF(5))
+p=5 m=3: RESULT p=5: YES, circuit with 11 gates. points in order (after the 9 inputs):

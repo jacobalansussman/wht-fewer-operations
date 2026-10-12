@@ -1,0 +1,10 @@
+class (6,3): 1395 subspaces of dimension 3, ports (meet their perpendicular only in 0): 640  by type {'gen': 640}   [0s]
+   star sets: X_odd = 4 odd words pairwise overlapping oddly; X_even = 5 even words pairwise overlapping oddly
+   a port of type gen knows: {'gen': 1}
+   type gen :     640 ports ; star X_odd holds     272, star X_even holds     240  ->  kappa <= 2.353
+   knows graph built: 640 ports, degrees [1]
+   ALL:   640 ports; largest set with no two knowing each other: >= 320 (search not finished) (greedy 320)  ->  size/alpha = 2.000
+   gen:   640 ports; largest set with no two knowing each other: >= 320 (search not finished) (greedy 320)  ->  size/alpha = 2.000
+TYPE 6 3 gen 2.0000
+CEIL 6 3 2.0000   (every sub-family, types mixed: sum of the per-type ceilings)
+   [0s]

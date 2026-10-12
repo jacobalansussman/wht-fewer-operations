@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "waves/wave-03/g-6-twosteps/tight.py", line 12, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+LIGHT label=g6-tight3 exit=1 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:46:37 cmd=python3 -B tight.py 3

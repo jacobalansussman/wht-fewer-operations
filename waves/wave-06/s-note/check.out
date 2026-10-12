@@ -1,0 +1,22 @@
+file            N  corners  per point  gates N-2+c  Yates  nested steps  one-run steps  most runs
+a8.out            8      13     1.625          19      12        8/8          7/8        2
+a16.out          16      30     1.875          44      32       16/16         13/16        2
+r32.out          32      80     2.500         110      80       32/32         21/32        3
+r64_first.out    64     239     3.734         301     192       64/64         20/64        4
+t128.out        128     715     5.586         841     448      127/128         24/128        7
+
+Gray order on both sides (reflected Gray code on outputs, the same on inputs, best of the four reversals):
+  N=   4 corners      7   7*3^(k-2)+2 =      9   per point 1.75
+  N=   8 corners     21   7*3^(k-2)+2 =     23   per point 2.62
+  N=  16 corners     63   7*3^(k-2)+2 =     65   per point 3.94
+  N=  32 corners    189   7*3^(k-2)+2 =    191   per point 5.91
+  N=  64 corners    567   7*3^(k-2)+2 =    569   per point 8.86
+  N= 128 corners   1701   7*3^(k-2)+2 =   1703   per point 13.29
+  N= 256 corners   5103   7*3^(k-2)+2 =   5105   per point 19.93
+  N= 512 corners  15309   7*3^(k-2)+2 =  15311   per point 29.90
+
+u-2 displayed bound (5/2)^k / (400 (1 + ln N)): first k where it passes N, 3N, Yates (N/2) k; and the one-flag floor
+  passes N     at k = 43
+  passes 3N    at k = 48
+  passes Yates at k = 59
+  one-flag floor N - 1 + (N/2) log2 N at 2..64 points: [2, 7, 19, 47, 111, 255]  records 7, 19, 52, 128, 304; textbook [2, 8, 24, 64, 160, 384]

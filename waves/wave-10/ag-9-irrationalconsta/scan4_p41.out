@@ -1,0 +1,4 @@
+p = 41 least gates over all (t, s), t <= s, t, s not 0 or 1: [(7, 780)]
+pairs below 7 gates: []
+the transform t = s = -1: 7
+LIGHT label=ag9-scan41 exit=0 time=160s waited=0s peak_rss_mb=39 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=08:34:20 cmd=python3 -B scan4.py 41

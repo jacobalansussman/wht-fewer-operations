@@ -1,0 +1,17 @@
+# subset sums at 8 points, plain letter on one input tree; 12 gates (G); replayed exactly: PASS
+f34 = 1 * x5 + 1 * x1
+f17 = 1 * x0 + 1 * x4
+f42 = 1 * x3 + 1 * f34
+f81 = 1 * x6 + 1 * f17
+f85 = 1 * x2 + 1 * f81
+f213 = 1 * x7 + 1 * f85
+f255 = 1 * f42 + 1 * f213
+y0 = 1 * x0
+y4 = 1 * f17
+y6 = 1 * f85
+y7 = 1 * f255
+y1 = 1 * x1 + 1 * x0
+y2 = 1 * x2 + 1 * x0
+y5 = 1 * f34 + 1 * f17
+y3_0 = 1 * y1 + 1 * x3
+y3 = 1 * y3_0 + 1 * x2

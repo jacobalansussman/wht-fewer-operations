@@ -1,0 +1,1 @@
+LIGHT label=ag2-rule8 exit=0 time=8s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=08:19:44 cmd=python3 -B rule8.py

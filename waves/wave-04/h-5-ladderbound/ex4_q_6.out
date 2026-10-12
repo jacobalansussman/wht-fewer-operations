@@ -1,0 +1,9 @@
+wires that can be double births: 32 (outputs and half pieces)
+symmetry group: 384 elements, images outside the pool 0, sampled gates not mapped to gates 0, stabiliser of the first helper 16
+pool pool_q.txt: 352 wires, 4672 gates(triples); helpers allowed 6 => at most 14 gates; pruning 1; root symmetry 1; hub pruning 1
+nodes by helpers used: 0:1 1:2 2:39 3:0 4:0 5:0
+largest increment of the potential by one wire: 1
+RESULT: NO circuit with at most 14 gates in this pool (exhaustive)
+real 0.00
+user 0.00
+sys 0.00

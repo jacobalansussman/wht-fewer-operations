@@ -1,0 +1,6 @@
+lines 120  entries of 2M: [-1, 0, 1, 2]  neighbours per row: [56]
+(2M)(2M) = 30 (2M): True
+rank of 2M modulo 2: 8   (rank over the rationals is 8 by h-7)
+row classes modulo 2: sizes [56]  distinct 120  the diagonal entry survives modulo 2: False
+pairwise overlaps of the classes: [24, 28]  pairs that overlap without nesting: 7140 of 7140
+LIGHT label=m-cross-e8 exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:00:18 cmd=python3 -B m-cross/e8shadow.py

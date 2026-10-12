@@ -1,0 +1,6 @@
+sets F: 16 | (F, two extra full wires) for which the 10 full wires hang together when F is free: 144 | of these, legal 18-wire plays once the four-wires must themselves be made (16 choices of pair wires each): 0
+  example F: left ['0000', '0110'] right ['0000', '0110'] (1 = minus sign, addresses in order)
+  example F: left ['0000', '0101'] right ['0000', '0110'] (1 = minus sign, addresses in order)
+  example F: left ['0110', '0011'] right ['0000', '0110'] (1 = minus sign, addresses in order)
+  example F: left ['0101', '0011'] right ['0000', '0110'] (1 = minus sign, addresses in order)
+LIGHT label=v0-close18 exit=0 time=3s waited=10s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:26:58 cmd=python3 -B close18.py

@@ -1,0 +1,28 @@
+N=8
+   j=0: rank B_j=1 (C(k,j)=1), rank of truncation before it=0, H==truncation mod 2^j: True
+   j=1: rank B_j=3 (C(k,j)=3), rank of truncation before it=1, H==truncation mod 2^j: True
+   j=2: rank B_j=3 (C(k,j)=3), rank of truncation before it=4, H==truncation mod 2^j: True
+   j=3: rank B_j=1 (C(k,j)=1), rank of truncation before it=7, H==truncation mod 2^j: True
+   full sum equals H: True
+N=16
+   j=0: rank B_j=1 (C(k,j)=1), rank of truncation before it=0, H==truncation mod 2^j: True
+   j=1: rank B_j=4 (C(k,j)=4), rank of truncation before it=1, H==truncation mod 2^j: True
+   j=2: rank B_j=6 (C(k,j)=6), rank of truncation before it=5, H==truncation mod 2^j: True
+   j=3: rank B_j=4 (C(k,j)=4), rank of truncation before it=11, H==truncation mod 2^j: True
+   j=4: rank B_j=1 (C(k,j)=1), rank of truncation before it=15, H==truncation mod 2^j: True
+   full sum equals H: True
+N=32
+   j=0: rank B_j=1 (C(k,j)=1), rank of truncation before it=0, H==truncation mod 2^j: True
+   j=1: rank B_j=5 (C(k,j)=5), rank of truncation before it=1, H==truncation mod 2^j: True
+   j=2: rank B_j=10 (C(k,j)=10), rank of truncation before it=6, H==truncation mod 2^j: True
+   j=3: rank B_j=10 (C(k,j)=10), rank of truncation before it=16, H==truncation mod 2^j: True
+   j=4: rank B_j=5 (C(k,j)=5), rank of truncation before it=26, H==truncation mod 2^j: True
+   j=5: rank B_j=1 (C(k,j)=1), rank of truncation before it=31, H==truncation mod 2^j: True
+   full sum equals H: True
+N=  8: a matrix congruent to H modulo 4 in   22 gates (G) = 2.75 N ; textbook for H    24 ; congruent: True
+N= 16: a matrix congruent to H modulo 4 in   52 gates (G) = 3.25 N ; textbook for H    64 ; congruent: True
+N= 32: a matrix congruent to H modulo 4 in  114 gates (G) = 3.56 N ; textbook for H   160 ; congruent: True
+N= 64: a matrix congruent to H modulo 4 in  240 gates (G) = 3.75 N ; textbook for H   384 ; congruent: True
+N=128: a matrix congruent to H modulo 4 in  494 gates (G) = 3.86 N ; textbook for H   896 ; congruent: True
+N=256: a matrix congruent to H modulo 4 in 1004 gates (G) = 3.92 N ; textbook for H  2048 ; congruent: True
+LIGHT label=m-cross-prec exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:04:44 cmd=python3 -B m-cross/precision.py

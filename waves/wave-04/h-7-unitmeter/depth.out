@@ -1,0 +1,7 @@
+delta = 2.111375e-03, F = 2.407, saving delta/F = 8.7718e-04, k0 = 7290 bits (first size where one level beats the textbook in count G)
+L1: rho < 1/2 after d = 328 nested levels; log2 k = log2 k0 + d F / ln 2 = 1152  (N = 2^k, k = 2^1152)
+L2 with B = 2.77 bits per level (measured: 2 * mean log2 t = 2 * 78444/56715): fails from d = 4088 levels; log2 k = 14209
+L2 with B = 20.61 bits per level (crude ceiling: 2 log2 W): fails from d = 5147 levels; log2 k = 17886
+published unit: log2(1/(1-delta)) / B = 1.102e-03 per bit of excess
+brick, 4 points, 7 gates: rho = 0.8750, mean excess = 0.286 bits per wire, log2(1/rho)/mean = 0.674
+staircase, 64 points, 304 gates: rho = 0.7917, mean excess = 0.526 bits per wire, log2(1/rho)/mean = 0.640

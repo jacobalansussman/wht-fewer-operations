@@ -1,0 +1,17 @@
+gate by gate: rise = log2 s(out) - log2 min s(in), counted when positive; P = largest s s' among the gate's three wires
+  textbook                     N =    2  gates =     2  N log2 N =     2  non-tight wires =    0  sum of rises =     2.00  sum of log2(1 + 2 P/N) =     3.17
+  textbook                     N =    4  gates =     8  N log2 N =     8  non-tight wires =    0  sum of rises =     8.00  sum of log2(1 + 2 P/N) =    12.68
+  textbook                     N =    8  gates =    24  N log2 N =    24  non-tight wires =    0  sum of rises =    24.00  sum of log2(1 + 2 P/N) =    38.04
+  textbook                     N =   16  gates =    64  N log2 N =    64  non-tight wires =    0  sum of rises =    64.00  sum of log2(1 + 2 P/N) =   101.44
+  textbook                     N =   32  gates =   160  N log2 N =   160  non-tight wires =    0  sum of rises =   160.00  sum of log2(1 + 2 P/N) =   253.59
+  textbook                     N =   64  gates =   384  N log2 N =   384  non-tight wires =    0  sum of rises =   384.00  sum of log2(1 + 2 P/N) =   608.63
+  textbook                     N =  128  gates =   896  N log2 N =   896  non-tight wires =    0  sum of rises =   896.00  sum of log2(1 + 2 P/N) =  1420.13
+  textbook                     N =  256  gates =  2048  N log2 N =  2048  non-tight wires =    0  sum of rises =  2048.00  sum of log2(1 + 2 P/N) =  3246.00
+  7-gate bricks on bit pairs   N =    4  gates =     7  N log2 N =     8  non-tight wires =    1  sum of rises =    11.00  sum of log2(1 + 2 P/N) =    19.02
+  7-gate bricks on bit pairs   N =   16  gates =    56  N log2 N =    64  non-tight wires =    8  sum of rises =    88.00  sum of log2(1 + 2 P/N) =   152.16
+  7-gate bricks on bit pairs   N =   64  gates =   336  N log2 N =   384  non-tight wires =   48  sum of rises =   528.00  sum of log2(1 + 2 P/N) =   912.94
+  7-gate bricks on bit pairs   N =  256  gates =  1792  N log2 N =  2048  non-tight wires =  256  sum of rises =  2816.00  sum of log2(1 + 2 P/N) =  4869.00
+  N = 8: 20000 random dependent triples (60000 gate readings): s(out) <= (1 + 2P/N) min s(in) always; largest ratio of the two sides 0.690
+  N = 16: 20000 random dependent triples (60000 gate readings): s(out) <= (1 + 2P/N) min s(in) always; largest ratio of the two sides 0.690
+  N = 32: 20000 random dependent triples (60000 gate readings): s(out) <= (1 + 2P/N) min s(in) always; largest ratio of the two sides 0.667
+LIGHT label=a2-slack exit=0 time=9s waited=12s peak_rss_mb=21 peak_footprint_mb=17 lowest_cap_mb=1500 stopped=- start=22:25:10 cmd=python3 -B tight.py slack

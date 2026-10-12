@@ -1,0 +1,2 @@
+gates: 11 ; every row of S6 proportional to its node: True
+route K3 (x) K3 = split by the swap of the two factors (6) + S6 (11) + antisymmetric square = -2 K3^T (4) + merge (6) = 27 against 24 (butterflies) and 22 (bricks)

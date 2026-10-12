@@ -1,0 +1,35 @@
+N=4: H = D K_1 ... K_1 D with 1 flag kernels (each f = 2[0] - 2[M_1] + [M_2] on one pair of bits): True ; gates (G) of this plain program: 9 = (9/4) N x 1 ; textbook 8
+N=16: H = D K_1 ... K_2 D with 2 flag kernels (each f = 2[0] - 2[M_1] + [M_2] on one pair of bits): True ; gates (G) of this plain program: 72 = (9/4) N x 2 ; textbook 64
+N=64: H = D K_1 ... K_3 D with 3 flag kernels (each f = 2[0] - 2[M_1] + [M_2] on one pair of bits): True ; gates (G) of this plain program: 432 = (9/4) N x 3 ; textbook 384
+16 points, the known depth-2 solution: (1-tau1) E0 T E2 (1-tau2) = a b (1-tau1)(1-tau2): True
+depth-2 lemma, the forced step (case beta(m1,m2) = 0), by exhaustive search with pruning:
+  k=4 (16 points) pairing of Q m1=0b11 m2=0b1100: solutions 3, of which the two character solutions p = eta psi, q = -eta chi: 2
+  k=4 (16 points) pairing of Q m1=0b1 m2=0b100: solutions 3, of which the two character solutions p = eta psi, q = -eta chi: 2
+  k=4 pairing of Q m1=0b1 m2=0b11: beta(m1,m2)=1, other case (by hand)
+  k=5 (32 points) dot product m1=0b1 m2=0b10: solutions 2, of which the two character solutions p = eta psi, q = -eta chi: 2
+  k=5 (32 points) dot product m1=0b11 m2=0b1100: solutions 2, of which the two character solutions p = eta psi, q = -eta chi: 2
+  k=5 dot product m1=0b11 m2=0b101: beta(m1,m2)=1, other case (by hand)
+  k=5 dot product m1=0b111 m2=0b11001: beta(m1,m2)=1, other case (by hand)
+  k=6 (64 points) pairing of Q m1=0b11 m2=0b1100: solutions 2, of which the two character solutions p = eta psi, q = -eta chi: 2
+  k=6 (64 points) pairing of Q m1=0b1 m2=0b100: solutions 2, of which the two character solutions p = eta psi, q = -eta chi: 2
+  k=6 pairing of Q m1=0b1 m2=0b11: beta(m1,m2)=1, other case (by hand)
+  k=6 pairing of Q m1=0b111 m2=0b111000: beta(m1,m2)=1, other case (by hand)
+rank of the block (rows in a hyperplane, columns in its complement) of the 8-point transform, over all hyperplanes: [2, 4] ; N/4 = 2
+rank of the block (rows in a hyperplane, columns in its complement) of the 16-point transform, over all hyperplanes: [4, 8] ; N/4 = 4
+rank of the block (rows in a hyperplane, columns in its complement) of the 32-point transform, over all hyperplanes: [8, 16] ; N/4 = 8
+least r allowed by  r >= 2^(ceil(k/r) - 2)  (and r >= 3 from 32 points on), against the tensor arrangement k/2:
+  k=4: r >= 2 ; k/2 = 2 ; k/log2(k) = 2.0
+  k=6: r >= 3 ; k/2 = 3 ; k/log2(k) = 3.0
+  k=8: r >= 3 ; k/2 = 4 ; k/log2(k) = 2.7
+  k=10: r >= 4 ; k/2 = 5 ; k/log2(k) = 3.3
+  k=12: r >= 4 ; k/2 = 6 ; k/log2(k) = 4.0
+  k=16: r >= 4 ; k/2 = 8 ; k/log2(k) = 4.0
+  k=20: r >= 5 ; k/2 = 10 ; k/log2(k) = 5.0
+  k=24: r >= 6 ; k/2 = 12 ; k/log2(k) = 6.0
+  k=32: r >= 8 ; k/2 = 16 ; k/log2(k) = 6.4
+  k=48: r >= 10 ; k/2 = 24 ; k/log2(k) = 9.6
+  k=64: r >= 13 ; k/2 = 32 ; k/log2(k) = 10.7
+  k=128: r >= 22 ; k/2 = 64 ; k/log2(k) = 18.3
+  k=256: r >= 37 ; k/2 = 128 ; k/log2(k) = 32.0
+  k=1024: r >= 128 ; k/2 = 512 ; k/log2(k) = 102.4
+LIGHT label=x4-flagexact exit=0 time=1s waited=12s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:34:38 cmd=python3 -B flagexact.py

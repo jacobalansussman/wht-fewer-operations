@@ -1,0 +1,8 @@
+F0 quad 0  G0 quad 0 lin 0 | held 28 | MST 62 (lb 31) | after 0 rounds 62 shifts | GATES <= 91
+F0 quad 0  G0 quad 1 lin 0 | held 28 | MST 61 (lb 31) | after 0 rounds 61 shifts | GATES <= 90
+F0 quad 0  G0 quad 2 lin 0 | held 28 | MST 45 (lb 23) | after 0 rounds 45 shifts | GATES <= 74
+F0 quad 2  G0 quad 16 lin 0 | held 28 | MST 44 (lb 22) | after 0 rounds 44 shifts | GATES <= 73
+F0 quad 4  G0 quad 2 lin 0 | held 28 | MST 42 (lb 21) | after 0 rounds 42 shifts | GATES <= 71
+F0 quad 16  G0 quad 2 lin 0 | held 28 | MST 40 (lb 20) | after 0 rounds 40 shifts | GATES <= 69
+histogram of the upper bound: 69:32 71:64 73:48 74:32 75:112 76:48 77:168 78:44 79:288 80:48 81:306 82:94 83:291 84:86 85:513 86:115 87:522 88:97 89:463 90:14 91:107 93:96 95:268 96:32 97:208
+BEST upper bound: 69 gates ; least MST of terminals: 40

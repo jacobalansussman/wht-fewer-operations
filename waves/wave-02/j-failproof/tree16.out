@@ -1,0 +1,3 @@
+N=16 random trees 40: outputs reached (first output included) -> count [(1, 40)]
+N=16 trees whose root splits along a half D of some output, 40: [(2, 40)]
+LIGHT label=jf-t16 exit=0 time=8s waited=10s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=22:04:33 cmd=python3 -B tree8.py 4 40

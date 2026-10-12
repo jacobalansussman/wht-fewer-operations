@@ -1,0 +1,25 @@
+inplace p=7 wires=4 fd=4 bd=4 garbage=0 points=401
+forward depth 0 states 1
+forward depth 1 new states 72 (total 73)
+forward depth 2 new states 3114 (total 3187)
+forward depth 3 new states 92232 (total 95419)
+forward depth 4 new states 1980891 (total 2076310)
+backward depth 0 states 1
+backward depth 1 new states 72 (total 73)
+backward depth 2 new states 3114 (total 3187)
+backward depth 3 new states 92232 (total 95419)
+backward depth 4 new states 1980891 (total 2076310)
+RESULT p=7 wires=4 garbage=0: least number of moves = 8 over GF(7) (meeting states at that length: 2019)
+states on shortest programs, by layer: 1 48 294 1272 2019 1272 294 48 1
+PATH p=7 wires=4 moves=8
+STATE 1,0,0,0 0,1,0,0 0,0,1,0 0,0,0,1
+STATE 1,0,0,0 0,1,0,0 0,0,1,0 0,1,0,6
+STATE 1,0,0,0 0,1,0,0 1,0,6,0 0,1,0,6
+STATE 0,1,0,0 1,0,1,0 1,0,6,0 0,1,0,6
+STATE 1,0,1,0 1,2,1,0 1,0,6,0 0,1,0,6
+STATE 1,0,1,0 1,0,6,0 1,1,1,1 0,1,0,6
+STATE 1,0,6,0 1,1,1,1 0,1,0,6 1,6,1,6
+STATE 1,1,1,1 0,1,0,6 1,6,1,6 1,1,6,6
+STATE 1,1,1,1 1,6,6,1 1,6,1,6 1,1,6,6
+END
+LIGHT label=g3-ip7 exit=0 time=2s waited=22s peak_rss_mb=177 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:48:56 cmd=./inplace 7 0 4 4 0 23 rows_had2.txt onpath7.txt

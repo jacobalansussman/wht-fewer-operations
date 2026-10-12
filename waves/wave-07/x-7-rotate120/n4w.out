@@ -1,0 +1,45 @@
+mirrors (S^2 = 1, S R S = R^-1) over GF(5): 192
+p=5 mirrors 192 ; violations of (least row weight of S) x (largest row weight of S R) >= N : 0
+least nnz(S) * nnz(S R): 64 (N^3 = 64) ; least nnz(S) + nnz(S R): 20 (trivial pair 4 + 16 = 20)
+pairs with product <= 100: [((4, 16), 8), ((16, 4), 8)]
+pairs in which both mirrors have every row of weight <= 2: 0
+pairs in which both mirrors have every row of weight <= 3: 0
+row-weight shapes of (S, S R) with the smallest total, top 8:
+   (1, 1, 1, 1) (4, 4, 4, 4) 8
+   (4, 4, 4, 4) (1, 1, 1, 1) 8
+   (1, 1, 3, 3) (3, 3, 4, 4) 12
+   (3, 3, 4, 4) (1, 1, 3, 3) 12
+   (1, 2, 2, 3) (2, 4, 4, 4) 12
+   (2, 4, 4, 4) (1, 2, 2, 3) 12
+   (1, 1, 2, 3) (3, 4, 4, 4) 12
+   (3, 4, 4, 4) (1, 1, 2, 3) 12
+mirrors (S^2 = 1, S R S = R^-1) over GF(7): 348
+p=7 mirrors 348 ; violations of (least row weight of S) x (largest row weight of S R) >= N : 0
+least nnz(S) * nnz(S R): 64 (N^3 = 64) ; least nnz(S) + nnz(S R): 20 (trivial pair 4 + 16 = 20)
+pairs with product <= 100: [((4, 16), 8), ((16, 4), 8)]
+pairs in which both mirrors have every row of weight <= 2: 0
+pairs in which both mirrors have every row of weight <= 3: 0
+row-weight shapes of (S, S R) with the smallest total, top 8:
+   (1, 1, 1, 1) (4, 4, 4, 4) 8
+   (4, 4, 4, 4) (1, 1, 1, 1) 8
+   (1, 1, 3, 3) (3, 3, 4, 4) 12
+   (3, 3, 4, 4) (1, 1, 3, 3) 12
+   (1, 2, 2, 3) (2, 4, 4, 4) 12
+   (2, 4, 4, 4) (1, 2, 2, 3) 12
+   (1, 1, 3, 3) (3, 4, 4, 4) 12
+   (3, 4, 4, 4) (1, 1, 3, 3) 12
+mirrors (S^2 = 1, S R S = R^-1) over GF(13): 2208
+p=13 mirrors 2208 ; violations of (least row weight of S) x (largest row weight of S R) >= N : 0
+least nnz(S) * nnz(S R): 64 (N^3 = 64) ; least nnz(S) + nnz(S R): 20 (trivial pair 4 + 16 = 20)
+pairs with product <= 100: [((4, 16), 8), ((16, 4), 8)]
+pairs in which both mirrors have every row of weight <= 2: 0
+pairs in which both mirrors have every row of weight <= 3: 0
+row-weight shapes of (S, S R) with the smallest total, top 8:
+   (1, 1, 1, 1) (4, 4, 4, 4) 8
+   (4, 4, 4, 4) (1, 1, 1, 1) 8
+   (1, 1, 3, 3) (3, 3, 4, 4) 12
+   (3, 3, 4, 4) (1, 1, 3, 3) 12
+   (1, 2, 2, 3) (2, 4, 4, 4) 12
+   (2, 4, 4, 4) (1, 2, 2, 3) 12
+   (1, 3, 3, 3) (3, 3, 3, 4) 4
+   (3, 3, 3, 4) (1, 3, 3, 3) 4

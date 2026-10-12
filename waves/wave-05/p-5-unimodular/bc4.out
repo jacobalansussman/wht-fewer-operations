@@ -1,0 +1,28 @@
+K=[[1,1],[1,2]] coefficients +1,-1
+  helpers 0 (gates 4): states 1, solved 0
+  helpers 1 (gates 5): states 16, solved 0
+  helpers 2 (gates 6): states 236, solved 0
+  helpers 3 (gates 7): states 3766, solved 0
+  helpers 4 (gates 8): states 68760, solved 188
+   one solution, helper values: [(0, 0, 1, 1), (0, 0, 1, 2), (0, 1, 1, 2), (1, 1, 1, 2)]
+  MINIMUM gates: 8
+K=[[1,1],[1,2]] coefficients +-1,+-2
+  helpers 0 (gates 4): states 1, solved 0
+  helpers 1 (gates 5): states 60, solved 0
+  helpers 2 (gates 6): states 3358, solved 0
+  helpers 3 (gates 7): states 209742, solved 88
+   one solution, helper values: [(0, 1, 0, 1), (1, 1, 0, 1), (1, 1, 1, 2)]
+  MINIMUM gates: 7
+[[2,1],[1,1]] coefficients +1,-1
+  helpers 0 (gates 4): states 1, solved 0
+  helpers 1 (gates 5): states 16, solved 0
+  helpers 2 (gates 6): states 236, solved 0
+  helpers 3 (gates 7): states 3766, solved 0
+  helpers 4 (gates 8): states 68760, solved 188
+   one solution, helper values: [(1, 0, 1, 0), (1, 1, 1, 0), (2, 0, 1, 0), (2, 2, 2, 1)]
+  MINIMUM gates: 8
+[[2,1],[1,1]] coefficients +-1,+-2
+  helpers 0 (gates 4): states 1, solved 0
+  helpers 1 (gates 5): states 60, solved 0
+  helpers 2 (gates 6): states 3358, solved 0
+LIGHT label=p5-bc4 exit=124 time=423s waited=34s peak_rss_mb=147 peak_footprint_mb=144 lowest_cap_mb=1500 stopped=time>420s start=00:08:22 cmd=python3 -B bc4.py 4

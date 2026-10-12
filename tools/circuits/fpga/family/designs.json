@@ -1,0 +1,542 @@
+[
+ {
+  "N": 16,
+  "design": "textbook",
+  "W": 9,
+  "variant": "c",
+  "file": "v/16_textbook_c_w9.v",
+  "module": "wht_16_textbook_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 16,
+  "design": "textbook",
+  "W": 9,
+  "variant": "p",
+  "file": "v/16_textbook_p_w9.v",
+  "module": "wht_16_textbook_p_w9",
+  "latency": 4
+ },
+ {
+  "N": 16,
+  "design": "textbook",
+  "W": 12,
+  "variant": "c",
+  "file": "v/16_textbook_c_w12.v",
+  "module": "wht_16_textbook_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 16,
+  "design": "textbook",
+  "W": 12,
+  "variant": "p",
+  "file": "v/16_textbook_p_w12.v",
+  "module": "wht_16_textbook_p_w12",
+  "latency": 4
+ },
+ {
+  "N": 16,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "c",
+  "file": "v/16_cfl1994_c_w9.v",
+  "module": "wht_16_cfl1994_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 16,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "p",
+  "file": "v/16_cfl1994_p_w9.v",
+  "module": "wht_16_cfl1994_p_w9",
+  "latency": 8
+ },
+ {
+  "N": 16,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "c",
+  "file": "v/16_cfl1994_c_w12.v",
+  "module": "wht_16_cfl1994_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 16,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "p",
+  "file": "v/16_cfl1994_p_w12.v",
+  "module": "wht_16_cfl1994_p_w12",
+  "latency": 8
+ },
+ {
+  "N": 16,
+  "design": "family",
+  "W": 9,
+  "variant": "c",
+  "file": "v/16_family_c_w9.v",
+  "module": "wht_16_family_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 16,
+  "design": "family",
+  "W": 9,
+  "variant": "p",
+  "file": "v/16_family_p_w9.v",
+  "module": "wht_16_family_p_w9",
+  "latency": 8
+ },
+ {
+  "N": 16,
+  "design": "family",
+  "W": 12,
+  "variant": "c",
+  "file": "v/16_family_c_w12.v",
+  "module": "wht_16_family_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 16,
+  "design": "family",
+  "W": 12,
+  "variant": "p",
+  "file": "v/16_family_p_w12.v",
+  "module": "wht_16_family_p_w12",
+  "latency": 8
+ },
+ {
+  "N": 32,
+  "design": "textbook",
+  "W": 9,
+  "variant": "c",
+  "file": "v/32_textbook_c_w9.v",
+  "module": "wht_32_textbook_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 32,
+  "design": "textbook",
+  "W": 9,
+  "variant": "p",
+  "file": "v/32_textbook_p_w9.v",
+  "module": "wht_32_textbook_p_w9",
+  "latency": 5
+ },
+ {
+  "N": 32,
+  "design": "textbook",
+  "W": 12,
+  "variant": "c",
+  "file": "v/32_textbook_c_w12.v",
+  "module": "wht_32_textbook_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 32,
+  "design": "textbook",
+  "W": 12,
+  "variant": "p",
+  "file": "v/32_textbook_p_w12.v",
+  "module": "wht_32_textbook_p_w12",
+  "latency": 5
+ },
+ {
+  "N": 32,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "c",
+  "file": "v/32_cfl1994_c_w9.v",
+  "module": "wht_32_cfl1994_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 32,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "p",
+  "file": "v/32_cfl1994_p_w9.v",
+  "module": "wht_32_cfl1994_p_w9",
+  "latency": 9
+ },
+ {
+  "N": 32,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "c",
+  "file": "v/32_cfl1994_c_w12.v",
+  "module": "wht_32_cfl1994_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 32,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "p",
+  "file": "v/32_cfl1994_p_w12.v",
+  "module": "wht_32_cfl1994_p_w12",
+  "latency": 9
+ },
+ {
+  "N": 32,
+  "design": "family",
+  "W": 9,
+  "variant": "c",
+  "file": "v/32_family_c_w9.v",
+  "module": "wht_32_family_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 32,
+  "design": "family",
+  "W": 9,
+  "variant": "p",
+  "file": "v/32_family_p_w9.v",
+  "module": "wht_32_family_p_w9",
+  "latency": 10
+ },
+ {
+  "N": 32,
+  "design": "family",
+  "W": 12,
+  "variant": "c",
+  "file": "v/32_family_c_w12.v",
+  "module": "wht_32_family_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 32,
+  "design": "family",
+  "W": 12,
+  "variant": "p",
+  "file": "v/32_family_p_w12.v",
+  "module": "wht_32_family_p_w12",
+  "latency": 10
+ },
+ {
+  "N": 64,
+  "design": "textbook",
+  "W": 9,
+  "variant": "c",
+  "file": "v/64_textbook_c_w9.v",
+  "module": "wht_64_textbook_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 64,
+  "design": "textbook",
+  "W": 9,
+  "variant": "p",
+  "file": "v/64_textbook_p_w9.v",
+  "module": "wht_64_textbook_p_w9",
+  "latency": 6
+ },
+ {
+  "N": 64,
+  "design": "textbook",
+  "W": 12,
+  "variant": "c",
+  "file": "v/64_textbook_c_w12.v",
+  "module": "wht_64_textbook_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 64,
+  "design": "textbook",
+  "W": 12,
+  "variant": "p",
+  "file": "v/64_textbook_p_w12.v",
+  "module": "wht_64_textbook_p_w12",
+  "latency": 6
+ },
+ {
+  "N": 64,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "c",
+  "file": "v/64_cfl1994_c_w9.v",
+  "module": "wht_64_cfl1994_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 64,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "p",
+  "file": "v/64_cfl1994_p_w9.v",
+  "module": "wht_64_cfl1994_p_w9",
+  "latency": 12
+ },
+ {
+  "N": 64,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "c",
+  "file": "v/64_cfl1994_c_w12.v",
+  "module": "wht_64_cfl1994_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 64,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "p",
+  "file": "v/64_cfl1994_p_w12.v",
+  "module": "wht_64_cfl1994_p_w12",
+  "latency": 12
+ },
+ {
+  "N": 64,
+  "design": "family",
+  "W": 9,
+  "variant": "c",
+  "file": "v/64_family_c_w9.v",
+  "module": "wht_64_family_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 64,
+  "design": "family",
+  "W": 9,
+  "variant": "p",
+  "file": "v/64_family_p_w9.v",
+  "module": "wht_64_family_p_w9",
+  "latency": 12
+ },
+ {
+  "N": 64,
+  "design": "family",
+  "W": 12,
+  "variant": "c",
+  "file": "v/64_family_c_w12.v",
+  "module": "wht_64_family_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 64,
+  "design": "family",
+  "W": 12,
+  "variant": "p",
+  "file": "v/64_family_p_w12.v",
+  "module": "wht_64_family_p_w12",
+  "latency": 12
+ },
+ {
+  "N": 128,
+  "design": "textbook",
+  "W": 9,
+  "variant": "c",
+  "file": "v/128_textbook_c_w9.v",
+  "module": "wht_128_textbook_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 128,
+  "design": "textbook",
+  "W": 9,
+  "variant": "p",
+  "file": "v/128_textbook_p_w9.v",
+  "module": "wht_128_textbook_p_w9",
+  "latency": 7
+ },
+ {
+  "N": 128,
+  "design": "textbook",
+  "W": 12,
+  "variant": "c",
+  "file": "v/128_textbook_c_w12.v",
+  "module": "wht_128_textbook_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 128,
+  "design": "textbook",
+  "W": 12,
+  "variant": "p",
+  "file": "v/128_textbook_p_w12.v",
+  "module": "wht_128_textbook_p_w12",
+  "latency": 7
+ },
+ {
+  "N": 128,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "c",
+  "file": "v/128_cfl1994_c_w9.v",
+  "module": "wht_128_cfl1994_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 128,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "p",
+  "file": "v/128_cfl1994_p_w9.v",
+  "module": "wht_128_cfl1994_p_w9",
+  "latency": 13
+ },
+ {
+  "N": 128,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "c",
+  "file": "v/128_cfl1994_c_w12.v",
+  "module": "wht_128_cfl1994_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 128,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "p",
+  "file": "v/128_cfl1994_p_w12.v",
+  "module": "wht_128_cfl1994_p_w12",
+  "latency": 13
+ },
+ {
+  "N": 128,
+  "design": "family",
+  "W": 9,
+  "variant": "c",
+  "file": "v/128_family_c_w9.v",
+  "module": "wht_128_family_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 128,
+  "design": "family",
+  "W": 9,
+  "variant": "p",
+  "file": "v/128_family_p_w9.v",
+  "module": "wht_128_family_p_w9",
+  "latency": 14
+ },
+ {
+  "N": 128,
+  "design": "family",
+  "W": 12,
+  "variant": "c",
+  "file": "v/128_family_c_w12.v",
+  "module": "wht_128_family_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 128,
+  "design": "family",
+  "W": 12,
+  "variant": "p",
+  "file": "v/128_family_p_w12.v",
+  "module": "wht_128_family_p_w12",
+  "latency": 14
+ },
+ {
+  "N": 256,
+  "design": "textbook",
+  "W": 9,
+  "variant": "c",
+  "file": "v/256_textbook_c_w9.v",
+  "module": "wht_256_textbook_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 256,
+  "design": "textbook",
+  "W": 9,
+  "variant": "p",
+  "file": "v/256_textbook_p_w9.v",
+  "module": "wht_256_textbook_p_w9",
+  "latency": 8
+ },
+ {
+  "N": 256,
+  "design": "textbook",
+  "W": 12,
+  "variant": "c",
+  "file": "v/256_textbook_c_w12.v",
+  "module": "wht_256_textbook_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 256,
+  "design": "textbook",
+  "W": 12,
+  "variant": "p",
+  "file": "v/256_textbook_p_w12.v",
+  "module": "wht_256_textbook_p_w12",
+  "latency": 8
+ },
+ {
+  "N": 256,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "c",
+  "file": "v/256_cfl1994_c_w9.v",
+  "module": "wht_256_cfl1994_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 256,
+  "design": "cfl1994",
+  "W": 9,
+  "variant": "p",
+  "file": "v/256_cfl1994_p_w9.v",
+  "module": "wht_256_cfl1994_p_w9",
+  "latency": 16
+ },
+ {
+  "N": 256,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "c",
+  "file": "v/256_cfl1994_c_w12.v",
+  "module": "wht_256_cfl1994_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 256,
+  "design": "cfl1994",
+  "W": 12,
+  "variant": "p",
+  "file": "v/256_cfl1994_p_w12.v",
+  "module": "wht_256_cfl1994_p_w12",
+  "latency": 16
+ },
+ {
+  "N": 256,
+  "design": "family",
+  "W": 9,
+  "variant": "c",
+  "file": "v/256_family_c_w9.v",
+  "module": "wht_256_family_c_w9",
+  "latency": 0
+ },
+ {
+  "N": 256,
+  "design": "family",
+  "W": 9,
+  "variant": "p",
+  "file": "v/256_family_p_w9.v",
+  "module": "wht_256_family_p_w9",
+  "latency": 16
+ },
+ {
+  "N": 256,
+  "design": "family",
+  "W": 12,
+  "variant": "c",
+  "file": "v/256_family_c_w12.v",
+  "module": "wht_256_family_c_w12",
+  "latency": 0
+ },
+ {
+  "N": 256,
+  "design": "family",
+  "W": 12,
+  "variant": "p",
+  "file": "v/256_family_p_w12.v",
+  "module": "wht_256_family_p_w12",
+  "latency": 16
+ }
+]

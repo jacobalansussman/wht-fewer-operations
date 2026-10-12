@@ -1,0 +1,10 @@
+4 points: H_4 = D K D, K diagonal in the many-scale basis of the tree {0,3}|{1,2}, eigenvalues -2i, 2i, 2, 2   [exact]
+8 points: H_8 = D0 L1 D1 L2 D2 exactly; same tree for both letters; middle diagonal = [10i, -10i, 10i, -10i, 10i, -10i, 10i, -10i] ; L1 L2 = L2 L1: True
+8 points: H_8 = D0 L1 D1 L2 D2 exactly; same tree for both letters; middle diagonal = [10i, -10i, 20i, -20i, 30i, -30i, 50i, -50i] ; L1 L2 = L2 L1: True
+8 points: H_8 = D0 L1 D1 L2 D2 exactly; same tree for both letters; middle diagonal = [11i, -1-1i, 2-3i, -23i, 1/70i, -1/70i, 04i, 0-4i] ; L1 L2 = L2 L1: True
+          both letters are diagonal in the many-scale basis of that one tree   [exact]
+16 points: G (x) H_2 = diag * (2iG (x) P+ + I (x) P-) * (I (x) Z) * (2G (x) P+ + I (x) P-) * diag, G = the half-size transform   [exact]
+16 points: G (x) H_2 = diag * (2iG (x) P+ + I (x) P-) * (I (x) Z) * (2G (x) P+ + I (x) P-) * diag, G = a random integer matrix   [exact]
+32 points: G (x) H_2 = diag * (2iG (x) P+ + I (x) P-) * (I (x) Z) * (2G (x) P+ + I (x) P-) * diag, G = the half-size transform   [exact]
+32 points: G (x) H_2 = diag * (2iG (x) P+ + I (x) P-) * (I (x) Z) * (2G (x) P+ + I (x) P-) * diag, G = a random integer matrix   [exact]
+LIGHT label=d-2-exact8 exit=0 time=5s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=21:45:50 cmd=python3 -B exact8.py

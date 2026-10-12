@@ -1,0 +1,43 @@
+== h = 8, r = 3 : 97155 subspaces of dimension r, 43008 ports (meet their perpendicular only in 0)   [1 s]
+   club S: 8 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 3)
+   type [P odd, P-perp odd]: 43008 ports ; club holds 9856 ; best star holds 1344 (odd weight-1 word e0) ; ceiling kappa <= 43008 / 9856 = 4.364
+   all types together: club holds 9856 of 43008 : v / club = 4.364
+LIGHT label=ab1-knows exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:52:49 cmd=python3 -B knows.py 8 3
+== h = 9, r = 3 : 788035 subspaces of dimension r, 348160 ports (meet their perpendicular only in 0)   [4 s]
+   club S: 16 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 4)
+   type [P odd, P-perp alternating]: 5440 ports ; club holds 5440 ; best star holds 5440 (all-ones word) ; ceiling kappa <= 5440 / 5440 = 1.000
+   type [P odd, P-perp odd]: 342720 ports ; club holds 73920 ; best star holds 5376 (odd weight-1 word e0) ; ceiling kappa <= 342720 / 73920 = 4.636
+   all types together: club holds 79360 of 348160 : v / club = 4.387
+LIGHT label=ab1-knows exit=0 time=5s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=04:52:51 cmd=python3 -B knows.py 9 3
+== h = 9, r = 4 : 3309747 subspaces of dimension r, 1462272 ports (meet their perpendicular only in 0)   [25 s]
+   club S: 16 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 4)
+   type [P alternating, P-perp odd]: 91392 ports ; club holds 0 ; best star holds 5376 (even weight-2 word) ; ceiling kappa <= 91392 / 5376 = 17.000
+   type [P odd, P-perp odd]: 1370880 ports ; club holds 537600 ; best star holds 43008 (odd weight-1 word e0) ; ceiling kappa <= 1370880 / 537600 = 2.550
+   all types together: club holds 537600 of 1462272 : v / club = 2.720
+LIGHT label=ab1-knows exit=0 time=26s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=04:52:56 cmd=python3 -B knows.py 9 4
+== h = 8, r = 2 : 10795 subspaces of dimension r, 5440 ports (meet their perpendicular only in 0)   [0 s]
+   club S: 8 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 3)
+   type [P alternating, P-perp odd]: 1344 ports ; club holds 0 ; best star holds 32 (even weight-2 word) ; ceiling kappa <= 1344 / 32 = 42.000
+   type [P odd, P-perp alternating]: 64 ports ; club holds 8 ; best star holds 64 (all-ones word) ; ceiling kappa <= 64 / 64 = 1.000
+   type [P odd, P-perp odd]: 4032 ports ; club holds 504 ; best star holds 63 (odd weight-1 word e0) ; ceiling kappa <= 4032 / 504 = 8.000
+   all types together: club holds 512 of 5440 : v / club = 10.625
+LIGHT label=ab1-knows exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:53:22 cmd=python3 -B knows.py 8 2
+== h = 9, r = 2 : 43435 subspaces of dimension r, 21760 ports (meet their perpendicular only in 0)   [0 s]
+   club S: 16 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 4)
+   type [P alternating, P-perp odd]: 5440 ports ; club holds 0 ; best star holds 64 (even weight-2 word) ; ceiling kappa <= 5440 / 64 = 85.000
+   type [P odd, P-perp odd]: 16320 ports ; club holds 1920 ; best star holds 128 (odd weight-1 word e0) ; ceiling kappa <= 16320 / 1920 = 8.500
+   all types together: club holds 1920 of 21760 : v / club = 11.333
+LIGHT label=ab1-knows exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:53:23 cmd=python3 -B knows.py 9 2
+== h = 9, r = 1 : 511 subspaces of dimension r, 256 ports (meet their perpendicular only in 0)   [0 s]
+   club S: 16 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 4)
+   type [P odd, P-perp alternating]: 1 ports ; club holds 1 ; best star holds 1 (all-ones word) ; ceiling kappa <= 1 / 1 = 1.000
+   type [P odd, P-perp odd]: 255 ports ; club holds 15 ; best star holds 1 (odd weight-1 word e0) ; ceiling kappa <= 255 / 15 = 17.000
+   all types together: club holds 16 of 256 : v / club = 16.000
+LIGHT label=ab1-knows exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:53:24 cmd=python3 -B knows.py 9 1
+== h = 8, r = 4 : 200787 subspaces of dimension r, 91392 ports (meet their perpendicular only in 0)   [2 s]
+   club S: 8 odd words that pairwise overlap oddly (x0 = e0 plus a self-orthogonal code of dimension 3)
+   type [P alternating, P-perp odd]: 5376 ports ; club holds 0 ; best star holds 640 (even weight-2 word) ; ceiling kappa <= 5376 / 640 = 8.400
+   type [P odd, P-perp alternating]: 5376 ports ; club holds 2240 ; best star holds 5376 (all-ones word) ; ceiling kappa <= 5376 / 5376 = 1.000
+   type [P odd, P-perp odd]: 80640 ports ; club holds 33600 ; best star holds 5040 (odd weight-1 word e0) ; ceiling kappa <= 80640 / 33600 = 2.400
+   all types together: club holds 35840 of 91392 : v / club = 2.550
+LIGHT label=ab1-knows exit=0 time=2s waited=0s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:53:25 cmd=python3 -B knows.py 8 4

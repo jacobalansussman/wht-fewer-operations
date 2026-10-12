@@ -1,0 +1,3 @@
+P52 (helper set only, order and coefficients re-derived) gates 52 (helpers 36 + outputs 16) symbolic replay True random replay True
+LIGHT label=e2-0-replay16 exit=0 time=7s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:48:28 cmd=python3 -B -c 
+p=run(H,16,'P52 (helper set only, order 

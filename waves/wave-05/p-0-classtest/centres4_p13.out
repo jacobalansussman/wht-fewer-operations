@@ -1,0 +1,12 @@
+p=13 tau=2: perspective centres 2 [('1112', '3120'), ('1222', '0213')] | helper sets 134, by support sizes [((2, 2, 3), 8), ((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 8
+p=13 tau=3: perspective centres 2 [('1113', '3120'), ('1333', '0213')] | helper sets 126, by support sizes [((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 0
+p=13 tau=4: perspective centres 2 [('1114', '3120'), ('1444', '0213')] | helper sets 142, by support sizes [((2, 2, 3), 16), ((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 16
+p=13 tau=5: perspective centres 2 [('1115', '3120'), ('1555', '0213')] | helper sets 126, by support sizes [((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 0
+p=13 tau=6: perspective centres 2 [('1116', '3120'), ('1666', '0213')] | helper sets 126, by support sizes [((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 0
+p=13 tau=7: perspective centres 2 [('1117', '3120'), ('1777', '0213')] | helper sets 134, by support sizes [((2, 2, 3), 8), ((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 8
+p=13 tau=8: perspective centres 2 [('1118', '3120'), ('1888', '0213')] | helper sets 126, by support sizes [((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 0
+p=13 tau=9: perspective centres 2 [('1119', '3120'), ('1999', '0213')] | helper sets 126, by support sizes [((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 0
+p=13 tau=10: perspective centres 2 [('111A', '3120'), ('1AAA', '0213')] | helper sets 142, by support sizes [((2, 2, 3), 16), ((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 16
+p=13 tau=11: perspective centres 2 [('111B', '3120'), ('1BBB', '0213')] | helper sets 126, by support sizes [((2, 2, 4), 30), ((2, 3, 4), 96)] | sets containing a centre 118 | sets with NO full-support helper 0
+p=13 tau=12: perspective centres 4 [('111C', '3120'), ('11C1', '2031'), ('1C11', '1302'), ('1CCC', '0213')] | helper sets 228, by support sizes [((2, 2, 4), 36), ((2, 3, 4), 192)] | sets containing a centre 228 | sets with NO full-support helper 0
+LIGHT label=p0-ce exit=0 time=1s waited=50s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:16:08 cmd=python3 -B centres4.py 13

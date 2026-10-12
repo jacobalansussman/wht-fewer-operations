@@ -1,0 +1,9 @@
+N=4  outputs H/2^0 : min scale gates = 4  -> total (O) = 7 additions/subtractions + 4 = 11 ; textbook N k = 8 ; status: optimal (proved by HiGHS) ; dual bound 4.00
+N=4  outputs H/2^1 : min scale gates = 1  -> total (O) = 7 additions/subtractions + 1 = 8 ; textbook N k = 8 ; status: optimal (proved by HiGHS) ; dual bound 1.00
+N=8  outputs H/2^0 : min scale gates = 10  -> total (O) = 20 additions/subtractions + 10 = 30 ; textbook N k = 24 ; status: optimal (proved by HiGHS) ; dual bound 10.00
+N=8  outputs H/2^1 : min scale gates = 6  -> total (O) = 20 additions/subtractions + 6 = 26 ; textbook N k = 24 ; status: optimal (proved by HiGHS) ; dual bound 6.00
+N=8  outputs H/2^2 : min scale gates = 6  -> total (O) = 20 additions/subtractions + 6 = 26 ; textbook N k = 24 ; status: optimal (proved by HiGHS) ; dual bound 6.00
+N=16  outputs H/2^0 : min scale gates <= 24  -> total (O) = 52 additions/subtractions + 24 = 76 ; textbook N k = 64 ; status: feasible only ; dual bound 20.00
+N=16  outputs H/2^1 : min scale gates = 20  -> total (O) = 52 additions/subtractions + 20 = 72 ; textbook N k = 64 ; status: optimal (proved by HiGHS) ; dual bound 20.00
+N=16  outputs H/2^2 : min scale gates = 8  -> total (O) = 52 additions/subtractions + 8 = 60 ; textbook N k = 64 ; status: optimal (proved by HiGHS) ; dual bound 8.00
+N=32  outputs H/2^0 : min scale gates <= 100  -> total (O) = 128 additions/subtractions + 100 = 228 ; textbook N k = 160 ; status: feasible only ; dual bound 35.00

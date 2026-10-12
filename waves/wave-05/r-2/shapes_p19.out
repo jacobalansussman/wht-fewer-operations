@@ -1,0 +1,9 @@
+p=19 tau=3: 126 helper sets (0 without a hub), 550 wirings, 27 shapes
+p=19 tau=2: 134 helper sets (8 without a hub), 558 wirings, 28 shapes
+p=19 tau=8: 142 helper sets (16 without a hub), 566 wirings, 28 shapes
+p=19 tau=18: 228 helper sets (0 without a hub), 1404 wirings, 27 shapes
+shapes in all: 28
+  not at every tau tried: 4<-(0,1) 5<-(0,2) 6<-(3,4) 7<-(2,6) 8<-(4,7) 9<-(5,6) 10<-(5,8)  present at tau = [2, 8]  wirings [8, 16]
+shapes at tau = -1 that are missing at some other tau tried: none
+wirings per shape at tau = -1 divided by the same at tau = 3: [(12, 6), (48, 16), (48, 24), (96, 32), (96, 48)]
+LIGHT label=r2-sh19 exit=0 time=47s waited=0s peak_rss_mb=214 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=01:41:18 cmd=python3 -B r2_shapes.py 19 2 3 2 8 18

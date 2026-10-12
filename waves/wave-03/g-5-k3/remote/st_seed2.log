@@ -1,0 +1,2 @@
+steiner_K9_s2_seed best 23 exact 23 t 0.1
+steiner_K9_s2_seed DONE evaluated 13761 best 23 hist {23: 6, 24: 10, 25: 12, 26: 14, 27: 5, 28: 3, 29: 6, 30: 13}

@@ -1,0 +1,4 @@
+[R8] block of 8 with a first-kind exception: 1 exceptional columns in all are NOT enough (1 sets tried)
+[R8] block of 8 with a first-kind exception: 2 exceptional columns in all are NOT enough (7 sets tried)
+[R8] block of 8 with a first-kind exception: 3 exceptional columns in all are NOT enough (21 sets tried)
+[R8] block of 8 with a first-kind exception: 4 exceptional columns in all SUFFICE (eta1 = 0, others (1, 2, 3)), tree (0>0 (1>1 (2>2 (3>3 (4>4 (5>6 (6>5 7>7)))))))

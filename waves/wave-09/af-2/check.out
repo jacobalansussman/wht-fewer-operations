@@ -1,0 +1,42 @@
+== A. the dichotomy, exhaustively over ALL subspaces (k = 2, 4, 6)
+k=2: 5 subspaces; pairs (with repeats) that neither lemma can kill: 4; pairs where 'unkillable' differs from 'V_j = perp V_i': 0; ordered triples pairwise unkillable: 3, of which not 'three copies of one Lagrangian': 0; Lagrangians 3
+k=4: 67 subspaces; pairs (with repeats) that neither lemma can kill: 41; pairs where 'unkillable' differs from 'V_j = perp V_i': 0; ordered triples pairwise unkillable: 15, of which not 'three copies of one Lagrangian': 0; Lagrangians 15
+k=6: 2825 subspaces; pairs (with repeats) that neither lemma can kill: 1480; pairs where 'unkillable' differs from 'V_j = perp V_i': 0; ordered triples pairwise unkillable: 135, of which not 'three copies of one Lagrangian': 0; Lagrangians 135
+== B. Lemma A: every restriction to W = {B(u1,z)=c1, B(u2,z)=c2}, B(u1,u2)=1, is bent quadratic on k-2 bits (k = 4, 6, 8)
+k=4: 120 pairs (u1,u2) (all) x 4 constants = 480 restrictions; bent and quadratic on k-2 bits: 480
+k=6: 2016 pairs (u1,u2) (all) x 4 constants = 8064 restrictions; bent and quadratic on k-2 bits: 8064
+k=8: 150 pairs (u1,u2) (random sample) x 4 constants = 600 restrictions; bent and quadratic on k-2 bits: 600
+== C. Lemma B: the transform of a signed flat is a multiple of a signed flat of complementary dimension, direction = ordinary perpendicular (k=4 all 1072; k=6 sample)
+k=4: 17152 signed flats tested, 17152 transform to a signed flat on b + V^perp with sign (-1)^(a.y)
+k=6: 4000 signed flats tested, 4000 transform to a signed flat on b + V^perp with sign (-1)^(a.y)
+k=2: transform of g is 2^(k/2) times a bent quadratic sign pattern: True
+k=4: transform of g is 2^(k/2) times a bent quadratic sign pattern: True
+k=6: transform of g is 2^(k/2) times a bent quadratic sign pattern: True
+k=8: transform of g is 2^(k/2) times a bent quadratic sign pattern: True
+== D. upper bounds: 4 unsigned flats at 16 points; 11 unsigned flats at 256 points (own search for the eight matrices)
+16 points: g = 1 - 2[z1z2=11] - 2[z3z4=11] + 4[z=1111]: True
+256 points: alternating matrices 64 , invertible 28 ; set of 8 with invertible differences found: True ; identity -1 + 2[x=0] + 2 sum[y=Sx] - 16[x=y=0] = (-1)^(x.y) on all 256 entries: True
+== E. the step to the doubled class, and where it stops
+H_4(x,y) on the 4 bits (x1,x2,y1,y2) is -1 exactly where x1 y1 + x2 y2 = 1 (the quadric on 4 bits, pairs (x1,y1),(x2,y2)): True
+a H_4 a with a = (+,+,+,-): [[1, 1, 1, -1], [1, -1, 1, 1], [1, 1, -1, 1], [-1, 1, 1, 1]] ; = J - 2 P with P a permutation matrix: True -> 2 flats, below the bound 2 log2 N = 4 that holds for H_4 itself (exhaustive run exh4)
+== F. claim (i): the 8-gate circuit, its repeats; then the same idea at every size
+outputs g3,g5,g6,g8 = [(1, 1, 1, 1), (1, -1, 1, -1), (1, 1, -1, -1), (1, -1, -1, 1)] are the rows of H_4: True ; gates 8 ; repeats modulo 2: 3 ; (N/2) log2 N = 4
+N=4: outputs = H exactly: True; gates 8 (adding gates 5, then 3 gates u - 2v); coefficients +1, -2 only, no halving; repeats modulo 2: 3 = N-1; ad-7's guess (N/2) log2 N = 4; textbook gates 8
+N=8: outputs = H exactly: True; gates 28 (adding gates 21, then 7 gates u - 2v); coefficients +1, -2 only, no halving; repeats modulo 2: 7 = N-1; ad-7's guess (N/2) log2 N = 12; textbook gates 24
+N=16: outputs = H exactly: True; gates 84 (adding gates 69, then 15 gates u - 2v); coefficients +1, -2 only, no halving; repeats modulo 2: 15 = N-1; ad-7's guess (N/2) log2 N = 32; textbook gates 64
+N=32: outputs = H exactly: True; gates 228 (adding gates 197, then 31 gates u - 2v); coefficients +1, -2 only, no halving; repeats modulo 2: 31 = N-1; ad-7's guess (N/2) log2 N = 80; textbook gates 160
+N=64: outputs = H exactly: True; gates 580 (adding gates 517, then 63 gates u - 2v); coefficients +1, -2 only, no halving; repeats modulo 2: 63 = N-1; ad-7's guess (N/2) log2 N = 192; textbook gates 384
+N=128: outputs = H exactly: True; gates 1412 (adding gates 1285, then 127 gates u - 2v); coefficients +1, -2 only, no halving; repeats modulo 2: 127 = N-1; ad-7's guess (N/2) log2 N = 448; textbook gates 896
+== G. claim (ii): is the 8-gate wiring an identity of the class of 2 x 2 kernels?  ALL 24 ways of putting the four rows on the four output gates
+kernel ('1', '1', '1', '-1') p s + q r = 0 | placements that work: 4 ['g3=K1xK1 g5=K1xK2 g6=K2xK1 g8=K2xK2', 'g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2', 'g3=K2xK2 g5=K2xK1 g6=K1xK2 g8=K1xK1']
+kernel ('1', '2', '3', '-6') p s + q r = 0 | placements that work: 4 ['g3=K1xK1 g5=K1xK2 g6=K2xK1 g8=K2xK2', 'g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2', 'g3=K2xK2 g5=K2xK1 g6=K1xK2 g8=K1xK1']
+kernel ('2', '3', '5', '-15/2') p s + q r = 0 | placements that work: 4 ['g3=K1xK1 g5=K1xK2 g6=K2xK1 g8=K2xK2', 'g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2', 'g3=K2xK2 g5=K2xK1 g6=K1xK2 g8=K1xK1']
+kernel ('1', '2', '3', '5') p s + q r = 11 | placements that work: 2 ['g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2']
+kernel ('1', '1', '1', '-2') p s + q r = -1 | placements that work: 2 ['g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2']
+kernel ('2', '1', '1', '3') p s + q r = 7 | placements that work: 2 ['g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2']
+kernel ('1', '1', '0', '1') p s + q r = 1 | placements that work: 0 []
+kernel ('1', '0', '1', '1') p s + q r = 1 | placements that work: 2 ['g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2']
+kernel ('1', '1', '1', '0') p s + q r = 1 | placements that work: 2 ['g3=K1xK2 g5=K1xK1 g6=K2xK2 g8=K2xK1', 'g3=K2xK1 g5=K2xK2 g6=K1xK1 g8=K1xK2']
+kernel ('0', '1', '1', '1') p s + q r = 1 | placements that work: 0 []
+explicit coefficients (g1 = pr a + ps b, g2 = qr c + qs d, g3 = g1 + g2, g4 = p b + q d, g5 = (p/r) g3 + ((qr-ps)/r) g4, g6 = (r/p) g3 + (s/q - r/p) g2, g7 = b - c, g8 = g3 + (qr-ps) g7): 414 kernels with p, q, r non-zero and non-zero determinant; outputs exactly K1xK1, K1xK2, K2xK1, K2xK2 on g5, g3, g8, g6: 414
+LIGHT label=af2-check exit=0 time=5s waited=0s peak_rss_mb=15 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=07:41:12 cmd=python3 -B check.py

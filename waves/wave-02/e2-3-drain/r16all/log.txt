@@ -1,0 +1,4 @@
+drain N=16 seed=1 K=100000 cs=2 target=H: bestU=62 at gate 52; ended g=52 P=10; gates draining >=N/2: 0, ==N: 0; 16s
+drain N=16 seed=1 K=100000 cs=2 target=H: bestU=78 at gate 75; ended g=75 P=3; gates draining >=N/2: 15, ==N: 0; 50s
+drain N=16 seed=2 K=100000 cs=2 target=H: bestU=73 at gate 72; ended g=72 P=1; gates draining >=N/2: 16, ==N: 0; 42s
+LIGHT label=e2-3-drain exit=0 time=109s waited=4s peak_rss_mb=4 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:48:10 cmd=./batch4.sh

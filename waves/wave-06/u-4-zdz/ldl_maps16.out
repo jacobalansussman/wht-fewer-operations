@@ -1,0 +1,4 @@
+N=16  subset sums: off-diagonal non-zeros 65, Yates 32 gates
+address maps: 20160  with a zero pivot: 17088
+histogram of min(off(L), off(L^-1)): [(65, 3072)]
+best: 65  map columns (1, 2, 4, 8)  order [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]  off(L)=65 off(L^-1)=65  D=['1', '-2', '-2', '4', '-2', '4', '4', '-8', '-2', '4', '4', '-8', '4', '-8', '-8', '16']

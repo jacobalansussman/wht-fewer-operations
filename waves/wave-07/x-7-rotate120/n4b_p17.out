@@ -1,0 +1,1 @@
+LIGHT label=x7-n4b17 exit=124 time=582s waited=0s peak_rss_mb=51 peak_footprint_mb=10 lowest_cap_mb=1500 stopped=time>580s start=03:25:03 cmd=python3 -B n4b.py 17

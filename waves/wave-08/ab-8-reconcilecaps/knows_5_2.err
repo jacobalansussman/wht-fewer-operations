@@ -1,0 +1,1 @@
+LIGHT label=ab8-knows-52 exit=0 time=3s waited=0s peak_rss_mb=9 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:31:52 cmd=python3 -B knows.py 5 2

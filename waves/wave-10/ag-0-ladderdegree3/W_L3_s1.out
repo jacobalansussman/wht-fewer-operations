@@ -1,0 +1,5 @@
+family W: L=3 colours, atoms of s=1 bits: k=13 N=8192
+  degree <= 2 : good True   classes 7168 = 0.8750 N   components 1   (0.1 s)
+  degree <= 3 : good True   classes 7168 = 0.8750 N   components 1   (0.5 s)
+  degree <= 4 : good False   classes 7168 = 0.8750 N   components None   (0.5 s)
+LIGHT label=ag0-W3 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:20 cmd=python3 -B tower.py W 3 1 3

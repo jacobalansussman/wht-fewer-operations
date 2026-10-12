@@ -1,0 +1,8 @@
+p=7 total gates 1: forward depth 1 (73 states), backward depth 0 (54 states), meet: False
+p=7 total gates 2: forward depth 1 (73 states), backward depth 1 (3942 states), meet: False
+p=7 total gates 3: forward depth 2 (3187 states), backward depth 1 (3942 states), meet: False
+p=7 total gates 4: forward depth 2 (3187 states), backward depth 2 (169182 states), meet: False
+p=7 total gates 5: forward depth 3 (95419 states), backward depth 2 (169182 states), meet: False
+p=7 total gates 6: forward depth 3 (95419 states), backward depth 3 (4964382 states), meet: False
+p=7 total gates 7: forward depth 4 (2076310 states), backward depth 3 (4964382 states), meet: False
+RESULT p=7: least number of in-place gates for the 4-point transform modulo 7 = more than 7

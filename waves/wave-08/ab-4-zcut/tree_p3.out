@@ -1,0 +1,26 @@
+p=3: 2748 circuits x 6 trees: the inequality n(X) >= n(X0) + n(X1) + |X|/2 - Xh(X) holds at every node
+least over the 6 trees of (sum over nodes of Xh) : number of circuits   [0 = no crossing helper anywhere in some tree]
+   0 : 6
+   1 : 84
+   2 : 426
+   3 : 870
+   4 : 984
+   5 : 372
+   6 : 6
+(size of node, Xh, slack of the inequality) : count over circuits x trees x nodes
+   size 2 Xh=0 slack=0 : 65952
+   size 4 Xh=0 slack=0 : 6354
+   size 4 Xh=1 slack=1 : 22026
+   size 4 Xh=1 slack=2 : 1812
+   size 4 Xh=2 slack=3 : 2784
+   size 8 Xh=0 slack=0 : 150
+   size 8 Xh=1 slack=1 : 1164
+   size 8 Xh=2 slack=1 : 12
+   size 8 Xh=2 slack=2 : 2568
+   size 8 Xh=3 slack=2 : 816
+   size 8 Xh=3 slack=3 : 3912
+   size 8 Xh=4 slack=3 : 3756
+   size 8 Xh=4 slack=4 : 3762
+   size 8 Xh=5 slack=4 : 12
+   size 8 Xh=5 slack=5 : 336
+LIGHT label=ab4-tree exit=0 time=67s waited=88s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=05:11:24 cmd=python3 -B ztree.py 3 z8_p3_full.out

@@ -1,0 +1,5 @@
+line sums of the affine plane, N=256 : 272 x 256, rational rank 256
+     invariant factors: 1 (x81), 2 (x36), 4 (x38), 8 (x36), 16 (x65)
+     powers of 2: 2^0 x81, 2^1 x36, 2^2 x38, 2^3 x36, 2^4 x65   odd parts: 1 x256
+     r_j (factors not divisible by 2^j), j = 1.. : 81 117 155 191 256
+LIGHT label=ad7-profile3 exit=0 time=80s waited=0s peak_rss_mb=13 peak_footprint_mb=10 lowest_cap_mb=1500 stopped=- start=06:47:05 cmd=python3 -B profile.py L256

@@ -1,0 +1,13 @@
+nine-shear program gives (times 1/64):
+    (-32, -32, -32, -32)
+    (32, 32, -32, -32)
+    (32, -32, 32, -32)
+    (32, -32, -32, 32)
+is it U up to row order and row signs: True  targets: 384
+forward depth 1 states 72
+forward depth 2 states 3625
+forward depth 3 states 153133
+backward depth 1 states 27648
+backward depth 2 states 1355136
+shortest program found with <= 5 shears from this coefficient set: None
+LIGHT label=jf-sh exit=0 time=10s waited=0s peak_rss_mb=462 peak_footprint_mb=459 lowest_cap_mb=1500 stopped=- start=21:57:42 cmd=python3 -B shears4.py

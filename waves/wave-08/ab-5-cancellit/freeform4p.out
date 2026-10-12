@@ -1,0 +1,3 @@
+field with 3 elements, 4 points: saving -> number of forms: {0: 21, 1: 14, 2: 1} ; forms saving 2: [(1, 1, 1, 1)]
+field with 5 elements, 4 points: saving -> number of forms: {0: 125, 1: 26, 2: 1} ; forms saving 2: [(1, 1, 1, 1)]
+LIGHT label=ab5-f4p exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:18:43 cmd=python3 -B freeform4p.py

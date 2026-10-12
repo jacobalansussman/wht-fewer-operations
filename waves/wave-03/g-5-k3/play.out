@@ -1,0 +1,15 @@
+1. K3^2 = 4 I: True
+2. K3 = 2 I + u v^T with u = (-1,2,1), v = (1,-1,-1): True ; v K3 = -2 v: True ; (1,1,-1) K3 = 2 (1,1,-1): True
+3. H4 - 2 SWAP = (-1,1,1,1)^T (1,-1,-1,-1), rank one: True
+   B Binv = I: True
+4. H4 in pair coordinates = K3 (+) (-2): True
+5. brick helper u = x00 - x01 - x10 - x11 in pair coordinates is v = (1,-1,-1) on (a, b, c) and 0 on the antisymmetric line: True
+6. Fourier transform of Z4 in (f0, f1+f3, f2, f1-f3) -> same coordinates: [[(1, 0), (1, 0), (1, 0), (0, 0)], [(2, 0), (0, 0), (-2, 0), (0, 0)], [(1, 0), (-1, 0), (1, 0), (0, 0)], [(0, 0), (0, 0), (0, 0), (0, 2)]]
+   = K3 (+) (a multiple of i) on the odd line: True ; odd-line scalar = (0, 2)
+7. K3^T = [[1, 2, 1], [1, 0, -1], [1, -2, 1]]  = [cos(pi j k / 2) with end weights 1,2,1]: True
+8. antisymmetric square of K3 (basis 01, 02, 12) = [[-2, -4, -2], [-2, 0, 2], [-2, 4, -2]] = -2 K3^T: True
+9. gates per bit of determinant: butterfly 2/1; K3 row-scaled 4/2; 7-gate brick 7/4; K9 best 22/12 = 1.833; K27 best 98/54 = 1.815; K81 best 388/216 = 1.796
+10. r=1: (transform columns, keep disjoint pairs, transform rows, keep disjoint pairs) = row-scaled K3^(x1) on 3 numbers: True
+10. r=2: (transform columns, keep disjoint pairs, transform rows, keep disjoint pairs) = row-scaled K3^(x2) on 9 numbers: True
+10. r=3: (transform columns, keep disjoint pairs, transform rows, keep disjoint pairs) = row-scaled K3^(x3) on 27 numbers: True
+10. r=4: (transform columns, keep disjoint pairs, transform rows, keep disjoint pairs) = row-scaled K3^(x4) on 81 numbers: True

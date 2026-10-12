@@ -1,0 +1,40 @@
+== control H4 p=5 4 2 m=
+own: p=5 n=4 rows=4 distinct non-input targets=4 intermediates=2 => gate budget 6
+nodes by depth: 1 24 0
+RESULT p=5: NO circuit (exhaustive over this field) with 6 gates
+LIGHT label=a1-ctl exit=0 time=1s waited=6s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:26:16 cmd=sh -c ./own 5 4 2   < rows_h4.txt
+== control H4 p=5 4 3 m=
+own: p=5 n=4 rows=4 distinct non-input targets=4 intermediates=3 => gate budget 7
+nodes by depth: 1 1 20 0
+RESULT p=5: a circuit EXISTS with 7 gates
+LIGHT label=a1-ctl exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:26:17 cmd=sh -c ./own 5 4 3   < rows_h4.txt
+== control H4 p=7 4 2 m=
+own: p=7 n=4 rows=4 distinct non-input targets=4 intermediates=2 => gate budget 6
+nodes by depth: 1 36 0
+RESULT p=7: NO circuit (exhaustive over this field) with 6 gates
+LIGHT label=a1-ctl exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:26:19 cmd=sh -c ./own 7 4 2   < rows_h4.txt
+== control H4 p=7 4 3 m=
+own: p=7 n=4 rows=4 distinct non-input targets=4 intermediates=3 => gate budget 7
+nodes by depth: 1 1 30 0
+RESULT p=7: a circuit EXISTS with 7 gates
+LIGHT label=a1-ctl exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:26:20 cmd=sh -c ./own 7 4 3   < rows_h4.txt
+== alt4 p=3 6 4 m=
+own: p=3 n=6 rows=6 distinct non-input targets=6 intermediates=4 => gate budget 10
+nodes by depth: 1 30 675 15022 0
+RESULT p=3: NO circuit (exhaustive over this field) with 10 gates
+LIGHT label=a1-own-3 6 4- exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:26:21 cmd=sh -c ./own 3 6 4   < ../i-cross/rows_alt4.txt
+== alt4 p=3 6 5 m=
+own: p=3 n=6 rows=6 distinct non-input targets=6 intermediates=5 => gate budget 11
+nodes by depth: 1 30 675 15022 359090 0
+RESULT p=3: NO circuit (exhaustive over this field) with 11 gates
+LIGHT label=a1-own-3 6 5- exit=0 time=11s waited=0s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:26:22 cmd=sh -c ./own 3 6 5   < ../i-cross/rows_alt4.txt
+== alt4 p=5 6 4 m=
+own: p=5 n=6 rows=6 distinct non-input targets=6 intermediates=4 => gate budget 10
+nodes by depth: 1 60 2730 122414 0
+RESULT p=5: NO circuit (exhaustive over this field) with 10 gates
+LIGHT label=a1-own-5 6 4- exit=0 time=6s waited=0s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:26:33 cmd=sh -c ./own 5 6 4   < ../i-cross/rows_alt4.txt
+== alt4 p=7 6 4 m=
+own: p=7 n=6 rows=6 distinct non-input targets=6 intermediates=4 => gate budget 10
+nodes by depth: 1 90 6165 417090 0
+RESULT p=7: NO circuit (exhaustive over this field) with 10 gates
+LIGHT label=a1-own-7 6 4- exit=0 time=24s waited=0s peak_rss_mb=4 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:26:40 cmd=sh -c ./own 7 6 4   < ../i-cross/rows_alt4.txt

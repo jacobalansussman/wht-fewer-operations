@@ -1,0 +1,5 @@
+H4 full, gates 6 : distinct gate sets 0
+H4 full, gates 7 : distinct gate sets 228
+  helper supports (2, 2, 4) : 36 sets; example helpers [(0, 1, 1, 0), (1, -1, 1, 1), (1, 0, 0, 1)]
+  helper supports (2, 3, 4) : 192 sets; example helpers [(1, 1, -1, 0), (1, 1, 0, 0), (1, 1, 1, -1)]
+LIGHT label=i-play-n4full exit=0 time=26s waited=0s peak_rss_mb=196 peak_footprint_mb=162 lowest_cap_mb=1500 stopped=- start=20:57:56 cmd=/usr/bin/python3 -I -B n4.py full

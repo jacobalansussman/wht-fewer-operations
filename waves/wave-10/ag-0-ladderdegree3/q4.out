@@ -1,0 +1,8 @@
+rule D violations, atoms: (0, 4)
+  4-bit pair (no selector): degree <= 2 good True classes 16 components 1
+  4-bit pair (no selector): degree <= 3 good True classes 16 components 1
+  4-bit pair (no selector): degree <= 4 good False classes 16 components None
+  with selector, k=5: degree <= 3 good True classes 32 components 1
+  with selector, k=5: degree <= 4 good True classes 32 components 1
+  with selector, k=5: degree <= 5 good False classes 32 components None
+LIGHT label=ag0-q4 exit=0 time=1s waited=32s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:13:08 cmd=python3 -B q4.py

@@ -1,0 +1,11 @@
+TWO-ELEMENT FIELD. (derivation, cut) cases: 20880 ; delivered forms outside the span of the injected wires: 0 ; violations of  pure + sum (L - 1) >= 4 : 0
+(M2 gates, injections, pure gates, cancelling gates, injected wires independent?, (least L, most L) of each delivered form) -> cases
+   (4, 4, 4, 0, True, ()) 16956
+   (4, 4, 3, 1, True, ((2, 2),)) 2784
+   (4, 5, 2, 1, False, ((3, 3),)) 360
+   (4, 5, 2, 1, False, ((3, 4),)) 312
+   (4, 4, 3, 1, True, ((3, 3),)) 180
+   (4, 4, 2, 2, True, ((2, 2), (2, 2))) 126
+   (5, 4, 2, 1, True, ((3, 3),)) 90
+   (4, 5, 1, 2, False, ((2, 2), (3, 3))) 36
+   (4, 5, 1, 2, False, ((1, 2), (3, 4))) 36

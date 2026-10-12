@@ -1,0 +1,18 @@
+z16_32gates_letter.txt: N=16 gates=32 (all 16 rows held exactly); Yates 32
+   plain cut bit 0: n(L)=14 n(R)=12 (Yates half 12)  E-B=6 (N/2=8)  crossing gates X=18, crossing helpers 10  R-repeats 8 L-repeats 16  gates on L alone 12
+   plain cut bit 1: n(L)=13 n(R)=12 (Yates half 12)  E-B=7 (N/2=8)  crossing gates X=19, crossing helpers 11  R-repeats 8 L-repeats 18  gates on L alone 12
+   plain cut bit 2: n(L)=12 n(R)=12 (Yates half 12)  E-B=8 (N/2=8)  crossing gates X=13, crossing helpers 5  R-repeats 8 L-repeats 13  gates on L alone 12
+   plain cut bit 3: n(L)=15 n(R)=12 (Yates half 12)  E-B=5 (N/2=8)  crossing gates X=19, crossing helpers 11  R-repeats 8 L-repeats 16  gates on L alone 12
+   least total of Xh over the trees tried: 15 at bit order (2, 0, 3, 1); per node size [Xh in all, sum of (n(X) - n(X0) - n(X1) - |X|/2)]: {16: [5, 0], 8: [6, -1], 4: [4, 1], 2: [0, 0]}
+z16_tau20_33gates.txt: N=16 gates=33 (all 16 rows held exactly); Yates 32
+   plain cut bit 0: n(L)=15 n(R)=12 (Yates half 12)  E-B=6 (N/2=8)  crossing gates X=18, crossing helpers 10  R-repeats 8 L-repeats 16  gates on L alone 13
+   plain cut bit 1: n(L)=15 n(R)=12 (Yates half 12)  E-B=6 (N/2=8)  crossing gates X=18, crossing helpers 10  R-repeats 9 L-repeats 15  gates on L alone 12
+   plain cut bit 2: n(L)=15 n(R)=12 (Yates half 12)  E-B=6 (N/2=8)  crossing gates X=18, crossing helpers 10  R-repeats 9 L-repeats 15  gates on L alone 12
+   plain cut bit 3: n(L)=14 n(R)=12 (Yates half 12)  E-B=7 (N/2=8)  crossing gates X=18, crossing helpers 10  R-repeats 9 L-repeats 16  gates on L alone 12
+   least total of Xh over the trees tried: 19 at bit order (3, 0, 2, 1); per node size [Xh in all, sum of (n(X) - n(X0) - n(X1) - |X|/2)]: {16: [10, -1], 8: [7, 1], 4: [2, 1], 2: [0, 0]}
+z8_12gates_letter.txt: N=8 gates=12 (all 8 rows held exactly); Yates 12
+   plain cut bit 0: n(L)=4 n(R)=4 (Yates half 4)  E-B=4 (N/2=4)  crossing gates X=6, crossing helpers 2  R-repeats 4 L-repeats 6  gates on L alone 4
+   plain cut bit 1: n(L)=4 n(R)=4 (Yates half 4)  E-B=4 (N/2=4)  crossing gates X=8, crossing helpers 4  R-repeats 4 L-repeats 8  gates on L alone 4
+   plain cut bit 2: n(L)=5 n(R)=4 (Yates half 4)  E-B=3 (N/2=4)  crossing gates X=8, crossing helpers 4  R-repeats 4 L-repeats 7  gates on L alone 4
+   least total of Xh over the trees tried: 4 at bit order (0, 1, 2); per node size [Xh in all, sum of (n(X) - n(X0) - n(X1) - |X|/2)]: {8: [2, 0], 4: [2, 0], 2: [0, 0]}
+LIGHT label=ab4-z16 exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:16:48 cmd=python3 -B z16.py ../u-3-zletter/z16_32gates_letter.txt ../u-3-zletter/z16_tau20_33gates.txt ../u-3-zletter/z8_12gates_letter.txt

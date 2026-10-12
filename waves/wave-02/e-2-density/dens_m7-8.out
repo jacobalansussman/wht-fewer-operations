@@ -1,0 +1,10 @@
+count G throughout. f = 16 - m + 2^r + iota.  sub = subspace law 16+(d-1)2^d in count O where m = 2^d
+m=7 S=(0, 1, 2, 3, 4, 5, 6) orbit=240 r=3 | trivial lower bound f>=21 | constructions: g<=21 (trie) so f<=30 iota<=13 | GF(3): iota>=6 proved, k=6 timed out |
+m=7 S=(0, 1, 2, 3, 4, 5, 8) orbit=6720 r=4 | trivial lower bound f>=25 | constructions: g<=29 (trie) so f<=38 iota<=13 | GF(3): iota>=6 proved, k=6 timed out |
+m=7 S=(0, 1, 2, 4, 6, 8, 9) orbit=4480 r=4 | trivial lower bound f>=25 | constructions: g<=29 (walk) so f<=38 iota<=13 | GF(3): iota>=6 proved, k=6 timed out |
+m=8 S=(0, 1, 2, 3, 4, 5, 6, 7) orbit=30 r=3 | trivial lower bound f>=22 | constructions: g<=24 (trie) so f<=32 iota<=16 | GF(3): iota>=6 proved, k=6 timed out |
+m=8 S=(0, 1, 2, 3, 4, 5, 6, 8) orbit=1920 r=4 | trivial lower bound f>=24 | constructions: g<=34 (trie) so f<=42 iota<=18 | GF(3): iota>=6 proved, k=6 timed out |
+m=8 S=(0, 1, 2, 3, 4, 5, 8, 9) orbit=840 r=4 | trivial lower bound f>=24 | constructions: g<=32 (trie) so f<=40 iota<=16 | GF(3): iota>=6 proved, k=6 timed out |
+m=8 S=(0, 1, 2, 3, 4, 6, 8, 9) orbit=10080 r=4 | trivial lower bound f>=24 | constructions: g<=34 (trie) so f<=42 iota<=18 | GF(3): iota>=6 proved, k=6 timed out |
+LIGHT label=e2-dens78 exit=0 time=465s waited=0s peak_rss_mb=41 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=21:56:48 cmd=python3 -B dens.py 7,8 3 45
+exit 0

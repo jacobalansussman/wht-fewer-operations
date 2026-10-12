@@ -1,0 +1,21 @@
+K =  4:     5 address maps other than the identity; largest bound = 6/1 = 6.000 calls (K + K/2 = 6.0; textbook 2K = 8); reached by maps with 2 fixed addresses
+     rank(P-1) =  1, rank(P(x)P-1) =   6, fixed addresses  2: bound 6.000  (3 maps)
+     rank(P-1) =  2, rank(P(x)P-1) =  10, fixed addresses  1: bound 5.000  (2 maps)
+K =  8:   167 address maps other than the identity; largest bound = 24/2 = 12.000 calls (K + K/2 = 12.0; textbook 2K = 16); reached by maps with 4 fixed addresses
+     rank(P-1) =  2, rank(P(x)P-1) =  24, fixed addresses  4: bound 12.000  (21 maps)
+     rank(P-1) =  4, rank(P(x)P-1) =  40, fixed addresses  2: bound 10.000  (56 maps)
+     rank(P-1) =  4, rank(P(x)P-1) =  42, fixed addresses  2: bound 10.500  (42 maps)
+     rank(P-1) =  6, rank(P(x)P-1) =  54, fixed addresses  1: bound 9.000  (48 maps)
+K = 16: 20159 address maps other than the identity; largest bound = 96/4 = 24.000 calls (K + K/2 = 24.0; textbook 2K = 32); reached by maps with 8 fixed addresses
+     rank(P-1) =  4, rank(P(x)P-1) =  96, fixed addresses  8: bound 24.000  (105 maps)
+     rank(P-1) =  6, rank(P(x)P-1) = 120, fixed addresses  4: bound 20.000  (210 maps)
+     rank(P-1) =  8, rank(P(x)P-1) = 160, fixed addresses  4: bound 20.000  (1120 maps)
+     rank(P-1) =  8, rank(P(x)P-1) = 168, fixed addresses  4: bound 21.000  (1260 maps)
+     rank(P-1) = 10, rank(P(x)P-1) = 170, fixed addresses  1: bound 17.000  (112 maps)
+     rank(P-1) = 10, rank(P(x)P-1) = 186, fixed addresses  2: bound 18.600  (2520 maps)
+     rank(P-1) = 10, rank(P(x)P-1) = 196, fixed addresses  2: bound 19.600  (3360 maps)
+     rank(P-1) = 12, rank(P(x)P-1) = 204, fixed addresses  1: bound 17.000  (1344 maps)
+     rank(P-1) = 12, rank(P(x)P-1) = 210, fixed addresses  1: bound 17.500  (1680 maps)
+     rank(P-1) = 12, rank(P(x)P-1) = 216, fixed addresses  2: bound 18.000  (5760 maps)
+     rank(P-1) = 14, rank(P(x)P-1) = 238, fixed addresses  1: bound 17.000  (2688 maps)
+LIGHT label=x3-permbound exit=0 time=2s waited=6s peak_rss_mb=8 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:45:45 cmd=python3 -B permbound.py

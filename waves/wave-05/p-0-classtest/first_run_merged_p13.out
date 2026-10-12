@@ -1,0 +1,36 @@
+p=13 tau=2 (1/tau=7, order of tau 12): 134 helper sets, 558 wirings, 8 shapes
+p=13 tau=3 (1/tau=9, order of tau 3): 126 helper sets, 550 wirings, 8 shapes
+p=13 tau=4 (1/tau=10, order of tau 6): 142 helper sets, 566 wirings, 8 shapes
+p=13 tau=5 (1/tau=8, order of tau 4): 126 helper sets, 550 wirings, 8 shapes
+p=13 tau=6 (1/tau=11, order of tau 12): 126 helper sets, 550 wirings, 8 shapes
+p=13 tau=7 (1/tau=2, order of tau 12): 134 helper sets, 558 wirings, 8 shapes
+p=13 tau=8 (1/tau=5, order of tau 4): 126 helper sets, 550 wirings, 8 shapes
+p=13 tau=9 (1/tau=3, order of tau 3): 126 helper sets, 550 wirings, 8 shapes
+p=13 tau=10 (1/tau=4, order of tau 6): 142 helper sets, 566 wirings, 8 shapes
+p=13 tau=11 (1/tau=6, order of tau 12): 126 helper sets, 550 wirings, 8 shapes
+p=13 tau=12 (1/tau=12, order of tau 2): 228 helper sets, 1404 wirings, 8 shapes
+
+shape x tau: number of wirings of that shape (0 = the shape does not exist for that tau over GF(13))
+shape      2     3     4     5     6     7     8     9    10    11    12   present for
+S00       24    24    24    24    24    24    24    24    24    24    48   ALL tau
+S01       80    80    80    80    80    80    80    80    80    80   240   ALL tau
+S02      120   112   128   112   112   120   112   112   128   112   288   ALL tau
+S03        6     6     6     6     6     6     6     6     6     6    12   ALL tau
+S04       24    24    24    24    24    24    24    24    24    24    48   ALL tau
+S05       56    56    56    56    56    56    56    56    56    56   144   ALL tau
+S06       64    64    64    64    64    64    64    64    64    64   144   ALL tau
+S07      184   184   184   184   184   184   184   184   184   184   480   ALL tau
+
+shapes written out (0-3 inputs, 4-6 helpers, 7-10 targets; child<-(a,b)):
+S00 4<-(0,1) 5<-(0,7) 6<-(2,3) 7<-(4,6) 8<-(1,5) 9<-(2,5) 10<-(3,5)
+S01 4<-(0,1) 5<-(0,7) 6<-(2,3) 7<-(4,6) 8<-(2,5) 9<-(3,5) 10<-(4,6)
+S02 4<-(0,1) 5<-(0,7) 6<-(2,4) 7<-(3,6) 8<-(1,5) 9<-(2,5) 10<-(3,5)
+S03 4<-(0,1) 5<-(2,3) 6<-(4,5) 7<-(0,6) 8<-(1,6) 9<-(2,6) 10<-(3,6)
+S04 4<-(0,1) 5<-(2,3) 6<-(4,5) 7<-(0,6) 8<-(2,6) 9<-(4,8) 10<-(5,7)
+S05 4<-(0,1) 5<-(2,4) 6<-(2,7) 7<-(3,5) 8<-(0,6) 9<-(1,6) 10<-(3,6)
+S06 4<-(0,1) 5<-(2,4) 6<-(3,5) 7<-(0,6) 8<-(1,6) 9<-(2,6) 10<-(3,6)
+S07 4<-(0,1) 5<-(2,4) 6<-(3,7) 7<-(4,8) 8<-(3,5) 9<-(0,6) 10<-(1,6)
+
+shapes present at tau = -1 and at NO other tau over GF(13): none
+shapes absent at tau = -1 but present at some other tau: none
+LIGHT label=p0-c13 exit=0 time=5s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=00:05:28 cmd=python3 -B census4.py 13

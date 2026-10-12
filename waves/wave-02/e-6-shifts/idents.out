@@ -1,0 +1,5 @@
+N= 4  A: H X H = N diag(Hx): True ; dual H diag(x) H = shifts of Hx: True ;  B: circ+diag commutes, circ-diag anticommutes: True ;  C: transform of a multiplication table is the multiplication table of the Kloosterman image: True ; Kloosterman entries (s,t != 0): [-1, 3]
+N= 8  A: H X H = N diag(Hx): True ; dual H diag(x) H = shifts of Hx: True ;  B: circ+diag commutes, circ-diag anticommutes: True ;  C: transform of a multiplication table is the multiplication table of the Kloosterman image: True ; Kloosterman entries (s,t != 0): [-5, -1, 3]
+N=16  A: H X H = N diag(Hx): True ; dual H diag(x) H = shifts of Hx: True ;  B: circ+diag commutes, circ-diag anticommutes: True ;  C: transform of a multiplication table is the multiplication table of the Kloosterman image: True ; Kloosterman entries (s,t != 0): [-5, -1, 3, 7]
+LIGHT label=e6-idents exit=0 time=1s waited=6s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:26:59 cmd=/usr/bin/python3 -I -B waves/wave-02/e-6-shifts/idents.py
+exit 0

@@ -1,0 +1,7 @@
+t=1: 8 points: 22 gates (split 4 + bricks for K3(x)H2 12 + antisymmetric lines 2 + merge 4); all 8 outputs proportional to the rows of the transform: True
+      textbook 24 ; product of 7-gate bricks 22 ; ratio to textbook 0.91667 ; largest coefficient in a gate 2
+t=2: 64 points: 343 gates (split 60 + bricks for K3(x)H2 192 + antisymmetric lines 31 + merge 60); all 64 outputs proportional to the rows of the transform: True
+      textbook 384 ; product of 7-gate bricks 336 ; ratio to textbook 0.89323 ; largest coefficient in a gate 2
+t=3: 512 points: 4076 gates (split 704 + bricks for K3(x)H2 2304 + antisymmetric lines 364 + merge 704); all 512 outputs proportional to the rows of the transform: True
+      textbook 4608 ; product of 7-gate bricks 4096 ; ratio to textbook 0.88455 ; largest coefficient in a gate 2
+LIGHT label=g-5-k3 exit=0 time=9s waited=0s peak_rss_mb=145 peak_footprint_mb=89 lowest_cap_mb=1500 stopped=- start=23:06:52 cmd=python3 -B pairroute.py 3

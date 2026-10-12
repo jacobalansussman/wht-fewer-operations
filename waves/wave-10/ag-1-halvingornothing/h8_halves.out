@@ -1,0 +1,10 @@
+classes of wires with the same residue modulo 2 (size > 1):
+   11111111 ['g7', 'g8', 'g9', 'g10', 'g11', 'y0', 'y1', 'y2', 'y3', 'y4', 'y5', 'y6', 'y7']
+pairs of wires that agree modulo 2: 78 ; halves that are already wires (with repeats): 12 ; distinct new halves: 300
+new halves that are also one ordinary gate (two wires with different residues) from the circuit's wires: 59 of 300
+control: the 19-gate circuit replays: (True, 19)
+control: remove any one helper, add nothing: 0 of 11 still compute the transform
+control: remove any two helpers, add nothing: 0 of 55
+exchange with a forced half: 16500 states (add one of 300 new halves, remove two helpers): 0 circuits with 18 gates
+add one new half, remove ONE helper: 0 of 3300 states compute the transform in 19 gates with the half derived
+LIGHT label=ag1-h8 exit=0 time=2s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:57:42 cmd=python3 -B h8_halves.py

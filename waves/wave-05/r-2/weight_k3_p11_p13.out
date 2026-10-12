@@ -1,0 +1,23 @@
+== p=11 k=3 m=3 (7 gates)
+k=3 tau=2 (1/tau=6): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 6891960]
+k=3 tau=3 (1/tau=4): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 6891960]
+k=3 tau=4 (1/tau=3): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 6891960]
+k=3 tau=5 (1/tau=9): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 7127508]
+k=3 tau=6 (1/tau=2): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 6891960]
+k=3 tau=7 (1/tau=8): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 6891960]
+k=3 tau=8 (1/tau=7): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 6891960]
+k=3 tau=9 (1/tau=5): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 7127508]
+k=3 tau=10 (1/tau=10): R2 p=11 n=4 points=1464 lines=16226 targets=4 helpers m=3 (last 2 over all points): 16 distinct helper sets, gates 7  [fixpoint tests 6891960]
+== p=13 k=3 m=3 (7 gates)
+k=3 tau=2 (1/tau=7): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=3 (1/tau=9): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=4 (1/tau=10): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=5 (1/tau=8): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=6 (1/tau=11): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16680060]
+k=3 tau=7 (1/tau=2): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=8 (1/tau=5): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=9 (1/tau=3): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=10 (1/tau=4): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16210800]
+k=3 tau=11 (1/tau=6): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 0 distinct helper sets, gates 7  [fixpoint tests 16680060]
+k=3 tau=12 (1/tau=12): R2 p=13 n=4 points=2380 lines=31110 targets=4 helpers m=3 (last 2 over all points): 16 distinct helper sets, gates 7  [fixpoint tests 16210800]
+LIGHT label=r2-w3a exit=0 time=24s waited=0s peak_rss_mb=27 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:37:04 cmd=bash -c for p in 11 13; do echo "== p=$p k=3 m=3 (7 gates)"; ./run_weight.sh 3 3 2 $p all; done

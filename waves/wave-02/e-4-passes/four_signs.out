@@ -1,0 +1,4 @@
+d = 8  arrangements with at most -1 non-zeros tested: 0   factor as two differences: 0
+sign patterns tested: 16384  with at most 30 non-zeros: 9516  factor as two differences: 0
+histogram of non-zeros (lowest): [(23, 14), (24, 75), (25, 253), (26, 644), (27, 1258), (28, 1959), (29, 2529), (30, 2784)]
+LIGHT label=e4-foursignsb exit=0 time=38s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:38:28 cmd=python3 -B four_signs.py

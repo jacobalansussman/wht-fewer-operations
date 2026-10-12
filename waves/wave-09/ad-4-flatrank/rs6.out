@@ -1,0 +1,4 @@
+rs K=6 (N=8 points, doubled): 26387 unsigned flats. E = one flat: 0 hits. E from two flats: 222524587 sets tested, 0 hits
+   l = 1, l' = 2, F3 = f00000f00f00000f (dim 4): (-1)^(l l') (1 - 2[F3]) is a sign-rescaled transform
+   l = 1, l' = 2, F3 = f00000ff00000f0 (dim 4): (-1)^(l l') (1 - 2[F3]) is a sign-rescaled transform
+rs K=6: (-1)^(l l') (1 - 2 [F3]) over all pairs of linear forms and all flats: 51535764 tested, 6720 hits (4 flats in general), of which with (-1)^(l l') a signed constant on F3 (3 flats): 0

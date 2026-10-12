@@ -1,0 +1,59 @@
+LP value per array 3.750000000000001
+LP value per array 3.875000000000009
+== the seven lines of clique.out, recomputed ==
+m=4 W=4 design with 16 moves (plain 16): fewest moves selected by a form with q(I)=1: 4 (passes counting)
+  SURVIVOR total 16, largest clique 4, tight forms 256: 0001:4 0010:4 0100:4 1000:4
+  total 16, tight forms 256, largest clique 4 (W=4): 0001:4 0010:4 0100:4 1000:4
+  -> not excluded
+m=4 W=4 design with 15 moves (plain 16): fewest moves selected by a form with q(I)=1: 4 (passes counting)
+  total 15, tight forms 56, largest clique 15 (W=4): 0001:1 0010:1 0011:1 0100:1 0101:1 0110:1 0111:1 1000:1 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  -> EXCLUDED by the clique lemma
+m=4 W=5 design with 19 moves (plain 20): fewest moves selected by a form with q(I)=1: 5 (passes counting)
+  total 19, tight forms 52, largest clique 13 (W=5): 0001:2 0010:2 0011:1 0100:2 0101:1 0110:1 0111:1 1000:2 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  -> EXCLUDED by the clique lemma
+m=4 W=6 design with 23 moves (plain 24): fewest moves selected by a form with q(I)=1: 6 (passes counting)
+  total 23, tight forms 52, largest clique 14 (W=6): 0001:3 0010:3 0011:1 0100:3 0101:1 0110:1 0111:1 1000:3 1001:1 1010:1 1011:1 1100:1 1101:1 1110:1 1111:1
+  -> EXCLUDED by the clique lemma
+m=4 W=7 design with 27 moves (plain 28): fewest moves selected by a form with q(I)=1: 7 (passes counting)
+  total 27, tight forms 48, largest clique 12 (W=7): 0001:2 0010:2 0011:1 0100:2 0101:1 0110:1 0111:3 1000:2 1001:1 1010:1 1011:3 1100:1 1101:3 1110:3 1111:1
+  -> EXCLUDED by the clique lemma
+m=4 W=8 design with 30 moves (plain 32): fewest moves selected by a form with q(I)=1: 8 (passes counting)
+  total 30, tight forms 56, largest clique 30 (W=8): 0001:2 0010:2 0011:2 0100:2 0101:2 0110:2 0111:2 1000:2 1001:2 1010:2 1011:2 1100:2 1101:2 1110:2 1111:2
+  -> EXCLUDED by the clique lemma
+m=5 W=4 design with 16 moves (plain 20): fewest moves selected by a form with q(I)=1: 4 (passes counting)
+  total 16, tight forms 1200, largest clique 16 (W=4): 00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:1 11010:1 11100:1 11111:1
+  -> EXCLUDED by the clique lemma
+== exhaustive, block size 4 ==
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 3.749999 moves
+m=4 W=1: all count vectors with at most 3 moves that pass counting (plain = 4). search nodes 1, minimal leaves 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 7.499999 moves
+m=4 W=2: all count vectors with at most 7 moves that pass counting (plain = 8). search nodes 1, minimal leaves 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 11.249999 moves
+m=4 W=3: all count vectors with at most 11 moves that pass counting (plain = 12). search nodes 1, minimal leaves 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 14.999998 moves
+m=4 W=4: all count vectors with at most 15 moves that pass counting (plain = 16). search nodes 846, minimal leaves 1
+  15 moves: 1 count vectors pass counting; largest clique between 15 and 15; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 18.749997 moves
+m=4 W=5: all count vectors with at most 19 moves that pass counting (plain = 20). search nodes 2550, minimal leaves 2
+  19 moves: 2 count vectors pass counting; largest clique between 13 and 13; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 22.499997 moves
+m=4 W=6: all count vectors with at most 23 moves that pass counting (plain = 24). search nodes 6701, minimal leaves 3
+  23 moves: 3 count vectors pass counting; largest clique between 11 and 14; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 26.249997 moves
+m=4 W=7: all count vectors with at most 27 moves that pass counting (plain = 28). search nodes 15850, minimal leaves 4
+  27 moves: 4 count vectors pass counting; largest clique between 12 and 15; pass the clique test too: 0
+dual bound re-checked in integers: any covering vector has at least 37499995*W/10000000 = 29.999996 moves
+m=4 W=8: all count vectors with at most 31 moves that pass counting (plain = 32). search nodes 34227, minimal leaves 12
+  30 moves: 1 count vectors pass counting; largest clique between 30 and 30; pass the clique test too: 0
+  31 moves: 20 count vectors pass counting; largest clique between 13 and 28; pass the clique test too: 0
+== exhaustive, block size 5 ==
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 3.874999 moves
+m=5 W=1: all count vectors with at most 4 moves that pass counting (plain = 5). search nodes 119, minimal leaves 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 7.749998 moves
+m=5 W=2: all count vectors with at most 9 moves that pass counting (plain = 10). search nodes 36843, minimal leaves 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 11.624997 moves
+m=5 W=3: all count vectors with at most 14 moves that pass counting (plain = 15). search nodes 1478172, minimal leaves 0
+dual bound re-checked in integers: any covering vector has at least 38749986*W/9999999 = 15.499996 moves
+m=5 W=4: all count vectors with at most 16 moves that pass counting (plain = 20). search nodes 315793, minimal leaves 1
+  16 moves: 1 count vectors pass counting; largest clique between 16 and 16; pass the clique test too: 0
+TIMEOUT 5 4 17

@@ -1,0 +1,1 @@
+7 gates, coefficients in {1,-1,2}; outputs equal K(x)K exactly: True [[1, 1, 1, 1], [1, 2, 1, 2], [1, 1, 2, 2], [1, 2, 2, 4]]

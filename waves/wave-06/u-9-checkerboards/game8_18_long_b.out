@@ -1,0 +1,6 @@
+W=18 seed=21: least number of underivable wires reached 2 after 400000 moves
+LIGHT label=u9-g18b exit=0 time=87s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:41:56 cmd=python3 -B game8.py 18 400000 21
+W=18 seed=22: least number of underivable wires reached 2 after 400000 moves
+LIGHT label=u9-g18b exit=0 time=83s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:43:23 cmd=python3 -B game8.py 18 400000 22
+W=18 seed=23: least number of underivable wires reached 2 after 400000 moves
+LIGHT label=u9-g18b exit=0 time=82s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:44:46 cmd=python3 -B game8.py 18 400000 23

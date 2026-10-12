@@ -1,0 +1,6 @@
+f(Z | total free) = 9 ; forms that are free in some optimal circuit given the total (inputs included): 29
+n = 8 (cut of 16 points), source yates: derivations (C'', one per way of deriving each wire) = 1
+wires by rank of their slot transfers (longest bus without an idle injection) -> count: {1: 12, 2: 5, 3: 2, 4: 1}
+structures with n independent classes and a wire with >= 3 classes : 4698161
+structures in which at most one wire lacks a tree of wires free given the total : 900301
+least pure gates over these structures -> count (the lower half alone costs 12; a saving needs <= 11): {}

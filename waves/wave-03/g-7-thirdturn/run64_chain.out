@@ -1,0 +1,3 @@
+start (chain): pair-sharing count of B = 193 (per form 3.016)
+DONE 64 points start=chain seed=22 states=1549 best=193 (per form 3.016) histogram(lowest)={193: 67, 194: 19, 195: 69, 196: 38, 197: 15, 198: 15, 199: 17, 200: 123}
+LIGHT label=g7-s64-c exit=0 time=301s waited=0s peak_rss_mb=28 peak_footprint_mb=23 lowest_cap_mb=1500 stopped=- start=23:06:32 cmd=python3 -B search64.py 300 22 chain

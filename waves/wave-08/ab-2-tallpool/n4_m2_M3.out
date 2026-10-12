@@ -1,0 +1,4 @@
+# tallmin NN=4 m=2 pool(height<=3)=1116 candidates targets=36 group=384 MLAST=1000 full=0 hcap=5
+# orbits=15  forms helpers histogram: h=0:4 h=1:6 h=2:5 h=3:0 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+./tallmin4 $m 3 1000 0  0.00s user 0.00s system 81% cpu 0.004 total

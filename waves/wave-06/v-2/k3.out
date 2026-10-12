@@ -1,0 +1,4 @@
+K=3 generic          calls r=6: starts 1, hits 1, best rms residual 1.37e-14, last hit on 8 fresh boxes 1.3e-14, 273 s
+K=3 generic          calls r=5: starts 1, hits 0, best rms residual 3.78e-01, last hit on 8 fresh boxes n/a, 217 s
+K=3 reflection       calls r=4: starts 4, hits 0, best rms residual 9.11e-02, last hit on 8 fresh boxes n/a, 250 s
+K=3 reflection       calls r=3: starts 3, hits 0, best rms residual 1.77e-01, last hit on 8 fresh boxes n/a, 282 s

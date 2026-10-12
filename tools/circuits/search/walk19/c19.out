@@ -1,0 +1,6 @@
+(1) count (G), 8 points: 19 gates; output j is exactly row j of H_8 for every j: True   (textbook 24, best known before 22)
+(2) count (O), 8 points: 20 operations (19 additions/subtractions, 1 halving); output j is exactly row j of H_8 / 2: True
+(3) count (G), 16 points, plan 8x2: 54 gates; the computed matrix is exactly H_16: True   (textbook 64, bricks of 4: 56)
+(3) count (G), 64 points, plan 8x8: 304 gates; the computed matrix is exactly H_64: True   (textbook 384, bricks of 4: 336)
+(4) count (O), 64 points: 320 operations give exactly H_64 / 4: True; with one multiplication by 4 per output: 384 operations for H_64 itself (textbook 384)
+(4) count (O), 512 points: 3840 operations give exactly H_512 / 8: True; with one multiplication by 8 per output: 4352 operations for H_512 itself (textbook 4608)

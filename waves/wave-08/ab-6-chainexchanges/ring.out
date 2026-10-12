@@ -1,0 +1,12 @@
+(0) moves along p and the orthonormal basis of p-perp give the kernel: True
+(1) plain exchange, 3 stages, the port p never moved along by X or Y:
+    every live array ends holding exactly the kernel applied to its own input (formal sum): True
+    moves 12 (plain schedule 8); blocks per array, live then scratch: [[1, 2], [2, 1], [2, 2, 2]]
+(2) two-stage exchange with a bystander (arrays 1, 2 never move along p; array 3 does):
+    every live array ends holding exactly the kernel applied to its own input (formal sum): True
+    moves 20 (plain schedule 12); blocks per array, live then scratch: [[3], [1, 2], [1, 2, 1], [2, 2, 3, 3]]
+(3) control, word (2) without its fourth shear: right? False  (must be False)
+(4) a content that hops twice along the same port sits at the level of a free relabelling (shift by p) of its start: True
+(5) one total for two sources (kappa = 2): terms in the targets before the removal (3, 3); after the removal the state equals 'each target += its source moved backwards along its own port, everybody climbed': True
+    blocks per array: sources [2, 1] [2, 1] (cut by the helper's read), targets [3] [3], the total [4]; 4 moves for 2 shears (2 single moves would do)
+LIGHT label=ab-6-ring exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:21:39 cmd=python3 -B ring.py

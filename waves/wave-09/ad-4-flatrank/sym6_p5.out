@@ -1,0 +1,2 @@
+sym K=6 p=5 seed=1: isometry of order 5 with 4 fixed points; 180800 signed flats, 40 invariant, 36152 orbits of 5
+sym K=6 p=5: 36152 orbits tested. g in span(orbit): 0 ; orbit + 1 invariant flat: 0 ; orbit + 2 invariant flats: 0   (flats: 5, 6, 7)

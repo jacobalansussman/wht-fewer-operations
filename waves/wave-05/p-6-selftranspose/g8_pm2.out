@@ -1,0 +1,25 @@
+N = 8 shapes 23 coefficients [-2, 2]  model C (root square 1; any pairs, overlaps allowed)
+shape   0 (.(.(.(.(.(.(..))))))) : NONE   0s
+shape   1 (.(.(.(.((..)(..)))))) : NONE   0s
+shape   2 (.(.(.((..)(.(..)))))) : NONE   1s
+shape   3 (.(.((..)(.(.(..)))))) : NONE   2s
+shape   4 (.(.((..)((..)(..))))) : NONE   3s
+shape   5 (.(.((.(..))(.(..))))) : NONE   4s
+shape   6 (.((..)(.(.(.(..)))))) : NONE   5s
+shape   7 (.((..)(.((..)(..))))) : NONE   5s
+shape   8 (.((..)((..)(.(..))))) : NONE   6s
+shape   9 (.((.(..))(.(.(..))))) : NONE   7s
+shape  10 (.((.(..))((..)(..)))) : NONE   8s
+shape  11 ((..)(.(.(.(.(..)))))) : NONE   8s
+shape  12 ((..)(.(.((..)(..))))) : NONE   8s
+shape  13 ((..)(.((..)(.(..))))) : NONE   8s
+shape  14 ((..)((..)(.(.(..))))) : NONE   8s
+shape  15 ((..)((..)((..)(..)))) : NONE   9s
+shape  16 ((..)((.(..))(.(..)))) : NONE   9s
+shape  17 ((.(..))(.(.(.(..))))) : NONE   9s
+shape  18 ((.(..))(.((..)(..)))) : NONE   9s
+shape  19 ((.(..))((..)(.(..)))) : NONE   10s
+shape  20 ((.(.(..)))(.(.(..)))) : NONE   10s
+shape  21 ((.(.(..)))((..)(..))) : NONE   10s
+shape  22 (((..)(..))((..)(..))) : NONE   10s
+LIGHT label=p6-g8a exit=0 time=11s waited=76s peak_rss_mb=9 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=00:16:09 cmd=python3 -B general.py 8 -2,2

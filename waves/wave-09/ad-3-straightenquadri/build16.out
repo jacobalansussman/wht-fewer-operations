@@ -1,0 +1,13 @@
+(1) Phi = H P H / N = I - 2 diag([u.x=1]) Pi_T, identity on the half u.x=0, halves not mixed: 750 exchanges checked, 0 failures
+(2) start [4, 6, 8, 10, 12, 14]
+    exchange 1: u=1 on T=[0, 1, 4, 5] -> [5, 6, 8, 10, 12, 14]
+    exchange 2: u=3 on T=[0, 3, 8, 11] -> [5, 6, 10, 11, 12, 14]  (bent: True)
+(3) gates after each stage (Phi2, Phi1, C_start, Phi1, Phi2): [14, 28, 58, 72, 86] ; total 86 gates (G)
+    circuit equals the convolution with the quadric's signs, all 256 entries: True
+    4 x that matrix has entries +-1: True ; it is (-1)^(q(x)+q(z)+B(x,z)) with B bilinear: True ; B invertible (16 distinct rows): True
+    so it is the 16-point transform up to free signs and one relabelling.  Textbook 64, night's best 52.
+    price law of this family: 2 x (sum over exchanges of the reflections on the half) + cost of the start;
+    a flat of dimension d costs 2^(d-1) reflections on N/2^d points, each 2m-1 gates (m = 2: free)
+      d=1: 15 gates per exchange per side
+      d=2: 14 gates per exchange per side
+      d=3: 0 gates per exchange per side

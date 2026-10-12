@@ -1,0 +1,51 @@
+check: Z_8 without free form: 12 gates, not 11 (two-element field)  OK
+forms tried: 247
+saving -> number of forms: {0: 34, 1: 168, 2: 44, 3: 1}
+saving 3 :
+   gates  9  w = x0+x1+x2+x3+x4+x5+x6+x7 (output y_111)
+saving 2 :
+   gates 10  w = x0+x1+x2+x3 (output y_011)
+   gates 10  w = x0+x1+x2+x3+x5
+   gates 10  w = x0+x1+x4+x5 (output y_101)
+   gates 10  w = x0+x1+x3+x4+x5
+   gates 10  w = x0+x1+x2+x3+x4+x5
+   gates 10  w = x0+x1+x2+x3+x6
+   gates 10  w = x0+x2+x4+x6 (output y_110)
+   gates 10  w = x0+x2+x3+x4+x6
+   gates 10  w = x0+x1+x2+x3+x4+x6
+   gates 10  w = x0+x1+x4+x5+x6
+   gates 10  w = x0+x2+x4+x5+x6
+   gates 10  w = x0+x1+x2+x4+x5+x6
+   gates 10  w = x0+x1+x2+x3+x4+x5+x6
+   gates 10  w = x0+x1+x2+x3+x7
+   gates 10  w = x1+x3+x5+x7
+   gates 10  w = x1+x2+x3+x5+x7
+   gates 10  w = x0+x1+x2+x3+x5+x7
+   gates 10  w = x0+x1+x4+x5+x7
+   gates 10  w = x1+x3+x4+x5+x7
+   gates 10  w = x0+x1+x3+x4+x5+x7
+   gates 10  w = x0+x1+x2+x3+x4+x5+x7
+   gates 10  w = x2+x3+x6+x7
+   gates 10  w = x1+x2+x3+x6+x7
+   gates 10  w = x0+x1+x2+x3+x6+x7
+   gates 10  w = x0+x2+x4+x6+x7
+   gates 10  w = x2+x3+x4+x6+x7
+   gates 10  w = x0+x2+x3+x4+x6+x7
+   gates 10  w = x0+x1+x2+x3+x4+x6+x7
+   gates 10  w = x1+x3+x5+x6+x7
+   gates 10  w = x2+x3+x5+x6+x7
+   gates 10  w = x1+x2+x3+x5+x6+x7
+   gates 10  w = x0+x1+x2+x3+x5+x6+x7
+   gates 10  w = x4+x5+x6+x7
+   gates 10  w = x1+x4+x5+x6+x7
+   gates 10  w = x0+x1+x4+x5+x6+x7
+   gates 10  w = x2+x4+x5+x6+x7
+   gates 10  w = x0+x2+x4+x5+x6+x7
+   gates 10  w = x0+x1+x2+x4+x5+x6+x7
+   gates 10  w = x3+x4+x5+x6+x7
+   gates 10  w = x1+x3+x4+x5+x6+x7
+   gates 10  w = x0+x1+x3+x4+x5+x6+x7
+   gates 10  w = x2+x3+x4+x5+x6+x7
+   gates 10  w = x0+x2+x3+x4+x5+x6+x7
+   gates 10  w = x1+x2+x3+x4+x5+x6+x7
+LIGHT label=ab5-free exit=0 time=20s waited=0s peak_rss_mb=31 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=04:58:29 cmd=python3 -B freeform8.py

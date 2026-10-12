@@ -1,0 +1,2 @@
+N = 16 tight wires: 1072 per level: [16, 240, 560, 240, 16]
+tight pairs with level difference >= 3: 7936 ; non-tight points of such a line that lie on a second tight line: 0  (derived: 0)

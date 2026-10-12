@@ -1,0 +1,3 @@
+p=3: coefficient choices tried 1073741824 ; choices giving all 8 rows: 0 ; most rows obtained by any choice: 6
+LIGHT label=ac0-lift3 exit=0 time=17s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:27:38 cmd=./lift3 3
+exit 0

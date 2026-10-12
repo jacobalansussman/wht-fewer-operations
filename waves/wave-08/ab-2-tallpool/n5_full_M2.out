@@ -1,0 +1,13 @@
+# orbits=1  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:1 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# orbits=2  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:2 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# orbits=3  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:2 h=4:1 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# orbits=8  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:5 h=4:3 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# orbits=11  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:8 h=4:3 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+# orbits=18  forms helpers histogram: h=0:0 h=1:0 h=2:0 h=3:15 h=4:3 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 0
+done

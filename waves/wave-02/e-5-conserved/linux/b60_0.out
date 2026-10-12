@@ -1,0 +1,1 @@
+budget 60 gates q in [2, 4, 8] seed 500: best Phi 55.0455 of 64 at cost 60, 8 gates of sizes [2, 2, 4, 4, 4, 4, 4, 8], 156116 iterations

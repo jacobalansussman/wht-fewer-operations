@@ -1,0 +1,17 @@
+machine: mac; Darwin 25.6.0 arm64
+compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+build scalar: cc -std=c11 -O2 -fno-vectorize -fno-slp-vectorize -o bench_pass_scalar bench_pass.c -lm
+start: Sun Oct 11 10:12:48 EDT 2026
+load: 10:12  up 40 days, 16:32, 6 users, load averages: 4.83 4.94 5.50
+# bench_pass: one 8-point pass over 2048 doubles, 9 rounds; ns per point for one pass, copy taken off
+# PASS stride t8_min t8_med o8_min o8_med o8s_min o8s_med  o8/t8  o8s/t8  shortest_loop_s
+PASS 1 0.1968 0.1977 0.1775 0.1804 0.2326 0.2344  0.902  1.182  0.113
+PASS 2 0.2415 0.2440 0.2276 0.2299 0.2848 0.2845  0.943  1.179  0.114
+PASS 4 0.2345 0.2369 0.2186 0.2264 0.2683 0.2794  0.932  1.144  0.114
+PASS 8 0.2189 0.2330 0.2136 0.2186 0.2617 0.2686  0.976  1.196  0.117
+PASS 16 0.2299 0.2400 0.2286 0.2299 0.2713 0.2816  0.994  1.180  0.117
+PASS 64 0.2441 0.2457 0.2293 0.2400 0.2844 0.2863  0.939  1.165  0.112
+PASS 256 0.2351 0.2413 0.2213 0.2295 0.2694 0.2763  0.941  1.146  0.112
+CHECK OK: at every stride the new pass gave half the textbook pass, exactly
+end: Sun Oct 11 10:13:21 EDT 2026
+load: 10:13  up 40 days, 16:32, 6 users, load averages: 4.75 4.91 5.47

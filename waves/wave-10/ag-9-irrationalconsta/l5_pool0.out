@@ -1,0 +1,11 @@
+p=5 N=8 W=18 pool=0 seed=501 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=502 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=503 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=504 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=505 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=506 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=507 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=508 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=509 T0=0.2: least number of underivable wires 2 after 3000000 moves
+p=5 N=8 W=18 pool=0 seed=510 T0=0.2: least number of underivable wires 2 after 3000000 moves
+LIGHT label=ag9-l5 exit=124 time=282s waited=0s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>280s start=08:34:02 cmd=./batch.sh 5 18 seed8_19.txt 0 0.2 3000000 501 512

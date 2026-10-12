@@ -1,0 +1,1 @@
+LIGHT label=u3-go2a exit=0 time=101s waited=62s peak_rss_mb=5 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=02:03:00 cmd=./go2.sh a

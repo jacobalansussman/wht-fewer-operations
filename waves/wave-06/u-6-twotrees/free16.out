@@ -1,0 +1,43 @@
+== (c) FREE metric (no agreement), hub = all-plus = output 0; 0 and 8 rounds of extra vertices
+-- one tree (8 4 2 1)
+  held tree wires (node, pattern) other than singles: 14 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 32 shifts (lower bound for these centres: 16) ; with 0 extra vertices: 32 shifts
+  distances hub0 -> outputs: 8 4 8 2 8 4 8 1 8 4 8 2 8 4 8
+  distances output0 -> outputs: 0 8 4 8 2 8 4 8 1 8 4 8 2 8 4
+  shifts <= 32 ; held tree wires 14
+-- two trees (8 4 2 1), (2 1 8 4)
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 18 shifts (lower bound for these centres: 9) ; with 0 extra vertices: 18 shifts
+  distances hub0 -> outputs: 2 1 2 2 4 3 4 1 3 2 3 2 4 3 4
+  distances output0 -> outputs: 0 2 1 4 2 4 3 3 1 3 2 4 2 4 3
+  shifts <= 18 ; held tree wires 28
+-- two trees (8 4 2 1), (1 2 4 8) [reversed order]
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 18 shifts (lower bound for these centres: 9) ; with 0 extra vertices: 18 shifts
+  distances hub0 -> outputs: 1 2 2 2 3 4 4 1 2 3 3 2 3 4 4
+  distances output0 -> outputs: 0 2 2 3 2 4 4 2 1 3 3 3 2 4 4
+  shifts <= 18 ; held tree wires 28
+-- three trees (8 4 2 1), (2 1 8 4), (4 1 8 2)
+  held tree wires (node, pattern) other than singles: 42 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 16 shifts (lower bound for these centres: 8) ; with 0 extra vertices: 16 shifts
+  distances hub0 -> outputs: 2 1 2 1 2 2 3 1 3 2 3 2 3 3 4
+  distances output0 -> outputs: 0 2 1 2 1 3 2 3 1 3 2 3 2 4 3
+  shifts <= 16 ; held tree wires 42
+-- four trees, one per bit: (8 4 2 1) (4 2 1 8) (2 1 8 4) (1 8 4 2)
+  held tree wires (node, pattern) other than singles: 56 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 15 shifts (lower bound for these centres: 8) ; with 0 extra vertices: 15 shifts
+  distances hub0 -> outputs: 1 1 2 1 2 2 3 1 2 2 3 2 3 3 4
+  distances output0 -> outputs: 0 2 1 2 1 3 2 2 1 3 2 3 2 4 3
+  shifts <= 15 ; held tree wires 56
+-- two trees, second OBLIQUE: rows (8 4 2 1) and (2+8, 1+4, 8, 4)
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 18 shifts (lower bound for these centres: 9) ; with 0 extra vertices: 18 shifts
+  distances hub0 -> outputs: 4 2 4 2 2 3 3 1 4 1 4 2 3 3 2
+  distances output0 -> outputs: 0 4 2 2 2 3 3 4 1 4 1 3 2 2 3
+  shifts <= 18 ; held tree wires 28
+-- two trees, second oblique: rows (8 4 2 1) and (2, 1, 8, 4) composed with bit3->bit3+bit1: (3 1 8 4)
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 16
+  MST of terminals: 18 shifts (lower bound for these centres: 9) ; with 0 extra vertices: 18 shifts
+  distances hub0 -> outputs: 2 2 1 2 4 4 3 1 3 3 2 2 4 4 3
+  distances output0 -> outputs: 0 1 2 4 2 3 4 3 1 2 3 4 2 3 4
+  shifts <= 18 ; held tree wires 28

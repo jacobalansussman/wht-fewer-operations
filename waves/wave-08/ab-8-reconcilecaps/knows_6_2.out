@@ -1,0 +1,18 @@
+class (6,2): 651 subspaces of dimension 2, ports (meet their perpendicular only in 0): 336  by type {'alt': 80, 'gen': 240, 'one': 16}   [0s]
+   star sets: X_odd = 4 odd words pairwise overlapping oddly; X_even = 5 even words pairwise overlapping oddly
+   a port of type alt knows: {'alt': 4, 'gen': 12, 'one': 4}
+   a port of type gen knows: {'alt': 4, 'gen': 16}
+   a port of type one knows: {'alt': 20}
+   type alt :      80 ports ; star X_odd holds       0, star X_even holds      30  ->  kappa <= 2.667
+   type gen :     240 ports ; star X_odd holds      60, star X_even holds      40  ->  kappa <= 4.000
+   type one :      16 ports ; star X_odd holds       4, star X_even holds       0  ->  kappa <= 4.000
+   knows graph built: 336 ports, degrees [20]
+   ALL:   336 ports; largest set with no two knowing each other: >= 91 (search not finished) (greedy 91)  ->  size/alpha = 3.692
+   alt:    80 ports; largest set with no two knowing each other: >= 40 (search not finished) (greedy 40)  ->  size/alpha = 2.000
+   gen:   240 ports; largest set with no two knowing each other: >= 64 (search not finished) (greedy 64)  ->  size/alpha = 3.750
+   one:    16 ports; largest set with no two knowing each other: 16 EXACT (greedy 16)  ->  size/alpha = 1.000
+TYPE 6 2 alt 2.0000
+TYPE 6 2 gen 3.7500
+TYPE 6 2 one 1.0000
+CEIL 6 2 6.7500   (every sub-family, types mixed: sum of the per-type ceilings)
+   [8s]

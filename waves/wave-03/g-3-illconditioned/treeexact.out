@@ -1,0 +1,7 @@
+8 points, two tree letters: a +-1 matrix with orthogonal rows: True; rows closed under entry-by-entry product after normalising (so it is the Walsh-Hadamard matrix up to relabelling and signs): True
+16 points, two tree letters: a +-1 matrix with orthogonal rows: True; rows closed under entry-by-entry product after normalising (so it is the Walsh-Hadamard matrix up to relabelling and signs): True
+c = 1: second shift 1/9; (B1 + c J)(B2 - c' J) equals B1 B2 exactly: True
+c = 1/3: second shift 1/11; (B1 + c J)(B2 - c' J) equals B1 B2 exactly: True
+c = -1/9: second shift -1; (B1 + c J)(B2 - c' J) equals B1 B2 exactly: True
+c = -1001/8000: second shift 1001/8; (B1 + c J)(B2 - c' J) equals B1 B2 exactly: True
+LIGHT label=g3-treeexact exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:21:33 cmd=python3 -B treeexact.py

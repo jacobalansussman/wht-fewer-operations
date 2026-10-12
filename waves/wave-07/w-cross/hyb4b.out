@@ -1,0 +1,12 @@
+k=2 N=4: moves with entries <= 3, bases with entries <= 3, depth reached 6: 108 pairs (A, D) up to column order and sign; wrong: 0
+  non-zeros of Z: 9 ; histogram of non-zeros: [(9, 12), (10, 16), (11, 16), (12, 24), (13, 16), (14, 12), (15, 8), (16, 4)]
+  diagonals met (sorted entries: count): [((-2, -1, 2, 4), 34), ((-4, -2, 1, 2), 34), ((-2, -2, 1, 4), 20), ((-4, -1, 2, 2), 20)]
+  sparsest: D = (1, -2, -2, 4)  rows = [(1, 0, 0, 0), (1, 1, 0, 0), (1, 0, 1, 0), (1, 1, 1, 1)]
+  sparsest: D = (2, -1, -2, 4)  rows = [(-1, 1, 0, 0), (0, -1, 0, 0), (-1, 1, 1, 0), (0, -1, 1, 1)]
+  x-8's alternating basis (columns up to order and sign) among them: False
+k=3 N=8: moves with entries <= 2, bases with entries <= 2, depth reached 3: 274 pairs (A, D) up to column order and sign; wrong: 0
+  non-zeros of Z: 27 ; histogram of non-zeros: [(27, 123), (30, 87), (31, 6), (32, 18), (33, 33), (34, 6), (36, 1)]
+  diagonals met (sorted entries: count): [((-8, -4, -2, -2, 1, 2, 4, 4), 75), ((-4, -4, -2, -1, 2, 2, 4, 8), 36), ((-8, -2, -2, -1, 2, 4, 4, 4), 21), ((-4, -2, -2, -2, 1, 4, 4, 8), 21), ((-8, -4, -2, -1, 2, 2, 4, 4), 18), ((-8, -4, -4, -2, 1, 2, 2, 4), 18)]
+  sparsest: D = (1, -2, -2, 4, -2, 4, 4, -8)  rows = [(1, 0, 0, 0, 0, 0, 0, 0), (1, 1, 0, 0, 0, 0, 0, 0), (1, 0, 1, 0, 0, 0, 0, 0), (1, 1, 1, 1, 0, 0, 0, 0), (1, 0, 0, 0, 1, 0, 0, 0), (1, 1, 0, 0, 1, 1, 0, 0), (1, 0, 1, 0, 1, 0, 1, 0), (1, 1, 1, 1, 1, 1, 1, 1)]
+  sparsest: D = (2, -1, -2, 4, -2, 4, 4, -8)  rows = [(-1, 1, 0, 0, 0, 0, 0, 0), (0, -1, 0, 0, 0, 0, 0, 0), (-1, 1, 1, 0, 0, 0, 0, 0), (0, -1, 1, 1, 0, 0, 0, 0), (-1, 1, 0, 0, 1, 0, 0, 0), (0, -1, 0, 0, 1, 1, 0, 0), (-1, 1, 1, 0, 1, 0, 1, 0), (0, -1, 1, 1, 1, 1, 1, 1)]
+LIGHT label=wcross-hyb4b exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:32:16 cmd=python3 -B hyb4b.py

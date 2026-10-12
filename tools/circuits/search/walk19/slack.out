@@ -1,0 +1,3 @@
+N = 8: 9105 random gates (3561 with P >= N^2/2): s s' < N: 0; s(out) > (1 + 2P/N) min s(in): 0 (largest ratio 0.727); 'largest support <= sum of the other two' fails (either side): 0
+N = 16: 18675 random gates (2478 with P >= N^2/2): s s' < N: 0; s(out) > (1 + 2P/N) min s(in): 0 (largest ratio 0.727); 'largest support <= sum of the other two' fails (either side): 0
+N = 32: 37870 random gates (911 with P >= N^2/2): s s' < N: 0; s(out) > (1 + 2P/N) min s(in): 0 (largest ratio 0.727); 'largest support <= sum of the other two' fails (either side): 0

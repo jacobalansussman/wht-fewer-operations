@@ -1,0 +1,16 @@
+   C5 (0 combinations): True
+brick word, read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [0, 0, 0, 0] kinds []; u defined [False, False, False, False]; C1 True  C2 True  C3 True;  C4: 112 pairs (R, R') with the rank property, 0 violations, 112 with equality
+   C5 (8 combinations): True
+brick word, read as 8 x 2 (blocks meet in 0 or 2 wires): shape 8 x 2; wires per cell [[2, 0, 2, 0, 2, 0, 2, 0], [0, 2, 0, 2, 0, 2, 0, 2]]; exceptional cells per block [4, 4] kinds ['q']; u defined [False, False]; C1 True  C2 True  C3 True;  C4: 484 pairs (R, R') with the rank property, 0 violations, 0 with equality
+   C5 (12 combinations): True
+talking word c = 1/3, pi = [1, 2, 3, 5], rho = [1, 0, 0, 0], read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [4, 0, 0, 0] kinds ['q']; u defined [False, True, True, True]; C1 True  C2 True  C3 True;  C4: 52 pairs (R, R') with the rank property, 0 violations, 30 with equality
+   C5 (12 combinations): True
+talking word c = -2/7, pi = [1, 1, 1, 1], rho = [2, 1, -1, 3], read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [0, 0, 0, 0] kinds []; u defined [True, True, True, True]; C1 True  C2 True  C3 True;  C4: 40 pairs (R, R') with the rank property, 0 violations, 40 with equality
+   C5 (12 combinations): True
+talking word c = 5, pi = [0, 1, 0, 2], rho = [1, 1, 0, 0], read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [0, 0, 0, 0] kinds []; u defined [False, True, False, True]; C1 True  C2 True  C3 True;  C4: 76 pairs (R, R') with the rank property, 0 violations, 76 with equality
+   C5 (9 combinations): True
+character-direction word c = 1/2, u = chi_1 (x) [1, 2, 3, 5], read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [1, 1, 1, 1] kinds ['u']; u defined [True, True, True, True]; C1 True  C2 True  C3 True;  C4: 40 pairs (R, R') with the rank property, 0 violations, 40 with equality
+   C5 (9 combinations): True
+character-direction word c = -3/5, u = chi_3 (x) [1, 1, 2, 1], read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [1, 1, 1, 1] kinds ['u']; u defined [True, True, True, True]; C1 True  C2 True  C3 True;  C4: 40 pairs (R, R') with the rank property, 0 violations, 40 with equality
+   C5 (9 combinations): True
+character-direction word c = 2, u = chi_2 (x) [1, -1, 1, 3], read as 4 x 4: shape 4 x 4; wires per cell [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]; exceptional cells per block [1, 1, 1, 1] kinds ['u']; u defined [True, True, True, True]; C1 True  C2 True  C3 True;  C4: 40 pairs (R, R') with the rank property, 0 violations, 40 with equality

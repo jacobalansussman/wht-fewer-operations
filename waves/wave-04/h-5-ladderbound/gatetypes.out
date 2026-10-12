@@ -1,0 +1,2 @@
+pool_q.txt gates (collinear triples): 4672 by type: {'I': 480, 'II': 3168, 'III': 1024, 'none': 0}
+births against width of the wider parent, (births, width): count -> [((0, 1), 1440), ((0, 2), 8352), ((1, 1), 288), ((1, 2), 3216), ((2, 2), 720)] ; violations of births <= width: 0

@@ -1,0 +1,7 @@
+# on the Linux machine, in a folder with k.c, asmcount.py and a copy of c/kernels.h:
+# gcc -std=c11 -O3 -march=native -S -o k_native.s k.c ; python3 asmcount.py k_native.s
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  -march=                     		broadwell
+t8   widest loop: 41 instructions; add/sub/mul on ymm: 24 (of which with a memory operand: 8); fma: 0; vmov loads: 6; vmov stores: 8; lines touching the stack: 0
+o8   widest loop: 35 instructions; add/sub/mul on ymm: 20 (of which with a memory operand: 10); fma: 0; vmov loads: 4; vmov stores: 8; lines touching the stack: 0
+o8s  widest loop: 43 instructions; add/sub/mul on ymm: 28 (of which with a memory operand: 10); fma: 0; vmov loads: 4; vmov stores: 8; lines touching the stack: 0

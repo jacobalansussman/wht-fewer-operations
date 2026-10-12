@@ -1,0 +1,1 @@
+LIGHT label=u3-angs5-11 exit=0 time=178s waited=0s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:58:48 cmd=./angs.sh 5 11 3000000 0.5 t32_tau52.txt

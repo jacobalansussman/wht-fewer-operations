@@ -1,0 +1,14 @@
+(1) 16 points, exclusive-or program: gates = 57 ; all 20 line sums right modulo 2: True
+    same wiring, whole numbers, every coefficient +1: lines right = 11 of 20
+(2) rationals       : lines lin(m,c) inside the span of their five feeding line sums: 0 of 9
+(2) modulo 3        : lines lin(m,c) inside the span of their five feeding line sums: 0 of 9
+(2) modulo 5        : lines lin(m,c) inside the span of their five feeding line sums: 0 of 9
+(2) modulo 7        : lines lin(m,c) inside the span of their five feeding line sums: 0 of 9
+(2) modulo 2        : lines lin(m,c) inside the span of their five feeding line sums: 9 of 9
+    rank of the 20 x 16 matrix: rationals 16, modulo 2: 9, modulo 3: 16
+(3) paid-for program over the whole numbers (coefficients 1, -1, 2): gates = 87 ; all 20 line sums right exactly: True
+    shortest relation among lines modulo 2 at 16 points: 5 lines
+(4) 64 points: rank modulo 2 = 27 ; modulo 3 = 64 ; modulo 2147483647 = 64 (so the rank over the rationals is 64: a rank modulo a prime never exceeds the rational rank, and 64 is the number of columns)
+    all sums of at most 4 lines modulo 2 are distinct: True  (so every relation modulo 2 has at least 9 lines)
+    the nine lines  y = m x + m^2 (all m)  and  x = 0  add to zero modulo 2: True ; a line of 8 points from the other 8 costs 7 gates, the same as adding its points
+LIGHT label=af1-lift exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:42:12 cmd=python3 -B lift.py

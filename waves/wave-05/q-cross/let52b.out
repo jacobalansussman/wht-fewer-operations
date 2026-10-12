@@ -1,0 +1,11 @@
+h-1 second 52 (slp16_52_from54): 16 points, 52 gates (G) and 0 free copies; exact replay: every row of the transform is a wire: True
+   1 letter(s): no assignment; search EXHAUSTIVE (1983 nodes)
+   fewest letters found: 2
+   letter 1: 30 gates (14 up, 16 down); rectangles 20 + 8 pass-throughs = 28; wires leaving it: 19
+   letter 2: 22 gates (10 up, 12 down); rectangles 20 + 5 pass-throughs = 25; wires leaving it: 16
+h-8 three-hub 21: 8 points, 21 gates (G) and 0 free copies; exact replay: every row of the transform is a wire: True
+   1 letter(s): no assignment; search EXHAUSTIVE (91 nodes)
+   fewest letters found: 2
+   letter 1: 12 gates (6 up, 6 down); rectangles 10 + 2 pass-throughs = 12; wires leaving it: 8
+   letter 2: 9 gates (4 up, 5 down); rectangles 9 + 3 pass-throughs = 12; wires leaving it: 8
+LIGHT label=qcross-let exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:14:25 cmd=python3 -B let52b.py

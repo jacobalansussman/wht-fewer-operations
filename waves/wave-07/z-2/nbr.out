@@ -1,0 +1,11 @@
+k=2 N=4: pairing program 2 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 2;  textbook transform N k = 8;  gates per point 0.50;  most common neighbours of 2 addresses: 2, of 3: 0
+k=3 N=8: pairing program 12 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 12;  textbook transform N k = 24;  gates per point 1.50;  most common neighbours of 2 addresses: 2, of 3: 1
+k=4 N=16: pairing program 32 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 32;  textbook transform N k = 64;  gates per point 2.00;  most common neighbours of 2 addresses: 2, of 3: 1
+k=5 N=32: pairing program 96 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 96;  textbook transform N k = 160;  gates per point 3.00;  most common neighbours of 2 addresses: 2, of 3: 1
+k=6 N=64: pairing program 224 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 224;  textbook transform N k = 384;  gates per point 3.50;  most common neighbours of 2 addresses: 2, of 3: 1
+k=7 N=128: pairing program 576 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 576;  textbook transform N k = 896;  gates per point 4.50;  most common neighbours of 2 addresses: 2, of 3: not run
+k=8 N=256: pairing program 1280 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 1280;  textbook transform N k = 2048;  gates per point 5.00;  most common neighbours of 2 addresses: not run, of 3: not run
+k=9 N=512: pairing program 3072 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 3072;  textbook transform N k = 4608;  gates per point 6.00;  most common neighbours of 2 addresses: not run, of 3: not run
+k=10 N=1024: pairing program 6656 gates, outputs exact: True;  lower bound N(k-1-floor(k/2)/2) = 6656;  textbook transform N k = 10240;  gates per point 6.50;  most common neighbours of 2 addresses: not run, of 3: not run
+LIGHT label=z2-nbr exit=0 time=1s waited=4s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:00:50 cmd=python3 -B nbr.py
+exit 0

@@ -1,0 +1,18 @@
+## waited 887 s for the lock (one hold for all runs)
+## MBUF=64 taskset -c 1 b/reftime 5 6 T,G19
+## before: 2026-10-11 17:04:17 UTC; load 4.32 4.44 4.76 4/522 946504
+##    pid 839050 99.9% cpu5 nice5 python3
+##    pid 839938 99.9% cpu2 nice5 python3
+##    pid 839000 99.9% cpu0 nice5 python3
+# cycle counter: 2.1998 GHz against the monotonic clock over the run of 202.2 s
+S k=6 arrays=64 bytes=256 G=163989 R=32 cpu=1 sibling=5 sibling_busy=57% loadavg_at_start=[4.32 4.44 4.76 4/522 946507]
+V k=6 T        min=0.4186 med=0.4277 max=0.6518 ns/point  shortest_loop=8.997s  all: 0.6518 0.5508 0.4219 0.4186 0.4245 0.6041 0.4277 0.4246 0.5119
+V k=6 G19      min=0.4232 med=0.4935 max=0.7334 ns/point  shortest_loop=9.097s  all: 0.6213 0.6383 0.4232 0.4614 0.4650 0.6474 0.4935 0.4321 0.7334
+P k=6 G19/T best/best=1.0111 med/med=1.1539  repeat-by-repeat: min=0.9532 med=1.0955 max=1.4328
+## exit 0
+## after: 2026-10-11 17:07:40 UTC; load 5.99 5.01 4.91 6/532 949046
+##    pid 839050 99.9% cpu2 nice5 python3
+##    pid 839938 99.9% cpu6 nice5 python3
+##    pid 839000 99.9% cpu0 nice5 python3
+##    pid 948902 99.4% cpu3 nice15 cc1
+##    pid 948996 98.9% cpu5 nice10 bench_vec

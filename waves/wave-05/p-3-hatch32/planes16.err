@@ -1,0 +1,2 @@
+LIGHT label=p3-planes16 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:21:45 cmd=python3 -B planes16.py
+rc=0

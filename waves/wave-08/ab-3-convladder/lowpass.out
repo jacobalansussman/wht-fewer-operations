@@ -1,0 +1,11 @@
+== family: spectrum 1 on weights <= d, 0 above (lightest outputs there and back); circuits built and replayed ==
+gates (G); 'per point' = gates / N
+k=2 N=4: d=0:3(0.75)ok  d=1:11(2.75)ok  d=2:8(2.00)ok
+k=3 N=8: d=0:7(0.88)ok  d=1:30(3.75)ok  d=2:35(4.38)ok  d=3:24(3.00)ok
+k=4 N=16: d=0:15(0.94)ok  d=1:69(4.31)ok  d=2:97(6.06)ok  d=3:91(5.69)ok  d=4:64(4.00)ok
+k=5 N=32: d=0:31(0.97)ok  d=1:148(4.62)ok  d=2:230(7.19)ok  d=3:252(7.88)ok  d=4:219(6.84)ok  d=5:160(5.00)ok
+k=6 N=64: d=0:63(0.98)ok  d=1:307(4.80)ok  d=2:506(7.91)ok  d=3:610(9.53)ok  d=4:599(9.36)ok  d=5:507(7.92)ok  d=6:384(6.00)ok
+k=7 N=128: d=0:127(0.99)ok  d=1:626(4.89)ok  d=2:1069(8.35)ok  d=3:1372(10.72)ok  d=4:1465(11.45)ok  d=5:1362(10.64)ok  d=6:1147(8.96)ok  d=7:896(7.00)ok
+k=8 N=256: d=0:255(1.00)ok  d=1:1265(4.94)ok  d=2:2207(8.62)ok  d=3:2953(11.54)ok  d=4:3349(13.08)ok  d=5:3339(13.04)ok  d=6:3021(11.80)ok  d=7:2555(9.98)ok  d=8:2048(8.00)ok
+LIGHT label=ab3-lowpass exit=0 time=70s waited=2s peak_rss_mb=25 peak_footprint_mb=20 lowest_cap_mb=1500 stopped=- start=04:55:40 cmd=python3 -B ladder.py lowpass 8
+lowpass exit 0

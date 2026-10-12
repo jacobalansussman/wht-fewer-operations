@@ -1,0 +1,19 @@
+kernel [[1,2],[3,4]]  tau = ad/(bc) = 2/3
+  k=2 N=4   gates 7    rate 0.8750  textbook 8     all 4 outputs proportional to their rows: True  | distinct |ratio| 4, largest 1, smallest 1/3 | own-scale largest integer: 1 digits
+  k=3 N=8   gates 20   rate 0.8333  textbook 24    all 8 outputs proportional to their rows: True  | distinct |ratio| 5, largest 3/2, smallest 1/3 | own-scale largest integer: 2 digits
+  k=4 N=16  gates 52   rate 0.8125  textbook 64    all 16 outputs proportional to their rows: True  | distinct |ratio| 6, largest 3/2, smallest 2/9 | own-scale largest integer: 2 digits
+  k=5 N=32  gates 128  rate 0.8000  textbook 160   all 32 outputs proportional to their rows: True  | distinct |ratio| 6, largest 3/2, smallest 2/9 | own-scale largest integer: 2 digits
+  k=6 N=64  gates 304  rate 0.7917  textbook 384   all 64 outputs proportional to their rows: True  | distinct |ratio| 6, largest 3/2, smallest 2/9 | own-scale largest integer: 3 digits
+kernel [[2,7],[5,3]]  tau = ad/(bc) = 6/35
+  k=2 N=4   gates 7    rate 0.8750  textbook 8     all 4 outputs proportional to their rows: True  | distinct |ratio| 4, largest 29/6, smallest 6/35 | own-scale largest integer: 3 digits
+  k=3 N=8   gates 20   rate 0.8333  textbook 24    all 8 outputs proportional to their rows: True  | distinct |ratio| 5, largest 35/6, smallest 6/35 | own-scale largest integer: 3 digits
+  k=4 N=16  gates 52   rate 0.8125  textbook 64    all 16 outputs proportional to their rows: True  | distinct |ratio| 6, largest 35/6, smallest 174/1225 | own-scale largest integer: 4 digits
+  k=5 N=32  gates 128  rate 0.8000  textbook 160   all 32 outputs proportional to their rows: True  | distinct |ratio| 6, largest 35/6, smallest 174/1225 | own-scale largest integer: 5 digits
+  k=6 N=64  gates 304  rate 0.7917  textbook 384   all 64 outputs proportional to their rows: True  | distinct |ratio| 6, largest 35/6, smallest 174/1225 | own-scale largest integer: 6 digits
+kernel [[1,100],[1,1]]  tau = ad/(bc) = 1/100
+  k=2 N=4   gates 7    rate 0.8750  textbook 8     all 4 outputs proportional to their rows: True  | distinct |ratio| 4, largest 99, smallest 1/100 | own-scale largest integer: 4 digits
+  k=3 N=8   gates 20   rate 0.8333  textbook 24    all 8 outputs proportional to their rows: True  | distinct |ratio| 5, largest 100, smallest 1/100 | own-scale largest integer: 5 digits
+  k=4 N=16  gates 52   rate 0.8125  textbook 64    all 16 outputs proportional to their rows: True  | distinct |ratio| 6, largest 100, smallest 99/10000 | own-scale largest integer: 7 digits
+  k=5 N=32  gates 128  rate 0.8000  textbook 160   all 32 outputs proportional to their rows: True  | distinct |ratio| 6, largest 100, smallest 99/10000 | own-scale largest integer: 9 digits
+  k=6 N=64  gates 304  rate 0.7917  textbook 384   all 64 outputs proportional to their rows: True  | distinct |ratio| 6, largest 100, smallest 99/10000 | own-scale largest integer: 11 digits
+LIGHT label=p0-ns exit=0 time=4s waited=0s peak_rss_mb=15 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:19:55 cmd=sh -c python3 -B nonsym.py 6 1 2 3 4; python3 -B nonsym.py 6 2 7 5 3; python3 -B nonsym.py 6 1 100 1 1

@@ -1,0 +1,20 @@
+PART 1: lemma against exhaustive search (excess-0 depth only)
+  n=3 trees=3: sets tested 11, agree 11, disagree 0; zero-excess sets by m: [(2, 6), (3, 4), (4, 1)]
+  n=4 trees=15: sets tested 154, agree 154, disagree 0; zero-excess sets by m: [(2, 28), (3, 48), (4, 68)]
+PART 2: explicit circuits, exact
+  all 4 sign patterns of 3 inputs: gates 5 = (n-1) + (2^(n-1)-1) = 5, correct True
+  all 8 sign patterns of 4 inputs: gates 10 = (n-1) + (2^(n-1)-1) = 10, correct True
+  all 16 sign patterns of 5 inputs: gates 19 = (n-1) + (2^(n-1)-1) = 19, correct True
+  all 32 sign patterns of 6 inputs: gates 36 = (n-1) + (2^(n-1)-1) = 36, correct True
+  all 64 sign patterns of 7 inputs: gates 69 = (n-1) + (2^(n-1)-1) = 69, correct True
+  G3 det 4 ; G3 zero excess by lemma: True
+  H2 x G3: gates 13 rows found [True, True, True, True, True, True] ; product rule 2*4 + 3*2 = 14; baseline 5 + 5 = 10
+PART 3: is the excess of a product ever 0?  (lemma, 945 trees on 6 wires)
+  H2 x G3          rows 6 inputs 6: zero excess False
+  G3 x H2          rows 6 inputs 6: zero excess False
+  H2 x R           rows 8 inputs 6: zero excess False
+  R x H2           rows 8 inputs 6: zero excess False
+  2 rows of H2xG3  rows 3 inputs 6: zero excess True
+  R x H2  : largest zero-excess row set has 4 of 8 rows
+  H2 x G3 : largest zero-excess row set has 3 of 6 rows
+LIGHT label=d-6-gray exit=0 time=18s waited=2s peak_rss_mb=27 peak_footprint_mb=24 lowest_cap_mb=1500 stopped=- start=21:33:11 cmd=/usr/bin/python3 -B gray.py

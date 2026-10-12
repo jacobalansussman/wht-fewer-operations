@@ -1,0 +1,1 @@
+LIGHT label=x6-quadric exit=0 time=1s waited=22s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:45:47 cmd=python3 -I -B quadric120.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-e8-r783.json.gz

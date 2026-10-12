@@ -1,0 +1,2 @@
+quarter16.txt  N=16     operations=64      (+ 28, - 26, * 10; constants {1/2: 10})  textbook=64      outputs = 1/4 * (row j of H), j in Sylvester order: A OK, B OK
+LIGHT label=n0-q16 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:15:00 cmd=python3 -B check.py quarter16.txt

@@ -1,0 +1,1 @@
+LIGHT label=u3-span8g exit=0 time=12s waited=0s peak_rss_mb=7 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=02:08:04 cmd=./span8g.sh

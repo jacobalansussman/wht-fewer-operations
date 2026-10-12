@@ -1,0 +1,5 @@
+the ports are exactly the 9-bit words of weight 3 modulo 4: True (120 words); the other odd words: 136
+B^2 + 8B - 128 = 0: False
+B^2 - 8B - 128 = 0: True
+trace of B: -120 ; so if B^2 - 8B - 128 = 0 the eigenvalues are 16 (n times) and -8 (120 - n times) with 16n - 8(120 - n) = trace: n = 35.0
+entries +1 off the diagonal per row (the pairs that know each other): [56]

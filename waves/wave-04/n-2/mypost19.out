@@ -1,0 +1,7 @@
+K = 19 ; vectors before symmetry: 6000
+16 moves: 1 classes; clique-excluded 1, zero-form-excluded 0, survive 0; largest joined set histogram [(16, 1)]
+17 moves: 3 classes; clique-excluded 3, zero-form-excluded 0, survive 0; largest joined set histogram [(15, 2), (16, 1)]
+18 moves: 12 classes; clique-excluded 12, zero-form-excluded 0, survive 0; largest joined set histogram [(14, 3), (15, 6), (16, 3)]
+19 moves: 54 classes; clique-excluded 53, zero-form-excluded 1, survive 0; largest joined set histogram [(4, 1), (8, 2), (13, 5), (14, 16), (15, 23), (16, 7)]
+    ZERO  00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:2 11010:2 11100:2 11111:1  tight 27, largest joined set 4  (5, 3, ['01011', '01101', '11001', '11111'], ['01011', '01101', '11111'])
+LIGHT label=n2-p19 exit=0 time=6s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=01:11:50 cmd=python3 -B mypost.py 19 l19.txt

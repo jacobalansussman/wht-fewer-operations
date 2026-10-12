@@ -1,0 +1,1 @@
+LIGHT label=ad3-k6S4 exit=0 time=106s waited=0s peak_rss_mb=4 peak_footprint_mb=3 lowest_cap_mb=1500 stopped=- start=06:50:05 cmd=./k6s S 6000 4

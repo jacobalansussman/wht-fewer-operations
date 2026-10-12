@@ -1,0 +1,2 @@
+LIGHT label=z-1-z10 exit=0 time=46s waited=0s peak_rss_mb=51 peak_footprint_mb=48 lowest_cap_mb=1500 stopped=- start=05:01:25 cmd=python3 -B z10.py
+z10 exit 0

@@ -1,0 +1,10 @@
+  d=16 plain / plain                          differences applied 1x each side: non-zeros  202 of 256   gates (G) 216
+  d=16 plain / plain                          differences applied 2x each side: non-zeros  224 of 256   gates (G) 268
+  d=16 Gray / Gray                            differences applied 1x each side: non-zeros  128 of 256   gates (G) 142
+  d=16 Gray / Gray                            differences applied 2x each side: non-zeros  197 of 256   gates (G) 241
+  d=16 Gray / bit-reversed Gray               differences applied 1x each side: non-zeros   89 of 256   gates (G) 103
+  d=16 Gray / bit-reversed Gray               differences applied 2x each side: non-zeros  174 of 256   gates (G) 218
+  d=16 plain / bit-reversed                   differences applied 1x each side: non-zeros   87 of 256   gates (G) 101
+  d=16 plain / bit-reversed                   differences applied 2x each side: non-zeros  176 of 256   gates (G) 220
+  d=16 field-log / field-log (trace form)     differences applied 1x each side: non-zeros  172 of 256   gates (G) 186
+  d=16 field-log / field-log (trace form)     differences applied 2x each side: non-zeros  217 of 256   gates (G) 261

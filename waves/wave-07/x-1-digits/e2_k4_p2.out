@@ -1,0 +1,16 @@
+== rows=rows_e2_k4.txt p=2 m=3
+p=2 n=12 rows=16 non-input distinct targets=15  intermediates allowed m=3  => gate budget 18
+visited states by remaining budget: j=3:1 j=2:96 j=1:5976
+RESULT p=2: NO circuit with 18 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:38:23 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 3 rows_e2_k4.txt
+== rows=rows_e2_k4.txt p=2 m=4
+p=2 n=12 rows=16 non-input distinct targets=15  intermediates allowed m=4  => gate budget 19
+visited states by remaining budget: j=4:1 j=3:96 j=2:5976 j=1:738765
+RESULT p=2: NO circuit with 19 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=5s waited=0s peak_rss_mb=35 peak_footprint_mb=36 lowest_cap_mb=1500 stopped=- start=03:38:24 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 4 rows_e2_k4.txt
+== rows=rows_e2_k4.txt p=2 m=5
+LIGHT label=x1-e2 exit=124 time=243s waited=0s peak_rss_mb=25 peak_footprint_mb=25 lowest_cap_mb=1500 stopped=time>240s start=03:38:29 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 5 rows_e2_k4.txt
+== rows=rows_e2_k4.txt p=2 m=6
+LIGHT label=x1-e2 exit=124 time=243s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>240s start=03:42:32 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 6 rows_e2_k4.txt
+== rows=rows_e2_k4.txt p=2 m=7
+LIGHT label=x1-e2 exit=124 time=243s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=time>240s start=03:46:35 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 7 rows_e2_k4.txt

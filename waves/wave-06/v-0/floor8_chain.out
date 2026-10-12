@@ -1,0 +1,9 @@
+tree=chain (cube tree)  sets of four-wires examined (size<=6, both sides non-empty): 14400
+  |F|=2: least number of full wires = 13 (attained by 64 sets)  -> gates >= 4 + 2 + 13 = 19
+  |F|=3: least number of full wires = 12 (attained by 64 sets)  -> gates >= 4 + 3 + 12 = 19
+  |F|=4: least number of full wires = 10 (attained by 16 sets)  -> gates >= 4 + 4 + 10 = 18
+  |F|=5: least number of full wires = 10 (attained by 160 sets)  -> gates >= 4 + 5 + 10 = 19
+  |F|=6: least number of full wires = 9 (attained by 8 sets)  -> gates >= 4 + 6 + 9 = 19
+  least |F| + full wires over all sets = 14 (16 sets)  => every circuit of the class on this tree has >= 18 gates (partners not charged)
+  (|F| >= 7 gives >= 4 + 7 + 8 without computation)
+LIGHT label=v0-floor8c exit=0 time=25s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=03:24:26 cmd=./floor8 0 6

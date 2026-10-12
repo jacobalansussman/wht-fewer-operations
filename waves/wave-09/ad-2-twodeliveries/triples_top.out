@@ -1,0 +1,8 @@
+# n=8 two-element field, count (G): Z without free forms = 12 gates
+255 15 51 T : 5
+255 15 51 85 T : 3
+255 15 240 T : 7
+255 15 51 204 T : 5
+15 51 85 T : 7
+255 15 51 85 3 T : 2
+255 15 51 85 3 5 17 T : 0

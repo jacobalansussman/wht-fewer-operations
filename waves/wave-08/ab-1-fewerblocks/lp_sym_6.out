@@ -1,0 +1,13 @@
+m = 6 : 2097152 forms in 450 orbits ; block forms: 284 orbits ; characters with <Q,I> = 1: 215 orbits   [18 s]
+   least moves per live array (LP):  3.937500   (plain schedule: 6 ; ratio 0.6562)
+   least blocks per live array (LP): 2.000000   (plain schedule: 2)
+      z = 1.00 : least price per live array 0.656250
+      z = 0.95 : least price per live array 0.717756
+      z = 0.90 : least price per live array 0.785027
+      z = 0.80 : least price per live array 0.939073
+      z = 0.70 : least price per live array 1.123349
+      z = 0.50 : least price per live array 1.321119
+   the LP price reaches 1 at z = 0.764916 : the character inequalities allow no saving above 0.235084 in the sub-game at block size 6
+   minimising fractional unit just above that z, by rank: blocks per array {1: 3.9375} ; total blocks 3.9375 ; moves 3.9375
+   minimising fractional unit for moves, by rank: {1: 3.9375}
+   [30 s]

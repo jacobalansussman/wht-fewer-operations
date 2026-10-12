@@ -1,0 +1,31 @@
+zeta [[1,1],[1,0]]     N=  4 rank r= 1  non-zeros    9  | non-zero columns N'= 3 distinct read points D= 1 | non-zero rows N''= 3 distinct write points D'= 1
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 9   floors: read 2  write 0  final adds 3  => route >= 5 ; textbook of the route's matrix: see report
+zeta [[1,1],[1,0]]     N= 16 rank r= 6  non-zeros   89  | non-zero columns N'=15 distinct read points D=11 | non-zero rows N''=15 distinct write points D'=11
+                              perpendicular (write i, read j) pairs among non-zero ones: 136 of 225   floors: read 14  write 5  final adds 15  => route >= 34 ; textbook of the route's matrix: see report
+zeta [[1,1],[1,0]]     N= 64 rank r=28  non-zeros  777  | non-zero columns N'=63 distinct read points D=57 | non-zero rows N''=63 distinct write points D'=57
+                              perpendicular (write i, read j) pairs among non-zero ones: 3192 of 3969   floors: read 64  write 29  final adds 63  => route >= 156 ; textbook of the route's matrix: see report
+mirror image [[0,1],[1,1]] N=  4 rank r= 1  non-zeros    9  | non-zero columns N'= 3 distinct read points D= 1 | non-zero rows N''= 3 distinct write points D'= 1
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 9   floors: read 2  write 0  final adds 3  => route >= 5 ; textbook of the route's matrix: see report
+mirror image [[0,1],[1,1]] N= 16 rank r= 6  non-zeros   89  | non-zero columns N'=15 distinct read points D=11 | non-zero rows N''=15 distinct write points D'=11
+                              perpendicular (write i, read j) pairs among non-zero ones: 136 of 225   floors: read 14  write 5  final adds 15  => route >= 34 ; textbook of the route's matrix: see report
+mirror image [[0,1],[1,1]] N= 64 rank r=28  non-zeros  777  | non-zero columns N'=63 distinct read points D=57 | non-zero rows N''=63 distinct write points D'=57
+                              perpendicular (write i, read j) pairs among non-zero ones: 3192 of 3969   floors: read 64  write 29  final adds 63  => route >= 156 ; textbook of the route's matrix: see report
+[[1,1],[1,2]]          N=  4 rank r= 1  non-zeros   16  | non-zero columns N'= 4 distinct read points D= 1 | non-zero rows N''= 4 distinct write points D'= 1
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 16   floors: read 3  write 0  final adds 4  => route >= 7 ; textbook of the route's matrix: see report
+[[1,1],[1,2]]          N= 16 rank r= 6  non-zeros  252  | non-zero columns N'=16 distinct read points D=16 | non-zero rows N''=16 distinct write points D'=16
+                              perpendicular (write i, read j) pairs among non-zero ones: 4 of 256   floors: read 20  write 10  final adds 16  => route >= 46 ; textbook of the route's matrix: see report
+[[1,1],[1,2]]          N= 64 rank r=28  non-zeros 4096  | non-zero columns N'=64 distinct read points D=64 | non-zero rows N''=64 distinct write points D'=64
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 4096   floors: read 72  write 36  final adds 64  => route >= 172 ; textbook of the route's matrix: see report
+transform [[1,1],[1,-1]] N=  4 rank r= 1  non-zeros   16  | non-zero columns N'= 4 distinct read points D= 1 | non-zero rows N''= 4 distinct write points D'= 1
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 16   floors: read 3  write 0  final adds 4  => route >= 7 ; textbook of the route's matrix: see report
+transform [[1,1],[1,-1]] N= 16 rank r= 6  non-zeros  256  | non-zero columns N'=16 distinct read points D=16 | non-zero rows N''=16 distinct write points D'=16
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 256   floors: read 20  write 10  final adds 16  => route >= 46 ; textbook of the route's matrix: see report
+transform [[1,1],[1,-1]] N= 64 rank r=28  non-zeros 4096  | non-zero columns N'=64 distinct read points D=64 | non-zero rows N''=64 distinct write points D'=64
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 4096   floors: read 72  write 36  final adds 64  => route >= 172 ; textbook of the route's matrix: see report
+[[1,2],[3,4]]          N=  4 rank r= 1  non-zeros   16  | non-zero columns N'= 4 distinct read points D= 1 | non-zero rows N''= 4 distinct write points D'= 1
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 16   floors: read 3  write 0  final adds 4  => route >= 7 ; textbook of the route's matrix: see report
+[[1,2],[3,4]]          N= 16 rank r= 6  non-zeros  256  | non-zero columns N'=16 distinct read points D=16 | non-zero rows N''=16 distinct write points D'=16
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 256   floors: read 20  write 10  final adds 16  => route >= 46 ; textbook of the route's matrix: see report
+[[1,2],[3,4]]          N= 64 rank r=28  non-zeros 4096  | non-zero columns N'=64 distinct read points D=64 | non-zero rows N''=64 distinct write points D'=64
+                              perpendicular (write i, read j) pairs among non-zero ones: 0 of 4096   floors: read 72  write 36  final adds 64  => route >= 172 ; textbook of the route's matrix: see report
+LIGHT label=p2-struct exit=0 time=1s waited=52s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:11:00 cmd=python3 -B mir.py struct

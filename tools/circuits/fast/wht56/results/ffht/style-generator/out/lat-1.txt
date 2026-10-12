@@ -1,0 +1,76 @@
+## locked_run.sh: taskset -c 0 kloop/lat 9
+## pinned to processor 0 (siblings: 0,4)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 17:01:40 UTC; uptime: 17:01:40 up 23:10,  0 user,  load average: 4.43, 4.52, 4.84
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   6   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   1   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+# lat: processor 0; 9 repeats; each test: 5000000 turns of 12 dependent instructions
+L repeat=0 test=vaddps ns_per_instruction=1.6104 ns_per_cycle=0.3796 cycles_per_instruction=4.242
+L repeat=0 test=vsubps ns_per_instruction=1.9097 ns_per_cycle=0.3838 cycles_per_instruction=4.976
+L repeat=0 test=vaddpd ns_per_instruction=1.8210 ns_per_cycle=0.4337 cycles_per_instruction=4.198
+L repeat=0 test=vmulps ns_per_instruction=1.5189 ns_per_cycle=0.3818 cycles_per_instruction=3.978
+L repeat=0 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.8966 ns_per_cycle=0.3817 cycles_per_instruction=4.968
+L repeat=0 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.9046 ns_per_cycle=0.3885 cycles_per_instruction=4.902
+L repeat=1 test=vaddps ns_per_instruction=1.9037 ns_per_cycle=0.3835 cycles_per_instruction=4.964
+L repeat=1 test=vsubps ns_per_instruction=1.9190 ns_per_cycle=0.4082 cycles_per_instruction=4.700
+L repeat=1 test=vaddpd ns_per_instruction=1.6863 ns_per_cycle=0.3828 cycles_per_instruction=4.405
+L repeat=1 test=vmulps ns_per_instruction=1.5140 ns_per_cycle=0.3814 cycles_per_instruction=3.970
+L repeat=1 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.8981 ns_per_cycle=0.3826 cycles_per_instruction=4.961
+L repeat=1 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.5634 ns_per_cycle=0.3815 cycles_per_instruction=4.098
+L repeat=2 test=vaddps ns_per_instruction=1.9006 ns_per_cycle=0.3820 cycles_per_instruction=4.975
+L repeat=2 test=vsubps ns_per_instruction=1.9110 ns_per_cycle=0.3825 cycles_per_instruction=4.996
+L repeat=2 test=vaddpd ns_per_instruction=1.9025 ns_per_cycle=0.3820 cycles_per_instruction=4.981
+L repeat=2 test=vmulps ns_per_instruction=1.5165 ns_per_cycle=0.3818 cycles_per_instruction=3.972
+L repeat=2 test=vfmadd132ps(through-the-factor) ns_per_instruction=2.0956 ns_per_cycle=0.3845 cycles_per_instruction=5.451
+L repeat=2 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.9063 ns_per_cycle=0.3829 cycles_per_instruction=4.978
+L repeat=3 test=vaddps ns_per_instruction=1.9145 ns_per_cycle=0.3877 cycles_per_instruction=4.938
+L repeat=3 test=vsubps ns_per_instruction=1.6607 ns_per_cycle=0.3843 cycles_per_instruction=4.322
+L repeat=3 test=vaddpd ns_per_instruction=1.9074 ns_per_cycle=0.3841 cycles_per_instruction=4.966
+L repeat=3 test=vmulps ns_per_instruction=1.5266 ns_per_cycle=0.3877 cycles_per_instruction=3.937
+L repeat=3 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.6702 ns_per_cycle=0.3824 cycles_per_instruction=4.367
+L repeat=3 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.6453 ns_per_cycle=0.3832 cycles_per_instruction=4.293
+L repeat=4 test=vaddps ns_per_instruction=1.6304 ns_per_cycle=0.4039 cycles_per_instruction=4.037
+L repeat=4 test=vsubps ns_per_instruction=1.8713 ns_per_cycle=0.3863 cycles_per_instruction=4.844
+L repeat=4 test=vaddpd ns_per_instruction=1.7261 ns_per_cycle=0.3866 cycles_per_instruction=4.465
+L repeat=4 test=vmulps ns_per_instruction=1.5269 ns_per_cycle=0.3847 cycles_per_instruction=3.969
+L repeat=4 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.9166 ns_per_cycle=0.3849 cycles_per_instruction=4.980
+L repeat=4 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.5817 ns_per_cycle=0.3842 cycles_per_instruction=4.117
+L repeat=5 test=vaddps ns_per_instruction=1.8530 ns_per_cycle=0.3878 cycles_per_instruction=4.778
+L repeat=5 test=vsubps ns_per_instruction=1.7747 ns_per_cycle=0.3811 cycles_per_instruction=4.657
+L repeat=5 test=vaddpd ns_per_instruction=1.6090 ns_per_cycle=0.3843 cycles_per_instruction=4.187
+L repeat=5 test=vmulps ns_per_instruction=1.5181 ns_per_cycle=0.3829 cycles_per_instruction=3.965
+L repeat=5 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.8959 ns_per_cycle=0.3847 cycles_per_instruction=4.928
+L repeat=5 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.5599 ns_per_cycle=0.3826 cycles_per_instruction=4.077
+L repeat=6 test=vaddps ns_per_instruction=1.6208 ns_per_cycle=0.3803 cycles_per_instruction=4.262
+L repeat=6 test=vsubps ns_per_instruction=1.8192 ns_per_cycle=0.3836 cycles_per_instruction=4.742
+L repeat=6 test=vaddpd ns_per_instruction=1.5773 ns_per_cycle=0.3840 cycles_per_instruction=4.108
+L repeat=6 test=vmulps ns_per_instruction=1.5370 ns_per_cycle=0.3828 cycles_per_instruction=4.015
+L repeat=6 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.9009 ns_per_cycle=0.3823 cycles_per_instruction=4.972
+L repeat=6 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.5660 ns_per_cycle=0.3844 cycles_per_instruction=4.074
+L repeat=7 test=vaddps ns_per_instruction=1.5360 ns_per_cycle=0.3873 cycles_per_instruction=3.965
+L repeat=7 test=vsubps ns_per_instruction=1.6184 ns_per_cycle=0.3819 cycles_per_instruction=4.237
+L repeat=7 test=vaddpd ns_per_instruction=1.6267 ns_per_cycle=0.3776 cycles_per_instruction=4.308
+L repeat=7 test=vmulps ns_per_instruction=1.5116 ns_per_cycle=0.3759 cycles_per_instruction=4.021
+L repeat=7 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.8993 ns_per_cycle=0.3763 cycles_per_instruction=5.047
+L repeat=7 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.8816 ns_per_cycle=0.3775 cycles_per_instruction=4.984
+L repeat=8 test=vaddps ns_per_instruction=1.5500 ns_per_cycle=0.3766 cycles_per_instruction=4.116
+L repeat=8 test=vsubps ns_per_instruction=1.8795 ns_per_cycle=0.3770 cycles_per_instruction=4.985
+L repeat=8 test=vaddpd ns_per_instruction=1.8712 ns_per_cycle=0.3803 cycles_per_instruction=4.920
+L repeat=8 test=vmulps ns_per_instruction=1.5085 ns_per_cycle=0.3816 cycles_per_instruction=3.953
+L repeat=8 test=vfmadd132ps(through-the-factor) ns_per_instruction=1.6949 ns_per_cycle=0.3847 cycles_per_instruction=4.406
+L repeat=8 test=vfmadd231ps(through-the-addend) ns_per_instruction=1.7875 ns_per_cycle=0.3851 cycles_per_instruction=4.641
+L best test=vaddps cycles_per_instruction=3.965
+L best test=vsubps cycles_per_instruction=4.237
+L best test=vaddpd cycles_per_instruction=4.108
+L best test=vmulps cycles_per_instruction=3.937
+L best test=vfmadd132ps(through-the-factor) cycles_per_instruction=4.367
+L best test=vfmadd231ps(through-the-addend) cycles_per_instruction=4.074
+L best ns_per_cycle=0.3759 (2.660 GHz)
+## exit code 0
+## after: 2026-10-11 17:01:50 UTC; uptime: 17:01:50 up 23:10,  0 user,  load average: 4.37, 4.50, 4.83
+## after: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   1   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334

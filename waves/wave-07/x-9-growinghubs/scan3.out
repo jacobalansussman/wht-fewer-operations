@@ -1,0 +1,7 @@
+k 3 values per level 22 runs 484 every run replayed exactly as H
+  gates 20: 2 schedules; e.g. 1,1  -1,1
+  gates 24: 62 schedules; e.g. 1,-1  1,i  1,-i  1,2  1,-2  1,1/2
+  gates 28: 420 schedules; e.g. i,-1  i,i  i,-i  i,2  i,-2  i,1/2
+  ALL schedules with the least count 20: 1,1  -1,1
+LIGHT label=x9s3 exit=0 time=24s waited=0s peak_rss_mb=21 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=04:05:28 cmd=python3 -B scan.py 3
+exit 0

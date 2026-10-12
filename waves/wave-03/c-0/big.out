@@ -1,0 +1,7 @@
+[G] 8 points: 19 gates, every output y_j equals row j of H_8 exactly (factor 1): True
+[G] entries of all 19 wires in the inputs: absolute values [0, 1] ; coefficients used: [1, 2]
+[O] 8 points: 20 gates (19 add/sub, 1 scale); computes exactly H_8 / 2: True
+[O] 1024 points, plan (3, 3, 3, 1): 9728 gates (8320 add/sub, 1408 scale), computes exactly H_1024: True ; textbook 10240 ; my formula 20*(n/8)*m + n*(k-3m) + n = 9728 ; Alman-Rao's published count 23/24 n k + (n/24)(k mod 3) + n - 1 = 10879
+[O] 4096 points, plan (3, 3, 3, 3): 45056 gates (38912 add/sub, 6144 scale), computes exactly H_4096: True ; textbook 49152 ; my formula 20*(n/8)*m + n*(k-3m) + n = 45056 ; Alman-Rao's published count 23/24 n k + (n/24)(k mod 3) + n - 1 = 51199
+LIGHT label=c0-big exit=0 time=11s waited=38s peak_rss_mb=443 peak_footprint_mb=348 lowest_cap_mb=1500 stopped=- start=00:10:46 cmd=python3 -B big.py 10 12
+exit 0

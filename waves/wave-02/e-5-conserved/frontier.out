@@ -1,0 +1,15 @@
+budget 12 gates q in [2, 4, 5, 6, 7, 8] seed 712: best Phi 13.6862 of 64 at cost 12, 1 gates of sizes [6], 694085 iterations
+budget 12 gates q in [2, 4] seed 812: best Phi 12.0000 of 64 at cost 12, 3 gates of sizes [2, 2, 4], 409790 iterations
+budget 24 gates q in [2, 4, 5, 6, 7, 8] seed 724: best Phi 27.3724 of 64 at cost 24, 2 gates of sizes [6, 6], 438691 iterations
+budget 24 gates q in [2, 4] seed 824: best Phi 24.0000 of 64 at cost 24, 6 gates of sizes [2, 2, 2, 2, 4, 4], 277966 iterations
+budget 36 gates q in [2, 4, 5, 6, 7, 8] seed 736: best Phi 40.6603 of 64 at cost 36, 3 gates of sizes [5, 6, 7], 323829 iterations
+budget 36 gates q in [2, 4] seed 836: best Phi 36.0000 of 64 at cost 36, 6 gates of sizes [2, 2, 4, 4, 4, 4], 186480 iterations
+budget 48 gates q in [2, 4, 5, 6, 7, 8] seed 748: best Phi 50.4520 of 64 at cost 48, 8 gates of sizes [2, 2, 2, 2, 4, 5, 5, 6], 275719 iterations
+budget 48 gates q in [2, 4] seed 848: best Phi 48.0000 of 64 at cost 48, 9 gates of sizes [2, 2, 2, 2, 4, 4, 4, 4, 4], 154272 iterations
+budget 52 gates q in [2, 4, 5, 6, 7, 8] seed 752: best Phi 53.3493 of 64 at cost 52, 9 gates of sizes [2, 2, 2, 2, 2, 4, 5, 6, 6], 270376 iterations
+budget 52 gates q in [2, 4] seed 852: best Phi 52.0000 of 64 at cost 52, 14 gates of sizes [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4], 158768 iterations
+budget 56 gates q in [2, 4, 5, 6, 7, 8] seed 756: best Phi 55.0885 of 64 at cost 56, 11 gates of sizes [2, 2, 2, 2, 2, 2, 2, 4, 5, 5, 7], 241907 iterations
+budget 56 gates q in [2, 4] seed 856: best Phi 56.0000 of 64 at cost 56, 10 gates of sizes [2, 2, 2, 2, 4, 4, 4, 4, 4, 4], 130654 iterations
+budget 60 gates q in [2, 4, 5, 6, 7, 8] seed 760: best Phi 54.8802 of 64 at cost 60, 9 gates of sizes [2, 2, 2, 2, 4, 5, 5, 5, 7], 227456 iterations
+budget 60 gates q in [2, 4] seed 860: best Phi 60.0000 of 64 at cost 60, 9 gates of sizes [2, 2, 4, 4, 4, 4, 4, 4, 4], 120342 iterations
+LIGHT label=e5-frontier exit=0 time=239s waited=0s peak_rss_mb=14 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=22:42:24 cmd=sh frontier.sh

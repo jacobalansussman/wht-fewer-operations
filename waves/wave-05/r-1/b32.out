@@ -1,0 +1,2 @@
+p-1's design 'bound32': rows 16.0  columns 16.0  B = 32.0
+LIGHT label=r1b32 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:38:46 cmd=python3 -B b32.py

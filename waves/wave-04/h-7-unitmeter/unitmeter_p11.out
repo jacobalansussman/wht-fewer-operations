@@ -1,0 +1,40 @@
+certificate: h=22 v=1320 R=9412  (registers: 1320 x, 1320 y, 9412 slots), replayed exactly, scalar identity holds
+
+(1) blocks and moves of ONE invocation, by class and by t = number of sources the register mixes at that time
+    class            t=0         t=1         t=2       t=3-4       t=5-8      t=9-16     t=17-32     t=33-64t=65-1000000       total
+    x blocks           0        1320           0        2640           0           0           0           0           0        3960
+    x moves            0        2640           0       25080           0           0           0           0           0       27720
+    y blocks           0           0           0           0           0           0           0           0        5280        5280
+    y moves            0           0           0           0           0           0           0           0       27720       27720
+    s blocks        9412        3960        7753        8273        5229        4729        7556        4285        9710       60907
+    s moves        27730        3960       36141       38826       28354       23760       19846       10126       18321      207064
+    c blocks           0           0           0           0           0           0           0           0          22          22
+    c moves            0           0           0           0           0           0           0           0         440         440
+    all moves of one invocation: 262944 (certificate N = 262944, of which the copies cst = 440)
+    moves on a single source (t=1): 6600;  on a mixture (t>=2): 228614;  on a register with no x-content (t=0): 27730
+    sum over mixture moves of log2 t = 883168.4   (the L2 budget of these wires, per f*n, is this number)
+    sum over mixture moves of (t-1) = 26702306   (moves that the sharing would save if nothing had to be undone)
+    largest t ever held: x 4, y 1316, s 616; the 8 totals mix [180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180]
+    y registers right after the scatter mix: [(885, 1320)]
+    mean rank of a block by t: t=0: 2.95, t=1: 1.25, t=2: 4.66, t=3-4: 5.86, t=5-8: 5.42, t=9-16: 5.02, t=17-32: 2.63, t=33-64: 2.36, t=65-1000000: 3.10
+    mixture moves by the dimension d of the label BEFORE the block: d=0: 23760, d=2: 3960, d=3: 75990, d=4: 5440, d=5: 19881, d=6: 6388, d=7: 10618, d=8: 8317, d=9: 5355, d=10: 7127, d=11: 2862, d=12: 5550, d=13: 1674, d=14: 3896, d=15: 5044, d=16: 4673, d=17: 4939, d=18: 6234, d=19: 15510, d=20: 7436, d=21: 3960
+
+(2) additions of ONE invocation (one term a*u into v = n gates (G); sign changes are free in (G))
+    by (source class -> target class): c->y 29040, s->s 32971, s->y 10230, x->s 1320, x->x 5940, x->y 1320;  total 80821
+    additions whose result is a mixture (t>=2): 74221; whose result is a single source or empty: 6600
+    additions that CANCEL (result mixes fewer sources than its larger operand): 22750
+
+(3) fan-out: how many addition terms read one wire state (register at one frame with one content)
+    histogram {reads: states}: [(1, 34216), (2, 4864), (3, 1591), (4, 436), (8, 165)]
+    each scratch copy of a total is read by: [1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320, 1320] targets
+    most-read register states inside the gate lists: s10541 read 8 times, s4776 read 8 times, s11089 read 8 times, s10585 read 8 times, s10424 read 8 times
+
+(4) one UNIT = five invocations + idle blocks of the twins (as R/tools/whatif_copies.py builds it)
+    W = 14692 arrays, m = 110, plain 1616120 moves, unit 1613040 moves, D = 3080 moves saved
+    additions per unit (five invocations; the free gates between twins are NOT in the certificate): >= 404105
+    count (G), arrays of n = 2^(110 f) points, blocks done by the textbook:
+       textbook  W*m*f*n = 1616120 f n ;  unit  (1613040 f + 404105) n ;  saved  (3080 f - 404105) n
+       first f with a positive saving: 132  (arrays of 2^14520 points)
+    over-limit wires (t>=2) per unit: (1143070 f + 371105) n ;  L1 ratio saved/over-limit -> 3080/1143070 = 0.00269 as f grows
+    L2 budget per unit: (1/2) sum log2(t^2) = 4415842 f n ;  saved/budget -> 0.000697
+    share count per unit: 133511530 ;  D / share = 0.000023

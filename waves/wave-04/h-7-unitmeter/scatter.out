@@ -1,0 +1,10 @@
+entries of the totals T (8 x 120): [(Fraction(-1, 1), 196), (Fraction(0, 1), 504), (Fraction(1, 1), 252), (Fraction(2, 1), 8)]
+entries of the scatter table C (120 x 8): [(Fraction(-1, 2), 28), (Fraction(-1, 6), 448), (Fraction(0, 1), 224), (Fraction(1, 3), 224), (Fraction(1, 2), 36)]
+M = C T (120 x 120): diagonal entries [(Fraction(1, 1), 120)] ; off-diagonal [(Fraction(-1, 2), 3360), (Fraction(0, 1), 7560), (Fraction(1, 2), 3360)]
+rank T = 8  rank C = 8  rank M = 8  rank (M - I) = 120
+M symmetric: True
+M*M = lambda*M with lambda = 15 : True
+non-zero off-diagonal entry <=> the two port words overlap in an even number of places: True
+port weights: [(3, 84), (7, 36)]
+the 'knows' graph: degree [(56, 120)] ; common neighbours of a knowing pair {28: 3360} , of a non-knowing pair {24: 3780}
+frames (subspaces of F_2^9) in the table: 946; used: 946; of the used ones, not spanned by coordinate vectors in the stored basis: 944; by dimension: [(0, 1), (1, 120), (2, 151), (3, 165), (4, 47), (5, 27), (6, 143), (7, 171), (8, 120), (9, 1)]

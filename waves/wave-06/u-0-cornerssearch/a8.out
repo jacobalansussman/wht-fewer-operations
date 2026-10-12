@@ -1,0 +1,5 @@
+start 23 (by columns 23)
+N=8 restart=0 best=13 recount rows=13 cols=13 final cur=13
+BEST 8 nnz 13 gates 19
+rows [3, 2, 0, 6, 4, 5, 1, 7] r []
+cols [2, 6, 4, 5, 7, 3, 1, 0] c []

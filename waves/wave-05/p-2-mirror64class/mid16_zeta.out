@@ -1,0 +1,29 @@
+  [read] targets 11 in dimension 6; collinear triples of targets: 0
+  [read] four targets in a plane, no three on a line (4-term relations): 11
+  [read] pool (points on at least two secants): 19 ; by number of secants through them: [(2, 12), (3, 7)]
+  [read] collinear triples in targets + pool: 69
+  [read] x = 0: helper sets tried 1; (helper set, start set) pairs that generate everything: 0
+  [read] x = 1: helper sets tried 19; (helper set, start set) pairs that generate everything: 0
+  [read] x = 2: helper sets tried 171; (helper set, start set) pairs that generate everything: 0
+  [read] x = 3: helper sets tried 969; (helper set, start set) pairs that generate everything: 50280
+  [write] targets 11 in dimension 6; collinear triples of targets: 0
+  [write] four targets in a plane, no three on a line (4-term relations): 11
+  [write] pool (points on at least two secants): 19 ; by number of secants through them: [(2, 12), (3, 7)]
+  [write] collinear triples in targets + pool: 69
+  [write] x = 0: helper sets tried 1; (helper set, start set) pairs that generate everything: 0
+  [write] x = 1: helper sets tried 19; (helper set, start set) pairs that generate everything: 0
+  [write] x = 2: helper sets tried 171; (helper set, start set) pairs that generate everything: 0
+  [write] x = 3: helper sets tried 969; (helper set, start set) pairs that generate everything: 50280
+x = 3  x' = 3
+pairing table (write point s against read point t, targets first, then pool): non-zeros per write point: [20, 20, 20, 11, 20, 16, 16, 20, 16, 16, 11, 17, 14, 14, 19, 14, 14, 19, 14, 23, 14, 23, 14, 23, 14, 23, 25, 25, 25, 25]
+distinct read start sets 11786  distinct write start sets 11786
+rows of the middle with >= 2 non-zeros, histogram over all pairs (99 = a zero row): [(1, 2620), (2, 143436), (3, 2676928), (4, 21037016), (5, 63673728), (6, 51376068)]
+least: 1 heavy rows, 7 non-zeros; read start ['c0', 'c1', 'c2', 'c4', (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0), (0, 0, 1, 0, 0, 0, 1, 0, -1, -1, 0, 0, 0, 0, 0, 0)] ; write start ['e1', 'e3', 'e4', 'e5', 'e6', 'e10']
+middle table:
+    ['1', '0', '0', '1', '0', '0']
+    ['0', '0', '0', '1', '0', '0']
+    ['0', '1', '0', '0', '0', '0']
+    ['0', '0', '-1', '0', '0', '0']
+    ['0', '0', '0', '0', '0', '1']
+    ['0', '0', '0', '0', '1', '0']
+LIGHT label=p2-mid16 exit=0 time=353s waited=18s peak_rss_mb=32 peak_footprint_mb=28 lowest_cap_mb=1500 stopped=- start=00:26:07 cmd=python3 -B mid16.py 1 1 1 0

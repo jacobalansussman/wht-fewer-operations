@@ -1,0 +1,7 @@
+# tallmin NN=4 m=5 pool(height<=3)=1116 candidates targets=36 group=384 MLAST=1000 full=0 hcap=5
+SAVE targets: (1,-1,-1,-1) (0,1,-1,-1) (0,1,0,-1) (1,1,0,0) (1,0,-1,1)  forms: 2 helpers = (1,1,-1,-1) (1,0,-1,0)  | tall: 1 helpers = (1,2,-1,-1)
+SAVE targets: (1,0,-1,-1) (1,0,0,-1) (0,1,0,-1) (1,-1,1,0) (1,1,0,1)  forms: 2 helpers = (0,1,-1,-1) (1,1,0,0)  | tall: 1 helpers = (2,-1,0,-1)
+SAVE targets: (1,0,-1,-1) (1,0,0,-1) (0,1,1,-1) (1,-1,1,0) (1,1,0,1)  forms: 3 helpers = (1,-1,-1,-1) (1,-1,0,-1) (1,-1,-1,0)  | tall: 2 helpers = (0,1,0,-1) (2,-1,0,-1)
+# orbits=2408  forms helpers histogram: h=0:432 h=1:1389 h=2:571 h=3:16 h=4:0 h=5:0  above cap=0
+# target sets (orbits) where a tall wire saves a gate: 3
+./tallmin4 5 3 1000 0  0.19s user 0.00s system 99% cpu 0.197 total

@@ -1,0 +1,2 @@
+LIGHT label=p8xA exit=0 time=147s waited=0s peak_rss_mb=5 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:32:24 cmd=sh -c ./dw2 3 3 < inx_top14.txt > outx_top14.txt
+LIGHT label=p8xB exit=0 time=84s waited=0s peak_rss_mb=5 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:34:52 cmd=sh -c ./dw2 3 3 < inx_sib190.txt > outx_sib190.txt

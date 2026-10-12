@@ -1,0 +1,11 @@
+one pair: b H4 b^-1 = [[1, 1, 1, 0], [2, 0, -2, 0], [1, -1, 1, 0], [0, 0, 0, -2]]
+pairs=1 N=4  B^-1 M B == H: True   nnz(M)=9 (2.250 per entry)
+pairs=2 N=16  B^-1 M B == H: True   nnz(M)=81 (5.062 per entry)
+pairs=3 N=64  B^-1 M B == H: True   nnz(M)=729 (11.391 per entry)
+exact determinant of the valence-bond basis S (it cancels between in and out; the transform's own is 2^(kN/2))
+   k=2 |det S| = 2 = {2: 1}   log2/N = 0.2500   (transform: k/2 = 1.0)
+   k=3 |det S| = 9 = {3: 2}   log2/N = 0.3962   (transform: k/2 = 1.5)
+   k=4 |det S| = 768 = {2: 8, 3: 1}   log2/N = 0.5991   (transform: k/2 = 2.0)
+   k=5 |det S| = 16402500 = {2: 2, 3: 8, 5: 4}   log2/N = 0.7490   (transform: k/2 = 2.5)
+   k=6 |det S| = 676302730297344000 = {2: 38, 3: 9, 5: 3}   log2/N = 0.9255   (transform: k/2 = 3.0)
+LIGHT label=d-7-spin-pairs exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:34:35 cmd=python3 -B pairs.py

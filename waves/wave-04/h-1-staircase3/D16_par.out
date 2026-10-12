@@ -1,0 +1,16 @@
+targets 16
+start: helpers 40 dead 0 missing 0 gates 56
+t=0s it=653: circuit with 55 gates
+t=0s it=657: circuit with 54 gates
+t=0s it=3493: circuit with 53 gates
+t=0s it=4573: circuit with 52 gates
+t=0s it=5162: circuit with 51 gates
+t=0s it=13101: circuit with 50 gates
+t=0s it=32131: circuit with 49 gates
+t=0s it=58228: circuit with 48 gates
+t=19s it=3066532: circuit with 47 gates
+t=45s it=6220278: circuit with 46 gates
+t=46s it=6301897: circuit with 45 gates
+t=59s it=7538759: circuit with 44 gates
+done: 24347648 moves, 733352 accepted, best 44 gates; feasible states visited by gate count: 44:3357 45:11929 46:15969 47:12261 48:7152 49:4197 50:2334 51:1461 52:819 53:392 54:185 55:79 56:26 57:28 58:16 59:7 60:2
+LIGHT label=h1-D16par exit=0 time=200s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:15:27 cmd=./sa2 4 seed16_textbook.txt 200 61 0.30 sol16_D_par.txt 1 3 tg16_D_par.txt

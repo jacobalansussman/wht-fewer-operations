@@ -1,0 +1,29 @@
+K=4 subspaces 67 flats 1072 (signed)
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 6 neg 0] [dim 1 sup 110 neg 0] 
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 12 neg 0] [dim 1 sup 104 neg 0] 
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 14 neg 0] [dim 1 sup 102 neg 0] 
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 4002 neg 4000] [dim 2 sup 4114 neg 0] 
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 2004 neg 2000] [dim 2 sup 2112 neg 0] 
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 810 neg 800] [dim 2 sup 906 neg 0] 
+   3 signed flats: [dim 0 sup 1 neg 0] [dim 1 sup 180 neg 100] [dim 2 sup 96 neg 0] 
+   3 signed flats: [dim 0 sup 2 neg 0] [dim 0 sup 4 neg 0] [dim 1 sup 110 neg 0] 
+   3 signed flats: [dim 0 sup 2 neg 0] [dim 0 sup 10 neg 0] [dim 1 sup 104 neg 0] 
+   3 signed flats: [dim 0 sup 2 neg 0] [dim 0 sup 100 neg 0] [dim 1 sup 14 neg 0] 
+   3 signed flats: [dim 0 sup 2 neg 0] [dim 0 sup 4000 neg 0] [dim 2 sup 4114 neg 0] 
+   3 signed flats: [dim 0 sup 2 neg 0] [dim 1 sup 6 neg 0] [dim 1 sup 110 neg 0] 
+K=4: 1072 signed flats (up to sign). pairs spanning g: 7. covering triples: 204746640. triples spanning g: 8394, of which unsigned: 1022
+   dims (0,0,1) in enumeration order: 6
+   dims (0,0,2) in enumeration order: 4
+   dims (0,1,1) in enumeration order: 60
+   dims (0,1,2) in enumeration order: 84
+   dims (1,1,1) in enumeration order: 882
+   dims (1,1,2) in enumeration order: 2976
+   dims (1,1,3) in enumeration order: 723
+   dims (1,1,4) in enumeration order: 48
+   dims (1,2,2) in enumeration order: 2514
+   dims (1,2,3) in enumeration order: 984
+   dims (1,2,4) in enumeration order: 64
+   dims (1,3,3) in enumeration order: 12
+   dims (2,2,2) in enumeration order: 34
+   dims (2,2,3) in enumeration order: 3
+LIGHT label=ad4-ctl exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:30:49 cmd=./fr 4 exh

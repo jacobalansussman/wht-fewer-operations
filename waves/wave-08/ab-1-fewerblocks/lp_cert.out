@@ -1,0 +1,6 @@
+m = 3 : float optimum 3.000000 ; rounded dual weights: 3 characters used, denominators [1], total 3 = 3.000000
+   exact check over all 28 block forms: largest (load / rank) = 1  -> certified: at least 3 = 3.000000 moves per live array
+   number of active directions of the characters used: [2]
+m = 4 : float optimum 3.750000 ; rounded dual weights: 14 characters used, denominators [2, 4, 8], total 15/4 = 3.750000
+   exact check over all 540 block forms: largest (load / rank) = 1  -> certified: at least 15/4 = 3.750000 moves per live array
+   number of active directions of the characters used: [4]

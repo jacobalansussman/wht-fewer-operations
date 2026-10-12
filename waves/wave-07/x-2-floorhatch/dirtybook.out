@@ -1,0 +1,7 @@
+N=  4 gates= 10 (2.50 N) largest entry 5 | size: nodes, sum n, E, B, and (s/2 + 1) x nodes | 4: 1 8 3 0 (3)
+N=  8 gates= 26 (3.25 N) largest entry 7 | size: nodes, sum n, E, B, and (s/2 + 1) x nodes | 4: 2 19 9 2 (6)  8: 1 23 5 1 (5)
+N= 16 gates= 54 (3.38 N) largest entry 9 | size: nodes, sum n, E, B, and (s/2 + 1) x nodes | 4: 4 42 18 6 (12)  8: 2 48 14 8 (10)  16: 1 50 6 4 (9)
+N= 32 gates=110 (3.44 N) largest entry 11 | size: nodes, sum n, E, B, and (s/2 + 1) x nodes | 4: 8 96 43 15 (24)  8: 4 105 33 24 (20)  16: 2 106 20 19 (18)  32: 1 105 10 11 (17)
+N= 64 gates=214 (3.34 N) largest entry 13 | size: nodes, sum n, E, B, and (s/2 + 1) x nodes | 4: 16 230 112 42 (48)  8: 8 246 68 52 (40)  16: 4 238 54 62 (36)  32: 2 223 30 45 (34)  64: 1 208 11 26 (33)
+N=128 gates=418 (3.27 N) largest entry 15 | size: nodes, sum n, E, B, and (s/2 + 1) x nodes | 4: 32 508 254 98 (96)  8: 16 548 165 125 (80)  16: 8 531 137 154 (72)  32: 4 496 89 124 (68)  64: 2 451 48 93 (66)  128: 1 411 17 57 (65)
+LIGHT label=x2-dirtybook exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:42:13 cmd=python3 -B dirtybook.py

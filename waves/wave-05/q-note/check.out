@@ -1,0 +1,32 @@
+1. Two-chain circuits for subset sums (corners = non-zero second differences), my own counter and replay
+  q-cross/cat3_4.out: N=4 corners=5 gates=7 (N-2+corners=7) replay=True rows with <=2: 4/4 values=[-1, 1] Yates=4 per point=1.250 vs (k/2)=1.0
+  q-cross/cat3_8.out: N=8 corners=13 gates=19 (N-2+corners=19) replay=True rows with <=2: 8/8 values=[-1, 1] Yates=12 per point=1.625 vs (k/2)=1.5
+  q-cross/cat3_16.out: N=16 corners=30 gates=44 (N-2+corners=44) replay=True rows with <=2: 13/16 values=[-1, 1] Yates=32 per point=1.875 vs (k/2)=2.0
+  q-cross/cat3g_32.out: N=32 corners=80 gates=110 (N-2+corners=110) replay=True rows with <=2: 21/32 values=[-1, 1] Yates=80 per point=2.500 vs (k/2)=2.5
+  u-0-cornerssearch/a16.out: N=16 corners=30 gates=44 (N-2+corners=44) replay=True rows with <=2: 13/16 values=[-1, 1] Yates=32 per point=1.875 vs (k/2)=2.0
+  u-0-cornerssearch/r32.out: N=32 corners=80 gates=110 (N-2+corners=110) replay=True rows with <=2: 21/32 values=[-1, 1] Yates=80 per point=2.500 vs (k/2)=2.5
+  u-0-cornerssearch/r64.out: N=64 corners=239 gates=301 (N-2+corners=301) replay=True rows with <=2: 20/64 values=[-1, 1] Yates=192 per point=3.734 vs (k/2)=3.0
+2. p-0 hub-free 7-gate circuit for K=[[1,1],[1,2]] squared
+   True True True True (7 gates; helpers read 2, 2, 3 inputs)
+3. p-0 weight-only block at k=2: 5 gates for every tau, 4 at tau=-1
+   5-gate circuit right at seven values of tau: True
+   4-gate circuit at tau=-1: True
+4. Arithmetic of the laws
+   textbook gates       [8, 24, 64, 160, 384, 896]
+   textbook rectangles  [6, 18, 50, 130, 322, 770]
+   (N^2+14)/6           [Fraction(5, 1), Fraction(13, 1), Fraction(45, 1), Fraction(173, 1), Fraction(685, 1), Fraction(2733, 1)]
+   4t-7                 [5, 13, 45, 173, 685, 2733]
+   T(k)=8T(k-2)-3       [5, 13, 37, 101, 293, 805]
+   floor N+(19/256)N^2  [(32, Fraction(108, 1)), (64, Fraction(368, 1)), (128, Fraction(1344, 1))]
+   (N/2)log2N+1         [5, 13, 33, 81, 193, 449]
+   N-1+(N/2)log2N       [7, 19, 47, 111, 255, 575]
+   Yates                [4, 12, 32, 80, 192, 448]
+   2N-2 ; 3N-4          [6, 14, 30, 62, 126, 254] [8, 20, 44, 92, 188, 380]
+   beat Yates below     [2, 6, 18, 50, 130, 322] (corners at or below value-1.. i.e. N-2+c < Yates)
+   records/(N log2 N)   [0.875, 0.7917, 0.8125, 0.8, 0.7917]
+   two letters/(NlogN)  [0.875, 0.7917, 0.8125, 0.825, 0.7917]
+   one letter gates     [7, 19, 59, 203, 747] [0.875, 0.7917, 0.9219, 1.2688, 1.9453]
+   corner gates         [7, 19, 44, 110, 301] over Yates [1.75, 1.583, 1.375, 1.375, 1.568]
+   p-2 5(N-3^m)+mid     [45, 306, 1846] Yates [32, 192, 1024]
+   p-2 route floors/Yates [1.25, 1.062, 0.812, 0.629]
+   (O) any one factor / textbook [1.0, 0.8333, 0.875, 0.9, 0.8333]

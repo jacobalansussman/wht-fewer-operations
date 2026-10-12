@@ -1,0 +1,18 @@
+K 4 tau 20 deg0 2
+65535 20561 20560 16464 80 44974 41134 8226 34 32908 140 12 3840 1792 1280 
+row 0 from 16 cost 1
+row 1 from 0 cost 1
+row 2 from 0 cost 1
+row 3 from 1 cost 1
+row 4 from 0 cost 1
+row 5 from 4 cost 1
+row 6 from 2 cost 1
+row 7 from 5 cost 2
+row 8 from 0 cost 1
+row 9 from 1 cost 2
+row 10 from 2 cost 1
+row 11 from 3 cost 1
+row 12 from 4 cost 2
+row 13 from 12 cost 2
+row 14 from 10 cost 1
+row 15 from 16 cost 1

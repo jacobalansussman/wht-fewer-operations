@@ -1,0 +1,9 @@
+# t2 x t2 : 4 points, 8 gates, count (G); A inside blocks then B across blocks
+b0_s = 1 * x0 + 1 * x1
+b0_d = 1 * x0 + -1 * x1
+b1_s = 1 * x2 + 1 * x3
+b1_d = 1 * x2 + -1 * x3
+c0_s = 1 * b0_s + 1 * b1_s
+c0_d = 1 * b0_s + -1 * b1_s
+c1_s = 1 * b0_d + 1 * b1_d
+c1_d = 1 * b0_d + -1 * b1_d

@@ -1,0 +1,6 @@
+slp_4.txt gates (G) 7 outputs exact : multiplications 4 -> count (O) at most 11
+slp_4.txt gates (G) 7 outputs common : multiplications 1 -> count (O) at most 8
+slp_8.txt gates (G) 20 outputs exact : multiplications 10 -> count (O) at most 30
+slp_8.txt gates (G) 20 outputs common : multiplications 6 -> count (O) at most 26
+slp_16.txt gates (G) 52 outputs exact : multiplications 25 -> count (O) at most 77
+slp_16.txt gates (G) 52 outputs common : multiplications 20 -> count (O) at most 72

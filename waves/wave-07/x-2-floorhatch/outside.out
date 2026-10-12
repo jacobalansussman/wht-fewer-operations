@@ -1,0 +1,31 @@
+drain21.txt: largest entry 3, wires that are not sign vectors 1
+drain21.txt   N= 8 gates= 21 e= 2: cuts 7; cuts with B = 0: 1; B from 0 to 3; E from 6 to 7 (N/2 + 1 = 5); largest share B/min(n) = 0.33; least waste 1, largest 4; least n(L) 7 (floor at N/2: 7)
+hubparity4.txt: largest entry 1, wires that are not sign vectors 0
+hubparity4.tx N= 4 gates=  8 e= 1: cuts 3; cuts with B = 0: 0; B from 1 to 2; E from 5 to 6 (N/2 + 1 = 3); largest share B/min(n) = 1.00; least waste 0, largest 0; least n(L) 2 (floor at N/2: 2)
+hubparity8.txt: largest entry 1, wires that are not sign vectors 0
+hubparity8.tx N= 8 gates= 26 e= 7: cuts 7; cuts with B = 0: 0; B from 3 to 8; E from 11 to 16 (N/2 + 1 = 5); largest share B/min(n) = 1.00; least waste 4, largest 4; least n(L) 8 (floor at N/2: 7)
+zdz_cat3_16_run_same.txt: largest entry 16, wires that are not sign vectors 28
+zdz_cat3_16_r N=16 gates= 88 e=41: cuts 15; cuts with B = 0: 0; B from 20 to 46; E from 23 to 31 (N/2 + 1 = 9); largest share B/min(n) = 0.85; least waste 39, largest 71; least n(L) 32 (floor at N/2: 19)
+zdz_cat3_16_run_transpose.txt: largest entry 16, wires that are not sign vectors 28
+zdz_cat3_16_r N=16 gates= 88 e=41: cuts 15; cuts with B = 0: 0; B from 20 to 46; E from 23 to 30 (N/2 + 1 = 9); largest share B/min(n) = 0.85; least waste 42, largest 71; least n(L) 33 (floor at N/2: 19)
+zdz_cat3_16_seq_same.txt: largest entry 16, wires that are not sign vectors 32
+zdz_cat3_16_s N=16 gates= 88 e=41: cuts 15; cuts with B = 0: 0; B from 24 to 50; E from 17 to 24 (N/2 + 1 = 9); largest share B/min(n) = 0.85; least waste 50, largest 80; least n(L) 36 (floor at N/2: 19)
+zdz_cat3_16_seq_transpose.txt: largest entry 16, wires that are not sign vectors 32
+zdz_cat3_16_s N=16 gates= 88 e=41: cuts 15; cuts with B = 0: 0; B from 24 to 50; E from 16 to 24 (N/2 + 1 = 9); largest share B/min(n) = 0.85; least waste 50, largest 80; least n(L) 36 (floor at N/2: 19)
+zdz_cat3_4_run_same.txt: largest entry 3, wires that are not sign vectors 3
+zdz_cat3_4_ru N= 4 gates= 14 e= 7: cuts 3; cuts with B = 0: 1; B from 0 to 1; E from 9 to 10 (N/2 + 1 = 3); largest share B/min(n) = 0.50; least waste 1, largest 1; least n(L) 2 (floor at N/2: 2)
+zdz_cat3_4_run_transpose.txt: largest entry 2, wires that are not sign vectors 2
+zdz_cat3_4_ru N= 4 gates= 14 e= 7: cuts 3; cuts with B = 0: 1; B from 0 to 1; E from 10 to 11 (N/2 + 1 = 3); largest share B/min(n) = 0.50; least waste 0, largest 0; least n(L) 2 (floor at N/2: 2)
+zdz_cat3_4_seq_same.txt: largest entry 3, wires that are not sign vectors 4
+zdz_cat3_4_se N= 4 gates= 14 e= 7: cuts 3; cuts with B = 0: 1; B from 0 to 1; E from 8 to 9 (N/2 + 1 = 3); largest share B/min(n) = 0.50; least waste 2, largest 2; least n(L) 2 (floor at N/2: 2)
+zdz_cat3_4_seq_transpose.txt: largest entry 2, wires that are not sign vectors 3
+zdz_cat3_4_se N= 4 gates= 14 e= 7: cuts 3; cuts with B = 0: 1; B from 0 to 1; E from 9 to 10 (N/2 + 1 = 3); largest share B/min(n) = 0.50; least waste 1, largest 1; least n(L) 2 (floor at N/2: 2)
+zdz_cat3_8_run_same.txt: largest entry 6, wires that are not sign vectors 11
+zdz_cat3_8_ru N= 8 gates= 38 e=19: cuts 7; cuts with B = 0: 0; B from 5 to 9; E from 18 to 20 (N/2 + 1 = 5); largest share B/min(n) = 0.73; least waste 10, largest 13; least n(L) 10 (floor at N/2: 7)
+zdz_cat3_8_run_transpose.txt: largest entry 6, wires that are not sign vectors 11
+zdz_cat3_8_ru N= 8 gates= 38 e=19: cuts 7; cuts with B = 0: 0; B from 5 to 8; E from 17 to 20 (N/2 + 1 = 5); largest share B/min(n) = 0.73; least waste 12, largest 14; least n(L) 10 (floor at N/2: 7)
+zdz_cat3_8_seq_same.txt: largest entry 6, wires that are not sign vectors 13
+zdz_cat3_8_se N= 8 gates= 38 e=19: cuts 7; cuts with B = 0: 0; B from 6 to 11; E from 10 to 13 (N/2 + 1 = 5); largest share B/min(n) = 0.73; least waste 17, largest 24; least n(L) 12 (floor at N/2: 7)
+zdz_cat3_8_seq_transpose.txt: largest entry 6, wires that are not sign vectors 13
+zdz_cat3_8_se N= 8 gates= 38 e=19: cuts 7; cuts with B = 0: 0; B from 7 to 10; E from 11 to 13 (N/2 + 1 = 5); largest share B/min(n) = 0.71; least waste 20, largest 22; least n(L) 13 (floor at N/2: 7)
+LIGHT label=x2-outside exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:54:25 cmd=python3 -B outside.py

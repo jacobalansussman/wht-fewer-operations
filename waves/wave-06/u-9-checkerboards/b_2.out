@@ -1,0 +1,7 @@
+mode=2 N=4 restart=0 best=4 recount rows=4 cols=4 | whole-number: odd cells 4, checkerboards 2, other 0
+BEST 4
+rows 3 2 1 0 
+cols 3 1 2 0 
+mode=2 N=4 restart=1 best=4 recount rows=4 cols=4 | whole-number: odd cells 4, checkerboards 2, other 0
+mode=2 N=4 restart=2 best=4 recount rows=4 cols=4 | whole-number: odd cells 4, checkerboards 2, other 0
+mode=2 N=4 restart=3 best=4 recount rows=4 cols=4 | whole-number: odd cells 4, checkerboards 2, other 0

@@ -1,0 +1,21 @@
+config 0: best squared residual 6.0000083555597055
+config 1: best squared residual 7.340389633917082
+config 2: best squared residual 4.174013705383676
+config 3: best squared residual 1.3154757984514986
+config 4: best squared residual 0.002356696303910423
+config 5: best squared residual 2.000060940101525
+config 6: best squared residual 1.0021503583118293e-05
+config 7: best squared residual 1.9392768204096222
+config 8: best squared residual 8.000061151683937
+config 9: best squared residual 2.04128443991182
+config 10: best squared residual 4.000074315672335
+config 11: best squared residual 2.1450027747115157
+config 12: best squared residual 2.0000084793007993
+config 13: best squared residual 6.010027711007121
+config 14: best squared residual 2.045966750127374
+config 15: best squared residual 1.0002863987651407
+config 16: best squared residual 1.9481494444605354e-06
+config 17: best squared residual 1.8191057443865852e-06
+config 18: best squared residual 7.003083910882138
+HIT config 19: squared residual 8.50e-31  trees/relabellings: ((((1, 0), (2, 3)), ((4, 7), (6, 5))), {0: [3, 0, 2, 1], 1: [1, 0, 3, 2]}, (((3, 2), (7, 6)), ((0, 1), (4, 5))), {0: [0, 1], 1: [0, 1], 2: [1, 0], 3: [1, 0]})
+shape (4,2) N=8 caterpillar=False: 20 configurations x 3 starts: 1 hits; smallest residuals [0.0, 0.0, 0.0, 0.0, 0.0024, 1.0003, 1.3155, 1.9393]

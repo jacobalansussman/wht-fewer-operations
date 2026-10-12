@@ -1,0 +1,1 @@
+LIGHT label=jf-g7w exit=137 time=363s waited=0s peak_rss_mb=1502 peak_footprint_mb=1486 lowest_cap_mb=1500 stopped=memory>1500MB start=21:50:30 cmd=python3 -B min4.py G 7 wide

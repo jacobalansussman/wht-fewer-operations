@@ -1,0 +1,44 @@
+k=4 n=15 phi(n)=8   sqrt(N)=4.0
+   largest numbers of primitive j (and of all j) on which 1 + x^a + x^b vanishes:
+         8 primitive (1.0000 of them),    10 in all:  a=5 b=10  subfield F_4 letter (a function of j mod 3)
+         4 primitive (0.5000 of them),     4 in all:  a=3 b=14  
+         0 primitive (0.0000 of them),     2 in all:  a=5 b=13  
+   best letter NOT of subfield type: 4 primitive j of 8 (fraction 0.50000; 2^(-k/2) = 0.25000), a=3 b=14
+   average over all (a,b): 1.714 primitive j per letter
+k=6 n=63 phi(n)=36   sqrt(N)=8.0
+   largest numbers of primitive j (and of all j) on which 1 + x^a + x^b vanishes:
+        36 primitive (1.0000 of them),    42 in all:  a=21 b=42  subfield F_4 letter (a function of j mod 3)
+        18 primitive (0.5000 of them),    27 in all:  a=9 b=45  subfield F_8 letter (a function of j mod 7)
+         6 primitive (0.1667 of them),     8 in all:  a=7 b=62  
+         6 primitive (0.1667 of them),     6 in all:  a=3 b=55  
+         0 primitive (0.0000 of them),    15 in all:  a=3 b=51  
+         0 primitive (0.0000 of them),    14 in all:  a=7 b=56  
+         0 primitive (0.0000 of them),     9 in all:  a=9 b=48  
+         0 primitive (0.0000 of them),     6 in all:  a=21 b=60  
+   best letter NOT of subfield type: 6 primitive j of 36 (fraction 0.16667; 2^(-k/2) = 0.12500), a=7 b=62
+   average over all (a,b): 1.607 primitive j per letter
+k=8 n=255 phi(n)=128   sqrt(N)=16.0
+   largest numbers of primitive j (and of all j) on which 1 + x^a + x^b vanishes:
+       128 primitive (1.0000 of them),   170 in all:  a=85 b=170  subfield F_4 letter (a function of j mod 3)
+        64 primitive (0.5000 of them),    68 in all:  a=51 b=238  subfield F_16 letter (a function of j mod 15)
+        16 primitive (0.1250 of them),    24 in all:  a=15 b=237  
+         8 primitive (0.0625 of them),    16 in all:  a=15 b=254  
+         8 primitive (0.0625 of them),    10 in all:  a=1 b=233  
+         8 primitive (0.0625 of them),     8 in all:  a=5 b=224  
+         0 primitive (0.0000 of them),    34 in all:  a=85 b=221  subfield F_16 letter (a function of j mod 15)
+         0 primitive (0.0000 of them),    10 in all:  a=85 b=245  
+   best letter NOT of subfield type: 16 primitive j of 128 (fraction 0.12500; 2^(-k/2) = 0.06250), a=15 b=237
+   average over all (a,b): 1.653 primitive j per letter
+k=10 n=1023 phi(n)=600   sqrt(N)=32.0
+   largest numbers of primitive j (and of all j) on which 1 + x^a + x^b vanishes:
+       600 primitive (1.0000 of them),   682 in all:  a=341 b=682  subfield F_4 letter (a function of j mod 3)
+       100 primitive (0.1667 of them),   165 in all:  a=33 b=660  subfield F_32 letter (a function of j mod 31)
+        20 primitive (0.0333 of them),    32 in all:  a=31 b=1022  
+        20 primitive (0.0333 of them),    30 in all:  a=93 b=1020  
+        10 primitive (0.0167 of them),    17 in all:  a=1 b=944  
+        10 primitive (0.0167 of them),    15 in all:  a=3 b=1000  
+        10 primitive (0.0167 of them),    12 in all:  a=11 b=994  
+        10 primitive (0.0167 of them),    10 in all:  a=11 b=1020  
+   best letter NOT of subfield type: 20 primitive j of 600 (fraction 0.03333; 2^(-k/2) = 0.03125), a=31 b=1022
+   average over all (a,b): 1.803 primitive j per letter
+LIGHT label=e0-roots exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:00:34 cmd=python3 -B roots.py 4 6 8 10

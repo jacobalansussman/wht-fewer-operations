@@ -1,0 +1,2 @@
+all 496 single transpositions of the affine dictionary: non-zeros of the bridge: [(128, 16), (224, 96), (312, 384)] (affine: 80)
+rank of (bridge - affine bridge), 20 of them: [(1, 20)]

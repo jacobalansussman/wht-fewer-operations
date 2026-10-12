@@ -1,0 +1,4 @@
+N= 4  H v0 = sqrt(N) v0: True   (1) G = sqrt(N)*sign*x(c) + Hx(d): True   (2) transform acts on G as transpose: False   (3) two-bump window (support 3) is an eigenvector: True, transform acts as signed transpose: True
+N=16  H v0 = sqrt(N) v0: True   (1) G = sqrt(N)*sign*x(c) + Hx(d): True   (2) transform acts on G as transpose: False   (3) two-bump window (support 7) is an eigenvector: True, transform acts as signed transpose: True
+N=64  H v0 = sqrt(N) v0: True   (1) G = sqrt(N)*sign*x(c) + Hx(d): True   (2) transform acts on G as transpose: False   (3) two-bump window (support 15) is an eigenvector: True, transform acts as signed transpose: True
+LIGHT label=e6-window exit=0 time=8s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=22:36:32 cmd=/usr/bin/python3 -I -B waves/wave-02/e-6-shifts/window.py

@@ -1,0 +1,4 @@
+N=16 table 2x8: product, counting order on each side: W = 28; edges by weight [(1, 8), (2, 6), (4, 2)]; gates (G) = 42; Yates = 32
+N=16 table 2x8: product, Gray order on each side: W = 24; edges by weight [(1, 8), (2, 8)]; gates (G) = 38; Yates = 32
+N=16 table 2x8: best after 3000 moves: W = 24; W/N = 1.500; edges by weight [(1, 8), (2, 8)]; hung on nothing 8; gates (G) = 38; Yates = 32
+   table, row by row: [0, 1, 3, 2, 6, 7, 5, 4, 8, 9, 11, 10, 14, 15, 13, 12]

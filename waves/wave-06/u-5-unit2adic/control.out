@@ -1,0 +1,57 @@
+helpers at the end: 0 hold nothing; contents held by the others, x / y / helper values: [1, 0, 0]
+certificate h=3 v=1 R=1; registers 3; addresses per register 2^3 = 8; n = 24 points
+FULL contents replayed.  At the end: x_t holds x_t alone: True;  y_t holds y_t + x_t: True;  every helper holds its own value alone: False
+   helpers that end with something else: 1, e.g. [(2, 1)]
+final frames: x dim [3], y dim [2], helpers dim [3]; port_t outside the final frame of y_t for all t: True
+
+(1) THE GATE LIST, one layer = 2^h = 8 gates (G)
+  prologue (x: 0 -> <port>)              layers      1  gates         8  survivors        4  dead         4 | kinds {'J move': 8} | dead by order {1: 4}
+  phase A                                layers      2  gates        16  survivors        3  dead        13 | kinds {'J move': 16} | dead by order {1: 13}
+  cut (copies of the totals come down)   layers      3  gates        24  survivors        6  dead        18 | kinds {'Q move down': 24} | dead by order {1: 10, 6: 8}
+  scatter                                layers      1  gates         8  survivors        8  dead         0 | kinds {'J disjoint': 8} | dead by order {}
+  phase B                                layers      0  gates         0  survivors        0  dead         0 | kinds {} | dead by order {}
+  final blocks                           layers      2  gates        16  survivors        6  dead        10 | kinds {'J move': 16} | dead by order {1: 10}
+  ALL                                    layers      9  gates        72  survivors       27  dead        45 | kinds {'J disjoint': 8, 'J move': 40, 'Q move down': 24} | dead by order {1: 37, 6: 8}
+
+reading: helpers start EMPTY; input registers 2; free events: {'moves on an empty register (no wire)': 3, 'scaled copies into an empty register (free in G)': 1, 'layers of order above 1 whose content is exactly a scalar multiple of one held before at that label': 1}
+
+(2) FIVE NUMBERS, whole invocation, n = 16
+  classes: 43   (2n - 1 = 31; groups (B, U): 10; distinct B: 3; distinct U: 8)
+  survivors (= classes - n): 27   against n - 1 = 15
+  Q gates: 24  (move down 24, additions 0);  E gates: 0
+  dead gates of order above 1: 8  (by order: {1: 37, 6: 8})
+  dead gates: 45   against (n/2) log2 n = 32  and against the plain schedule's dead gates
+  plain schedule (every register alone from frame 0 to its final frame): 8 moves = 64 gates, survivors 20, dead 44
+  this gate list: 72 gates = 5 move layers up + 3 down + 1 addition layers
+  kinds of all gates: {'J disjoint': 8, 'J move': 40, 'Q move down': 24}
+
+(3) FIRST LAYER IN PROGRAM ORDER THAT BREAKS EACH PROPERTY (layer index; phases end at [1, 3, 6, 7, 7, 9])
+  [     3] Q gate
+           cut: move DOWN on the scratch copy of total 0, dim 3 -> 2, content class {x0} (t=1); parents: the wires (copy, a) and (copy, a+z), both of class (B, a+U+z)
+  [     5] dead gate of order above 1
+           cut: move DOWN on the scratch copy of total 0, dim 1 -> 0, content class {x0} (t=1); parents: the wires (copy, a) and (copy, a+z), both of class (B, a+U+z) | order 6
+
+(4) BATCH SHADOW (frames forgotten; one gate per addition term; inputs = the 3 registers)
+  gates 2; kinds and new/dead: {'J disjoint': 1, 'new': 1}
+  classes: 3  against 2 * 3 - 1 = 5
+  pairs of batch classes: nested 2, overlapping without nesting 0, of 3
+
+(5) THE SCATTER ALONE (the 1 targets right after the scatter, full contents)
+  classes: 1 distinct of 1, sizes {2: 1}; own value y_t in its class: True; source x_t in its class: True
+  pairs overlapping without nesting: 0 of 0;  2-adic values of the entries of one row: {0: 2}
+  scatter gates (batch shadow): 1; kinds {'J disjoint': 1}; new/dead {'new': 1}
+
+(6) LEDGER: every addition term, number of contents on both sides before and after (full contents; x-only in the file)
+  additions by phase and effect on the number of contents: {('scatter', 'grow'): 1}
+  sum over additions of log2(after / smaller side), by phase: {'scatter': 1.0}; largest single rise 1.00
+  a-2's count for this gate list (per 2^h gates): moves up 5 (rise 1 each) + additions 1.0 = 6.0; needed for the registers' final frames: 8
+
+(7) PAIRS OF CLASSES THAT OVERLAP WITHOUT NESTING, by where the crossing is (groups in program order)
+  all pairs of classes: 903
+            50  batch classes nested one way, frames nested the other way (needs both sides)
+                first pair: group 7: B={x0,y0} at dim 0, first made in layer 6 (J disjoint)  x  group 2: B={x0} at dim 1, first made in layer 0 (J move)
+            48  batch classes nested, frames cross (address side alone)
+                first pair: group 8: B={x0,y0} at dim 1, first made in layer 7 (J move)  x  group 2: B={x0} at dim 1, first made in layer 0 (J move)
+            20  same batch class, frames cross (address side alone)
+                first pair: group 5: B={x0} at dim 2, first made in layer 3 (Q move down)  x  group 2: B={x0} at dim 1, first made in layer 0 (J move)
+  total overlapping without nesting: 118

@@ -1,0 +1,5 @@
+# deepmin NN=4 m=4 AREF=2730 ACH=2730 DIV=1 full=0 hcap=3
+SETDONE targets: (1,1,1,1) (1,-1,1,-1) (1,1,-1,-1) (1,-1,-1,1) saved=0
+# sets=1  reference helpers histogram: h=0:0 h=1:0 h=2:0 h=3:0  above cap=1
+# target sets where the challenger class saves a gate: 0
+LIGHT label=ag6h exit=0 time=52s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=08:00:19 cmd=./deepmin4f 4 2730 2730 1 0 3 -T h4.txt

@@ -1,0 +1,1 @@
+LIGHT label=x6-relation exit=0 time=8s waited=0s peak_rss_mb=14 peak_footprint_mb=11 lowest_cap_mb=1500 stopped=- start=03:37:43 cmd=python3 -I -B relation.py

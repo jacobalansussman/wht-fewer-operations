@@ -1,0 +1,4 @@
+(i) N = 16 : 163 sets W with |W| >= N/4; largest number of z with |sum| > |W|/2 : 2  (lemma: at most 7)
+(i) N = 32 : 39203 sets W with |W| >= N/4; largest number of z with |sum| > |W|/2 : 2  (lemma: at most 7)
+(ii) 45-design: single-column rectangles >= (sum of phi-distances around the tree)/2 = 14.0 in address order, 14.0 in the best order; the design has 22
+LIGHT label=r1p8 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:35:29 cmd=python3 -B p8check.py

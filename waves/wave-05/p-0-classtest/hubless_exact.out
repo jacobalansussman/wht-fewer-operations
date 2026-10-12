@@ -1,0 +1,7 @@
+(1) tau = 2: 7 gates; {'h0': ['0', '0', '1', '1'], 'h1': ['0', '1', '0', '1'], 'h2': ['1', '0', '2', '2']} | outputs equal their rows: True | helper supports [2, 2, 3] | coefficients used: 1, -1, 2
+(2) t^2 - t + 1 = 0: 7 gates; outputs equal their rows: True | helper supports [2, 2, 3]
+    same wiring and placement at t = 3: wrong entries (output, column, got, wanted): [('r10', 1, '-6', '1')]
+    same wiring and placement at t = -1: wrong entries (output, column, got, wanted): [('r10', 1, '-2', '1')]
+    same wiring and placement at t = 2: wrong entries (output, column, got, wanted): [('r10', 1, '-2', '1')]
+    same wiring and placement at t = 1/2: wrong entries (output, column, got, wanted): [('r10', 1, '1/4', '1')]
+LIGHT label=p0-hx exit=0 time=1s waited=30s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:22:21 cmd=python3 -B hubless_exact.py

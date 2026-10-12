@@ -1,0 +1,6 @@
+== m = 4, W = 4 live, S = 0 scratch, mode pm, sequence plain
+   order 1,2,4,8,1,2,4,8,1,2,4,8,1,2,4,8 try 0: root-mean-square error 8.172e-02
+   order 1,2,4,8,1,2,4,8,1,2,4,8,1,2,4,8 try 0: root-mean-square error 2.798e-04
+   order 1,2,4,8,1,2,4,8,1,2,4,8,1,2,4,8 try 0: root-mean-square error 5.202e-07
+   order 1,2,4,8,1,2,4,8,1,2,4,8,1,2,4,8 try 0: root-mean-square error 4.881e-04
+   [241 s]

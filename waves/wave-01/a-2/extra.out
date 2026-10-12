@@ -1,0 +1,8 @@
+N = 16: 1072 of 1072 coset characters checked, s = 2^level and s s' = N for each: True
+N = 32: 11968 of 11968 coset characters checked, s = 2^level and s s' = N for each: True
+N = 64: 20000 of 180800 coset characters checked, s = 2^level and s s' = N for each: True
+bricks, N = 4: 7 gates, non-tight wires by s s'/N: [(4, 1)]
+bricks, N = 16: 56 gates, non-tight wires by s s'/N: [(4, 8)]
+bricks, N = 64: 336 gates, non-tight wires by s s'/N: [(4, 48)]
+bricks, N = 256: 1792 gates, non-tight wires by s s'/N: [(4, 256)]
+LIGHT label=a2-extra exit=0 time=3s waited=0s peak_rss_mb=55 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:28:00 cmd=python3 -B extra.py

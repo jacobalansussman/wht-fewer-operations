@@ -1,0 +1,6 @@
+m = 3: 12 product forms with a.b = 1, each 1 on 2 directions; pairs of directions 21, covered 12, not covered 9 [('1', '10'), ('1', '100'), ('10', '100'), ('11', '101'), ('11', '110'), ('11', '111')]
+m = 4: 56 product forms with a.b = 1, each 1 on 4 directions; pairs of directions 105, covered 105, not covered 0 []
+m = 5: 240 product forms with a.b = 1, each 1 on 8 directions; pairs of directions 465, covered 465, not covered 0 []
+m = 6: 992 product forms with a.b = 1, each 1 on 16 directions; pairs of directions 1953, covered 1953, not covered 0 []
+m = 7: 4032 product forms with a.b = 1, each 1 on 32 directions; pairs of directions 8001, covered 8001, not covered 0 []
+LIGHT label=e2-2-pairs exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:44:28 cmd=python3 -B pairs.py

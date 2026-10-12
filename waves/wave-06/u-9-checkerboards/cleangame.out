@@ -1,0 +1,10 @@
+N=2: least number of wires in the clean game = 2; N - 1 + (N/2) log2 N = 2
+N=4: least number of wires in the clean game = 7; N - 1 + (N/2) log2 N = 7
+N=2: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 2; N - 1 + (N/2) log2 N = 2
+N=4: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 7; N - 1 + (N/2) log2 N = 7
+N=8: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 19; N - 1 + (N/2) log2 N = 19
+N=16: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 47; N - 1 + (N/2) log2 N = 47
+N=32: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 111; N - 1 + (N/2) log2 N = 111
+N=64: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 255; N - 1 + (N/2) log2 N = 255
+N=128: recursion t(k) = 2 t(k-1) + N/2 + 1 gives 575; N - 1 + (N/2) log2 N = 575
+LIGHT label=u9-clean2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:40:10 cmd=python3 -B cleangame.py

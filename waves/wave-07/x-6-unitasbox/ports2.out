@@ -1,0 +1,8 @@
+h=4  transform [[1,1],[1,-1]]     ports of dimension 2:  20 ; complement = P-perp for all: True ; by number of odd words in P: {2: 16, 0: 4}
+       each port of dimension 2 knows this many others (P_s inside P_t-perp): [1] ; ports sharing a non-zero word with a given one (cannot know it): about 9
+h=4  generic [[1,2],[3,5]]        ports of dimension 2:   6 ; complement = P-perp for all: True ; by number of odd words in P: {2: 6}
+h=4  subset sums [[1,0],[1,1]]    ports of dimension 2:   6 ; complement = P-perp for all: True ; by number of odd words in P: {2: 6}
+h=5  transform [[1,1],[1,-1]]     ports of dimension 2:  80 ; complement = P-perp for all: True ; by number of odd words in P: {2: 60, 0: 20}
+       each port of dimension 2 knows this many others (P_s inside P_t-perp): [4] ; ports sharing a non-zero word with a given one (cannot know it): about 21
+h=5  generic [[1,2],[3,5]]        ports of dimension 2:  10 ; complement = P-perp for all: True ; by number of odd words in P: {2: 10}
+h=5  subset sums [[1,0],[1,1]]    ports of dimension 2:  10 ; complement = P-perp for all: True ; by number of odd words in P: {2: 10}

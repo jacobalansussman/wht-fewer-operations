@@ -1,0 +1,12 @@
+== AGREE two trees (8 4 2 1),(2 1 8 4), F0 = quad 4 (mask 49344), G0 = quad 2 (mask 41120), G0 not a hub; 6 rounds
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 17
+  MST of terminals: 42 shifts (lower bound for these centres: 21) ; with 4 extra vertices: 38 shifts
+  distances hub0 -> outputs: 2 4 2 4 2 4 2 4 3 7 3 7 3 7 3 7
+  distances output0 -> outputs: 0 2 4 5 2 4 4 6 3 6 4 6 3 7 4 8
+  shifts <= 38 ; held tree wires 28
+== same, 30 rounds
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 17
+  MST of terminals: 42 shifts (lower bound for these centres: 21) ; with 4 extra vertices: 38 shifts
+  distances hub0 -> outputs: 2 4 2 4 2 4 2 4 3 7 3 7 3 7 3 7
+  distances output0 -> outputs: 0 2 4 5 2 4 4 6 3 6 4 6 3 7 4 8
+  shifts <= 38 ; held tree wires 28

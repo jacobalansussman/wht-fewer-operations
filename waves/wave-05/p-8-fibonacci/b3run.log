@@ -1,0 +1,1 @@
+LIGHT label=p8b3 exit=0 time=21s waited=0s peak_rss_mb=245 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:50:50 cmd=sh -c ./dwg < b3_16_cls0.in > b3_16_cls0.out; ./dwg < b3_16_cls1.in > b3_16_cls1.out

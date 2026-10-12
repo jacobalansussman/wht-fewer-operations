@@ -1,0 +1,19 @@
+16 points: 3983 row sets up to symmetry, 35059677 minors examined
+  order  1: largest |minor| = 1 (exact recheck 1) rows 0001 cols 0001
+  order  2: largest |minor| = 1 (exact recheck 1) rows 0003 cols 0003
+  order  3: largest |minor| = 2 (exact recheck 2) rows 0068 cols 0016
+  order  4: largest |minor| = 3 (exact recheck 3) rows 1680 cols 0116
+  order  5: largest |minor| = 3 (exact recheck 3) rows 1681 cols 0117
+  order  6: largest |minor| = 4 (exact recheck 4) rows 3cc0 cols 033c
+  order  7: largest |minor| = 5 (exact recheck 5) rows 9668 cols 1669
+  order  8: largest |minor| = 4 (exact recheck 4) rows 3cc3 cols 033f
+  order  9: largest |minor| = 5 (exact recheck 5) rows e996 cols 6997
+  order 10: largest |minor| = 4 (exact recheck 4) rows e99e cols 699f
+  order 11: largest |minor| = 3 (exact recheck 3) rows 6bbd cols 177f
+  order 12: largest |minor| = 3 (exact recheck 3) rows ebbd cols 977f
+  order 13: largest |minor| = 2 (exact recheck 2) rows e9ff cols 97ff
+  order 14: largest |minor| = 1 (exact recheck 1) rows 3fff cols 3fff
+  order 15: largest |minor| = 1 (exact recheck 1) rows 7fff cols 7fff
+  order 16: largest |minor| = 1 (exact recheck 1) rows ffff cols ffff
+largest minor of Z at 16 points, all orders: 5
+LIGHT label=ai2-z16 exit=0 time=6s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:37:09 cmd=./zmax16

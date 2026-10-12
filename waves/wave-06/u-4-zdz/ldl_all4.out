@@ -1,0 +1,9 @@
+N=4  subset sums: off-diagonal non-zeros 5, Yates 4 gates
+orders with a zero pivot (no factorisation): 8
+histogram of min(off-diagonal non-zeros of L, of L^-1): [(5, 16)]
+best: 5  order (0, 1, 2, 3)  off(L)=5 off(L^-1)=5  D=['1', '-2', '-2', '4']
+        1     0     0     0
+        1     1     0     0
+        1     0     1     0
+        1     1     1     1
+LIGHT label=u4-ldl exit=0 time=1s waited=12s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:53:04 cmd=python3 -B ldl.py all 2

@@ -1,0 +1,14 @@
+certificate h=22 v=1320 R=9412 cst=440; totals 22; replay ends with x_t alone and y_t + x_t: True
+  copy        A   6240  scatter      0  B   3172   total   9412
+  J disjoint  A   3938  scatter   1140  B  19979   total  25057
+  J nested    A      0  scatter      0  B   9439   total   9439
+  J cross     A      0  scatter  22800  B   1753   total  24553
+  S           A   1980  scatter   5100  B   1650   total   8730
+  Q           A      0  scatter      0  B   2970   total   2970
+  E           A      0  scatter      0  B    660   total    660
+  Q additions: 2970, all in phase ['B']; into targets: 1320 (distinct targets 1320; each is the last addition into its target: True; class sizes before -> after: [((4, 2), 1320)])
+               into helpers: 0 (class sizes before -> after: []); into sources: 1650
+  Q gates per invocation at one digit column = (cst + Q additions) * 2^h = (440 + 2970) * 2^22; cst / v = 0.333; Q additions / v = 2.250
+  right after the scatter: wanted term x_t sits this many powers of 2 above the least power in its row: {1: 1320}; class sizes {884: 1320}
+  rank: the 22 totals over the rationals 22; the classes of the totals modulo 2: 22; the 1320 target classes right after the scatter modulo 2: 22
+  pairs of target classes that overlap without nesting right after the scatter: 20000 of 20000 sampled pairs

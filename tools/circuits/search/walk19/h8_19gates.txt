@@ -1,0 +1,22 @@
+# 8-point Walsh-Hadamard transform in 19 gates, count (G): every line is ONE gate a*u + b*v.   (g-1-tightwires, 2026-10-10)
+# inputs x0..x7 ; outputs y_j = sum over x of (-1)^(number of common 1-bits of j and x) * x_x.  Exact over the integers,
+# every output with factor 1.  Replays: c19.py (stand-alone), replay8.py (parses the search output), flipwalk.py (rebuilds it).
+g1  = x0 + x7
+g2  = x1 + x6
+g3  = x2 - x5
+g4  = x3 - x4
+g5  = g1 - g2
+g6  = g3 + g4
+g7  = g5 - g6            # the centre: signs + - - - + + - + ; not an output
+g8  = g7 - 2*x7
+g9  = g7 - 2*x5
+g10 = g8 + 2*x6
+g11 = g9 - 2*x4
+y7  = g10 + 2*g4
+y3  = g9 + 2*x3
+y5  = -y3 + 2*g5
+y1  = g10 + 2*g3
+y6  = g11 + 2*g2
+y2  = g8 + 2*x1
+y4  = y2 + 2*g6
+y0  = -g11 + 2*g1

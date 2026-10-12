@@ -1,0 +1,16 @@
+RESULT p=13: YES, circuit with 8 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=13: YES, circuit with 9 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=17: YES, circuit with 8 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=17: YES, circuit with 9 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=19: YES, circuit with 8 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=19: YES, circuit with 9 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=23: YES, circuit with 8 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 
+RESULT p=23: YES, circuit with 9 gates.
+LIGHT label=ag9-spec4 exit=0 time=1s waited=0s 

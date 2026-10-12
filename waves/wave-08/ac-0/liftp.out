@@ -1,0 +1,15 @@
+p=3: complete coefficient choices reached 0 ; choices giving all 8 rows: 0   (with the support cut)
+LIGHT label=ac0-liftp3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:29:31 cmd=./liftp 3
+exit 0
+p=5: complete coefficient choices reached 0 ; choices giving all 8 rows: 0   (with the support cut)
+LIGHT label=ac0-liftp5 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:29:32 cmd=./liftp 5
+exit 0
+p=7: complete coefficient choices reached 0 ; choices giving all 8 rows: 0   (with the support cut)
+LIGHT label=ac0-liftp7 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:29:33 cmd=./liftp 7
+exit 0
+p=11: complete coefficient choices reached 0 ; choices giving all 8 rows: 0   (with the support cut)
+LIGHT label=ac0-liftp11 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:29:34 cmd=./liftp 11
+exit 0
+p=13: complete coefficient choices reached 0 ; choices giving all 8 rows: 0   (with the support cut)
+LIGHT label=ac0-liftp13 exit=0 time=2s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:29:35 cmd=./liftp 13
+exit 0

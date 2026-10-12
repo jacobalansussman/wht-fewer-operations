@@ -1,0 +1,17 @@
+PART A.  pi = number of fixed addresses, chi = pi - 2 (character of V).  <pi^m, 1> = orbits on m-tuples.
+K =  4: orbits on 1-, 2-, 3-tuples 2 5 15; <chi,chi> = 1; copies of V in V x V = 1; copies in the table c = 5; Rest = 1; ab-6 formula 7; c + 2 ceil(Rest/d) = 7; 2K - 2 = 6; textbook 8; telescoping 6; group sum over 6 maps agrees
+K =  8: orbits on 1-, 2-, 3-tuples 2 5 16; <chi,chi> = 1; copies of V in V x V = 2; copies in the table c = 6; Rest = 23; ab-6 formula 14; c + 2 ceil(Rest/d) = 14; 2K - 2 = 14; textbook 16; telescoping 12; group sum over 168 maps agrees
+K = 16: orbits on 1-, 2-, 3-tuples 2 5 16; <chi,chi> = 1; copies of V in V x V = 2; copies in the table c = 6; Rest = 167; ab-6 formula 30; c + 2 ceil(Rest/d) = 30; 2K - 2 = 30; textbook 32; telescoping 24; group sum over 20160 maps agrees
+K = 32: orbits on 1-, 2-, 3-tuples 2 5 16; <chi,chi> = 1; copies of V in V x V = 2; copies in the table c = 6; Rest = 839; ab-6 formula 62; c + 2 ceil(Rest/d) = 62; 2K - 2 = 62; textbook 64; telescoping 48
+
+PART B.  K = 4, the six address maps, unreduced model.
+B1  rank of all (T(g) - 1), that is the number tau of output numbers that depend on g: 11 (claimed 11 = 5 x 2 + 1)
+B2  det[(rho(c) - 1) a, (rho(c^2) - 1) a] = 3 a1^2 + 3 a1 a2 + 3 a2^2 ; discriminant -27 (negative = never 0 for a real a other than 0)
+B3  nested pair for the sign: p2.P_g (M P_g a + b) + p1.P_g a + q0 = sign(g) holds for all six maps (exact)
+B3  my own 7-call program: output = P_g X P_g^T on all 6 maps x 16 unit tables = 96 cases, exact.  r(4) <= 7.
+B4  rho-part of the calls' outputs for the sign datum, over the six maps: dimension 3 (lemma: at least d x nu = 2); output map applied to it: all zero
+    rank of the output map on the 28 call outputs: 16
+    7-call program: the differences of the calls' outputs for t between the even maps span 2 dimensions, and the output map kills them: True
+B5  control: 5 one-call triples + ONE more call with random whole-number glue: 12 of 12 have no output glue (expected: all)
+    control: my program without its 7th call: output glue exists: False
+LIGHT label=ac-1-check exit=0 time=3s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:26:58 cmd=python3 -B check.py 5

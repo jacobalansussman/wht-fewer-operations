@@ -1,0 +1,4 @@
+p=2: complete coefficient choices reached 1 ; choices giving all 8 rows: 1   (with the support cut)
+LIGHT label=ac0-ctl-liftp2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:29:59 cmd=./liftp 2
+p=2: coefficient choices tried 14348907 ; choices giving all 8 rows: 1 ; most rows obtained by any choice: 8
+LIGHT label=ac0-ctl-lift2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:30:00 cmd=./lift3 2

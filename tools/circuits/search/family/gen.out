@@ -1,0 +1,5 @@
+N 4 gates 7 formula 3/4 N log N + N/4 = 7 textbook 8 ratio 0.8750 all outputs exact: True kinds {'p': 2, 'hub': 1, 'y': 4} coefficients |.| ['1', '2'] helper supports [(2, 2), (4, 1)]
+N 8 gates 20 formula 3/4 N log N + N/4 = 20 textbook 24 ratio 0.8333 all outputs exact: True kinds {'p': 8, 'hub': 4, 'y': 8} coefficients |.| ['1', '2'] helper supports [(2, 4), (4, 6), (8, 2)]
+N 16 gates 52 formula 3/4 N log N + N/4 = 52 textbook 64 ratio 0.8125 all outputs exact: True kinds {'p': 24, 'hub': 12, 'y': 16} coefficients |.| ['1', '2'] helper supports [(2, 8), (4, 12), (8, 12), (16, 4)]
+N 32 gates 128 formula 3/4 N log N + N/4 = 128 textbook 160 ratio 0.8000 all outputs exact: True kinds {'p': 64, 'hub': 32, 'y': 32} coefficients |.| ['1', '2'] helper supports [(2, 16), (4, 24), (8, 24), (16, 24), (32, 8)]
+N 64 gates 304 formula 3/4 N log N + N/4 = 304 textbook 384 ratio 0.7917 all outputs exact: True kinds {'p': 160, 'hub': 80, 'y': 64} coefficients |.| ['1', '2'] helper supports [(2, 32), (4, 48), (8, 48), (16, 48), (32, 48), (64, 16)]

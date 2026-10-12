@@ -1,0 +1,23 @@
+# 8-point Walsh-Hadamard transform, 21 gates, count (G), exactly three over-limit wires (hub3, hub8, hub11).  h-8, 2026-10-11.
+# e2-0's 20-gate staircase (slp_8.txt) with its fourth hub replaced by two tight wires q1, q2.  name = a * u + b * v
+p1 = 1 * x0 + 1 * x1
+p2 = 1 * x2 + -1 * x3
+hub3 = 1 * p1 + -1 * p2
+p4 = 1 * hub3 + 2 * x2
+p5 = -1 * hub3 + 2 * x0
+p6 = 1 * x4 + 1 * x5
+p7 = 1 * x6 + -1 * x7
+hub8 = 1 * p6 + 1 * p7
+p9 = 1 * hub8 + -2 * x6
+p10 = -1 * hub8 + 2 * x4
+hub11 = 1 * p4 + 1 * p9
+y12 = 1 * hub11 + -2 * p6
+y13 = -1 * y12 + 2 * p4
+y14 = -1 * hub11 + 2 * p1
+y15 = 1 * y14 + 2 * p9
+q1 = 1 * p10 + 2 * p7
+y17 = 1 * p5 + 1 * q1
+y18 = 1 * p5 + -1 * q1
+q2 = 1 * p5 + -2 * p2
+y19 = 1 * q2 + 1 * p10
+y20 = 1 * q2 + -1 * p10

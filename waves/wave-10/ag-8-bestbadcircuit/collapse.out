@@ -1,0 +1,35 @@
+46 ('absent at the transform', 'tau=3: NO', 'tau=-1: NO')
+1 ('absent at the transform', 'tau=3: UNDECIDED', 'tau=-1: NO')
+17 ('absent at the transform', 'tau=3: UNDECIDED', 'tau=-1: UNDECIDED')
+1 ('absent at the transform', 'tau=3: UNDECIDED', 'tau=-1: YES-DEGENERATE')
+41 ('absent at the transform', 'tau=3: YES', 'tau=-1: NO')
+519 ('absent at the transform', 'tau=3: YES', 'tau=-1: YES')
+321 ('absent at the transform', 'tau=3: YES', 'tau=-1: YES-DEGENERATE')
+105 ('occurs at the transform', 'tau=3: UNDECIDED', 'tau=-1: UNDECIDED')
+359 ('occurs at the transform', 'tau=3: YES', 'tau=-1: YES')
+
+('absent at the transform', 'tau=3: NO', 'tau=-1: NO')
+   wiring: h4<-(x0,x3) h7<-(x1,h4) T11<-(x2,h7) h5<-(h4,T11) T8<-(x3,h5) h6<-(x2,T8) T9<-(x0,h6) T10<-(h5,h6)
+('absent at the transform', 'tau=3: UNDECIDED', 'tau=-1: NO')
+   wiring: h4<-(x0,x3) h5<-(x1,h4) h6<-(x2,h5) h7<-(h4,h6) T9<-(x2,h7) T10<-(x1,h7) T11<-(x3,h7) T8<-(h6,T11)
+('absent at the transform', 'tau=3: UNDECIDED', 'tau=-1: UNDECIDED')
+   wiring: h4<-(x0,x3) h5<-(x1,h4) h6<-(x2,h5) T8<-(x3,h6) h7<-(x0,T8) T9<-(x2,h7) T10<-(x1,h7) T11<-(h4,h6)
+('absent at the transform', 'tau=3: UNDECIDED', 'tau=-1: YES-DEGENERATE')
+   wiring: h4<-(x1,x3) h6<-(x0,h4) h7<-(x2,h6) h5<-(h4,h7) T8<-(x1,h5) T9<-(x3,h7) T10<-(x0,h5) T11<-(h6,h7)
+   dead gates at tau=-1: ['h4', 'h6', 'h7', 'h5', 'T9', 'T11']
+   points at tau=-1: {'T8': ('1', '1', '1', '1'), 'T9': ('1', '-1', '1', '-1'), 'T10': ('1', '1', '-1', '-1'), 'T11': ('1', '-1', '-1', '1'), 'h4': ('0', '0', '0', '1'), 'h6': ('0', '0', '0', '1'), 'h7': ('0', '0', '0', '1'), 'h5': ('1', '-1', '1', '1')}
+('absent at the transform', 'tau=3: YES', 'tau=-1: NO')
+   wiring: h4<-(x0,x2) h7<-(x1,h4) T11<-(x3,h7) h6<-(x1,T11) h5<-(x0,h6) T8<-(x2,h5) T9<-(h5,h6) T10<-(h4,T11)
+('absent at the transform', 'tau=3: YES', 'tau=-1: YES')
+   wiring: h4<-(x2,x3) h5<-(x1,h4) T8<-(x0,h5) h6<-(x2,T8) T9<-(x0,h6) h7<-(h4,T9) T10<-(h4,T8) T11<-(x3,h7)
+   points at tau=-1: {'T8': ('1', '1', '1', '1'), 'T9': ('1', '-1', '1', '-1'), 'T10': ('1', '1', '-1', '-1'), 'T11': ('1', '-1', '-1', '1'), 'h4': ('0', '0', '1', '1'), 'h5': ('0', '1', '1', '1'), 'h6': ('1', '1', '-1', '1'), 'h7': ('1', '-1', '-1', '-3')}
+('absent at the transform', 'tau=3: YES', 'tau=-1: YES-DEGENERATE')
+   wiring: h4<-(x2,x3) h5<-(x1,x3) h6<-(x0,h5) T11<-(x2,h6) h7<-(h4,T11) T8<-(x1,h7) T9<-(x3,h7) T10<-(h5,T11)
+   dead gates at tau=-1: ['h4']
+   points at tau=-1: {'T8': ('1', '1', '1', '1'), 'T9': ('1', '-1', '1', '-1'), 'T10': ('1', '1', '-1', '-1'), 'T11': ('1', '-1', '-1', '1'), 'h4': ('0', '0', '1', '0'), 'h5': ('0', '1', '0', '-1'), 'h6': ('1', '-1', '0', '1'), 'h7': ('1', '-1', '1', '1')}
+('occurs at the transform', 'tau=3: UNDECIDED', 'tau=-1: UNDECIDED')
+   wiring: h4<-(x2,x3) h5<-(x1,h4) h7<-(x0,x1) T11<-(h5,h7) T9<-(h4,T11) h6<-(x1,T9) T8<-(x3,h6) T10<-(x2,h6)
+('occurs at the transform', 'tau=3: YES', 'tau=-1: YES')
+   wiring: h4<-(x0,x1) h5<-(x2,h4) h7<-(x1,h5) T8<-(x3,h5) T9<-(x3,h7) h6<-(x1,T9) T10<-(h4,T8) T11<-(h4,h6)
+   points at tau=-1: {'T8': ('1', '1', '1', '1'), 'T9': ('1', '-1', '1', '-1'), 'T10': ('1', '1', '-1', '-1'), 'T11': ('1', '-1', '-1', '1'), 'h4': ('1', '1', '0', '0'), 'h5': ('1', '1', '1', '0'), 'h7': ('1', '-1', '1', '0'), 'h6': ('1', '3', '1', '-1')}
+LIGHT label=ag8-collapse exit=0 time=9s waited=0s peak_rss_mb=115 peak_footprint_mb=111 lowest_cap_mb=1500 stopped=- start=08:34:50 cmd=python3 -B collapse.py

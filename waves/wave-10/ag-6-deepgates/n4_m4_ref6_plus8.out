@@ -1,0 +1,5 @@
+# deepmin NN=4 m=4 AREF=6 ACH=262 DIV=3 full=0 hcap=5
+# candidate targets=36 group=384
+# sets=467  reference helpers histogram: h=0:78 h=1:244 h=2:137 h=3:7 h=4:1 h=5:0  above cap=0
+# target sets where the challenger class saves a gate: 0
+LIGHT label=ag6c exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:48:52 cmd=./deepmin4 4 6 262 3

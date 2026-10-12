@@ -1,0 +1,26 @@
+replayed: 19 gates, all 8 outputs exact
+coordinate systems: 168
+number of the 19 wires OUTSIDE the class (X = neither; H3x = two-piece hub with different lower tuples) -> coordinate systems: [(3, 24), (4, 16), (5, 40), (7, 40), (8, 8), (9, 8), (11, 32)]
+best coordinate system (7, 1, 2) : 3 wires outside
+  g1   P1   [1, 0, 0, 0, 0, 0, 0, 1]  = f(x0, x7)
+  g2   P1   [0, 1, 0, 0, 0, 0, 1, 0]  = f(x1, x6)
+  g3   P1   [0, 0, 1, 0, 0, -1, 0, 0]  = f(x2, x5)
+  g4   P1   [0, 0, 0, 1, -1, 0, 0, 0]  = f(x3, x4)
+  g5   P2   [1, -1, 0, 0, 0, 0, -1, 1]  = f(g1, g2)
+  g6   P2   [0, 0, 1, 1, -1, -1, 0, 0]  = f(g3, g4)
+  g7   H3x  [1, -1, -1, -1, 1, 1, -1, 1]  = f(g5, g6)
+  g8   X    [1, -1, -1, -1, 1, 1, -1, -1]  = f(g7, x7)
+  g9   X    [1, -1, -1, -1, 1, -1, -1, 1]  = f(g7, x5)
+  g10  H3   [1, -1, -1, -1, 1, 1, 1, -1]  = f(g8, x6)
+  g11  H3   [1, -1, -1, -1, -1, -1, -1, 1]  = f(g9, x4)
+  y7   P3   [1, -1, -1, 1, -1, 1, 1, -1]  = f(g10, g4)
+  y3   P3   [1, -1, -1, 1, 1, -1, -1, 1]  = f(g9, x3)
+  y5   P3   [1, -1, 1, -1, -1, 1, -1, 1]  = f(y3, g5)
+  y1   P3   [1, -1, 1, -1, 1, -1, 1, -1]  = f(g10, g3)
+  y6   P3   [1, 1, -1, -1, -1, -1, 1, 1]  = f(g11, g2)
+  y2   P3   [1, 1, -1, -1, 1, 1, -1, -1]  = f(g8, x1)
+  y4   P3   [1, 1, 1, 1, -1, -1, -1, -1]  = f(y2, g6)
+  y0   P3   [1, 1, 1, 1, 1, 1, 1, 1]  = f(g11, g1)
+class floor at 8 points (x-9 section 5): (3/4)*8*3 + 8/4 = 20 ; this circuit: 19
+LIGHT label=z2-x9 exit=0 time=1s waited=2s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:00:48 cmd=python3 -B x9class.py
+exit 0

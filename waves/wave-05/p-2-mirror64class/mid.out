@@ -1,0 +1,22 @@
+variant: default
+m = 2  N = 16: frame size 7 (4^m - 3^m = 7), middle rank 6 (r = 6); non-zeros 22 = 3.14 per row; zero rows 0, rows with one non-zero 2; largest entry 2
+      non-zero blocks (write type, read type): 5 of 9 ; every non-zero block has the two digit sets covering all digits: True
+      cost outside the middle 5(N - 3^m) = 35 ; middle between 5 and 15 gates ; TOTAL between 40 and 50 ; Yates 32 ; ratio of the upper total to Yates 1.562
+      greedy pair sharing computes the middle in 10 gates => TOTAL 45 = 1.406 x Yates  (m = 2)
+      the 7 x 7 middle (rows = write frame, columns = read frame):
+         [0, 0, 0, 0, 1, 0, 0]
+         [0, 0, 0, 0, 0, 0, -1]
+         [0, 0, 1, 0, 0, 1, 1]
+         [0, 0, 0, 1, 0, 1, 1]
+         [1, 0, 0, 0, 0, 1, 1]
+         [0, 0, 1, 1, 1, 2, 1]
+         [0, -1, 1, 1, 1, 1, 1]
+m = 3  N = 64: frame size 37 (4^m - 3^m = 37), middle rank 28 (r = 28); non-zeros 296 = 8.00 per row; zero rows 0, rows with one non-zero 3; largest entry 4
+      non-zero blocks (write type, read type): 19 of 49 ; every non-zero block has the two digit sets covering all digits: True
+      cost outside the middle 5(N - 3^m) = 185 ; middle between 34 and 259 gates ; TOTAL between 219 and 444 ; Yates 192 ; ratio of the upper total to Yates 2.312
+      greedy pair sharing computes the middle in 121 gates => TOTAL 306 = 1.594 x Yates  (m = 3)
+m = 4  N = 256: frame size 175 (4^m - 3^m = 175), middle rank not run (r = 120); non-zeros 3292 = 18.81 per row; zero rows 0, rows with one non-zero 4; largest entry 8
+      non-zero blocks (write type, read type): 65 of 225 ; every non-zero block has the two digit sets covering all digits: True
+      cost outside the middle 5(N - 3^m) = 875 ; middle between 171 and 3117 gates ; TOTAL between 1046 and 3992 ; Yates 1024 ; ratio of the upper total to Yates 3.898
+      greedy pair sharing computes the middle in 971 gates => TOTAL 1846 = 1.803 x Yates  (m = 4)
+LIGHT label=p2-mid exit=0 time=22s waited=26s peak_rss_mb=17 peak_footprint_mb=14 lowest_cap_mb=1500 stopped=- start=00:39:38 cmd=python3 -B mid.py 4

@@ -1,0 +1,58 @@
+N = 2^9 = 512 points.  Textbook: 4608 operations in either count.
+Count (O): every addition, subtraction and multiplication by a constant costs one.
+Count (G): one operation is any a*u + b*v; multiplying by a constant is free.
+
+program                                                    (O) done   (G) done   units
+textbook                                                       4608       4608   
+count (O), exact H x, cheapest mix of units                    4352       3648   O8 O8 O8
+count (O), 8-point circuit in layers, exact H x                4352       3648   O8 O8 O8
+count (O), raw (H x times a power of 1/2)                      3840       3648   O8 O8 O8
+count (O), H x / sqrt(N)                                       4352       3648   O8 O8 O8
+count (G), cheapest mix of the 19-, 7- and 2-gate units        5952       3648   G8 G8 G8
+count (G), the family (3/4) N log2 N + N/4                     5888       3584   
+
+By formula at this size:
+  textbook N log2 N                                   4608
+  textbook and N multiplications (for H x / sqrt N)   5120
+  count (O), layers of the 20-operation circuit       4352
+  count (O), 20 j 8^(j-1) + 8^j with j = 3             4352
+  count (O), Alman and Rao (2023), exact count         4927
+  count (G), family (3/4) N log2 N + N/4               3584
+  count (G), rate 7/8 of 1994 on pairs of bits         4096   (their formula for an odd power of two: (7/8) N log2 N + N/8)
+N = 2^10 = 1024 points.  Textbook: 10240 operations in either count.
+Count (O): every addition, subtraction and multiplication by a constant costs one.
+Count (G): one operation is any a*u + b*v; multiplying by a constant is free.
+
+program                                                    (O) done   (G) done   units
+textbook                                                      10240      10240   
+count (O), exact H x, cheapest mix of units                    9728       8320   O8 O8 O8 B2
+count (O), 8-point circuit in layers, exact H x                9728       8320   O8 O8 O8 B2
+count (O), raw (H x times a power of 1/2)                      8704       8320   O8 O8 O8 B2
+count (O), H x / sqrt(N)                                       9728       8320   O8 O8 O8 B2
+count (G), cheapest mix of the 19-, 7- and 2-gate units       12928       8320   G8 G8 G8 B2
+count (G), the family (3/4) N log2 N + N/4                    13056       7936   
+
+By formula at this size:
+  textbook N log2 N                                   10240
+  textbook and N multiplications (for H x / sqrt N)   11264
+  count (O), layers of the 20-operation circuit       9728
+  count (O), Alman and Rao (2023), exact count         10879
+  count (G), family (3/4) N log2 N + N/4               7936
+  count (G), rate 7/8 of 1994 on pairs of bits         8960
+Operations for exact H x.  (G): a*u + b*v is one operation.  (O): everything is charged.
+  points  textbook |  (G) 1994 (G)family (G)layers | (O)AlmanRao (O)layers  (O) best
+       4         8 |         7         7         7 |          11         8         8
+       8        24 |        22        20        19 |          30        28        24
+      16        64 |        56        52        54 |          77        72        64
+      32       160 |       144       128       132 |         187       176       160
+      64       384 |       336       304       304 |         431       384       384
+     128       896 |       800       704       736 |         991       896       896
+     256      2048 |      1792      1600      1664 |        2239      2048      2048
+     512      4608 |      4096      3584      3648 |        4927      4352      4352
+    1024     10240 |      8960      7936      8320 |       10879      9728      9728
+    2048     22528 |     19968     17408     18176 |       23807     21504     21504
+    4096     49152 |     43008     37888     38912 |       51199     45056     45056
+    8192    106496 |     94208     81920     86016 |      110591     98304     98304
+   16384    229376 |    200704    176128    184320 |      237567    212992    212992
+(G) 1994: the formulas of Coppersmith, Feig and Linzer (page 969): (7/8) N log2 N when N is a power of four,
+          and (7/8) N log2 N + N/8 at the other sizes, which is one textbook layer more.

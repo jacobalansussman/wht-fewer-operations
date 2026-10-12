@@ -1,0 +1,1 @@
+LIGHT label=u3-an5-1 exit=0 time=90s waited=0s peak_rss_mb=3 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=01:48:30 cmd=./an.sh 5 1 1500000 1.0

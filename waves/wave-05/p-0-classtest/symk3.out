@@ -1,0 +1,26 @@
+k=3 p=7 tau=2 (1/tau=4): 7 gates
+k=3 p=7 tau=3 (1/tau=5): 7 gates
+k=3 p=7 tau=4 (1/tau=2): 7 gates
+k=3 p=7 tau=5 (1/tau=3): 7 gates
+k=3 p=7 tau=6 (1/tau=6): 7 gates
+k=3 p=11 tau=2 (1/tau=6): 8 gates
+k=3 p=11 tau=3 (1/tau=4): 8 gates
+k=3 p=11 tau=4 (1/tau=3): 8 gates
+k=3 p=11 tau=5 (1/tau=9): 8 gates
+k=3 p=11 tau=6 (1/tau=2): 8 gates
+k=3 p=11 tau=7 (1/tau=8): 8 gates
+k=3 p=11 tau=8 (1/tau=7): 8 gates
+k=3 p=11 tau=9 (1/tau=5): 8 gates
+k=3 p=11 tau=10 (1/tau=10): 7 gates
+k=3 p=13 tau=2 (1/tau=7): 8 gates
+k=3 p=13 tau=3 (1/tau=9): 8 gates
+k=3 p=13 tau=4 (1/tau=10): 8 gates
+k=3 p=13 tau=5 (1/tau=8): 8 gates
+k=3 p=13 tau=6 (1/tau=11): 8 gates
+k=3 p=13 tau=7 (1/tau=2): 8 gates
+k=3 p=13 tau=8 (1/tau=5): 8 gates
+k=3 p=13 tau=9 (1/tau=3): 8 gates
+k=3 p=13 tau=10 (1/tau=4): 8 gates
+k=3 p=13 tau=11 (1/tau=6): 8 gates
+k=3 p=13 tau=12 (1/tau=12): 7 gates
+LIGHT label=p0-k3 exit=0 time=15s waited=0s peak_rss_mb=36 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=00:20:20 cmd=./symk.sh 3 5 7 11 13

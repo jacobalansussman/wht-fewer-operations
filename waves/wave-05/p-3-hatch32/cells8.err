@@ -1,0 +1,2 @@
+LIGHT label=p3-cells8 exit=0 time=18s waited=24s peak_rss_mb=107 peak_footprint_mb=90 lowest_cap_mb=1500 stopped=- start=00:15:07 cmd=python3 -B cells8.py all
+rc=0

@@ -1,0 +1,9 @@
+orthonormal frames: 6 [['00001', '00010', '00100', '01000', '10000'], ['00001', '01110', '10110', '11010', '11100'], ['00010', '01101', '10101', '11001', '11100'], ['00100', '01011', '10011', '11001', '11010'], ['00111', '01000', '10011', '10101', '10110'], ['00111', '01011', '01101', '01110', '10000']]
+frames through each odd non-centre direction: [2] ; centre in 0 ; common directions of two frames: [1]
+count vectors of 'four arrays, each along its own frame' up to symmetry: 5
+   frames (0, 0, 0, 0): survives; tight selections 5; largest joined set 4
+   frames (0, 0, 0, 1): survives; tight selections 17; largest joined set 4
+   frames (0, 0, 1, 1): survives; tight selections 17; largest joined set 4
+   frames (0, 0, 1, 2): survives; tight selections 36; largest joined set 4
+   frames (0, 1, 2, 3): survives; tight selections 43; largest joined set 4
+LIGHT label=n2-plain exit=0 time=3s waited=0s peak_rss_mb=12 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:12:44 cmd=python3 -B plain_test.py

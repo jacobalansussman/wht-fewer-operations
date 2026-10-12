@@ -1,0 +1,6 @@
+h=2 f=1 (4 points) port 01 group all    p=10009 : 96 monomial steps, dim A = 16, dim (A + D A D) = 16 ; control D^2 in A: True ; D in A: True ; D in A + D A D: YES (candidate, to be lifted)
+h=2 f=2 (16 points) port 01 group all    p=10009 : 96 monomial steps, dim A = 64, dim (A + D A D) = 76 ; control D^2 in A: True ; D in A: False ; D in A + D A D: NO
+h=2 f=3 (64 points) port 01 group all    p=10009 : 96 monomial steps, dim A = 96, dim (A + D A D) = 144 ; control D^2 in A: True ; D in A: False ; D in A + D A D: NO
+h=2 f=1 (4 points) port 01 group all    p=1000033 : 96 monomial steps, dim A = 16, dim (A + D A D) = 16 ; control D^2 in A: True ; D in A: True ; D in A + D A D: YES (candidate, to be lifted)
+h=2 f=2 (16 points) port 01 group all    p=1000033 : 96 monomial steps, dim A = 64, dim (A + D A D) = 76 ; control D^2 in A: True ; D in A: False ; D in A + D A D: NO
+h=2 f=3 (64 points) port 01 group all    p=1000033 : 96 monomial steps, dim A = 96, dim (A + D A D) = 144 ; control D^2 in A: True ; D in A: False ; D in A + D A D: NO

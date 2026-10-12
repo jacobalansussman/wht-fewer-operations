@@ -1,0 +1,5 @@
+diagonal of two 2-bit columns {(u,u)}, N=16          |C|=  4  sqrt(N)=  4  H 1_C == sqrt(N) 1_C : True
+diagonal of two 3-bit columns, N=64                  |C|=  8  sqrt(N)=  8  H 1_C == sqrt(N) 1_C : True
+extended Hamming [8,4] (the code under E8), N=256    |C|= 16  sqrt(N)= 16  H 1_C == sqrt(N) 1_C : True
+k=6, C of dimension 2: the 4-dimensional space of functions on C_dual/C is invariant: True (acts there as 4 x the 4-point transform)
+LIGHT label=i-hatch-codes exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:08:48 cmd=/usr/bin/python3 -I -B waves/wave-01/i-hatch/codes.py

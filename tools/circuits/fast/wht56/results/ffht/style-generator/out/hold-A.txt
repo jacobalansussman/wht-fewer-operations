@@ -1,0 +1,22 @@
+## locked_run.sh: taskset -c 1 sh hold.sh kloop redo wheref
+## pinned to processor 1 (siblings: 1,5)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 17:14:29 UTC; uptime: 17:14:29 up 23:22,  0 user,  load average: 6.20, 6.32, 5.63
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   6   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.8   7   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.8   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+##     949528 99.6   5  10 /usr/bin/python3 -B (another job)/tools/circuits/tables.py
+##     953860 99.2   2  15 build3/harness check -k 21 24
+hold.sh: step kloop starts 17:14:29
+hold.sh: step kloop ends 17:17:20
+hold.sh: step redo starts 17:17:20
+hold.sh: step redo ends 17:21:42
+hold.sh: step wheref starts 17:21:42
+hold.sh: step wheref ends 17:27:14
+## exit code 0
+## after: 2026-10-11 17:27:14 UTC; uptime: 17:27:14 up 23:35,  0 user,  load average: 5.10, 5.01, 5.24
+## after: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839050 99.9   7   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839938 99.9   0   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839000 99.9   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334

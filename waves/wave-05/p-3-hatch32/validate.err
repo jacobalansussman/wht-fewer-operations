@@ -1,0 +1,1 @@
+LIGHT label=p3-validate exit=0 time=3s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:32:14 cmd=python3 -B validate.py

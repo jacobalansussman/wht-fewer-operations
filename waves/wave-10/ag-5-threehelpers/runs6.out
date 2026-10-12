@@ -1,0 +1,5 @@
+three helpers, degree 5, 128 points (rank bound 122; ag-5 bound 123)
+light.py: ag5-k7 found no free slot in 90 s. Nothing was run. Do other work and retry in a few minutes.
+k 7 d 5 K = top5 dim K 6 | balanced pairs 128 irreducible balanced 4-sets 31008 | target rank N - dim K = 122 | classes wanted [41, 41, 41]
+  no exact cover found with [23, 23, 23] fours (random DFS, not exhaustive)
+  tries 6 best rank 114 classes 123 of N = 128 sizes [41, 41, 41] | good iff rank = 122

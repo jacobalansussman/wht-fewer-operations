@@ -1,0 +1,3 @@
+steiner_H8n_s3_seed best 23 exact 23 t 0.0
+steiner_H8n_s3_seed best 22 exact 22 t 401.5
+steiner_H8n_s3_seed DONE evaluated 8267 best 22 hist {22: 14, 23: 138, 24: 285, 25: 567, 26: 826, 27: 866, 28: 667, 29: 811}

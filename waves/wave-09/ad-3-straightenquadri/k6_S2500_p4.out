@@ -1,0 +1,7 @@
+subspaces 2825, flats 26387, flats of dimension 1 to 4 unchanged by a given u: 2388
+control: start has 28 points, is_bq(start)=0 ; the quadric y0y1+y2y3+y4y5 has 28 points, is_bq=1
+S. depth 1: beam holds 2500 sets, least score 52297728
+S. depth 2: beam holds 2500 sets, least score 6881280
+S. depth 3: beam holds 2500 sets, least score 712704
+S. depth 4: beam holds 2500 sets, least score 221184
+S. beam 2500: no quadric within 4 exchanges (a search; says nothing about existence)

@@ -1,0 +1,6 @@
+8_xk265_c_w9 (outside core, its own width)     default: cells [385], MHz 95.9 [91.2 - 98.9] | -dff: cells [377], MHz 95.4 [93.4 - 98.9]
+8_textbook_c_w9                                default: cells [385], MHz 97.3 [86.3 - 102.4] | -dff: cells [373], MHz 103.6 [100.5 - 105.0]
+8_ours_c_w9                                    default: cells [302], MHz 69.4 [63.1 - 70.2] | -dff: cells [301], MHz 69.5 [64.4 - 70.7]
+16_xk264_c_w9 (outside core, its own width)    default: cells [1065], MHz 68.5 [63.1 - 72.4] | -dff: cells [1049], MHz 71.4 [68.7 - 72.8]
+16_textbook_c_w9                               default: cells [1065], MHz 68.4 [66.6 - 68.8] | -dff: cells [1041], MHz 76.9 [74.4 - 81.1]
+16_ours_c_w9                                   default: cells [963], MHz 54.6 [52.1 - 55.1] | -dff: cells [956], MHz 53.3 [50.3 - 56.2]

@@ -1,0 +1,22 @@
+p=2 n=8 rows=16 non-input distinct targets=15  intermediates allowed m=4  => gate budget 19
+visited states by remaining budget: j=4:1 j=3:7 j=2:358 j=1:14628
+RESULT p=2: YES, circuit with 19 gates. points in order (after the 8 inputs):
+  g8  TARGET = [1 1 0 0 0 0 0 0]  from #1 + 1*#0 (projectively)
+  g9  TARGET = [1 0 1 0 0 0 0 0]  from #2 + 1*#0 (projectively)
+  g10 TARGET = [1 0 0 1 0 0 0 0]  from #3 + 1*#0 (projectively)
+  g11 TARGET = [1 0 0 0 1 0 0 0]  from #4 + 1*#0 (projectively)
+  g12 TARGET = [1 1 0 0 1 0 0 0]  from #8 + 1*#4 (projectively)
+  g13 TARGET = [1 0 1 0 1 0 0 0]  from #9 + 1*#4 (projectively)
+  g14 TARGET = [1 0 0 1 1 0 0 0]  from #10 + 1*#4 (projectively)
+  g15 inter  = [0 0 0 1 0 0 0 1]  from #7 + 1*#3 (projectively)
+  g16 TARGET = [1 0 1 1 0 0 0 1]  from #15 + 1*#9 (projectively)
+  g17 TARGET = [1 0 1 1 1 0 0 1]  from #15 + 1*#13 (projectively)
+  g18 inter  = [0 0 0 1 0 0 1 0]  from #6 + 1*#3 (projectively)
+  g19 TARGET = [1 1 0 1 0 0 1 0]  from #18 + 1*#8 (projectively)
+  g20 TARGET = [1 1 0 1 1 0 1 0]  from #18 + 1*#12 (projectively)
+  g21 inter  = [0 0 0 1 0 0 1 1]  from #15 + 1*#6 (projectively)
+  g22 inter  = [1 0 1 0 0 1 0 0]  from #9 + 1*#5 (projectively)
+  g23 TARGET = [1 1 1 0 0 1 0 0]  from #22 + 1*#1 (projectively)
+  g24 TARGET = [1 1 1 1 0 1 1 1]  from #23 + 1*#21 (projectively)
+  g25 TARGET = [1 1 1 0 1 1 0 0]  from #23 + 1*#4 (projectively)
+  g26 TARGET = [1 1 1 1 1 1 1 1]  from #24 + 1*#4 (projectively)

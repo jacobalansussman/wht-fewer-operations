@@ -1,0 +1,7 @@
+slp_4.txt N=4 gates=7 formula(3/4 N k + N/4)=7 outputs are exactly the 4 rows of H: True coefficient sizes: ['1', '2']
+slp_8.txt N=8 gates=20 formula(3/4 N k + N/4)=20 outputs are exactly the 8 rows of H: True coefficient sizes: ['1', '2']
+slp_16.txt N=16 gates=52 formula(3/4 N k + N/4)=52 outputs are exactly the 16 rows of H: True coefficient sizes: ['1', '2']
+slp_32.txt N=32 gates=128 formula(3/4 N k + N/4)=128 outputs are exactly the 32 rows of H: True coefficient sizes: ['1', '2']
+slp_64.txt N=64 gates=304 formula(3/4 N k + N/4)=304 outputs are exactly the 64 rows of H: True coefficient sizes: ['1', '2']
+ALL PASS
+LIGHT label=j-note exit=0 time=1s waited=14s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:11:44 cmd=python3 -B j-note/replay_slp.py

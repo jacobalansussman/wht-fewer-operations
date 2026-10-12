@@ -1,0 +1,6 @@
+p=5 n=8 rows=8 non-input distinct targets=8  intermediates allowed m=5  => gate budget 13
+first intermediate restricted to 1 given points
+visited states by remaining budget: j=5:1 j=4:1 j=3:135 j=2:21714 j=1:4119162
+RESULT p=5: NO circuit with 13 gates (exhaustive over GF(5))
+LIGHT label=ab0-B4-p5-m5-d4_c4 exit=0 time=8s waited=0s peak_rss_mb=8 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=05:17:59 cmd=./mincirc_top 5 8 5 rows_B4.txt top5_d4_c4.txt
+exit 0

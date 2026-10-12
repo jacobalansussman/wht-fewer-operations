@@ -1,0 +1,5 @@
+k=4 n=15: largest |g(j) g(j+n/3) g(j+2n/3) - N g(3j)| over all j = 2.97e-14 (the terms have size 64);  coefficient identity exact: True
+k=6 n=63: largest |g(j) g(j+n/3) g(j+2n/3) - N g(3j)| over all j = 7.73e-13 (the terms have size 512);  coefficient identity exact: True
+k=8 n=255: largest |g(j) g(j+n/3) g(j+2n/3) - N g(3j)| over all j = 1.87e-11 (the terms have size 4096);  coefficient identity exact: True
+k=10 n=1023: largest |g(j) g(j+n/3) g(j+2n/3) - N g(3j)| over all j = 2.01e-10 (the terms have size 32768);  coefficient identity exact: True
+LIGHT label=e0-hd exit=0 time=1s waited=6s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:16:50 cmd=python3 -B hd.py

@@ -1,0 +1,61 @@
+h8_19gates.txt: N=8 gates=19 | tight gate wires T=14, over-limit V=5 | saved=5 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   over-limit g7     s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2] read by 2: g8(8,8) g9(8,8)   [1, -1, -1, -1, 1, 1, -1, 1]
+   over-limit g8     s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g10(8,4) y2(8,1)=OUT   [1, -1, -1, -1, 1, 1, -1, -1]
+   over-limit g9     s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g11(8,4) y3(8,1)=OUT   [1, -1, -1, -1, 1, -1, -1, 1]
+   over-limit g10    s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2] read by 2: y7(8,1)=OUT y1(8,1)=OUT   [1, -1, -1, -1, 1, 1, 1, -1]
+   over-limit g11    s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2] read by 2: y6(8,1)=OUT y0(8,1)=OUT   [1, -1, -1, -1, -1, -1, -1, 1]
+h8_19gates.txt: N=8 gates=19 | tight gate wires T=14, over-limit V=5 | saved=5 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   transposed: 19 gates (fixed wires 19, nodes with 3 or more terms: [], association orders 1)
+   TRANSPOSE of h8_19gates.txt: N=8 gates=19 | tight gate wires T=14, over-limit V=5 | saved=5 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+      over-limit t(g7)        s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2]  [-1, 1, 1, 1, 1, -1, 1, 1]
+      over-limit t(g6)        s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]  [1, -1, -1, -1, 1, 1, -1, -1]
+      over-limit t(g5)        s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]  [-1, 1, 1, 1, 1, 1, 1, 1]
+      over-limit t(g4)        s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2]  [1, -1, -1, -1, 1, 1, -1, 1]
+      over-limit t(g2)        s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2]  [1, -1, -1, -1, -1, -1, 1, -1]
+slp_8.txt: N=8 gates=20 | tight gate wires T=16, over-limit V=4 | saved=4 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   over-limit hub3   s=4 s'=8 s*s'/N=4 entangled bits [0, 1] read by 2: p4(4,2) p5(4,2)   [1, 1, -1, 1, 0, 0, 0, 0]
+   over-limit hub8   s=4 s'=8 s*s'/N=4 entangled bits [0, 1] read by 2: p9(4,2) p10(4,2)   [0, 0, 0, 0, 1, 1, 1, -1]
+   over-limit hub11  s=8 s'=4 s*s'/N=4 entangled bits [1, 2] read by 2: y12(8,1)=OUT y14(8,1)=OUT   [1, 1, 1, 1, 1, 1, -1, -1]
+   over-limit hub16  s=8 s'=4 s*s'/N=4 entangled bits [1, 2] read by 2: y17(8,1)=OUT y19(8,1)=OUT   [1, -1, 1, -1, 1, -1, -1, 1]
+slp_8.txt: N=8 gates=20 | tight gate wires T=16, over-limit V=4 | saved=4 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+   transposed: 20 gates (fixed wires 20, nodes with 3 or more terms: [], association orders 1)
+   TRANSPOSE of slp_8.txt: N=8 gates=20 | tight gate wires T=16, over-limit V=4 | saved=4 | Q = gates + V - N log2 N = 0  (L1: Q >= 0)
+      over-limit t(hub16)     s=4 s'=8 s*s'/N=4 entangled bits [1, 2]  [0, 1, 0, 1, 0, -1, 0, 1]
+      over-limit t(hub11)     s=4 s'=8 s*s'/N=4 entangled bits [1, 2]  [-1, 0, -1, 0, 1, 0, -1, 0]
+      over-limit t(hub8)      s=8 s'=4 s*s'/N=4 entangled bits [0, 1]  [-1, -1, 1, -1, 1, 1, -1, 1]
+      over-limit t(hub3)      s=8 s'=4 s*s'/N=4 entangled bits [0, 1]  [1, -1, -1, -1, 1, -1, -1, -1]
+h8_21gates_drain.txt: N=8 gates=21 | tight gate wires T=10, over-limit V=11 | saved=3 | Q = gates + V - N log2 N = 8  (L1: Q >= 0)
+   over-limit n9     s=3 s'=8 s*s'/N=3 entangled bits [0, 1] read by 2: n10(4,8) n28(8,1)=OUT   [1, 1, 0, -1, 0, 0, 0, 0]
+   over-limit n10    s=4 s'=8 s*s'/N=4 entangled bits [0, 1] read by 3: n14(8,4) n19(8,8) n26(8,1)=OUT   [1, 1, 1, -1, 0, 0, 0, 0]
+   over-limit n12    s=3 s'=8 s*s'/N=3 entangled bits [0, 1] read by 2: n13(4,8) n27(8,1)=OUT   [0, 0, 0, 0, 1, 1, 0, 1]
+   over-limit n13    s=4 s'=8 s*s'/N=4 entangled bits [0, 1] read by 1: n14(8,4)   [0, 0, 0, 0, 1, 1, -1, 1]
+   over-limit n14    s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2] read by 4: n15(8,8) n16(8,8) n17(8,8) n18(8,8)   [1, 1, 1, -1, 1, 1, -1, 1]
+   over-limit n15    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: n25(8,1)=OUT n27(8,1)=OUT   [1, 1, 1, 1, 1, 1, -1, 1]
+   over-limit n16    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: n20(8,8) n22(8,1)=OUT   [1, 1, 1, -1, -1, 1, -1, 1]
+   over-limit n17    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: n19(8,8) n21(8,1)=OUT   [1, 1, 1, -1, 1, -1, -1, 1]
+   over-limit n18    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: n24(8,1)=OUT n28(8,1)=OUT   [1, 1, 1, -1, 1, 1, -1, -1]
+   over-limit n19    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 1: n23(8,1)=OUT   [1, 1, 1, -1, -1, 1, 1, -1]
+   over-limit n20    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 1: n26(8,1)=OUT   [1, 3, 1, -1, -1, 1, -1, 1]
+h8_21gates_drain.txt: N=8 gates=21 | tight gate wires T=10, over-limit V=11 | saved=3 | Q = gates + V - N log2 N = 8  (L1: Q >= 0)
+   transposed: 21 gates (fixed wires 16, nodes with 3 or more terms: [('n14', 4), ('n10', 3), ('n0', 3), ('n1', 3)], association orders 405)
+   TRANSPOSE of h8_21gates_drain.txt: N=8 gates=21 | tight gate wires T=16, over-limit V=5 | saved=3 | Q = gates + V - N log2 N = 2  (L1: Q >= 0)
+      over-limit t(n14)       s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]  [1, -1, 1, 1, 1, 1, -1, -1]
+      over-limit t(n12)       s=8 s'=4 s*s'/N=4 entangled bits [0, 1]  [1, -1, 1, 1, -1, 1, -1, -1]
+      over-limit t(n10)       s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]  [1, 1, 1, -1, 1, 1, -1, -1]
+      over-limit t(n9)        s=8 s'=4 s*s'/N=4 entangled bits [0, 1]  [1, 1, 1, -1, 1, 1, 1, -1]
+      over-limit t(n14)part   s=6 s'=4 s*s'/N=3 entangled bits [0, 1]  [0, -1, 1, 1, 0, 1, -1, -1]
+h8_21gates.txt: N=8 gates=21 | tight gate wires T=15, over-limit V=6 | saved=3 | Q = gates + V - N log2 N = 3  (L1: Q >= 0)
+   over-limit g14    s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2] read by 4: g15(8,8) g17(8,8) g20(8,1)=OUT g21(8,1)=OUT   [1, 1, -1, 1, 1, -1, -1, -1]
+   over-limit g15    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 2: g16(8,4) g26(8,1)=OUT   [1, 1, -1, 1, 1, 1, -1, -1]
+   over-limit g16    s=8 s'=4 s*s'/N=4 entangled bits [0, 1] read by 2: g22(8,1)=OUT g23(8,1)=OUT   [1, 1, -1, 1, 1, 1, -1, 1]
+   over-limit g17    s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2] read by 1: g18(8,1)=OUT   [1, 1, -1, 1, -1, -1, -1, -1]
+   over-limit g25    s=3 s'=8 s*s'/N=3 entangled bits [0, 1, 2] read by 1: g26(8,1)=OUT   [0, 1, 0, 0, 1, 0, -1, 0]
+   over-limit g27    s=8 s'=3 s*s'/N=3 entangled bits [0, 2] read by 1: g28(8,1)=OUT   [1, -1, -1, 1, 3, 1, -3, -1]
+h8_21gates.txt: N=8 gates=21 | tight gate wires T=15, over-limit V=6 | saved=3 | Q = gates + V - N log2 N = 3  (L1: Q >= 0)
+   transposed: 21 gates (fixed wires 18, nodes with 3 or more terms: [('g14', 4), ('x4', 3)], association orders 45)
+   TRANSPOSE of h8_21gates.txt: N=8 gates=21 | tight gate wires T=16, over-limit V=5 | saved=3 | Q = gates + V - N log2 N = 2  (L1: Q >= 0)
+      over-limit t(g14)       s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2]  [1, -1, 1, 1, 1, 1, -1, 1]
+      over-limit t(g13)       s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]  [1, -1, 1, 1, 1, 1, 1, 1]
+      over-limit t(g11)       s=8 s'=4 s*s'/N=4 entangled bits [1, 2]  [1, 1, -1, -1, -1, -1, -1, -1]
+      over-limit t(g10)       s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]  [1, -1, 1, 1, 1, -1, -1, 1]
+      over-limit t(g9)        s=8 s'=4 s*s'/N=4 entangled bits [1, 2]  [1, -1, 1, -1, 1, -1, -1, 1]

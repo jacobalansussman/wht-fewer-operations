@@ -1,0 +1,4 @@
+p=2 n=8 rows=8 non-input distinct targets=8  intermediates allowed m=4  => gate budget 12
+visited states by remaining budget: j=4:1 j=3:28 j=2:546 j=1:21174
+RESULT p=2: NO circuit with 12 gates (exhaustive over GF(2))
+LIGHT label=wcross-nbr4-p2-m4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:40:44 cmd=waves/wave-01/d-0-zeta/mincirc 2 8 4 rows_nbr4half.txt

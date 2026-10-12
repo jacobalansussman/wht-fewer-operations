@@ -1,0 +1,7 @@
+m = 4, W = 21 (plain 84 moves), up to 83 moves; group of 48 maps
+  79 moves: 1 count vectors pass counting; excluded by the clique lemma 1, by the zero-form lemma 0, SURVIVE 0
+  80 moves: 8 count vectors pass counting; excluded by the clique lemma 8, by the zero-form lemma 0, SURVIVE 0
+  81 moves: 43 count vectors pass counting; excluded by the clique lemma 42, by the zero-form lemma 1, SURVIVE 0
+  82 moves: 210 count vectors pass counting; excluded by the clique lemma 191, by the zero-form lemma 17, SURVIVE 2
+  83 moves: 942 count vectors pass counting; excluded by the clique lemma 786, by the zero-form lemma 142, SURVIVE 14
+LIGHT label=h2-m4W21p exit=0 time=2s waited=20s peak_rss_mb=22 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:11:15 cmd=[path cut short]

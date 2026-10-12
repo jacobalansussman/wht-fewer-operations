@@ -1,0 +1,18 @@
+F0 = [1, 1, 1, 1, 1, 1, 1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 0, 0, 0)): smallest tree has 15 steps -> 22 gates
+F0 = [1, 1, 1, 1, 1, 1, 1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 0, 0, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, 1, 1, 1, -1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 0, 1, 0)): smallest tree has 15 steps -> 22 gates
+F0 = [1, 1, 1, 1, 1, 1, -1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 0, 1, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, 1, 1, -1, 1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 1, 0, 0)): smallest tree has 12 steps -> 19 gates
+F0 = [1, 1, 1, 1, 1, -1, 1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 1, 0, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, 1, 1, -1, -1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 1, 1, 0)): smallest tree has 12 steps -> 19 gates
+F0 = [1, 1, 1, 1, 1, -1, -1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (0, 1, 1, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, 1, 1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 0, 0, 0)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, 1, 1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 0, 0, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, 1, -1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 0, 1, 0)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, 1, -1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 0, 1, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, -1, 1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 1, 0, 0)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, -1, 1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 1, 0, 1)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, -1, -1, -1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 1, 1, 0)): smallest tree has 14 steps -> 21 gates
+F0 = [1, 1, 1, -1, 1, -1, -1, 1] (monomials x0x1,x0x2,x1x2,x0x1x2: (1, 1, 1, 1)): smallest tree has 14 steps -> 21 gates
+EXACT minimum of the one-tree flip-walk model at 8 points over all sign vectors and all chains of subgroups: 19 gates (7 + 12)
+LIGHT label=g1-exact8 exit=0 time=7s waited=66s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=23:17:16 cmd=python3 -B exact8.py

@@ -1,0 +1,6 @@
+spreads that occur between two different bases: [4, 16]
+per basis (meets = spread 4, skew = spread 16): [(10, 16)]
+a half-transform basis meets [6] other half-transform bases and [4] flat ones
+a flat basis meets [5] flat ones and [5] half-transform ones
+the 12 flat bases: meeting graph connected: True, two-colourable: True, colour classes: [6, 6]
+S swaps each flat basis with one of the OTHER colour: True ; and that partner is the one it does not meet in the other six: True

@@ -1,0 +1,19 @@
+brick_m1.txt | gates 7 | frames tested 24
+     12 frames: correct at tau=-1 | rank dF/dtheta = 7 of 7 unknowns | MOVES to first order
+     12 frames: correct at tau=-1 | rank dF/dtheta = 7 of 7 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [((1, 2), 0), ((1, 2), 1), ((1, 2), 2), ((1, 2), 3), ((1, 3), 1), ((1, 3), 2), ((2, 1), 0), ((2, 1), 1), ((2, 1), 2), ((2, 1), 3), ((2, 3), 1), ((2, 3), 2)] 
+slp_8.txt | gates 20 | frames tested 1
+      1 frames: correct at tau=-1 | rank dF/dtheta = 20 of 20 unknowns | MOVES to first order
+  frames that move (columns of A, shift): [((1, 2, 4), 0)] 
+h8_19gates.txt | gates 19 | frames tested 1
+      1 frames: correct at tau=-1 | rank dF/dtheta = 19 of 19 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [] 
+slp_8.txt | gates 20 | frames tested 1344
+    156 frames: correct at tau=-1 | rank dF/dtheta = 20 of 20 unknowns | MOVES to first order
+   1188 frames: correct at tau=-1 | rank dF/dtheta = 20 of 20 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [((1, 2, 4), 0), ((1, 2, 4), 1), ((1, 2, 4), 2), ((1, 2, 4), 3), ((1, 2, 4), 4), ((1, 2, 4), 5), ((1, 2, 4), 6), ((1, 2, 4), 7), ((1, 2, 5), 0), ((1, 2, 5), 1), ((1, 2, 5), 2), ((1, 2, 5), 3)] ...
+h8_19gates.txt | gates 19 | frames tested 1344
+     36 frames: correct at tau=-1 | rank dF/dtheta = 19 of 19 unknowns | MOVES to first order
+   1308 frames: correct at tau=-1 | rank dF/dtheta = 19 of 19 unknowns | rigid (first-order obstruction)
+  frames that move (columns of A, shift): [((1, 2, 7), 0), ((1, 2, 7), 7), ((1, 4, 7), 0), ((1, 4, 7), 7), ((2, 1, 7), 0), ((2, 1, 7), 7), ((2, 4, 7), 0), ((2, 4, 7), 7), ((3, 5, 4), 0), ((3, 5, 4), 7), ((3, 5, 7), 0), ((3, 5, 7), 7)] ...
+LIGHT label=h6-def exit=0 time=74s waited=24s peak_rss_mb=12 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=23:51:17 cmd=sh -c python3 -B deform.py brick_m1.txt 2 all; python3 -B deform.py waves/wave-02/e2-0-pieces/slp_8.txt 3 id; python3 -B deform.py waves/wave-03/g-1-tightwires/h8_19gates.txt 3 id; python3 -B deform.py [path cut short]

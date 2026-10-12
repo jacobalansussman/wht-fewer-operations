@@ -1,0 +1,13 @@
+N=16 cube tree: spanning 32  [(N/2) log2 N = 32]
+N=16 chain, address order: spanning 32  [(N/2) log2 N = 32]
+N=16 chain, Gray order: spanning 32  [(N/2) log2 N = 32]
+N=16: 6000 random trees (half random shapes, half cube shapes with random leaves): least spanning count 39; never below 32: True
+N=32 cube tree: spanning 80  [(N/2) log2 N = 80]
+N=32 chain, address order: spanning 80  [(N/2) log2 N = 80]
+N=32 chain, Gray order: spanning 80  [(N/2) log2 N = 80]
+N=32: 2500 random trees (half random shapes, half cube shapes with random leaves): least spanning count 201; never below 80: True
+N=64 cube tree: spanning 192  [(N/2) log2 N = 192]
+N=64 chain, address order: spanning 192  [(N/2) log2 N = 192]
+N=64 chain, Gray order: spanning 192  [(N/2) log2 N = 192]
+N=64: 500 random trees (half random shapes, half cube shapes with random leaves): least spanning count 915; never below 192: True
+LIGHT label=u9-span exit=0 time=8s waited=0s peak_rss_mb=9 peak_footprint_mb=5 lowest_cap_mb=1500 stopped=- start=02:26:39 cmd=python3 -B spanning.py

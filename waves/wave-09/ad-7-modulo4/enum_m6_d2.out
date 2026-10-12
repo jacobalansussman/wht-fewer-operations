@@ -1,0 +1,5 @@
+p=2 n=8 rows=8 non-input distinct targets=8  intermediates allowed m=6  => gate budget 14
+first intermediate restricted to 1 given points
+visited states by remaining budget: j=6:1 j=5:1 j=4:33 j=3:1277 j=2:57504 j=1:2991350
+ENUMERATION p=2 m=6: 0 solution records (with repeats)
+LIGHT label=ad7-enum-m6-d2 exit=0 time=6s waited=0s peak_rss_mb=2 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=06:30:07 cmd=./enum2 2 8 6 ../ab-0-neighboursums/rows_B4.txt ../ab-0-neighboursums/top_d2.txt

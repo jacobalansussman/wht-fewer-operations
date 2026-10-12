@@ -1,0 +1,13 @@
+design half16a   N 16  tau 47  matrix identity exact: True  circuit gates (G): 61  N-2+tau: 61  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['-1', '1', '-1', '1', '1', '1', '1', '1', '-1', '1', '1', '-1', '1', '1', '1', '1']  c: ['1', '1', '1', '1', '1', '-1', '1', '-1', '1', '1', '1', '1', '1', '-1', '1', '-1']
+   shapes (rows, columns, number): count  [((1, 2, '-2'), 16), ((1, 4, '-2'), 4), ((1, 8, '-2'), 2), ((2, 1, '-2'), 16), ((4, 1, '-2'), 8), ((16, 16, '1'), 1)]
+design quaddual16   N 16  tau 66  matrix identity exact: True  circuit gates (G): 80  N-2+tau: 80  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '-1', '1', '1', '1', '-1', '-1', '1', '-1', '1', '-1', '-1', '1', '1', '1', '1']  c: ['1', '1', '-1', '1', '-1', '-1', '1', '-1', '1', '-1', '-1', '1', '-1', '1', '1', '1']
+   shapes (rows, columns, number): count  [((1, 1, '-2'), 35), ((1, 2, '-2'), 12), ((1, 4, '-2'), 3), ((1, 8, '-2'), 1), ((2, 1, '-2'), 6), ((2, 2, '-2'), 1), ((3, 1, '-2'), 5), ((5, 1, '-2'), 2), ((16, 16, '1'), 1)]
+design dual16 bent_x0x3+x1x2 gen  N 16  tau 73  matrix identity exact: True  circuit gates (G): 87  N-2+tau: 87  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '1', '1', '1', '1', '1', '-1', '-1', '1', '-1', '1', '-1', '1', '-1', '-1', '1']  c: ['1', '1', '1', '1', '1', '1', '-1', '-1', '1', '-1', '1', '-1', '1', '-1', '-1', '1']
+   shapes (rows, columns, number): count  [((1, 1, '-2'), 64), ((2, 2, '-2'), 8), ((16, 16, '1'), 1)]
+design dual16 bent_x0x3+x1x2 tile  N 16  tau 73  matrix identity exact: True  circuit gates (G): 87  N-2+tau: 87  circuit computes r(y)^2 * row y of H for every y: True  largest |number|: 2
+   scalings r: ['1', '1', '1', '1', '1', '1', '-1', '-1', '1', '-1', '1', '-1', '1', '-1', '-1', '1']  c: ['1', '1', '1', '1', '1', '1', '-1', '-1', '1', '-1', '1', '-1', '1', '-1', '-1', '1']
+   shapes (rows, columns, number): count  [((1, 1, '-2'), 64), ((2, 2, '-2'), 8), ((16, 16, '1'), 1)]
+LIGHT label=p1replay3 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:42:56 cmd=python3 -B replay.py half16a_tile.out quaddual16_tile.out bentgen.out

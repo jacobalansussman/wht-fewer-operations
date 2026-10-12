@@ -1,0 +1,54 @@
+# tj N=8 ALLOW=3 (largest entry 1, coefficient box 2, 6 coefficient pairs) seconds=45 seed=1 start=s20.txt helpers=12
+CIRCUIT ctl20forms-start  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x1   # [1 1 0 0 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x2 + -1*x3   # [0 0 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x4 + 1*x5   # [0 0 0 0 1 1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x6 + -1*x7   # [0 0 0 0 0 0 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + -1*w2   # [1 1 -1 1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + 1*w4   # [0 0 0 0 1 1 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 2*x2 + 1*w5   # [1 1 1 1 0 0 0 0] kind (1,2)/1 budget 1.58 vol 1.000
+w8 = 2*x0 + -1*w5   # [1 -1 1 -1 0 0 0 0] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = -2*x6 + 1*w6   # [0 0 0 0 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = 2*x4 + -1*w6   # [0 0 0 0 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 1*w7 + 1*w9   # [1 1 1 1 1 1 -1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w12 = 1*w8 + 1*w10   # [1 -1 1 -1 1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w13 = -2*w3 + 1*w11   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w1 + -1*w11   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w12   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = -2*w2 + 1*w12   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w7 + -1*w13   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = 2*w9 + 1*w14   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w8 + -1*w15   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = -2*w10 + 1*w16   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY ctl20forms-start  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+# 200 states, 6 s, current 20 gates, best 20, distinct states seen 16
+# 400 states, 12 s, current 20 gates, best 20, distinct states seen 16
+# 600 states, 19 s, current 20 gates, best 20, distinct states seen 16
+# 800 states, 25 s, current 20 gates, best 20, distinct states seen 16
+# 1000 states, 31 s, current 20 gates, best 20, distinct states seen 16
+# 1200 states, 37 s, current 20 gates, best 20, distinct states seen 16
+# 1400 states, 42 s, current 20 gates, best 20, distinct states seen 16
+# END states=1513 distinct=16 two-swaps=712 best=20 gates, current=20, 45 s
+CIRCUIT ctl20forms-last  N=8 gates=20  floor f(N)=19  excess=1
+w1 = 1*x0 + 1*x1   # [1 1 0 0 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w2 = 1*x2 + -1*x3   # [0 0 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w3 = 1*x4 + 1*x5   # [0 0 0 0 1 1 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w4 = 1*x6 + -1*x7   # [0 0 0 0 0 0 1 -1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w5 = 1*w1 + 1*w2   # [1 1 1 -1 0 0 0 0] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w6 = 1*w3 + -1*w4   # [0 0 0 0 1 1 -1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w7 = 2*x3 + 1*w5   # [1 1 1 1 0 0 0 0] kind (1,2)/1 budget 1.58 vol 1.000
+w8 = -2*x1 + 1*w5   # [1 -1 1 -1 0 0 0 0] kind (1,2)/1 budget 1.58 vol 1.000
+w9 = -2*x7 + 1*w6   # [0 0 0 0 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w10 = -2*x5 + 1*w6   # [0 0 0 0 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w11 = 1*w7 + -1*w9   # [1 1 1 1 -1 -1 1 1] kind (1,1)/1 budget 1.00 JOIN MERGE vol 0.000
+w12 = 1*w8 + 1*w10   # [1 -1 1 -1 1 -1 -1 1] kind (1,1)/1 budget 1.00 JOIN vol 0.000
+w13 = 2*w3 + 1*w11   # [1 1 1 1 1 1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w14 = 2*w1 + -1*w11   # [1 1 -1 -1 1 1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w15 = 2*w4 + 1*w12   # [1 -1 1 -1 1 -1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w16 = -2*w2 + 1*w12   # [1 -1 -1 1 1 -1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w17 = 2*w7 + -1*w13   # [1 1 1 1 -1 -1 -1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+w18 = -2*w9 + 1*w14   # [1 1 -1 -1 -1 -1 1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w19 = 2*w8 + -1*w15   # [1 -1 1 -1 -1 1 -1 1] kind (1,2)/1 budget 1.58 vol 1.000
+w20 = -2*w10 + 1*w16   # [1 -1 -1 1 -1 1 1 -1] kind (1,2)/1 budget 1.58 vol 1.000
+SUMMARY ctl20forms-last  gates=20 excess=1  budget=27.02  volume=12.00 (needed 12)  joins=8 of which carry volume=0  merges=7 of which carry volume=0  coefficient-2 gates=12 bringing 12.00 units (1.000 each)  gates with a coefficient above 2=0  quotient gates=0  largest coefficient=2  gates that bring volume=12  most units from one gate=1.000
+LIGHT label=x0-ctl exit=0 time=46s waited=30s peak_rss_mb=31 peak_footprint_mb=31 lowest_cap_mb=1500 stopped=- start=03:24:18 cmd=./tj8 3 45 1 s20.txt 0 ctl20forms

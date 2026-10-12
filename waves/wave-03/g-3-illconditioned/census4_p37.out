@@ -1,0 +1,13 @@
+a=1 | RESULT p=37: YES, circuit with 7 gates. points in order (after the 4 inputs):
+a=36 | RESULT p=37: YES, circuit with 7 gates. points in order (after the 4 inputs):
+a=10 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=26 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=27 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=11 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=6 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=31 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=2 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=3 | RESULT p=37: YES, circuit with 7 gates. points in order (after the 4 inputs):
+a=5 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+a=7 | RESULT p=37: NO circuit with 7 gates (exhaustive over GF(37))
+LIGHT label=g3-census37 exit=0 time=3s waited=0s peak_rss_mb=57 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:55:07 cmd=./census37.sh

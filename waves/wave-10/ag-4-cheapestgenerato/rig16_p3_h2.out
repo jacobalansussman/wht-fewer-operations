@@ -1,0 +1,4 @@
+p 3 k 4 N 16 n 5 points of the projective space 121 | collinear cube triples: 0
+largest number of cube chords through one extra point: 8 | extra points with at least 2 chords: 65
+h = 2 gates = 13 : sets of hidden points tried 5460 | buildable: 0
+LIGHT label=ag4-rig16a exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:57:07 cmd=python3 -B rig.py 3 4 2

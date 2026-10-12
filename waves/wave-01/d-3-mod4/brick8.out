@@ -1,0 +1,9 @@
+(1) three bits, weights 0..3: 2*NAE + 3*parity mod 4 = [0, 1, 2, 3]  as integers: [0, 5, 2, 3]
+(2) 8*K_8 == (1-i)^3 * A * B : True
+    gates (one gate = a*u + b*v): A = 2 classes * (3 to sum + 4 to subtract) = 14 ; B = 4 pairs * 2 = 8 ; total 22 ; textbook 3*8 = 24 ; 7-gate 4-point unit + one butterfly layer = 22
+(3) k=2: largest affine subspace with constant |y| mod 4: dim 1 ; with constant exact weight: dim 1 ; floor(k/2) = 1
+(3) k=3: largest affine subspace with constant |y| mod 4: dim 1 ; with constant exact weight: dim 1 ; floor(k/2) = 1
+(3) k=4: largest affine subspace with constant |y| mod 4: dim 2 ; with constant exact weight: dim 2 ; floor(k/2) = 2
+(3) k=5: largest affine subspace with constant |y| mod 4: dim 2 ; with constant exact weight: dim 2 ; floor(k/2) = 2
+(3) k=6: largest affine subspace with constant |y| mod 4: dim 3 ; with constant exact weight: dim 3 ; floor(k/2) = 3
+LIGHT label=d3-brick8 exit=0 time=1s waited=0s peak_rss_mb=5 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:36:12 cmd=python3 -B waves/wave-01/d-3-mod4/brick8.py

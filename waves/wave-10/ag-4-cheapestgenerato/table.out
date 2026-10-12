@@ -1,0 +1,42 @@
+  k        N  dim   space  /N     mono   /N    Yates/N  floor 3N/4   (k - space/N*2)/sqrt(k)
+  3             8  N/2   0.7500    0.8750    1.5   0.75   c = 0.8660   c_mono = 0.7217   exact: space 6, mono 7
+  5            32  N/2   1.5625    1.7812    2.5   0.75   c = 0.8385   c_mono = 0.6429   exact: space 50, mono 57
+  7           128  N/2   2.4062    2.7031    3.5   0.75   c = 0.8268   c_mono = 0.6024   exact: space 308, mono 346
+  9           512  N/2   3.2695    3.6348    4.5   0.75   c = 0.8203   c_mono = 0.5768   exact: space 1674, mono 1861
+ 11          2048  N/2   4.1465    4.5732    5.5   0.75   c = 0.8162   c_mono = 0.5589
+ 13          8192  N/2   5.0337    5.5168    6.5   0.75   c = 0.8134   c_mono = 0.5454
+ 15         32768  N/2   5.9290    6.4645    7.5   0.75   c = 0.8113   c_mono = 0.5347
+ 17        131072  N/2   6.8308    7.4154    8.5   0.75   c = 0.8097   c_mono = 0.5261
+ 19        524288  N/2   7.7380    8.3690    9.5   0.75   c = 0.8084   c_mono = 0.5189
+ 21       2097152  N/2   8.6499    9.3250   10.5   0.75   c = 0.8074   c_mono = 0.5128
+ 23       8388608  N/2   9.5658   10.2829   11.5   0.75   c = 0.8066   c_mono = 0.5076
+ 25      33554432  N/2  10.4852   11.2426   12.5   0.75   c = 0.8059   c_mono = 0.5030
+ 27     134217728  N/2  11.4078   12.2039   13.5   0.75   c = 0.8053   c_mono = 0.4989
+ 29     536870912  N/2  12.3330   13.1665   14.5   0.75   c = 0.8048   c_mono = 0.4952
+ 31    2147483648  N/2  13.2608   14.1304   15.5   0.75   c = 0.8043   c_mono = 0.4920
+ 33    8589934592  N/2  14.1908   15.0954   16.5   0.75   c = 0.8040   c_mono = 0.4890
+ 35   34359738368  N/2  15.1229   16.0615   17.5   0.75   c = 0.8036   c_mono = 0.4863
+ 37  137438953472  N/2  16.0569   17.0284   18.5   0.75   c = 0.8033   c_mono = 0.4838
+ 39  549755813888  N/2  16.9926   17.9963   19.5   0.75   c = 0.8030   c_mono = 0.4816
+ 41 2199023255552  N/2  17.9299   18.9650   20.5   0.75   c = 0.8028   c_mono = 0.4795
+
+all degrees at 16 and 32 points: degree, dimension, space, mono, floor max(N - n, N - n/2 if dual distance >= 5)
+  k 4 degree 0 dim   1 space    0 mono    0 floor   15  dual distance 2
+  k 4 degree 1 dim   5 space   14 mono   15 floor   11  dual distance 4
+  k 4 degree 2 dim  11 space   20 mono   26 floor   11  dual distance 8
+  k 4 degree 3 dim  15 space   14 mono   31 floor    9  dual distance 16
+  k 4 degree 4 dim  16 space    0 mono   32 floor    0  dual distance None
+  k 5 degree 0 dim   1 space    0 mono    0 floor   31  dual distance 2
+  k 5 degree 1 dim   6 space   30 mono   31 floor   26  dual distance 4
+  k 5 degree 2 dim  16 space   50 mono   57 floor   24  dual distance 8
+  k 5 degree 3 dim  26 space   50 mono   73 floor   19  dual distance 16
+  k 5 degree 4 dim  31 space   30 mono   79 floor   17  dual distance 32
+  k 5 degree 5 dim  32 space    0 mono   80 floor    0  dual distance None
+  k 6 degree 0 dim   1 space    0 mono    0 floor   63  dual distance 2
+  k 6 degree 1 dim   7 space   62 mono   63 floor   57  dual distance 4
+  k 6 degree 2 dim  22 space  112 mono  120 floor   53  dual distance 8
+  k 6 degree 3 dim  42 space  132 mono  162 floor   43  dual distance 16
+  k 6 degree 4 dim  57 space  112 mono  184 floor   36  dual distance 32
+  k 6 degree 5 dim  63 space   62 mono  191 floor   33  dual distance 64
+  k 6 degree 6 dim  64 space    0 mono  192 floor    0  dual distance None
+LIGHT label=ag4-table exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:54:28 cmd=python3 -B table.py

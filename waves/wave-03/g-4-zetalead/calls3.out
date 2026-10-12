@@ -1,0 +1,13 @@
+tau = 2     no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = 3     no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = 5     no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = -2    no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = -3    no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = 1/2   no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = 7     no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = -5    no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = 6     THREE calls: H D(-1/2,-3/2) H D(5/2,1) H = [['-4', '-6'], ['1/2', '9/2']]  (invariant 6)
+tau = 10    no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = 2/3   no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+tau = -1/2  no three-call word with s of height <= 150 (27428 values of s tried); is it a square: False
+LIGHT label=g4-calls3 exit=0 time=6s waited=8s peak_rss_mb=9 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=22:56:17 cmd=python3 -B calls3.py 150

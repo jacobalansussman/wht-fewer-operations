@@ -1,0 +1,24 @@
+# The 4-point Walsh-Hadamard transform in 7 gates.  Count (G): a gate is any a*u + b*v, scalings free.
+# Textbook: 8.  Count (O), every operation charged: 11 for this file (7 additions or subtractions, 4 doublings);
+# with the outputs halved, 8 (generated/O_family_4_factor.txt), the same as the textbook.
+#
+# A 4-point circuit with 7 operations is NOT mine.  It is due to D. Coppersmith, E. Feig and E. Linzer,
+# "Hadamard transforms on multiply/add architectures", IEEE Transactions on Signal Processing 42(4), 1994,
+# pages 969-970.  They count one multiply-add, +-a +- b*c, as one operation, so every line below is one
+# of theirs, and they get (7/8) N log2 N operations when N is a power of four and N/8 more when N is an
+# odd power of two.  A 4-point step with 7 additions is also in Reshef and Alrod (2002) and in Alman and
+# Rao (2023).  The wiring below is the one gen.py writes for 4 points: 3 additions or subtractions and
+# 4 multiply-adds, where the circuit printed in the 1994 paper (page 969) has 4 and 3.
+#
+# Inputs x0..x3.  Output yJ = row J of H, where H[J][i] = (-1)^(number of 1-bits common to J and i).
+p1 = x0 + x1
+p2 = x2 - x3
+hub3 = p1 + p2
+p4 = hub3 - 2*x2
+p5 = -hub3 + 2*x0
+p6 = 2*p1 - p4
+p7 = p5 + 2*p2
+y0 = p6
+y1 = p7
+y2 = p4
+y3 = p5

@@ -1,0 +1,15 @@
+N=8  C1: H S H = lam^k S^-1 H S^-1: True ;  (H S)^3 = lam^k N: True
+  C2: (pair of rows of HS, unit u) with (c_y - u c_z)/lam a wire of unit entries: 56 of 112
+      distinct real sign vectors Re((1+-i) * that wire): 32 ; of them outputs: 0
+      real parts of (1+-i) times a row of HS itself: 8 sign vectors ; quotient hubs among them: 8
+      the 19: g7 centre in quotient set: False ; in direct set: False
+      distance profiles of the quotient hubs to the N outputs (up to sign): [((2, 2, 2, 2, 4, 4, 4, 4), 32)]
+LIGHT label=u7-qc exit=0 time=1s waited=0s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:53:25 cmd=python3 -B u-7-quotient/qc.py 8
+exitC 0
+N=16  C1: H S H = lam^k S^-1 H S^-1: True ;  (H S)^3 = lam^k N: True
+  C2: (pair of rows of HS, unit u) with (c_y - u c_z)/lam a wire of unit entries: 240 of 480
+      distinct real sign vectors Re((1+-i) * that wire): 128 ; of them outputs: 0
+      real parts of (1+-i) times a row of HS itself: 16 sign vectors ; quotient hubs among them: 16
+      distance profiles of the quotient hubs to the N outputs (up to sign): [((4, 4, 4, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8), 64), ((6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6), 64)]
+LIGHT label=u7-qc exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:53:26 cmd=python3 -B u-7-quotient/qc.py 16
+exitC 0

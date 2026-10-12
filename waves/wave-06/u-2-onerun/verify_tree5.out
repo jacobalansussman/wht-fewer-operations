@@ -1,0 +1,2 @@
+k=5 tree (independent Python search): nodes 26990, deepest level reached 5 of 32, solution found: False
+LIGHT label=u2-onerun exit=0 time=258s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=02:00:00 cmd=python3 -B verify.py tree 5

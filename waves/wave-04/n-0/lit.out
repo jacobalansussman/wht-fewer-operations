@@ -1,0 +1,14 @@
+n-0 literature queries, run 2026-10-11 01:11 EDT
+arXiv API: abs:"Walsh-Hadamard" AND (abs:"leading constant" OR abs:"arithmetic operations" OR abs:"operation count" OR abs:"number of additions"), newest first
+  2026-07-04 2607.03768v1 GALOSH: Blind, Training-Free Denoising of Raw Bayer and sRGB Images by Parallel-Friendly Local Shrinkage
+  2026-04-28 2604.25503v3 Quantum-Accelerated Gowers $U_2$ Norm for Bent Boolean Functions
+  2022-11-11 2211.06459v2 Faster Walsh-Hadamard and Discrete Fourier Transforms From Matrix Non-Rigidity
+  2022-11-09 2211.04643v1 Faster Walsh-Hadamard Transform and Matrix Multiplication over Finite Fields using Lookup Tables
+Semantic Scholar, papers citing arXiv:2211.06459 (the list is known to be incomplete)
+  2024 2410.20538 Improving the Leading Constant of Matrix Multiplication
+  2025 2509.14489 Kronecker Powers, Orthogonal Vectors, and the Asymptotic Spectrum
+  2025 2505.11892 Fast RoPE Attention: Combining the Polynomial Method and Fast Fourier Transform
+  2025 2504.05624 Binary Tree Block Encoding of Classical Matrix
+  2026 2608.06592 Superlogarithmic-Rank Matrix Rigidity for the Walsh-Hadamard Transform
+  2026 None Semi-automated bed boundary detection and log alignment using fast Walsh–Hadamard transform
+  2026 None Quantum Overflow Detection for Reliable Bioinspired Image Enhancement

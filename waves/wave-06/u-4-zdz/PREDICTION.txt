@@ -1,0 +1,32 @@
+u-4-zdz: prediction written BEFORE any meter was run (11 October 2026, about 01:52 EDT). Nothing below is measured.
+
+Circuit: pass 1 = v = Z^T x (the two-chain subset-sum circuit with every address complemented); scale v_J by (-2)^|J|
+(absorbed into gate coefficients); pass 2 = y = Z (scaled v). Gates (G) = 2 (N - 2 + corners): 88 at 16 points (corners 30).
+
+By hand, before running:
+P1. Pass 1 holds only whole-number sums of inputs. Its classes: N single inputs, N - 1 beginnings of the input order (a chain),
+    N "up-sets" {T : T contains J} for the outputs v_J. Two up-sets always share the full address and are nested only when
+    J, J' are comparable, so pass 1 ALONE is already not one merge tree: at 16 points at least 55 overlapping pairs
+    (the incomparable pairs of subsets: C(16,2) - (3^4 - 2^4) = 55). The subset-sum circuit itself is "of the other kind".
+P2. Nearly every gate of pass 1 is a SURVIVOR (a new class): so pass 1 gives about N - 2 + corners survivors where a
+    one-tree circuit has N - 1.
+P3. Pass 2, running sums G_b = sum over the first b+1 columns of (-2)^|J| v_J: the class is decided by the terms of least |J|.
+    A step that adds a J of weight above the current least weight is a SHIFT (S, dead). A step of weight equal to the least
+    is a join (J, probably a survivor). A step of weight below the least takes the class of v_J itself (S, dead).
+P4. All N outputs are rows of H, all in the class "all ones", which pass 1 already holds (v_empty = the sum of all inputs).
+    So every output gate is DEAD: dead >= N whatever the circuit. Their kind is S when the added running sum is even
+    relative to the output, E or Q when it is odd (it is odd exactly when the beginning contains the empty set).
+P5. Q gates: only where two wires of one class are subtracted, i.e. where a run G_b1 - G_b2 is formed first and both beginnings
+    have the same terms of least weight, or where an output and a full-class running sum meet. With the "sequential"
+    association (output + one running sum at a time) I expect FEW Q gates, perhaps none at 16 points; with "run first"
+    association more.
+P6. The count I care about: dead gates. Guess: dead = N (outputs) + (S steps of the running sums of pass 2, about N/2) + a few,
+    so about 24 to 30 at 16 points, BELOW (N/2) log2 N = 32, with 88 gates in total; the payers are the survivors of pass 1
+    and the intermediate wires of pass 2.
+P7. Control, derived by hand: the same H = Z D Z^T with YATES for both passes costs N log2 N gates (the textbook count),
+    pass 1 all survivors ((N/2) log2 N joins of disjoint sub-cubes), pass 2 all shifts ((N/2) log2 N dead gates of order 1),
+    no Q gate, classes N + (N/2) log2 N, not nested. If that is right, "dead = (N/2) log2 N exactly" is what the
+    textbook-priced circuit of the other kind shows, and the two-chain circuit should go below it.
+P8. Orders of dead gates: mostly 1; the curator guesses above 1. I guess order above 1 appears only for S steps whose
+    partner is 4 x (something), i.e. where the added weight is 2 or more above the least weight.
+P9. Over the limit: almost every wire of both passes (running sums are spread on both sides); h-0's sum far above N log2 N.

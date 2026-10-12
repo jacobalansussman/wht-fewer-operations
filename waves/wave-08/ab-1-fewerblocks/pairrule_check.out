@@ -1,0 +1,2 @@
+refl_lm_m4_W4_S0_try1.npy : largest |v_p.u_q|, p earlier, same direction (predicted 0): 2.53e-13 ; same pairs the other way round (free): largest 2.08e-13 ; pairs of different directions (free): largest 8.39e+00 ; rank of K: 4
+refl_lm_m4_W4_S0_try2.npy : largest |v_p.u_q|, p earlier, same direction (predicted 0): 1.52e-15 ; same pairs the other way round (free): largest 2.82e-16 ; pairs of different directions (free): largest 2.68e+01 ; rank of K: 4

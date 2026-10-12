@@ -1,0 +1,180 @@
+census: 228 gate sets with 7 gates (23 s)
+textbook           gates= 64
+   pull   strict=8    pool=None : 35 subgroups; classes [12]; e.g. K=[0, 1, 2, 3] {}
+   sparse strict=8    pool=None : 35 subgroups; classes [12]; e.g. K=[0, 1, 2, 3] {}
+two-pass 7x7       gates= 56
+   pull   strict=7    pool=7    : 17 subgroups; classes [11, 12, 14, 16]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 1, ('strict', 'census'): 1}
+   pull   strict=8    pool=None : 18 subgroups; classes [12]; e.g. K=[0, 1, 4, 5] {}
+   sparse strict=7    pool=7    : 17 subgroups; classes [11, 12, 14, 16]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 1, ('strict', 'census'): 1}
+   sparse strict=8    pool=None : 18 subgroups; classes [12]; e.g. K=[0, 1, 4, 5] {}
+two-pass mixed     gates= 56
+   pull   strict=7    pool=7    : 17 subgroups; classes [11, 16, 17, 18, 19, 20]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 1, ('strict', 'census'): 1}
+   pull   strict=8    pool=None : 18 subgroups; classes [13, 14]; e.g. K=[0, 1, 4, 5] {}
+   sparse strict=7    pool=7    : 17 subgroups; classes [11, 16, 17, 18, 19, 20]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 1, ('strict', 'census'): 1}
+   sparse strict=8    pool=None : 18 subgroups; classes [12]; e.g. K=[0, 1, 4, 5] {}
+rook chain         gates= 63
+   pull   strict=7    pool=7    : 10 subgroups; classes [14, 16, 17, 19, 21, 23]; e.g. K=[0, 4, 8, 12] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   pull   strict=None pool=7    : 16 subgroups; classes [14, 17, 18, 19, 20, 22, 23, 24, 25, 27]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   pull   strict=None pool=None :  9 subgroups; classes [14, 15, 16, 17, 18, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+   sparse strict=7    pool=7    : 26 subgroups; classes [15, 16, 17, 18]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 1, ('strict', 'census'): 1}
+   sparse strict=8    pool=None :  9 subgroups; classes [16]; e.g. K=[0, 1, 4, 5] {}
+rook tree          gates= 63
+   pull   strict=7    pool=7    : 10 subgroups; classes [15, 16, 18, 22]; e.g. K=[0, 4, 8, 12] {('pool', 'census'): 5, ('strict', 'census'): 1}
+   pull   strict=None pool=7    : 16 subgroups; classes [15, 16, 18, 20, 22, 24]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 5}
+   pull   strict=None pool=None :  9 subgroups; classes [14, 16, 18, 20]; e.g. K=[0, 1, 4, 5] {}
+   sparse strict=7    pool=7    : 26 subgroups; classes [15, 16, 17, 18]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 1, ('strict', 'census'): 1}
+   sparse strict=8    pool=None :  9 subgroups; classes [16]; e.g. K=[0, 1, 4, 5] {}
+clebsch 0          gates= 87
+   pull   strict=8    pool=7    :  4 subgroups; classes [19, 20, 22, 24]; e.g. K=[0, 4, 8, 12] {('pool', 'census'): 4}
+   pull   strict=None pool=7    : 22 subgroups; classes [23, 29, 30, 31, 32, 33, 34, 36]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 4}
+   pull   strict=None pool=None :  9 subgroups; classes [18, 28, 32]; e.g. K=[0, 1, 12, 13] {}
+   sparse strict=7    pool=7    : 20 subgroups; classes [15, 17]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 5, ('strict', 'census'): 1}
+   sparse strict=8    pool=None : 15 subgroups; classes [14]; e.g. K=[0, 1, 6, 7] {}
+clebsch 1          gates= 87
+   pull   strict=8    pool=7    :  4 subgroups; classes [20, 21, 23]; e.g. K=[0, 2, 8, 10] {('pool', 'census'): 8}
+   pull   strict=None pool=7    : 22 subgroups; classes [22, 23, 24, 29, 30, 32, 33, 34, 36]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 9}
+   pull   strict=None pool=None :  9 subgroups; classes [18, 28, 30, 32]; e.g. K=[0, 1, 12, 13] {}
+   sparse strict=7    pool=7    : 20 subgroups; classes [15, 17]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 10, ('strict', 'census'): 1}
+   sparse strict=8    pool=None : 15 subgroups; classes [14]; e.g. K=[0, 1, 6, 7] {}
+clebsch 2          gates= 87
+   pull   strict=8    pool=7    :  4 subgroups; classes [20, 21]; e.g. K=[0, 2, 4, 6] {('pool', 'census'): 8}
+   pull   strict=None pool=7    : 22 subgroups; classes [20, 21, 22, 31, 32, 33, 34, 36]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 9}
+   pull   strict=None pool=None :  9 subgroups; classes [16, 30, 32]; e.g. K=[0, 1, 12, 13] {}
+   sparse strict=7    pool=7    : 20 subgroups; classes [15, 17]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 10, ('strict', 'census'): 1}
+   sparse strict=8    pool=None : 15 subgroups; classes [14]; e.g. K=[0, 1, 6, 7] {}
+clebsch 3          gates= 87
+   pull   strict=8    pool=7    :  4 subgroups; classes [17, 18]; e.g. K=[0, 1, 8, 9] {('pool', 'census'): 6}
+   pull   strict=None pool=7    : 22 subgroups; classes [21, 25, 26, 28, 33, 34, 36]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 9}
+   pull   strict=None pool=None :  9 subgroups; classes [14, 16, 24, 32]; e.g. K=[0, 1, 12, 13] {}
+   sparse strict=7    pool=7    : 20 subgroups; classes [15, 17]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 5, ('strict', 'census'): 1}
+   sparse strict=8    pool=None : 15 subgroups; classes [14]; e.g. K=[0, 1, 6, 7] {}
+--- two-flag programs, diagonal subgroup only, all 108
+   classes=12 strict=8 (1 sets) pool=None {} : 6 programs; first strict helper set: ['(0,1,0,-1)', '(0,1,0,1)', '(1,0,-1,0)', '(1,0,1,0)']
+   classes=12 strict=8 (1 sets) pool=None {} : 6 programs; first strict helper set: ['(0,0,1,-1)', '(0,0,1,1)', '(1,-1,0,0)', '(1,1,0,0)']
+   classes=14 strict=8 (1 sets) pool=None {} : 12 programs; first strict helper set: ['(0,1,0,-1)', '(0,1,0,1)', '(1,0,-1,0)', '(1,0,1,0)']
+   classes=14 strict=8 (1 sets) pool=None {} : 12 programs; first strict helper set: ['(0,0,1,-1)', '(0,0,1,1)', '(1,-1,0,0)', '(1,1,0,0)']
+   classes=20 strict=8 (8 sets) pool=7 {'census': 12} : 4 programs; first strict helper set: ['(0,1,1,0)', '(1,-1,-1,-1)', '(1,0,0,-1)', '(1,1i,1i,-1)']
+   classes=20 strict=8 (8 sets) pool=7 {'census': 12} : 4 programs; first strict helper set: ['(0,1,1,0)', '(1,-1,-1,-1)', '(1,-1i,-1i,-1)', '(1,0,0,-1)']
+   classes=22 strict=8 (8 sets) pool=7 {'census': 12} : 16 programs; first strict helper set: ['(0,1,1,0)', '(1,-1,-1,-1)', '(1,0,0,-1)', '(1,1i,1i,-1)']
+   classes=22 strict=8 (8 sets) pool=7 {'census': 12} : 16 programs; first strict helper set: ['(0,1,1,0)', '(1,-1,-1,-1)', '(1,-1i,-1i,-1)', '(1,0,0,-1)']
+   classes=24 strict=8 (8 sets) pool=7 {'census': 12} : 16 programs; first strict helper set: ['(0,1,1,0)', '(1,-1,-1,-1)', '(1,0,0,-1)', '(1,1i,1i,-1)']
+   classes=24 strict=8 (8 sets) pool=7 {'census': 12} : 16 programs; first strict helper set: ['(0,1,1,0)', '(1,-1,-1,-1)', '(1,-1i,-1i,-1)', '(1,0,0,-1)']
+--- two-flag programs, all 35 subgroups, as many as the time allows
+flags 2,74 B       gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 5, 9, 12] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 5, 10, 15] {('pool', 'census'): 16}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 3, 12, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+flags 5,152 A      gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 3, 5, 6] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 3, 12, 15] {('pool', 'census'): 16}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 5, 10, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+flags 23,74 B      gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 5, 9, 12] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 5, 10, 15] {('pool', 'census'): 16}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 3, 12, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+flags 26,170 A     gates= 90
+   pull   strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 2, 13, 15] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   pull   strict=8    pool=7    :  9 subgroups; classes [14, 19, 22, 23, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [13, 15, 20, 21]; e.g. K=[0, 1, 8, 9] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 3, 5, 6] {('pool', 'census'): 3, ('strict', 'census'): 2}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 22, 23, 25]; e.g. K=[0, 3, 12, 15] {('pool', 'census'): 16}
+   sparse strict=8    pool=None :  2 subgroups; classes [12, 13]; e.g. K=[0, 6, 9, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [13, 15, 17, 20, 21, 23]; e.g. K=[0, 1, 8, 9] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [14, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+flags 44,242 B     gates= 90
+   pull   strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 4, 11, 15] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   pull   strict=8    pool=7    :  9 subgroups; classes [14, 17, 20, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [12, 13, 14, 17, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [13, 18, 23]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 5, 9, 12] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [14, 20, 25]; e.g. K=[0, 5, 10, 15] {('pool', 'census'): 12}
+   sparse strict=8    pool=None :  2 subgroups; classes [12, 13]; e.g. K=[0, 3, 12, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [13, 17, 18, 23]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [14, 17, 19, 21]; e.g. K=[0, 1, 4, 5] {}
+flags 65,152 A     gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 3, 5, 6] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 3, 12, 15] {('pool', 'census'): 16}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 5, 10, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+flags 86,194 B     gates= 90
+   pull   strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 2, 13, 15] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   pull   strict=8    pool=7    :  9 subgroups; classes [14, 17, 20, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [12, 13, 14, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [13, 18, 23]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 3, 9, 10] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [14, 20, 25]; e.g. K=[0, 3, 12, 15] {('pool', 'census'): 12}
+   sparse strict=8    pool=None :  2 subgroups; classes [12, 13]; e.g. K=[0, 5, 10, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [13, 17, 18, 23]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [14, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+flags 110,149 A    gates= 90
+   pull   strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 2, 13, 15] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   pull   strict=8    pool=7    :  9 subgroups; classes [16, 17, 22, 23, 25]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 3}
+   pull   strict=8    pool=None : 16 subgroups; classes [12, 13, 14, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [13, 15, 20, 21, 23]; e.g. K=[0, 1, 8, 9] {('pool', 'census'): 2}
+   sparse strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 3, 5, 6] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [14, 22, 23, 25]; e.g. K=[0, 3, 12, 15] {('pool', 'census'): 12}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 6, 9, 15] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [13, 15, 19, 20, 21]; e.g. K=[0, 1, 8, 9] {('pool', 'census'): 2}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+flags 138,226 B    gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 12}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 6, 7] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 10, 11] {('pool', 'census'): 12}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 3, 5, 6] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 14}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 1, 8, 9] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 10, 11] {('pool', 'census'): 16}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 6, 7] {}
+flags 146,258 A    gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 12}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 6, 7] {('pool', 'census'): 12}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 5, 9, 12] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 14}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 1, 2, 3] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 6, 7] {('pool', 'census'): 16}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 12, 13] {}
+flags 208,285 B    gates= 90
+   pull   strict=7    pool=7    :  2 subgroups; classes [14]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 2, ('strict', 'census'): 1}
+   pull   strict=8    pool=7    :  9 subgroups; classes [14, 19, 22, 23, 25]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 12}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 6, 7] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [13, 15, 20, 21]; e.g. K=[0, 2, 9, 11] {('pool', 'census'): 12}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 3, 5, 6] {('pool', 'census'): 3, ('strict', 'census'): 2}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 22, 23, 25]; e.g. K=[0, 1, 2, 3] {('pool', 'census'): 12}
+   sparse strict=8    pool=None :  2 subgroups; classes [12, 13]; e.g. K=[0, 2, 8, 10] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [13, 15, 17, 20, 21, 23]; e.g. K=[0, 1, 14, 15] {('pool', 'census'): 12}
+   sparse strict=None pool=None : 14 subgroups; classes [14, 17, 19, 21]; e.g. K=[0, 1, 6, 7] {}
+flags 230,279 A    gates= 90
+   pull   strict=8    pool=7    : 11 subgroups; classes [16, 19, 23, 24, 25]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 14}
+   pull   strict=8    pool=None : 16 subgroups; classes [14, 15, 16, 17, 19, 21]; e.g. K=[0, 1, 2, 3] {}
+   pull   strict=None pool=7    :  8 subgroups; classes [15, 21, 22]; e.g. K=[0, 1, 6, 7] {('pool', 'census'): 12}
+   sparse strict=7    pool=7    :  2 subgroups; classes [16]; e.g. K=[0, 5, 9, 12] {('pool', 'census'): 3, ('strict', 'census'): 1}
+   sparse strict=8    pool=7    :  7 subgroups; classes [16, 23, 24, 25]; e.g. K=[0, 1, 4, 5] {('pool', 'census'): 12}
+   sparse strict=8    pool=None :  2 subgroups; classes [14, 15]; e.g. K=[0, 1, 2, 3] {}
+   sparse strict=None pool=7    : 10 subgroups; classes [15, 19, 21, 22]; e.g. K=[0, 1, 6, 7] {('pool', 'census'): 12}
+   sparse strict=None pool=None : 14 subgroups; classes [15, 16, 17, 19, 21]; e.g. K=[0, 1, 12, 13] {}
+flag programs done on all subgroups: 12
+distinct census sets reached by some collapse: 228 of 228 ; sets not in census: 0 ; pool sets with a complex helper: 0
+census sets reached, by program family: {'rook': 191, 'flags': 36, 'two-pass': 89, 'clebsch': 192}
+LIGHT label=e6-allK exit=0 time=344s waited=0s peak_rss_mb=205 peak_footprint_mb=174 lowest_cap_mb=1500 stopped=- start=22:23:36 cmd=/usr/bin/python3 -I -B waves/wave-02/e-6-shifts/e6b.py 420
+exit 0

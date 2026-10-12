@@ -1,0 +1,4 @@
+p = 17 least gates over all (t, s), t <= s, t, s not 0 or 1: [(7, 120)]
+pairs below 7 gates: []
+the transform t = s = -1: 7
+LIGHT label=ag9-scan17 exit=0 time=2s waited=0s peak_rss_mb=11 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=08:27:49 cmd=python3 -B scan4.py 17

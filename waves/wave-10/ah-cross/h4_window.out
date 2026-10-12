@@ -1,0 +1,18 @@
+k=16: window m=1..6 covers all but 8.96e-02 of the entries; degree 5 of 16; rank at most 2^12.7 of 2^16
+k=16: window m=0..8 covers all but 7.47e-03 of the entries; degree 8 of 16; rank at most 2^15.3 of 2^16
+k=16: window m=0..13 covers all but 2.63e-07 of the entries; degree 13 of 16; rank at most 2^16.0 of 2^16
+k=64: window m=10..21 covers all but 8.49e-02 of the entries; degree 11 of 64; rank at most 2^39.8 of 2^64
+k=64: window m=8..25 covers all but 8.65e-03 of the entries; degree 17 of 64; rank at most 2^50.9 of 2^64
+k=64: window m=2..34 covers all but 6.05e-07 of the entries; degree 32 of 64; rank at most 2^63.1 of 2^64
+k=256: window m=53..75 covers all but 9.65e-02 of the entries; degree 22 of 256; rank at most 2^104.9 of 2^256
+k=256: window m=47..82 covers all but 9.20e-03 of the entries; degree 35 of 256; rank at most 2^143.8 of 2^256
+k=256: window m=32..99 covers all but 7.34e-07 of the entries; degree 67 of 256; rank at most 2^208.8 of 2^256
+k=1024: window m=233..278 covers all but 9.70e-02 of the entries; degree 45 of 1024; rank at most 2^262.4 of 2^1024
+k=1024: window m=221..292 covers all but 9.33e-03 of the entries; degree 71 of 1024; rank at most 2^367.9 of 2^1024
+k=1024: window m=190..325 covers all but 8.72e-07 of the entries; degree 135 of 1024; rank at most 2^571.4 of 2^1024
+k=4096: window m=978..1069 covers all but 9.70e-02 of the entries; degree 91 of 4096; rank at most 2^625.1 of 2^4096
+k=4096: window m=953..1095 covers all but 9.87e-03 of the entries; degree 142 of 4096; rank at most 2^885.2 of 2^4096
+k=4096: window m=891..1161 covers all but 9.97e-07 of the entries; degree 270 of 4096; rank at most 2^1430.4 of 2^4096
+64 points, window m=0..3 (degree 3): entries where the polynomial differs from the transform 154 of 4096 (0.038); rank of the polynomial part 42 (bound 42); values of p at m=0..6: ['1', '-1', '1', '-1', '-15', '-49', '-111']
+LIGHT label=ah-h4 exit=0 time=3s waited=0s peak_rss_mb=13 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=09:17:28 cmd=python3 -B h4_window.py
+h4 exit 0

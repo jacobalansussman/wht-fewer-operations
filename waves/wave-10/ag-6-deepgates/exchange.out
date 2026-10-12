@@ -1,0 +1,5 @@
+20 gates, 1 tall wire(s): exchange for one form with shallow gates only: no  -- 2 circuits
+20 gates, 1 tall wire(s): exchange for one form with shallow gates only: the tall wire can simply be dropped  -- 1 circuits
+20 gates, 1 tall wire(s): exchange for one form with shallow gates only: yes: one form in its place  -- 14 circuits
+20 gates, 2 tall wire(s): exchange for one form with shallow gates only: yes: one form in its place  -- 2 circuits
+python3 exchange.py ../ab-2-tallpool/t8_*.out ../x-0-twojobs/A1*.out  7.82s user 0.02s system 99% cpu 7.895 total

@@ -1,0 +1,97 @@
+ 13:16:59 up 19:25,  0 user,  load average: 7.48, 8.92, 10.05
+kernels.h: the same as what codegen.py writes now
+machine: Linux 6.6.122+ x86_64
+compiler: cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+date: Sun Oct 11 01:16:59 PM UTC 2026
+
+== build novec: cc -std=c11 -O3 -fno-tree-vectorize
+# best of 15 runs; nanoseconds per point for one transform; copy time taken off
+points   variant                            best     median   spread   cpu best     reps
+2^9      copy only                         0.203      0.247      22%      0.203    16384
+2^9      textbook radix 2                  5.687      8.210      44%      5.677    16384
+2^9      textbook radix 8                  2.191      4.281      95%      2.191    16384
+2^9      k8 raw (20 ops)                   3.240      3.698      14%      3.189    16384
+2^9      k8 exact (20 ops + scale)         3.442      4.239      23%      3.442    16384
+2^12     copy only                         0.220      0.270      23%      0.220     2048
+2^12     textbook radix 2                  7.538     10.548      40%      7.508     2048
+2^12     textbook radix 8                  3.063      6.024      97%      3.044     2048
+2^12     k8 raw (20 ops)                   3.933      5.181      32%      3.921     2048
+2^12     k8 exact (20 ops + scale)         5.021      5.514      10%      5.019     2048
+2^15     copy only                         0.214      0.280      31%      0.214      256
+2^15     textbook radix 2                 12.658     13.395       6%     12.656      256
+2^15     textbook radix 8                  6.772      7.578      12%      6.772      256
+2^15     k8 raw (20 ops)                   6.553      6.845       4%      6.551      256
+2^15     k8 exact (20 ops + scale)         6.606      7.022       6%      6.603      256
+2^18     copy only                         0.662      0.739      12%      0.662       32
+2^18     textbook radix 2                  9.086     14.064      55%      9.086       32
+2^18     textbook radix 8                  4.624      7.901      71%      4.621       32
+2^18     k8 raw (20 ops)                   5.226      7.760      48%      5.226       32
+2^18     k8 exact (20 ops + scale)         5.554      8.017      44%      5.554       32
+2^21     copy only                         1.618      1.730       7%      1.618        4
+2^21     textbook radix 2                 13.264     18.443      39%     13.254        4
+2^21     textbook radix 8                  6.353     10.392      64%      6.353        4
+2^21     k8 raw (20 ops)                   7.189      8.099      13%      7.188        4
+2^21     k8 exact (20 ops + scale)         7.562      9.632      27%      7.562        4
+CHECK OK: the four transforms agree at every size above
+
+== build plain: cc -std=c11 -O3
+# best of 15 runs; nanoseconds per point for one transform; copy time taken off
+points   variant                            best     median   spread   cpu best     reps
+2^9      copy only                         0.143      0.204      43%      0.143    16384
+2^9      textbook radix 2                  3.655      5.370      47%      3.656    16384
+2^9      textbook radix 8                  2.698      3.114      15%      2.696    16384
+2^9      k8 raw (20 ops)                   1.940      2.808      45%      1.940    16384
+2^9      k8 exact (20 ops + scale)         2.096      3.223      54%      2.090    16384
+2^12     copy only                         0.238      0.267      12%      0.238     2048
+2^12     textbook radix 2                  6.086      6.468       6%      6.084     2048
+2^12     textbook radix 8                  3.994      4.517      13%      3.992     2048
+2^12     k8 raw (20 ops)                   3.185      4.044      27%      3.186     2048
+2^12     k8 exact (20 ops + scale)         3.550      4.201      18%      3.550     2048
+2^15     copy only                         0.254      0.289      14%      0.254      256
+2^15     textbook radix 2                  8.106      8.729       8%      8.105      256
+2^15     textbook radix 8                  5.288      5.416       2%      5.288      256
+2^15     k8 raw (20 ops)                   4.353      4.795      10%      4.353      256
+2^15     k8 exact (20 ops + scale)         4.739      4.876       3%      4.739      256
+2^18     copy only                         0.689      0.707       3%      0.689       32
+2^18     textbook radix 2                 10.480     10.688       2%     10.461       32
+2^18     textbook radix 8                  6.465      6.550       1%      6.464       32
+2^18     k8 raw (20 ops)                   5.819      5.985       3%      5.819       32
+2^18     k8 exact (20 ops + scale)         5.937      6.063       2%      5.935       32
+2^21     copy only                         1.647      1.707       4%      1.647        4
+2^21     textbook radix 2                 14.605     15.153       4%     14.600        4
+2^21     textbook radix 8                  7.865      8.173       4%      7.863        4
+2^21     k8 raw (20 ops)                   7.626      7.762       2%      7.610        4
+2^21     k8 exact (20 ops + scale)         7.641      7.953       4%      7.640        4
+CHECK OK: the four transforms agree at every size above
+
+== build vec: cc -std=c11 -O3 -march=native
+# best of 15 runs; nanoseconds per point for one transform; copy time taken off
+points   variant                            best     median   spread   cpu best     reps
+2^9      copy only                         0.226      0.266      18%      0.221    16384
+2^9      textbook radix 2                  4.116      4.246       3%      4.121    16384
+2^9      textbook radix 8                  2.857      2.903       2%      2.862    16384
+2^9      k8 raw (20 ops)                   2.144      2.201       3%      2.149    16384
+2^9      k8 exact (20 ops + scale)         2.193      2.263       3%      2.198    16384
+2^12     copy only                         0.228      0.276      21%      0.228     2048
+2^12     textbook radix 2                  2.629      4.917      87%      2.629     2048
+2^12     textbook radix 8                  2.559      3.322      30%      2.560     2048
+2^12     k8 raw (20 ops)                   1.675      2.674      60%      1.675     2048
+2^12     k8 exact (20 ops + scale)         1.724      2.704      57%      1.724     2048
+2^15     copy only                         0.226      0.276      22%      0.226      256
+2^15     textbook radix 2                  4.268      5.681      33%      4.243      256
+2^15     textbook radix 8                  2.880      3.777      31%      2.880      256
+2^15     k8 raw (20 ops)                   1.925      3.130      63%      1.925      256
+2^15     k8 exact (20 ops + scale)         2.106      3.155      50%      2.106      256
+2^18     copy only                         0.533      0.699      31%      0.533       32
+2^18     textbook radix 2                  5.001      7.543      51%      5.001       32
+2^18     textbook radix 8                  3.670      4.527      23%      3.663       32
+2^18     k8 raw (20 ops)                   2.725      4.005      47%      2.725       32
+2^18     k8 exact (20 ops + scale)         2.788      4.032      45%      2.785       32
+2^21     copy only                         1.669      1.800       8%      1.653        4
+2^21     textbook radix 2                  8.786     12.088      38%      8.801        4
+2^21     textbook radix 8                  4.818      6.248      30%      4.834        4
+2^21     k8 raw (20 ops)                   4.294      5.879      37%      4.310        4
+2^21     k8 exact (20 ops + scale)         4.371      5.834      33%      4.385        4
+CHECK OK: the four transforms agree at every size above
+exit 0
+ 13:17:59 up 19:26,  0 user,  load average: 7.63, 8.70, 9.90

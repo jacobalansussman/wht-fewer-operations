@@ -1,0 +1,7 @@
+variant: b3
+m = 2  N = 16: frame size 7 (4^m - 3^m = 7), middle rank 6 (r = 6); non-zeros 21 = 3.00 per row; zero rows 0, rows with one non-zero 1; largest entry 1
+      cost outside the middle 5(N - 3^m) = 35 ; middle between 6 and 14 gates ; TOTAL between 41 and 49 ; Yates 32 ; ratio of the upper total to Yates 1.531
+m = 3  N = 64: frame size 37 (4^m - 3^m = 37), middle rank 28 (r = 28); non-zeros 309 = 8.35 per row; zero rows 0, rows with one non-zero 1; largest entry 1
+      cost outside the middle 5(N - 3^m) = 185 ; middle between 36 and 272 gates ; TOTAL between 221 and 457 ; Yates 192 ; ratio of the upper total to Yates 2.380
+m = 4  N = 256: frame size 175 (4^m - 3^m = 175), middle rank not run (r = 120); non-zeros 3757 = 21.47 per row; zero rows 0, rows with one non-zero 1; largest entry 1
+      cost outside the middle 5(N - 3^m) = 875 ; middle between 174 and 3582 gates ; TOTAL between 1049 and 4457 ; Yates 1024 ; ratio of the upper total to Yates 4.353

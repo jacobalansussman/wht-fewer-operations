@@ -1,0 +1,2 @@
+F3 - r c^T = [[(1, -1), (0, 0), (0, 0)], [(0, 0), (1, 2), (0, 0)], [(0, 0), (0, 0), (1, 2)]] | off-diagonal all zero: True
+so y_i = r_i * (w x0 + x1 + x2) + d_i x_i : 2 gates for the sum, 3 for the outputs = 5 gates against 6

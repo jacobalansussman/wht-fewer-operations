@@ -1,0 +1,6 @@
+mode=3 N=16 restart=0 best=25 recount rows=25 cols=25 | whole-number: odd cells 25, checkerboards 13, other 0
+BEST 25
+rows 11 14 6 3 9 12 10 13 7 5 15 0 2 8 4 1 
+cols 11 14 6 3 9 12 10 13 7 5 15 1 8 2 4 0 
+mode=3 N=16 restart=1 best=25 recount rows=25 cols=25 | whole-number: odd cells 25, checkerboards 13, other 0
+mode=3 N=16 restart=2 best=25 recount rows=25 cols=25 | whole-number: odd cells 25, checkerboards 13, other 0

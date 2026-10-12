@@ -1,0 +1,3 @@
+p=3 n=2 rows=16 non-input distinct targets=0  intermediates allowed m=0  => gate budget 0
+visited states by remaining budget:
+RESULT p=3: YES, circuit with 0 gates. points in order (after the 2 inputs):

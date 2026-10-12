@@ -1,0 +1,19 @@
+spec4_twounits.txt  (8 gates)
+   gate  1 (1,-1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  2 (1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  3 (-1,1)/1 MERGE height 1  Delta x 1  budget 2
+   gate  4 (1,1)/1       height 1  Delta x 2  budget 2
+   gate  5 (2,-1)/1       height 1  Delta x 1  budget 3
+   gate  6 (2,1)/1       height 2  Delta x 2  budget 3
+   gate  7 (2,1)/1       height 1  Delta x 1  budget 3
+   gate  8 (-3,1)/1       height 2  Delta x 4  budget 4
+   merges 3 ; final Delta 16 = 2^4.000 ; violations 0 ; connected groups left 1
+   holds every row of H: True ; (N/2)log2 N = 4.0 ; largest height M = 2 ; lemma 3 with this M: 3.25 gates
+   sum of the per-gate caps (merge: log2 max(|a|,|b|); other: max(0, budget)) = 7.755
+Traceback (most recent call last):
+  File "waves/wave-07/z-0/ledger2.py", line 98, in <module>
+    gates = parse(path, N)
+  File "waves/wave-07/z-0/ledger2.py", line 81, in parse
+    if '*' in p: c, nm = p.split('*'); c = int(c)
+                                           ~~~^^^
+ValueError: invalid literal for int() with base 10: '1/2'

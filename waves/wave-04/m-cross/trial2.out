@@ -1,0 +1,17 @@
+forward then forward again (second half = inverse)         N=  4 gates=  16  J/S/Q/E=8/0/8/0  new=5 dead=11 orders=[(1, 7), (6, 4)] sum=31  overlimit=0 | gates+V-NlogN=8  new+V-(N/2)logN=1  dead-(N/2)logN=7  new-(N-1)=2
+  first half alone                                         N=  4 gates=   8  J/S/Q/E=8/0/0/0  new=3 dead=5 orders=[(1, 5)] sum=5  overlimit=0 | gates+V-NlogN=0  new+V-(N/2)logN=-1  dead-(N/2)logN=1  new-(N-1)=0
+forward then forward again (second half = inverse)         N=  8 gates=  48  J/S/Q/E=24/0/24/0  new=13 dead=35 orders=[(1, 27), (6, 8)] sum=75  overlimit=0 | gates+V-NlogN=24  new+V-(N/2)logN=1  dead-(N/2)logN=23  new-(N-1)=6
+  first half alone                                         N=  8 gates=  24  J/S/Q/E=24/0/0/0  new=7 dead=17 orders=[(1, 17)] sum=17  overlimit=0 | gates+V-NlogN=0  new+V-(N/2)logN=-5  dead-(N/2)logN=5  new-(N-1)=0
+forward then forward again (second half = inverse)         N= 16 gates= 128  J/S/Q/E=64/0/64/0  new=29 dead=99 orders=[(1, 83), (6, 16)] sum=179  overlimit=0 | gates+V-NlogN=64  new+V-(N/2)logN=-3  dead-(N/2)logN=67  new-(N-1)=14
+  first half alone                                         N= 16 gates=  64  J/S/Q/E=64/0/0/0  new=15 dead=49 orders=[(1, 49)] sum=49  overlimit=0 | gates+V-NlogN=0  new+V-(N/2)logN=-17  dead-(N/2)logN=17  new-(N-1)=0
+N=8: half pieces made from two outputs, by number of ordered output pairs they serve as a shift partner: [(2, 28)]
+N=8: quarter pieces (from four outputs), by number of (output, sign) they turn into another sign vector: [(4, 84)]
+N=16: half pieces made from two outputs, by number of ordered output pairs they serve as a shift partner: [(2, 120)]
+N=16: quarter pieces (from four outputs), by number of (output, sign) they turn into another sign vector: [(4, 840)]
+N= 2 record   2  floor N-1+(N/2)log2N =   2  excess  0   textbook   2
+N= 4 record   7  floor N-1+(N/2)log2N =   7  excess  0   textbook   8
+N= 8 record  19  floor N-1+(N/2)log2N =  19  excess  0   textbook  24
+N=16 record  52  floor N-1+(N/2)log2N =  47  excess  5   textbook  64
+N=32 record 128  floor N-1+(N/2)log2N = 111  excess 17   textbook 160
+N=64 record 304  floor N-1+(N/2)log2N = 255  excess 49   textbook 384
+LIGHT label=m-cross-t2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=00:56:48 cmd=python3 -B m-cross/trial2.py m-cross/meter2.py

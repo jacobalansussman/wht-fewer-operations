@@ -1,0 +1,20 @@
+e2-3-drain 21: N=8 gates=21 saving=3 | wires not tight: 11 | (1/2)*sum log2(s*s'/N) = 13.585  -> guess HOLDS
+      n9 s=3 s'=8 s*s'/N=3 entangled bits [0, 1]
+      n10 s=4 s'=8 s*s'/N=4 entangled bits [0, 1]
+      n12 s=3 s'=8 s*s'/N=3 entangled bits [0, 1]
+      n13 s=4 s'=8 s*s'/N=4 entangled bits [0, 1]
+      n14 s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2]
+      n15 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      n16 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      n17 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      n18 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      n19 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      n20 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+e-2-density 21: N=8 gates=21 saving=3 | wires not tight: 6 | (1/2)*sum log2(s*s'/N) = 6.585  -> guess HOLDS
+      g14 s=8 s'=4 s*s'/N=4 entangled bits [0, 1, 2]
+      g15 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      g16 s=8 s'=4 s*s'/N=4 entangled bits [0, 1]
+      g17 s=8 s'=8 s*s'/N=8 entangled bits [0, 1, 2]
+      g25 s=3 s'=8 s*s'/N=3 entangled bits [0, 1, 2]
+      g27 s=8 s'=3 s*s'/N=3 entangled bits [0, 2]
+LIGHT label=jx-budget exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:24:52 cmd=python3 -B budget.py

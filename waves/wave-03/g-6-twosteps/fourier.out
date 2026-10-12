@@ -1,0 +1,6 @@
+quadric pair: left side 1024, Frobenius side 1024, equal True; nu=4, bound N^2 nu/4 = 1024, holds True
+tight hyperplanes: left side 0, Frobenius side 0, equal True; nu=0, bound N^2 nu/4 = 0, holds True
+random pair 0: left side 2176, Frobenius side 2176, equal True; nu=15, bound N^2 nu/4 = 3840, holds True
+random pair 1: left side 2240, Frobenius side 2240, equal True; nu=14, bound N^2 nu/4 = 3584, holds True
+random pair 2: left side 2088, Frobenius side 2088, equal True; nu=14, bound N^2 nu/4 = 3584, holds True
+random 8 against 16: left side 1440, Frobenius side 1440, equal True; nu=8, bound N^2 nu/4 = 2048, holds True

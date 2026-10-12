@@ -1,0 +1,26 @@
+gate count: none here (polynomials only)
+k=16  window [0,8]  degree d=8 = 2.00 sqrt(k)   share of pairs inside 0.99253
+   bits of c_j, j=0..d:  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+   largest |c_j|: 9 bits;  d*log2(k)=32
+   signs of c_j:  +-+-+-+-+
+   bits of leftover r(t): t=0: 0   t=a-1: 22   t=b+1: 10   t=k/2: 0   t=k: 22
+   r(b+1) = -512 = +-2^(d+1)? True ;  r(a-1) = -2228224 = +-(2^(d+1)... )
+   distance frame, parity classes separate, degree 4: share of pairs exact 0.98727
+   distance frame, parity classes separate, degree 8: share of pairs exact 1.00000
+k=64  window [8,25]  degree d=17 = 2.12 sqrt(k)   share of pairs inside 0.99135
+   bits of c_j, j=0..d:  [37, 36, 35, 35, 34, 34, 33, 32, 31, 31, 30, 29, 27, 26, 25, 23, 21, 18]
+   largest |c_j|: 37 bits;  d*log2(k)=102
+   signs of c_j:  +-+-+-+-+-+-+-+-+-
+   bits of leftover r(t): t=0: 37   t=a-1: 19   t=b+1: 19   t=k/2: 35   t=k: 64
+   r(b+1) = 262144 = +-2^(d+1)? True ;  r(a-1) = -262144 = +-(2^(d+1)... )
+   distance frame, parity classes separate, degree 8: share of pairs exact 0.97519
+   distance frame, parity classes separate, degree 17: share of pairs exact 1.00000
+k=256  window [46,81]  degree d=35 = 2.19 sqrt(k)   share of pairs inside 0.99033
+   bits of c_j, j=0..d:  [111, 110, 109, 108, 107, 105, 104, 103, 101, 100, 98, 97, 95, 94, 92, 90, 89, 87, 85, 83, 81, 79, 77, 75, 73, 70, 68, 65, 63, 60, 57, 53, 50, 46, 41, 36]
+   largest |c_j|: 111 bits;  d*log2(k)=280
+   signs of c_j:  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+   bits of leftover r(t): t=0: 111   t=a-1: 37   t=b+1: 37   t=k/2: 112   t=k: 168
+   r(b+1) = 0 = +-2^(d+1)? True ;  r(a-1) = 0 = +-(2^(d+1)... )
+   distance frame, parity classes separate, degree 17: share of pairs exact 0.97546
+   distance frame, parity classes separate, degree 35: share of pairs exact 0.99999
+LIGHT label=e3-poly exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:58:39 cmd=python3 -B waves/wave-02/e-3-cutoff/poly.py

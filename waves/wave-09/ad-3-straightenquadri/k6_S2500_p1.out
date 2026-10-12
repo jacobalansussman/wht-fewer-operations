@@ -1,0 +1,15 @@
+subspaces 2825, flats 26387, flats of dimension 1 to 4 unchanged by a given u: 2388
+control: start has 28 points, is_bq(start)=0 ; the quadric y0y1+y2y3+y4y5 has 28 points, is_bq=1
+S. depth 1: beam holds 2500 sets, least score 768
+S. depth 2: beam holds 2500 sets, least score 288
+S. depth 3: beam holds 2500 sets, least score 192
+S. beam 2500: a quadric reached after 4 single-flat exchanges:  0x27b18d1b41d71482 (28 points)
+     exchange 1: u=11 on the flat  0x1284482184122148 (16 points)
+        gives 0x47d11d74d1475408 (28 points)
+     exchange 2: u=11 on the flat  0x6060606090909090 (16 points)
+        gives 0x27b17d1441d74488 (28 points)
+     exchange 3: u=15 on the flat  0x0000500a0000500a (8 points)
+        gives 0x27b12d1e41d71482 (28 points)
+     exchange 4: u= 2 on the flat  0x0000a00500000000 (4 points)
+        gives 0x27b18d1b41d71482 (28 points)
+     replay from the start ends in the same set: yes ; it is a quadric: yes

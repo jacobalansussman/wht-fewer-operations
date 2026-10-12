@@ -1,0 +1,17 @@
+E at 8 points: fixed 7 gates; open budget 4 -> total 11 : NO (exhaustive)  (0 s)
+E at 8 points: fixed 7 gates; open budget 5 -> total 12 : YES  (0 s)
+RESULT p=2: YES, circuit with 12 gates. points in order (after the 8 inputs):
+  g8  inter  = [1 1 0 0 0 0 0 0]  from #1 + 1*#0 (projectively)
+  g9  inter  = [1 0 1 0 0 0 0 0]  from #2 + 1*#0 (projectively)
+  g10 inter  = [1 0 0 0 1 0 0 0]  from #4 + 1*#0 (projectively)
+  g11 inter  = [0 1 0 0 0 1 0 0]  from #5 + 1*#1 (projectively)
+  g12 inter  = [0 0 1 0 0 0 1 0]  from #6 + 1*#2 (projectively)
+  g13 inter  = [1 1 0 0 1 1 0 0]  from #11 + 1*#10 (projectively)
+  g14 inter  = [1 0 1 0 1 0 1 0]  from #12 + 1*#10 (projectively)
+  g15 inter  = [0 0 0 0 0 0 1 1]  from #7 + 1*#6 (projectively)
+  g16 inter  = [0 0 1 1 0 0 0 0]  from #3 + 1*#2 (projectively)
+  g17 TARGET = [1 1 1 1 0 0 0 0]  from #16 + 1*#8 (projectively)
+  g18 inter  = [0 0 1 1 0 0 1 1]  from #16 + 1*#15 (projectively)
+  g19 TARGET = [1 1 1 1 1 1 1 1]  from #18 + 1*#13 (projectively)
+
+LIGHT label=ab5-E8 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:17:30 cmd=python3 -B skelE.py 8

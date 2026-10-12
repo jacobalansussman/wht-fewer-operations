@@ -1,0 +1,25 @@
+k=2 N=4 strings=2 rank mod p=4  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 1.50
+k=3 N=8 strings=3 rank mod p=8  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 2.00
+k=4 N=16 strings=6 rank mod p=16  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 3.00
+k=5 N=32 strings=10 rank mod p=32  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 4.25
+k=6 N=64 strings=20 rank mod p=64  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 6.38
+k=7 N=128 strings=35 rank mod p=128  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 9.25
+k=8 N=256 strings=70 rank mod p=256  U=weighted shift:True  Z=Pascal blocks:True  H=(-2)^pairs*Krawtchouk blocks:True  nonzeros of basis per entry 13.88
+ledger of the middle, per entry (multiplicity f = C(k,w) - C(k,w-1), block size m = k - 2w + 1):
+  k=   4  dense blocks 3.38   Pascal-diag-Pascal with plain Pascal passes 3.38   m*log2(m) model (fast Taylor shift) 1.62   log2 k = 2.0, sqrt k = 2.0
+  k=  16  dense blocks 6.48   Pascal-diag-Pascal with plain Pascal passes 6.48   m*log2(m) model (fast Taylor shift) 2.55   log2 k = 4.0, sqrt k = 4.0
+  k=  64  dense blocks 12.82   Pascal-diag-Pascal with plain Pascal passes 12.82   m*log2(m) model (fast Taylor shift) 3.53   log2 k = 6.0, sqrt k = 8.0
+  k= 256  dense blocks 25.56   Pascal-diag-Pascal with plain Pascal passes 25.56   m*log2(m) model (fast Taylor shift) 4.53   log2 k = 8.0, sqrt k = 16.0
+  k=1024  dense blocks 51.08   Pascal-diag-Pascal with plain Pascal passes 51.08   m*log2(m) model (fast Taylor shift) 5.53   log2 k = 10.0, sqrt k = 32.0
+tie of the digit-swap route at textbook prices: T(q^2) = 2(q^2-q) + 2T(q) + 4(q-1)T(q/2), T(q) = q*log2 q
+  q=    2: route 8  textbook 8
+  q=    4: route 64  textbook 64
+  q=    8: route 384  textbook 384
+  q=   16: route 2048  textbook 2048
+  q=   32: route 10240  textbook 10240
+  q=   64: route 49152  textbook 49152
+  q=  128: route 229376  textbook 229376
+  q=  256: route 1048576  textbook 1048576
+  q=  512: route 4718592  textbook 4718592
+  q= 1024: route 20971520  textbook 20971520
+LIGHT label=ic-schur exit=0 time=1s waited=0s peak_rss_mb=2 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:06:20 cmd=python3 -B schur.py

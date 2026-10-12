@@ -1,0 +1,4 @@
+K = 15 ; vectors before symmetry: 1
+15 moves: 1 classes; clique-excluded 0, zero-form-excluded 0, survive 1; largest joined set histogram [(3, 1)]
+    SURVIVES  00001:1 00010:1 00100:1 00111:1 01000:1 01011:1 01101:1 01110:1 10000:1 10011:1 10101:1 10110:1 11001:1 11010:1 11100:1  tight 15, largest joined set 3  None
+LIGHT label=n2-k6 exit=0 time=2s waited=0s peak_rss_mb=10 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:20:34 cmd=python3 -B mypost.py 15 k6_W3.txt

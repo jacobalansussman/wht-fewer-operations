@@ -1,0 +1,1 @@
+LIGHT label=p0-s3b exit=137 time=273s waited=0s peak_rss_mb=1905 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=memory>1500MB start=00:28:39 cmd=./sym3.sh 101 163

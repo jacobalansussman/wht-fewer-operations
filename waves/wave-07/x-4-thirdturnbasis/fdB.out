@@ -1,0 +1,2 @@
+--- control: k=6, r=3, flags 123456 / 345612 / 561234 (tensor arrangement must be reachable)
+k=6 r=3 flags=123456/345612/561234 seed=0: loss=3.511e+03 max||M|-1|=2.45e-01 max|MM^T-NI|=3.66e+01 nfev=111 73s

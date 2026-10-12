@@ -1,0 +1,23 @@
+after five stages every array holds ONE term (one content at one level): True
+contents found in arrays 0..3: [2, 3, 0, 1] ; all four live arrays end at the kernel of their own input: True
+moves 52 (plain schedule 36); blocks per live array [[1, 2, 2, 2], [2, 2, 3], [1, 2, 2, 2], [2, 2, 3]] ; scratch blocks: 12 of rank 2
+WHAT-IF block lists (no network behind them): odd-even ring, R rounds in S = 2R + 1 stages, stage size h, port size r;
+  per pair of arrays: even array blocks (h-r), R x 2(h-r), (R+1) r ; odd array blocks R x 2(h-r), (h-r) + (R+1) r ; shears: 3 per exchange, 3R per pair of arrays
+  'free' = shears and helpers cost nothing; 'kappa' = every shear pays h/kappa moves in blocks of rank h (helpers still free)
+  r/h = 0.333 R =  1 S =  3 : skipped share 0.1111, blocks per array 2.5, saving free 0.1190 ; kappa 60: 0.1095 ; kappa 15: 0.0816 ; kappa 5: 0.0112
+  r/h = 0.333 R =  2 S =  5 : skipped share 0.1333, blocks per array 3.5, saving free 0.1046 ; kappa 60: 0.0960 ; kappa 15: 0.0711 ; kappa 5: 0.0096
+  r/h = 0.333 R =  3 S =  7 : skipped share 0.1429, blocks per array 4.5, saving free 0.0945 ; kappa 60: 0.0867 ; kappa 15: 0.0640 ; kappa 5: 0.0086
+  r/h = 0.333 R =  5 S = 11 : skipped share 0.1515, blocks per array 6.5, saving free 0.0823 ; kappa 60: 0.0755 ; kappa 15: 0.0556 ; kappa 5: 0.0075
+  r/h = 0.333 R = 10 S = 21 : skipped share 0.1587, blocks per array 11.5, saving free 0.0684 ; kappa 60: 0.0626 ; kappa 15: 0.0461 ; kappa 5: 0.0062
+  r/h = 0.200 R =  1 S =  3 : skipped share 0.0667, blocks per array 2.5, saving free 0.0771 ; kappa 60: 0.0671 ; kappa 15: 0.0377 ; kappa 5: 0.0000
+  r/h = 0.200 R =  2 S =  5 : skipped share 0.0800, blocks per array 3.5, saving free 0.0648 ; kappa 60: 0.0563 ; kappa 15: 0.0314 ; kappa 5: 0.0000
+  r/h = 0.200 R =  3 S =  7 : skipped share 0.0857, blocks per array 4.5, saving free 0.0573 ; kappa 60: 0.0497 ; kappa 15: 0.0277 ; kappa 5: 0.0000
+  r/h = 0.200 R =  5 S = 11 : skipped share 0.0909, blocks per array 6.5, saving free 0.0488 ; kappa 60: 0.0424 ; kappa 15: 0.0236 ; kappa 5: 0.0000
+  r/h = 0.200 R = 10 S = 21 : skipped share 0.0952, blocks per array 11.5, saving free 0.0397 ; kappa 60: 0.0344 ; kappa 15: 0.0192 ; kappa 5: 0.0000
+  r/h = 0.111 R =  1 S =  3 : skipped share 0.0370, blocks per array 2.5, saving free 0.0469 ; kappa 60: 0.0361 ; kappa 15: 0.0046 ; kappa 5: 0.0000
+  r/h = 0.111 R =  2 S =  5 : skipped share 0.0444, blocks per array 3.5, saving free 0.0377 ; kappa 60: 0.0289 ; kappa 15: 0.0036 ; kappa 5: 0.0000
+  r/h = 0.111 R =  3 S =  7 : skipped share 0.0476, blocks per array 4.5, saving free 0.0327 ; kappa 60: 0.0251 ; kappa 15: 0.0032 ; kappa 5: 0.0000
+  r/h = 0.111 R =  5 S = 11 : skipped share 0.0505, blocks per array 6.5, saving free 0.0274 ; kappa 60: 0.0210 ; kappa 15: 0.0026 ; kappa 5: 0.0000
+  r/h = 0.111 R = 10 S = 21 : skipped share 0.0529, blocks per array 11.5, saving free 0.0219 ; kappa 60: 0.0168 ; kappa 15: 0.0021 ; kappa 5: 0.0000
+  compare: plain exchange as x-6 counted it (3 blocks of h-r and one of 2r): r/h = 1/3: 0.0783 ; 1/9: 0.0285
+LIGHT label=ab-6-ring2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:24:44 cmd=python3 -B ring2.py

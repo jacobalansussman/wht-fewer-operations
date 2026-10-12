@@ -1,0 +1,23 @@
+K3 power on 3^r numbers, by "two layers of transforms" (count G):
+ r  textbook  with 7-gate bricks  with e2-0 prices  ratio(e2-0)/textbook   [replayed by me: r=2: 22; r=3: 98 (7-gate bricks), 96 (two layers of the 12-gate brick)]
+  1         4         4         4   1.0000
+  2        24        22        22   0.9167
+  3       108        98        94   0.8704
+  4       432       388       364   0.8426
+  5      1620      1448      1336   0.8247
+  6      5832      5194      4738   0.8124
+  7     20412     18134     16402   0.8035
+  8     69984     62056     55768   0.7969
+  9    236196    209132    186988   0.7917
+ 10    787320    696286    620014   0.7875
+closed form with e2-0 prices: r 3^r + 3^r / 2 - (terms from sizes 1, 2): [(4, 364, 364), (6, 4738, 4738), (8, 55768, 55768)]
+
+transform on 8^t points by the pair route with the 12-gate brick, orbit and antisymmetric transforms at e2-0 prices, against e2-0 direct:
+ t= 1: pair route 0.91667 of textbook ; e2-0 direct 0.83333 ; product of 7-gate bricks 0.91667
+ t= 2: pair route 0.89323 of textbook ; e2-0 direct 0.79167 ; product of 7-gate bricks 0.87500
+ t= 3: pair route 0.87717 of textbook ; e2-0 direct 0.77778 ; product of 7-gate bricks 0.88889
+ t= 4: pair route 0.86580 of textbook ; e2-0 direct 0.77083 ; product of 7-gate bricks 0.87500
+ t= 8: pair route 0.84263 of textbook ; e2-0 direct 0.76042 ; product of 7-gate bricks 0.87500
+ t=16: pair route 0.82807 of textbook ; e2-0 direct 0.75521 ; product of 7-gate bricks 0.87500
+ t=64: pair route 0.81641 of textbook ; e2-0 direct 0.75130 ; product of 7-gate bricks 0.87500
+gates per bit of determinant (2 = butterflies): 7-gate brick 1.750 ; 12-gate brick for K3(x)H2 (7 bits) 1.714 ; e2-0 at 8, 16, 64 points 1.667 1.625 1.583 ; e2-0 limit 1.5

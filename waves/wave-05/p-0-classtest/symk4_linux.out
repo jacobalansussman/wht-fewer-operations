@@ -1,0 +1,8 @@
+k=4 p=11 tau=10 m=4 gates=9
+visited states by remaining budget: j=4:1 j=3:100 j=2:8061 j=1:1364736
+RESULT p=11: NO circuit with 9 gates (exhaustive over GF(11))
+k=4 p=11 tau=3 m=4 gates=9
+visited states by remaining budget: j=4:1 j=3:100 j=2:7950 j=1:1319799
+RESULT p=11: NO circuit with 9 gates (exhaustive over GF(11))
+k=4 p=11 tau=10 m=5 gates=10
+(stopped by me: the local machine finished the same runs first)

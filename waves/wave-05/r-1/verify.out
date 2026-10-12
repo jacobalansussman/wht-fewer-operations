@@ -1,0 +1,11 @@
+1. dynamic programme against brute force over all subsets of nodes: 778 vectors, 0 disagreements
+2. N = 4 : 2L(n) = floor for tau = 4   (L = 2.0 )  gates >= 6   distinct profiles 1   one half only: 2.0
+2. N = 8 : 2L(n) = floor for tau = 11   (L = 5.5 )  gates >= 17   distinct profiles 5   one half only: 6.0
+2. N = 16 : 2L(n) = floor for tau = 32   (L = 16.0 )  gates >= 46   distinct profiles 30   one half only: 19.0
+2. N = 32 : 2L(n) = floor for tau = 108   (L = 54.0 )  gates >= 138   distinct profiles 2249   one half only: 64.0
+4. inequality on random sums of tree rectangles: 6600 trials, 0 violations, 1318 cases of equality
+5. the 45-rectangle design at 16 points: B = 36.0  (p-1 says 36)
+   all-ones scalings at 16 points: B = 42.0  (p-1 says 42)
+   N = 4 : B(r,c) over ALL sign pairs (first signs fixed): least 4.0  census {4.0: 64}
+   N = 8 : B(r,c) over ALL sign pairs (first signs fixed): least 12.0  census {12.0: 5248, 13.0: 7168, 14.0: 2816, 15.0: 1024, 16.0: 128}
+   N = 16: 20000 random sign pairs: least B = 34.0 ; 0 of them have B = 32

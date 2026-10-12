@@ -1,0 +1,41 @@
+1. x-1 digit law: digit 0 = N-1 gates, digit j>=1 = N*(P(Bin>=j)+P(Bin>=j+1))
+  N=   4 mod4=   7 (3N-k-3=7) mod8=    8 (5N-(k^2+5k+10)/2=8) mod16=    8 third digit=   1 all digits=8 N*k=8
+  N=   8 mod4=  18 (3N-k-3=18) mod8=   23 (5N-(k^2+5k+10)/2=23) mod16=   24 third digit=   5 all digits=24 N*k=24
+  N=  16 mod4=  41 (3N-k-3=41) mod8=   57 (5N-(k^2+5k+10)/2=57) mod16=   63 third digit=  16 all digits=64 N*k=64
+  N=  32 mod4=  88 (3N-k-3=88) mod8=  130 (5N-(k^2+5k+10)/2=130) mod16=  152 third digit=  42 all digits=160 N*k=160
+  N=  64 mod4= 183 (3N-k-3=183) mod8=  282 (5N-(k^2+5k+10)/2=282) mod16=  346 third digit=  99 all digits=384 N*k=384
+  N= 128 mod4= 374 (3N-k-3=374) mod8=  593 (5N-(k^2+5k+10)/2=593) mod16=  756 third digit= 219 all digits=896 N*k=896
+  N= 256 mod4= 757 (3N-k-3=757) mod8= 1223 (5N-(k^2+5k+10)/2=1223) mod16= 1605 third digit= 466 all digits=2048 N*k=2048
+2. x-6 closed form: saving = L/(ln k + L), L = ln(1/(1-rho))
+  blocks=2 rho=0.074: 0.09984
+  blocks=3 rho=0.115: 0.10007
+  blocks=6 rho=0.18: 0.09971
+  blocks=2 rho=0.1: 0.13195
+  blocks=16.5 rho=0.0021: 0.00075
+3. height lemma L3 at small sizes: N-1 + ((N/2)log2N-(N-1)log2M)/log2(4M^2); M=1 uses log2 3
+  N=2^3 trivial 2N-2=14  M=1: 15  M=2: 9  M=3: 8  M=16: 7
+  N=2^4 trivial 2N-2=30  M=1: 36  M=2: 20  M=3: 17  M=16: 15
+  N=2^10 trivial 2N-2=2046  M=1: 4254  M=2: 2048  M=3: 1700  M=16: 1126
+  N=2^14 trivial 2N-2=32766  M=1: 88744  M=2: 40960  M=3: 33545  M=16: 21299
+  N=2^20 trivial 2N-2=2097150  M=1: 7664353  M=2: 3407872  M=3: 2755333  M=16: 1677721
+   digits per gate needed on average for C*N gates: (log2 N)/(4C) - 1
+   log2 N=20: C=1: 4.00, C=2: 1.50, C=3: 0.67, C=5: 0.00
+   log2 N=40: C=1: 9.00, C=2: 4.00, C=3: 2.33, C=5: 1.00
+   log2 N=100: C=1: 24.00, C=2: 11.50, C=3: 7.33, C=5: 4.00
+   log2 N=1000: C=1: 249.00, C=2: 124.00, C=3: 82.33, C=5: 49.00
+4. x-4 lemma D: least r with r >= 2^(ceil(k/r)-2)
+  k=4: r>=2  r*log2(k)/k=1.00  known program k/2=2
+  k=6: r>=2  r*log2(k)/k=0.86  known program k/2=3
+  k=8: r>=3  r*log2(k)/k=1.12  known program k/2=4
+  k=16: r>=4  r*log2(k)/k=1.00  known program k/2=8
+  k=64: r>=13  r*log2(k)/k=1.22  known program k/2=32
+  k=1024: r>=128  r*log2(k)/k=1.25  known program k/2=512
+  k=4096: r>=410  r*log2(k)/k=1.20  known program k/2=2048
+  k=65536: r>=4682  r*log2(k)/k=1.14  known program k/2=32768
+  k=1048576: r>=61681  r*log2(k)/k=1.18  known program k/2=524288
+5. adding-only neighbour sums: N(k-1-floor(k/2)/2)
+   [2, 12, 32, 96, 224, 576, 1280, 3072, 6656]
+6. x-9 hub family: (3/4)N log2 N + N/4 and (5/4)N log2 N - N/4
+   [7, 20, 52, 128, 304] [28, 76, 192, 464]
+7. floors: N-1+(N/2)log2N = [2, 7, 19, 47, 111, 255]
+LIGHT label=w-note exit=0 time=1s waited=50s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:11:22 cmd=python3 -B check.py

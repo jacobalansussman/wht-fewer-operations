@@ -1,0 +1,10 @@
+p=13 tau=5: 126 helper sets (0 without a hub), 550 wirings, 27 shapes
+p=13 tau=2: 134 helper sets (8 without a hub), 558 wirings, 28 shapes
+p=13 tau=4: 142 helper sets (16 without a hub), 566 wirings, 28 shapes
+p=13 tau=12: 228 helper sets (0 without a hub), 1404 wirings, 27 shapes
+shapes in all: 28
+  not at every tau tried: 4<-(0,1) 5<-(0,2) 6<-(3,4) 7<-(2,6) 8<-(4,7) 9<-(5,6) 10<-(5,8)  present at tau = [2, 4]  wirings [8, 16]
+shapes at tau = -1 that are missing at some other tau tried: none
+wirings per shape at tau = -1 divided by the same at tau = 5: [(12, 6), (48, 16), (48, 24), (96, 32), (96, 48)]
+p-0's list of shapes at this prime: 28; mine: 28; in both: 28; only theirs: 0; only mine: 0
+LIGHT label=r2-shapes exit=0 time=15s waited=0s peak_rss_mb=35 peak_footprint_mb=9 lowest_cap_mb=1500 stopped=- start=01:40:06 cmd=python3 -B r2_shapes.py 13 2 5 2 4 12

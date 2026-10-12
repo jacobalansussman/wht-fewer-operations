@@ -1,0 +1,34 @@
+# 8 points: the circuit of tools/circuits/fpga/rtl/circuits/8_cfl1994.txt with other signs (written by resign.py).
+# Same adders, same wiring, same depth; the lines kept with the opposite sign: (none).
+# At input width 8: adder bits 226 -> 226, bits of distinct subtracted operands 60 -> 60, subtractions 6 -> 6.
+# Every choice of signs was tried (16384).
+t1 = x1 + x2
+t2 = t1 + x3
+t3 = x0 - t2
+t4 = x0 + t2
+t5 = t3 + 2*x2
+t6 = t3 + 2*x1
+t7 = t3 + 2*x3
+t8 = x5 + x6
+t9 = t8 + x7
+t10 = x4 - t9
+t11 = x4 + t9
+t12 = t10 + 2*x6
+t13 = t10 + 2*x5
+t14 = t10 + 2*x7
+t15 = t4 + t11
+t16 = t4 - t11
+t17 = t5 + t12
+t18 = t5 - t12
+t19 = t6 + t13
+t20 = t6 - t13
+t21 = t7 + t14
+t22 = t7 - t14
+y0 = t15
+y1 = t17
+y2 = t19
+y3 = t21
+y4 = t16
+y5 = t18
+y6 = t20
+y7 = t22

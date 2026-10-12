@@ -1,0 +1,6 @@
+mode=3 N=8 restart=0 best=5 recount rows=5 cols=5 | whole-number: odd cells 5, checkerboards 2, other 0
+BEST 5
+rows 6 3 5 7 2 4 1 0 
+cols 6 3 5 7 4 2 1 0 
+mode=3 N=8 restart=1 best=5 recount rows=5 cols=5 | whole-number: odd cells 5, checkerboards 2, other 0
+mode=3 N=8 restart=2 best=5 recount rows=5 cols=5 | whole-number: odd cells 5, checkerboards 2, other 0

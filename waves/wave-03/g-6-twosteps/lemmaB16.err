@@ -1,0 +1,1 @@
+LIGHT label=g6-lemmaB exit=0 time=1s waited=22s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=23:11:34 cmd=python3 -B lemmaB_check.py 16 12 11

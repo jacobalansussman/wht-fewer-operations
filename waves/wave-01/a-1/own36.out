@@ -1,0 +1,5 @@
+== positive control alt4 p=3 m=6 (own; must FIND 12 gates)
+own: p=3 n=6 rows=6 distinct non-input targets=6 intermediates=6 => gate budget 12
+nodes by depth: 1 1 2 62 1950 58142 0
+RESULT p=3: a circuit EXISTS with 12 gates
+LIGHT label=a1-own-3-6 exit=0 time=4s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:27:52 cmd=sh -c ./own 3 6 6 < ../i-cross/rows_alt4.txt

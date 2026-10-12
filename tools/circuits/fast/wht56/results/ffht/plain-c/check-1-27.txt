@@ -1,0 +1,300 @@
+# harness check; 2026-10-11 14:31:15 UTC; host (removed); load 3.44,4.12,4.53
+# compiler: gcc 13.3.0
+# harness, variants.c and our plain C built with: gcc -O3 -march=native
+# naive.c built with: gcc -O3 -mavx2
+# FFHT commit fba727a3ff72c862260460631ae1cc8e3e44e861; its fht.o built by its own Makefile with: gcc -O3 -march=native -std=c99 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
+C type=float k=1 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=1 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=1 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=1 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=1 variant=k8raw against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=1 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=2 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=2 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=2 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=2 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=2 variant=k8raw against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=2 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=3 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=3 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=k8raw against=ffht amp=7 scale_log2=1 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=4 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=4 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=k8raw against=ffht amp=7 scale_log2=1 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=5 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=5 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=k8raw against=ffht amp=7 scale_log2=1 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=6 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=6 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=k8raw against=ffht amp=7 scale_log2=2 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=7 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=7 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=k8raw against=ffht amp=7 scale_log2=2 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=8 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=8 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=k8raw against=ffht amp=7 scale_log2=2 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=9 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=9 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=k8raw against=ffht amp=7 scale_log2=3 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=10 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=10 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=k8raw against=ffht amp=7 scale_log2=3 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=11 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=11 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=k8raw against=ffht amp=7 scale_log2=3 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=12 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=12 variant=t8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=k8 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=k8raw against=ffht amp=7 scale_log2=4 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=naive against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=13 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=k8raw against=ffht amp=1 scale_log2=4 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=14 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=k8raw against=ffht amp=1 scale_log2=4 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=15 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=k8raw against=ffht amp=1 scale_log2=5 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=16 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=k8raw against=ffht amp=1 scale_log2=5 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=17 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=k8raw against=ffht amp=1 scale_log2=5 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=18 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=k8raw against=ffht amp=1 scale_log2=6 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=19 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=k8raw against=ffht amp=1 scale_log2=6 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=20 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=k8raw against=ffht amp=1 scale_log2=6 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=21 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=k8raw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=22 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=k8raw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=23 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=k8raw against=ffht amp=1 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=24 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=k8raw against=ffht amp=1 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=25 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=k8raw against=ffht amp=1 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=26 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=k8raw against=ffht amp=1 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=27 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=27 variant=t8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=27 variant=k8 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=27 variant=k8raw against=ffht amp=1 scale_log2=9 mismatches=0 maxdiff=0 OK
+C type=float k=27 variant=naive against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=1 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=1 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=1 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=1 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=1 variant=k8raw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=1 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=2 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=2 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=2 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=2 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=2 variant=k8raw against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=2 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=3 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=3 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=k8raw against=ffht amp=1000 scale_log2=1 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=4 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=4 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=k8raw against=ffht amp=1000 scale_log2=1 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=5 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=5 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=k8raw against=ffht amp=1000 scale_log2=1 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=6 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=6 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=k8raw against=ffht amp=1000 scale_log2=2 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=7 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=7 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=k8raw against=ffht amp=1000 scale_log2=2 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=8 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=8 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=k8raw against=ffht amp=1000 scale_log2=2 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=9 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=9 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=k8raw against=ffht amp=1000 scale_log2=3 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=10 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=10 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=k8raw against=ffht amp=1000 scale_log2=3 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=11 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=11 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=k8raw against=ffht amp=1000 scale_log2=3 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=12 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=12 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=k8raw against=ffht amp=1000 scale_log2=4 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=13 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=k8raw against=ffht amp=1000 scale_log2=4 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=14 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=k8raw against=ffht amp=1000 scale_log2=4 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=15 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=k8raw against=ffht amp=1000 scale_log2=5 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=16 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=k8raw against=ffht amp=1000 scale_log2=5 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=17 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=k8raw against=ffht amp=1000 scale_log2=5 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=18 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=k8raw against=ffht amp=1000 scale_log2=6 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=19 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=k8raw against=ffht amp=1000 scale_log2=6 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=20 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=k8raw against=ffht amp=1000 scale_log2=6 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=21 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=k8raw against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=22 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=k8raw against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=23 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=k8raw against=ffht amp=1000 scale_log2=7 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=24 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=k8raw against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=25 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=k8raw against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=26 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=k8raw against=ffht amp=1000 scale_log2=8 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=27 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=27 variant=t8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=27 variant=k8 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=27 variant=k8raw against=ffht amp=1000 scale_log2=9 mismatches=0 maxdiff=0 OK
+C type=double k=27 variant=naive against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+# check: all equal (0 failing lines)

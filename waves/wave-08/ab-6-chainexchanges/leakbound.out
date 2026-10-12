@@ -1,0 +1,5 @@
+K =  4: group order     6, V irreducible (<chi,chi> = 1), copies of V in V x V: 1, copies of V in the table: 5, Rest: 1 dimensions; leak bound 7 calls; textbook 8; telescoping bound (x-3) 6
+K =  8: group order   168, V irreducible (<chi,chi> = 1), copies of V in V x V: 2, copies of V in the table: 6, Rest: 23 dimensions; leak bound 14 calls; textbook 16; telescoping bound (x-3) 12
+K = 16: group order 20160, V irreducible (<chi,chi> = 1), copies of V in V x V: 2, copies of V in the table: 6, Rest: 167 dimensions; leak bound 30 calls; textbook 32; telescoping bound (x-3) 24
+K = 4, skew part: 2 copies of V, Rest 1 -> bound 4 ; symmetric part: 3 copies of V, Rest 0 -> bound 3
+LIGHT label=ab-6-leak exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:18:44 cmd=python3 -B leakbound.py

@@ -1,0 +1,37 @@
+== A, B, C: gates of the change of basis (count G) ==
+  k    N | tower: gates  /N    /(N k)  largest coeff | greedy on tower: ops /N  mult | greedy on web: ops /N  mult | nonzeros/N web, tower | checks
+  2    4 |      2  0.500  0.250    1 |      2  0.500 2 |      2  0.500 2 | 1.50 1.50 | Pascal web True rank 4, tower True rank 4
+  3    8 |      8  1.000  0.333    2 |      9  1.125 3 |      8  1.000 3 | 2.00 2.25 | Pascal web True rank 8, tower True rank 8
+  4   16 |     26  1.625  0.406    3 |     36  2.250 6 |     28  1.750 4 | 3.00 3.75 | Pascal web True rank 16, tower True rank 16
+  5   32 |     72  2.250  0.450    4 |    135  4.219 11 |     86  2.688 6 | 4.25 6.25 | Pascal web True rank 32, tower True rank 32
+  6   64 |    188  2.938  0.490    5 |    442  6.906 30 |    255  3.984 20 | 6.38 10.94 | Pascal web True rank 64, tower True rank 64
+  7  128 |    464  3.625  0.518    6 |   1555 12.148 150 |    886  6.922 35 | 9.25 19.14 | Pascal web True rank 128, tower True rank 128
+  8  256 |   1114  4.352  0.544    7 |   5112 19.969 300 |   1992  7.781 42 | 13.88 34.45 | Pascal web True rank 256, tower True rank 256
+== control for the greedy counter: Z itself (known: 4, 12 at 4, 8 points; Yates (N/2) k) ==
+  k=2 N=4 greedy ops on Z: 5  (Yates 4)
+  k=3 N=8 greedy ops on Z: 19  (Yates 12)
+  k=4 N=16 greedy ops on Z: 65  (Yates 32)
+  k=5 N=32 greedy ops on Z: 211  (Yates 80)
+  k=6 N=64 greedy ops on Z: 665  (Yates 192)
+  k=7 N=128 greedy ops on Z: 2059  (Yates 448)
+  k=8 N=256 greedy ops on Z: 6305  (Yates 1024)
+== B, larger k from the multiplicities alone: tower gates / N ==
+  k=   4  tower gates/N =     1.625   /k = 0.4062   k - gates/N = 2.375  sqrt(k) = 2.00
+  k=   6  tower gates/N =     2.938   /k = 0.4896   k - gates/N = 3.062  sqrt(k) = 2.45
+  k=   8  tower gates/N =     4.352   /k = 0.5439   k - gates/N = 3.648  sqrt(k) = 2.83
+  k=  12  tower gates/N =     7.360   /k = 0.6134   k - gates/N = 4.640  sqrt(k) = 3.46
+  k=  16  tower gates/N =    10.519   /k = 0.6575   k - gates/N = 5.481  sqrt(k) = 4.00
+  k=  32  tower gates/N =    23.903   /k = 0.7470   k - gates/N = 8.097  sqrt(k) = 5.66
+  k=  64  tower gates/N =    52.184   /k = 0.8154   k - gates/N = 11.816  sqrt(k) = 8.00
+  k= 128  tower gates/N =   110.911   /k = 0.8665   k - gates/N = 17.089  sqrt(k) = 11.31
+  k= 256  tower gates/N =   231.443   /k = 0.9041   k - gates/N = 24.557  sqrt(k) = 16.00
+  k= 512  tower gates/N =   476.874   /k = 0.9314   k - gates/N = 35.126  sqrt(k) = 22.63
+  k=1024  tower gates/N =   973.923   /k = 0.9511   k - gates/N = 50.077  sqrt(k) = 32.00
+== D. pairing tree, every weight block priced dense m(m-1): per point t(k) = 2 t(k/2) + c(k) ==
+  k=  2  t =    0.500  t/k = 0.2500   top coupling c(k) = 0.500   c/sqrt(k) = 0.354
+  k=  4  t =    1.625  t/k = 0.4062   top coupling c(k) = 0.625   c/sqrt(k) = 0.312
+  k=  8  t =    4.352  t/k = 0.5439   top coupling c(k) = 1.102   c/sqrt(k) = 0.389
+  k= 16  t =   10.519  t/k = 0.6575   top coupling c(k) = 1.816   c/sqrt(k) = 0.454
+  k= 32  t =   23.903  t/k = 0.7470   top coupling c(k) = 2.864   c/sqrt(k) = 0.506
+  k= 64  t =   52.184  t/k = 0.8154   top coupling c(k) = 4.378   c/sqrt(k) = 0.547
+LIGHT label=x5-bcost exit=0 time=2s waited=0s peak_rss_mb=15 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:28:18 cmd=python3 -B bcost.py 8

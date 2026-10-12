@@ -1,0 +1,21 @@
+v=1;F2=4.2.1;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=2.4.1;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=2.6.1;beta=id N=8 m=2 best=8.528e-30 conv=4/4 | sol1 nullity=15 family_dim=11 d0[spread=2.33 nonscalar=2.54] c1[spread=0 nonscalar=0] d1[spread=2.45 nonscalar=2.76] c2[spread=4.56 nonscalar=2] d2[spread=1.41 nonscalar=2] | sol2 nullity=15 family_dim=11 d0[spread=1.27 nonscalar=1.92] c1[spread=0 nonscalar=0] d1[spread=2.14 nonscalar=2] c2[spread=3.6 nonscalar=2] d2[spread=1.08 nonscalar=2]
+v=1;F2=4.1.2;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=1.4.2;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=1.5.2;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=4.1.3;beta=id N=8 m=2 best=8.001e+00 conv=0/4
+v=1;F2=1.4.3;beta=id N=8 m=2 best=8.001e+00 conv=0/4
+v=1;F2=1.5.3;beta=id N=8 m=2 best=5.634e-30 conv=3/4 | sol1 nullity=13 family_dim=9 d0[spread=1.67 nonscalar=2.13] c1[spread=0 nonscalar=0] d1[spread=2.62 nonscalar=2.51] c2[spread=1.08 nonscalar=2] d2[spread=1.86 nonscalar=2.04] | sol2 nullity=13 family_dim=9 d0[spread=3.95 nonscalar=1.83] c1[spread=0 nonscalar=0] d1[spread=3.8 nonscalar=2.84] c2[spread=1.25 nonscalar=2.02] d2[spread=1.36 nonscalar=2.18]
+v=1;F2=2.1.4;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=1.2.4;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=1.3.4;beta=id N=8 m=2 best=8.000e+00 conv=0/4
+v=1;F2=2.1.5;beta=id N=8 m=2 best=8.014e+00 conv=0/4
+v=1;F2=1.2.5;beta=id N=8 m=2 best=8.006e+00 conv=0/4
+v=1;F2=1.3.5;beta=id N=8 m=2 best=8.487e-28 conv=3/4 | sol1 nullity=13 family_dim=9 d0[spread=1.55 nonscalar=1.66] c1[spread=0 nonscalar=0] d1[spread=2 nonscalar=1.7] c2[spread=1.04 nonscalar=2] d2[spread=1.24 nonscalar=2.2] | sol2 nullity=13 family_dim=9 d0[spread=1.14 nonscalar=2.03] c1[spread=0 nonscalar=0] d1[spread=2.08 nonscalar=1.94] c2[spread=1.41 nonscalar=2] d2[spread=1.51 nonscalar=2.17]
+v=1;F2=2.1.6;beta=id N=8 m=2 best=6.706e-29 conv=3/4 | sol1 nullity=13 family_dim=9 d0[spread=1.63 nonscalar=1.69] c1[spread=0 nonscalar=0] d1[spread=2.15 nonscalar=2.14] c2[spread=23.9 nonscalar=5.76] d2[spread=4.89 nonscalar=2] | sol2 nullity=13 family_dim=9 d0[spread=2.4 nonscalar=1.41] c1[spread=0 nonscalar=0] d1[spread=2.2 nonscalar=2.32] c2[spread=6.52 nonscalar=3.95] d2[spread=1.32 nonscalar=2.29]
+v=1;F2=1.2.6;beta=id N=8 m=2 best=2.337e-27 conv=2/4 | sol1 nullity=12 family_dim=8 d0[spread=1.59 nonscalar=1.61] c1[spread=0 nonscalar=0] d1[spread=1.64 nonscalar=2.14] c2[spread=2.21 nonscalar=2.09] d2[spread=1.41 nonscalar=2.34] | sol2 nullity=13 family_dim=9 d0[spread=1.71 nonscalar=1.78] c1[spread=0 nonscalar=0] d1[spread=5.15 nonscalar=4.2] c2[spread=14.7 nonscalar=3.29] d2[spread=3.83 nonscalar=3.29]
+v=1;F2=1.3.6;beta=id N=8 m=2 best=1.466e-29 conv=3/4 | sol1 nullity=12 family_dim=8 d0[spread=1.64 nonscalar=1.6] c1[spread=0 nonscalar=0] d1[spread=1.63 nonscalar=2.01] c2[spread=1.98 nonscalar=2.88] d2[spread=1.01 nonscalar=2] | sol2 nullity=13 family_dim=9 d0[spread=1.46 nonscalar=2.12] c1[spread=0 nonscalar=0] d1[spread=16.1 nonscalar=2.93] c2[spread=21.9 nonscalar=4.98] d2[spread=11 nonscalar=11.8]
+v=1;F2=2.1.7;beta=id N=8 m=2 best=8.584e-27 conv=2/4 | sol1 nullity=13 family_dim=9 d0[spread=2.99 nonscalar=1.83] c1[spread=0 nonscalar=0] d1[spread=2.5 nonscalar=2.31] c2[spread=1.79 nonscalar=2] d2[spread=1.34 nonscalar=2] | sol2 nullity=13 family_dim=9 d0[spread=1.46 nonscalar=1.41] c1[spread=0 nonscalar=0] d1[spread=1.32 nonscalar=2] c2[spread=2.48 nonscalar=2.34] d2[spread=1.38 nonscalar=2]
+v=1;F2=1.2.7;beta=id N=8 m=2 best=6.283e-30 conv=3/4 | sol1 nullity=13 family_dim=9 d0[spread=1.91 nonscalar=2.4] c1[spread=0 nonscalar=0] d1[spread=3.13 nonscalar=2.2] c2[spread=1.69 nonscalar=2] d2[spread=2.36 nonscalar=1.84] | sol2 nullity=13 family_dim=9 d0[spread=1.37 nonscalar=1.48] c1[spread=0 nonscalar=0] d1[spread=2.54 nonscalar=1.96] c2[spread=1.05 nonscalar=2] d2[spread=2.25 nonscalar=2.45]
+v=1;F2=1.3.7;beta=id N=8 m=2 best=1.322e-28 conv=1/4 | sol1 nullity=13 family_dim=9 d0[spread=1.45 nonscalar=2.2] c1[spread=0 nonscalar=0] d1[spread=5.8 nonscalar=2.13] c2[spread=2.16 nonscalar=2.09] d2[spread=4.86 nonscalar=4.91]

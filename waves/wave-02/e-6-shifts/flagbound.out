@@ -1,0 +1,7 @@
+k=2  largest affine subspace with weight constant modulo 4: dimension 1 (floor(k/2) = 1); cosets found per dimension {1: 1, 2: 0}; so flags needed >= 1
+k=3  largest affine subspace with weight constant modulo 4: dimension 1 (floor(k/2) = 1); cosets found per dimension {1: 6, 2: 0}; so flags needed >= 2
+k=4  largest affine subspace with weight constant modulo 4: dimension 2 (floor(k/2) = 2); cosets found per dimension {1: 28, 2: 3, 3: 0}; so flags needed >= 2
+k=5  largest affine subspace with weight constant modulo 4: dimension 2 (floor(k/2) = 2); cosets found per dimension {1: 120, 2: 30, 3: 0}; so flags needed >= 3
+k=6  largest affine subspace with weight constant modulo 4: dimension 3 (floor(k/2) = 3); cosets found per dimension {1: 496, 2: 300, 3: 15, 4: 0}; so flags needed >= 3
+k=7  largest affine subspace with weight constant modulo 4: dimension 3 (floor(k/2) = 3); cosets found per dimension {1: 2016, 2: 2520, 3: 270, 4: 0}; so flags needed >= 4
+LIGHT label=e6-flagbound exit=0 time=3s waited=0s peak_rss_mb=30 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:38:21 cmd=/usr/bin/python3 -I -B waves/wave-02/e-6-shifts/flagbound.py

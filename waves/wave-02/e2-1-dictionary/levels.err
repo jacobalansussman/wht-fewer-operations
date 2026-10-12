@@ -1,0 +1,3 @@
+LIGHT label=e2-1-lev exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:42:01 cmd=python3 -B levels.py 3 coset
+LIGHT label=e2-1-lev exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:42:02 cmd=python3 -B levels.py 4 coset
+LIGHT label=e2-1-lev exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:42:03 cmd=python3 -B levels.py 3 stab

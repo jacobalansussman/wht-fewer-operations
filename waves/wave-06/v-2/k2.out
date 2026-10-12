@@ -1,0 +1,9 @@
+K=2 generic          calls r=4: starts 4, hits 3, best rms residual 5.90e-16, last hit on 8 fresh boxes 6.4e-16, 6 s
+K=2 generic          calls r=3: starts 94, hits 0, best rms residual 4.34e-01, last hit on 8 fresh boxes n/a, 70 s
+K=2 symmetric        calls r=3: starts 46, hits 0, best rms residual 3.72e-01, last hit on 8 fresh boxes n/a, 73 s
+K=2 symmetric        calls r=2: starts 138, hits 0, best rms residual 3.74e-01, last hit on 8 fresh boxes n/a, 70 s
+K=2 scaledreflection calls r=3: starts 63, hits 0, best rms residual 2.00e-01, last hit on 8 fresh boxes n/a, 70 s
+K=2 scaledreflection calls r=2: starts 60, hits 0, best rms residual 3.49e-01, last hit on 8 fresh boxes n/a, 71 s
+K=2 orthogonal       calls r=3: starts 1, hits 0, best rms residual 8.06e-02, last hit on 8 fresh boxes n/a, 73 s
+K=2 orthogonal       calls r=2: starts 21, hits 0, best rms residual 2.64e-01, last hit on 8 fresh boxes n/a, 70 s
+K=2 rotation         calls r=2: starts 3, hits 3, best rms residual 1.50e-16, last hit on 8 fresh boxes 1.7e-16, 1 s

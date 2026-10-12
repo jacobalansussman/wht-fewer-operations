@@ -1,0 +1,11 @@
+family 166
+  local optimum (54, 28, 26)  t=60s
+  local optimum (52, 26, 26)  t=194s
+best found: cost(frame)+cost(dual) = 52 = 26 + 26 | program = 58 against 56 known, 64 textbook
+    (0, 0, 1, 1, 0, 0, -1, -1, -1, 1, 0, 0, -1, 1, 0, 0)
+    (1, 1, 0, 0, -1, -1, 0, 0, 0, -2, -1, -1, -2, 0, 1, 1)
+    (1, 0, 0, -1, 0, -1, -1, 0, 0, -1, -1, 0, -1, 0, 0, 1)
+    (1, -1, 0, 0, -1, 1, 0, 0, 0, 0, -1, -1, 0, 0, -1, -1)
+    (0, 1, 1, 0, 0, -1, -1, 0, -1, 0, 0, 1, -1, 0, 0, 1)
+    (2, 0, -1, -1, 0, -2, -1, -1, -1, -1, 0, 0, -1, -1, 0, 0)
+LIGHT label=e1-exp8w exit=0 time=321s waited=24s peak_rss_mb=14 peak_footprint_mb=10 lowest_cap_mb=1500 stopped=- start=22:17:06 cmd=python3 -B exp8.py 9 320 wide

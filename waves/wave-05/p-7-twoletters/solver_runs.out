@@ -1,0 +1,27 @@
+# Transcripts of the three float-solver runs on the rented Linux machine (load average 17 to 23 at the time), 11 Oct 2026 00:13-00:20 EDT.
+# These are solver outputs; each "exact replay" line is an exact fraction replay of the gate list built from the solver's rectangles.
+
+## calib.py  (one letter, 8 points, g-1's trees and signs; three objectives; time limit 40 s each)
+15 [(0, 7), (3, 4), (1, 6), (2, 5), (0, 1, 6, 7), (2, 3, 4, 5), (0, 1, 2, 3, 4, 5, 6, 7)]
+15 [(2, 4), (0, 6), (1, 7), (3, 5), (0, 3, 5, 6), (1, 2, 4, 7), (0, 1, 2, 3, 4, 5, 6, 7)]
+tau programme value 13 rectangles 13 status 0 bound 13.0 replay gates 19 True 19.2 s
+nor programme value 20 rectangles 14 status 1 bound 18.0 replay gates 19 True 40.4 s
+full programme value 19 rectangles 13 status 1 bound 12.0 replay gates 19 True 40.9 s
+
+## run8.py 8 1 60 tree   (first version: time limit 15 s, numbers bounded by 8, objective "full"; the chain tree lacked its root, fixed afterwards)
+calibration, one letter, g-1's trees and signs: programme cost 68 rectangles 64 status 1
+   exact replay: gates 56 all outputs exact: True
+run 1 start tree: m = 14, gates 115 = 11 + 104  (48 s)
+   -> 53 = 11 + 42  (64 s)
+BEST so far: 53 gates = 11 + 42, middle wires used by the second letter: 13 of 14
+done: runs 1 best 53 (64 s)
+
+## run16.py 8 half 1 20 3   (first letter fixed = e2-0's, with the two block hubs as extra wires, m = 10; time limit 20 s per solve)
+first letter: half, 10 gates, middle width m = 10, rank 8
+solve 0 (clustered rows): rectangles 139 (solver status 1, lower bound 11.0), EXACT REPLAY True, gates 157 = 10 + 147, wires used 10 of 10  (21 s)
+solve 1 (chain [4, 2, 1]): rectangles 106 (solver status 1, lower bound 10.0), EXACT REPLAY True, gates 124 = 10 + 114, wires used 10 of 10  (43 s)
+solve 2 (clustered rows): rectangles 77 (solver status 1, lower bound 10.0), EXACT REPLAY True, gates 95 = 10 + 85, wires used 10 of 10  (63 s)
+done, best 95 (63 s)
+# Reading: status 1 = stopped at the time limit. On that machine at that load the solver does not finish an 8-point problem
+# with a wide middle in 20 s, so NO number about wide middles came out of the solver. The tool chain (trees, programme, gate
+# list, exact replay) works: the one-letter calibration returns 13 rectangles, proved optimal by the solver, and 19 gates exactly.

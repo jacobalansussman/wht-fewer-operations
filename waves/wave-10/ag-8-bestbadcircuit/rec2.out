@@ -1,0 +1,35 @@
+slp_8.txt: N=8 gates=20 outputs=8 helpers=12
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: YES
+  exact fractions, tau = 5/7, identity frame: YES
+  exact fractions, tau = -2, identity frame: YES
+slp_16.txt: N=16 gates=52 outputs=16 helpers=36
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: YES
+  exact fractions, tau = 5/7, identity frame: YES
+  exact fractions, tau = -2, identity frame: YES
+slp_32.txt: N=32 gates=128 outputs=32 helpers=96
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: YES
+  exact fractions, tau = 5/7, identity frame: YES
+  exact fractions, tau = -2, identity frame: YES
+slp_64.txt: N=64 gates=304 outputs=64 helpers=240
+  control tau=-1, identity frame: YES
+  random tau modulo 2^61-1, identity frame: YES 
+  random tau modulo 2^61-1, identity frame: YES 
+  exact fractions, tau = 3, identity frame: YES
+  exact fractions, tau = 5/7, identity frame: YES
+  exact fractions, tau = -2, identity frame: YES
+h8_19gates.txt: N=8 gates=19 outputs=8 helpers=11
+  control tau=-1, identity frame: YES
+  frames tried: 10752   YES: 288   undecided/degenerate: 0
+   e.g. inputs [0, 3, 6, 5, 4, 7, 2, 1] outputs [0, 1, 3, 2, 7, 6, 4, 5] | second random tau: YES | exact tau=3: YES  tau=5/7: YES
+   e.g. inputs [0, 3, 6, 5, 4, 7, 2, 1] outputs [7, 6, 4, 5, 0, 1, 3, 2] | second random tau: YES | exact tau=3: YES  tau=5/7: YES
+   e.g. inputs [1, 2, 7, 4, 5, 6, 3, 0] outputs [1, 0, 2, 3, 6, 7, 5, 4] | second random tau: YES | exact tau=3: YES  tau=5/7: YES
+LIGHT label=ag8-rec2 exit=0 time=74s waited=4s peak_rss_mb=27 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=08:06:25 cmd=./rec2.sh

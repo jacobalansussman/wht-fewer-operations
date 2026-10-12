@@ -1,0 +1,4 @@
+mode G  gates 6  tset wide: circuits found 0  search nodes 19345
+distinct helper sets: 0
+LIGHT label=jf-g6 exit=0 time=3s waited=0s peak_rss_mb=20 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:47:52 cmd=python3 -B min4.py G 6 wide
+exit 0

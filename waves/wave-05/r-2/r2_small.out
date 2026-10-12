@@ -1,0 +1,17 @@
+(1) tau = -1, exact over the rationals, points with coordinates 0, 1, -1: 40 points, 32 candidates
+    sets of 2 helpers that work: 0;  sets of 3 helpers that work: 228;  of these with a helper of full support (a hub): 228
+(2) weight-only circuits, my replay (gates, every output proportional to its row):
+    k=2 tau=3: (5, True)
+    k=2 tau=2: (5, True)
+    k=2 tau=1/2: (5, True)
+    k=2 tau=-2: (5, True)
+    k=2 tau=5/7: (5, True)
+    k=2 tau=-1/2: (5, True)
+    k=2 tau=10: (5, True)
+    k=2 tau=-1: (5, True)
+    k=2 tau=-1, 4 gates: (4, True)
+    k=3 tau=-1, 7 gates: (7, True)
+    k=3: zero entries and vanishing 2 x 2 minors of the block at tau = -1: 0, 8; at tau = 3: 0, 0; at tau = -2: 2, 0
+    k=4: zero entries and vanishing 2 x 2 minors of the block at tau = -1: 4, 16; at tau = 3: 0, 0; at tau = -2: 0, 14
+    k=5: zero entries and vanishing 2 x 2 minors of the block at tau = -1: 0, 44; at tau = 3: 0, 0; at tau = -2: 0, 6
+LIGHT label=r2-small exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=01:44:10 cmd=python3 -B r2_small.py

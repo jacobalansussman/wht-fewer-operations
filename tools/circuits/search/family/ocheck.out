@@ -1,0 +1,6 @@
+wrote oslp_4.txt 8 operations
+oslp_4.txt N 4 operations 8 {'+': 3, '-': 4, '*': 1} : outputs are exactly the 4 rows of H / 2 | textbook count for H: 8
+wrote oslp_16.txt 60 operations
+oslp_16.txt N 16 operations 60 {'+': 20, '-': 32, '*': 8} : outputs are exactly the 16 rows of H / 4 | textbook count for H: 64
+wrote oslp_64.txt 352 operations
+oslp_64.txt N 64 operations 352 {'+': 112, '-': 192, '*': 48} : outputs are exactly the 64 rows of H / 8 | textbook count for H: 384

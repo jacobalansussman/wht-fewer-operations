@@ -1,0 +1,9 @@
+# exh8 ALLOW=7: 6 possible centres on the line g5, g6; this run: centre 2 = [1 -1 1 1 -1 -1 -1 1]
+# first free helper: 527 candidates
+# first helper 0 of 527, pairs 567, 18-gate circuits 0, 0 s
+# first helper 100 of 527, pairs 53181, 18-gate circuits 0, 34 s
+# first helper 200 of 527, pairs 95904, 18-gate circuits 0, 62 s
+# first helper 300 of 527, pairs 128686, 18-gate circuits 0, 83 s
+# first helper 400 of 527, pairs 151279, 18-gate circuits 0, 97 s
+# first helper 500 of 527, pairs 163750, 18-gate circuits 0, 105 s
+# END centre 2: first helpers done 527 of 527 (COMPLETE), pairs of helpers tried 165285, 18-gate circuits 0, 17-gate 0, 106 s

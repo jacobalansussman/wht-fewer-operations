@@ -1,0 +1,55 @@
+== 1. exact replay, count (G) ==
+K3^(x1) on 3 numbers: plain butterflies : 4 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 4 ; volume bound (log2|det| of the row-scaled kernel) = 2
+K3^(x1) on 3 numbers: 7-gate bricks : 4 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 4 ; volume bound (log2|det| of the row-scaled kernel) = 2
+K3^(x2) on 9 numbers: plain butterflies : 24 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 24 ; volume bound (log2|det| of the row-scaled kernel) = 12
+K3^(x2) on 9 numbers: 7-gate bricks : 22 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 24 ; volume bound (log2|det| of the row-scaled kernel) = 12
+    n9 = (1)*n0 + (-1)*n2   = ['1', '0', '-1', '0', '0', '0', '0', '0', '0']
+    n10 = (1)*n9 + (-1)*n6   = ['1', '0', '-1', '0', '0', '0', '-1', '0', '0']
+    n11 = (1)*n10 + (-1)*n8   = ['1', '0', '-1', '0', '0', '0', '-1', '0', '-1']
+    n12 = (2)*n0 + (-1)*n11   = ['1', '0', '1', '0', '0', '0', '1', '0', '1']
+    n13 = (1)*n11 + (2)*n2   = ['1', '0', '1', '0', '0', '0', '-1', '0', '-1']
+    n14 = (1)*n11 + (2)*n6   = ['1', '0', '-1', '0', '0', '0', '1', '0', '-1']
+    n15 = (1)*n11 + (2)*n8   = ['1', '0', '-1', '0', '0', '0', '-1', '0', '1']
+    n16 = (1)*n1 + (1)*n7   = ['0', '1', '0', '0', '0', '0', '0', '1', '0']
+    n17 = (1)*n1 + (-1)*n7   = ['0', '1', '0', '0', '0', '0', '0', '-1', '0']
+    n18 = (1)*n3 + (1)*n5   = ['0', '0', '0', '1', '0', '1', '0', '0', '0']
+    n19 = (1)*n3 + (-1)*n5   = ['0', '0', '0', '1', '0', '-1', '0', '0', '0']
+    n20 = (1)*n12 + (-1)*n16   = ['1', '-1', '1', '0', '0', '0', '1', '-1', '1']
+    n21 = (1)*n20 + (-1)*n18   = ['1', '-1', '1', '-1', '0', '-1', '1', '-1', '1']
+    n22 = (1)*n21 + (-1)*n4   = ['1', '-1', '1', '-1', '-1', '-1', '1', '-1', '1']
+    n23 = (2)*n12 + (-1)*n22   = ['1', '1', '1', '1', '1', '1', '1', '1', '1']
+    n24 = (1)*n22 + (2)*n16   = ['1', '1', '1', '-1', '-1', '-1', '1', '1', '1']
+    n25 = (1)*n22 + (2)*n18   = ['1', '-1', '1', '1', '-1', '1', '1', '-1', '1']
+    n26 = (1)*n22 + (2)*n4   = ['1', '-1', '1', '-1', '1', '-1', '1', '-1', '1']
+    n27 = (1)*n14 + (1)*n19   = ['1', '0', '-1', '1', '0', '-1', '1', '0', '-1']
+    n28 = (1)*n14 + (-1)*n19   = ['1', '0', '-1', '-1', '0', '1', '1', '0', '-1']
+    n29 = (1)*n13 + (1)*n17   = ['1', '1', '1', '0', '0', '0', '-1', '-1', '-1']
+    n30 = (1)*n13 + (-1)*n17   = ['1', '-1', '1', '0', '0', '0', '-1', '1', '-1']
+    outputs (row index -> node): {'00': 23, '01': 27, '02': 25, '10': 29, '11': 15, '12': 30, '20': 24, '21': 28, '22': 26}
+K3^(x3) on 27 numbers: plain butterflies : 108 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 108 ; volume bound (log2|det| of the row-scaled kernel) = 54
+K3^(x3) on 27 numbers: 7-gate bricks : 98 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 108 ; volume bound (log2|det| of the row-scaled kernel) = 54
+K3^(x4) on 81 numbers: plain butterflies : 432 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 432 ; volume bound (log2|det| of the row-scaled kernel) = 216
+K3^(x4) on 81 numbers: 7-gate bricks : 388 gates, every output proportional to its row: True ; textbook 4r3^(r-1) = 432 ; volume bound (log2|det| of the row-scaled kernel) = 216
+
+== 2. count (O): plain butterflies have coefficients +-1, so the nodes are the rows of the row-scaled kernel exactly;
+      a row with j factors (2,0,-2) then needs one multiplication by 2^j ==
+K3^(x1): additions 4 (all coefficients +-1: True), multiplications by a power of 2: 1 (= 3^r - 2^r = 1), count (O) total 5 ; factors are 2^j exactly: True
+K3^(x2): additions 24 (all coefficients +-1: True), multiplications by a power of 2: 5 (= 3^r - 2^r = 5), count (O) total 29 ; factors are 2^j exactly: True
+K3^(x3): additions 108 (all coefficients +-1: True), multiplications by a power of 2: 19 (= 3^r - 2^r = 19), count (O) total 127 ; factors are 2^j exactly: True
+K3^(x4): additions 432 (all coefficients +-1: True), multiplications by a power of 2: 65 (= 3^r - 2^r = 65), count (O) total 497 ; factors are 2^j exactly: True
+
+== 3. the two reductions as counts ==
+r=1: K3 power from transforms: textbook prices 4 (= 4r3^(r-1) = 4: True), brick prices 4, ratio 1.0000
+r=2: K3 power from transforms: textbook prices 24 (= 4r3^(r-1) = 24: True), brick prices 22, ratio 0.9167
+r=3: K3 power from transforms: textbook prices 108 (= 4r3^(r-1) = 108: True), brick prices 98, ratio 0.9074
+r=4: K3 power from transforms: textbook prices 432 (= 4r3^(r-1) = 432: True), brick prices 388, ratio 0.8981
+r=5: K3 power from transforms: textbook prices 1620 (= 4r3^(r-1) = 1620: True), brick prices 1448, ratio 0.8938
+r=6: K3 power from transforms: textbook prices 5832 (= 4r3^(r-1) = 5832: True), brick prices 5194, ratio 0.8906
+r=7: K3 power from transforms: textbook prices 20412 (= 4r3^(r-1) = 20412: True), brick prices 18134, ratio 0.8884
+r=8: K3 power from transforms: textbook prices 69984 (= 4r3^(r-1) = 69984: True), brick prices 62056, ratio 0.8867
+k=2: transform from (orbit transforms, K3 powers from transforms): textbook prices 8 (= k 2^k: True), brick prices 8 vs plain brick product 7
+k=4: transform from (orbit transforms, K3 powers from transforms): textbook prices 64 (= k 2^k: True), brick prices 60 vs plain brick product 56
+k=6: transform from (orbit transforms, K3 powers from transforms): textbook prices 384 (= k 2^k: True), brick prices 352 vs plain brick product 336
+k=8: transform from (orbit transforms, K3 powers from transforms): textbook prices 2048 (= k 2^k: True), brick prices 1856 vs plain brick product 1792
+k=16: transform from (orbit transforms, K3 powers from transforms): textbook prices 1048576 (= k 2^k: True), brick prices 933888 vs plain brick product 917504
+k=32: transform from (orbit transforms, K3 powers from transforms): textbook prices 137438953472 (= k 2^k: True), brick prices 121332826112 vs plain brick product 120259084288

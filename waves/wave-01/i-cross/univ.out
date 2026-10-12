@@ -1,0 +1,9 @@
+H diag(3,1) H = [[Fraction(4, 1), Fraction(2, 1)], [Fraction(2, 1), Fraction(4, 1)]]  (kernel with tau = 4)
+H diag(2,1) H = [[Fraction(3, 1), Fraction(1, 1)], [Fraction(1, 1), Fraction(3, 1)]]  (kernel with tau = 9)
+Z as a word D H D H D H D H D: [[Fraction(1, 1), Fraction(0, 1)], [Fraction(1, 1), Fraction(1, 1)]]  equals Z: True
+H = Z diag(1,-2) Z^T: True
+k=2: Z^(x)k = D H D H D H D H D with product diagonals: True ; H = Z D Z^T: True
+k=3: Z^(x)k = D H D H D H D H D with product diagonals: True ; H = Z D Z^T: True
+k=4: Z^(x)k = D H D H D H D H D with product diagonals: True ; H = Z D Z^T: True
+discriminant for H from two tau=4 kernels: 369
+LIGHT label=ic-univ exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:01:15 cmd=python3 -B univ.py

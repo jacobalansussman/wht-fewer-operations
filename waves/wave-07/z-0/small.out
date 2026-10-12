@@ -1,0 +1,44 @@
+(1) numbers a + b*sqrt2.  u = (1, 0), v = (1, e), w = (0, 1), e = (sqrt2 - 1)^k, 1/e = (sqrt2 + 1)^k
+   k=1  e = -1 + 1*sqrt2 = 0.414214  largest entry of u, v, w in size = 1   coefficients +-(1 + 1*sqrt2) = 2.4   budget log2(2*2.4) = 2.27   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=2  e = 3 + -2*sqrt2 = 0.171573  largest entry of u, v, w in size = 1   coefficients +-(3 + 2*sqrt2) = 5.8   budget log2(2*5.8) = 3.54   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=3  e = -7 + 5*sqrt2 = 0.071068  largest entry of u, v, w in size = 1   coefficients +-(7 + 5*sqrt2) = 14.1   budget log2(2*14.1) = 4.81   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=4  e = 17 + -12*sqrt2 = 0.029437  largest entry of u, v, w in size = 1   coefficients +-(17 + 12*sqrt2) = 34.0   budget log2(2*34.0) = 6.09   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=5  e = -41 + 29*sqrt2 = 0.012193  largest entry of u, v, w in size = 1   coefficients +-(41 + 29*sqrt2) = 82.0   budget log2(2*82.0) = 7.36   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=6  e = 99 + -70*sqrt2 = 0.005051  largest entry of u, v, w in size = 1   coefficients +-(99 + 70*sqrt2) = 198.0   budget log2(2*198.0) = 8.63   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=7  e = -239 + 169*sqrt2 = 0.002092  largest entry of u, v, w in size = 1   coefficients +-(239 + 169*sqrt2) = 478.0   budget log2(2*478.0) = 9.90   (bound for whole numbers of height 1: log2 3 = 1.58)
+   k=8  e = 577 + -408*sqrt2 = 0.000867  largest entry of u, v, w in size = 1   coefficients +-(577 + 408*sqrt2) = 1154.0   budget log2(2*1154.0) = 11.17   (bound for whole numbers of height 1: log2 3 = 1.58)
+(2) entropy against 2 log2|det| (row lengths and determinant exact; the two logarithms in floating point)
+   H at 2 points          entropy 2.000   2 log2|det| 2.000   entries all 0,+-1: True
+   H at 4 points          entropy 8.000   2 log2|det| 8.000   entries all 0,+-1: True
+   H at 8 points          entropy 24.000   2 log2|det| 24.000   entries all 0,+-1: True
+   H at 16 points         entropy 64.000   2 log2|det| 64.000   entries all 0,+-1: True
+   brick J - 2I at 4      entropy 8.000   2 log2|det| 8.000   entries all 0,+-1: True
+   3-4-5 rotation         entropy 1.885   2 log2|det| 9.288   entries all 0,+-1: False
+   (1,2)                  entropy 1.444   2 log2|det| 4.644   entries all 0,+-1: False
+   matrices 67 ; with equality 5 ; violations (entropy above 2 log2|det|, or equality without 0,+-1 entries, or the converse) 0
+   in-place moves 378 ; determinant not multiplied by exactly a/g: 0
+(3) lemma 3 as numbers (G): N - 1 + ((N/2) log2 N - (N-1) log2 M) / log2(4 M^2)   [M = 1: divide by log2 3]
+      k        N   trivial 2N-2   M=1        M=2        M=4        M=16       M=sqrt(N)   (3/4) N log2 N (best family tonight)
+      2        4            6      5.524       3.25      2.667        2.2       3.25              6
+      3        8           14      14.57       8.25      6.667        5.4        7.3             18
+      4       16           30      35.19      19.25      15.33       12.2      15.33             48
+      5       32           62      81.47      43.25         34       26.6      31.36            120
+      6       64          126      184.1      95.25         74         57      63.38            288
+      8      256          510      901.1      447.2      340.7      255.4      255.4           1536
+     10 1.02e+03         2046       4253       2047       1535       1126       1023           7680
+     12  4.1e+03         8190   1.96e+04       9215       6826       4915       4095      3.686e+04
+     16 6.55e+04    1.311e+05  3.963e+05  1.802e+05  1.311e+05  9.175e+04  6.554e+04      7.864e+05
+     20 1.05e+06    2.097e+06  7.664e+06  3.408e+06  2.447e+06  1.678e+06  1.049e+06      1.573e+07
+     30 1.07e+09    2.147e+09  1.124e+10  4.832e+09    3.4e+09  2.255e+09  1.074e+09      2.416e+10
+     40  1.1e+12    2.199e+12  1.497e+13  6.322e+12  4.398e+12  2.859e+12    1.1e+12      3.299e+13
+     64 1.84e+19    3.689e+19  3.909e+20  1.614e+20  1.107e+20   7.01e+19  1.845e+19      8.854e+20
+    100 1.27e+30    2.535e+30  4.126e+31   1.68e+31  1.141e+31  7.099e+30  1.268e+30      9.507e+31
+   lemma 3 exceeds the trivial 2N - 2 only when log2 N > 4 + 6 log2 M (M >= 2), or log2 N >= 4 for M = 1:
+      M =   1 : first at N = 2^3
+      M =   2 : first at N = 2^10
+      M =   3 : first at N = 2^14
+      M =   4 : first at N = 2^16
+      M =   8 : first at N = 2^22
+      M =  16 : first at N = 2^28
+      M = 256 : first at N = 2^52
+LIGHT label=z0-small exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=05:00:44 cmd=python3 -B small.py

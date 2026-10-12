@@ -1,0 +1,25 @@
+== rows=rows_tri_n2.txt p=2 m=3
+p=2 n=12 rows=8 non-input distinct targets=8  intermediates allowed m=3  => gate budget 11
+visited states by remaining budget: j=3:1 j=2:66 j=1:2997
+RESULT p=2: NO circuit with 11 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:02:44 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 3 rows_tri_n2.txt
+== rows=rows_tri_n2.txt p=2 m=4
+p=2 n=12 rows=8 non-input distinct targets=8  intermediates allowed m=4  => gate budget 12
+visited states by remaining budget: j=4:1 j=3:66 j=2:2997 j=1:268773
+RESULT p=2: NO circuit with 12 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:02:45 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 4 rows_tri_n2.txt
+== rows=rows_tri_n2.txt p=3 m=3
+p=3 n=12 rows=8 non-input distinct targets=8  intermediates allowed m=3  => gate budget 11
+visited states by remaining budget: j=3:1 j=2:132 j=1:11742
+RESULT p=3: NO circuit with 11 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:02:46 cmd=waves/wave-01/d-0-zeta/mincirc 3 12 3 rows_tri_n2.txt
+== rows=rows_tri_n2.txt p=3 m=4
+p=3 n=12 rows=8 non-input distinct targets=8  intermediates allowed m=4  => gate budget 12
+visited states by remaining budget: j=4:1 j=3:132 j=2:11742 j=1:2092500
+RESULT p=3: NO circuit with 12 gates (exhaustive over GF(3))
+LIGHT label=x1-e2 exit=0 time=11s waited=0s peak_rss_mb=42 peak_footprint_mb=42 lowest_cap_mb=1500 stopped=- start=04:02:47 cmd=waves/wave-01/d-0-zeta/mincirc 3 12 4 rows_tri_n2.txt
+== rows=rows_tri_n2.txt p=2 m=5
+p=2 n=12 rows=8 non-input distinct targets=8  intermediates allowed m=5  => gate budget 13
+visited states by remaining budget: j=5:1 j=4:66 j=3:2997 j=2:268773 j=1:27520620
+RESULT p=2: NO circuit with 13 gates (exhaustive over GF(2))
+LIGHT label=x1-e2 exit=0 time=82s waited=0s peak_rss_mb=30 peak_footprint_mb=30 lowest_cap_mb=1500 stopped=- start=04:02:58 cmd=waves/wave-01/d-0-zeta/mincirc 2 12 5 rows_tri_n2.txt

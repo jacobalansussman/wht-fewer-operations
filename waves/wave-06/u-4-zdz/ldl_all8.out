@@ -1,0 +1,13 @@
+N=8  subset sums: off-diagonal non-zeros 19, Yates 12 gates
+orders with a zero pivot (no factorisation): 35712
+histogram of min(off-diagonal non-zeros of L, of L^-1): [(19, 4224), (22, 384)]
+best: 19  order (0, 1, 2, 3, 4, 5, 6, 7)  off(L)=19 off(L^-1)=19  D=['1', '-2', '-2', '4', '-2', '4', '4', '-8']
+        1     0     0     0     0     0     0     0
+        1     1     0     0     0     0     0     0
+        1     0     1     0     0     0     0     0
+        1     1     1     1     0     0     0     0
+        1     0     0     0     1     0     0     0
+        1     1     0     0     1     1     0     0
+        1     0     1     0     1     0     1     0
+        1     1     1     1     1     1     1     1
+LIGHT label=u4-ldl exit=0 time=12s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=01:53:06 cmd=python3 -B ldl.py all 3

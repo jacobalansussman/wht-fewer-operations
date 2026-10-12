@@ -1,0 +1,25 @@
+## taskset -c 1 b/core
+## before: 2026-10-11 17:14:07 UTC; load 6.21 6.34 5.61 6/529 954213
+##    pid 839050 99.9% cpu7 nice5 python3
+##    pid 839938 99.9% cpu0 nice5 python3
+##    pid 839000 99.8% cpu5 nice5 python3
+##    pid 949528 99.6% cpu2 nice10 python3
+##    pid 953860 99.3% cpu1 nice15 harness
+unit: one vpaddd in a chain = 0.3801 ns best, 0.3814 ns median (so 2.631 GHz if that is one cycle)
+chain vpaddd                                 12 in a chain (the unit: 1 cycle each) best 0.3801 ns = 1.00 units; median 0.3814 ns = 1.00 units
+chain vaddps                                 12 in a chain                          best 1.5160 ns = 3.99 units; median 1.5279 ns = 4.01 units
+chain vaddpd                                 12 in a chain                          best 1.5111 ns = 3.98 units; median 1.5204 ns = 3.99 units
+chain vmulps                                 12 in a chain                          best 1.5137 ns = 3.98 units; median 1.5214 ns = 3.99 units
+chain vfmadd ps, through the number added    12 in a chain                          best 1.5124 ns = 3.98 units; median 1.5166 ns = 3.98 units
+chain vfmadd ps, through a factor            12 in a chain                          best 1.5128 ns = 3.98 units; median 1.5190 ns = 3.98 units
+chain vfmadd pd, through the number added    12 in a chain                          best 1.5142 ns = 3.98 units; median 1.5219 ns = 3.99 units
+12 separate chains vaddps                    12 independent per turn                best 0.2322 ns = 0.61 units; median 0.2400 ns = 0.63 units
+12 separate chains vfmadd ps                 12 independent per turn                best 0.2194 ns = 0.58 units; median 0.2387 ns = 0.63 units
+12 separate chains vpaddd                    12 independent per turn                best 0.1311 ns = 0.34 units; median 0.1954 ns = 0.51 units
+## exit 0
+## after: 2026-10-11 17:14:26 UTC; load 6.22 6.33 5.62 8/533 954489
+##    pid 839050 99.9% cpu6 nice5 python3
+##    pid 839938 99.9% cpu3 nice5 python3
+##    pid 839000 99.8% cpu4 nice5 python3
+##    pid 949528 99.6% cpu7 nice10 python3
+##    pid 953860 99.2% cpu0 nice15 harness

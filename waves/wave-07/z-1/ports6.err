@@ -1,0 +1,1 @@
+LIGHT label=z-1-ports6 exit=0 time=36s waited=0s peak_rss_mb=25 peak_footprint_mb=22 lowest_cap_mb=1500 stopped=- start=05:01:25 cmd=python3 -B -I ports6.py

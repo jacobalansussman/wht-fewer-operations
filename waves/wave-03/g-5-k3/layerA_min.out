@@ -1,0 +1,7 @@
+## layer A of K3 (x) H2 alone (4-point transform and a butterfly on disjoint data, 6 wires): 9 known; gates = 6 + m
+p=3 m=2: RESULT p=3: NO circuit with 8 gates (exhaustive over GF(3))
+p=3 m=3: RESULT p=3: YES, circuit with 9 gates. points in order (after the 6 inputs):
+p=5 m=2: RESULT p=5: NO circuit with 8 gates (exhaustive over GF(5))
+p=5 m=3: RESULT p=5: YES, circuit with 9 gates. points in order (after the 6 inputs):
+p=7 m=2: RESULT p=7: NO circuit with 8 gates (exhaustive over GF(7))
+p=7 m=3: RESULT p=7: YES, circuit with 9 gates. points in order (after the 6 inputs):

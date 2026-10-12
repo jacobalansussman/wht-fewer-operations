@@ -1,0 +1,27 @@
+the 19: N=8 gates=19 held wires=27 full wires=13 (hubs 5)
+  B1 quotients of pairs of full wires: 156 distinct, 12 already held, 144 new; new by support size [(2, 11), (3, 16), (4, 80), (5, 16), (6, 15), (7, 6)]
+  B2 quotients made by 2 or more pairs: 0 (held 0, not held 0); largest number of pairs for one quotient: held 0, not held 0
+  B3 new quotients by number of outputs one gate away (partner any held non-output wire, any coefficients): [(0, 68), (1, 74), (2, 2)]
+     best: (2, (0, 0, 1, -1, -1, 1, 0, 0), [('y5', 'y3')])
+  B4 triples of hubs: 10 ; product is an output: 0 ; product is a held hub: 0
+     triples of full wires: 286 ; product held: 72 ; product an output: 64 (of them all three outputs: 56)
+staircase 8: N=8 gates=20 held wires=28 full wires=10 (hubs 2)
+  B1 quotients of pairs of full wires: 90 distinct, 8 already held, 82 new; new by support size [(2, 4), (4, 70), (6, 8)]
+  B2 quotients made by 2 or more pairs: 0 (held 0, not held 0); largest number of pairs for one quotient: held 0, not held 0
+  B3 new quotients by number of outputs one gate away (partner any held non-output wire, any coefficients): [(0, 50), (1, 28), (2, 4)]
+     best: (2, (0, 0, 0, 0, 1, 1, 1, 1), [('y13', 'y12')])
+  B4 triples of hubs: 0 ; product is an output: 0 ; product is a held hub: 0
+     triples of full wires: 120 ; product held: 72 ; product an output: 64 (of them all three outputs: 56)
+staircase 16: N=16 gates=52 held wires=68 full wires=20 (hubs 4)
+  B1 quotients of pairs of full wires: 380 distinct, 16 already held, 364 new; new by support size [(4, 8), (8, 340), (12, 16)]
+  B2 quotients made by 2 or more pairs: 0 (held 0, not held 0); largest number of pairs for one quotient: held 0, not held 0
+  B3 new quotients by number of outputs one gate away (partner any held non-output wire, any coefficients): [(0, 236), (1, 120), (2, 8)]
+     best: (2, (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1), [('y35', 'y34')])
+  B4 triples of hubs: 4 ; product is an output: 0 ; product is a held hub: 4
+     triples of full wires: 1140 ; product held: 756 ; product an output: 656 (of them all three outputs: 560)
+staircase 32: N=32 gates=128 held wires=160 full wires=40 (hubs 8)
+  B1 quotients of pairs of full wires: 1560 distinct, 32 already held, 1528 new; new by support size [(8, 16), (16, 1480), (24, 32)]
+  B2 quotients made by 2 or more pairs: 0 (held 0, not held 0); largest number of pairs for one quotient: held 0, not held 0
+  B3 new quotients by number of outputs one gate away (partner any held non-output wire, any coefficients): [(0, 1016), (1, 496), (2, 16)]
+     best: (2, (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1), [('y91', 'y90')])
+LIGHT label=u7-qb exit=0 time=97s waited=0s peak_rss_mb=12 peak_footprint_mb=8 lowest_cap_mb=1500 stopped=- start=01:51:48 cmd=python3 -B u-7-quotient/qb.py waves/wave-06

@@ -1,0 +1,3 @@
+step 1: identity checked on 2352 (word, subset) cases with scratch arrays; wrong in 0
+step 2: 643 words built with a tight set (live part +1 with all signs off, -1 with W signs on; generic constants, 0 to 2 scratch arrays); pattern w_i.u_j = [i=j] + 2c_ij (i<j), 0 (i>j) violated in 0 entries
+LIGHT label=b1-lemma exit=0 time=12s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=23:45:23 cmd=python3 -B lemma_own.py

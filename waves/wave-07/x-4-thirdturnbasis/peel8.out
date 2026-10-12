@@ -1,0 +1,5 @@
+control, 16 points, the labelling and first steps of the known depth-2 solution: passes = 1
+control, 16 points, same labelling, m1 = 0001, m2 = 0100: passes = 1
+8 points: all 168 labellings x all ordered pairs m1 != m2 with beta(m1,m2) = 0: 3024 cases, 1680 pass the necessary condition ; first: ((1, 2, 4), 1, 6)
+32 points, dot-product labelling only: 450 cases, 0 pass
+LIGHT label=x4-peel8 exit=0 time=1s waited=6s peak_rss_mb=6 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=03:52:44 cmd=python3 -B peel8.py

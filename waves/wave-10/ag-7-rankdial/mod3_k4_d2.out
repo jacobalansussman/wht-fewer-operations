@@ -1,0 +1,5 @@
+RESULT p=3: NO circuit with 17 gates (exhaustive over GF(3))
+RESULT p=3: NO circuit with 18 gates (exhaustive over GF(3))
+RESULT p=3: NO circuit with 19 gates (exhaustive over GF(3))
+RESULT p=3: YES, circuit with 15 gates. points in order (after the 6 inputs):
+LIGHT label=ag7-mod3 exit=0 time=28s waited=22s peak_rss_mb=10 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=08:01:13 cmd=sh -c for m in 2 3 4; do ./mincirc2 3 12 $m rows_k4_d2.txt | grep -E "RESULT"; done; ./mincirc2 3 6 0 rows_k4_d1.txt | grep RESULT

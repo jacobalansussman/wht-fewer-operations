@@ -1,0 +1,14 @@
+== knows_4_2.edges
+   P_alternating,_P-perp_odd                    4 ports, no two know each other: largest set 4, ceiling kappa <= 1
+   P_odd,_P-perp_alternating                    4 ports, no two know each other: largest set 4, ceiling kappa <= 1
+   P_odd,_P-perp_odd                           12 ports,      6 edges: largest set no two knowing each other = 6 (solver status 0, upper bound 6.0) -> ceiling kappa <= 2.000   [0 s]
+   all types together                          20 ports,     10 edges: largest set no two knowing each other = 10 (solver status 0, upper bound 10.0) -> ceiling kappa <= 2.000   [0 s]
+== knows_5_2.edges
+   P_alternating,_P-perp_odd                   20 ports,     10 edges: largest set no two knowing each other = 10 (solver status 0, upper bound 10.0) -> ceiling kappa <= 2.000   [0 s]
+   P_odd,_P-perp_odd                           60 ports,     90 edges: largest set no two knowing each other = 24 (solver status 0, upper bound 24.0) -> ceiling kappa <= 2.500   [0 s]
+   all types together                          80 ports,    160 edges: largest set no two knowing each other = 34 (solver status 0, upper bound 34.0) -> ceiling kappa <= 2.353   [0 s]
+== knows_6_2.edges
+   P_alternating,_P-perp_odd                   80 ports,    160 edges: largest set no two knowing each other = 40 (solver status 0, upper bound 40.0) -> ceiling kappa <= 2.000   [0 s]
+   P_odd,_P-perp_alternating                   16 ports, no two know each other: largest set 16, ceiling kappa <= 1
+   P_odd,_P-perp_odd                          240 ports,   1920 edges: largest set no two knowing each other = 64 (solver status 1, upper bound 69.0) -> ceiling kappa <= 3.750   [200 s]
+   all types together                         336 ports,   3360 edges: largest set no two knowing each other = 91 (solver status 0, upper bound 91.0) -> ceiling kappa <= 3.692   [71 s]

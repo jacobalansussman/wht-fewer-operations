@@ -1,0 +1,4 @@
+xcheck/oslp_8.txt N 8 operations 20 {'+': 10, '-': 9, '*': 1} : outputs are exactly the 8 rows of H / 2 | textbook count for H: 24
+xcheck/oslp_16.txt N 16 operations 56 {'+': 28, '-': 26, '*': 2} : outputs are exactly the 16 rows of H / 2 | textbook count for H: 64
+xcheck/oslp_32.txt N 32 operations 144 {'+': 72, '-': 68, '*': 4} : outputs are exactly the 32 rows of H / 2 | textbook count for H: 160
+xcheck/oslp_64.txt N 64 operations 320 {'+': 160, '-': 144, '*': 16} : outputs are exactly the 64 rows of H / 4 | textbook count for H: 384

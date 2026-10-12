@@ -1,0 +1,4 @@
+N 4 gates of the form -u-v (would need a negation): 0 count (O): additions/subtractions 7 multiplications 1 total 8 (outputs = H x / 2) | exact H x: total 12 | textbook 8 | 7/8 N log N = 7.0 | 23/24 N log N + 13/12 N = 12.0
+N 8 gates of the form -u-v (would need a negation): 0 count (O): additions/subtractions 20 multiplications 6 total 26 (outputs = H x / 2) | exact H x: total 34 | textbook 24 | 7/8 N log N = 21.0 | 23/24 N log N + 13/12 N = 31.7
+N 16 gates of the form -u-v (would need a negation): 0 count (O): additions/subtractions 52 multiplications 8 total 60 (outputs = H x / 4) | exact H x: total 76 | textbook 64 | 7/8 N log N = 56.0 | 23/24 N log N + 13/12 N = 78.7
+N 64 gates of the form -u-v (would need a negation): 0 count (O): additions/subtractions 304 multiplications 48 total 352 (outputs = H x / 8) | exact H x: total 416 | textbook 384 | 7/8 N log N = 336.0 | 23/24 N log N + 13/12 N = 437.3

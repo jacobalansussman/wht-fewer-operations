@@ -1,0 +1,8 @@
+A = [2, 3, 5, 7, 8, 9, 20, 22]
+V = [0, 8, 16, 24, 32, 41, 50, 59]
+every address a+v exactly once: True
+periods of A: []  periods of V: []
+dimension of the affine span: A 5  V 5
+distinct rows up to sign of H restricted to the columns in A: 32 (a subgroup of order 8 would give 8)
+distinct rows up to sign of H restricted to the columns in V: 32 (a subgroup of order 8 would give 8)
+distinct (row on A, row on V) pairs: 64

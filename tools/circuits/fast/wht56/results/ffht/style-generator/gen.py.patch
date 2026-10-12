@@ -1,0 +1,111 @@
+--- orig/gen.py	2026-10-11 14:09:56.703960039 +0000
++++ gen.py	2026-10-11 16:37:42.748910500 +0000
+@@ -3,6 +3,8 @@
+ import sys
+ import subprocess
+ 
++import k8kernel  # the block of 8 registers and 3 levels: see k8kernel.py
++
+ max_log_n = 30
+ 
+ 
+@@ -339,7 +341,16 @@
+         for ii in range(1 << num_nontrivial_levels):
+             res += special_steps[it](input_registers[ii], output_registers,
+                                      ident + '      ')
+-    for it in range(num_nontrivial_levels):
++    extra_operands = []
++    num_main_levels = num_nontrivial_levels
++    if num_nontrivial_levels == 3 and k8kernel.active(move_instruction, to_it):
++        # the three levels between 8 registers as one 8-point kernel
++        (kernel_code, input_registers, extra_operands) = k8kernel.block(
++            move_instruction, input_registers, output_registers,
++            ident + '      ')
++        res += kernel_code
++        num_main_levels = 0
++    for it in range(num_main_levels):
+         for ii in range(0, 1 << num_nontrivial_levels, 1 << (it + 1)):
+             for jj in range(1 << it):
+                 res += main_step(input_registers[ii + jj],
+@@ -354,7 +365,8 @@
+         res += ident + '      "%s %%%%%s, (%%%d)\\n"\n' % (
+             move_instruction, input_registers[l], l)
+     res += ident + '      :: %s : %s, "memory"\n' % (
+-        ', '.join(['"r"(%s + %s)' % (buf_name, x) for x in subcube]), clobber)
++        ', '.join(['"r"(%s + %s)' % (buf_name, x)
++                   for x in subcube] + extra_operands), clobber)
+     res += ident + '    );\n'
+     res += ident + '  }\n'
+     res += ident + '}\n'
+@@ -419,7 +431,7 @@
+         res += composite_step('buf', log_n, cur_it, cur_to_it, '  ')
+         cur_it = cur_to_it
+     res += '}\n'
+-    return res
++    return k8kernel.finish(res, type_name, log_n)
+ 
+ 
+ def greedy_merged_recursive(type_name, log_n, threshold_step, composite_step):
+@@ -473,7 +485,7 @@
+     res += '%s {\n' % signature
+     res += '  helper_%s_%d_recursive(buf, %d);\n' % (type_name, log_n, log_n)
+     res += '}\n'
+-    return res
++    return k8kernel.finish(res, type_name, log_n)
+ 
+ 
+ def extract_time(data):
+@@ -507,6 +519,7 @@
+     if num_it % 2 == 0:
+         raise Exception('even number of runs: %d' % num_it)
+     with open('measurements/to_run.h', 'w') as output:
++        output.write(k8kernel.preamble())
+         output.write(code)
+         output.write('const int log_n = %d;\n' % log_n)
+         signature = 'void run(%s *buf)' % type_name
+@@ -531,13 +544,31 @@
+     return get_mean_stddev()
+ 
+ 
++def planned(type_name, log_n, composite_step_generator, desc):
++    # one helper as a hall-of-fame line describes it; nothing is measured
++    if desc == 'plain_unmerged':
++        return plain_unmerged(type_name, log_n)
++    if desc == 'greedy_merged':
++        return greedy_merged(type_name, log_n, composite_step_generator)
++    return greedy_merged_recursive(type_name, log_n,
++                                   int(desc.split()[1]),
++                                   composite_step_generator)
++
++
+ if __name__ == '__main__':
+-    final_code = '#include "fht.h"\n'
++    final_code = '#include "fht.h"\n' + k8kernel.preamble()
+     hall_of_fame = []
++    plan = k8kernel.read_plan()  # None: measure and choose, as FFHT does
++    out_dir = os.environ.get('FFHT_OUT', '.')
+     for (type_name,
+          composite_step_generator) in [('float', float_avx_composite_step),
+                                        ('double', double_avx_composite_step)]:
+         for log_n in range(1, max_log_n + 1):
++            if plan is not None:
++                final_code += planned(type_name, log_n,
++                                      composite_step_generator,
++                                      plan[(type_name, log_n)])
++                continue
+             sys.stdout.write('log_n = %d\n' % log_n)
+             times = []
+             try:
+@@ -584,8 +615,11 @@
+             final_code += '  }\n'
+         final_code += '  return 1;\n'
+         final_code += '}\n'
+-    with open('fht_avx.c', 'w') as output:
++    with open(os.path.join(out_dir, 'fht_avx.c'), 'w') as output:
+         output.write(final_code)
++    k8kernel.write_tables(out_dir)
++    if plan is not None:
++        sys.exit(0)
+     sys.stdout.write('hall of fame\n')
+     with open('hall_of_fame_avx.txt', 'w') as hof:
+         for (type_name, log_n, best_time, best_desc) in hall_of_fame:

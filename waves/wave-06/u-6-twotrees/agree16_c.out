@@ -1,0 +1,17 @@
+== AGREE, two trees, ONE shared centre (64 quadratic centres), MST only; second tree varies
+-- second tree rows 2 1 8 4
+-- second tree rows 1 2 4 8
+-- second tree rows 4 8 1 2
+-- second tree rows 3 1 8 4
+-- second tree rows 10 5 8 4
+-- second tree rows 9 6 3 1
+-- second tree rows 15 7 3 1
+-- second tree rows 6 3 12 8
+== AGREE, pair F0 = quad 16, G0 = quad 2 (MST 40), 8 rounds of extra vertices
+  held tree wires (node, pattern) other than singles: 28 ; hubs as terminals: 1 ; terminals: 17
+  MST of terminals: 40 shifts (lower bound for these centres: 20) ; with 4 extra vertices: 36 shifts
+  distances hub0 -> outputs: 2 4 2 4 3 5 3 5 2 5 2 5 3 7 3 7
+  distances output0 -> outputs: 0 2 4 5 3 5 4 6 1 5 4 6 3 7 4 8
+  shifts <= 36 ; held tree wires 28
+== (d) AGREE, FOUR trees one per bit, shared centre, best over the 64 quadratic centres (MST only), and THREE trees
+four trees shared centre: least MST 41 shifts, held 56, gates <= 98 ; three trees: least MST 44 shifts, held 42, gates <= 87

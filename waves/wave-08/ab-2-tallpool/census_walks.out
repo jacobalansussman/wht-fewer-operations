@@ -1,0 +1,17 @@
+  example: A12_19_kick.out N=8 gates=20: tall (1, -2, -1, -1, 1, 1, -2, 1) occurs for 2 pairs; circuit holds 0 tall wires
+  example: A12_19_kick.out N=8 gates=20: tall (1, -1, -2, -1, 1, 0, -1, 1) occurs for 2 pairs; circuit holds 0 tall wires
+  example: A12_hub.out N=8 gates=25: tall (0, 0, 2, 2, 1, 1, 1, 1) occurs for 2 pairs; circuit holds 0 tall wires
+  example: A12_hub.out N=8 gates=24: tall (0, 0, 2, 2, 1, 1, 1, 1) occurs for 2 pairs; circuit holds 0 tall wires
+  example: A12_hub.out N=8 gates=21: tall (1, -1, 0, -2, -1, -1, -1, -1) occurs for 2 pairs; circuit holds 0 tall wires
+  example: t8_A2_stair.out N=8 gates=21: tall (0, 0, 2, 2, 1, 1, -1, -1) occurs for 2 pairs; circuit holds 0 tall wires
+  example: t16_A3.out N=16 gates=53: tall (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, -1, 0, -2) occurs for 2 pairs; circuit holds 2 tall wires
+N=8, 19 gates: circuits 22; with a tall sum or difference that occurs twice or more: 0 (largest number of pairs 1); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 20 gates: circuits 121; with a tall sum or difference that occurs twice or more: 74 (largest number of pairs 3); circuits that hold a tall wire: 53; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 21 gates: circuits 18; with a tall sum or difference that occurs twice or more: 10 (largest number of pairs 2); circuits that hold a tall wire: 1; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 22 gates: circuits 1; with a tall sum or difference that occurs twice or more: 0 (largest number of pairs 1); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 23 gates: circuits 1; with a tall sum or difference that occurs twice or more: 0 (largest number of pairs 1); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 24 gates: circuits 1; with a tall sum or difference that occurs twice or more: 1 (largest number of pairs 2); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 25 gates: circuits 1; with a tall sum or difference that occurs twice or more: 1 (largest number of pairs 2); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=8, 26 gates: circuits 1; with a tall sum or difference that occurs twice or more: 0 (largest number of pairs 1); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=16, 52 gates: circuits 6; with a tall sum or difference that occurs twice or more: 0 (largest number of pairs 1); circuits that hold a tall wire: 0; circuits where a tall wire of the circuit itself is such a repeated difference: 0
+N=16, 53 gates: circuits 2; with a tall sum or difference that occurs twice or more: 1 (largest number of pairs 2); circuits that hold a tall wire: 1; circuits where a tall wire of the circuit itself is such a repeated difference: 0

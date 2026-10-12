@@ -1,0 +1,11 @@
+cells x critical-path delay (ns at the median clock), variant c, W = 8, 5 seeds each:
+  dff_default  8 points: textbook 349 cells x 10.35 ns = 3613 ; this work 274 cells x 13.73 ns = 3761 ; this work +4.1 %
+  dff_default 16 points: textbook 969 cells x 14.29 ns = 13851 ; this work 877 cells x 18.46 ns = 16190 ; this work +16.9 %
+  dff_dff      8 points: textbook 337 cells x 9.95 ns = 3355 ; this work 273 cells x 13.76 ns = 3755 ; this work +11.9 %
+  dff_dff     16 points: textbook 945 cells x 13.03 ns = 12318 ; this work 870 cells x 18.29 ns = 15914 ; this work +29.2 %
+  dff_default 8_textbook_c_w8  yosys cells of the design: {'SB_CARRY': 216, 'SB_DFF': 89, 'SB_LUT4': 326}
+  dff_default 8_ours_c_w8      yosys cells of the design: {'SB_CARRY': 168, 'SB_DFF': 83, 'SB_LUT4': 249}
+  dff_dff     8_textbook_c_w8  yosys cells of the design: {'SB_CARRY': 216, 'SB_DFF': 82, 'SB_LUT4': 326}
+  dff_dff     8_ours_c_w8      yosys cells of the design: {'SB_CARRY': 168, 'SB_DFF': 82, 'SB_LUT4': 249}
+  8_textbook_c_w8: default flow, 15 distinct seeds of the second check: lowest 87.6 MHz, highest 103.4 MHz
+  8_ours_c_w8: default flow, 15 distinct seeds of the second check: lowest 65.9 MHz, highest 75.1 MHz

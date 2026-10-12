@@ -1,0 +1,8 @@
+p=3 n=4 rows=16 non-input distinct targets=4  intermediates allowed m=1  => gate budget 5
+visited states by remaining budget: j=1:1
+RESULT p=3: YES, circuit with 5 gates. points in order (after the 4 inputs):
+  g4  inter  = [0 1 1 0]  from #2 + 1*#1 (projectively)
+  g5  TARGET = [1 1 1 0]  from #4 + 1*#0 (projectively)
+  g6  TARGET = [1 2 1 0]  from #5 + 1*#1 (projectively)
+  g7  TARGET = [1 1 2 0]  from #5 + 1*#2 (projectively)
+  g8  TARGET = [1 2 2 0]  from #4 + 2*#0 (projectively)

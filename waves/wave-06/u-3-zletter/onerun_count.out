@@ -1,0 +1,14 @@
+k 3 N 8 steps 7 one-run steps at most 10   fraction at most 1.000
+k 4 N 16 steps 15 one-run steps at most 24   fraction at most 1.000
+k 5 N 32 steps 31 one-run steps at most 54   fraction at most 1.000
+k 6 N 64 steps 63 one-run steps at most 116   fraction at most 1.000
+k 7 N 128 steps 127 one-run steps at most 230   fraction at most 1.000
+k 8 N 256 steps 255 one-run steps at most 418   fraction at most 1.000
+k 9 N 512 steps 511 one-run steps at most 744   fraction at most 1.000
+k 10 N 1024 steps 1023 one-run steps at most 1260   fraction at most 1.000
+k 11 N 2048 steps 2047 one-run steps at most 2124   fraction at most 1.000
+k 12 N 4096 steps 4095 one-run steps at most 3612 ALL ONE-RUN IMPOSSIBLE  fraction at most 0.882
+k 13 N 8192 steps 8191 one-run steps at most 6258 ALL ONE-RUN IMPOSSIBLE  fraction at most 0.764
+k 14 N 16384 steps 16383 one-run steps at most 11016 ALL ONE-RUN IMPOSSIBLE  fraction at most 0.672
+k 15 N 32768 steps 32767 one-run steps at most 18054 ALL ONE-RUN IMPOSSIBLE  fraction at most 0.551
+k 16 N 65536 steps 65535 one-run steps at most 30128 ALL ONE-RUN IMPOSSIBLE  fraction at most 0.460

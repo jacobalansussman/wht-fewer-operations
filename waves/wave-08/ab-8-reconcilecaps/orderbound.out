@@ -1,0 +1,25 @@
+class (4,2) WIDE (any complement): 560 labels
+   triangular on I in 5 random orders: True ; mean |I| over 200 orders = 280.00 ; predicted v (2^r-1)/(2^r+2^(h-r)-2) = 280.00 ; kappa <= 2.0000
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 22 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 21 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 22 : True
+class (4,2) x-6 ports (L = P-perp): 20 labels
+   triangular on I in 5 random orders: True ; mean |I| over 200 orders = 10.00 ; predicted v (2^r-1)/(2^r+2^(h-r)-2) = 10.00 ; kappa <= 2.0000
+   random sub-family of 20, random rational matrix with the allowed support: rank 20 >= |I| = 10 : True
+   random sub-family of 20, random rational matrix with the allowed support: rank 19 >= |I| = 10 : True
+   random sub-family of 20, random rational matrix with the allowed support: rank 20 >= |I| = 10 : True
+class (5,2) x-6 ports (L = P-perp): 80 labels
+   triangular on I in 5 random orders: True ; mean |I| over 200 orders = 23.88 ; predicted v (2^r-1)/(2^r+2^(h-r)-2) = 24.00 ; kappa <= 3.3333
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 8 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 13 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 15 : True
+class (5,2) WIDE (any complement): 9920 labels
+   triangular on I in 5 random orders: True ; mean |I| over 200 orders = 2978.82 ; predicted v (2^r-1)/(2^r+2^(h-r)-2) = 2976.00 ; kappa <= 3.3333
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 11 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 16 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 14 : True
+class (6,3) x-6 ports (L = P-perp): 640 labels
+   triangular on I in 5 random orders: True ; mean |I| over 200 orders = 320.00 ; predicted v (2^r-1)/(2^r+2^(h-r)-2) = 320.00 ; kappa <= 2.0000
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 21 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 20 : True
+   random sub-family of 40, random rational matrix with the allowed support: rank 40 >= |I| = 22 : True

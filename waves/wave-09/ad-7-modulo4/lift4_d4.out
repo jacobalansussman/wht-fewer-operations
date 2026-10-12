@@ -1,0 +1,7 @@
+modulus 4: 48960 solution records, 60 distinct sets of 7 intermediates
+no lift for set 3 20 24 40 129 153 192 ; most targets reached 6 of 8 ; a best partial: 192:11000000 40:00101000 232T:11101000 24:00013000 20:00010100 212T:11010100 129:10000003 3:00000011 43T:00101011 23T:00010111 153:10013003 77T:01001101 178T:10110010
+no lift for set 3 20 36 40 129 165 192 ; most targets reached 6 of 8 ; a best partial: 192:11000000 40:00101000 232T:11101000 36:00100300 20:00010100 212T:11010100 129:10000003 3:00000011 43T:00101011 23T:00010111 165:10100303 77T:01001101 178T:10110010
+no lift for set 3 20 40 129 133 165 192 ; most targets reached 6 of 8 ; a best partial: 192:11000000 40:00101000 232T:11101000 20:00010100 212T:11010100 129:10000003 3:00000011 43T:00101011 23T:00010111 133:10000103 165:10300103 113T:01110001 142T:10001110
+RESULT modulus 4: 0 of 60 sets lift (15 gates).  nodes searched 70956
+  histogram of the most targets reachable by any lift of a set:  5 targets: 24 sets; 6 targets: 36 sets;
+LIGHT label=ad7-lift4-d4 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:43:49 cmd=sh -c ./lift 4 ../ab-0-neighboursums/rows_B4.txt < enum_m7_d4.out

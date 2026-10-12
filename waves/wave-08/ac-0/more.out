@@ -1,0 +1,7 @@
+(a) 64 points modulo 2: gates 216  correct modulo 2: True  adding-only law: 224
+(b) k = 4  block 8  rank modulo 2: 4  modulo 3: 5  rationals: 5
+(b) k = 6  block 32  rank modulo 2: 16  modulo 3: 21  rationals: 22
+(b) k = 8  block 128  rank modulo 2: 64  modulo 3: 85 
+(c) integers: out(13)-out(11)+out(2) = out(4): True ; out(13)+out(2) = all-ones: True ; out(7) = S - out(8): True ; out(8) = S - out(7), so one of 7, 8 must still be built from inputs
+    count: 11 (five outputs) + 2 (output 4) + 1 (S) + 3 (output 8 = x0 + x9 + x10 + x12 from inputs, no pair available) + 1 (output 7 = S - output 8) = 18 > 16
+LIGHT label=ac0-more exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=06:30:01 cmd=python3 -B more.py

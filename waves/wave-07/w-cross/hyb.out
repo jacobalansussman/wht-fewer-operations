@@ -1,0 +1,12 @@
+== HYBRID 1: the transform as one function of the neighbour-sum operator ==
+k=2 N=4: prod(1 - i X_j) == (-i)^distance: True;  J-I a bijection: True;  H(x,(J-I)y)=q(x)q(x+y)q(y): True;  spectrum of C_q by weight: [2, 2, -2];  degree of C_q as a polynomial in A: 2 (of at most 2)
+k=3 N=8: prod(1 - i X_j) == (-i)^distance: True;  J-I a bijection: False;  H(x,(J-I)y)=q(x)q(x+y)q(y): True;  spectrum of C_q by weight: [0, 4, 0, -4];  degree of C_q as a polynomial in A: 3 (of at most 3)
+k=4 N=16: prod(1 - i X_j) == (-i)^distance: True;  J-I a bijection: True;  H(x,(J-I)y)=q(x)q(x+y)q(y): True;  spectrum of C_q by weight: [-4, 4, 4, -4, -4];  degree of C_q as a polynomial in A: 4 (of at most 4)
+k=5 N=32: prod(1 - i X_j) == (-i)^distance: True;  J-I a bijection: False;  H(x,(J-I)y)=q(x)q(x+y)q(y): True;  spectrum of C_q by weight: [-8, 0, 8, 0, -8, 0];  degree of C_q as a polynomial in A: 5 (of at most 5)
+k=6 N=64: prod(1 - i X_j) == (-i)^distance: True;  J-I a bijection: True;  H(x,(J-I)y)=q(x)q(x+y)q(y): True;  spectrum of C_q by weight: [-8, -8, 8, 8, -8, -8, 8];  degree of C_q as a polynomial in A: 6 (of at most 6)
+
+== HYBRID 2: a diagonalising basis that costs half a transform (plus N/2) ==
+N=4: V = (butterflies on exchanged pairs)(half transform);  V H' V^T diagonal: True, values [-8, 4, 8];  H' = N V^T diag^-1 V: True;  pair gates: 2 x 1
+N=16: V = (butterflies on exchanged pairs)(half transform);  V H' V^T diagonal: True, values [-32, 16, 32];  H' = N V^T diag^-1 V: True;  pair gates: 2 x 6
+N=64: V = (butterflies on exchanged pairs)(half transform);  V H' V^T diagonal: True, values [-128, 64, 128];  H' = N V^T diag^-1 V: True;  pair gates: 2 x 28
+LIGHT label=wcross-hyb exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:30:06 cmd=python3 -B hyb.py

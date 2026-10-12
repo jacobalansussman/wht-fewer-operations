@@ -1,0 +1,591 @@
+Sun Oct 11 03:51:14 PM UTC 2026
+# harness check; 2026-10-11 15:51:14 UTC; host (removed); load 5.93,5.68,4.98
+# compiler: gcc 13.3.0
+# harness, variants.c, whtf.c built with: gcc -O3 -march=native; whtf.c: gcc -O3 -march=native -fno-tree-reassoc
+# whts.c and naive_i.c built with: gcc -O3 -march=native -fno-tree-vectorize -fno-tree-slp-vectorize -fwrapv
+# FFHT commit fba727a3ff72c862260460631ae1cc8e3e44e861; its fht.o built by its own Makefile with: gcc -O3 -march=native -std=c99 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
+C type=float k=3 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=3 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=3 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=3 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=4 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=4 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=4 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=5 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=5 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=5 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=6 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=6 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=6 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=7 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=7 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=7 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=8 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=8 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=8 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=9 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=9 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=9 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=10 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=10 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=10 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=11 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=11 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=11 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=ffht against=definition amp=7 mismatches=0 OK
+C type=float k=12 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=12 variant=T against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=G19 against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=G19a against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=Tp against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=G19p against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=12 variant=G19ap against=ffht amp=7 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=13 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=13 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=14 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=14 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=15 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=15 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=16 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=16 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=17 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=17 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=18 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=18 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=19 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=19 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=20 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=20 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=21 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=21 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=22 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=22 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=23 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=23 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=24 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=24 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=25 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=25 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=ffht against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=float k=26 variant=T against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=G19 against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=G19a against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=Tp against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=G19p against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=float k=26 variant=G19ap against=ffht amp=1 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=3 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=3 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=3 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=4 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=4 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=4 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=5 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=5 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=5 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=6 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=6 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=6 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=7 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=7 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=7 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=8 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=8 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=8 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=9 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=9 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=9 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=10 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=10 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=10 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=11 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=11 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=11 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=ffht against=definition amp=1000 mismatches=0 OK
+C type=double k=12 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=12 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=12 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=13 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=13 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=14 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=14 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=15 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=15 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=16 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=16 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=17 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=17 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=18 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=18 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=19 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=19 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=20 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=20 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=21 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=21 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=22 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=22 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=23 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=23 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=24 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=24 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=25 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=25 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=ffht against=itself-unaligned(address%64=8) mismatches=0 OK
+C type=double k=26 variant=T against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=G19 against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=G19a against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=Tp against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=G19p against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=double k=26 variant=G19ap against=ffht amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=3 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=3 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=3 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=4 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=4 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=4 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=5 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=5 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=5 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=6 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=6 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=6 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=7 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=7 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=7 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=8 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=8 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=8 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=9 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=9 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=9 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=10 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=10 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=10 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=11 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=11 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=11 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=naive against=definition amp=1000 mismatches=0 OK
+C type=int32 k=12 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=12 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=12 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=13 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=13 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=14 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=14 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=15 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=15 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=16 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=16 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=17 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=17 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=18 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=18 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=19 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=19 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=20 variant=T against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=G19s against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=G19a against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=Tp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=G19sp against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=G19ap against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=sT against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=20 variant=sG19 against=naive amp=1000 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=21 variant=T against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=G19s against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=G19a against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=Tp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=G19sp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=G19ap against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=sT against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=21 variant=sG19 against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=22 variant=T against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=G19s against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=G19a against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=Tp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=G19sp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=G19ap against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=sT against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=22 variant=sG19 against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=23 variant=T against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=G19s against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=G19a against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=Tp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=G19sp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=G19ap against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=sT against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=23 variant=sG19 against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=24 variant=T against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=G19s against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=G19a against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=Tp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=G19sp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=G19ap against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=sT against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=24 variant=sG19 against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=25 variant=T against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=G19s against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=G19a against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=Tp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=G19sp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=G19ap against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=sT against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=25 variant=sG19 against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=naive against=itself-unaligned(address%64=4) mismatches=0 OK
+C type=int32 k=26 variant=T against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=G19s against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=G19a against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=Tp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=G19sp against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=G19ap against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=sT against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+C type=int32 k=26 variant=sG19 against=naive amp=15 scale_log2=0 mismatches=0 maxdiff=0 OK
+# check: all equal (0 failing lines)
+exit=0
+Sun Oct 11 03:52:18 PM UTC 2026

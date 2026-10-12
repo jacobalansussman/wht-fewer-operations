@@ -1,0 +1,22 @@
+full H16, greedy: 72 (textbook 64)
+j  subspace-order  weight-order  random-order   (greedy upper bounds on add/sub for the first j outputs)
+ 1      15           15           15
+ 2      16           16           16
+ 3      19           19           19
+ 4      20           26           26
+ 5      27           41           27
+ 6      28           42           42
+ 7      31           43           43
+ 8      32           46           44
+ 9      47           47           49
+10      48           50           61
+11      51           57           57
+12      52           58           58
+13      59           59           59
+14      60           60           60
+15      74           63           77
+16      72           80           72
+K_{-i} = (1-i)^k * sum_j i^j E_j  (weight mod 4 grading): True
+H = D K_{-i} D with D = diag(i^weight): True
+antipode J = sum_j (-1)^j E_j (weight mod 2 grading is a free relabelling): True
+LIGHT label=i-wild-grow16 exit=0 time=6s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=21:00:07 cmd=python3 -B grow16.py

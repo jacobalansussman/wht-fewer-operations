@@ -1,0 +1,7 @@
+N=4 points (K=4 bits doubled), 4 flats, 6 decompositions from the search: price min 9, median 12, max 13 (textbook 8); total rank min 4, max 12 (floor N = 4)
+    cheapest: (p,q,t) per flat [(1, 2, 0), (1, 1, 0), (1, 1, 0), (0, 1, 0)]  total rank 4
+N=8 points (K=6 bits doubled), 8 flats, 54 decompositions from the search: price min 40, median 51, max 56 (textbook 24); total rank min 14, max 56 (floor N = 8)
+    cheapest: (p,q,t) per flat [(2, 3, 2), (2, 3, 2), (2, 2, 1), (2, 2, 1), (2, 1, 0), (2, 1, 0), (1, 2, 0), (1, 2, 0)]  total rank 16
+product decomposition at N=4: 4 flats, all of rank 1 (total rank 4 = N), price computed separately 10 ; with the sums shared (Z, then Z transposed) 8 ; textbook 8
+product decomposition at N=8: 8 flats, all of rank 1 (total rank 8 = N), price computed separately 38 ; with the sums shared (Z, then Z transposed) 24 ; textbook 24
+product decomposition at N=16: 16 flats, all of rank 1 (total rank 16 = N), price computed separately 130 ; with the sums shared (Z, then Z transposed) 64 ; textbook 64

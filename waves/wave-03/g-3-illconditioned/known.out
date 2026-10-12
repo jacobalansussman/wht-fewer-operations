@@ -1,0 +1,25 @@
+4 points, textbook butterflies in place: move, coefficient, cond of the move alone, potential after, gain, mass after, cond after (rows scaled)
+  w0 += (1)*w1     2.618      0.000   +0.000    1.000      2.414
+  w1 += (1)*w0     2.618      2.000   +2.000    1.000      1.000
+  w2 += (1)*w3     2.618      2.000   +0.000    1.000      2.414
+  w3 += (1)*w2     2.618      4.000   +2.000    1.000      1.000
+  w0 += (1)*w2     2.618      4.000   +0.000    1.000      2.414
+  w2 += (1)*w0     2.618      6.000   +2.000    1.000      1.000
+  w1 += (1)*w3     2.618      6.000   +0.000    1.000      2.414
+  w3 += (1)*w1     2.618      8.000   +2.000    1.000      1.000
+4 points, textbook butterflies in place: shears 8; exact result is the transform up to row scaling: True; gains per shear {0.0: 4, 2.0: 4}; largest mass 1.000; largest cond (rows scaled) 2.414; lowest potential 0.000
+4 points, subset sums, diagonal, subset sums (Z D Z^T): move, coefficient, cond of the move alone, potential after, gain, mass after, cond after (rows scaled)
+  w0 += (1)*w1     2.618      0.000   +0.000    1.000      2.414
+  w2 += (1)*w3     2.618      0.000   +0.000    1.000      2.414
+  w0 += (1)*w2     2.618      0.000   +0.000    1.000      4.322
+  w1 += (1)*w3     2.618      0.000   +0.000    1.000      5.828
+  w1 += (1)*w0     2.618      2.000   +2.000    1.000      4.322
+  w3 += (1)*w2     2.618      4.000   +2.000    1.000      2.414
+  w2 += (1)*w0     2.618      6.000   +2.000    1.000      2.414
+  w3 += (1)*w1     2.618      8.000   +2.000    1.000      1.000
+4 points, subset sums, diagonal, subset sums (Z D Z^T): shears 8; exact result is the transform up to row scaling: True; gains per shear {0.0: 4, 2.0: 4}; largest mass 1.000; largest cond (rows scaled) 5.828; lowest potential 0.000
+8 points, textbook butterflies in place: shears 24; exact result is the transform up to row scaling: True; gains per shear {0.0: 12, 2.0: 12}; largest mass 1.000; largest cond (rows scaled) 2.414; lowest potential 0.000
+8 points, subset sums, diagonal, subset sums (Z D Z^T): shears 24; exact result is the transform up to row scaling: True; gains per shear {0.0: 12, 2.0: 12}; largest mass 1.000; largest cond (rows scaled) 14.071; lowest potential 0.000
+16 points, textbook butterflies in place: shears 64; exact result is the transform up to row scaling: True; gains per shear {0.0: 32, 2.0: 32}; largest mass 1.000; largest cond (rows scaled) 2.414; lowest potential 0.000
+16 points, subset sums, diagonal, subset sums (Z D Z^T): shears 64; exact result is the transform up to row scaling: True; gains per shear {0.0: 32, 2.0: 32}; largest mass 1.000; largest cond (rows scaled) 33.971; lowest potential 0.000
+LIGHT label=g3-known exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=22:50:16 cmd=python3 -B profile.py known

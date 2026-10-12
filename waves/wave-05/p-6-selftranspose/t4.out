@@ -1,0 +1,8 @@
+N = 4  tree shapes: 2  model T (root square, disjoint matched rectangles, coefficient -2)
+shape   0 (.(.(..))) : least N' = 5  (gates N-2+N' = 7), 14 matchings at the least, 14 visited
+     e.g. root^2  {1}*{2,3}  {2}^2  {3}^2
+     replay: rows orthogonal True  symmetric True  diagonal [1, 1, -1, -1]
+shape   1 ((..)(..)) : least N' = 5  (gates N-2+N' = 7), 18 matchings at the least, 18 visited
+     e.g. root^2  {1}*{2,3}  {2}^2  {3}^2
+     replay: rows orthogonal True  symmetric True  diagonal [1, 1, -1, -1]
+seconds 0.0

@@ -1,0 +1,26 @@
+A/B. W = Z^-1 P, row t = coefficients of prod over the ones i of t of ((1+y)^(2^i) - 1)
+  N=4: carry law modulo 4 holds; non-zeros of W modulo 2,4,8,16,32: [4, 6, 6, 6, 6]; Yates gates (N/2)k = 4; N + (k-1)N/2 = 6
+  N=8: carry law modulo 4 holds; non-zeros of W modulo 2,4,8,16,32: [8, 16, 20, 22, 24]; Yates gates (N/2)k = 12; N + (k-1)N/2 = 16
+  N=16: carry law modulo 4 holds; non-zeros of W modulo 2,4,8,16,32: [16, 40, 60, 74, 84]; Yates gates (N/2)k = 32; N + (k-1)N/2 = 40
+  N=32: carry law modulo 4 holds; non-zeros of W modulo 2,4,8,16,32: [32, 96, 168, 230, 288]; Yates gates (N/2)k = 80; N + (k-1)N/2 = 96
+  N=64: carry law modulo 4 holds; non-zeros of W modulo 2,4,8,16,32: [64, 224, 448, 676, 910]; Yates gates (N/2)k = 192; N + (k-1)N/2 = 224
+  N=128: carry law modulo 4 holds; non-zeros of W modulo 2,4,8,16,32: [128, 512, 1152, 1912, 2758]; Yates gates (N/2)k = 448; N + (k-1)N/2 = 512
+C. q-Pascal
+  identity x^(st) = sum_j [s,j][t,j] x^C(j,2) (x-1)^j [j]! for s,t < 8, as polynomials in x: holds
+  at x = -1 the q-Pascal matrix is (Pascal of size N/2) tensor [[1,0],[1,1]]: True
+  at x = 1 it is Pascal: True
+  at x = i, 4 points: L = [['1+0i', '0+0i', '0+0i', '0+0i'], ['1+0i', '1+0i', '0+0i', '0+0i'], ['1+0i', '1+1i', '1+0i', '0+0i'], ['1+0i', '0+1i', '0+1i', '1+0i']]
+   diagonal: [(1+0j), (-1+1j), (2+2j), 4j] ; L D L^T equals the Fourier matrix i^(st): True
+   L modulo (1+i) [a+bi -> (a+b) mod 2]: [[1, 0, 0, 0], [1, 1, 0, 0], [1, 0, 1, 0], [1, 1, 1, 1]]  = subset sums Z: True
+D. volume of Pascal
+  N=8: log2 |minor| = 4.3; divided by N^2: 0.0675; (N/2) log2 N = 12
+  N=16: log2 |minor| = 17.8; divided by N^2: 0.0696; (N/2) log2 N = 32
+  N=32: log2 |minor| = 72.1; divided by N^2: 0.0704; (N/2) log2 N = 80
+  N=64: log2 |minor| = 289.4; divided by N^2: 0.0707; (N/2) log2 N = 192
+  N=128: log2 |minor| = 1159.0; divided by N^2: 0.0707; (N/2) log2 N = 448
+E. spin matrix K = Sym^(N-1)[[1,1],[1,-1]] in the basis x^s y^(N-1-s)
+  N=4: K^2 = 2^(N-1) I: True; all entries odd: True; largest entry 3; rank mod 2 of (K-J)/2: 2; of (H-J)/2: 2
+  N=8: K^2 = 2^(N-1) I: True; all entries odd: True; largest entry 35; rank mod 2 of (K-J)/2: 2; of (H-J)/2: 3
+  N=16: K^2 = 2^(N-1) I: True; all entries odd: True; largest entry 6435; rank mod 2 of (K-J)/2: 2; of (H-J)/2: 4
+  N=32: K^2 = 2^(N-1) I: True; all entries odd: True; largest entry 300540195; rank mod 2 of (K-J)/2: 2; of (H-J)/2: 5
+LIGHT label=ab7-second exit=0 time=1s waited=0s peak_rss_mb=3 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=04:59:07 cmd=python3 -B second.py

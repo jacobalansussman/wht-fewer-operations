@@ -1,0 +1,16 @@
+== u0_r32_copy.out assoc=seq p2=same corners=(80, 80)
+   N=32  gates (G)=220  [textbook N log2 N=160, (3/4) N log2 N=120]  exact replay as the transform on 32 basis vectors: True
+   classes (inputs included)=144  [2N-1=63]   pairs of classes that overlap without nesting=4651 of 10296
+   pass 1: gates=110  J/S/Q/E=110/0/0/0  survivors=108 dead=2  orders of dead gates=[(16, 2)]
+   pass 2: gates=110  J/S/Q/E=4/106/0/0  survivors=4 dead=106  orders of dead gates=[(1, 41), (2, 52), (3, 10), (4, 1), (16, 2)]
+   total: survivors=112 [one tree: N-1=31]  dead=108 [(N/2) log2 N=80; textbook N log2 N-N+1=129]  dead-(N/2)log2N=28
+   highest order=16  Q gates=0  E gates=0  gates that cancel powers of 2 (pass, kind, powers): []
+   over-limit gate wires V=150 of 220   h-0 sum: gates+V-N log2 N=210   gates reading two over-limit wires=94
+== u0_r64_copy.out assoc=seq p2=same corners=(239, 239)
+   N=64  gates (G)=602  [textbook N log2 N=384, (3/4) N log2 N=288]  exact replay as the transform on 64 basis vectors: True
+   classes (inputs included)=369  [2N-1=127]   pairs of classes that overlap without nesting=38284 of 67896
+   pass 1: gates=301  J/S/Q/E=301/0/0/0  survivors=300 dead=1  orders of dead gates=[(16, 1)]
+   pass 2: gates=301  J/S/Q/E=5/296/0/0  survivors=5 dead=296  orders of dead gates=[(1, 78), (2, 166), (3, 36), (4, 14), (5, 1), (16, 1)]
+   total: survivors=305 [one tree: N-1=63]  dead=297 [(N/2) log2 N=192; textbook N log2 N-N+1=321]  dead-(N/2)log2N=105
+   highest order=16  Q gates=0  E gates=0  gates that cancel powers of 2 (pass, kind, powers): []
+   over-limit gate wires V=469 of 602   h-0 sum: gates+V-N log2 N=687   gates reading two over-limit wires=348

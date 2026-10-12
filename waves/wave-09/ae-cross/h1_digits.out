@@ -1,0 +1,41 @@
+k 2 H = sum (-2)^j E_j: True | truncation mod 2^(d+1) for d=0..k: True | rank E_j (mod 1000003): [1, 2, 1] binomials [1, 2, 1]
+   digit j at y = sum of the superset sums sigma_J over J inside y, |J|=j: True
+k 3 H = sum (-2)^j E_j: True | truncation mod 2^(d+1) for d=0..k: True | rank E_j (mod 1000003): [1, 3, 3, 1] binomials [1, 3, 3, 1]
+   digit j at y = sum of the superset sums sigma_J over J inside y, |J|=j: True
+k 4 H = sum (-2)^j E_j: True | truncation mod 2^(d+1) for d=0..k: True | rank E_j (mod 1000003): [1, 4, 6, 4, 1] binomials [1, 4, 6, 4, 1]
+   digit j at y = sum of the superset sums sigma_J over J inside y, |J|=j: True
+k 5 H = sum (-2)^j E_j: True | truncation mod 2^(d+1) for d=0..k: True | rank E_j (mod 1000003): [1, 5, 10, 10, 5, 1] binomials [1, 5, 10, 10, 5, 1]
+   digit j at y = sum of the superset sums sigma_J over J inside y, |J|=j: True
+k 6 H = sum (-2)^j E_j: True | truncation mod 2^(d+1) for d=0..k: True | rank E_j (mod 1000003): None binomials [1, 6, 15, 20, 15, 6, 1]
+   digit j at y = sum of the superset sums sigma_J over J inside y, |J|=j: True
+k 16 c 0.5 levels 5 share of coefficients 0.7899
+k 16 c 1 levels 9 share of coefficients 0.9787
+k 16 c 1.5 levels 13 share of coefficients 0.9995
+k 64 c 0.5 levels 9 share of coefficients 0.7396
+k 64 c 1 levels 17 share of coefficients 0.9672
+k 64 c 1.5 levels 25 share of coefficients 0.9984
+k 256 c 0.5 levels 17 share of coefficients 0.7120
+k 256 c 1 levels 33 share of coefficients 0.9610
+k 256 c 1.5 levels 49 share of coefficients 0.9979
+k 1024 c 0.5 levels 33 share of coefficients 0.6976
+k 1024 c 1 levels 65 share of coefficients 0.9578
+k 1024 c 1.5 levels 97 share of coefficients 0.9976
+ladder k 16 degree<= 2 gates per point: Yates-type 2.000 | with ad-6's degree-2 base (what-if) 1.375
+ladder k 16 degree<= 3 gates per point: Yates-type 2.998 | with ad-6's degree-2 base (what-if) 2.409
+ladder k 16 degree<= 4 gates per point: Yates-type 3.987 | with ad-6's degree-2 base (what-if) 3.450
+ladder k 16 degree<= 4 gates per point: Yates-type 3.987 | with ad-6's degree-2 base (what-if) 3.450
+ladder k 16 degree<= 8 gates per point: Yates-type 7.214 | with ad-6's degree-2 base (what-if) 7.089
+ladder k 32 degree<= 2 gates per point: Yates-type 2.000 | with ad-6's degree-2 base (what-if) 1.234
+ladder k 32 degree<= 3 gates per point: Yates-type 3.000 | with ad-6's degree-2 base (what-if) 2.245
+ladder k 32 degree<= 4 gates per point: Yates-type 4.000 | with ad-6's degree-2 base (what-if) 3.258
+ladder k 32 degree<= 8 gates per point: Yates-type 7.999 | with ad-6's degree-2 base (what-if) 7.329
+ladder k 32 degree<= 16 gates per point: Yates-type 14.880 | with ad-6's degree-2 base (what-if) 14.708
+ladder k 64 degree<= 2 gates per point: Yates-type 2.000 | with ad-6's degree-2 base (what-if) 1.140
+ladder k 64 degree<= 3 gates per point: Yates-type 3.000 | with ad-6's degree-2 base (what-if) 2.144
+ladder k 64 degree<= 4 gates per point: Yates-type 4.000 | with ad-6's degree-2 base (what-if) 3.147
+ladder k 64 degree<= 16 gates per point: Yates-type 16.000 | with ad-6's degree-2 base (what-if) 15.218
+ladder k 64 degree<= 32 gates per point: Yates-type 30.410 | with ad-6's degree-2 base (what-if) 30.200
+8 gates: [(1, 1, 0, 0), (0, 0, 1, 1), (1, 1, 1, 1), (0, 1, 0, 1), (1, -1, 1, -1), (1, 1, -1, -1), (0, 1, 1, 0), (1, -1, -1, 1)]
+outputs are the four rows of H_4: True
+repeats modulo 2: 3 (ad-7's guess asked for at least (N/2) log2 N = 4); gates 8 against the least 7
+LIGHT label=ae-h1 exit=0 time=1s waited=0s peak_rss_mb=1 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=07:19:38 cmd=python3 -B h1_digits.py

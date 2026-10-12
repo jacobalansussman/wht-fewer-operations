@@ -1,0 +1,111 @@
+# Ninth wave of ideas: what came out (wht39)
+
+11 October 2026, about 08:00. Private. Nothing here is reviewed by a person or in Lean.
+Marks: **[computed]** exact run tonight; **[argued]** by hand tonight; **[guessed]**; **[read]** from a report. "Mine" means I recomputed the formula for this note (`ae-note/check.py`, `check.out`); I replayed no circuit and opened no certificate. *Legal* means a list of blocks with a network behind it that the engine's checker accepts; a *what-if* is arithmetic on a list that no known program realises. "Modulo 2" means arithmetic modulo 2 only: evidence, not a rational circuit.
+
+**What this wave was.** Eight agents each developed one experiment of `WAVE8-NOTE.md` section 6 (`ad-0` to `ad-7`). One recombined all nine waves and tried four hybrids (`ae-cross`). Three critics came last: `af-0` on `ad-6`, `af-1` on `ad-1`, `af-2` on `ad-4` and on one claim of `ae-cross`. Nobody attacked `ad-0`, `ad-2`, `ad-3`, `ad-5` or `ad-7`. The tenth wave (`ag-*`) is running section 6 below and is not covered.
+
+**Words.** N = 2^k points; an address has k bits. The *textbook* computes the transform in N·log2 N gates. Count **(G)**: a gate is any a·u + b·v, scalings free. Count **(O)**: OpenAI's, additions and scalar multiplications each charged. Gate numbers are (G) unless a line says (O). A *flat* is a subspace of addresses or a shifted copy of one. The *sign pattern* is the transform seen as a table of +1 and −1 on the addresses; a *relative* of the transform is any table of signs whose own transform has all entries of one size, as this one has. *Subset sums*: for every set S, the sum of the data over the subsets of S (classical count (N/2)·log2 N). *Line sums*: cut the address in two halves and read it as a point of a plane with q = √N points per line; there are N + q lines. R(N) and T(N) are the least gates for all line sums and for the transform. *Degree d at all cube points*: the N values of a polynomial of degree at most d in the k bits, computed from its coefficients. A *helper* is a wire that several outputs read; a *bus* is one wire carried through several versions that many gates read. A *halving* is a gate that divides by 2. A *kernel* is a 2 × 2 block; the *class* is all matrices built from a kernel the way the transform is built from 1, 1, 1, −1. The *engine* is the published program's mechanism: a *unit* transforms W arrays, each owed m *moves* (one direction on one whole array); a *block* is a run of moves with no interruption; the *plain schedule* has two blocks per array and saves nothing; a *stage* is a group of h directions; a *port* is a set of r directions along which the transform splits off; *data arrays* carry the data, *helpers* hold partial sums, *scratch copies* are extra blocks that belong to no array; a *shear* adds a multiple of one array to another; an *address map* relabels the addresses inside a block for free. The saving is 1 − z, with z the root of "sum over blocks of (rank/m)^z = W".
+
+## 1. What came out, in ten lines
+
+1. **Nothing beats the textbook.** No circuit over the rationals below a known count, no growth law below N·log N beyond the published one, nothing of the 1e-1 kind, no linear size [read: eight reports, the recombination, three critics].
+2. **The bar of 1e-1 in the published mechanism has a plain answer: no class of blocks of a legal unit is near it** (section 2). All of the unit's saving sits in the data arrays' blocks, at 0.11 to 0.17 of a move per block beyond the plain schedule's two. The bar needs 0.63 to 0.78 for the cheapest kind of block and more for the kind the data arrays have [computed by `ad-0`, exact counts; rates and bar mine].
+3. **The plane's line sums were priced and are not an easier problem** (section 3). Nothing found is below log N gates per point, and the line sums share the transform's exponent [argued twice]. That is the same open question in other coordinates. It is not closed.
+4. **One leading term fell, on a smaller problem.** A polynomial of degree at most 2 at all N cube points costs N·(1 + O(log k / k)) gates in both counts, against 2N [computed: built exactly to a million points by the critic with a program of its own; not found in print]. It gives nothing for the transform: that problem was always linear and cannot go below N − 1 [argued, `af-0`].
+5. **Other objects that now exist** [computed by their authors]: an exact ledger of the published unit in moves (`ad-0`); the sign pattern at 256 points as 11 flats, found twice independently and re-run by a critic (`ad-1`, `ad-4`, `af-2`); one pass whose growing coefficient does the work of L passes (`ad-1`).
+6. **Walls that are now exact statements** (section 5): n free moves need n + 1 shears (`ad-0`); the sign pattern is not a combination of fewer than k flats (`ad-4`, re-derived by `af-2`); every relative of the transform is priced at the same order by every route found (`ad-5`); a saving that exists modulo 2 died modulo 4 in all 478 wirings (`ad-7`); a bus has kept nothing yet (`ad-2`).
+7. **Three walls carry all eight reports** [a reading by `ae-cross`]: *repay* (sharing costs what it saves), *step* (a step that reads one flat moves the target by one unit), *depth* (the transform is k binary digits deep and every known program pays about N per digit).
+8. **Still alive** (section 4): the degree ladder; three helpers per output; a bus that keeps something; two shears per free move; a halving or a deep coefficient; the cost of a space instead of a matrix. Each is one small search. None has a positive specimen on the transform.
+9. **Most surprising.** The published unit does not lose to the bar at the top. Its best block, taken whole, would give 6.8e-2, and it keeps 11.1 % of its stage against the 11.5 % the bar asks of a third of an array. Four separate paybacks then divide by 78 [computed by `ad-0`, floats; every figure but the last is a what-if].
+10. **Corrections by the critics.** (i) `ae-cross` wrote that wave 9 "closed" the line-sum route. Too strong: it is as open as the transform (`af-1`). (ii) "The transform modulo 8 in 2N + o(N) gates" is off by N: 3N + o(N) by that route (`af-0`). (iii) The 8-gate circuit "that belongs to the transform and not to its class" works for every kernel, so every circuit tested tonight is still an identity of the whole class (`af-2`). (iv) `ad-7`'s guess on repeated wires is false (`af-2`). (v) "At least 2·log2 N flats for the matrix" fails once row and column signs are free: 2 flats at 4 points (`af-2`). (vi) Wave 8's "0.006 of a move per block" is a data-array rate diluted 22 to 29 times (`ad-0`).
+
+## 2. The bar of 1e-1 as an exchange rate
+
+Moves skipped per block, for each class of blocks of the three published units. All three are legal. Counts are exact; `ad-0` replayed the certificates' block lists and nobody has checked that work. The bar's rate is a float.
+
+| class of blocks | fourth result, 8.7625e-4 (m = 45) | second, 7.4745e-4 (m = 110) | first, 5.3992e-4 (m = 80) |
+|---|---|---|---|
+| data arrays, per block | 0.126 (480 moves on 3,810 blocks) | 0.093 | 0.103 |
+| data arrays, per block beyond the plain schedule's two | **0.168** | **0.114** | **0.129** |
+| helpers | 0 exactly (16,980 blocks) | 0 (304,535 blocks) | 0 |
+| scratch copies | −9 | −20 | −15.1 |
+| the whole unit | 0.0058 | 0.0085 | 0.0054 |
+| **the bar of 1e-1, per single-move block** | **0.626** | **0.778** | **0.722** |
+| the bar, per stage block of the data arrays' real size | 1.5 | 3.8 | not given |
+
+- **Inside the data arrays** [read: `ad-0`; arithmetic mine]. The stage blocks in which an array takes part in an exchange leave out 0.42 of a move per block; the catch-up blocks give back 0.75 per block. Net: 1 move kept per array, 0.2 per stage block.
+- **The bar, block by block** [argued by `ad-0`; numbers mine]. A block that stands for a share β of its array pays for itself at saving e when it leaves out at least 1 − β^(e/(1−e)) of those moves. For 1e-1: 7.4 % for half an array, 11.5 % for a third, 16.4 % for a fifth, 34 % for one move of 45. So the single-move rate 0.63 is the cheapest place only. At 1e-1 the data arrays' blocks would be charged 8.4 moves per array against the 1 they skip [computed, floats].
+- **Where the credit goes** [computed; exact in moves, the split in floats]. Of the 480 moves skipped in the fourth result, 75 % pay for the scratch copies, 18 % for the helpers' blocks, 7 % for the data arrays' own blocks (second result: 42, 45, 13).
+- **The cascade** [floats; what-ifs except the last]. Best stage block alone 6.82e-2; the exchange pays 4 of 5 back: 1.58e-2; cuts inside stages: 1.31e-2; helpers: 3.51e-3; copies: 8.76e-4, the legal unit. With helpers and copies removed entirely: 1.3e-2.
+- **Why the best block stops at 11.1 %: two integers** [argued; checked exhaustively at small size]. Giving n arrays one free move each means writing the matrix −1 as a product of shears, and n shears are never enough; n + 1 are. A stage holds n/2 of them, so an exchange takes at least 3 stages and a stage block keeps at most r/(3h) of its stage. With ports of at most a third of a stage [read: `x-6`, unreviewed] that is 1/9. The count n + 1 is a model, not a statement about the engine: it does not cover address maps that move the port.
+
+**Plain answer.** No. The best class of blocks of a legal unit, the data arrays' stage blocks, is at 0.11 to 0.17 of a move per block against 0.63 to 0.78 for a single-move block, and at 0.2 against 1.5 to 3.8 for blocks of its own size. The helpers are at exactly 0 and the copies are negative. The unit as a whole is a factor of 90 to 130 from the single-move rate [mine]. What is left is one integer: an exchange with two shears per free move instead of three (section 4, D).
+
+## 3. Line sums of the finite plane
+
+Least gates found with free coefficients, count (G), and gates per point.
+
+| points | (1/2)·log2 N | floor, one gate per line | additions only (largest coefficient 1) | through the transform (largest coefficient 2) | least found, rationals | modulo 2 only |
+|---|---|---|---|---|---|---|
+| 16 | 2 | 20 = 1.25 | 60 = 3.75 | 87 = 5.44 | **60 = 3.75** | 57 = 3.56 |
+| 64 | 3 | 72 = 1.13 | 504 = 7.88 | 475 = 7.42 | **475 = 7.42** | not built |
+| 256 | 4 | 272 = 1.06 | 4,080 = 15.94 | 2,484 = 9.70 | **2,484 = 9.70** | not built |
+
+The 16-point figures were replayed twice [computed, `ad-1`, `af-1`]. The 64-point figure is a composition of replayed circuits and the 256-point one is a formula nobody built [read; arithmetic mine]. "Through the transform" also uses one free scaling by 1/q.
+
+- **Growth** [computed + argued]. About (9/8)·log2 N + 1/2 gates per point through the transform with the night's best family, and about √N per point by additions. No construction grows more slowly than log N per point.
+- **Does a large coefficient help? Not in anything searched** [computed, weak]. At 16 points a random search over about 196,000 circuits, with the coefficients 2, 3, 4, 8, 3/2 and their inverses on offer, found 60 and never 59, and none of its 1,324 circuits of 60 gates uses a coefficient other than +1. It had no control; an exhaustive search at 59 is out of reach.
+- **Modulo 2 there is a circuit of 57 gates at 16 points**, and that wiring has no rational version for any coefficients [computed, `ad-1`, `af-1`]. Over the rationals the only relations among the line sums are "parallel classes have the same total" [computed: rank N at 16 and 64 points].
+- **Coefficient size in one restricted form** [argued + computed at 16, 64, 256 points, `ad-1`; no critic]. The lines that miss the origin are the shifts of one set, so their sums are one *cyclic pass*: every position receives a few shifted copies of the data. In a product of passes with two or three terms a rational coefficient of any size buys at most one factor of 2 per pass, where up to (1/2)·log2 N are needed. One longer pass does the work of L passes with a coefficient of about 2^(L/2), but only in the same way at half of the places at once. General circuits are not covered.
+
+**What this says about N·log log N.** The relation stands: T(N) ≤ R(N) + (√N + 1)·T(√N), so line sums in O(N) gates would still give a transform in N·log log N [argued; the identity behind it computed at 4 to 4,096 points by `af-1`; both counts]. But the reverse relation holds too, so the least exponent of log N is the same number for the line sums and for the transform [argued, `ad-1` and `af-1`; already written in wave 1]. This is a second coordinate system for the same question: nothing speaks for a linear count of the line sums and nothing against. A practical target: fewer than 133 gates at 64 points or 716 at 256 would be a better transform than the night's best; 16 points can decide nothing [mine]. One corollary is free: by the published result the line sums cost O(N·(log N)^(1 − 8.7625e-4)) in count (O) [argued, `af-1`].
+
+## 4. The ideas that are alive
+
+**A. The degree ladder.** (−1)^m = (1 − 2)^m, so the j-th binary digit of the transform at an output is a polynomial of degree j in that output's address bits [computed, k = 2 to 6, `ae-cross`]. Degree 2 now costs N + o(N) instead of 2N. Does degree 3? The known family breaks on one named monomial. Limit: these are the low digits; the middle digits hold 96 to 98 % of the coefficients [computed], so a yes is a second rung, not a growth law. *Next:* 1.
+
+**B. Three helpers per output.** With two helper classes per output the classes reach degree about log2 k and no more, which caps that route at N·log N / log log N [argued, waves 8 and 9]. That cap is a statement about graphs. With three helpers the matching condition is one that sparse systems of checks in coding theory satisfy [argued in five lines; the coding fact is recalled, not read]. It removes a ceiling and builds nothing. *Next:* 5.
+
+**C. A bus that keeps something.** A second cancelling gate is free once a bus exists, and on paper buses of length log2 n + 1 allow N·ln(log N), beyond the bar [argued, a ceiling only, `ad-2`]. The realised saving of a bus is 0 at 8 and 16 points in about 10 million structures searched [computed, modulo 2]. Two cases lie outside the argument and were not searched. *Next:* 2 and 7.
+
+**D. Two shears per free move.** The one integer that keeps the engine's best block under the bar (section 2). The count n + 1 does not cover address maps that move the port. First cases tried are negative [computed modulo primes, `ad-0`]. With two shears a stage block would leave out 1/6 of its stage against the 7.4 % asked of half an array: 0.21 as a what-if [floats, `ad-0`]. This is about 1e-1, not linear size. *Next:* 3.
+
+**E. A halving or a deep coefficient.** The transform is (N/2)·log2 N binary digits deep [argued]. The night's best family spends exactly one gate u ± 2v per unit, and no best circuit has a halving or a coefficient 4 [computed, `ad-7`]. The ladder of searches modulo 2, 4, 8 cannot see a halving. After `af-2`, no circuit of the night uses what only the transform has (applied twice it gives back N times the input). *Next:* 6 and 8.
+
+**F. The cost of a space.** Within a constant factor, the transform costs what one tall N × N/2 matrix costs: the table of all polynomials of degree at most k/2 [identities computed at k = 3, 5, 7; the constant factor is argued on two results taken on trust]. Nobody has asked for the cheapest matrix whose outputs range over the same tables. It may be empty: a cheap one does not by itself give a cheap transform [argued]. *Next:* 4.
+
+**G. Anomalies kept.** The number of flats needed for the sign pattern is known only between k and 2^(0.43·k) [argued; the upper end computed at 256 points]. Constants that are not rational: first experiment in wave 10.
+
+## 5. The walls, as lemmas
+
+All [argued] unless marked. Numbers continue `WAVE8-NOTE.md`. The names repay, step and depth are `ae-cross`'s.
+
+- **L1 + L2. Repay.** At full rank, a wire or call that serves two uses pays for the removal of the foreign part what the sharing saved. Waves 1 to 8: `d-0`, `d-2`, `d-3`, `d-4`, `d-6`, `d-7`, `e-3`, `e-6`, `e-7`, `e2-1`, `e2-2`, `j-manyatonce`, `g-0`, `g-2`, `g-5`, `g-6`, `g-7`, `h-2`, `n-2`, `p-2`, `p-5`, `u-4`, `u-8`, `s-cross`, `v-2`, `x-3`, `x-4`, `x-5`, `x-7`, `w-cross`, `z-2`, `ab-1`, `ab-2`, `ab-4`, `ab-5`, `ab-6`. Wave 9: `ad-2` (on every bus inspected the cancelling gate replaces exactly one ordinary gate; its cut inequality has no violation on 20,790 cuts of minimum 8-point circuits [computed, modulo 2]), `ad-1` (line sums), `ad-3` (nesting ties: half the size, needed twice), `ad-5`, `ad-0` (the ledger). Where it fails: at low rank (`ad-6`), where every helper pays in full.
+- **L16. Step** (was "bent"). A function of r flat indicators is constant on a flat that has only r bits fewer than the whole space, and the sign pattern is constant on no flat of dimension above k/2. So a step that reads one flat moves the target one unit. Waves 2 to 8: `j-cross`, `x-9`, `x-2`, `x-1`, `x-7`, `x-4`, `x-8`, `ab-3`, `ab-0`, `ab-7`, `ab-2`, `aa-cross`. Wave 9: `ad-3` (at least (k/2 − 1)/c exchanges built from c flats; exactly 2 at 16 points, and 4 with single flats, 3 with unions of three, at 64 [computed]), `ad-4` (at least k flats, not k/2; re-derived by `af-2`, cases machine-checked to 64 points), `ad-5` (at least k/2 stages controlled by flats for every relative of its family; the argument never uses which relative), `ad-0` (n + 1 shears), `ae-cross` (at least (N − √N)/2 reflections from the identity). The integers differ; calling them one wall is a reading. The number of flats does not price gates.
+- **L4. Depth** (was "height"). The transform's rows sit (N/2)·log2 N binary digits deep in the whole numbers, C(k, j) pieces at digit j; every known program pays about N per digit. Waves 1 to 8: `d-5`, `e-5`, `e2-0`, `j-failproof`, `g-1`, `g-3`, `g-4`, `g-5`, `h-1`, `n-0`, `p-5`, `p-8`, `u-6`, `s-cross`, `v-2`, `x-0`, `x-1`, `x-2`, `x-3`, `x-5`, `x-8`, `x-9`, `z-0`, `ab-2`, `ab-7`. Wave 9: `ad-7` (*one digit*: the 15-gate saving modulo 2 costs 16 modulo 4, 8 and up; none of 478 minimum circuits lifts [computed, exhaustive]), `ad-1` (short cyclic passes), `ae-cross`. Hatches: a halving; a coefficient 2^e.
+- **L20. Layers.** A program whose stages are convolutions or full layers needs k/2 stages at N/2 gates or more. `d-1`, `j-cross`, `ab-0`, `ab-3`. Wave 9: `ad-5` (every relative built from a one-to-one map of k/2 bits is priced at 2·√N·T(√N) by every route found: two layers paid in full, the map between them free, linear or not [identity computed at 64 and 256 points]), `ad-3` (exchanges: (7/8)·N·log2 N or more with its circuits).
+- **L5. One class of kernels.** Every saving tested is shared by all transforms built from a 2 × 2 block. `d-0`, `a-0`, `g-3`, `g-4`, `g-5`, `k-cross`, `h-6`, `p-0`, `r-2`, `x-1`, `x-3`, `ab-4`, `ab-5`. Wave 9: `ad-5` (relatives that are not the transform relabelled, same count at 64 points [computed]), `af-2` (the one claimed exception is not one).
+- **L19. Ports.** `x-6`, `z-1`, the floor note, `ab-8`, `ac-2`, `ab-1`, `ab-6`. Wave 9: `ad-0`: a stage block keeps at most r/(3h) of its stage.
+- **L21. Sharing in adding-only circuits.** `z-2`, `ab-0`, `ac-0`, `ab-4`. Wave 9: `ad-1` (line sums by additions: (N + √N)·(√N − 1)).
+- **L22. Two helpers** (new). Two helper classes per output carry degree about log2 k and no more. `aa-cross`, `ad-6`, `af-0`. Special to two (`ae-cross`).
+- **L17** stands. **L6, L7, L10, L12, L13, L14, L15, L18:** not touched in wave 9.
+
+Each wall fences one shape of program. None bounds a general circuit in count (G) or (O).
+
+## 6. The next eight experiments
+
+Running in the tenth wave as this is written, as ten briefs: number 6 is split in two, and one more tries constants that are not rational. The briefs were written before the critics landed, so they still carry corrections (ii) and (iii) of section 1 uncorrected.
+
+1. `ladder-degree-3`: least gates for degree at most d at 16 and 32 points, and degree 3 at 64 and 128 points with fewer classes than 56 and 108; is any step of the ladder below N?
+2. `first-bus-that-pays`: the two cases outside `ad-2`'s argument at 16 points modulo 2: one more gate between the two halves than the least, and one more wire carried across that a gate uses.
+3. `sector-and-port`: an exchange with two shears per free move, or the count n + 1 extended to address maps.
+4. `cheapest-generator`: the cheapest matrix whose outputs are the tables of the low-degree polynomials at 8, 16, 32 points, and the price of changing back to the usual coefficients.
+5. `three-helpers`: degree 4 with three helper classes per output and fewer than N classes, or the first bound against it.
+6. `deep-gates-and-halvings`: does one halving give the 8-point transform in 18 gates; the smallest matrix where a coefficient 4 or a halving saves a gate.
+7. `rank-dial`: subset sums cut down to inputs of size at most d at 16 points; at which rank does a bus stop paying?
+8. (silly) `best-bad-circuit`: look for circuits with more gates that fail for other kernels. Its first specimen fell to `af-2`, so the census of the records comes first.
+
+## 7. What this says about linear size
+
+Nothing found in nine waves gives linear size or moves the exponent: every price measured in this wave grows like log N per point (line sums, exchanges, the transform's relatives), and the one leading term that fell, N instead of 2N for degree 2, belongs to a smaller problem that was already linear [computed and argued, each in its own class]. Nothing forbids it either: every wall fences a class, none bounds a general circuit, and line sums in O(N) would still give N·log log N, though they are now argued to be the same question as the transform and not an easier one. What no wall covers is a short list of single searches (a halving or a deep coefficient, a bus at full rank that keeps something, three helpers per output, the cost of a space, constants that are not rational), and one fact the critics left standing says where to look: every circuit tested so far works for every 2 × 2 kernel, so none of those uses what only the transform has [computed for the circuits tested, which are not yet all the night's best; the conclusion is a reading].

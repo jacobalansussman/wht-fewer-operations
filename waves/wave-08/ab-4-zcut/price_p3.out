@@ -1,0 +1,5 @@
+(gates on L alone, least number of returns at the root, n(R)) : count over 2,748 circuits x 3 cuts
+   G0=3 returns=1 n(R)=4  [off-half group short by 1; gates touching R = 9] : 546
+   G0=3 returns=1 n(R)=5  [off-half group short by 1; gates touching R = 9] : 6
+   G0=4 returns=0 n(R)=4  [off-half group short by 0; gates touching R = 8] : 7692
+LIGHT label=ab4-price exit=0 time=55s waited=0s peak_rss_mb=10 peak_footprint_mb=6 lowest_cap_mb=1500 stopped=- start=05:22:57 cmd=python3 -B zprice.py 3 z8_p3_full.out

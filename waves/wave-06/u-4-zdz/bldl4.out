@@ -1,0 +1,10 @@
+N=4: factorisations tried 30, impossible (singular pivot) 8
+histogram {(non-zeros of L below the blocks, number of 2x2 blocks): how many}:
+    (2, 2) 4   bound on the transform: 8 gates
+    (3, 1) 4   bound on the transform: 8 gates
+    (4, 1) 4   bound on the transform: 10 gates
+    (5, 0) 4   bound on the transform: 10 gates
+    (5, 1) 6   bound on the transform: 12 gates
+least bound 2*nonzeros + 2*blocks = 8  (subset sums: 10 by non-zeros, 8 by Yates; textbook 8)
+   order (0, 1, 2, 3) cut (2, 1, 1) L entries (row, column, value): [(2, 0, '1'), (3, 1, '1'), (3, 2, '1')]
+LIGHT label=u4-bldl4 exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=02:09:04 cmd=python3 -B bldl.py 2

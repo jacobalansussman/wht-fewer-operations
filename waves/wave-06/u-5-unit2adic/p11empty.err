@@ -1,0 +1,2 @@
+LIGHT label=u5-p11-empty exit=124 time=603s waited=0s peak_rss_mb=269 peak_footprint_mb=266 lowest_cap_mb=1500 stopped=time>600s start=01:58:54 cmd=python3 -I -B unit2adic.py not-in-this-repository/wht-power-saving-r4-candidate/tools/certificate/gcert1-p11-pr193.json.gz empty
+done 124

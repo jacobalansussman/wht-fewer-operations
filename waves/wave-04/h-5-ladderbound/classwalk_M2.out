@@ -1,0 +1,7 @@
+START gates 20 M 2
+step 1 gates 20 neighbours 3 remove-2-add-1 tries so far 20314 time 10
+step 2 gates 20 neighbours 2 remove-2-add-1 tries so far 40628 time 21
+step 3 gates 20 neighbours 1 remove-2-add-1 tries so far 61032 time 31
+no unseen neighbour at step 4
+END best gates 20 programs visited 4 remove-2-add-1 tries 81436
+LIGHT label=h5-cw2 exit=0 time=42s waited=34s peak_rss_mb=12 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=23:52:27 cmd=python3 -B classwalk.py 2 380 1

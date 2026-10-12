@@ -1,0 +1,4 @@
+k 6 d 4 K = top5 dim K 6 | balanced pairs 32 irreducible balanced 4-sets 1936 | target rank N - dim K = 58 | classes wanted [20, 20, 20]
+  tries without an exact cover: 29
+  tries 60 best rank 57 classes 60 of N = 64 sizes [20, 20, 20] | good iff rank = 58
+LIGHT label=ag5-top5b exit=0 time=74s waited=0s peak_rss_mb=11 peak_footprint_mb=7 lowest_cap_mb=1500 stopped=- start=08:20:02 cmd=python3 -B balanced3.py 6 4 top5 12,12,12 60 5

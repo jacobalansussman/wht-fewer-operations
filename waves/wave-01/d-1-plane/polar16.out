@@ -1,0 +1,13 @@
+(a) D*D = D - 4 + 2*(circle sum) + 2*(ray sum) in Z[C_15]: True
+(b) angular frequency 0: kappa(s) for s = theta^0, theta^5, theta^10, as coefficients of 1,z,z^2,z^3: [(-3, 0, 0, 0), (1, 0, 0, 0), (1, 0, 0, 0)]
+(b) angular frequency 1: kappa(s) for s = theta^0, theta^5, theta^10, as coefficients of 1,z,z^2,z^3: [(2, 0, 0, 0), (0, 0, -2, -2), (2, 0, 2, 2)]
+(b) angular frequency 2: kappa(s) for s = theta^0, theta^5, theta^10, as coefficients of 1,z,z^2,z^3: [(2, 0, 0, 0), (2, 0, 2, 2), (0, 0, -2, -2)]
+(b) angular frequency 3: kappa(s) for s = theta^0, theta^5, theta^10, as coefficients of 1,z,z^2,z^3: [(2, 0, 0, 0), (2, 0, 2, 2), (0, 0, -2, -2)]
+(b) angular frequency 4: kappa(s) for s = theta^0, theta^5, theta^10, as coefficients of 1,z,z^2,z^3: [(2, 0, 0, 0), (0, 0, -2, -2), (2, 0, 2, 2)]
+    frequency 0 numeric values [-3.0, 1.0, 1.0] ; sum of squares 11.000000 (float cross-check only)
+    frequency 1 numeric values [2.0, 3.236068, -1.236068] ; sum of squares 16.000000 (float cross-check only)
+    frequency 2 numeric values [2.0, -1.236068, 3.236068] ; sum of squares 16.000000 (float cross-check only)
+    frequency 3 numeric values [2.0, -1.236068, 3.236068] ; sum of squares 16.000000 (float cross-check only)
+    frequency 4 numeric values [2.0, 3.236068, -1.236068] ; sum of squares 16.000000 (float cross-check only)
+(c) angular frequency 0 with the origin, 4x4: [[1, 5, 5, 5], [1, -3, 1, 1], [1, 1, 1, -3], [1, 1, -3, 1]]
+LIGHT label=d-1-polar exit=0 time=1s waited=0s peak_rss_mb=0 peak_footprint_mb=0 lowest_cap_mb=1500 stopped=- start=21:29:43 cmd=/usr/bin/python3 -I -B polar16.py

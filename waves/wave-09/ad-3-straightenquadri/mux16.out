@@ -1,0 +1,10 @@
+1. C[f after exchange] = Phi C[f] Phi for random f and random sets T unchanged by u: 60 trials, 0 failures ; f after = f + t (f(y)+f(y+u)): 0 failures
+2. halves after the exchange are mux(t; f0, f1) and mux(t; f1, f0): 0 failures
+3. one exchange (any T) changes the quadric only where quadric(y) != quadric(y+u), a hyperplane's worth of points: 0 failures
+4. FLOATS. Ailon's potential of the product so far (0 at the start, N log2 N = 64 for the transform):
+     after Phi2     potential  16.000   gained  16.000 bits with 14 gates : 1.143 bits per gate
+     after Phi1     potential  32.000   gained  16.000 bits with 14 gates : 1.143 bits per gate
+     after C_start  potential  41.735   gained   9.735 bits with 30 gates : 0.325 bits per gate
+     after Phi1     potential  48.000   gained   6.265 bits with 14 gates : 0.447 bits per gate
+     after Phi2     potential  64.000   gained  16.000 bits with 14 gates : 1.143 bits per gate
+     total 64 bits with 86 gates: 0.744 bits per gate (textbook: 64 bits with 64 gates, 1 bit per gate)

@@ -1,0 +1,422 @@
+## locked_run.sh: taskset -c 1 harness/build/harness time -t both -k 3 27 -r 9
+## pinned to processor 1 (siblings: 1,5)
+## transparent huge pages: always [madvise] never
+## before: 2026-10-11 14:56:33 UTC; uptime: 14:56:33 up 21:04,  0 user,  load average: 4.44, 4.42, 4.39
+## before: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839938 99.9   2   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839050 99.9   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839000 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334
+# harness time; 2026-10-11 14:56:33 UTC; host (removed); load 4.44,4.42,4.39
+# compiler: gcc 13.3.0
+# harness, variants.c and our plain C built with: gcc -O3 -march=native
+# naive.c built with: gcc -O3 -mavx2
+# FFHT commit fba727a3ff72c862260460631ae1cc8e3e44e861; its fht.o built by its own Makefile with: gcc -O3 -march=native -std=c99 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
+# pinned: yes; processor 1; its hyper-thread sibling 5; processors allowed 1
+# times: nanoseconds per point for one transform, wall clock; 9 repeats; a loop aims at 0.25 s and counts only from 0.20 s
+B type=float k=3 n=8 bytes=32 R=80 R_overflow=80 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.44,4.42,4.39
+T type=float k=3 variant=ffht min=1.9433 med=2.0137 max=2.2541 net_min=1.6943 net_med=1.7647 spread_med_pct=3.6 spread_max_pct=16.0 ns_per_transform_min=15.55 G=191046 R=80 loop_s_min=0.238 redone=0 ivcsw=8
+T type=float k=3 variant=t8 min=3.0729 med=3.1503 max=6.3854 net_min=2.8239 net_med=2.9013 spread_med_pct=2.5 spread_max_pct=107.8 ns_per_transform_min=24.58 G=128011 R=80 loop_s_min=0.252 redone=0 ivcsw=5
+T type=float k=3 variant=k8 min=3.3453 med=3.3993 max=7.4560 net_min=3.0963 net_med=3.1504 spread_med_pct=1.6 spread_max_pct=122.9 ns_per_transform_min=26.76 G=115749 R=80 loop_s_min=0.248 redone=0 ivcsw=7
+T type=float k=3 variant=k8raw min=3.3228 med=3.3607 max=7.8688 net_min=3.0738 net_med=3.1118 spread_med_pct=1.1 spread_max_pct=136.8 ns_per_transform_min=26.58 G=111954 R=80 loop_s_min=0.238 redone=0 ivcsw=7
+T type=float k=3 variant=naive min=3.6321 med=3.7843 max=7.8924 net_min=3.3831 net_med=3.5353 spread_med_pct=4.2 spread_max_pct=117.3 ns_per_transform_min=29.06 G=109347 R=80 loop_s_min=0.254 redone=0 ivcsw=4
+E type=float k=3 variant=empty min=0.2490 med=0.2520 max=0.3777 net_min=0.0000 net_med=0.0000 spread_med_pct=1.2 spread_max_pct=51.7 ns_per_transform_min=1.99 G=1593301 R=80 loop_s_min=0.254 redone=0 ivcsw=2
+A type=float k=3 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=34.2 allcpus_busy_pct=54.9 wall_s=15.7 load=4.41,4.42,4.39
+B type=float k=4 n=16 bytes=64 R=60 R_overflow=60 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.41,4.42,4.39
+T type=float k=4 variant=ffht min=1.1438 med=1.1499 max=1.3190 net_min=1.0170 net_med=1.0232 spread_med_pct=0.5 spread_max_pct=15.3 ns_per_transform_min=18.30 G=193148 R=60 loop_s_min=0.212 redone=0 ivcsw=6
+T type=float k=4 variant=t8 min=3.0323 med=3.0777 max=6.7260 net_min=2.9056 net_med=2.9510 spread_med_pct=1.5 spread_max_pct=121.8 ns_per_transform_min=48.52 G=93767 R=60 loop_s_min=0.252 redone=1 ivcsw=4
+T type=float k=4 variant=k8 min=3.3939 med=3.4340 max=7.1276 net_min=3.2672 net_med=3.3073 spread_med_pct=1.2 spread_max_pct=110.0 ns_per_transform_min=54.30 G=83473 R=60 loop_s_min=0.250 redone=1 ivcsw=3
+T type=float k=4 variant=k8raw min=3.1435 med=3.3134 max=7.3350 net_min=3.0168 net_med=3.1867 spread_med_pct=5.4 spread_max_pct=133.3 ns_per_transform_min=50.30 G=91170 R=60 loop_s_min=0.240 redone=1 ivcsw=5
+T type=float k=4 variant=naive min=3.5626 med=3.6786 max=7.5729 net_min=3.4359 net_med=3.5519 spread_med_pct=3.3 spread_max_pct=112.6 ns_per_transform_min=57.00 G=80554 R=60 loop_s_min=0.241 redone=1 ivcsw=0
+E type=float k=4 variant=empty min=0.1267 med=0.1300 max=0.1848 net_min=0.0000 net_med=0.0000 spread_med_pct=2.6 spread_max_pct=45.8 ns_per_transform_min=2.03 G=2002148 R=60 loop_s_min=0.219 redone=1 ivcsw=2
+A type=float k=4 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=36.1 allcpus_busy_pct=53.8 wall_s=14.5 load=4.32,4.40,4.38
+B type=float k=5 n=32 bytes=128 R=48 R_overflow=48 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.32,4.40,4.38
+T type=float k=5 variant=ffht min=0.6894 med=0.6967 max=0.7439 net_min=0.6238 net_med=0.6311 spread_med_pct=1.1 spread_max_pct=7.9 ns_per_transform_min=22.06 G=229700 R=48 loop_s_min=0.243 redone=0 ivcsw=2
+T type=float k=5 variant=t8 min=1.6682 med=1.6914 max=2.0489 net_min=1.6026 net_med=1.6258 spread_med_pct=1.4 spread_max_pct=22.8 ns_per_transform_min=53.38 G=97061 R=48 loop_s_min=0.249 redone=0 ivcsw=4
+T type=float k=5 variant=k8 min=1.7716 med=1.8021 max=2.0585 net_min=1.7060 net_med=1.7365 spread_med_pct=1.7 spread_max_pct=16.2 ns_per_transform_min=56.69 G=91114 R=48 loop_s_min=0.248 redone=0 ivcsw=5
+T type=float k=5 variant=k8raw min=1.7289 med=1.7548 max=2.1348 net_min=1.6633 net_med=1.6892 spread_med_pct=1.5 spread_max_pct=23.5 ns_per_transform_min=55.32 G=94548 R=48 loop_s_min=0.251 redone=0 ivcsw=2
+T type=float k=5 variant=naive min=3.4952 med=3.5315 max=3.7851 net_min=3.4296 net_med=3.4659 spread_med_pct=1.0 spread_max_pct=8.3 ns_per_transform_min=111.85 G=45097 R=48 loop_s_min=0.242 redone=0 ivcsw=5
+E type=float k=5 variant=empty min=0.0656 med=0.0670 max=0.0697 net_min=0.0000 net_med=0.0000 spread_med_pct=2.2 spread_max_pct=6.2 ns_per_transform_min=2.10 G=2511604 R=48 loop_s_min=0.253 redone=0 ivcsw=4
+A type=float k=5 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.0 allcpus_busy_pct=55.3 wall_s=13.9 load=4.32,4.39,4.38
+B type=float k=6 n=64 bytes=256 R=40 R_overflow=40 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.32,4.39,4.38
+T type=float k=6 variant=ffht min=0.5443 med=0.5500 max=0.6491 net_min=0.5103 net_med=0.5159 spread_med_pct=1.0 spread_max_pct=19.3 ns_per_transform_min=34.84 G=176709 R=40 loop_s_min=0.246 redone=0 ivcsw=3
+T type=float k=6 variant=t8 min=1.2922 med=1.3054 max=1.6284 net_min=1.2582 net_med=1.2714 spread_med_pct=1.0 spread_max_pct=26.0 ns_per_transform_min=82.70 G=75159 R=40 loop_s_min=0.249 redone=0 ivcsw=1
+T type=float k=6 variant=k8 min=1.5593 med=1.5752 max=2.0782 net_min=1.5253 net_med=1.5412 spread_med_pct=1.0 spread_max_pct=33.3 ns_per_transform_min=99.80 G=62345 R=40 loop_s_min=0.249 redone=0 ivcsw=5
+T type=float k=6 variant=k8raw min=1.5336 med=1.5496 max=1.9043 net_min=1.4995 net_med=1.5156 spread_med_pct=1.0 spread_max_pct=24.2 ns_per_transform_min=98.15 G=63228 R=40 loop_s_min=0.248 redone=0 ivcsw=8
+T type=float k=6 variant=naive min=3.4728 med=3.4907 max=7.0103 net_min=3.4388 net_med=3.4566 spread_med_pct=0.5 spread_max_pct=101.9 ns_per_transform_min=222.26 G=27416 R=40 loop_s_min=0.244 redone=0 ivcsw=3
+E type=float k=6 variant=empty min=0.0340 med=0.0342 max=0.0390 net_min=0.0000 net_med=0.0000 spread_med_pct=0.4 spread_max_pct=14.5 ns_per_transform_min=2.18 G=2907687 R=40 loop_s_min=0.253 redone=0 ivcsw=4
+A type=float k=6 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=10.4 allcpus_busy_pct=55.1 wall_s=14.2 load=4.32,4.39,4.38
+B type=float k=7 n=128 bytes=512 R=34 R_overflow=34 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.32,4.39,4.38
+T type=float k=7 variant=ffht min=0.4896 med=0.4931 max=0.5996 net_min=0.4712 net_med=0.4747 spread_med_pct=0.7 spread_max_pct=22.5 ns_per_transform_min=62.67 G=117152 R=34 loop_s_min=0.250 redone=0 ivcsw=2
+T type=float k=7 variant=t8 min=1.8452 med=1.8699 max=2.1979 net_min=1.8268 net_med=1.8515 spread_med_pct=1.3 spread_max_pct=19.1 ns_per_transform_min=236.18 G=30512 R=34 loop_s_min=0.245 redone=0 ivcsw=8
+T type=float k=7 variant=k8 min=2.0003 med=2.0314 max=2.1105 net_min=1.9819 net_med=2.0131 spread_med_pct=1.6 spread_max_pct=5.5 ns_per_transform_min=256.04 G=28696 R=34 loop_s_min=0.250 redone=0 ivcsw=4
+T type=float k=7 variant=k8raw min=1.9640 med=1.9932 max=2.0700 net_min=1.9456 net_med=1.9748 spread_med_pct=1.5 spread_max_pct=5.4 ns_per_transform_min=251.39 G=29391 R=34 loop_s_min=0.251 redone=0 ivcsw=3
+T type=float k=7 variant=naive min=4.0294 med=4.0584 max=4.3983 net_min=4.0110 net_med=4.0400 spread_med_pct=0.7 spread_max_pct=9.2 ns_per_transform_min=515.76 G=14434 R=34 loop_s_min=0.253 redone=0 ivcsw=5
+E type=float k=7 variant=empty min=0.0184 med=0.0186 max=0.0207 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=12.4 ns_per_transform_min=2.35 G=2898988 R=34 loop_s_min=0.232 redone=0 ivcsw=10
+A type=float k=7 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=5.8 allcpus_busy_pct=55.6 wall_s=13.7 load=4.34,4.39,4.38
+B type=float k=8 n=256 bytes=1024 R=30 R_overflow=30 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.31,4.39,4.38
+T type=float k=8 variant=ffht min=0.5023 med=0.5042 max=0.5745 net_min=0.4927 net_med=0.4946 spread_med_pct=0.4 spread_max_pct=14.4 ns_per_transform_min=128.60 G=64502 R=30 loop_s_min=0.249 redone=0 ivcsw=1
+T type=float k=8 variant=t8 min=0.9977 med=1.0134 max=1.1862 net_min=0.9880 net_med=1.0037 spread_med_pct=1.6 spread_max_pct=18.9 ns_per_transform_min=255.40 G=32626 R=30 loop_s_min=0.250 redone=0 ivcsw=7
+T type=float k=8 variant=k8 min=1.0640 med=1.0836 max=1.2529 net_min=1.0544 net_med=1.0740 spread_med_pct=1.8 spread_max_pct=17.7 ns_per_transform_min=272.39 G=25715 R=30 loop_s_min=0.210 redone=0 ivcsw=2
+T type=float k=8 variant=k8raw min=1.0228 med=1.0287 max=1.1032 net_min=1.0132 net_med=1.0190 spread_med_pct=0.6 spread_max_pct=7.9 ns_per_transform_min=261.85 G=31836 R=30 loop_s_min=0.250 redone=0 ivcsw=4
+T type=float k=8 variant=naive min=4.0485 med=4.1350 max=4.2027 net_min=4.0388 net_med=4.1253 spread_med_pct=2.1 spread_max_pct=3.8 ns_per_transform_min=1036.41 G=8049 R=30 loop_s_min=0.250 redone=0 ivcsw=3
+E type=float k=8 variant=empty min=0.0097 med=0.0099 max=0.0110 net_min=0.0000 net_med=0.0000 spread_med_pct=2.0 spread_max_pct=13.9 ns_per_transform_min=2.48 G=2985396 R=30 loop_s_min=0.222 redone=0 ivcsw=3
+A type=float k=8 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.9 allcpus_busy_pct=55.5 wall_s=13.4 load=4.26,4.37,4.37
+B type=float k=9 n=512 bytes=2048 R=26 R_overflow=26 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.26,4.37,4.37
+T type=float k=9 variant=ffht min=0.4931 med=0.5013 max=0.6261 net_min=0.4871 net_med=0.4953 spread_med_pct=1.7 spread_max_pct=27.0 ns_per_transform_min=252.48 G=38340 R=26 loop_s_min=0.252 redone=0 ivcsw=4
+T type=float k=9 variant=t8 min=0.9007 med=0.9092 max=1.3598 net_min=0.8947 net_med=0.9032 spread_med_pct=0.9 spread_max_pct=51.0 ns_per_transform_min=461.16 G=19955 R=26 loop_s_min=0.239 redone=0 ivcsw=4
+T type=float k=9 variant=k8 min=1.3458 med=1.3586 max=1.6055 net_min=1.3398 net_med=1.3526 spread_med_pct=1.0 spread_max_pct=19.3 ns_per_transform_min=689.03 G=14007 R=26 loop_s_min=0.251 redone=0 ivcsw=5
+T type=float k=9 variant=k8raw min=1.3091 med=1.3279 max=1.4648 net_min=1.3031 net_med=1.3219 spread_med_pct=1.4 spread_max_pct=11.9 ns_per_transform_min=670.24 G=14437 R=26 loop_s_min=0.252 redone=0 ivcsw=4
+T type=float k=9 variant=naive min=4.0465 med=4.2296 max=4.8107 net_min=4.0405 net_med=4.2236 spread_med_pct=4.5 spread_max_pct=18.9 ns_per_transform_min=2071.82 G=4641 R=26 loop_s_min=0.250 redone=0 ivcsw=3
+E type=float k=9 variant=empty min=0.0060 med=0.0061 max=0.0064 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=7.1 ns_per_transform_min=3.07 G=2683844 R=26 loop_s_min=0.214 redone=0 ivcsw=4
+A type=float k=9 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=10.9 allcpus_busy_pct=55.4 wall_s=13.7 load=4.27,4.37,4.37
+B type=float k=10 n=1024 bytes=4096 R=24 R_overflow=24 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.27,4.37,4.37
+T type=float k=10 variant=ffht min=0.5420 med=0.5439 max=0.5828 net_min=0.5375 net_med=0.5395 spread_med_pct=0.4 spread_max_pct=7.5 ns_per_transform_min=554.99 G=18878 R=24 loop_s_min=0.251 redone=0 ivcsw=4
+T type=float k=10 variant=t8 min=1.6705 med=1.7024 max=1.9255 net_min=1.6660 net_med=1.6979 spread_med_pct=1.9 spread_max_pct=15.3 ns_per_transform_min=1710.63 G=5915 R=24 loop_s_min=0.243 redone=0 ivcsw=5
+T type=float k=10 variant=k8 min=1.8769 med=1.8969 max=2.0643 net_min=1.8724 net_med=1.8924 spread_med_pct=1.1 spread_max_pct=10.0 ns_per_transform_min=1921.98 G=5421 R=24 loop_s_min=0.250 redone=0 ivcsw=4
+T type=float k=10 variant=k8raw min=1.8446 med=1.8602 max=3.0709 net_min=1.8401 net_med=1.8557 spread_med_pct=0.8 spread_max_pct=66.5 ns_per_transform_min=1888.85 G=5538 R=24 loop_s_min=0.251 redone=0 ivcsw=3
+T type=float k=10 variant=naive min=4.1137 med=4.2728 max=8.2196 net_min=4.1092 net_med=4.2683 spread_med_pct=3.9 spread_max_pct=99.8 ns_per_transform_min=4212.45 G=2471 R=24 loop_s_min=0.250 redone=0 ivcsw=6
+E type=float k=10 variant=empty min=0.0045 med=0.0046 max=0.0053 net_min=0.0000 net_med=0.0000 spread_med_pct=2.5 spread_max_pct=18.2 ns_per_transform_min=4.60 G=1996726 R=24 loop_s_min=0.221 redone=0 ivcsw=3
+A type=float k=10 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=13.1 allcpus_busy_pct=55.4 wall_s=14.1 load=4.28,4.37,4.37
+B type=float k=11 n=2048 bytes=8192 R=20 R_overflow=20 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.28,4.37,4.37
+T type=float k=11 variant=ffht min=0.5476 med=0.5545 max=0.5738 net_min=0.5436 net_med=0.5505 spread_med_pct=1.3 spread_max_pct=4.8 ns_per_transform_min=1121.42 G=11175 R=20 loop_s_min=0.251 redone=0 ivcsw=6
+T type=float k=11 variant=t8 min=0.9632 med=0.9686 max=1.0611 net_min=0.9592 net_med=0.9646 spread_med_pct=0.6 spread_max_pct=10.2 ns_per_transform_min=1972.71 G=6344 R=20 loop_s_min=0.250 redone=0 ivcsw=2
+T type=float k=11 variant=k8 min=1.0465 med=1.0506 max=1.0894 net_min=1.0425 net_med=1.0466 spread_med_pct=0.4 spread_max_pct=4.1 ns_per_transform_min=2143.31 G=5901 R=20 loop_s_min=0.253 redone=0 ivcsw=5
+T type=float k=11 variant=k8raw min=1.0074 med=1.0162 max=1.2735 net_min=1.0034 net_med=1.0122 spread_med_pct=0.9 spread_max_pct=26.4 ns_per_transform_min=2063.13 G=6051 R=20 loop_s_min=0.250 redone=0 ivcsw=5
+T type=float k=11 variant=naive min=4.1313 med=4.2367 max=5.4312 net_min=4.1273 net_med=4.2327 spread_med_pct=2.6 spread_max_pct=31.5 ns_per_transform_min=8460.96 G=1481 R=20 loop_s_min=0.251 redone=0 ivcsw=5
+E type=float k=11 variant=empty min=0.0040 med=0.0040 max=0.0044 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=9.4 ns_per_transform_min=8.20 G=1323648 R=20 loop_s_min=0.217 redone=0 ivcsw=1
+A type=float k=11 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=6.2 allcpus_busy_pct=55.4 wall_s=13.7 load=4.29,4.37,4.37
+B type=float k=12 n=4096 bytes=16384 R=20 R_overflow=20 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.29,4.37,4.37
+T type=float k=12 variant=ffht min=0.5713 med=0.5725 max=0.5891 net_min=0.5688 net_med=0.5700 spread_med_pct=0.2 spread_max_pct=3.1 ns_per_transform_min=2339.92 G=5368 R=20 loop_s_min=0.251 redone=0 ivcsw=8
+T type=float k=12 variant=t8 min=0.9219 med=0.9364 max=0.9830 net_min=0.9195 net_med=0.9340 spread_med_pct=1.6 spread_max_pct=6.6 ns_per_transform_min=3776.23 G=3337 R=20 loop_s_min=0.252 redone=0 ivcsw=7
+T type=float k=12 variant=k8 min=1.3695 med=1.3771 max=1.4051 net_min=1.3671 net_med=1.3746 spread_med_pct=0.6 spread_max_pct=2.6 ns_per_transform_min=5609.52 G=2221 R=20 loop_s_min=0.249 redone=0 ivcsw=3
+T type=float k=12 variant=k8raw min=1.3371 med=1.3429 max=1.4439 net_min=1.3347 net_med=1.3405 spread_med_pct=0.4 spread_max_pct=8.0 ns_per_transform_min=5476.77 G=2279 R=20 loop_s_min=0.250 redone=0 ivcsw=3
+T type=float k=12 variant=naive min=4.1886 med=4.2406 max=5.4290 net_min=4.1862 net_med=4.2381 spread_med_pct=1.2 spread_max_pct=29.6 ns_per_transform_min=17156.58 G=732 R=20 loop_s_min=0.251 redone=0 ivcsw=6
+E type=float k=12 variant=empty min=0.0024 med=0.0025 max=0.0029 net_min=0.0000 net_med=0.0000 spread_med_pct=2.9 spread_max_pct=21.3 ns_per_transform_min=9.94 G=1105642 R=20 loop_s_min=0.220 redone=0 ivcsw=3
+A type=float k=12 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=6.1 allcpus_busy_pct=55.4 wall_s=13.7 load=4.29,4.37,4.37
+B type=float k=13 n=8192 bytes=32768 R=18 R_overflow=18 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.29,4.37,4.37
+T type=float k=13 variant=ffht min=0.6367 med=0.6429 max=0.7520 net_min=0.6307 net_med=0.6368 spread_med_pct=1.0 spread_max_pct=18.1 ns_per_transform_min=5215.62 G=2691 R=18 loop_s_min=0.253 redone=0 ivcsw=6
+T type=float k=13 variant=t8 min=1.7638 med=1.7821 max=2.4656 net_min=1.7578 net_med=1.7761 spread_med_pct=1.0 spread_max_pct=39.8 ns_per_transform_min=14448.86 G=963 R=18 loop_s_min=0.250 redone=0 ivcsw=6
+T type=float k=13 variant=k8 min=1.9853 med=2.0062 max=2.0888 net_min=1.9793 net_med=2.0002 spread_med_pct=1.1 spread_max_pct=5.2 ns_per_transform_min=16263.32 G=855 R=18 loop_s_min=0.250 redone=0 ivcsw=5
+T type=float k=13 variant=k8raw min=1.9479 med=1.9735 max=2.0057 net_min=1.9419 net_med=1.9675 spread_med_pct=1.3 spread_max_pct=3.0 ns_per_transform_min=15957.58 G=856 R=18 loop_s_min=0.246 redone=0 ivcsw=5
+T type=float k=13 variant=naive min=4.1946 med=4.2663 max=5.2468 net_min=4.1886 net_med=4.2603 spread_med_pct=1.7 spread_max_pct=25.1 ns_per_transform_min=34362.09 G=402 R=18 loop_s_min=0.249 redone=0 ivcsw=5
+E type=float k=13 variant=empty min=0.0060 med=0.0067 max=0.0073 net_min=0.0000 net_med=0.0000 spread_med_pct=10.8 spread_max_pct=21.6 ns_per_transform_min=49.25 G=275737 R=18 loop_s_min=0.244 redone=0 ivcsw=7
+A type=float k=13 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=7.2 allcpus_busy_pct=55.3 wall_s=14.1 load=4.32,4.37,4.37
+B type=float k=14 n=16384 bytes=65536 R=16 R_overflow=16 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.32,4.37,4.37
+T type=float k=14 variant=ffht min=0.6764 med=0.6854 max=1.1595 net_min=0.6697 net_med=0.6787 spread_med_pct=1.3 spread_max_pct=71.4 ns_per_transform_min=11082.72 G=1416 R=16 loop_s_min=0.251 redone=0 ivcsw=6
+T type=float k=14 variant=t8 min=1.1304 med=1.1447 max=1.2893 net_min=1.1236 net_med=1.1380 spread_med_pct=1.3 spread_max_pct=14.1 ns_per_transform_min=18519.74 G=854 R=16 loop_s_min=0.253 redone=0 ivcsw=5
+T type=float k=14 variant=k8 min=1.2122 med=1.2240 max=1.8638 net_min=1.2054 net_med=1.2172 spread_med_pct=1.0 spread_max_pct=53.8 ns_per_transform_min=19860.56 G=795 R=16 loop_s_min=0.253 redone=0 ivcsw=5
+T type=float k=14 variant=k8raw min=1.1835 med=1.1947 max=1.8344 net_min=1.1768 net_med=1.1880 spread_med_pct=0.9 spread_max_pct=55.0 ns_per_transform_min=19391.03 G=813 R=16 loop_s_min=0.252 redone=0 ivcsw=6
+T type=float k=14 variant=naive min=4.4697 med=4.5665 max=7.8611 net_min=4.4629 net_med=4.5598 spread_med_pct=2.2 spread_max_pct=75.9 ns_per_transform_min=73231.48 G=216 R=16 loop_s_min=0.253 redone=0 ivcsw=8
+E type=float k=14 variant=empty min=0.0067 med=0.0074 max=0.0081 net_min=0.0000 net_med=0.0000 spread_med_pct=10.2 spread_max_pct=19.4 ns_per_transform_min=110.56 G=144792 R=16 loop_s_min=0.256 redone=0 ivcsw=3
+A type=float k=14 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=17.1 allcpus_busy_pct=55.1 wall_s=14.9 load=4.32,4.37,4.36
+B type=float k=15 n=32768 bytes=131072 R=16 R_overflow=16 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.30,4.36,4.36
+T type=float k=15 variant=ffht min=0.7350 med=0.7419 max=1.1531 net_min=0.7349 net_med=0.7419 spread_med_pct=0.9 spread_max_pct=56.9 ns_per_transform_min=24083.44 G=606 R=16 loop_s_min=0.234 redone=0 ivcsw=4
+T type=float k=15 variant=t8 min=1.0552 med=1.0609 max=1.3433 net_min=1.0551 net_med=1.0608 spread_med_pct=0.5 spread_max_pct=27.3 ns_per_transform_min=34575.78 G=453 R=16 loop_s_min=0.251 redone=0 ivcsw=4
+T type=float k=15 variant=k8 min=1.5117 med=1.5268 max=2.2594 net_min=1.5116 net_med=1.5267 spread_med_pct=1.0 spread_max_pct=49.5 ns_per_transform_min=49534.80 G=318 R=16 loop_s_min=0.252 redone=0 ivcsw=3
+T type=float k=15 variant=k8raw min=1.4752 med=1.4878 max=1.8861 net_min=1.4751 net_med=1.4877 spread_med_pct=0.9 spread_max_pct=27.9 ns_per_transform_min=48338.46 G=323 R=16 loop_s_min=0.250 redone=0 ivcsw=3
+T type=float k=15 variant=naive min=4.5221 med=4.6131 max=8.3917 net_min=4.5221 net_med=4.6130 spread_med_pct=2.0 spread_max_pct=85.6 ns_per_transform_min=148180.77 G=106 R=16 loop_s_min=0.251 redone=0 ivcsw=3
+E type=float k=15 variant=empty min=0.0001 med=0.0001 max=0.0001 net_min=0.0000 net_med=0.0000 spread_med_pct=1.7 spread_max_pct=33.1 ns_per_transform_min=1.88 G=1 R=127461083 loop_s_min=0.240 redone=0 ivcsw=6
+A type=float k=15 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=8.1 allcpus_busy_pct=55.6 wall_s=14.4 load=4.40,4.38,4.37
+B type=float k=16 n=65536 bytes=262144 R=14 R_overflow=14 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.40,4.38,4.37
+T type=float k=16 variant=ffht min=0.7844 med=0.7903 max=1.0701 net_min=0.7843 net_med=0.7903 spread_med_pct=0.8 spread_max_pct=36.4 ns_per_transform_min=51404.87 G=286 R=14 loop_s_min=0.206 redone=0 ivcsw=4
+T type=float k=16 variant=t8 min=1.9791 med=1.9890 max=2.3154 net_min=1.9791 net_med=1.9890 spread_med_pct=0.5 spread_max_pct=17.0 ns_per_transform_min=129703.00 G=133 R=14 loop_s_min=0.242 redone=0 ivcsw=4
+T type=float k=16 variant=k8 min=2.1673 med=2.2425 max=2.5769 net_min=2.1673 net_med=2.2424 spread_med_pct=3.5 spread_max_pct=18.9 ns_per_transform_min=142034.96 G=125 R=14 loop_s_min=0.249 redone=0 ivcsw=3
+T type=float k=16 variant=k8raw min=2.1573 med=2.1898 max=3.4293 net_min=2.1573 net_med=2.1897 spread_med_pct=1.5 spread_max_pct=59.0 ns_per_transform_min=141380.10 G=127 R=14 loop_s_min=0.251 redone=0 ivcsw=5
+T type=float k=16 variant=naive min=4.6458 med=4.7292 max=8.0839 net_min=4.6457 net_med=4.7292 spread_med_pct=1.8 spread_max_pct=74.0 ns_per_transform_min=304464.17 G=59 R=14 loop_s_min=0.251 redone=0 ivcsw=1
+E type=float k=16 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=3.4 spread_max_pct=31.6 ns_per_transform_min=1.89 G=1 R=127415544 loop_s_min=0.240 redone=0 ivcsw=6
+A type=float k=16 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=16.8 allcpus_busy_pct=55.5 wall_s=14.0 load=4.31,4.36,4.36
+B type=float k=17 n=131072 bytes=524288 R=14 R_overflow=14 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.31,4.36,4.36
+T type=float k=17 variant=ffht min=0.8295 med=0.8349 max=0.8767 net_min=0.8295 net_med=0.8349 spread_med_pct=0.6 spread_max_pct=5.7 ns_per_transform_min=108724.40 G=166 R=14 loop_s_min=0.253 redone=0 ivcsw=5
+T type=float k=17 variant=t8 min=1.2882 med=1.3036 max=1.4984 net_min=1.2882 net_med=1.3036 spread_med_pct=1.2 spread_max_pct=16.3 ns_per_transform_min=168846.92 G=107 R=14 loop_s_min=0.253 redone=0 ivcsw=4
+T type=float k=17 variant=k8 min=1.3897 med=1.4062 max=2.0855 net_min=1.3897 net_med=1.4062 spread_med_pct=1.2 spread_max_pct=50.1 ns_per_transform_min=182153.99 G=100 R=14 loop_s_min=0.255 redone=0 ivcsw=1
+T type=float k=17 variant=k8raw min=1.3453 med=1.3650 max=1.8066 net_min=1.3453 net_med=1.3650 spread_med_pct=1.5 spread_max_pct=34.3 ns_per_transform_min=176327.06 G=102 R=14 loop_s_min=0.252 redone=0 ivcsw=5
+T type=float k=17 variant=naive min=4.7390 med=4.7966 max=6.4085 net_min=4.7389 net_med=4.7966 spread_med_pct=1.2 spread_max_pct=35.2 ns_per_transform_min=621144.63 G=29 R=14 loop_s_min=0.252 redone=0 ivcsw=5
+E type=float k=17 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=10.3 ns_per_transform_min=1.89 G=1 R=127592749 loop_s_min=0.241 redone=0 ivcsw=3
+A type=float k=17 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=13.9 allcpus_busy_pct=55.2 wall_s=14.5 load=4.31,4.36,4.36
+B type=float k=18 n=262144 bytes=1048576 R=12 R_overflow=12 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.31,4.36,4.36
+T type=float k=18 variant=ffht min=0.8915 med=0.9090 max=1.2242 net_min=0.8915 net_med=0.9090 spread_med_pct=2.0 spread_max_pct=37.3 ns_per_transform_min=233692.69 G=89 R=12 loop_s_min=0.250 redone=0 ivcsw=5
+T type=float k=18 variant=t8 min=1.2476 med=1.2679 max=1.6125 net_min=1.2476 net_med=1.2679 spread_med_pct=1.6 spread_max_pct=29.2 ns_per_transform_min=327058.28 G=64 R=12 loop_s_min=0.251 redone=0 ivcsw=7
+T type=float k=18 variant=k8 min=1.7297 med=1.7827 max=1.9036 net_min=1.7297 net_med=1.7827 spread_med_pct=3.1 spread_max_pct=10.1 ns_per_transform_min=453433.17 G=47 R=12 loop_s_min=0.256 redone=0 ivcsw=3
+T type=float k=18 variant=k8raw min=1.6713 med=1.6986 max=1.9512 net_min=1.6713 net_med=1.6986 spread_med_pct=1.6 spread_max_pct=16.7 ns_per_transform_min=438112.18 G=41 R=12 loop_s_min=0.216 redone=0 ivcsw=3
+T type=float k=18 variant=naive min=5.2082 med=5.2786 max=6.1275 net_min=5.2081 net_med=5.2786 spread_med_pct=1.4 spread_max_pct=17.7 ns_per_transform_min=1365286.04 G=18 R=12 loop_s_min=0.212 redone=1 ivcsw=8
+E type=float k=18 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=3.2 spread_max_pct=5.5 ns_per_transform_min=1.88 G=1 R=121297927 loop_s_min=0.228 redone=0 ivcsw=1
+A type=float k=18 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=9.0 allcpus_busy_pct=55.5 wall_s=14.4 load=4.38,4.38,4.37
+B type=float k=19 n=524288 bytes=2097152 R=12 R_overflow=12 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.38,4.38,4.37
+T type=float k=19 variant=ffht min=1.0081 med=1.0296 max=1.2702 net_min=1.0081 net_med=1.0296 spread_med_pct=2.1 spread_max_pct=26.0 ns_per_transform_min=528524.63 G=45 R=12 loop_s_min=0.285 redone=1 ivcsw=6
+T type=float k=19 variant=t8 min=2.3936 med=2.4485 max=4.4810 net_min=2.3936 net_med=2.4485 spread_med_pct=2.3 spread_max_pct=87.2 ns_per_transform_min=1254914.05 G=16 R=12 loop_s_min=0.241 redone=1 ivcsw=10
+T type=float k=19 variant=k8 min=2.5848 med=2.6225 max=3.5485 net_min=2.5848 net_med=2.6225 spread_med_pct=1.5 spread_max_pct=37.3 ns_per_transform_min=1355168.85 G=17 R=12 loop_s_min=0.276 redone=1 ivcsw=5
+T type=float k=19 variant=k8raw min=2.5547 med=2.5813 max=2.9069 net_min=2.5547 net_med=2.5813 spread_med_pct=1.0 spread_max_pct=13.8 ns_per_transform_min=1339384.07 G=19 R=12 loop_s_min=0.305 redone=1 ivcsw=6
+T type=float k=19 variant=naive min=5.9396 med=6.0111 max=7.7188 net_min=5.9396 net_med=6.0111 spread_med_pct=1.2 spread_max_pct=30.0 ns_per_transform_min=3114069.67 G=6 R=12 loop_s_min=0.224 redone=0 ivcsw=3
+E type=float k=19 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.3 spread_max_pct=8.3 ns_per_transform_min=1.89 G=1 R=123956166 loop_s_min=0.234 redone=0 ivcsw=3
+A type=float k=19 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=13.5 allcpus_busy_pct=56.6 wall_s=16.0 load=4.43,4.39,4.37
+B type=float k=20 n=1048576 bytes=4194304 R=12 R_overflow=12 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.48,4.40,4.37
+T type=float k=20 variant=ffht min=1.1243 med=1.1398 max=1.3503 net_min=1.1243 net_med=1.1398 spread_med_pct=1.4 spread_max_pct=20.1 ns_per_transform_min=1178914.09 G=15 R=12 loop_s_min=0.212 redone=0 ivcsw=3
+T type=float k=20 variant=t8 min=1.7263 med=1.7508 max=1.8162 net_min=1.7263 net_med=1.7508 spread_med_pct=1.4 spread_max_pct=5.2 ns_per_transform_min=1810133.72 G=12 R=12 loop_s_min=0.261 redone=0 ivcsw=6
+T type=float k=20 variant=k8 min=1.8097 med=1.8795 max=2.2591 net_min=1.8097 net_med=1.8795 spread_med_pct=3.9 spread_max_pct=24.8 ns_per_transform_min=1897659.93 G=11 R=12 loop_s_min=0.250 redone=0 ivcsw=6
+T type=float k=20 variant=k8raw min=1.7865 med=1.8199 max=1.8594 net_min=1.7865 net_med=1.8199 spread_med_pct=1.9 spread_max_pct=4.1 ns_per_transform_min=1873247.54 G=12 R=12 loop_s_min=0.270 redone=0 ivcsw=3
+T type=float k=20 variant=naive min=6.1957 med=6.3699 max=7.6714 net_min=6.1957 net_med=6.3699 spread_med_pct=2.8 spread_max_pct=23.8 ns_per_transform_min=6496646.94 G=4 R=12 loop_s_min=0.312 redone=0 ivcsw=12
+E type=float k=20 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.9 spread_max_pct=4.9 ns_per_transform_min=1.89 G=1 R=127030649 loop_s_min=0.240 redone=0 ivcsw=6
+A type=float k=20 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=7.0 allcpus_busy_pct=55.7 wall_s=14.7 load=4.41,4.39,4.37
+B type=float k=21 n=2097152 bytes=8388608 R=10 R_overflow=10 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.45,4.40,4.37
+T type=float k=21 variant=ffht min=1.2871 med=1.3413 max=1.4365 net_min=1.2871 net_med=1.3413 spread_med_pct=4.2 spread_max_pct=11.6 ns_per_transform_min=2699334.23 G=9 R=10 loop_s_min=0.243 redone=0 ivcsw=8
+T type=float k=21 variant=t8 min=1.7166 med=1.7644 max=2.0551 net_min=1.7166 net_med=1.7644 spread_med_pct=2.8 spread_max_pct=19.7 ns_per_transform_min=3600031.03 G=6 R=10 loop_s_min=0.216 redone=0 ivcsw=3
+T type=float k=21 variant=k8 min=2.1557 med=2.2536 max=2.4951 net_min=2.1557 net_med=2.2536 spread_med_pct=4.5 spread_max_pct=15.7 ns_per_transform_min=4520827.80 G=5 R=10 loop_s_min=0.226 redone=0 ivcsw=4
+T type=float k=21 variant=k8raw min=2.1250 med=2.1839 max=2.3363 net_min=2.1250 net_med=2.1839 spread_med_pct=2.8 spread_max_pct=9.9 ns_per_transform_min=4456402.14 G=5 R=10 loop_s_min=0.223 redone=0 ivcsw=5
+T type=float k=21 variant=naive min=7.0059 med=7.2653 max=7.7596 net_min=7.0059 net_med=7.2653 spread_med_pct=3.7 spread_max_pct=10.8 ns_per_transform_min=14692346.70 G=2 R=10 loop_s_min=0.294 redone=0 ivcsw=7
+E type=float k=21 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.5 spread_max_pct=8.9 ns_per_transform_min=1.89 G=1 R=144779834 loop_s_min=0.274 redone=1 ivcsw=4
+A type=float k=21 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=4.8 allcpus_busy_pct=55.3 wall_s=14.4 load=4.38,4.38,4.37
+B type=float k=22 n=4194304 bytes=16777216 R=10 R_overflow=10 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.38,4.38,4.37
+T type=float k=22 variant=ffht min=1.6710 med=1.7268 max=1.9744 net_min=1.6710 net_med=1.7268 spread_med_pct=3.3 spread_max_pct=18.2 ns_per_transform_min=7008835.62 G=4 R=10 loop_s_min=0.280 redone=0 ivcsw=11
+T type=float k=22 variant=t8 min=3.1969 med=3.2912 max=4.3845 net_min=3.1969 net_med=3.2912 spread_med_pct=2.9 spread_max_pct=37.1 ns_per_transform_min=13408967.80 G=2 R=10 loop_s_min=0.268 redone=0 ivcsw=6
+T type=float k=22 variant=k8 min=3.3287 med=3.5033 max=4.4175 net_min=3.3287 net_med=3.5033 spread_med_pct=5.2 spread_max_pct=32.7 ns_per_transform_min=13961787.35 G=2 R=10 loop_s_min=0.279 redone=0 ivcsw=5
+T type=float k=22 variant=k8raw min=3.3671 med=3.5458 max=4.2555 net_min=3.3671 net_med=3.5458 spread_med_pct=5.3 spread_max_pct=26.4 ns_per_transform_min=14122708.25 G=2 R=10 loop_s_min=0.282 redone=0 ivcsw=8
+T type=float k=22 variant=naive min=8.0663 med=8.7391 max=10.4706 net_min=8.0663 net_med=8.7391 spread_med_pct=8.3 spread_max_pct=29.8 ns_per_transform_min=33832620.10 G=1 R=10 loop_s_min=0.338 redone=0 ivcsw=9
+E type=float k=22 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.3 spread_max_pct=29.7 ns_per_transform_min=1.89 G=1 R=112905405 loop_s_min=0.214 redone=0 ivcsw=6
+A type=float k=22 mycpu_busy_pct=100.0 mycpu_steal_pct=0.06 sibling_busy_pct=11.2 allcpus_busy_pct=55.4 wall_s=16.4 load=4.59,4.44,4.38
+B type=float k=23 n=8388608 bytes=33554432 R=10 R_overflow=10 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.59,4.44,4.38
+T type=float k=23 variant=ffht min=1.9013 med=1.9573 max=2.3411 net_min=1.9013 net_med=1.9573 spread_med_pct=2.9 spread_max_pct=23.1 ns_per_transform_min=15948880.45 G=2 R=10 loop_s_min=0.319 redone=0 ivcsw=9
+T type=float k=23 variant=t8 min=2.8471 med=2.9810 max=3.4465 net_min=2.8471 net_med=2.9810 spread_med_pct=4.7 spread_max_pct=21.1 ns_per_transform_min=23883053.10 G=1 R=10 loop_s_min=0.239 redone=0 ivcsw=10
+T type=float k=23 variant=k8 min=2.9701 med=3.0216 max=4.5247 net_min=2.9701 net_med=3.0216 spread_med_pct=1.7 spread_max_pct=52.3 ns_per_transform_min=24914652.50 G=1 R=10 loop_s_min=0.249 redone=0 ivcsw=8
+T type=float k=23 variant=k8raw min=2.9548 med=3.0183 max=4.7573 net_min=2.9548 net_med=3.0183 spread_med_pct=2.1 spread_max_pct=61.0 ns_per_transform_min=24786463.10 G=1 R=10 loop_s_min=0.248 redone=0 ivcsw=7
+T type=float k=23 variant=naive min=11.1456 med=11.6624 max=13.4833 net_min=11.1456 net_med=11.6624 spread_med_pct=4.6 spread_max_pct=21.0 ns_per_transform_min=93496284.20 G=1 R=10 loop_s_min=0.935 redone=0 ivcsw=15
+E type=float k=23 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.7 spread_max_pct=27.9 ns_per_transform_min=1.88 G=1 R=127448346 loop_s_min=0.240 redone=0 ivcsw=8
+A type=float k=23 mycpu_busy_pct=100.0 mycpu_steal_pct=0.05 sibling_busy_pct=10.9 allcpus_busy_pct=54.1 wall_s=21.9 load=4.55,4.44,4.39
+B type=float k=24 n=16777216 bytes=67108864 R=8 R_overflow=10 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.55,4.44,4.39
+T type=float k=24 variant=ffht min=1.8840 med=1.9956 max=2.4595 net_min=1.8840 net_med=1.9956 spread_med_pct=5.9 spread_max_pct=30.5 ns_per_transform_min=31607704.00 G=1 R=8 loop_s_min=0.253 redone=0 ivcsw=3
+T type=float k=24 variant=t8 min=2.7816 med=2.8683 max=3.1991 net_min=2.7816 net_med=2.8683 spread_med_pct=3.1 spread_max_pct=15.0 ns_per_transform_min=46666879.87 G=1 R=8 loop_s_min=0.373 redone=0 ivcsw=15
+T type=float k=24 variant=k8 min=3.1294 med=3.1905 max=3.4331 net_min=3.1294 net_med=3.1905 spread_med_pct=2.0 spread_max_pct=9.7 ns_per_transform_min=52502923.50 G=1 R=8 loop_s_min=0.420 redone=0 ivcsw=9
+T type=float k=24 variant=k8raw min=3.0783 med=3.1655 max=3.5083 net_min=3.0783 net_med=3.1655 spread_med_pct=2.8 spread_max_pct=14.0 ns_per_transform_min=51644626.75 G=1 R=8 loop_s_min=0.413 redone=0 ivcsw=15
+T type=float k=24 variant=naive min=12.4040 med=12.7246 max=13.9482 net_min=12.4040 net_med=12.7246 spread_med_pct=2.6 spread_max_pct=12.4 ns_per_transform_min=208104772.00 G=1 R=8 loop_s_min=1.665 redone=0 ivcsw=38
+E type=float k=24 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=24.0 ns_per_transform_min=1.88 G=1 R=118507564 loop_s_min=0.223 redone=0 ivcsw=11
+A type=float k=24 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=11.1 allcpus_busy_pct=56.4 wall_s=32.1 load=4.68,4.49,4.40
+B type=float k=25 n=33554432 bytes=134217728 R=4 R_overflow=8 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.68,4.49,4.40
+T type=float k=25 variant=ffht min=2.0797 med=2.1361 max=2.2105 net_min=2.0797 net_med=2.1361 spread_med_pct=2.7 spread_max_pct=6.3 ns_per_transform_min=69784683.00 G=1 R=4 loop_s_min=0.279 redone=0 ivcsw=2
+T type=float k=25 variant=t8 min=4.1122 med=4.1714 max=4.3254 net_min=4.1122 net_med=4.1714 spread_med_pct=1.4 spread_max_pct=5.2 ns_per_transform_min=137981602.25 G=1 R=4 loop_s_min=0.552 redone=0 ivcsw=8
+T type=float k=25 variant=k8 min=4.3154 med=4.3949 max=4.5515 net_min=4.3154 net_med=4.3949 spread_med_pct=1.8 spread_max_pct=5.5 ns_per_transform_min=144799306.25 G=1 R=4 loop_s_min=0.579 redone=0 ivcsw=18
+T type=float k=25 variant=k8raw min=4.2582 med=4.3717 max=5.2710 net_min=4.2582 net_med=4.3717 spread_med_pct=2.7 spread_max_pct=23.8 ns_per_transform_min=142882926.50 G=1 R=4 loop_s_min=0.572 redone=0 ivcsw=15
+T type=float k=25 variant=naive min=12.9761 med=13.1497 max=14.8331 net_min=12.9761 net_med=13.1497 spread_med_pct=1.3 spread_max_pct=14.3 ns_per_transform_min=435406076.25 G=1 R=4 loop_s_min=1.742 redone=0 ivcsw=46
+E type=float k=25 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.5 spread_max_pct=3.2 ns_per_transform_min=1.89 G=1 R=122594874 loop_s_min=0.231 redone=0 ivcsw=6
+A type=float k=25 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=8.5 allcpus_busy_pct=54.4 wall_s=38.1 load=4.47,4.46,4.40
+B type=float k=26 n=67108864 bytes=268435456 R=2 R_overflow=8 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.47,4.46,4.40
+T type=float k=26 variant=ffht min=2.3546 med=2.3720 max=2.7282 net_min=2.3546 net_med=2.3720 spread_med_pct=0.7 spread_max_pct=15.9 ns_per_transform_min=158014387.50 G=1 R=2 loop_s_min=0.316 redone=0 ivcsw=9
+T type=float k=26 variant=t8 min=3.4161 med=3.4635 max=3.6939 net_min=3.4161 net_med=3.4635 spread_med_pct=1.4 spread_max_pct=8.1 ns_per_transform_min=229252966.99 G=1 R=2 loop_s_min=0.459 redone=0 ivcsw=13
+T type=float k=26 variant=k8 min=3.4898 med=3.5884 max=4.0323 net_min=3.4898 net_med=3.5884 spread_med_pct=2.8 spread_max_pct=15.5 ns_per_transform_min=234197808.50 G=1 R=2 loop_s_min=0.468 redone=0 ivcsw=12
+T type=float k=26 variant=k8raw min=3.4404 med=3.5104 max=3.9383 net_min=3.4404 net_med=3.5104 spread_med_pct=2.0 spread_max_pct=14.5 ns_per_transform_min=230881850.50 G=1 R=2 loop_s_min=0.462 redone=0 ivcsw=8
+T type=float k=26 variant=naive min=13.3828 med=13.6028 max=17.3743 net_min=13.3828 net_med=13.6028 spread_med_pct=1.6 spread_max_pct=29.8 ns_per_transform_min=898101732.00 G=1 R=2 loop_s_min=1.796 redone=0 ivcsw=47
+E type=float k=26 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.3 spread_max_pct=24.9 ns_per_transform_min=1.89 G=1 R=125876796 loop_s_min=0.238 redone=0 ivcsw=4
+A type=float k=26 mycpu_busy_pct=100.0 mycpu_steal_pct=0.05 sibling_busy_pct=7.3 allcpus_busy_pct=55.3 wall_s=37.8 load=4.45,4.46,4.40
+B type=float k=27 n=134217728 bytes=536870912 R=1 R_overflow=8 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.49,4.47,4.40
+T type=float k=27 variant=ffht min=2.3386 med=2.3757 max=2.4705 net_min=2.3386 net_med=2.3757 spread_med_pct=1.6 spread_max_pct=5.6 ns_per_transform_min=313886211.01 G=1 R=1 loop_s_min=0.314 redone=0 ivcsw=14
+T type=float k=27 variant=t8 min=3.1977 med=3.2400 max=3.4007 net_min=3.1977 net_med=3.2400 spread_med_pct=1.3 spread_max_pct=6.3 ns_per_transform_min=429194521.00 G=1 R=1 loop_s_min=0.429 redone=0 ivcsw=19
+T type=float k=27 variant=k8 min=3.5548 med=3.6176 max=3.9384 net_min=3.5548 net_med=3.6176 spread_med_pct=1.8 spread_max_pct=10.8 ns_per_transform_min=477123060.00 G=1 R=1 loop_s_min=0.477 redone=0 ivcsw=10
+T type=float k=27 variant=k8raw min=3.4783 med=3.5301 max=3.9307 net_min=3.4783 net_med=3.5301 spread_med_pct=1.5 spread_max_pct=13.0 ns_per_transform_min=466852747.01 G=1 R=1 loop_s_min=0.467 redone=0 ivcsw=10
+T type=float k=27 variant=naive min=13.7329 med=13.9126 max=14.2521 net_min=13.7329 net_med=13.9126 spread_med_pct=1.3 spread_max_pct=3.8 ns_per_transform_min=1843195121.01 G=1 R=1 loop_s_min=1.843 redone=0 ivcsw=43
+E type=float k=27 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.8 spread_max_pct=14.0 ns_per_transform_min=1.89 G=1 R=112081639 loop_s_min=0.212 redone=0 ivcsw=6
+A type=float k=27 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=5.8 allcpus_busy_pct=54.9 wall_s=39.6 load=4.37,4.44,4.39
+B type=double k=3 n=8 bytes=64 R=666 R_overflow=666 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.37,4.44,4.39
+T type=double k=3 variant=ffht min=1.6425 med=1.6520 max=1.7227 net_min=1.4049 net_med=1.4145 spread_med_pct=0.6 spread_max_pct=4.9 ns_per_transform_min=13.14 G=28591 R=666 loop_s_min=0.250 redone=0 ivcsw=11
+T type=double k=3 variant=t8 min=3.3233 med=3.3414 max=3.7370 net_min=3.0858 net_med=3.1038 spread_med_pct=0.5 spread_max_pct=12.4 ns_per_transform_min=26.59 G=13704 R=666 loop_s_min=0.243 redone=0 ivcsw=5
+T type=double k=3 variant=k8 min=3.3100 med=3.3805 max=3.8884 net_min=3.0725 net_med=3.1430 spread_med_pct=2.1 spread_max_pct=17.5 ns_per_transform_min=26.48 G=14149 R=666 loop_s_min=0.250 redone=0 ivcsw=5
+T type=double k=3 variant=k8raw min=3.1879 med=3.2651 max=3.5175 net_min=2.9503 net_med=3.0275 spread_med_pct=2.4 spread_max_pct=10.3 ns_per_transform_min=25.50 G=14681 R=666 loop_s_min=0.249 redone=0 ivcsw=4
+T type=double k=3 variant=naive min=3.8184 med=3.8707 max=3.9932 net_min=3.5808 net_med=3.6331 spread_med_pct=1.4 spread_max_pct=4.6 ns_per_transform_min=30.55 G=12328 R=666 loop_s_min=0.251 redone=0 ivcsw=7
+E type=double k=3 variant=empty min=0.2376 med=0.2396 max=0.2508 net_min=0.0000 net_med=0.0000 spread_med_pct=0.9 spread_max_pct=5.6 ns_per_transform_min=1.90 G=199392 R=666 loop_s_min=0.252 redone=0 ivcsw=5
+A type=double k=3 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=4.0 allcpus_busy_pct=55.5 wall_s=13.8 load=4.36,4.43,4.39
+B type=double k=4 n=16 bytes=128 R=500 R_overflow=500 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.36,4.43,4.39
+T type=double k=4 variant=ffht min=1.0656 med=1.0668 max=1.1669 net_min=0.9465 net_med=0.9478 spread_med_pct=0.1 spread_max_pct=9.5 ns_per_transform_min=17.05 G=28601 R=500 loop_s_min=0.244 redone=0 ivcsw=7
+T type=double k=4 variant=t8 min=2.6575 med=2.6869 max=3.1629 net_min=2.5384 net_med=2.5678 spread_med_pct=1.1 spread_max_pct=19.0 ns_per_transform_min=42.52 G=11732 R=500 loop_s_min=0.249 redone=0 ivcsw=4
+T type=double k=4 variant=k8 min=2.8433 med=2.8692 max=3.5819 net_min=2.7242 net_med=2.7501 spread_med_pct=0.9 spread_max_pct=26.0 ns_per_transform_min=45.49 G=10943 R=500 loop_s_min=0.249 redone=0 ivcsw=7
+T type=double k=4 variant=k8raw min=2.7860 med=2.8417 max=3.0821 net_min=2.6670 net_med=2.7227 spread_med_pct=2.0 spread_max_pct=10.6 ns_per_transform_min=44.58 G=11404 R=500 loop_s_min=0.254 redone=0 ivcsw=8
+T type=double k=4 variant=naive min=3.6158 med=3.6319 max=3.8426 net_min=3.4968 net_med=3.5129 spread_med_pct=0.4 spread_max_pct=6.3 ns_per_transform_min=57.85 G=8755 R=500 loop_s_min=0.253 redone=0 ivcsw=2
+E type=double k=4 variant=empty min=0.1191 med=0.1204 max=0.1214 net_min=0.0000 net_med=0.0000 spread_med_pct=1.1 spread_max_pct=2.0 ns_per_transform_min=1.90 G=264835 R=500 loop_s_min=0.252 redone=0 ivcsw=4
+A type=double k=4 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=5.1 allcpus_busy_pct=55.4 wall_s=13.9 load=4.38,4.44,4.39
+B type=double k=5 n=32 bytes=256 R=400 R_overflow=400 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.35,4.43,4.39
+T type=double k=5 variant=ffht min=0.7461 med=0.7510 max=0.8359 net_min=0.6864 net_med=0.6913 spread_med_pct=0.7 spread_max_pct=12.0 ns_per_transform_min=23.87 G=26107 R=400 loop_s_min=0.249 redone=0 ivcsw=1
+T type=double k=5 variant=t8 min=2.0114 med=2.0379 max=2.3834 net_min=1.9517 net_med=1.9782 spread_med_pct=1.3 spread_max_pct=18.5 ns_per_transform_min=64.36 G=9742 R=400 loop_s_min=0.251 redone=0 ivcsw=8
+T type=double k=5 variant=k8 min=2.2713 med=2.3011 max=2.8619 net_min=2.2116 net_med=2.2414 spread_med_pct=1.3 spread_max_pct=26.0 ns_per_transform_min=72.68 G=8514 R=400 loop_s_min=0.248 redone=0 ivcsw=8
+T type=double k=5 variant=k8raw min=2.2229 med=2.2450 max=2.7448 net_min=2.1632 net_med=2.1853 spread_med_pct=1.0 spread_max_pct=23.5 ns_per_transform_min=71.13 G=8658 R=400 loop_s_min=0.246 redone=0 ivcsw=5
+T type=double k=5 variant=naive min=3.5640 med=3.5892 max=3.7083 net_min=3.5043 net_med=3.5295 spread_med_pct=0.7 spread_max_pct=4.0 ns_per_transform_min=114.05 G=5490 R=400 loop_s_min=0.250 redone=0 ivcsw=7
+E type=double k=5 variant=empty min=0.0597 med=0.0600 max=0.0643 net_min=0.0000 net_med=0.0000 spread_med_pct=0.5 spread_max_pct=7.8 ns_per_transform_min=1.91 G=325325 R=400 loop_s_min=0.249 redone=0 ivcsw=7
+A type=double k=5 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.1 allcpus_busy_pct=55.4 wall_s=13.8 load=4.51,4.46,4.40
+B type=double k=6 n=64 bytes=512 R=332 R_overflow=332 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.51,4.46,4.40
+T type=double k=6 variant=ffht min=0.7341 med=0.7360 max=0.7791 net_min=0.7038 net_med=0.7057 spread_med_pct=0.3 spread_max_pct=6.1 ns_per_transform_min=46.98 G=16039 R=332 loop_s_min=0.250 redone=0 ivcsw=8
+T type=double k=6 variant=t8 min=2.3750 med=2.3980 max=2.4926 net_min=2.3447 net_med=2.3678 spread_med_pct=1.0 spread_max_pct=5.0 ns_per_transform_min=152.00 G=4871 R=332 loop_s_min=0.246 redone=0 ivcsw=10
+T type=double k=6 variant=k8 min=1.7243 med=1.7548 max=1.8743 net_min=1.6940 net_med=1.7246 spread_med_pct=1.8 spread_max_pct=8.7 ns_per_transform_min=110.35 G=6800 R=332 loop_s_min=0.249 redone=0 ivcsw=9
+T type=double k=6 variant=k8raw min=1.6095 med=1.6445 max=1.9200 net_min=1.5792 net_med=1.6143 spread_med_pct=2.2 spread_max_pct=19.3 ns_per_transform_min=103.01 G=7304 R=332 loop_s_min=0.250 redone=0 ivcsw=9
+T type=double k=6 variant=naive min=3.7494 med=3.8705 max=4.6132 net_min=3.7191 net_med=3.8402 spread_med_pct=3.2 spread_max_pct=23.0 ns_per_transform_min=239.96 G=2890 R=332 loop_s_min=0.230 redone=0 ivcsw=8
+E type=double k=6 variant=empty min=0.0303 med=0.0304 max=0.0313 net_min=0.0000 net_med=0.0000 spread_med_pct=0.5 spread_max_pct=3.2 ns_per_transform_min=1.94 G=348503 R=332 loop_s_min=0.224 redone=0 ivcsw=5
+A type=double k=6 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=6.2 allcpus_busy_pct=55.7 wall_s=13.5 load=4.47,4.46,4.40
+B type=double k=7 n=128 bytes=1024 R=284 R_overflow=284 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.47,4.46,4.40
+T type=double k=7 variant=ffht min=0.7200 med=0.7258 max=0.8140 net_min=0.7046 net_med=0.7105 spread_med_pct=0.8 spread_max_pct=13.0 ns_per_transform_min=92.16 G=9567 R=284 loop_s_min=0.250 redone=0 ivcsw=3
+T type=double k=7 variant=t8 min=1.6413 med=1.6683 max=2.3234 net_min=1.6259 net_med=1.6529 spread_med_pct=1.6 spread_max_pct=41.6 ns_per_transform_min=210.09 G=4217 R=284 loop_s_min=0.252 redone=0 ivcsw=7
+T type=double k=7 variant=k8 min=1.7514 med=1.7731 max=1.9886 net_min=1.7361 net_med=1.7577 spread_med_pct=1.2 spread_max_pct=13.5 ns_per_transform_min=224.18 G=3929 R=284 loop_s_min=0.250 redone=0 ivcsw=7
+T type=double k=7 variant=k8raw min=1.6678 med=1.7010 max=1.9776 net_min=1.6525 net_med=1.6856 spread_med_pct=2.0 spread_max_pct=18.6 ns_per_transform_min=213.48 G=4133 R=284 loop_s_min=0.251 redone=0 ivcsw=6
+T type=double k=7 variant=naive min=4.1242 med=4.2584 max=5.0298 net_min=4.1088 net_med=4.2430 spread_med_pct=3.3 spread_max_pct=22.0 ns_per_transform_min=527.89 G=1667 R=284 loop_s_min=0.250 redone=0 ivcsw=10
+E type=double k=7 variant=empty min=0.0154 med=0.0156 max=0.0197 net_min=0.0000 net_med=0.0000 spread_med_pct=1.8 spread_max_pct=28.5 ns_per_transform_min=1.97 G=451464 R=284 loop_s_min=0.252 redone=0 ivcsw=5
+A type=double k=7 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=7.5 allcpus_busy_pct=55.3 wall_s=14.3 load=4.51,4.47,4.41
+B type=double k=8 n=256 bytes=2048 R=250 R_overflow=250 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.51,4.47,4.41
+T type=double k=8 variant=ffht min=0.7439 med=0.7517 max=0.8628 net_min=0.7359 net_med=0.7438 spread_med_pct=1.1 spread_max_pct=16.0 ns_per_transform_min=190.43 G=5255 R=250 loop_s_min=0.250 redone=0 ivcsw=7
+T type=double k=8 variant=t8 min=1.5060 med=1.5236 max=2.4445 net_min=1.4980 net_med=1.5156 spread_med_pct=1.2 spread_max_pct=62.3 ns_per_transform_min=385.53 G=2539 R=250 loop_s_min=0.245 redone=0 ivcsw=7
+T type=double k=8 variant=k8 min=1.6591 med=1.6780 max=2.3527 net_min=1.6511 net_med=1.6700 spread_med_pct=1.1 spread_max_pct=41.8 ns_per_transform_min=424.73 G=2369 R=250 loop_s_min=0.252 redone=0 ivcsw=3
+T type=double k=8 variant=k8raw min=1.5843 med=1.5983 max=1.9292 net_min=1.5763 net_med=1.5903 spread_med_pct=0.9 spread_max_pct=21.8 ns_per_transform_min=405.57 G=2485 R=250 loop_s_min=0.252 redone=0 ivcsw=9
+T type=double k=8 variant=naive min=4.1984 med=4.3011 max=6.4655 net_min=4.1904 net_med=4.2931 spread_med_pct=2.4 spread_max_pct=54.0 ns_per_transform_min=1074.78 G=943 R=250 loop_s_min=0.253 redone=0 ivcsw=8
+E type=double k=8 variant=empty min=0.0080 med=0.0080 max=0.0104 net_min=0.0000 net_med=0.0000 spread_med_pct=0.9 spread_max_pct=30.4 ns_per_transform_min=2.04 G=484638 R=250 loop_s_min=0.247 redone=0 ivcsw=6
+A type=double k=8 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=13.0 allcpus_busy_pct=55.3 wall_s=14.3 load=4.46,4.46,4.41
+B type=double k=9 n=512 bytes=4096 R=222 R_overflow=222 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.46,4.46,4.41
+T type=double k=9 variant=ffht min=0.8476 med=0.8614 max=1.3925 net_min=0.8433 net_med=0.8571 spread_med_pct=1.6 spread_max_pct=64.3 ns_per_transform_min=433.97 G=2114 R=222 loop_s_min=0.204 redone=0 ivcsw=5
+T type=double k=9 variant=t8 min=2.3083 med=2.3304 max=2.4266 net_min=2.3040 net_med=2.3261 spread_med_pct=1.0 spread_max_pct=5.1 ns_per_transform_min=1181.87 G=939 R=222 loop_s_min=0.246 redone=0 ivcsw=8
+T type=double k=9 variant=k8 min=1.4724 med=1.5251 max=2.1101 net_min=1.4681 net_med=1.5208 spread_med_pct=3.6 spread_max_pct=43.3 ns_per_transform_min=753.86 G=1485 R=222 loop_s_min=0.249 redone=0 ivcsw=2
+T type=double k=9 variant=k8raw min=1.4103 med=1.4215 max=1.6596 net_min=1.4060 net_med=1.4172 spread_med_pct=0.8 spread_max_pct=17.7 ns_per_transform_min=722.06 G=1562 R=222 loop_s_min=0.250 redone=0 ivcsw=7
+T type=double k=9 variant=naive min=4.2494 med=4.2944 max=7.6966 net_min=4.2451 net_med=4.2901 spread_med_pct=1.1 spread_max_pct=81.1 ns_per_transform_min=2175.68 G=514 R=222 loop_s_min=0.248 redone=0 ivcsw=7
+E type=double k=9 variant=empty min=0.0043 med=0.0043 max=0.0058 net_min=0.0000 net_med=0.0000 spread_med_pct=0.8 spread_max_pct=34.1 ns_per_transform_min=2.20 G=483388 R=222 loop_s_min=0.236 redone=0 ivcsw=9
+A type=double k=9 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=15.5 allcpus_busy_pct=55.4 wall_s=13.8 load=4.43,4.45,4.40
+B type=double k=10 n=1024 bytes=8192 R=200 R_overflow=200 reset=timed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.43,4.45,4.40
+T type=double k=10 variant=ffht min=0.8659 med=0.8723 max=1.0439 net_min=0.8634 net_med=0.8698 spread_med_pct=0.7 spread_max_pct=20.6 ns_per_transform_min=886.65 G=1411 R=200 loop_s_min=0.250 redone=0 ivcsw=5
+T type=double k=10 variant=t8 min=1.6041 med=1.6247 max=1.9185 net_min=1.6016 net_med=1.6223 spread_med_pct=1.3 spread_max_pct=19.6 ns_per_transform_min=1642.59 G=765 R=200 loop_s_min=0.251 redone=0 ivcsw=6
+T type=double k=10 variant=k8 min=1.7320 med=1.7438 max=2.8437 net_min=1.7296 net_med=1.7413 spread_med_pct=0.7 spread_max_pct=64.2 ns_per_transform_min=1773.60 G=682 R=200 loop_s_min=0.242 redone=0 ivcsw=3
+T type=double k=10 variant=k8raw min=1.6482 med=1.6670 max=2.6496 net_min=1.6458 net_med=1.6646 spread_med_pct=1.1 spread_max_pct=60.8 ns_per_transform_min=1687.80 G=744 R=200 loop_s_min=0.251 redone=0 ivcsw=9
+T type=double k=10 variant=naive min=4.4030 med=4.4440 max=5.6711 net_min=4.4005 net_med=4.4415 spread_med_pct=0.9 spread_max_pct=28.8 ns_per_transform_min=4508.66 G=277 R=200 loop_s_min=0.250 redone=0 ivcsw=8
+E type=double k=10 variant=empty min=0.0025 med=0.0025 max=0.0031 net_min=0.0000 net_med=0.0000 spread_med_pct=1.2 spread_max_pct=25.2 ns_per_transform_min=2.53 G=494902 R=200 loop_s_min=0.250 redone=0 ivcsw=7
+A type=double k=10 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=14.8 allcpus_busy_pct=55.3 wall_s=14.4 load=4.40,4.45,4.40
+B type=double k=11 n=2048 bytes=16384 R=180 R_overflow=180 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.40,4.45,4.40
+T type=double k=11 variant=ffht min=0.8986 med=0.9018 max=0.9783 net_min=0.8977 net_med=0.9009 spread_med_pct=0.4 spread_max_pct=8.9 ns_per_transform_min=1840.34 G=753 R=180 loop_s_min=0.249 redone=0 ivcsw=4
+T type=double k=11 variant=t8 min=1.5148 med=1.5304 max=1.8634 net_min=1.5139 net_med=1.5294 spread_med_pct=1.0 spread_max_pct=23.0 ns_per_transform_min=3102.26 G=449 R=180 loop_s_min=0.251 redone=0 ivcsw=9
+T type=double k=11 variant=k8 min=1.6618 med=1.7044 max=2.0621 net_min=1.6609 net_med=1.7034 spread_med_pct=2.6 spread_max_pct=24.1 ns_per_transform_min=3403.43 G=403 R=180 loop_s_min=0.247 redone=0 ivcsw=10
+T type=double k=11 variant=k8raw min=1.5854 med=1.6094 max=3.0303 net_min=1.5844 net_med=1.6084 spread_med_pct=1.5 spread_max_pct=91.1 ns_per_transform_min=3246.83 G=426 R=180 loop_s_min=0.249 redone=0 ivcsw=3
+T type=double k=11 variant=naive min=4.4557 med=4.5107 max=5.3147 net_min=4.4548 net_med=4.5098 spread_med_pct=1.2 spread_max_pct=19.3 ns_per_transform_min=9125.27 G=153 R=180 loop_s_min=0.251 redone=0 ivcsw=8
+E type=double k=11 variant=empty min=0.0009 med=0.0009 max=0.0010 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=6.8 ns_per_transform_min=1.89 G=1 R=127448217 loop_s_min=0.241 redone=0 ivcsw=7
+A type=double k=11 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=9.2 allcpus_busy_pct=55.3 wall_s=14.1 load=4.38,4.44,4.40
+B type=double k=12 n=4096 bytes=32768 R=166 R_overflow=166 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.38,4.44,4.40
+T type=double k=12 variant=ffht min=1.0211 med=1.0389 max=1.1322 net_min=1.0206 net_med=1.0385 spread_med_pct=1.7 spread_max_pct=10.9 ns_per_transform_min=4182.37 G=362 R=166 loop_s_min=0.251 redone=0 ivcsw=3
+T type=double k=12 variant=t8 min=2.4808 med=2.5170 max=2.7545 net_min=2.4803 net_med=2.5165 spread_med_pct=1.5 spread_max_pct=11.0 ns_per_transform_min=10161.23 G=149 R=166 loop_s_min=0.251 redone=0 ivcsw=9
+T type=double k=12 variant=k8 min=1.6609 med=1.6772 max=1.8482 net_min=1.6605 net_med=1.6768 spread_med_pct=1.0 spread_max_pct=11.3 ns_per_transform_min=6803.18 G=224 R=166 loop_s_min=0.253 redone=0 ivcsw=7
+T type=double k=12 variant=k8raw min=1.5709 med=1.5922 max=1.6351 net_min=1.5705 net_med=1.5918 spread_med_pct=1.4 spread_max_pct=4.1 ns_per_transform_min=6434.50 G=231 R=166 loop_s_min=0.247 redone=0 ivcsw=5
+T type=double k=12 variant=naive min=4.4033 med=4.4414 max=4.7270 net_min=4.4029 net_med=4.4410 spread_med_pct=0.9 spread_max_pct=7.4 ns_per_transform_min=18036.11 G=84 R=166 loop_s_min=0.251 redone=0 ivcsw=9
+E type=double k=12 variant=empty min=0.0005 med=0.0005 max=0.0005 net_min=0.0000 net_med=0.0000 spread_med_pct=3.1 spread_max_pct=11.7 ns_per_transform_min=1.89 G=1 R=126178190 loop_s_min=0.239 redone=0 ivcsw=5
+A type=double k=12 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.2 allcpus_busy_pct=55.5 wall_s=13.8 load=4.39,4.44,4.40
+B type=double k=13 n=8192 bytes=65536 R=152 R_overflow=152 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.39,4.44,4.40
+T type=double k=13 variant=ffht min=1.1079 med=1.1131 max=1.3107 net_min=1.1077 net_med=1.1129 spread_med_pct=0.5 spread_max_pct=18.3 ns_per_transform_min=9075.76 G=178 R=152 loop_s_min=0.246 redone=0 ivcsw=6
+T type=double k=13 variant=t8 min=1.9319 med=1.9418 max=2.2709 net_min=1.9317 net_med=1.9415 spread_med_pct=0.5 spread_max_pct=17.5 ns_per_transform_min=15826.12 G=103 R=152 loop_s_min=0.248 redone=0 ivcsw=4
+T type=double k=13 variant=k8 min=2.0615 med=2.0906 max=2.4130 net_min=2.0613 net_med=2.0904 spread_med_pct=1.4 spread_max_pct=17.0 ns_per_transform_min=16888.05 G=94 R=152 loop_s_min=0.241 redone=0 ivcsw=4
+T type=double k=13 variant=k8raw min=1.9869 med=2.0049 max=2.2044 net_min=1.9867 net_med=2.0046 spread_med_pct=0.9 spread_max_pct=10.9 ns_per_transform_min=16276.80 G=98 R=152 loop_s_min=0.242 redone=0 ivcsw=8
+T type=double k=13 variant=naive min=4.8793 med=4.9316 max=5.1948 net_min=4.8790 net_med=4.9313 spread_med_pct=1.1 spread_max_pct=6.5 ns_per_transform_min=39970.94 G=41 R=152 loop_s_min=0.249 redone=0 ivcsw=4
+E type=double k=13 variant=empty min=0.0002 med=0.0002 max=0.0002 net_min=0.0000 net_med=0.0000 spread_med_pct=1.7 spread_max_pct=6.0 ns_per_transform_min=1.89 G=1 R=126800762 loop_s_min=0.239 redone=0 ivcsw=5
+A type=double k=13 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=5.7 allcpus_busy_pct=55.5 wall_s=13.6 load=4.31,4.42,4.39
+B type=double k=14 n=16384 bytes=131072 R=142 R_overflow=142 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.31,4.42,4.39
+T type=double k=14 variant=ffht min=1.2510 med=1.2606 max=1.3470 net_min=1.2509 net_med=1.2605 spread_med_pct=0.8 spread_max_pct=7.7 ns_per_transform_min=20496.75 G=87 R=142 loop_s_min=0.253 redone=0 ivcsw=3
+T type=double k=14 variant=t8 min=1.8666 med=1.8817 max=2.0320 net_min=1.8665 net_med=1.8816 spread_med_pct=0.8 spread_max_pct=8.9 ns_per_transform_min=30582.33 G=58 R=142 loop_s_min=0.252 redone=0 ivcsw=6
+T type=double k=14 variant=k8 min=1.9939 med=2.0273 max=2.2551 net_min=1.9938 net_med=2.0272 spread_med_pct=1.7 spread_max_pct=13.1 ns_per_transform_min=32668.77 G=45 R=142 loop_s_min=0.209 redone=0 ivcsw=2
+T type=double k=14 variant=k8raw min=1.9326 med=1.9626 max=2.3201 net_min=1.9325 net_med=1.9625 spread_med_pct=1.6 spread_max_pct=20.0 ns_per_transform_min=31663.43 G=53 R=142 loop_s_min=0.238 redone=0 ivcsw=5
+T type=double k=14 variant=naive min=5.1864 med=5.2330 max=7.0040 net_min=5.1863 net_med=5.2329 spread_med_pct=0.9 spread_max_pct=35.0 ns_per_transform_min=84973.52 G=21 R=142 loop_s_min=0.253 redone=0 ivcsw=8
+E type=double k=14 variant=empty min=0.0001 med=0.0001 max=0.0001 net_min=0.0000 net_med=0.0000 spread_med_pct=0.8 spread_max_pct=9.5 ns_per_transform_min=1.89 G=1 R=124308163 loop_s_min=0.235 redone=0 ivcsw=4
+A type=double k=14 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=6.3 allcpus_busy_pct=55.6 wall_s=13.4 load=4.39,4.43,4.40
+B type=double k=15 n=32768 bytes=262144 R=132 R_overflow=132 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.39,4.43,4.40
+T type=double k=15 variant=ffht min=1.3284 med=1.3603 max=1.5845 net_min=1.3283 net_med=1.3602 spread_med_pct=2.4 spread_max_pct=19.3 ns_per_transform_min=43529.20 G=43 R=132 loop_s_min=0.247 redone=0 ivcsw=3
+T type=double k=15 variant=t8 min=2.7938 med=2.8379 max=3.1743 net_min=2.7937 net_med=2.8378 spread_med_pct=1.6 spread_max_pct=13.6 ns_per_transform_min=91545.94 G=20 R=132 loop_s_min=0.242 redone=0 ivcsw=7
+T type=double k=15 variant=k8 min=1.9501 med=1.9824 max=2.4927 net_min=1.9501 net_med=1.9823 spread_med_pct=1.7 spread_max_pct=27.8 ns_per_transform_min=63902.26 G=29 R=132 loop_s_min=0.245 redone=0 ivcsw=6
+T type=double k=15 variant=k8raw min=1.8754 med=1.8891 max=1.9338 net_min=1.8753 net_med=1.8891 spread_med_pct=0.7 spread_max_pct=3.1 ns_per_transform_min=61452.13 G=30 R=132 loop_s_min=0.243 redone=0 ivcsw=2
+T type=double k=15 variant=naive min=5.3185 med=5.3810 max=5.9627 net_min=5.3184 net_med=5.3810 spread_med_pct=1.2 spread_max_pct=12.1 ns_per_transform_min=174276.09 G=11 R=132 loop_s_min=0.253 redone=0 ivcsw=5
+E type=double k=15 variant=empty min=0.0001 med=0.0001 max=0.0001 net_min=0.0000 net_med=0.0000 spread_med_pct=0.7 spread_max_pct=12.0 ns_per_transform_min=1.88 G=1 R=126581126 loop_s_min=0.239 redone=0 ivcsw=9
+A type=double k=15 mycpu_busy_pct=100.0 mycpu_steal_pct=0.07 sibling_busy_pct=8.3 allcpus_busy_pct=55.5 wall_s=13.7 load=4.37,4.43,4.40
+B type=double k=16 n=65536 bytes=524288 R=124 R_overflow=124 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.37,4.43,4.40
+T type=double k=16 variant=ffht min=1.4245 med=1.4388 max=1.7397 net_min=1.4245 net_med=1.4388 spread_med_pct=1.0 spread_max_pct=22.1 ns_per_transform_min=93358.91 G=22 R=124 loop_s_min=0.255 redone=0 ivcsw=7
+T type=double k=16 variant=t8 min=2.2683 med=2.2915 max=3.2571 net_min=2.2682 net_med=2.2915 spread_med_pct=1.0 spread_max_pct=43.6 ns_per_transform_min=148652.37 G=14 R=124 loop_s_min=0.258 redone=0 ivcsw=7
+T type=double k=16 variant=k8 min=2.4306 med=2.4573 max=3.3162 net_min=2.4305 net_med=2.4573 spread_med_pct=1.1 spread_max_pct=36.4 ns_per_transform_min=159290.10 G=13 R=124 loop_s_min=0.257 redone=0 ivcsw=6
+T type=double k=16 variant=k8raw min=2.3134 med=2.3457 max=3.5431 net_min=2.3133 net_med=2.3457 spread_med_pct=1.4 spread_max_pct=53.2 ns_per_transform_min=151609.06 G=14 R=124 loop_s_min=0.263 redone=0 ivcsw=7
+T type=double k=16 variant=naive min=5.5019 med=5.5887 max=6.8073 net_min=5.5019 net_med=5.5887 spread_med_pct=1.6 spread_max_pct=23.7 ns_per_transform_min=360572.48 G=6 R=124 loop_s_min=0.268 redone=0 ivcsw=5
+E type=double k=16 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=2.4 spread_max_pct=21.6 ns_per_transform_min=1.89 G=1 R=123419551 loop_s_min=0.233 redone=0 ivcsw=4
+A type=double k=16 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=11.5 allcpus_busy_pct=55.6 wall_s=14.9 load=4.42,4.44,4.40
+B type=double k=17 n=131072 bytes=1048576 R=116 R_overflow=116 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.42,4.44,4.40
+T type=double k=17 variant=ffht min=1.5593 med=1.5733 max=1.6015 net_min=1.5593 net_med=1.5733 spread_med_pct=0.9 spread_max_pct=2.7 ns_per_transform_min=204386.86 G=11 R=116 loop_s_min=0.261 redone=0 ivcsw=4
+T type=double k=17 variant=t8 min=2.2539 med=2.2908 max=2.6315 net_min=2.2539 net_med=2.2907 spread_med_pct=1.6 spread_max_pct=16.8 ns_per_transform_min=295419.33 G=8 R=116 loop_s_min=0.274 redone=0 ivcsw=4
+T type=double k=17 variant=k8 min=2.4227 med=2.4683 max=2.7016 net_min=2.4227 net_med=2.4683 spread_med_pct=1.9 spread_max_pct=11.5 ns_per_transform_min=317547.57 G=7 R=116 loop_s_min=0.258 redone=0 ivcsw=5
+T type=double k=17 variant=k8raw min=2.3330 med=2.3624 max=2.8102 net_min=2.3330 net_med=2.3624 spread_med_pct=1.3 spread_max_pct=20.5 ns_per_transform_min=305795.12 G=7 R=116 loop_s_min=0.248 redone=0 ivcsw=5
+T type=double k=17 variant=naive min=6.1623 med=6.3076 max=7.2841 net_min=6.1623 net_med=6.3076 spread_med_pct=2.4 spread_max_pct=18.2 ns_per_transform_min=807705.82 G=3 R=116 loop_s_min=0.281 redone=0 ivcsw=5
+E type=double k=17 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.9 spread_max_pct=4.3 ns_per_transform_min=1.89 G=1 R=124568247 loop_s_min=0.236 redone=0 ivcsw=4
+A type=double k=17 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.0 allcpus_busy_pct=55.4 wall_s=14.5 load=4.54,4.47,4.41
+B type=double k=18 n=262144 bytes=2097152 R=110 R_overflow=110 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.54,4.47,4.41
+T type=double k=18 variant=ffht min=1.7618 med=1.7854 max=2.0978 net_min=1.7618 net_med=1.7854 spread_med_pct=1.3 spread_max_pct=19.1 ns_per_transform_min=461841.01 G=5 R=110 loop_s_min=0.254 redone=0 ivcsw=5
+T type=double k=18 variant=t8 min=3.3501 med=3.3787 max=3.7515 net_min=3.3501 net_med=3.3787 spread_med_pct=0.9 spread_max_pct=12.0 ns_per_transform_min=878212.10 G=3 R=110 loop_s_min=0.290 redone=0 ivcsw=5
+T type=double k=18 variant=k8 min=2.5092 med=2.6086 max=2.9080 net_min=2.5092 net_med=2.6086 spread_med_pct=4.0 spread_max_pct=15.9 ns_per_transform_min=657781.14 G=4 R=110 loop_s_min=0.289 redone=0 ivcsw=7
+T type=double k=18 variant=k8raw min=2.4582 med=2.4833 max=3.1689 net_min=2.4582 net_med=2.4833 spread_med_pct=1.0 spread_max_pct=28.9 ns_per_transform_min=644395.90 G=4 R=110 loop_s_min=0.284 redone=0 ivcsw=7
+T type=double k=18 variant=naive min=8.4513 med=8.7030 max=10.7714 net_min=8.4513 net_med=8.7030 spread_med_pct=3.0 spread_max_pct=27.5 ns_per_transform_min=2215459.37 G=2 R=110 loop_s_min=0.487 redone=0 ivcsw=8
+E type=double k=18 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=2.5 spread_max_pct=31.7 ns_per_transform_min=1.89 G=1 R=126604266 loop_s_min=0.239 redone=0 ivcsw=5
+A type=double k=18 mycpu_busy_pct=100.0 mycpu_steal_pct=0.06 sibling_busy_pct=14.7 allcpus_busy_pct=56.7 wall_s=17.6 load=4.57,4.48,4.42
+B type=double k=19 n=524288 bytes=4194304 R=104 R_overflow=104 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.57,4.48,4.42
+T type=double k=19 variant=ffht min=1.9420 med=1.9669 max=2.3828 net_min=1.9419 net_med=1.9669 spread_med_pct=1.3 spread_max_pct=22.7 ns_per_transform_min=1018142.74 G=3 R=104 loop_s_min=0.318 redone=0 ivcsw=10
+T type=double k=19 variant=t8 min=3.0813 med=3.1408 max=3.5102 net_min=3.0813 net_med=3.1408 spread_med_pct=1.9 spread_max_pct=13.9 ns_per_transform_min=1615491.50 G=2 R=104 loop_s_min=0.336 redone=0 ivcsw=5
+T type=double k=19 variant=k8 min=3.2256 med=3.2618 max=3.6369 net_min=3.2256 net_med=3.2618 spread_med_pct=1.1 spread_max_pct=12.7 ns_per_transform_min=1691169.29 G=2 R=104 loop_s_min=0.352 redone=0 ivcsw=10
+T type=double k=19 variant=k8raw min=3.1400 med=3.1901 max=3.6588 net_min=3.1400 net_med=3.1901 spread_med_pct=1.6 spread_max_pct=16.5 ns_per_transform_min=1646259.25 G=2 R=104 loop_s_min=0.342 redone=0 ivcsw=10
+T type=double k=19 variant=naive min=8.5959 med=8.8532 max=9.0948 net_min=8.5959 net_med=8.8532 spread_med_pct=3.0 spread_max_pct=5.8 ns_per_transform_min=4506725.78 G=1 R=104 loop_s_min=0.469 redone=0 ivcsw=10
+E type=double k=19 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.8 spread_max_pct=5.9 ns_per_transform_min=1.88 G=1 R=127514653 loop_s_min=0.240 redone=0 ivcsw=5
+A type=double k=19 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=5.5 allcpus_busy_pct=55.5 wall_s=19.2 load=4.63,4.49,4.42
+B type=double k=20 n=1048576 bytes=8388608 R=98 R_overflow=100 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.63,4.49,4.42
+T type=double k=20 variant=ffht min=2.3707 med=2.4477 max=3.4793 net_min=2.3707 net_med=2.4477 spread_med_pct=3.2 spread_max_pct=46.8 ns_per_transform_min=2485900.70 G=1 R=98 loop_s_min=0.244 redone=0 ivcsw=5
+T type=double k=20 variant=t8 min=3.2804 med=3.3394 max=4.9703 net_min=3.2804 net_med=3.3394 spread_med_pct=1.8 spread_max_pct=51.5 ns_per_transform_min=3439704.15 G=1 R=98 loop_s_min=0.337 redone=0 ivcsw=8
+T type=double k=20 variant=k8 min=3.3877 med=3.4621 max=3.7425 net_min=3.3877 net_med=3.4621 spread_med_pct=2.2 spread_max_pct=10.5 ns_per_transform_min=3552271.10 G=1 R=98 loop_s_min=0.348 redone=0 ivcsw=9
+T type=double k=20 variant=k8raw min=3.3165 med=3.3645 max=3.8213 net_min=3.3165 net_med=3.3645 spread_med_pct=1.4 spread_max_pct=15.2 ns_per_transform_min=3477568.53 G=1 R=98 loop_s_min=0.341 redone=0 ivcsw=9
+T type=double k=20 variant=naive min=10.2489 med=10.5290 max=11.5403 net_min=10.2489 net_med=10.5290 spread_med_pct=2.7 spread_max_pct=12.6 ns_per_transform_min=10746701.14 G=1 R=98 loop_s_min=1.053 redone=0 ivcsw=24
+E type=double k=20 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.4 spread_max_pct=4.1 ns_per_transform_min=1.89 G=1 R=127079465 loop_s_min=0.240 redone=0 ivcsw=6
+A type=double k=20 mycpu_busy_pct=100.0 mycpu_steal_pct=0.04 sibling_busy_pct=10.1 allcpus_busy_pct=55.6 wall_s=24.2 load=4.64,4.50,4.43
+B type=double k=21 n=2097152 bytes=16777216 R=33 R_overflow=94 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.64,4.50,4.43
+T type=double k=21 variant=ffht min=3.0081 med=3.0880 max=3.6995 net_min=3.0081 net_med=3.0880 spread_med_pct=2.7 spread_max_pct=23.0 ns_per_transform_min=6308482.91 G=1 R=33 loop_s_min=0.208 redone=0 ivcsw=5
+T type=double k=21 variant=t8 min=4.5688 med=4.6266 max=5.0454 net_min=4.5688 net_med=4.6266 spread_med_pct=1.3 spread_max_pct=10.4 ns_per_transform_min=9581522.18 G=1 R=33 loop_s_min=0.316 redone=0 ivcsw=5
+T type=double k=21 variant=k8 min=3.8198 med=4.0253 max=4.9021 net_min=3.8198 net_med=4.0253 spread_med_pct=5.4 spread_max_pct=28.3 ns_per_transform_min=8010626.27 G=1 R=33 loop_s_min=0.264 redone=0 ivcsw=4
+T type=double k=21 variant=k8raw min=3.7132 med=3.7545 max=4.3067 net_min=3.7131 net_med=3.7545 spread_med_pct=1.1 spread_max_pct=16.0 ns_per_transform_min=7787041.18 G=1 R=33 loop_s_min=0.257 redone=0 ivcsw=2
+T type=double k=21 variant=naive min=12.9552 med=13.8430 max=14.6588 net_min=12.9552 net_med=13.8430 spread_med_pct=6.9 spread_max_pct=13.2 ns_per_transform_min=27169077.73 G=1 R=33 loop_s_min=0.897 redone=0 ivcsw=19
+E type=double k=21 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.6 spread_max_pct=17.1 ns_per_transform_min=1.89 G=1 R=144002367 loop_s_min=0.213 redone=1 ivcsw=10
+A type=double k=21 mycpu_busy_pct=100.0 mycpu_steal_pct=0.05 sibling_busy_pct=7.9 allcpus_busy_pct=54.7 wall_s=21.4 load=4.68,4.52,4.43
+B type=double k=22 n=4194304 bytes=33554432 R=17 R_overflow=90 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.63,4.51,4.43
+T type=double k=22 variant=ffht min=3.5599 med=3.6628 max=4.3407 net_min=3.5599 net_med=3.6628 spread_med_pct=2.9 spread_max_pct=21.9 ns_per_transform_min=14931095.88 G=1 R=17 loop_s_min=0.254 redone=0 ivcsw=5
+T type=double k=22 variant=t8 min=5.4215 med=5.5126 max=6.3808 net_min=5.4215 net_med=5.5126 spread_med_pct=1.7 spread_max_pct=17.7 ns_per_transform_min=22739230.18 G=1 R=17 loop_s_min=0.387 redone=0 ivcsw=7
+T type=double k=22 variant=k8 min=5.6001 med=5.6365 max=6.5531 net_min=5.6001 net_med=5.6365 spread_med_pct=0.6 spread_max_pct=17.0 ns_per_transform_min=23488544.71 G=1 R=17 loop_s_min=0.399 redone=0 ivcsw=8
+T type=double k=22 variant=k8raw min=5.4452 med=5.4993 max=5.8726 net_min=5.4452 net_med=5.4993 spread_med_pct=1.0 spread_max_pct=7.8 ns_per_transform_min=22839021.23 G=1 R=17 loop_s_min=0.388 redone=0 ivcsw=9
+T type=double k=22 variant=naive min=18.6025 med=19.9714 max=21.9346 net_min=18.6025 net_med=19.9714 spread_med_pct=7.4 spread_max_pct=17.9 ns_per_transform_min=78024655.71 G=1 R=17 loop_s_min=1.326 redone=0 ivcsw=27
+E type=double k=22 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.7 spread_max_pct=28.6 ns_per_transform_min=1.89 G=1 R=124188244 loop_s_min=0.234 redone=0 ivcsw=7
+A type=double k=22 mycpu_busy_pct=100.0 mycpu_steal_pct=0.00 sibling_busy_pct=9.3 allcpus_busy_pct=55.5 wall_s=28.6 load=4.61,4.52,4.44
+B type=double k=23 n=8388608 bytes=67108864 R=8 R_overflow=86 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.61,4.52,4.44
+T type=double k=23 variant=ffht min=3.6424 med=3.7067 max=3.8708 net_min=3.6424 net_med=3.7067 spread_med_pct=1.8 spread_max_pct=6.3 ns_per_transform_min=30554997.75 G=1 R=8 loop_s_min=0.244 redone=0 ivcsw=5
+T type=double k=23 variant=t8 min=5.4818 med=5.5612 max=5.9420 net_min=5.4818 net_med=5.5612 spread_med_pct=1.4 spread_max_pct=8.4 ns_per_transform_min=45984323.75 G=1 R=8 loop_s_min=0.368 redone=0 ivcsw=7
+T type=double k=23 variant=k8 min=5.6229 med=5.7227 max=5.8564 net_min=5.6229 net_med=5.7227 spread_med_pct=1.8 spread_max_pct=4.2 ns_per_transform_min=47168451.00 G=1 R=8 loop_s_min=0.377 redone=0 ivcsw=8
+T type=double k=23 variant=k8raw min=5.5666 med=5.6961 max=6.3272 net_min=5.5666 net_med=5.6961 spread_med_pct=2.3 spread_max_pct=13.7 ns_per_transform_min=46696134.38 G=1 R=8 loop_s_min=0.374 redone=0 ivcsw=9
+T type=double k=23 variant=naive min=21.2961 med=21.7542 max=23.2604 net_min=21.2961 net_med=21.7542 spread_med_pct=2.2 spread_max_pct=9.2 ns_per_transform_min=178644306.75 G=1 R=8 loop_s_min=1.429 redone=0 ivcsw=25
+E type=double k=23 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.7 spread_max_pct=8.0 ns_per_transform_min=1.88 G=1 R=126924815 loop_s_min=0.239 redone=0 ivcsw=2
+A type=double k=23 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=6.5 allcpus_busy_pct=55.5 wall_s=28.8 load=4.72,4.55,4.45
+B type=double k=24 n=16777216 bytes=134217728 R=4 R_overflow=82 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.72,4.55,4.45
+T type=double k=24 variant=ffht min=4.3547 med=4.4882 max=4.9103 net_min=4.3547 net_med=4.4882 spread_med_pct=3.1 spread_max_pct=12.8 ns_per_transform_min=73059121.00 G=1 R=4 loop_s_min=0.292 redone=0 ivcsw=8
+T type=double k=24 variant=t8 min=6.0226 med=6.1800 max=6.5293 net_min=6.0226 net_med=6.1800 spread_med_pct=2.6 spread_max_pct=8.4 ns_per_transform_min=101042752.50 G=1 R=4 loop_s_min=0.404 redone=0 ivcsw=10
+T type=double k=24 variant=k8 min=5.4888 med=5.5939 max=6.2251 net_min=5.4888 net_med=5.5939 spread_med_pct=1.9 spread_max_pct=13.4 ns_per_transform_min=92086932.50 G=1 R=4 loop_s_min=0.368 redone=0 ivcsw=9
+T type=double k=24 variant=k8raw min=5.4954 med=5.5592 max=6.1524 net_min=5.4954 net_med=5.5592 spread_med_pct=1.2 spread_max_pct=12.0 ns_per_transform_min=92198121.00 G=1 R=4 loop_s_min=0.369 redone=0 ivcsw=9
+T type=double k=24 variant=naive min=22.8269 med=23.0790 max=24.7285 net_min=22.8269 net_med=23.0790 spread_med_pct=1.1 spread_max_pct=8.3 ns_per_transform_min=382972044.00 G=1 R=4 loop_s_min=1.532 redone=0 ivcsw=39
+E type=double k=24 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=0.8 spread_max_pct=18.1 ns_per_transform_min=1.89 G=1 R=126884103 loop_s_min=0.240 redone=0 ivcsw=6
+A type=double k=24 mycpu_busy_pct=100.0 mycpu_steal_pct=0.06 sibling_busy_pct=8.3 allcpus_busy_pct=55.3 wall_s=31.0 load=4.70,4.55,4.46
+B type=double k=25 n=33554432 bytes=268435456 R=2 R_overflow=80 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.70,4.55,4.46
+T type=double k=25 variant=ffht min=4.5313 med=4.6671 max=5.0626 net_min=4.5313 net_med=4.6671 spread_med_pct=3.0 spread_max_pct=11.7 ns_per_transform_min=152045414.50 G=1 R=2 loop_s_min=0.304 redone=0 ivcsw=7
+T type=double k=25 variant=t8 min=6.5249 med=6.7611 max=7.4180 net_min=6.5249 net_med=6.7611 spread_med_pct=3.6 spread_max_pct=13.7 ns_per_transform_min=218940171.00 G=1 R=2 loop_s_min=0.438 redone=0 ivcsw=12
+T type=double k=25 variant=k8 min=6.7200 med=6.7736 max=7.6385 net_min=6.7200 net_med=6.7736 spread_med_pct=0.8 spread_max_pct=13.7 ns_per_transform_min=225485155.50 G=1 R=2 loop_s_min=0.451 redone=0 ivcsw=11
+T type=double k=25 variant=k8raw min=6.6232 med=6.9454 max=8.6794 net_min=6.6232 net_med=6.9454 spread_med_pct=4.9 spread_max_pct=31.0 ns_per_transform_min=222237573.50 G=1 R=2 loop_s_min=0.444 redone=0 ivcsw=11
+T type=double k=25 variant=naive min=23.2047 med=23.9943 max=25.9412 net_min=23.2047 net_med=23.9943 spread_med_pct=3.4 spread_max_pct=11.8 ns_per_transform_min=778620649.00 G=1 R=2 loop_s_min=1.557 redone=0 ivcsw=36
+E type=double k=25 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.0 spread_max_pct=8.9 ns_per_transform_min=1.88 G=1 R=126618437 loop_s_min=0.238 redone=0 ivcsw=4
+A type=double k=25 mycpu_busy_pct=100.0 mycpu_steal_pct=0.09 sibling_busy_pct=8.7 allcpus_busy_pct=55.4 wall_s=35.1 load=4.59,4.54,4.45
+B type=double k=26 n=67108864 bytes=536870912 R=1 R_overflow=76 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.55,4.53,4.45
+T type=double k=26 variant=ffht min=4.5271 med=4.5942 max=5.0857 net_min=4.5271 net_med=4.5942 spread_med_pct=1.5 spread_max_pct=12.3 ns_per_transform_min=303809826.99 G=1 R=1 loop_s_min=0.304 redone=0 ivcsw=11
+T type=double k=26 variant=t8 min=6.2990 med=6.6021 max=7.2442 net_min=6.2990 net_med=6.6021 spread_med_pct=4.8 spread_max_pct=15.0 ns_per_transform_min=422720173.01 G=1 R=1 loop_s_min=0.423 redone=0 ivcsw=14
+T type=double k=26 variant=k8 min=6.5943 med=6.6669 max=8.8668 net_min=6.5943 net_med=6.6669 spread_med_pct=1.1 spread_max_pct=34.5 ns_per_transform_min=442535894.01 G=1 R=1 loop_s_min=0.443 redone=0 ivcsw=16
+T type=double k=26 variant=k8raw min=6.4527 med=6.5928 max=9.5643 net_min=6.4527 net_med=6.5928 spread_med_pct=2.2 spread_max_pct=48.2 ns_per_transform_min=433031519.99 G=1 R=1 loop_s_min=0.433 redone=0 ivcsw=11
+T type=double k=26 variant=naive min=24.3893 med=24.5766 max=27.2820 net_min=24.3893 net_med=24.5766 spread_med_pct=0.8 spread_max_pct=11.9 ns_per_transform_min=1636739162.00 G=1 R=1 loop_s_min=1.637 redone=0 ivcsw=39
+E type=double k=26 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.1 spread_max_pct=28.7 ns_per_transform_min=1.89 G=1 R=127016256 loop_s_min=0.240 redone=0 ivcsw=3
+A type=double k=26 mycpu_busy_pct=100.0 mycpu_steal_pct=0.05 sibling_busy_pct=11.5 allcpus_busy_pct=56.3 wall_s=38.0 load=4.41,4.49,4.44
+B type=double k=27 n=134217728 bytes=1073741824 R=1 R_overflow=74 reset=untimed loop_s=0.25 repeats=9 cpu=1 sibling=5 hugepages=0 load=4.43,4.49,4.45
+T type=double k=27 variant=ffht min=4.8188 med=4.9109 max=5.4182 net_min=4.8188 net_med=4.9109 spread_med_pct=1.9 spread_max_pct=12.4 ns_per_transform_min=646773118.00 G=1 R=1 loop_s_min=0.647 redone=0 ivcsw=24
+T type=double k=27 variant=t8 min=6.6491 med=6.7774 max=6.8683 net_min=6.6491 net_med=6.7774 spread_med_pct=1.9 spread_max_pct=3.3 ns_per_transform_min=892428647.00 G=1 R=1 loop_s_min=0.892 redone=0 ivcsw=28
+T type=double k=27 variant=k8 min=6.2013 med=6.2767 max=6.5647 net_min=6.2013 net_med=6.2767 spread_med_pct=1.2 spread_max_pct=5.9 ns_per_transform_min=832329008.00 G=1 R=1 loop_s_min=0.832 redone=0 ivcsw=27
+T type=double k=27 variant=k8raw min=6.0830 med=6.1681 max=6.3943 net_min=6.0830 net_med=6.1681 spread_med_pct=1.4 spread_max_pct=5.1 ns_per_transform_min=816446326.00 G=1 R=1 loop_s_min=0.816 redone=0 ivcsw=29
+T type=double k=27 variant=naive min=23.8649 med=24.0719 max=25.1055 net_min=23.8649 net_med=24.0719 spread_med_pct=0.9 spread_max_pct=5.2 ns_per_transform_min=3203088940.00 G=1 R=1 loop_s_min=3.203 redone=0 ivcsw=92
+E type=double k=27 variant=empty min=0.0000 med=0.0000 max=0.0000 net_min=0.0000 net_med=0.0000 spread_med_pct=1.3 spread_max_pct=10.0 ns_per_transform_min=1.89 G=1 R=112562264 loop_s_min=0.213 redone=0 ivcsw=4
+A type=double k=27 mycpu_busy_pct=100.0 mycpu_steal_pct=0.03 sibling_busy_pct=7.3 allcpus_busy_pct=55.3 wall_s=71.0 load=4.45,4.48,4.45
+# done
+## exit code 0
+## after: 2026-10-11 15:13:39 UTC; uptime: 15:13:39 up 21:22,  0 user,  load average: 4.45, 4.48, 4.45
+## after: processes above 5 % of a processor (pid, %cpu, processor, nice, command):
+##     839938 99.9   3   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 10 8.758888888888889
+##     839050 99.9   4   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 9 8.796666666666667
+##     839000 99.9   6   5 python3 -B salg4.py run E 2 7 3 0 4 0 2 12 11 8.798333333333334

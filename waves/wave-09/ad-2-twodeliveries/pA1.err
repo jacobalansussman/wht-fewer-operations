@@ -1,0 +1,1 @@
+LIGHT label=ad2-pairs1 exit=0 time=69s waited=0s peak_rss_mb=1 peak_footprint_mb=1 lowest_cap_mb=1500 stopped=- start=06:29:49 cmd=./free8 8 pairs 1 27
