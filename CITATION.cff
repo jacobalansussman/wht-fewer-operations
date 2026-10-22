@@ -1,6 +1,6 @@
 # How to cite this repository.  The address below is the only place in this file that names it.
 cff-version: 1.2.0
-message: "If you use these circuits, the programs or the Lean proof, please cite this repository."
+message: "If you use these circuits, the programs or the Lean proofs, please cite this repository."
 type: software
 title: "The Walsh-Hadamard transform with fewer operations"
 authors:
@@ -16,12 +16,15 @@ abstract: >-
   transform on N = 8^j points takes at most (5/6) N log2 N + N operations; this count is proved in
   Lean 4, in the circuit model of openai/math. When a multiplication by a constant is free inside an
   addition, there are circuits with 19 operations at 8 points, 52 at 16, and (3/4) N log2 N + N/4 at
-  every power of two from 4; these are replayed exactly by programs and are not in Lean. It is a
+  every power of two from 4. Lean 4 proves that circuits of at most (3/4) N log2 N + N/4 operations
+  exist at every power of two, in a model where each line is one multiply-add, and checks the
+  19-operation circuit itself; programs replay the circuits exactly up to 16,384 points. It is a
   better constant, not a better exponent. The circuits were found by computer searches run by AI
-  agents (Anthropic's Claude) under the author's direction. Revision 2 adds exact count tables,
-  measurements on AMD, Intel, NVIDIA and Xilinx hardware (at best a few percent less time, on
-  two AMD processors in one run each; no gain or a loss on the others), and a kernel with the entry
-  points of the library FFHT.
+  agents (Anthropic's Claude) under the author's direction. Revision 2 adds a Lean proof of the 3/4
+  count, exact count tables, measurements on AMD, Intel, NVIDIA and Xilinx hardware (at best a few
+  percent less time in the main test, on two AMD processors in one run each, and 4-11 % from 2^12
+  points in 512-bit code on one of them, in two runs on one machine; no gain or a loss on the
+  others), and a kernel with the entry points of the library FFHT.
 keywords:
   - Walsh-Hadamard transform
   - arithmetic circuits

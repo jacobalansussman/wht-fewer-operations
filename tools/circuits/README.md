@@ -25,11 +25,11 @@ gate set of OpenAI's circuit model.
 
 | circuit | where | count (G) | count (O) | textbook | checked by |
 |---|---|---|---|---|---|
-| 4 points | `programs/h4_7gates.txt` | 7 | 11 | 8 | Python |
-| 8 points | `programs/h8_19gates.txt` | 19 | 31 | 24 | Python |
+| 4 points | `programs/h4_7gates.txt` | 7 | 11 | 8 | Python; Lean (the same 7 lines) |
+| 8 points | `programs/h8_19gates.txt` | 19 | 31 | 24 | Python; Lean (the same 19 lines) |
 | 8 points, every output halved | `programs/h8_half_20ops.txt` | 19 | 20 | 24 for the exact transform, which costs 28 by this route | Python; the 20 also by Lean (see below) |
-| 16 points | `programs/h16_52gates.txt` | 52 | 84 | 64 | Python |
-| every N = 2^k from 4 | `gen.py`, construction 1 | (3/4) N log2 N + N/4 | | N log2 N | Python, to 16,384 points |
+| 16 points | `programs/h16_52gates.txt` | 52 | 84 | 64 | Python; Lean proves that a circuit of at most 52 lines exists (the theorem at 16 points), not this file |
+| every N = 2^k from 4 | `gen.py`, construction 1 | (3/4) N log2 N + N/4 | | N log2 N | Lean, the bound at every N = 2^k (not the gate lists); Python, to 16,384 points |
 | N a power of 8, exact transform | the 20-operation program in layers, then N multiplications | | (5/6) N log2 N + N | N log2 N | Lean (see below); Python at 8, 64, 512 and 4,096 points |
 
 The last row is 4,352 operations at 512 points, against 4,608. Below 512 points it does not beat the textbook.
@@ -38,9 +38,11 @@ The last row is 4,352 operations at 512 points, against 4,608. Below 512 points 
 `lean/Work/SmallWHT/` (the folder `lean/` at the top of the repository) says that for N = 8^j the exact
 transform has a circuit in OpenAI's model with at most 20·j·8^(j-1) + 8^j gates. Its only data is the 20-line
 program `lean/h8_half_o20.txt` of this folder. [VERIFY.md](../../VERIFY.md) says how these Lean files were
-checked, and the limits of that check. Every other number here is checked by the Python programs of this
-folder and not by Lean: the 19 gates, the 52 gates, the rate 3/4, the tables, and every list of gates above
-8 points.
+checked, and the limits of that check. The theorem `hadamard_mulAdd_circuit` in `lean/Work/WHT34/` says that
+for N = 2^k the exact transform has a circuit of multiply-add lines with at most (3/4) N log2 N + N/4 lines, so
+it covers the 52 and the rate 3/4; the 19 lines and the 7 lines are written out in
+`lean/Work/WHT34/ChallengeWHT34Checks.lean`. Every other number here is checked by the Python programs of this
+folder and not by Lean: the tables, and every list of gates above 8 points.
 
 **Credit.** Seven operations at 4 points are due to Coppersmith, Feig and Linzer (1994, page 969). They
 count one multiply-add, ±a ± b·c, as one operation, and give (7/8) N log2 N operations when N is a power of

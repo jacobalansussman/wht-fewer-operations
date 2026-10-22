@@ -14,12 +14,16 @@ are of a smaller order (section 5). They give nothing at any size anyone compute
 
 **What is checked by Lean and what is not.**
 
-- One statement is checked by Lean: for every j, the exact transform on N = 8^j points has a circuit with at
-  most 20 j 8^(j-1) + 8^j gates, which is (5/6) N log2 N + N, in OpenAI's circuit model. Section 6 has the
-  statement, where it is, and what the check covered.
-- Everything else in this note is not checked by Lean: the 19 operations at 8 points, the 52 at 16, the rate
-  3/4, and the rate 7/8 for the scaled transform. Those rest on exact replay by Python programs, which are in
-  `tools/circuits/`.
+- A first statement is checked by Lean: for every j, the exact transform on N = 8^j points has a circuit
+  with at most 20 j 8^(j-1) + 8^j gates, which is (5/6) N log2 N + N, in OpenAI's circuit model. Section 6
+  has the statement, where it is, and what the check covered.
+- A second statement is checked by Lean: for every k, the exact transform on N = 2^k points has a
+  circuit of at most (3/4) N log2 N + N/4 multiply-add lines ±u ± c·v, over any commutative ring; and the
+  19 operations at 8 points (section 6).
+- Everything else in this note is not checked by Lean: the rate 7/8 for the scaled transform, the gate lists
+  above 8 points, and the arguments of sections 5 and 9. The counts rest on exact replay by Python programs,
+  which are in `tools/circuits/`; the arguments are the agents', and sections 5 and 9 say how far they were
+  checked.
 
 I directed this work. The AI agents (Anthropic's Claude) that I ran wrote the programs, ran the searches,
 wrote the Lean files, searched the literature and read the two older papers (section 7). Their reports have
@@ -60,20 +64,22 @@ own sense.
 **The results.**
 
 1. Count (G), 8 points: 19 operations. The textbook has 24, and the smallest count at 8 points that I found
-   in print is 22. Not checked by Lean; replayed exactly, and short enough to check by hand (section 2).
+   in print is 22. Checked by Lean (section 6); also replayed exactly, and short enough to check by hand
+   (section 2).
 2. Count (G), every N = 2^k from 4 points on: (3/4) N log2 N + N/4 operations. That is 7, 20, 52, 128, 304
    at 4 to 64 points. The best rate I found in print is 7/8, from 1994: (7/8) N log2 N operations when N is
-   a power of 4 and N/8 more when N is an odd power of two, so 56 at 16 points. Not checked by Lean. Every
-   circuit up to 16,384 points was replayed exactly; for larger N the count rests on a short induction,
-   written out in the generator. The agents checked it twice, and no person has read it.
+   a power of 4 and N/8 more when N is an odd power of two, so 56 at 16 points. Checked by Lean (section 6),
+   at every N = 2^k, as an upper bound. Every circuit up to 16,384 points was also replayed exactly; for
+   larger N the count was first argued by a short induction, written out in the generator, which the agents
+   checked twice and no person has read.
 3. Count (O), exact H x, N a power of 8: (5/6) N log2 N + N operations. At 512 points that is 4,352 against
    the textbook's 4,608, and 512 is the first size where it is below the textbook. The best count I found in
    print, of the explicit form c·N log2 N + O(N), is Alman and Rao's: at most (23/24) N log2 N + (13/12) N,
    and exactly (23/24) N log2 N + N - 1 when N is a power of 8. (Revision 2: counts of a smaller order are
    in print too, for the Fourier transform in the same circuit model and for this transform in a model of a
-   computer with memory; they give nothing at any size anyone computes. Section 5 says more.) Their theorem covers every power of two and any field; my Lean statement covers the
-   powers of 8, over the complex numbers. The count of mine is the one statement checked by Lean
-   (section 6); the gate lists themselves are checked by the Python programs.
+   computer with memory; they give nothing at any size anyone computes. Section 5 says more.) Their theorem covers every power of two and any field; my Lean statement in count (O) covers
+   the powers of 8, over the complex numbers. This count of mine is checked by Lean (section 6); the gate
+   lists themselves are checked by the Python programs.
 4. Count (O), the scaled transform H x / √N, N a power of 4: (7/8) N log2 N + N/4 operations, 60 at 16
    points. Not checked by Lean; replayed exactly up to 16,384 points. This is the family of result 2 with
    every operation charged. An argument, and exact computations at 4 to 64 points, say that the wiring of
@@ -291,8 +297,8 @@ Two remarks on what these circuits are.
   family 130 gets around it; Alman (2021) uses large constants in the same way to get around Pudlák's bound
   for shallow circuits (section 7). These two remarks are arithmetic by the agents, not reviewed and
   not in Lean.
-- **Most of it is not checked by Lean.** One count has a Lean statement (section 6). Nothing in count (G) is
-  in Lean, and neither is the 7/8 family for the scaled transform.
+- **Most of it is not checked by Lean.** Two counts have a Lean statement (section 6); the 7/8 family for the
+  scaled transform is not in Lean.
 - **It is not a faster program.** The test that counts is against FFHT, a tuned open-source library for
   this transform. Its code is *vector instructions* (instructions that work on 8 or 4 numbers at once),
   written out by its own generator, and it does three levels of the transform in one block of 24 additions
@@ -339,8 +345,9 @@ Two remarks on what these circuits are.
   in double precision at 2^10 to 2^16 points, on data that had overflowed (the same array transformed again
   and again; every program alike). There was no clear gain on AMD Zen 2, and the circuit was slower on an
   Intel Broadwell (1.065-1.134 in double precision with gcc). At 64 to 512 points, with many vectors per
-  call and finite data, Zen 4 showed no gain; a run of the same test on Zen 5 finished after this note was
-  written and is not in this revision. My first figure that day,
+  call and finite data, neither Zen 4 nor Zen 5 showed a gain. With 512-bit code on Zen 4, two runs on the
+  same machine agree within 1.6 % and give 4-11 % less time from 2^12 points (0.886 at best). My first
+  figure that day,
   0.847-0.889 on Zen 5 (11-15 % less time), is retracted: the rival then fastest, the balanced textbook
   written multiply-add first, carried 12 (clang) and 8 (gcc) avoidable register copies per 8-point step,
   where the circuit has 0 and 3. On real inputs in double precision the circuits differ from the textbook by
@@ -348,8 +355,9 @@ Two remarks on what these circuits are.
   to 2^20), so the circuit is not bit-identical to FFHT on real data.
   On a GPU, an NVIDIA RTX PRO 6000 Blackwell Server Edition, the circuits showed nothing. Two by-products
   need no new mathematics: on Zen 5 the subtraction-first balanced textbook takes 0.80-0.84 of FFHT's time,
-  and a 512-bit textbook 0.40-0.50 (FFHT has no 512-bit code). Each figure is from one run per chip, and most
-  were not read by a second agent after the run. Every figure, its status and the programs are in
+  and a 512-bit textbook 0.40-0.50 (FFHT has no 512-bit code). Each figure is from one run per chip (two
+  runs on one machine for the 512-bit code on Zen 4), and most were not read by a second agent after the
+  run. Every figure, its status and the programs are in
   [measurements/2026-10-22/](../measurements/2026-10-22/README.md). The figures of 11 October above stay as
   they are: they describe that machine.
 - **As hardware it saves cells in one setting, and it is not the smallest design.** On a chip, count (G) is
@@ -397,9 +405,9 @@ Two remarks on what these circuits are.
   which proves nothing.
 - **It is "new" only as far as the search of section 7 goes.**
 
-## 6. The statement that Lean checked
+## 6. The statements that Lean checked
 
-The statement, in OpenAI's circuit model:
+The first statement, in OpenAI's circuit model:
 
     theorem OAI.ExactFourier.WHT8Half.hadamard_pow8_circuit (j : ℕ) :
         ∃ C : Circuit (2 ^ (3 * j)),
@@ -472,10 +480,28 @@ what they print, the time and the memory.
 - No person has reviewed the Lean files.
 
 **Not stated in Lean.** Sizes that are not powers of 8. The scaled transform in natural order (the file has
-it for the tensor power only, as `cost_power_half_H`). Anything in count (G): OpenAI's model has no gate
-a·u + b·v, so a second gate type would have to be defined, and that would no longer be OpenAI's model. The
-7/8 family: it is not a tensor power of a smaller circuit, so its proof would have to follow the recursion
-of the generator.
+it for the tensor power only, as `cost_power_half_H`). The 7/8 family: it is not a tensor power of a smaller
+circuit, so its proof would have to follow the recursion of the generator.
+
+**Revision 2: the second statement, for count (G).** OpenAI's model has no gate a·u + b·v, so count (G)
+needed a second gate type, and that is no longer OpenAI's model. Revision 2 defines one in `lean/Work/WHT34/`,
+in the narrower form of the 1994 paper: a line is one multiply-add, `v i + c * v j` or `c * v j - v i` with c a
+constant, and costs one; a multiplication on its own is a line through the constant 0 and costs one too.
+The circuit files have only lines of this shape, or renamings (`tools/circuits/multiply_add_check.py`). The rest of the definitions is OpenAI's text,
+with the complex numbers replaced by any commutative ring. The theorem:
+
+    theorem MultiplyAdd.hadamard_mulAdd_circuit (R : Type*) [CommRing R] (k : ℕ) :
+        ∃ C : Circuit R (2 ^ k), C.Computes (hadamard R k) ∧ 4 * C.size ≤ 3 * k * 2 ^ k + 2 ^ k
+
+In words: over every commutative ring and for every k, the exact transform on N = 2^k points has a circuit of
+at most (3/4) N log2 N + N/4 such lines. The statement alone is `lean/Work/WHT34/ChallengeWHT34.lean` (91
+lines, Mathlib only). The proof builds the family of `tools/circuits/gen.py` by its recursion, and
+`ChallengeWHT34Checks.lean` proves on the same definitions that the 19 lines at 8 points and the 7 at 4 points
+compute the transform. The statement allows any constant; the circuits use only ±1 and ±2. Above 8 points no
+list of lines is written out. For revision 2 the whole folder `lean/` was built again, in new folders on two
+Linux machines, and `Compare.lean` found the statement identical to the theorem that is proved;
+[VERIFY.md](../VERIFY.md) has the run and two controls on the new files. `comparator` was not run on these
+files, and no person has read them.
 
 ## 7. What was searched in the literature
 
@@ -637,7 +663,7 @@ machine-readable form, each marked as checked by Lean or as computed in Python.
 
 ## 9. What has not been tried, and one thing that was
 
-- Lean statements for count (G), for the 7/8 family, and for sizes that are not powers of 8.
+- Lean statements for the 7/8 family and for sizes that are not powers of 8.
 - The exact minimum at 8 points. It is between 15 and 19. The 15 is the lower bound of the paper, whose
   proof no person has read (section 5).
 - 16 points beyond local searches, in either count. In count (O) a 16-point circuit would need 53 operations

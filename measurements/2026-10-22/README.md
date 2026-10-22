@@ -21,18 +21,19 @@ favour (section 2).
 Before the runs I set a rule: at 0.90 of the rival's time or below (10 % less), the work would go on; at 0.95 or
 above, it would count as no gain worth pursuing on that chip. Across builds, Zen 5 came out above 0.95 and Zen 4
 between the two. On Zen 2 the double-precision figures were noisy and fell between the two; on the Intel chip the
-circuit was slower.
+circuit was slower. With 512-bit code on Zen 4 (section 4), two runs on the same machine agree within 1.6 %: from
+2^12 points the circuit took 4-11 % less time, below 0.90 at one size (2^18 points, single precision).
 
-At the sizes most libraries use, 64 to 512 points, there was no gain on Zen 4 (a run on Zen 5 finished after this
-page was written and is not in this revision). On an NVIDIA GPU
+At the sizes most libraries use, 64 to 512 points, there was no gain on Zen 4 or on Zen 5. On an NVIDIA GPU
 and on a Xilinx Artix-7 chip there was no gain either. **My first figure that day was wrong:** I wrote that on Zen 5
 the circuit took 11-15 % less time. The rival it beat carried register copies it did not need. With the rival
 written fairly, the gain on that chip is 0-2 %.
 
 Every program was checked exact before it was timed. Each figure comes from one rented machine per chip, one core
-and one run. `tables.py` in this folder re-derives every figure on this page from the raw files. I directed this
-work. AI agents (Anthropic's Claude) wrote the timing programs, ran them on machines I rented through Google Colab,
-reviewed the results and wrote this page. No person has read the programs line by line.
+and one run; the 512-bit test on Zen 4 was run twice, on the same machine. `tables.py` in this folder re-derives
+every figure on this page from the raw files. I directed this work. AI agents (Anthropic's Claude) wrote the
+timing programs, ran them on machines I rented through Google Colab, reviewed the results and wrote this page. No
+person has read the programs line by line.
 
 ---
 
@@ -147,9 +148,9 @@ is in `x86/retraction/`. The Zen 2 and Intel runs of section 2 used the same ear
 
 ## 4. 512-bit code (AVX-512)
 
-These are single runs, not read by a reviewing agent after they finished. A repeat on Zen 4 finished after this
-page was written; it is not in this revision. FFHT has no 512-bit code, so this program first tuned a 512-bit
-textbook transform in FFHT's way (the form of
+These runs were not read by a reviewing agent after they finished. On Zen 5 the test ran once. On Zen 4 it ran
+twice, on the same machine, the second run starting about half an hour after the first, with the same code. FFHT
+has no 512-bit code, so this program first tuned a 512-bit textbook transform in FFHT's way (the form of
 the in-lane levels and the recursion thresholds, chosen on the textbook alone) and then put the circuits into it.
 Across builds, at the sizes both compilers ran (2^8-2^20, even sizes), against the fastest 512-bit rival:
 
@@ -157,9 +158,17 @@ Across builds, at the sizes both compilers ran (2^8-2^20, even sizes), against t
 |---|---|---|
 | Zen 5 | 0.940-1.018 | 0.946-1.007 |
 | Zen 4 | 0.886-1.002 | 0.913-1.037 |
+| Zen 4, repeat | 0.886-1.003 | 0.907-1.037 |
+
+On Zen 4 the two runs agree within 1.6 % at every size and precision. Taken together, from 2^12 points they give
+0.886-0.954 in single precision (at 2^10, 0.996-0.997), and from 2^10 points 0.907-0.959 in double: 4-11 % less
+time. By the rule set before the runs, one size is below 0.90: 2^18 points in single precision, 0.886 in both runs.
+At 2^8 points, in single precision at 2^10 and 2^14, and in double precision at 2^12 in the first run, the
+figure is 0.95 or above. Both runs are on one machine, so they show that the figure repeats there, not that it
+holds on other Zen 4 machines.
 
 The gcc build alone, at the odd sizes, looks better (down to 0.796 on Zen 5 and 0.801 on Zen 4 in single precision;
-0.896 and 0.938 in double), but only against gcc's own, weaker textbook.
+0.896 and 0.938 in double; in the Zen 4 repeat 0.811 and 0.935), but only against gcc's own, weaker textbook.
 
 ## 5. The sizes libraries use (64 to 512 points)
 
@@ -173,8 +182,18 @@ fastest exact circuit over all 8 builds against the fastest rival over all 8 bui
 - at 1,024 points: 0.979 in double and 0.983 in single precision;
 - at 4,096 points: 0.981 in double and 0.967 in single precision.
 
-One run, not read by a reviewing agent after it finished. A run of the same test on Zen 5 finished after this page
-was written; it is not in this revision.
+One run, not read by a reviewing agent after it finished.
+
+The same test on Zen 5, one run, also not read by a reviewing agent, shows no gain either (610 of 610 timings on
+finite data):
+
+- at 64 to 512 points: 0.986-1.760 (1.760 is again at 64 points in single precision, against the 512-bit
+  textbook layout that has no circuit version; without it 0.986-1.037);
+- at 1,024 points: 1.015 in double and 1.018 in single precision;
+- at 4,096 points: 1.013 in double and 0.959 in single precision.
+
+The calls are shorter on Zen 5: in this run 269 of the 610 timings are of calls under 20 µs, and in the Zen 4 run
+none is.
 
 ## 6. By-products, with no new mathematics
 
@@ -190,7 +209,8 @@ against FFHT built the same way: gcc 0.844-0.904, clang 0.795-0.830. On Zen 4: 0
 and 0.37-0.46 in single precision, at 2^10 to 2^20 (across builds). In the main Zen 5 run, inside the same 512-bit
 binary, FFHT took 1.68-1.80 times as long as the fastest 512-bit textbook (double, 2^10 to 2^16), and that 512-bit
 textbook was 1.30-1.41 times as fast as the fastest 256-bit program of either build, circuits included. On Zen 4 the
-tuned 512-bit textbook took 0.64-0.75 of FFHT's time in double and 0.56-0.72 in single precision.
+tuned 512-bit textbook took 0.64-0.75 of FFHT's time in double and 0.56-0.72 in single precision (in the repeat
+0.65-0.76 and 0.56-0.72).
 
 ## 7. One step in registers (the kernel level)
 
@@ -278,13 +298,13 @@ run, read by a reviewing agent. Code and results: `fpga-xc7/`.
 
 - **Faster on processors in general.** There is no gain on Zen 2, and on the Broadwell Xeon the circuit is slower.
   Modern Intel processors (Sapphire Rapids and later), Apple and Arm processors were not timed in this test.
-- **Faster on AMD in general.** Each figure comes from one rented machine per chip, one pinned core and one run (the
-  512-bit runs have no repeat in this revision). The processor's clock frequency was not controlled.
+- **Faster on AMD in general.** Each figure comes from one rented machine per chip and one pinned core, and from one
+  run, except the 512-bit test on Zen 4, which ran twice on the same machine. The processor's clock frequency was
+  not controlled.
 - **That the gain comes from fewer additions.** The 19-operation step was slower than the 20-operation step in
   13 of 16 double-precision timings on Zen 5 and Zen 4 (2 compilers, 4 sizes, 2 chips). Why is not known.
-- **A gain at the sizes most libraries use**, 64 to 512 points: on Zen 4 there is none; a run on Zen 5 is not in
-  this revision. The
-  smallest size timed is 64 points (2^6); 32 points (2^5) was not timed.
+- **A gain at the sizes most libraries use**, 64 to 512 points: on Zen 4 and on Zen 5 there is none. The smallest
+  size timed is 64 points (2^6); 32 points (2^5) was not timed.
 - **The same results as FFHT bit for bit.** They are the same on whole numbers; on real inputs they differ by
   rounding (section 8).
 - **The fastest code on these chips.** On Zen 5 a plain 512-bit textbook is faster than any 256-bit program,
@@ -300,10 +320,9 @@ run, read by a reviewing agent. Code and results: `fpga-xc7/`.
 
 ## 13. Not yet done
 
-Two runs finished after this page was written and have not been read by a second agent, so they are not in this
-revision: the library-size test of section 5 on Zen 5, and a repeat of the 512-bit run of section 4 on Zen 4. Not
-done at all: a review, by a second agent, of the Zen 5 and Zen 4 runs of sections 2, 4 and 5 and of the full
-x86-wht run on Zen 4; a same-array control with finite data; timing `tools/fht-kernel/` against FFHT; and a modern
+Not done: a review, by a second agent, of the Zen 5 and Zen 4 runs of sections 2, 4 and 5 (the Zen 4 repeat of
+section 4 and the Zen 5 run of section 5 included) and of the full x86-wht run on Zen 4; the 512-bit test on a
+second Zen 4 machine; a same-array control with finite data; timing `tools/fht-kernel/` against FFHT; and a modern
 Intel processor.
 
 ## 14. How to run it again
@@ -390,7 +409,9 @@ arXiv:2601.22347, Appendix A.1 and Table 4. Alman and Rao's 8-point step: arXiv:
 | `zen2-hybrid` | x86-hybrid-1792673518-71890 | Zen 2 |
 | `intel-hybrid` | x86-hybrid-1792675656-75640 | Broadwell |
 | `zen5-hybrid512`, `zen4-hybrid512` | x86-hybrid512-1792689261-12769, -12771 | Zen 5, Zen 4 |
+| `zen4-hybrid512-repeat` | x86-hybrid512-1792691030-59728 | Zen 4, the same machine as `zen4-hybrid512`: its name is replaced in both copies, and the uptime lines of the two `run.log.gz` files count from the same start |
 | `zen4-small` | x86-hybrid-small-1792685022-5717 | Zen 4 |
+| `zen5-small` | x86-hybrid-small-1792691004-59635 | Zen 5 |
 | `zen5-wht`, `zen4-wht-quick`, `zen4-wht-full`, `zen2-wht`, `intel-wht` | x86-wht-1792671240-65893, -1792669473-57365, -1792672075-68529, -1792669250-55536, -1792673579-72098 | |
 | `zen5-balance`, `zen4-balance-stopped`, `zen4-balance`, `zen2-balance`, `intel-balance` | x86-balance-1792670945-64604, -1792669445-56929, -1792671758-67457, -1792669043-54620, -1792673375-71565 | |
 | `gpu/runs/rtx6000-wht`, `gpu/runs/rtx6000-wht-failed-build` | gpu-wht-1792669903-59258, -1792669718-58048 | GPU |

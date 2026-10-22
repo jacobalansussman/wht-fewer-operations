@@ -6,9 +6,9 @@ Then it puts the circuits into that tuned structure as the 8- or 16-vector step,
 textbooks, the copy-free balanced textbook, x86-wht's 512-bit codes and FFHT (its 256-bit code). The results page is
 [../../README.md](../../README.md), section "512-bit code".
 
-Status: one run on AMD Zen 5 (EPYC 9B45) and one on AMD Zen 4 (EPYC 9B14), on 22 October 2026. Neither run was read
-by a second, reviewing agent after it finished. A repeat on Zen 4 finished after the results page was written; it is
-not in this revision.
+Status: one run on AMD Zen 5 (EPYC 9B45) and two on AMD Zen 4 (EPYC 9B14), on 22 October 2026; the second Zen 4 run
+repeats the first on the same machine (`../runs/zen4-hybrid512-repeat/`), and the two agree within 1.6 %. No run was
+read by a second, reviewing agent after it finished.
 
 ## Run it again
 

@@ -185,8 +185,9 @@ is used, and the operations of the new kernel depend on each other in a longer c
   other jobs running.
 - It is not a proof. The tests compare every program with the definition of the transform up to 1,024
   points and with the textbook program up to 32,768 points, on integers exactly and on floats and complex
-  numbers to rounding. Nothing in this folder is checked by Lean. The Lean statement of this repository is
-  about the number of operations for N a power of 8, and it is in `lean/Work/SmallWHT/` at the top.
+  numbers to rounding. Nothing in this folder is checked by Lean. The Lean statements of this repository
+  are about numbers of operations: for N a power of 8 in `lean/Work/SmallWHT/`, and, with each multiply-add
+  line counted as one, for every N = 2^k in `lean/Work/WHT34/`, both under `lean/` at the top.
 - It is not a tuned library: one thread, no vector instructions written by hand, C for doubles only.
 - It is a better constant, not a better exponent. Every count here is a fixed fraction of N log2 N.
 

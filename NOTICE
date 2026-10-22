@@ -66,6 +66,13 @@ authors of openai/math (OpenAI).
      were declared. lean/lake-manifest.json lists Mathlib and its 8
      dependencies at the revisions of lean/lake-manifest.json of
      openai/math.
+   - lean/Work/WHT34/ChallengeWHT34.lean (lines 51-74) and
+     lean/Work/WHT34/ModelWHT34.lean (lines 23-46) contain OpenAI's
+     definitions of Program, Program.eval, Circuit, Circuit.eval and
+     Circuit.Computes from lean/ComparatorChallenges/ExactFourier.lean of
+     openai/math, with the complex numbers replaced by a commutative ring R;
+     the gate type before them is new. The header of ChallengeWHT34.lean
+     lists every change.
 
 3. New files.
    The six files under lean/Work/SmallWHT/, the file
@@ -85,6 +92,9 @@ authors of openai/math (OpenAI).
    that one: its function "wht", its main theorems and its earlier
    results. In the comment at the top of lean/tools/Compare.lean, read
    "tools/Compare.lean" for "checks/Compare.lean".
+   The seven files under lean/Work/WHT34/, added in revision 2, are not
+   part of openai/math. They import only Mathlib and one another, not the
+   upstream files, and their namespace is MultiplyAdd.
    Everything outside lean/ except LICENSE is new as well, and none of it
    is a file of openai/math: README.md, VERIFY.md, CITATION.cff and this
    file; docs/UNDERSTAND.md and docs/walkthrough.py; the note
@@ -114,9 +124,10 @@ authors of openai/math (OpenAI).
    lean/tools/Compare.lean was written by the agents for the repository
    named in section 3, which has carried it since its first publication on
    2026-10-09.
-   In the same night the agents found the other circuits under
-   tools/circuits/ by computer search and wrote the programs there;
-   tools/circuits/search/ holds the search programs as they were run. On
+   In that night of 2026-10-10 to 2026-10-11 the agents also found the
+   other circuits under tools/circuits/ by computer search and wrote the
+   programs there; tools/circuits/search/ holds the search programs as
+   they were run. On
    2026-10-11 they wrote the programs under tools/circuits/fast/wht56/ and
    ran the timings recorded there, wrote docs/ and the paper under
    paper/, and read two older papers from copies that Jacob Sussman
@@ -129,15 +140,17 @@ authors of openai/math (OpenAI).
    Colab, reviewed the results (a reviewing agent found the handicapped
    rival that the page there describes), and wrote the kernel under
    tools/fht-kernel/, the program tools/circuits/count_tables.py and the
-   pages of revision 2.
+   pages of revision 2. On 2026-10-22 the agents also wrote the seven Lean
+   files under lean/Work/WHT34/ and the new step of lean/check.sh.
 
 5. What comes from others.
    From openai/math: the circuit model in which the result is stated
    (lean/OAI/Computability/FourierCircuit/Core.lean), the theorems on the
    cost of tensor products that the proof uses (the other 43 files of
-   section 1), and the one theorem repeated with its proof in
-   lean/Work/SmallWHT/TensorPow8.lean (section 2). The 20-gate circuit and
-   the other proofs were made for this result.
+   section 1), the one theorem repeated with its proof in
+   lean/Work/SmallWHT/TensorPow8.lean (section 2), and the text of the
+   circuit model adapted in lean/Work/WHT34/ (section 2). The 20-gate
+   circuit and the other proofs were made for this result.
    Small circuits for this transform were published before by others, among
    them Coppersmith, Feig and Linzer (1994) and Alman and Rao (2023).
    README.md says what is theirs, with references. No file of theirs is

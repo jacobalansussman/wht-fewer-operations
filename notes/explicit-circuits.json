@@ -13,7 +13,7 @@
       "G_and_the_1994_paper": "Coppersmith, Feig and Linzer (1994, page 969) charge one for a multiply-add, +-a +- b*c, for a plain addition and for a plain multiplication. Count G is wider, because it allows a constant on both terms. No circuit here uses that: every line has at most one constant (tools/circuits/multiply_add_check.py), so each count G below is also the circuit's count in the sense of the 1994 paper"
     },
     "status_values": {
-      "lean": "a theorem in lean/Work/SmallWHT/ of this repository, accepted by Lean 4.34.1 on one Linux machine in a build of the folder lean/ from nothing with lake; lean/tools/Compare.lean passed; the official comparator was not run on this folder",
+      "lean": "a theorem in lean/Work/SmallWHT/ or lean/Work/WHT34/ of this repository, accepted by Lean 4.34.1 in builds of the folder lean/ with lake: from nothing on one Linux machine on 2026-10-11, and again on two Linux machines on 2026-10-22, in new folders with Lean and Mathlib's compiled files already present; lean/tools/Compare.lean passed; the official comparator was not run on this folder",
       "python": "replayed exactly by the Python programs of tools/circuits/ on every unit input; not checked in Lean",
       "on_paper": "argued in writing by the AI agents of this project; not in Lean, without a human review",
       "read": "taken from the publication named"
@@ -62,10 +62,55 @@
       "comparator": "not run on this folder; in the night of 2026-10-10 to 2026-10-11, in the folder where the six files were written, it accepted the same two statements, with a stand-in for its sandbox and a configuration file that is not in this repository",
       "mac": false,
       "human_review": false,
-      "negative_control": "a copy of the 8-point file with gate 13 changed from an addition to a subtraction was refused by Lean; a copy of the statement with 20 changed to 19 was refused by lean/tools/Compare.lean"
+      "negative_control": "a copy of the 8-point file with gate 13 changed from an addition to a subtraction was refused by Lean; a copy of the statement with 20 changed to 19 was refused by lean/tools/Compare.lean",
+      "rebuilt_2026_10_22": "the folder lean/ with the files of lean/Work/WHT34/ built again on two Linux machines (Google Colab, 8 threads, 50 GB), in new folders with Lean and Mathlib's compiled files already present: 58 files, Build completed successfully (8984 jobs), no error, the three expected sorry warnings; lean/tools/Compare.lean RESULT: PASS for both statements; the 60 .lean files have the checksums of this repository; commands and figures in VERIFY.md"
     },
-    "what_it_does_not_say": "above 8 points it states that a circuit exists and writes no gate list; sizes that are not powers of 8, count G and the 7/8 family are not stated in Lean",
+    "what_it_does_not_say": "above 8 points it states that a circuit exists and writes no gate list; sizes that are not powers of 8 and the 7/8 family are not stated in Lean",
     "checksums": "NOTICE, section 1, gives the commands that compare the 44 files of openai/math with a checkout of that repository"
+  },
+  "lean_count_G": {
+    "status": "lean",
+    "statement_in_words": "for every commutative ring R and every k, the exact (unscaled) Walsh-Hadamard transform on N = 2^k points has a circuit with at most (3k*2^k + 2^k)/4 lines, which is (3/4) N log2 N + N/4; each line is one multiply-add +-u +- c*v with c a constant of R, and costs one",
+    "theorem": "MultiplyAdd.hadamard_mulAdd_circuit",
+    "theorem_text": "theorem hadamard_mulAdd_circuit (R : Type*) [CommRing R] (k : Nat) : exists C : Circuit R (2 ^ k), C.Computes (hadamard R k) /\\ 4 * C.size <= 3 * k * 2 ^ k + 2 ^ k",
+    "model": "OpenAI's circuit model, with its text reused and two changes: a gate is one multiply-add line, v i + c * v j or c * v j - v i, in place of add, sub and scale; the numbers are any commutative ring in place of the complex numbers. A plain multiplication is a line through the constant 0 and costs one, as in Coppersmith, Feig and Linzer (1994). Every line of this model is one line of count G",
+    "other_theorems": {
+      "MultiplyAdd.family": "for k >= 2 the construction has exactly (3k*2^k + 2^k)/4 lines",
+      "MultiplyAdd.hadamard_eight_19": "8 points: the 19 lines of tools/circuits/programs/h8_19gates.txt compute H",
+      "MultiplyAdd.statement_k2": "4 points: the 7 lines of tools/circuits/programs/h4_7gates.txt compute H",
+      "MultiplyAdd.cfl1994_four_point": "the 4-point circuit printed by Coppersmith, Feig and Linzer (1994) is a circuit of the model",
+      "MultiplyAdd.size_ge_outputs": "for every k >= 1, over a commutative ring with 2 != 0, every circuit for the 2^k-point transform has at least 2^k lines",
+      "MultiplyAdd.textbook_over_bound": "the textbook count k*2^k breaks the bound for every k >= 2",
+      "MultiplyAdd.bound_iff_real": "the bound is (3/4) N log2 N + N/4 read in the real numbers"
+    },
+    "files": [
+      "lean/Work/WHT34/ChallengeWHT34.lean",
+      "lean/Work/WHT34/ModelWHT34.lean",
+      "lean/Work/WHT34/ReachWHT34.lean",
+      "lean/Work/WHT34/WhtWHT34.lean",
+      "lean/Work/WHT34/FamilyWHT34.lean",
+      "lean/Work/WHT34/SolutionWHT34.lean",
+      "lean/Work/WHT34/ChallengeWHT34Checks.lean"
+    ],
+    "statement_only_file": "lean/Work/WHT34/ChallengeWHT34.lean",
+    "imports": "Mathlib only; none of the files of openai/math",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "checked": {
+      "lean_version": "4.34.1",
+      "date": "2026-10-22",
+      "machines": "two Linux machines rented through Google Colab, 8 threads and 50 GB each; Lean and Mathlib's compiled files already present",
+      "how": "sh lean/check.sh, its four commands one at a time; the commands are in VERIFY.md",
+      "result": "Build completed successfully (8984 jobs); no error; the one expected sorry warning for the statement-only file; lean/tools/Compare.lean RESULT: PASS",
+      "comparator": "not run on these files",
+      "mac": "the seven files compiled on a Mac in the folder lean/, against a Mathlib build already there (8930 jobs); the rest of the folder not built on a Mac",
+      "human_review": false,
+      "negative_control": "a copy of FamilyWHT34.lean with one constant 2 changed to -2 was refused by Lean (ring failed); a copy of the statement with + 2 ^ k left out of the bound was refused by lean/tools/Compare.lean"
+    },
+    "what_it_does_not_say": "that (3/4) N log2 N + N/4 is the least possible; which constants the circuits use (any is allowed; the construction uses only 1, -1, 2 and -2); above 8 points it writes no list of lines; nothing about count O (the rate 7/8 with every operation charged), depth, speed or rounding"
   },
   "circuits": [
     {
@@ -74,7 +119,7 @@
       "operations": 7,
       "textbook": 8,
       "file": "tools/circuits/programs/h4_7gates.txt",
-      "status": "python",
+      "status": "lean",
       "origin": "known: Coppersmith, Feig and Linzer, 1994, page 969; the file is another wiring of the same idea (3 additions or subtractions and 4 multiply-adds, where theirs has 4 and 3)"
     },
     {
@@ -84,7 +129,7 @@
       "textbook": 24,
       "best_found_in_print": 22,
       "file": "tools/circuits/programs/h8_19gates.txt",
-      "status": "python",
+      "status": "lean",
       "origin": "this project; not found in print",
       "best_found_in_print_source": "22 by the formula of Coppersmith, Feig and Linzer (1994) for odd powers of two, (7/8) N log2 N + N/8; also the 8-point step of Alman and Rao (2023) when its halving is free"
     },
@@ -106,7 +151,7 @@
       "textbook": 64,
       "best_found_in_print": 56,
       "file": "tools/circuits/programs/h16_52gates.txt",
-      "status": "python",
+      "status": "python; lean for the count 52",
       "origin": "this project; not found in print",
       "best_found_in_print_source": "56 by the formula of Coppersmith, Feig and Linzer (1994): eight 4-point transforms (page 970)"
     }
@@ -121,7 +166,7 @@
       "best_rate_found_in_print": "7/8 (Coppersmith, Feig and Linzer, 1994: (7/8) N log2 N for N a power of four, and N/8 more for an odd power of two)",
       "generator": "tools/circuits/gen.py",
       "replayed_to_points": 16384,
-      "status": "python",
+      "status": "lean for the bound at every N = 2^k; python for the gate lists",
       "like_for_like": "every line of these circuits is one operation in the count of the 1994 paper (tools/circuits/multiply_add_check.py)"
     },
     {
@@ -152,7 +197,7 @@
     "columns": {
       "textbook": "N log2 N",
       "G_published_rate_7_8": "count G: computed from the two formulas of Coppersmith, Feig and Linzer (1994, page 969): (7/8) N log2 N for N a power of four, and N/8 more for an odd power of two",
-      "G_family": "count G: (3/4) N log2 N + N/4; python",
+      "G_family": "count G: (3/4) N log2 N + N/4; python; lean as an upper bound at every N = 2^k",
       "G_layers_small_circuits": "count G: the 8-point circuit on three bits at a time, then a textbook layer for one bit left over or the 4-point circuit for two; python",
       "O_alman_rao_algorithm": "count O: the exact count in the proof of Alman and Rao's Theorem 6.2, 23 N k / 24 + (N/24)(k mod 3) + N - 1; read",
       "O_layers_exact": "count O: layers of the 20-operation circuit, a textbook layer per bit left over, N final multiplications; python (lean for the count when 3 divides k)"
@@ -362,10 +407,10 @@
       "expected": "last line OK, or OK (skipped=5) without numpy"
     },
     {
-      "what": "the Lean statement",
+      "what": "the Lean statements",
       "command": "sh lean/check.sh",
-      "needs": "Linux with git, curl and elan; about 12 GB of disk; the last command held 15.3 GB of memory in one process; VERIFY.md",
-      "note": "on 2026-10-11 on the Linux machine: 51 modules, 15 minutes from nothing, RESULT: PASS"
+      "needs": "Linux with git, curl and elan; about 12 GB of disk; the comparison commands held up to 15.3 GB of memory in one process; VERIFY.md",
+      "note": "on 2026-10-11 on the Linux machine: 51 modules, 15 minutes from nothing, RESULT: PASS; on 2026-10-22 on two Linux machines: 58 modules, 14 and 16 minutes with Lean and Mathlib's compiled files already present, RESULT: PASS for both comparisons"
     },
     {
       "what": "the exact count tables at 8 to 4,096 points, each circuit built, counted and checked against its formula",
@@ -393,7 +438,7 @@
     "optimality: at 8 points the minimum in count G is between 15 and 19; the lower bound 2N - 1 (15 at 8 points) is Proposition 6 of the paper in paper/, with a proof written by the AI agents on 2026-10-11 and read by a second agent and by no person, not in Lean; 19 is the exact minimum only among circuits of its own shape, by two exhaustive searches (python)",
     "novelty beyond the literature search described in explicit-circuits.md",
     "an asymptotic record: counts of a smaller order are known (literature.asymptotic_results); this is an explicit constant at practical sizes",
-    "running time, revision 2: a few percent less time at best, on AMD Zen 4 and Zen 5, against the best textbook code in the same program; no gain on AMD Zen 2 or on a GPU; slower on an Intel Broadwell; no gain at 64 to 512 points on Zen 4; one run per chip; see measurements_2026_10_22",
+    "running time, revision 2: a few percent less time at best in the main test, on AMD Zen 4 and Zen 5, against the best textbook code in the same program; no gain on AMD Zen 2 or on a GPU; slower on an Intel Broadwell; no gain at 64 to 512 points on Zen 4 or Zen 5; with 512-bit code on Zen 4, 4-11 % less time from 2^12 points, in two runs on one machine; otherwise one run per chip; see measurements_2026_10_22",
     "the same output as FFHT bit for bit on real data: the rounding differs (measurements_2026_10_22, F13)",
     "that the kernel in tools/fht-kernel/ is fast as a library: it has not been timed on its own",
     "a smaller FPGA design on every chip: a loss on a Xilinx Artix-7 (measurements_2026_10_22, F16); power not measured",
@@ -503,7 +548,7 @@
   ],
   "not_tried": [
     "a direct search for a 16-point circuit with 53 operations or fewer in count O, up to a common factor (the best known has 56)",
-    "Lean statements for count G, for the 7/8 family and for sizes that are not powers of 8",
+    "Lean statements for the 7/8 family and for sizes that are not powers of 8",
     "the exact minimum at 8 points",
     "the same question for the Fourier transform",
     "timing on modern Intel processors (Sapphire Rapids and later), Apple processors and Arm library code; several threads; FFHT timed by its own Makefile and test program; sizes below 2^6 in the timing of 2026-10-22",
@@ -786,7 +831,29 @@
         },
         "reading": "no gain at 64 to 512 points",
         "data": "finite (610 of 610 results)",
-        "status": "one run, not reviewed; a run of the same test on Zen 5 finished after this revision was written and is not in it"
+        "status": "one run, not reviewed"
+      },
+      {
+        "id": "F5b",
+        "chip": "AMD Zen 5 (EPYC 9B45)",
+        "test": "many vectors per call, best over all 8 builds",
+        "precision": "single and double",
+        "sizes_64_to_512_points": [
+          0.986,
+          1.76
+        ],
+        "note_on_1_760": "1.760 is at 64 points in single precision, against a 512-bit textbook layout that has no circuit version; without it 0.986-1.037",
+        "at_1024_points": {
+          "double": 1.015,
+          "single": 1.018
+        },
+        "at_4096_points": {
+          "double": 1.013,
+          "single": 0.959
+        },
+        "reading": "no gain at 64 to 512 points",
+        "data": "finite (610 of 610 results); 269 of the 610 timings are of calls under 20 microseconds",
+        "status": "one run, not reviewed"
       },
       {
         "id": "F6",
@@ -878,7 +945,33 @@
           ]
         },
         "data": "same array",
-        "status": "one run on each chip in this revision, not reviewed; a repeat on Zen 4 finished after this revision was written and is not in it"
+        "status": "not reviewed; Zen 5 one run; Zen 4 two runs on the same machine, about half an hour apart, with the same code",
+        "zen4_repeat": {
+          "single": [
+            0.886,
+            1.003
+          ],
+          "double": [
+            0.907,
+            1.037
+          ]
+        },
+        "zen4_both_runs": {
+          "single_2^12_2^20": [
+            0.886,
+            0.954
+          ],
+          "single_2^10": [
+            0.996,
+            0.997
+          ],
+          "double_2^10_2^20": [
+            0.907,
+            0.959
+          ],
+          "best": "0.886 at 2^18 points in single precision, in both runs",
+          "agreement": "the two runs agree within 1.6 % at every size and precision"
+        }
       },
       {
         "id": "F10",
@@ -932,7 +1025,17 @@
           1.41
         ],
         "data": "same array",
-        "status": "one run each, not reviewed"
+        "status": "one run each, not reviewed",
+        "zen4_repeat": {
+          "double": [
+            0.65,
+            0.76
+          ],
+          "single": [
+            0.56,
+            0.72
+          ]
+        }
       },
       {
         "id": "F12",
@@ -1046,9 +1149,8 @@
       }
     ],
     "not_in_this_revision": [
-      "the many-vectors test at 64 to 4,096 points on Zen 5 (run, finished after this revision was written, not reviewed)",
-      "a repeat of the 512-bit run on Zen 4 (run, finished after this revision was written, not reviewed)",
-      "a review of the Zen 4 and 512-bit runs by a second agent",
+      "a review of the Zen 4 and 512-bit runs by a second agent, the Zen 4 repeat and the Zen 5 many-vectors run included",
+      "the 512-bit test on a second Zen 4 machine",
       "a finite-data control of the same-array runs",
       "the kernel of tools/fht-kernel/ timed against FFHT"
     ]

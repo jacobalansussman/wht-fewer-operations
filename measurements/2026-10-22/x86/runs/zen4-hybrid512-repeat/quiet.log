@@ -1,0 +1,20 @@
+== az_quiet 2026-10-22 17:44:06 tune_gcc_avx512_f64: QUIET over 3 s; whole machine 0.23 of 44 cores busy; steal 0.0 %; load ['0.86', '0.96', '0.97']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.7 %
+== az_quiet 2026-10-22 17:44:29 tune_clang_avx512_f64: QUIET over 3 s; whole machine 0.07 of 44 cores busy; steal 0.0 %; load ['0.97', '0.98', '0.98']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.3 %
+== az_quiet 2026-10-22 17:44:51 tune_gcc_avx512_f32: QUIET over 3 s; whole machine 0.07 of 44 cores busy; steal 0.0 %; load ['0.97', '0.98', '0.98']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 17:45:13 tune_clang_avx512_f32: QUIET over 3 s; whole machine 0.20 of 44 cores busy; steal 0.0 %; load ['1.06', '1.00', '0.99']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 17:45:34 whole_same_gcc_avx512_f64: QUIET over 3 s; whole machine 0.46 of 44 cores busy; steal 0.0 %; load ['1.04', '1.00', '0.99']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 17:52:55 whole_same_gcc_avx512_f32: QUIET over 3 s; whole machine 0.49 of 44 cores busy; steal 0.0 %; load ['1.01', '1.07', '1.02']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 18:00:16 whole_same_clang_avx512_f64: QUIET over 3 s; whole machine 0.46 of 44 cores busy; steal 0.0 %; load ['1.47', '1.29', '1.14']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 18:04:16 whole_same_clang_avx512_f32: QUIET over 3 s; whole machine 0.07 of 44 cores busy; steal 0.0 %; load ['1.06', '1.21', '1.14']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 18:08:15 whole_sep_gcc_avx512_f64: QUIET over 3 s; whole machine 0.07 of 44 cores busy; steal 0.0 %; load ['1.06', '1.18', '1.15']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.0 %
+== az_quiet 2026-10-22 18:10:03 whole_sep_gcc_avx512_f32: QUIET over 3 s; whole machine 0.45 of 44 cores busy; steal 0.0 %; load ['1.09', '1.15', '1.14']
+   CPUs the timing uses: cpu21 0.0 %, cpu43 0.7 %

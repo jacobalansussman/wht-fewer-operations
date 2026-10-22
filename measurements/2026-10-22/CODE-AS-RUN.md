@@ -146,7 +146,7 @@ Raw outputs are published from each run's `out/` folder. Inside them:
   tensors each), and of their build logs only the compiler (`ptxas`) lines of the 12N, 20N, 28N and 40N kernels;
   their `chk_*.json` files (output tensors only) are not published;
 - the Xilinx run publishes its results, the logs of the published designs and the self-test rows of two of them;
-- text files over 16 KB are stored compressed (`.gz`; 231 files), and each run's `asm/` folder as one `asm.tar.gz`.
+- text files over 16 KB are stored compressed (`.gz`; 263 files), and each run's `asm/` folder as one `asm.tar.gz`.
 
 | run folder | files | what was changed |
 |---|---|---|
@@ -165,6 +165,7 @@ Raw outputs are published from each run's `out/` folder. Inside them:
 | `x86/runs/zen4-balance` | 10 | stored compressed: 2; container hostname -> <container>: 2; dropped "top:" lines (process names): 48 |
 | `x86/runs/zen4-hybrid` | 33 | asm/ as asm.tar.gz: 1; empty build logs not published: 7; stored compressed: 17; container hostname -> <container>: 2; dropped "top:" lines (process names): 108 |
 | `x86/runs/zen4-hybrid512` | 32 | asm/ as asm.tar.gz: 1; empty build logs not published: 6; stored compressed: 15; container hostname -> <container>: 2; dropped "top:" lines (process names): 120 |
+| `x86/runs/zen4-hybrid512-repeat` | 32 | asm/ as asm.tar.gz: 1; empty build logs not published: 6; stored compressed: 15; container hostname -> <container>: 2; dropped "top:" lines (process names): 120 |
 | `x86/runs/zen4-small` | 34 | asm/ as asm.tar.gz: 1; stored compressed: 17; empty build logs not published: 8; container hostname -> <container>: 2; dropped "top:" lines (process names): 96 |
 | `x86/runs/zen4-wht-full` | 187 | internal label replaced: 3; empty build logs not published: 10; container hostname -> <container>: 2; dropped "top:" lines (process names): 2040; stored compressed: 32 |
 | `x86/runs/zen4-wht-quick` | 121 | internal label replaced: 3; empty build logs not published: 10; container hostname -> <container>: 2; dropped "top:" lines (process names): 1248; stored compressed: 8 |
@@ -174,4 +175,5 @@ Raw outputs are published from each run's `out/` folder. Inside them:
 | `x86/runs/zen5-hybrid-retracted-3` | 33 | empty build logs not published: 6; stored compressed: 19; container hostname -> <container>: 2; dropped "top:" lines (process names): 144 |
 | `x86/runs/zen5-hybrid` | 33 | asm/ as asm.tar.gz: 1; empty build logs not published: 7; stored compressed: 17; container hostname -> <container>: 2; dropped "top:" lines (process names): 108 |
 | `x86/runs/zen5-hybrid512` | 32 | asm/ as asm.tar.gz: 1; empty build logs not published: 6; stored compressed: 15; container hostname -> <container>: 2; dropped "top:" lines (process names): 120 |
+| `x86/runs/zen5-small` | 34 | asm/ as asm.tar.gz: 1; stored compressed: 17; empty build logs not published: 8; container hostname -> <container>: 2; dropped "top:" lines (process names): 96 |
 | `x86/runs/zen5-wht` | 121 | internal label replaced: 3; empty build logs not published: 10; container hostname -> <container>: 2; dropped "top:" lines (process names): 1248; stored compressed: 8 |

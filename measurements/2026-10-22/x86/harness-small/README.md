@@ -12,8 +12,8 @@ circuit steps (`hyb8-*`, `hyb16-*`); and straight-line transforms, in which one 
 short vector (`sl8-*`, `sl16-*`, among them `sl16-g20x2`, two g20 steps). Each balanced textbook comes in both
 orders (multiply-add first, and the fair subtraction-first `...balS`).
 
-Status: one run, on AMD Zen 4 (EPYC 9B14), 22 October 2026, not read by a reviewing agent after it finished. A run
-on AMD Zen 5 finished after the results page was written; it is not in this revision.
+Status: one run on AMD Zen 4 (EPYC 9B14) and one on AMD Zen 5 (EPYC 9B45) (`../runs/zen5-small/`), 22 October
+2026, neither read by a reviewing agent after it finished.
 
 ## Run it again
 

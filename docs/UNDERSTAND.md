@@ -119,7 +119,7 @@ ways: it allows a constant on both terms, and it lets a multiplication on its ow
 paper charges one. No count-(G) circuit here uses either: every line has two terms and at most one constant.
 Count (O) is the strict one. Alman and Rao, whose 23/24 is the smallest explicit constant of this kind that I
 found in print (step 8 says what *explicit* means), count this way (step 8), and so
-does the Lean statement (step 9).
+does the first Lean statement (step 9).
 
 Why both are on this page. The search found the small circuits in count (G). There they look best: 19
 operations at 8 points. But a result in count (G) alone leaves a question open: what about the
@@ -217,8 +217,8 @@ flip two or four signs at once.
 
 The count: 7 lines to the centre, 4 shared lines (g8 to g11), and one last line for each of the 8 outputs.
 
-Python checks these 19 lines on every input, and they are short enough to check by hand. Lean checks the
-form of step 6, not this one.
+Python checks these 19 lines on every input, and they are short enough to check by hand. Lean checks these
+19 lines too (`hadamard_eight_19`), and the form of step 6.
 
 **Check.** Two outputs by hand. y2 = g8 + 2·x1 = centre - 2·x7 + 2·x1. Write the signs of the centre, flip
 the signs of x7 and x1, and compare with row 2 of H by the rule of step 1. Do the same for
@@ -353,7 +353,7 @@ Their exact count first falls below the textbook at 2^24 = 16,777,216 points, an
 Theorem 1.1 at 2^27 points. Mine does at 512.
 
 Where their result is wider than mine: it covers every power of two and any field, in a refereed paper. My
-Lean statement covers the powers of 8, over the complex numbers. And the method is theirs: split the
+Lean statement in their count covers the powers of 8, over the complex numbers. And the method is theirs: split the
 8-point table into a part of low rank (rows that are all multiples of one row, or sums of a few such) plus
 a sparse part (few entries that are not zero), and halve once (step 6). In the circuit of step 5 the centre
 plays the first part and the sign flips the second. What the search added is which values to share inside
@@ -376,7 +376,7 @@ at 8 points (step 5).
 ## Step 9. What Lean proves, and what it does not
 
 Lean is a proof assistant: a program that checks a proof line by line and accepts nothing it cannot check.
-One statement of this work is checked by Lean. Here it is, cut into five lines:
+Two statements of this work are checked by Lean; this is the first. Here it is, cut into five lines:
 
 ```
 1   theorem OAI.ExactFourier.WHT8Half.hadamard_pow8_circuit (j : ℕ) :
@@ -407,12 +407,17 @@ basic assumptions that almost every Lean proof uses. The proof is in [TensorPow8
 
 **What it does not prove.**
 
-- Nothing in count (G): not the 19 operations of step 5, and not the 7 of step 4.
+- Nothing in count (G). That count has its own Lean statement, in `lean/Work/WHT34/`: at every power of
+  two there is a circuit of at most (3/4) N log2 N + N/4 lines, each one multiply-add ±u ± c·v. Among its
+  checks are the 19 lines of step 5 (`hadamard_eight_19`) and two 7-line circuits at 4 points: the 1994
+  paper's, and the one in `tools/circuits/programs/h4_7gates.txt`. The listing of step 4 is a third wiring
+  and is not among them.
 - Nothing for sizes that are not powers of 8.
 - Not that the count is the smallest possible, and not that it is new.
 - It says that a circuit exists. Above 8 points it does not write the gates out.
 - No person has read the Lean files, including the definition `hadamard`, which was written that night.
-  The check is one build, on one machine.
+  The check is one build from nothing, on one machine, and, for revision 2, two more builds on two
+  machines where Lean and Mathlib's compiled files were already present.
 
 **Check.** Put j = 3 into line 5.
 
@@ -447,7 +452,11 @@ as its own theorem, `hadamard_512_circuit`. `python3 docs/walkthrough.py 9` read
   processors, against the best textbook code in the same program. On AMD Zen 4 and Zen 5 it took a few
   percent less time, in one run each, not yet read by a second agent and below the bar of 10 % that I had
   set before the runs (0.940-0.952 and 0.977-0.996 of the fastest rival's time, in double precision, over
-  builds by two compilers); on AMD Zen 2 there was no clear gain, and on an older Intel processor it was slower. My first figure that day,
+  builds by two compilers); on AMD Zen 2 there was no clear gain, and on an older Intel processor it was slower.
+  With 512-bit code on Zen 4 (instructions that work on 512 bits at once), two runs on one machine gave
+  4-11 % less time from 2^12 points, and at one size (2^18 points, single precision, 0.886 of the fastest
+  rival's time) they passed the bar; they are not yet read by a second agent, and they show that the figure
+  repeats on that machine, not that it holds on other Zen 4 machines. My first figure that day,
   11-15 % less time on Zen 5, was wrong: the rival code carried avoidable register copies, and I retracted
   it. [The measurements of 22 October](../measurements/2026-10-22/README.md) have every number.
 - **Not a better chip, except in one setting.** As hardware, where a doubling is only wiring, the 19-line
@@ -478,9 +487,10 @@ as its own theorem, `hadamard_512_circuit`. `python3 docs/walkthrough.py 9` read
    shift-and-add synthesis of constant matrices, which counts adders the way count (G) does. If you know a
    smaller count, I would be glad to hear of it and will credit it.
 2. *Is the comparison with Alman and Rao fair, and how far does it reach?* It is the same task with the
-   same three things charged (step 8). It is narrower than their result in three ways. Lean covers the
-   powers of 8 only; the other powers of two rest on Python checks up to 16,384 points (the README gives the
-   command). Lean's statement is over the complex numbers; it is not stated for other fields. And it uses
+   same three things charged (step 8). It is narrower than their result in three ways. In their count, Lean
+   covers the powers of 8 only; the other powers of two rest on Python checks up to 16,384 points (the
+   README gives the command). That Lean statement is over the complex numbers; it is not stated for other
+   fields. And it uses
    N multiplications by a power of two, on the outputs, where Alman and Rao use N - 1, on the inputs.
 3. *Does it go further?* Alman and Rao's paper turns a count for this transform into a count for the
    Fourier transform. My count has not been put through that, so I claim nothing there. The smallest

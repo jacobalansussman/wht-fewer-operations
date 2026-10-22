@@ -199,8 +199,7 @@ def copies_cost():
 
 
 def wide512():
-    for chip, run in (('Zen 5', 'zen5-hybrid512'), ('Zen 4', 'zen4-hybrid512')):
-        k = chip.replace(' ', '').lower()
+    for k, run in (('zen5', 'zen5-hybrid512'), ('zen4', 'zen4-hybrid512'), ('zen4r', 'zen4-hybrid512-repeat')):
         for p in ('f32', 'f64'):
             fs = ['whole_same_gcc_avx512_%s.txt' % p, 'whole_same_clang_avx512_%s.txt' % p]
             a = across(run, fs, W_CIRC, W_RIVAL)
@@ -214,29 +213,57 @@ def wide512():
 def small():
     rx = re.compile(r'^RESULT x86-hybrid-small (\S+) 2\^(\d+) B=(\d+) (\S+)\s+best\s+([\d.]+)\s+median\s+([\d.]+)'
                     r' ns/vector.*finite (\S+) nonfinite (\d+)', re.M)
+    rx_call = re.compile(r'^RESULT x86-hybrid-small .* ns/point \| ([\d.]+) us/call', re.M)
     circ = re.compile(r'-g\d')
-    data, n, fin = {}, 0, 0
-    d = os.path.join(X86, 'zen4-small')
-    for f in sorted(os.listdir(d)):
-        if not f.startswith('batch_'):
-            continue
-        b = f[len('batch_'):].split('.txt')[0]
-        for m in rx.finditer(rd(os.path.join(d, f.replace('.gz', '')))):
-            n += 1
-            fin += m.group(7) == 'yes' and m.group(8) == '0'
-            data.setdefault(b, {}).setdefault(int(m.group(2)), {})[m.group(4)] = float(m.group(6))
-    fig('zen4.small.finite', '%d of %d' % (fin, n), '%(v)s')
-    lib = []
-    for p, word in (('f32', 'single'), ('f64', 'double')):
-        bs = [b for b in data if b.endswith(p)]
-        for L in sorted(data[bs[0]]):
-            c = min(data[b][L][x] for b in bs for x in data[b][L] if circ.search(x) and 'h20' not in x)
-            r = min(data[b][L][x] for b in bs for x in data[b][L] if not circ.search(x) and 'h20' not in x)
-            if L <= 9:
-                lib.append(c / r)
-            else:
-                fig('zen4.small.%s.%d' % (p, 2 ** L), '%.3f' % (c / r), '%(v)s')
-    fig('zen4.small.64-512', rng(lib), '%(v)s')
+    for k, run in (('zen4', 'zen4-small'), ('zen5', 'zen5-small')):
+        data, n, fin, short = {}, 0, 0, 0
+        d = os.path.join(X86, run)
+        for f in sorted(os.listdir(d)):
+            if not f.startswith('batch_'):
+                continue
+            b = f[len('batch_'):].split('.txt')[0]
+            text = rd(os.path.join(d, f.replace('.gz', '')))
+            for m in rx.finditer(text):
+                n += 1
+                fin += m.group(7) == 'yes' and m.group(8) == '0'
+                data.setdefault(b, {}).setdefault(int(m.group(2)), {})[m.group(4)] = float(m.group(6))
+            short += sum(float(m.group(1)) < 20 for m in rx_call.finditer(text))
+        fig(k + '.small.finite', '%d of %d' % (fin, n), '%(v)s')
+        lib, lib_wo = [], []
+        for p, word in (('f32', 'single'), ('f64', 'double')):
+            bs = [b for b in data if b.endswith(p)]
+            for L in sorted(data[bs[0]]):
+                c = min(data[b][L][x] for b in bs for x in data[b][L] if circ.search(x) and 'h20' not in x)
+                r = min(data[b][L][x] for b in bs for x in data[b][L] if not circ.search(x) and 'h20' not in x)
+                if L <= 9:
+                    lib.append(c / r)
+                    # 64 points in single precision: the fastest rival is a 512-bit layout with no circuit version
+                    if not (p == 'f32' and L == 6):
+                        lib_wo.append(c / r)
+                else:
+                    fig('%s.small.%s.%d' % (k, p, 2 ** L), '%.3f' % (c / r), '%(v)s')
+        fig(k + '.small.64-512', rng(lib), '%(v)s')
+        fig(k + '.small.64-512.without-64-single', rng(lib_wo), 'without it %(v)s')
+        if k == 'zen5':
+            fig(k + '.small.calls-under-20us', '%d of the %d timings' % (short, n), '%(v)s')
+
+
+def repeat512():
+    """Zen 4, 512-bit: the first run and its repeat on the same machine, across builds, size by size."""
+    both = {}
+    for run in ('zen4-hybrid512', 'zen4-hybrid512-repeat'):
+        for p in ('f32', 'f64'):
+            fs = ['whole_same_gcc_avx512_%s.txt' % p, 'whole_same_clang_avx512_%s.txt' % p]
+            for L, v in across(run, fs, W_CIRC, W_RIVAL).items():
+                both.setdefault((p, L), []).append(v)
+    fig('zen4.512.both.f32.2^12-2^20', rng(v for (p, L), vs in both.items() if p == 'f32' and L >= 12 for v in vs),
+        '%(v)s in single precision')
+    fig('zen4.512.both.f64.2^10-2^20', rng(v for (p, L), vs in both.items() if p == 'f64' and L >= 10 for v in vs),
+        '%(v)s in double')
+    fig('zen4.512.both.f32.2^10', rng(both[('f32', 10)]), '%(v)s')
+    fig('zen4.512.both.f32.2^18', rng(both[('f32', 18)]), '%(v)s in both runs')
+    diff = max(abs(a - b) / a for a, b in both.values())
+    fig('zen4.512.both.max-difference', '%.1f %%' % (100 * diff + 0.05), 'within %(v)s')
 
 
 def byproducts():
@@ -247,8 +274,7 @@ def byproducts():
         for c, f in (('gcc', F64[0]), ('clang', F64[1])):
             v = per_build(run, f, H_TEXTBOOK_FFHT_STRUCTURE, ['FFHT'], S10_16)
             fig('%s.textbook-vs-FFHT.%s' % (k, c), rng(v.values()), '%(v)s')
-    for chip, run in (('Zen 5', 'zen5-hybrid512'), ('Zen 4', 'zen4-hybrid512')):
-        k = chip.replace(' ', '').lower()
+    for k, run in (('zen5', 'zen5-hybrid512'), ('zen4', 'zen4-hybrid512'), ('zen4r', 'zen4-hybrid512-repeat')):
         for p in ('f64', 'f32'):
             fs = ['whole_same_gcc_avx512_%s.txt' % p, 'whole_same_clang_avx512_%s.txt' % p]
             a = across(run, fs, [r for r in W_RIVAL if r != 'FFHT'], ['FFHT'], S10_20)
@@ -396,7 +422,7 @@ def xilinx():
 
 
 def main():
-    for f in (chips, overflow_share, retraction, copies_cost, wide512, small, byproducts, kernel_level, rounding, gpu, xilinx):
+    for f in (chips, overflow_share, retraction, copies_cost, wide512, repeat512, small, byproducts, kernel_level, rounding, gpu, xilinx):
         f()
     readme = rd(os.path.join(HERE, 'README.md')) if os.path.exists(os.path.join(HERE, 'README.md')) else ''
     missing = 0

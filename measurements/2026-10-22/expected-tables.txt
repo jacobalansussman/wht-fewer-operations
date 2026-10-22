@@ -49,12 +49,32 @@ zen4.512.f32.gcc-odd-min                 0.801                                  
 zen4.512.f64.across                      0.913-1.037                                      in README
 zen4.512.f64.sizes                       2^8-2^20                                         in README
 zen4.512.f64.gcc-odd-min                 0.938                                            in README
+zen4r.512.f32.across                     0.886-1.003                                      in README
+zen4r.512.f32.sizes                      2^8-2^20                                         in README
+zen4r.512.f32.gcc-odd-min                0.811                                            in README
+zen4r.512.f64.across                     0.907-1.037                                      in README
+zen4r.512.f64.sizes                      2^8-2^20                                         in README
+zen4r.512.f64.gcc-odd-min                0.935                                            in README
+zen4.512.both.f32.2^12-2^20              0.886-0.954                                      in README
+zen4.512.both.f64.2^10-2^20              0.907-0.959                                      in README
+zen4.512.both.f32.2^10                   0.996-0.997                                      in README
+zen4.512.both.f32.2^18                   0.886                                            in README
+zen4.512.both.max-difference             1.6 %                                            in README
 zen4.small.finite                        610 of 610                                       in README
 zen4.small.f32.1024                      0.983                                            in README
 zen4.small.f32.4096                      0.967                                            in README
 zen4.small.f64.1024                      0.979                                            in README
 zen4.small.f64.4096                      0.981                                            in README
 zen4.small.64-512                        0.972-1.107                                      in README
+zen4.small.64-512.without-64-single      0.972-1.013                                      in README
+zen5.small.finite                        610 of 610                                       in README
+zen5.small.f32.1024                      1.018                                            in README
+zen5.small.f32.4096                      0.959                                            in README
+zen5.small.f64.1024                      1.015                                            in README
+zen5.small.f64.4096                      1.013                                            in README
+zen5.small.64-512                        0.986-1.760                                      in README
+zen5.small.64-512.without-64-single      0.986-1.037                                      in README
+zen5.small.calls-under-20us              269 of the 610 timings                           in README
 zen5.textbook-vs-FFHT.across             0.796-0.837                                      in README
 zen5.textbook-vs-FFHT.gcc                0.844-0.904                                      in README
 zen5.textbook-vs-FFHT.clang              0.795-0.830                                      in README
@@ -65,6 +85,8 @@ zen5.512-textbook-vs-FFHT.f64            0.40-0.50                              
 zen5.512-textbook-vs-FFHT.f32            0.37-0.46                                        in README
 zen4.512-textbook-vs-FFHT.f64            0.64-0.75                                        in README
 zen4.512-textbook-vs-FFHT.f32            0.56-0.72                                        in README
+zen4r.512-textbook-vs-FFHT.f64           0.65-0.76                                        in README
+zen4r.512-textbook-vs-FFHT.f32           0.56-0.72                                        in README
 zen5.FFHT-vs-512-textbook.twin           1.68-1.80                                        in README
 zen5.512-textbook-vs-best-256            1.30-1.41                                        in README
 zen2.pass.g52                            0.780 / 0.785                                    in README
@@ -108,5 +130,5 @@ xc7.slices.o19_d2-vs-ar8_d2              109 against 119 (-8.4 %)               
 xc7.lut-cells.o19_d3-vs-tb8_d3           461 against 586 (-21.3 %)                        in README
 xc7.most-slices                          316 of the chip's 15,850 slices (2.0 %)          in README
 xc7.ternary.carry4                       54 against 57                                    in README
-109 figures re-derived; 0 of them not found in README.md as printed
+131 figures re-derived; 0 of them not found in README.md as printed
 OK: every figure of measurements/2026-10-22/README.md re-derived from the raw files.  Measurements, not proofs.

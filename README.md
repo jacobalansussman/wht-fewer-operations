@@ -7,9 +7,9 @@ does not.
 | what | the gain, and against what | checked by |
 |---|---|---|
 | **Proved**, with every addition, subtraction and multiplication by a constant counted as one | the exact transform on N = 8^j points in at most (5/6) N log2 N + N operations, against the textbook's N log2 N and Alman and Rao's 23/24 (2023), the smallest c that I found in print for a count of the form c·N log2 N plus a multiple of N; below the textbook from 512 points | Lean, a program that checks proofs |
-| **Counted, with doublings free**, as they are for the adders of a chip | 19 operations at 8 points, against the textbook's 24 and the 22 in print; a family of circuits with (3/4) N log2 N + N/4, against the 7/8 in print (Coppersmith, Feig and Linzer, 1994) | exact replay by programs; not in Lean |
+| **Counted, with doublings free**, as they are for the adders of a chip | 19 operations at 8 points, against the textbook's 24 and the 22 in print; a family of circuits with (3/4) N log2 N + N/4, against the 7/8 in print (Coppersmith, Feig and Linzer, 1994) | Lean, for the bound (3/4) N log2 N + N/4 at every power of two and for the 19 at 8 points; exact replay by programs up to 16,384 points |
 | **Measured on a chip** | built for an FPGA (a chip whose logic is set by loading a file into it) as one block of adders with no registers inside, the 8-point circuit takes 19 % to 21.5 % fewer logic cells than the textbook design on a Lattice iCE40, and the family 17.5 % to 23.1 % fewer from 16 to 256 points, by the same tools' counts; on a board it gave the same outputs as the textbook circuit on 597,750,000 test inputs | open-source chip tools; one board run |
-| **Measured on processors** | at best a few percent less time: 5-6 % on an AMD Zen 4 server processor and 0-2 % on an AMD Zen 5, against the best textbook code I could write in the same program. Before the runs I set the bar for a gain worth pursuing at 10 % less time; neither reaches it. No gain on AMD Zen 2, on a GPU, or on Zen 4 at the sizes most libraries use; slower on an older Intel processor | exactness checked first; one timing run per chip, on rented cloud machines; the Zen 4 and Zen 5 results not yet read by a second agent |
+| **Measured on processors** | at best a few percent less time in the main test: 5-6 % on an AMD Zen 4 server processor and 0-2 % on an AMD Zen 5, against the best textbook code I could write in the same program. Before the runs I set the bar for a gain worth pursuing at 10 % less time; neither reaches it. In 512-bit code on Zen 4, 4-11 % less time from 2^12 points, past the bar at one size, in two runs on one machine. No gain on AMD Zen 2, on a GPU, or on Zen 4 and Zen 5 at the sizes most libraries use; slower on an older Intel processor | exactness checked first; one timing run per chip (two for the 512-bit code on Zen 4), on rented cloud machines; the Zen 4 and Zen 5 results not yet read by a second agent |
 
 **Not gained on paper.** It is a better constant, not a better order: counts that grow more slowly than
 N log2 N are known, though they give no gain at the sizes anyone computes. With every operation charged, the
@@ -32,10 +32,11 @@ known to be the best possible.
   without them, the difference on that chip is 0-2 %, too small for one run to establish.
 
 So this is a result about operation counts, with a measured saving in chip area in one kind of design, and
-not a faster program: on processors the best I measured is a few percent, in one run per chip.
+not a faster program: on processors the best I measured in the main test is a few percent, in one run per
+chip, and in 512-bit code on Zen 4 it is 4-11 % from 2^12 points, in two runs on one machine.
 
 **Who did what.** I directed this work. The circuits were found by computer searches that AI agents
-(Anthropic's Claude) wrote and ran. The same agents wrote the programs, the Lean proof, the timing programs
+(Anthropic's Claude) wrote and ran. The same agents wrote the programs, the Lean proofs, the timing programs
 and these pages. No person has yet read the Lean files or the programs, or checked the proofs, line by line.
 The builds, the checks, the timings and the hardware measurements reported on these pages were run by the
 agents, at my direction, on a Mac mini of mine and on a Linux machine that I rented, and, on 22 October 2026,
@@ -66,7 +67,7 @@ the circuit model of OpenAI's repository.
 | a doubling or a halving of a value | 1 | 0: it is folded into the line that uses it |
 | a line a·u + b·v, with constants a and b | 1, plus 1 for each constant other than +1 or -1 | 1 |
 | the multiplication of every output by 2^j at the end of the 5/6 circuit | 1 for each output, N in all | 0 |
-| where it is the natural count | the circuit model of OpenAI's repository openai/math (see "Relation to OpenAI's family 130"), the Lean proof, and Alman and Rao's paper | the adders of a chip, where a doubling only moves wires; processors with a fused multiply-add |
+| where it is the natural count | the circuit model of OpenAI's repository openai/math (see "Relation to OpenAI's family 130"), the Lean proof of the 5/6 count, and Alman and Rao's paper | the adders of a chip, where a doubling only moves wires; processors with a fused multiply-add; the Lean proof of the 3/4 count, which charges one for each line ±u ± c·v |
 
 In count (O) a constant can be any number; nothing bounds its size. Every constant in my circuits is a power
 of 2 with a sign (1, 2, 1/2 or 2^j). So in count (G) nothing is free except doublings and halvings, and
@@ -186,10 +187,19 @@ literature I searched. That search did not cover the hardware literature on shif
 constant matrices, whose tools count adders the way count (G) does (see [open directions](#open-directions),
 item 2).
 
-Status: these counts are not in Lean. Every circuit up to 16,384 points was replayed exactly by the Python
-programs (the two largest sizes with `run.py --kmax 14`). For larger N the count of the family rests on a
-short induction, written in the first lines of `tools/circuits/gen.py`, which the agents checked and no
-person has read.
+Status: proved in Lean, at every power of two. The theorem `MultiplyAdd.hadamard_mulAdd_circuit` says that
+for every k there is a circuit on N = 2^k inputs whose outputs are exactly the transform of the inputs, with
+at most (3/4) N log2 N + N/4 lines. In that theorem a line is one multiply-add ±u ± c·v, with u and v inputs
+or earlier lines and c a constant, and it costs one; a multiplication on its own costs one too. So each line
+is one operation of the 1994 paper and one line of count (G), and the bound holds in both counts. The numbers
+may be in any commutative ring: the whole numbers, the rationals, the real and the complex numbers among
+them. The definitions are those of OpenAI's circuit model, with this line as the gate. The statement alone is
+the 91-line file `lean/Work/WHT34/ChallengeWHT34.lean`, which uses nothing but Mathlib. The 19 lines at
+8 points are proved in Lean as well (`hadamard_eight_19` in `lean/Work/WHT34/ChallengeWHT34Checks.lean`).
+Every circuit up to 16,384 points was also replayed exactly by the Python programs (the two largest sizes
+with `run.py --kmax 14`). Before the Lean proof, the count of the family for larger N rested on a short
+induction, written in the first lines of `tools/circuits/gen.py`, which the agents checked and no person has
+read; no person has read the Lean files either.
 
 The two results have not been combined. With every operation charged, the rate of the family is 7/8, which
 is worse than 5/6: for the exact transform at 64 points it costs 416 operations, against 384 by layers of
@@ -203,7 +213,8 @@ count (O). The best known has 56. With 53, layers of it would beat 5/6.
 ## Exact counts from 8 to 32,768 points
 
 Every cell is the exact transform H x. In each row the smallest count is in bold. "(Lean)" marks the sizes
-that the Lean theorem covers (the powers of 8).
+that the Lean theorem of the first count covers (the powers of 8). In the first table every entry of the
+column "3/4 family" is also an upper bound proved in Lean, and so is the 19 at 8 points.
 
 **Doublings free: count (G), the number of adders in hardware.**
 
@@ -244,7 +255,7 @@ What each column is, and who stated it (k = log2 N):
 | Alman and Rao, doublings charged | not built: they apply their input doublings once, and layering their step would charge them in every layer | (23/24) N k + (N/24) (k mod 3) + N - 1 | their total, in the proof of their Theorem 6.2 |
 | 5/6 circuit, doublings charged | the 20-operation 8-point step along groups of three bits, textbook layers for the bits left over, then N final multiplications | N (k - m/2 + 1) with m = k div 3; that is (5/6) N k + N when 3 divides k | this repository; Lean for N = 8^j |
 | 5/6 circuit, doublings free | the same circuit, which is layers of the 19-operation circuit with no scaling | 19 (N/8) (k div 3) + N (k mod 3) | this repository |
-| 3/4 family, doublings free | the family | (3/4) N k + N/4 | this repository |
+| 3/4 family, doublings free | the family | (3/4) N k + N/4 | this repository; Lean, as an upper bound, for every N = 2^k |
 | 3/4 family, rescaled | the family with halvings in place of doublings, then N multiplications | (7/8) N k + N/4 + N when k is even; (7/8) N k + 5N/8 + N when k is odd | this repository; this is the "7/8 when doublings are charged" above |
 | 3/4 family, each doubling charged | the count-(G) circuit itself, counted in count (O) | no formula claimed | computed |
 
@@ -261,7 +272,7 @@ than `run.py`, which checks every circuit on every unit input.
 
 ## What is proved, and what is not
 
-**Proved in Lean.** One statement, in two forms. The theorem
+**Proved in Lean.** Two results. The first is one statement, in two forms. The theorem
 `OAI.ExactFourier.WHT8Half.hadamard_pow8_circuit` says: for every j there is a circuit on 8^j inputs that
 computes the exact Walsh-Hadamard transform and has at most 20·j·8^(j-1) + 8^j gates. That number is
 (5/6) N log2 N + N. A *gate* is one addition, one subtraction or one multiplication by a constant, in the
@@ -269,6 +280,15 @@ circuit model of OpenAI's repository openai/math. The theorem `hadamard_pow8_cir
 with the bound written as (5/6) N log2 N + N. The statement alone, without proof, is the 93-line file
 `lean/Work/SmallWHT/ChallengeWHT8.lean`. Lean reports that both theorems depend only on its three standard
 axioms, `propext`, `Classical.choice` and `Quot.sound`.
+
+The second is the count with doublings free. The theorem `MultiplyAdd.hadamard_mulAdd_circuit` says: for
+every commutative ring and every k, there is a circuit on 2^k inputs that computes the exact Walsh-Hadamard
+transform with at most (3k·2^k + 2^k)/4 lines, each one multiply-add ±u ± c·v. That number is
+(3/4) N log2 N + N/4. The statement alone, without proof, is the 91-line file
+`lean/Work/WHT34/ChallengeWHT34.lean`. Lean reports that the theorem depends only on its three standard
+axioms. Beside it, `ChallengeWHT34Checks.lean` proves on the same definitions that the 19 lines at 8 points
+and the 1994 paper's 4-point circuit compute the transform, and that every circuit for the transform in this
+model has at least N lines, from 2 points on, when 2 is not 0.
 
 **Replayed exactly by programs, not in Lean.**
 
@@ -282,7 +302,9 @@ axioms, `propext`, `Classical.choice` and `Quot.sound`.
   Replayed up to 16,384 points (`run.py --kmax 14`, below). Beyond that it rests on a short argument
   (Corollary 2 of [the paper](paper/explicit-wht-circuits.pdf)), which the agents wrote and no person has
   checked.
-- Everything in the second count, above.
+- In the second count, the circuit files above 8 points and the family's count with every operation
+  charged (rate 7/8). Lean proves that circuits of at most the stated sizes exist; it writes out the 7 lines at
+  4 points and the 19 at 8 points, and no list for larger sizes.
 
 **Claim by claim.**
 
@@ -294,8 +316,8 @@ axioms, `propext`, `Classical.choice` and `Quot.sound`.
 | the 20 operations of the 8-point circuit compute the transform halved | 8 | **Lean**; the gates are data in `H8Half.lean`, written by a program from the text file | the same |
 | the gate lists of the 5/6 circuit | 64, 512 and 4,096 | **programs** | `python3 -B tools/circuits/run.py` |
 | count (O) at the powers of two that are not powers of 8; below the textbook from 512 points | 2^k | **programs** up to 16,384 points; beyond, Corollary 2 of the paper, the agents' proof, read by no person | `run.py --kmax 14` |
-| 19 operations at 8 points, count (G) | 8 | **programs**, and short enough to check by hand | `run.py`; `python3 docs/walkthrough.py all` |
-| the family, (3/4) N log2 N + N/4, count (G) | every 2^k from 4 | **programs** up to 16,384 points; beyond, the induction in the first lines of `gen.py`, checked by the agents, read by no person | `run.py` |
+| 19 operations at 8 points, count (G): `hadamard_eight_19` | 8 | **Lean**, on the definitions of the statement file itself; and **programs** | `sh lean/check.sh`; `run.py`; `python3 docs/walkthrough.py all` |
+| at most (3/4) N log2 N + N/4 lines, each one multiply-add, count (G) and the 1994 count: `hadamard_mulAdd_circuit` | every 2^k | **Lean**; also **programs** up to 16,384 points | `sh lean/check.sh`; `run.py` |
 | the family with every operation charged, rate 7/8 | powers of 4 | **programs** up to 16,384 points | `run.py` |
 | every count-(G) line is one multiply-add of the 1994 paper | all circuit files | **program** | `python3 -B tools/circuits/multiply_add_check.py` |
 | the lower bound 2N - 1 operations, in either count | every N | **paper**, Proposition 6: the agents' proof, read by a second agent, two of its steps checked by a program at 4 and 8 points; read by no person | `paper/lowerbound_check.c` |
@@ -309,15 +331,19 @@ axioms, `propext`, `Classical.choice` and `Quot.sound`.
 11 October 2026. No person has yet read the Lean files, including the definition of the transform that the
 statement uses. Two controls were run: a copy with one gate changed was refused by Lean, and a copy of the
 statement with 19 in place of 20 was refused by the comparison script. Lean's official comparison tool was
-not run on this folder. The Lean files are unchanged in revision 2, and the Lean check was not run again for
-it.
+not run on this folder. Revision 2 adds the seven files of the 3/4 count in `lean/Work/WHT34/`; the files of
+the 5/6 count are unchanged. The whole Lean folder was built again for revision 2, as a new copy on each of two
+Linux machines rented through Google Colab, where Lean and Mathlib's compiled files were already present
+(VERIFY.md, "What was run"), and two controls were run on the new files: a copy with one constant 2 changed
+to -2 was refused by Lean, and a copy of the statement with N/4 left out of the bound was refused by the
+comparison script. Lean's official comparison tool was not run on the new files.
 
 **Not claimed.**
 
-- That 5/6 is the best possible. The only lower bound proved here is 2N - 1 operations, far below these
+- That 5/6 is the best possible. The best lower bound proved here is 2N - 1 operations, far below these
   counts (Proposition 6 of [the paper](paper/explicit-wht-circuits.pdf); the agents wrote its proof, and no
-  person has read it). Morgenstern's (1/2) N log2 N, for constants of size at most 1, is also below every
-  count here.
+  person has read it); Lean proves only the weaker N lines (from 2 points on), in the model of the second
+  count. Morgenstern's (1/2) N log2 N, for constants of size at most 1, is also below every count here.
 - That the result is new. I searched; the section "Credit, and what is in print" says how far. It is a
   search, not a proof. I have not searched the hardware literature on shift-and-add synthesis of constant
   matrices, which counts adders the way the second count does.
@@ -327,8 +353,12 @@ it.
   (for the Fourier transform, at lengths it does not name), and my wht-power-saving-lean for this transform
   in OpenAI's machine model. Neither gives anything at sizes anyone computes.
 - That 19 operations is the least at 8 points.
-- That the results of the second count are in Lean. They were checked by programs. Corollary 2 and the
-  induction in `gen.py` are the agents' arguments, and no person has read them.
+- That all of the second count is in Lean. The bound (3/4) N log2 N + N/4 and the 19 at 8 points are;
+  the lower bound 0.3155 N log2 N and the rate 7/8 with every operation charged are not. Corollary 2,
+  which carries the first count to sizes that are not powers of 8, is the agents' argument, and no person
+  has read it.
+- That the Lean statement of the second count says which constants the circuits use. It allows any
+  constant; the circuits use only ±1 and ±2.
 - Peer review. The paper has not been reviewed and was not submitted anywhere.
 
 What is not claimed about speed and hardware is listed in the sections
@@ -349,6 +379,9 @@ transform, and about explicit circuits at sizes people use. It uses three things
 - the 44 Lean files under `lean/OAI/`, unmodified, which hold the cost of a matrix and the rule for the cost
   of a tensor product;
 - one theorem, repeated with its proof in `TensorPow8.lean`.
+
+The Lean statement of the second count uses the same definitions with the gate replaced by a multiply-add
+line and the complex numbers by any commutative ring; it imports none of OpenAI's files.
 
 It uses none of the paper's main argument. The 5/6 proof is one new 20-gate circuit, OpenAI's rule for the
 cost of a tensor product applied j times, and N final multiplications. The family's second paper, "An
@@ -380,17 +413,17 @@ AVX2 and FMA; elsewhere it runs only the plain C, unless the SIMDe library is gi
 | `sh tools/fht-kernel/test.sh` | builds the kernel with FFHT's entry points and tests it: exact on whole-number inputs, FFHT's return codes, the rounding on real inputs, and a broken copy that must fail | about 4 seconds (about 8 with SIMDe) | `OK: exact on integer inputs at every size 2^0 to 2^20 in float and double, FFHT's return codes, broken copy caught.` |
 | `python3 -B measurements/2026-10-22/tables.py` | re-derives every figure of the measurements of 22 October from the raw timing files | under a second | `OK: every figure of measurements/2026-10-22/README.md re-derived from the raw files.  Measurements, not proofs.` |
 | `python3 -B measurements/2026-10-22/circuits/check_circuits.py` | replays the 12 circuit files of the measurements of 22 October in exact arithmetic, and checks that the timing programs used exactly these files | under a second | `OK: 12 circuit files, each exact on every unit vector.` |
-| `sh lean/check.sh` | builds the Lean proof and compares the statement with what was proved | 15 minutes | `RESULT: PASS` |
+| `sh lean/check.sh` | builds the two Lean proofs and compares each statement with what was proved | about 15 minutes | `RESULT: PASS` |
 
 The second command replays every size up to 4,096 points. `python3 -B tools/circuits/run.py --kmax 14`
 replays the two largest sizes of its tables as well, up to 16,384 points; that takes 9 minutes and 3 GB of
 memory, and the last line then says `16384`.
 
 The Lean check needs more than the others: Linux with `git`, `curl` and `elan` (the program that installs
-Lean), an internet connection and about 12 GB of free disk. Its last step held 15.3 GB of memory in one
-process on the machine where it was run, which has 50 GB; a smaller machine was not tried.
-[VERIFY.md](VERIFY.md) has each command, what it prints and what was run. The Lean build was not run on a
-Mac.
+Lean), an internet connection and about 12 GB of free disk. Its comparison steps held up to 15.3 GB of
+memory in one process on the machines where they were run, which have 50 GB; a smaller machine was not tried.
+[VERIFY.md](VERIFY.md) has each command, what it prints and what was run. The whole Lean check was not run on a
+Mac; the seven files of the 3/4 count were compiled on one.
 
 The timings and the hardware figures of the two sections further down have their own pages, each with
 commands that need Python only and with what was run:
@@ -407,7 +440,8 @@ best circuit took 5-6 % less time than the best textbook code on AMD Zen 4 and 0
 one run each; there was no clear gain on AMD Zen 2, the circuit was slower on an older Intel processor, and
 on the GPU it made no difference. Before those runs I set a rule: at 0.90 of the rival's time or below
 (10 % less), the work would go on; at 0.95 or above, it would count as no gain worth pursuing on that chip.
-Across builds, Zen 5 came out above 0.95, and Zen 4 between the two.
+Across builds, Zen 5 came out above 0.95, and Zen 4 between the two. With 512-bit code on Zen 4, in two runs on
+the same machine, the circuit came out below 0.90 at one size and between the two at most others (below).
 
 ### 11 October: FFHT on one rented machine
 
@@ -481,6 +515,7 @@ written two ways, multiply-add first and subtraction first; the reason is the re
 |---|---|---|---|---|
 | AMD Zen 5 (EPYC 9B45) | double, 2^10 to 2^16 | **0.977-0.996** across builds: 0-2 % less time | same array | one run; its program was reviewed before the run, its results were not |
 | | single, 2^10 to 2^20 | 0.974-0.994 across builds; 0.944-0.958 with separate arrays (gcc only, at 2^12, 2^16 and 2^20) | same array; separate | the same run |
+| | many vectors per call, 64 to 512 points | 0.986-1.760, best over all 8 builds: **no gain** (1.760 is at 64 points in single precision, against a 512-bit textbook layout that has no circuit version; without it 0.986-1.037). At 1,024 points 1.015 (double) and 1.018 (single); at 4,096 points 1.013 and 0.959 | finite | one run, not reviewed |
 | AMD Zen 4 (EPYC 9B14) | double, 2^10 to 2^16 | **0.940-0.952** across builds: 5-6 % less time | same array | one run, not reviewed |
 | | single, 2^10 to 2^20 | 0.934-1.038 across builds, mixed; 0.965-0.969 with separate arrays (gcc only) | same array; separate | the same run |
 | | many vectors per call, 64 to 512 points | 0.972-1.107, best over all 8 builds: **no gain** (1.107 is at 64 points in single precision, against a 512-bit textbook layout that has no circuit version; without it 0.972-1.013). At 1,024 points 0.979 (double) and 0.983 (single); at 4,096 points 0.981 and 0.967 | finite | one run, not reviewed |
@@ -504,9 +539,8 @@ fair rival still has one copy more than the circuit (4 against 3); under clang b
 clean comparison. On Zen 4 the two ways of writing the rival take the same time. The first three runs stay
 in the record, with their figures, on [the measurements page](measurements/2026-10-22/README.md).
 
-**The sizes libraries use.** At 64 to 512 points, with many vectors per call and finite data, Zen 4 shows
-no gain (the table above). A run of the same test on Zen 5 finished after this page was written; it is not
-in this revision.
+**The sizes libraries use.** At 64 to 512 points, with many vectors per call and finite data, neither Zen 4
+nor Zen 5 shows a gain (the table above).
 
 **One step alone.** Timed as one pass in the registers rather than as a whole transform, a step gains more
 when the processor is kept busy with independent work: on Zen 2 the 16-point family step took 0.780-0.785
@@ -519,15 +553,18 @@ on Zen 5. Inside a whole transform the gain shrinks to the figures of the table.
 on its own takes 0.80-0.84 of the time of the best FFHT build on Zen 5 (double precision, 2^10 to 2^16,
 across builds), and 0.90-0.93 on Zen 4. And FFHT has no 512-bit code: on Zen 5 a tuned 512-bit textbook
 takes 0.40-0.50 of FFHT's time in double precision and 0.37-0.46 in single, at 2^10 to 2^20; on Zen 4,
-0.64-0.75 and 0.56-0.72. On Zen 5 the fastest 512-bit textbook was 1.30-1.41 times as fast as the fastest
-256-bit program, circuit or not (double precision, 2^10 to 2^16). One run each; the 512-bit runs are not
-reviewed.
+0.64-0.75 and 0.56-0.72 (0.65-0.76 and 0.56-0.72 in the repeat). On Zen 5 the fastest 512-bit textbook was
+1.30-1.41 times as fast as the fastest 256-bit program, circuit or not (double precision, 2^10 to 2^16). One
+run each, except the 512-bit test on Zen 4, which ran twice on one machine; the 512-bit runs are not reviewed.
 
-**512-bit code.** With the circuit inside 512-bit code (AVX-512), one run on each chip, not reviewed and with
-no repeat in this revision, gave across builds, at the even sizes 2^8 to 2^20: on Zen 5 0.940-1.018 in
-single precision and 0.946-1.007 in double; on Zen 4 0.886-1.002 and 0.913-1.037. A repeat on Zen 4 finished
-after this page
-was written; it is not in this revision.
+**512-bit code.** With the circuit inside 512-bit code (AVX-512), not reviewed, across builds, at the even
+sizes 2^8 to 2^20: on Zen 5, in one run, 0.940-1.018 in single precision and 0.946-1.007 in double; on Zen 4
+0.886-1.002 and 0.913-1.037 in a first run, and 0.886-1.003 and 0.907-1.037 in a second run on the same
+machine. The two Zen 4 runs agree within 1.6 % at every size. Together they give 0.886-0.954 in single
+precision from 2^12 points and 0.907-0.959 in double from 2^10: 4-11 % less time. At one size, 2^18 points in
+single precision, both runs gave 0.886, past the bar of 0.90; at 2^8 points neither precision gains, nor
+single precision at 2^10 (0.996-0.997). Both runs are on one machine, so they show that the figure repeats
+there, not that it holds on other Zen 4 machines.
 
 **Rounding.** On whole-number inputs every program is exact. On real inputs, in double precision, the
 circuits differ from the textbook by at most 3.9e-16 relative to the largest output at 2^10 and 2^20, the
@@ -563,12 +600,11 @@ measurement.
   circuit is slower. Modern Intel chips (Sapphire Rapids and later), Apple processors and Arm library code
   are untimed in this test.
 - That it is faster on AMD in general. Each figure comes from one rented cloud machine per chip, one pinned
-  core and one run (the 512-bit runs have no repeat in this revision), and the clock frequency was not
-  controlled.
+  core and one run (the 512-bit test on Zen 4 ran twice, on the same machine), and the clock frequency was
+  not controlled.
 - That the gain comes from fewer additions. The 19-operation circuit was slower than the 20-operation
   family step in 13 of 16 double-precision timings on Zen 4 and Zen 5, and I do not know why.
-- A gain at the sizes most libraries use, 64 to 512 points. On Zen 4 there is none; a run on Zen 5 is not in
-  this revision.
+- A gain at the sizes most libraries use, 64 to 512 points. On Zen 4 and on Zen 5 there is none.
 - The same results as FFHT bit for bit. They are the same on whole-number inputs. On real inputs they differ
   by rounding, so the circuit is not a drop-in where a library promises bit-identical output.
 - The fastest code on these chips. On Zen 5 plain 512-bit textbook code was 1.30-1.41 times as fast as the
@@ -708,7 +744,7 @@ the literature again. As before, no person has read their code line by line.
   count, and how it compares" compares the same task with the same things charged. Their theorem is wider
   than mine: it covers every
   power of two and any field (any system of numbers with the four operations), where my Lean statement
-  covers the powers of 8 over the complex numbers. Their
+  in their count covers the powers of 8 over the complex numbers. Their
   exact count first falls below the textbook at 16,777,216 points, and mine at 512. What the search added is
   which values to share inside the 8-point step.
 - **Coppersmith, Feig and Linzer (1994).** The 4-point circuit with 7 operations is due to them (page 969),
@@ -761,8 +797,10 @@ Revision 2 is dated 22 October 2026. The first version is of 11 October 2026.
   print"; the note and that README now add the qualifier "of the explicit form", and the paper keeps its
   text of 11 October with a dated note in [paper/README.md](paper/README.md).
 - **A sentence kept, with a qualifier.** The first version called the work "not a faster program", on the
-  strength of one machine. On 22 October two AMD processors showed a few percent less time, in one run each
-  and below the bar I had set before the runs. The sentence stays, and now says so.
+  strength of one machine. On 22 October, in the main test, two AMD processors showed a few percent less
+  time, in one run each and below the bar I had set before the runs; in 512-bit code on Zen 4, two runs on
+  one machine showed 4-11 % less time from 2^12 points, past the bar at one size. The sentence stays, and
+  now says so.
 - **New sections:** what is counted, with Morgenstern's bound; exact counts from 8 to 32,768 points; a
   claim-by-claim proof status, with the axioms that Lean reports; the relation to OpenAI's family 130; open
   directions, each with a first experiment.
@@ -771,6 +809,11 @@ Revision 2 is dated 22 October 2026. The first version is of 11 October 2026.
 - **A kernel with FFHT's entry points**, with tests of exactness and rounding:
   [tools/fht-kernel/](tools/fht-kernel/README.md).
 - **A count program** for the exact count tables: `tools/circuits/count_tables.py`.
+- **The 3/4 count proved in Lean.** The first version said that the second count was replayed by
+  programs and was not in Lean. Revision 2 adds a Lean proof that the family's bound,
+  (3/4) N log2 N + N/4, holds at every power of two, in a model where each line is one multiply-add,
+  over any commutative ring, and a proof that the 19 lines at 8 points compute the transform. The files
+  are in `lean/Work/WHT34/`, and `sh lean/check.sh` checks them too.
 - **Prior art added:** Alman (2021), Morgenstern (1973), OpenAI's family 130 by name, FFHT's paper, and,
   for the separate GPU test only, PeRQ and US patent 9,081,731; and the gap in the literature search stated
   (shift-and-add synthesis in hardware).
@@ -782,8 +825,10 @@ Revision 2 is dated 22 October 2026. The first version is of 11 October 2026.
   the machines of 22 October in the list of who ran what, and pointers from the pages on FFHT and on the FPGA
   to the new measurements.
 
-**Unchanged:** the Lean proof, every circuit file, the 11 October measurements, the paper, and the record in
-`waves/`.
+**Unchanged:** the Lean proof of the 5/6 count, every circuit file, the 11 October measurements, the paper,
+and the record in `waves/`. That record describes 11 October, so three of its pages, `waves/README.md`,
+`waves/WHERE-THE-CIRCUITS-CAME-FROM.md` and section 1.8 of `waves/LEADS.md`, still describe count (G) as not
+in Lean; on that point revision 2 supersedes them.
 
 ## Open directions
 
@@ -796,16 +841,18 @@ Each comes with a first experiment. [waves/LEADS.md](waves/LEADS.md) stays the l
    constant-matrix multiplication (for example FloPoCo's shift-and-add operators) on the 8 × 8 Hadamard
    matrix with shifts free, and see whether it reaches 19 adders or fewer. Then search those papers'
    benchmark tables for Hadamard entries.
-3. **Lean for the second count.** *First experiment:* extend `tools/circuits/lean/slp2lean.py` to a cost in
-   count (G) and prove that the 19-line circuit costs at most 19.
+3. **The constants in the Lean statement of the second count.** It allows any constant; the circuits
+   use only ±1 and ±2. *First experiment:* state the form with every constant in {1, -1, 2, -2}; the
+   proof already builds such a circuit.
 4. **Combining the two constructions.** Six ways were tried, and none went below 5/6. *First experiment:*
    the first lead of part 1 of `waves/LEADS.md` that is not closed.
 5. **Speed on the deciding chips.** *First experiment:* run the 22 October timing program on a modern Intel
    server processor (Sapphire Rapids or later) and on a second Zen 4 and Zen 5 machine, with finite data in
    every mode.
-6. **A 512-bit kernel.** One 512-bit run on Zen 4 reached 0.886; a repeat ran after this page was written
-   and is not yet reviewed. *First experiment:* have a second agent read both runs, then add a 512-bit form
-   to `tools/fht-kernel/` only if the reading holds.
+6. **A 512-bit kernel.** With 512-bit code on Zen 4, two runs on one machine both reached 0.886 (2^18 points,
+   single precision); neither is reviewed. *First experiment:* have a second agent read both runs and repeat
+   the test on a second Zen 4 machine, then add a 512-bit form to `tools/fht-kernel/` only if the reading
+   holds.
 7. **Why the 20-operation family step usually beats the 19-operation circuit in time.** *First
    experiment:* a model of how the two steps load the arithmetic units of Zen 4 and Zen 5 (for example `llvm-mca -mcpu=znver4` and `znver5`), set
    beside the measured ratios.
@@ -818,7 +865,8 @@ Each comes with a first experiment. [waves/LEADS.md](waves/LEADS.md) stays the l
 10. **FPGA: power and the makers' tools.** *First experiment:* place the 19-adder circuit and the textbook on
     an Artix-7 with Xilinx's own tools and compare slices and power at the same clock.
 11. **A person reading the Lean statement.** The 93-line `lean/Work/SmallWHT/ChallengeWHT8.lean` is the
-    whole claim. *First experiment:* read it against the definition of the transform in
+    whole claim of the first count, and the 91-line `lean/Work/WHT34/ChallengeWHT34.lean` that of the
+    second. *First experiment:* read them against the definition of the transform in
     [docs/UNDERSTAND.md](docs/UNDERSTAND.md).
 
 ## The folders
@@ -827,7 +875,7 @@ Each comes with a first experiment. [waves/LEADS.md](waves/LEADS.md) stays the l
 |---|---|
 | [docs/UNDERSTAND.md](docs/UNDERSTAND.md) | start here to understand the result: ten steps, each with a check; `docs/walkthrough.py` computes the numbers of each step |
 | [paper/](paper/README.md) | the write-up as a paper, PDF and LaTeX source, with its two check programs; not peer reviewed; the version of 11 October |
-| [notes/explicit-circuits.md](notes/explicit-circuits.md) | the full account: both counts, the tables, the Lean statement, the literature search, what has not been tried; the `.json` beside it has the figures in machine-readable form |
+| [notes/explicit-circuits.md](notes/explicit-circuits.md) | the full account: both counts, the tables, the Lean statements, the literature search, what has not been tried; the `.json` beside it has the figures in machine-readable form |
 | [tools/circuits/](tools/circuits/README.md) | the circuits as text files (`programs/`), the checker and the generator, `run.py`, and what it printed in the recorded run; `count_tables.py`, the exact count tables |
 | [tools/circuits/search/](tools/circuits/search/README.md) | the programs that found the circuits, as they were run |
 | [tools/circuits/fast/wht56/](tools/circuits/fast/wht56/README.md) | the circuits as working programs in Python, numpy and C, with tests and the timings |
@@ -835,9 +883,9 @@ Each comes with a first experiment. [waves/LEADS.md](waves/LEADS.md) stays the l
 | [tools/circuits/fpga/](tools/circuits/fpga/README.md) | the circuits as hardware: the generator of hardware descriptions, the designs, the scripts for the open-source tools, the result tables, and the sources of the self-test for a board |
 | [tools/fht-kernel/](tools/fht-kernel/README.md) | a small C library with FFHT's four entry points and the circuit as its 8-point step, AVX2 and plain C, with tests of exactness and rounding; not timed as a library |
 | [measurements/2026-10-22/](measurements/2026-10-22/README.md) | the timings of 22 October on AMD, Intel and NVIDIA hardware and the Artix-7 placement: the programs as run, the raw outputs, the retracted figure, and a program that re-derives every figure |
-| [waves/](waves/README.md) | the ten waves of the night of 10 to 11 October 2026. About 180 working reports by AI agents, with their programs and small outputs, sorted by wave; where the circuits came from; what is open and what is closed. Not reviewed by a person. Not in Lean. This folder is most of the repository: about 4,950 of its 6,860 files and 30 of its 53 MB. |
-| [lean/](lean/) | the Lean project: `Work/SmallWHT/` has my six files, `OAI/` the 44 files of openai/math, `check.sh` the one command |
-| [VERIFY.md](VERIFY.md) | how to check the Lean proof, and what was run |
+| [waves/](waves/README.md) | the ten waves of the night of 10 to 11 October 2026. About 180 working reports by AI agents, with their programs and small outputs, sorted by wave; where the circuits came from; what is open and what is closed. Not reviewed by a person. Not in Lean. This folder is most of the repository: about 4,950 of its 6,930 files and 30 of its 54 MB. |
+| [lean/](lean/) | the Lean project: `Work/SmallWHT/` has my six files for the 5/6 count, `Work/WHT34/` my seven for the 3/4 count, `OAI/` the 44 files of openai/math, `check.sh` the one command |
+| [VERIFY.md](VERIFY.md) | how to check the Lean proofs, and what was run |
 | [NOTICE](NOTICE), [LICENSE](LICENSE), [CITATION.cff](CITATION.cff) | where each part comes from, the licence, how to cite |
 
 ## Licence
@@ -918,5 +966,6 @@ that programs read. This revision has no permanent identifier yet; cite the revi
 - Dates. The searches: the night of 10 to 11 October 2026. The Lean build from nothing, the timings, the
   hardware measurements and the reading of the two older papers: 11 October 2026. The literature search: 10
   and 11 October 2026. The timings on AMD, Intel and NVIDIA hardware, the Artix-7 placement, the count
-  tables, the kernel and a second check of the literature: 22 October 2026.
+  tables, the kernel, a second check of the literature, the Lean proof of the 3/4 count and a second build of
+  the Lean folder: 22 October 2026.
 - The full list of what was read is in [notes/explicit-circuits.md](notes/explicit-circuits.md), section 10.
