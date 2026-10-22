@@ -1,0 +1,12 @@
+== clang_avx2_f64
+hstep_tb8_nat      inner loop  43 instructions  load 8  store 8  regmov 0  fma 0  add/sub 24  other 3
+hstep_tb8_bal      inner loop  55 instructions  load 8  store 8  regmov 12  fma 12  add/sub 12  other 3
+hstep_tb8_balS     inner loop  43 instructions  load 8  store 8  regmov 0  fma 12  add/sub 12  other 3
+hstep_g20_nat      inner loop  35 instructions  load 4  store 8  regmov 0  fma 12  add/sub 8  other 3
+hstep_g19_nat      inner loop  37 instructions  load 7  store 8  regmov 0  fma 12  add/sub 7  other 3
+== clang_avx2_f32
+hstep_tb8_nat      inner loop  43 instructions  load 8  store 8  regmov 0  fma 0  add/sub 24  other 3
+hstep_tb8_bal      inner loop  55 instructions  load 8  store 8  regmov 12  fma 12  add/sub 12  other 3
+hstep_tb8_balS     inner loop  43 instructions  load 8  store 8  regmov 0  fma 12  add/sub 12  other 3
+hstep_g20_nat      inner loop  35 instructions  load 4  store 8  regmov 0  fma 12  add/sub 8  other 3
+hstep_g19_nat      inner loop  37 instructions  load 7  store 8  regmov 0  fma 12  add/sub 7  other 3

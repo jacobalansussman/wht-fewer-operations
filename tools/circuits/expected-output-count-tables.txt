@@ -1,0 +1,79 @@
+# Recorded run 1: python3 -B tools/circuits/count_tables.py
+# on an Apple M4, macOS 26.6.2, Python 3.9.6, 22 October 2026: 5.0 s, 162 MB of memory. Your output should be the same bytes.
+
+DOUBLINGS FREE (count (G); adders in hardware)
+| N | textbook | CFL 1994 | Alman-Rao 2023 | 5/6 circuit | 3/4 family |
+|---:|---:|---:|---:|---:|---:|
+| 8 | 24 | 22 | 22 | 19 | 20 |
+| 16 | 64 | 56 | 60 | 54 | 52 |
+| 32 | 160 | 144 | 152 | 140 | 128 |
+| 64 | 384 | 336 | 352 | 304 | 304 |
+| 128 | 896 | 800 | 832 | 736 | 704 |
+| 256 | 2,048 | 1,792 | 1,920 | 1,728 | 1,600 |
+| 512 | 4,608 | 4,096 | 4,224 | 3,648 | 3,584 |
+| 4,096 | 49,152 | 43,008 | 45,056 | 38,912 | 37,888 |
+| 32,768 | 491,520 | 434,176 | 450,560 | 389,120 | 376,832 |
+
+DOUBLINGS CHARGED (count (O); OpenAI circuit model)
+| N | textbook | CFL 1994 | Alman-Rao 2023 | 5/6 circuit | 3/4 family, rescaled | 3/4 family, literal |
+|---:|---:|---:|---:|---:|---:|---:|
+| 8 | 24 | 28 | 30 | 28 (Lean) | 34 | 32 |
+| 16 | 64 | 80 | 77 | 72 | 76 | 84 |
+| 32 | 160 | 192 | 187 | 176 | 192 | 208 |
+| 64 | 384 | 480 | 431 | 384 (Lean) | 416 | 496 |
+| 128 | 896 | 1,088 | 991 | 896 | 992 | 1,152 |
+| 256 | 2,048 | 2,560 | 2,239 | 2,048 | 2,112 | 2,624 |
+| 512 | 4,608 | 5,632 | 4,927 | 4,352 (Lean) | 4,864 | 5,888 |
+| 4,096 | 49,152 | 61,440 | 51,199 | 45,056 (Lean) | 48,128 | 62,464 |
+| 32,768 | 491,520 | 606,208 | 503,807 | 442,368 (Lean) | 483,328 |  |
+
+N =      8: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =     16: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =     32: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =     64: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =    128: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =    256: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =    512: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =   4096: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =  32768: formula
+OK: every built circuit equals its formula.  A Python check, not a proof.
+
+# Recorded run 2: python3 -B tools/circuits/count_tables.py --kmax-gen 15 (also builds and checks the 32,768-point circuits)
+# on the same machine, the same day: 51 s, 1.47 GB of memory.
+
+DOUBLINGS FREE (count (G); adders in hardware)
+| N | textbook | CFL 1994 | Alman-Rao 2023 | 5/6 circuit | 3/4 family |
+|---:|---:|---:|---:|---:|---:|
+| 8 | 24 | 22 | 22 | 19 | 20 |
+| 16 | 64 | 56 | 60 | 54 | 52 |
+| 32 | 160 | 144 | 152 | 140 | 128 |
+| 64 | 384 | 336 | 352 | 304 | 304 |
+| 128 | 896 | 800 | 832 | 736 | 704 |
+| 256 | 2,048 | 1,792 | 1,920 | 1,728 | 1,600 |
+| 512 | 4,608 | 4,096 | 4,224 | 3,648 | 3,584 |
+| 4,096 | 49,152 | 43,008 | 45,056 | 38,912 | 37,888 |
+| 32,768 | 491,520 | 434,176 | 450,560 | 389,120 | 376,832 |
+
+DOUBLINGS CHARGED (count (O); OpenAI circuit model)
+| N | textbook | CFL 1994 | Alman-Rao 2023 | 5/6 circuit | 3/4 family, rescaled | 3/4 family, literal |
+|---:|---:|---:|---:|---:|---:|---:|
+| 8 | 24 | 28 | 30 | 28 (Lean) | 34 | 32 |
+| 16 | 64 | 80 | 77 | 72 | 76 | 84 |
+| 32 | 160 | 192 | 187 | 176 | 192 | 208 |
+| 64 | 384 | 480 | 431 | 384 (Lean) | 416 | 496 |
+| 128 | 896 | 1,088 | 991 | 896 | 992 | 1,152 |
+| 256 | 2,048 | 2,560 | 2,239 | 2,048 | 2,112 | 2,624 |
+| 512 | 4,608 | 5,632 | 4,927 | 4,352 (Lean) | 4,864 | 5,888 |
+| 4,096 | 49,152 | 61,440 | 51,199 | 45,056 (Lean) | 48,128 | 62,464 |
+| 32,768 | 491,520 | 606,208 | 503,807 | 442,368 (Lean) | 483,328 | 622,592 |
+
+N =      8: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =     16: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =     32: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =     64: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =    128: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =    256: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =    512: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =   4096: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+N =  32768: built, counted by slp.py, checked on 2 random integer vectors; equals the formula
+OK: every built circuit equals its formula.  A Python check, not a proof.

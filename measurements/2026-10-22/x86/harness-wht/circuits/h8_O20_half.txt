@@ -1,0 +1,37 @@
+# The 8-point Walsh-Hadamard transform divided by 2, in 20 operations.  Count (O): every addition, every
+# subtraction and every multiplication by a constant costs one.  19 additions or subtractions and 1 halving.
+# Textbook for H x: 24.  Count (G): 19.
+#
+# It is the 19-gate circuit of h8_19gates.txt with its centre g7 halved once (the line m8): every later line
+# "w +- 2*p" of that circuit becomes "w/2 +- p".  The Lean file Work/SmallWHT/H8Half.lean holds this same
+# program (written from ../lean/h8_half_o20.txt, which has the same 20 operations under other names).
+#
+# Inputs x0..x7.  Output yJ = (1/2) * row J of H, where H[J][i] = (-1)^(number of 1-bits common to J and i).
+g1 = x0 + x7
+g2 = x1 + x6
+g3 = x2 - x5
+g4 = x3 - x4
+g5 = g1 - g2
+g6 = g3 + g4
+g7 = g5 - g6
+m8 = 1/2*g7
+g9 = m8 - x7
+g10 = m8 - x5
+g11 = g9 + x6
+g12 = g10 - x4
+g13 = g11 + g4
+g14 = g10 + x3
+g15 = g5 - g14
+g16 = g11 + g3
+g17 = g12 + g2
+g18 = g9 + x1
+g19 = g18 + g6
+g20 = g1 - g12
+y0 = g20
+y1 = g16
+y2 = g18
+y3 = g14
+y4 = g19
+y5 = g15
+y6 = g17
+y7 = g13

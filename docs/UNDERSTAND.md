@@ -117,7 +117,8 @@ instruction. The 1994 paper of step 4 counts that way: it charges one for a *mul
 value plus or minus the product of two others (the paper writes ±a ± bc). Count (G) is a little wider in two
 ways: it allows a constant on both terms, and it lets a multiplication on its own go free, where the 1994
 paper charges one. No count-(G) circuit here uses either: every line has two terms and at most one constant.
-Count (O) is the strict one. Alman and Rao, who hold the published record, count this way (step 8), and so
+Count (O) is the strict one. Alman and Rao, whose 23/24 is the smallest explicit constant of this kind that I
+found in print (step 8 says what *explicit* means), count this way (step 8), and so
 does the Lean statement (step 9).
 
 Why both are on this page. The search found the small circuits in count (G). There they look best: 19
@@ -317,17 +318,20 @@ points, and on a sample of inputs at 4,096 points.
 
 ---
 
-## Step 8. The published record, like for like
+## Step 8. The best explicit count in print, like for like
 
-The record in count (O) is in this paper: J. Alman and K. Rao, "Faster Walsh-Hadamard and Discrete Fourier
-Transforms From Matrix Non-Rigidity", STOC 2023, <https://arxiv.org/abs/2211.06459>. Their Theorem 1.1:
-for any field and any N that is a power of 2, at most (23/24) N log2 N + (13/12) N operations. (A *field*
-is a system of numbers in which one can add, subtract, multiply and divide, such as the fractions or the
-complex numbers.)
+The smallest explicit count in count (O) that I found is in this paper: J. Alman and K. Rao, "Faster
+Walsh-Hadamard and Discrete Fourier Transforms From Matrix Non-Rigidity", STOC 2023,
+<https://arxiv.org/abs/2211.06459>. Their Theorem 1.1: for any field and any N that is a power of 2, at most
+(23/24) N log2 N + (13/12) N operations. (A *field* is a system of numbers in which one can add, subtract,
+multiply and divide, such as the fractions or the complex numbers.) *Explicit* means a count of the form
+c·N log2 N plus a multiple of N, which one can work out at any size. Counts of a smaller order are also known
+(step 10), but they give nothing at any size anyone computes.
 
 The proof of their Theorem 6.2 gives the exact count: (22/24) N log2 N additions and subtractions (plus a
 little when log2 N is not a multiple of 3), (1/24) N log2 N halvings, and N - 1 multiplications by a power
-of two. For N a power of 8 that is (23/24) N log2 N + N - 1.
+of two (this split is exact when log2 N is a multiple of 3; their total is exact at every size). For N a
+power of 8 that is (23/24) N log2 N + N - 1.
 
 The comparison is like for like: the same task (exact H x), and the same three things charged.
 
@@ -428,7 +432,9 @@ as its own theorem, `hadamard_512_circuit`. `python3 docs/walkthrough.py 9` read
   and stops there. A better exponent means a count that, for large N, gets below every fixed fraction of
   N log2 N, so that the ratio falls towards 0. The name comes from counts of the form N (log2 N)^z with z
   below 1; z is the exponent. OpenAI's result of 25 September 2026, for the Fourier transform, is of that
-  stronger kind; this is not.
+  stronger kind, and so is my repository wht-power-saving-lean for this transform, in a model of a computer
+  with memory; this is not. Those results give nothing at any size anyone computes: their hidden constants
+  are far too large.
 - **Not a faster program.** The 8-point step was written into the generated code of FFHT, a tuned
   open-source library for this transform, in place of its block of 24 additions and subtractions. On the
   one machine that was timed, this did not make FFHT faster at any size from 2^6 to 2^26 points (from 2^5
@@ -437,13 +443,21 @@ as its own theorem, `hadamard_512_circuit`. `python3 docs/walkthrough.py 9` read
   of 7, where the textbook's chain is 3; that is an explanation that fits, not a finding. It is time on one
   machine in one library, and it says nothing against the counts. [The README](../README.md) has the
   section, and [the page on FFHT](../tools/circuits/fast/wht56/results/ffht/README.md) every number.
+  On 22 October 2026 the step was timed again, in a program that keeps FFHT's sequence of steps, on four
+  processors, against the best textbook code in the same program. On AMD Zen 4 and Zen 5 it took a few
+  percent less time, in one run each, not yet read by a second agent and below the bar of 10 % that I had
+  set before the runs (0.940-0.952 and 0.977-0.996 of the fastest rival's time, in double precision, over
+  builds by two compilers); on AMD Zen 2 there was no clear gain, and on an older Intel processor it was slower. My first figure that day,
+  11-15 % less time on Zen 5, was wrong: the rival code carried avoidable register copies, and I retracted
+  it. [The measurements of 22 October](../measurements/2026-10-22/README.md) have every number.
 - **Not a better chip, except in one setting.** As hardware, where a doubling is only wiring, the 19-line
   circuit of step 5 is 19 adders against the textbook's 24 (an adder adds or subtracts two numbers). Built
   with open-source tools for one programmable chip, as one block of adders with no registers inside (a
   register is a row of one-bit memories between the adders, which lets the chip run at a faster beat), it
   takes 274 of the chip's units, called logic cells, against 349 (273 against 337 with another setting of
   the tools). It is twice as deep, so it is slower by the tools' estimates, it is larger than the textbook
-  once registers are added for speed, and a 22-adder design from print is smaller on that chip.
+  once registers are added for speed, and a 22-adder design from print is smaller on that chip. On a
+  second kind of chip, a Xilinx Artix-7, it took more space than the textbook once placed (22 October 2026).
   [The README](../README.md) has the section "In hardware".
 - **Not known to be the best possible.** I know no proof that 8 points need 19 operations, or that 5/6
   cannot be lowered.
@@ -460,11 +474,12 @@ as its own theorem, `hadamard_512_circuit`. `python3 docs/walkthrough.py 9` read
 
 1. *Is this already known?* I do not know of it in print. The search covered the papers that cite Alman
    and Rao or the 1994 paper, mostly by title and abstract, and arXiv and patents. It did not cover
-   everything: the note, section 7, lists what was not read. If you know a smaller count, I would be glad
-   to hear of it and will credit it.
-2. *Is the comparison with the record fair, and how far does it reach?* It is the same task with the same
-   three things charged (step 8). It is narrower than the record in three ways. Lean covers the powers of
-   8 only; the other powers of two rest on Python checks up to 16,384 points (the README gives the
+   everything: the note, section 7, lists what was not read. It did not cover the hardware literature on
+   shift-and-add synthesis of constant matrices, which counts adders the way count (G) does. If you know a
+   smaller count, I would be glad to hear of it and will credit it.
+2. *Is the comparison with Alman and Rao fair, and how far does it reach?* It is the same task with the
+   same three things charged (step 8). It is narrower than their result in three ways. Lean covers the
+   powers of 8 only; the other powers of two rest on Python checks up to 16,384 points (the README gives the
    command). Lean's statement is over the complex numbers; it is not stated for other fields. And it uses
    N multiplications by a power of two, on the outputs, where Alman and Rao use N - 1, on the inputs.
 3. *Does it go further?* Alman and Rao's paper turns a count for this transform into a count for the

@@ -1,0 +1,171 @@
+== gpu-wht job start Thu Oct 22 11:48:48 UTC 2026
+== machine (gpu-wht) 2026-10-22 11:48:48 UTC
+Linux <container> 6.6.122+ #1 SMP Thu Apr 30 18:17:14 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           52 bits physical, 57 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  48
+On-line CPU(s) list:                     0-47
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC 9B45
+CPU family:                              26
+Model:                                   2
+Thread(s) per core:                      2
+Core(s) per socket:                      24
+Socket(s):                               1
+Stepping:                                1
+BogoMIPS:                                5400.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext mwaitx ssbd ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 clzero xsaveerptr wbnoinvd arat avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b avx512_vp2intersect flush_l1d
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               1.1 MiB (24 instances)
+L1i cache:                               768 KiB (24 instances)
+L2 cache:                                24 MiB (24 instances)
+L3 cache:                                96 MiB (3 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-47
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Vulnerable
+Vulnerability Spectre v1:                Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:                Vulnerable; IBPB: disabled; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+nproc: 48
+               total        used        free      shared  buff/cache   available
+Mem:             176           2         167           0           8         174
+Swap:              0           0           0
+Thu Oct 22 11:48:48 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:05:00.0 Off |                    0 |
+| N/A   35C    P0             49W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+name, driver_version, memory.total [MiB], clocks.max.sm [MHz]
+NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.82.07, 97887 MiB, 2430 MHz
+== compilers and tools
+-- gcc: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+-- g++: g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+-- clang: not installed
+-- clang++: not installed
+-- nvcc: Cuda compilation tools, release 13.0, V13.0.88
+-- cmake: cmake version 3.31.10
+-- python3: Python 3.13.15
+Cuda compilation tools, release 13.0, V13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+== load: 0.37 1.26 0.92 1/1132 7540
+== job folder /content/work/remote/gpu-wht-1792669718-58048, build folder /content/build/gpu-wht
+== machine
+Thu Oct 22 11:48:48 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:05:00.0 Off |                    0 |
+| N/A   35C    P0             49W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           52 bits physical, 57 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  48
+On-line CPU(s) list:                     0-47
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC 9B45
+CPU family:                              26
+Model:                                   2
+Thread(s) per core:                      2
+Core(s) per socket:                      24
+Socket(s):                               1
+Stepping:                                1
+BogoMIPS:                                5400.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext mwaitx ssbd ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 clzero xsaveerptr wbnoinvd arat avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b avx512_vp2intersect flush_l1d
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               1.1 MiB (24 instances)
+L1i cache:                               768 KiB (24 instances)
+48
+               total        used        free      shared  buff/cache   available
+Mem:             176           2         167           0           8         174
+Swap:              0           0           0
+Cuda compilation tools, release 13.0, V13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+compute capability sm_120
+torch 2.11.0+cu130 13.0 True
+== A. wht_cuda (own row kernel: textbook vs circuits, like for like)
+wht_cuda.cu(245): error: class "cudaDeviceProp" has no member "clockRate"
+           p.multiProcessorCount, p.clockRate / 1e3, p.memoryBusWidth, p.l2CacheSize / 1024);
+                                    ^
+
+1 error detected in the compilation of "wht_cuda.cu".
+BUILD FAILED wht_cuda (part A skipped; B and C still run)
+== B. Dao fast-hadamard-transform (pinned e7706fa), patched copy, HadaCore
+ninja OK
+Dao FHT e7706faf8d1c3b9f241e36860640ad1dac644ede Tue Mar 10 15:56:51 2026 +0700
+patched /content/k0src/fast-hadamard-transform-g/csrc/fast_hadamard_transform_common.h
+HadaCore (applied-ai) 2391954b19988bd76cf3c2ea84c1ce74b68d568b Fri Aug 22 18:32:33 2025 -0500
+== az_quiet 2026-10-22 11:48:57 gpu timing: QUIET over 3 s; whole machine 0.05 of 48 cores busy; steal 0.0 %; load ['0.39', '1.23', '0.91']
+== C. cuFFT vs VkFFT (VkFFT's own test suite, CUDA backend, with its cuFFT benchmark; pinned 066a17c)
+VkFFT 066a17c17068c0f11c9298d848c2976c71fad1c1 Mon Feb 5 19:31:31 2024 +0100
+vkfft_arch_patch: patched for sm_120
+VkFFT BUILD FAILED (see out/vkfft_make.txt)
+/content/k0src/VkFFT/benchmark_scripts/vkFFT_scripts/src/sample_1002_benchmark_VkFFT_half_2_4096.cpp: In function ‘VkFFTResult sample_1002_benchmark_VkFFT_half_2_4096(VkGPU*, uint64_t, FILE*, uint64_t)’:
+/content/k0src/VkFFT/benchmark_scripts/vkFFT_scripts/src/sample_1002_benchmark_VkFFT_half_2_4096.cpp:195:38: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  195 |                                 fread(configuration.loadApplicationString, str_len, 1, kernelCache);
+      |                                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/content/k0src/VkFFT/benchmark_scripts/vkFFT_scripts/src/user_benchmark_VkFFT.cpp: In function ‘VkFFTResult user_benchmark_VkFFT(VkGPU*, uint64_t, FILE*, uint64_t, VkFFTUserSystemParameters*)’:
+/content/k0src/VkFFT/benchmark_scripts/vkFFT_scripts/src/user_benchmark_VkFFT.cpp:204:38: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  204 |                                 fread(configuration.loadApplicationString, str_len, 1, kernelCache);
+      |                                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/content/k0src/VkFFT/VkFFT_TestSuite.cpp(179): error: too few arguments in function call
+   res = cuCtxCreate_v4(&vkGPU->context, 0, (int)vkGPU->device);
+                                                              ^
+
+1 error detected in the compilation of "/content/k0src/VkFFT/VkFFT_TestSuite.cpp".
+make[2]: *** [CMakeFiles/VkFFT_TestSuite.dir/build.make:80: CMakeFiles/VkFFT_TestSuite.dir/VkFFT_TestSuite.cpp.o] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[2]: Leaving directory '/content/k0build/vkfft'
+make[1]: *** [CMakeFiles/Makefile2:90: CMakeFiles/VkFFT_TestSuite.dir/all] Error 2
+make[1]: Leaving directory '/content/k0build/vkfft'
+make: *** [Makefile:136: all] Error 2
+make: Leaving directory '/content/k0build/vkfft'
+DONE Thu Oct 22 11:49:17 UTC 2026

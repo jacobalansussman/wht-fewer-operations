@@ -1,6 +1,8 @@
 {
   "format": "explicit-circuits/1",
   "written": "2026-10-11",
+  "revision": 2,
+  "revised": "2026-10-22",
   "author": "Jacob Sussman",
   "about": "Machine-readable index of the result of this repository: explicit circuits for the Walsh-Hadamard transform with fewer operations than the textbook program. It is a better constant in front of N log2 N, not a better exponent. The account in words is in explicit-circuits.md, in this folder.",
   "how_to_read": {
@@ -17,9 +19,9 @@
       "read": "taken from the publication named"
     },
     "new": "'not found in print' means: not found in the literature search described in explicit-circuits.md, section 7; it is not a proof of novelty",
-    "review": "The reports behind this index were written by AI agents (Anthropic's Claude) that I directed, on 2026-10-10 and 2026-10-11. They have not had a line-by-line human review."
+    "review": "The reports behind this index were written by AI agents (Anthropic's Claude) that I directed, on 2026-10-10 and 2026-10-11. They have not had a line-by-line human review. The additions of revision 2 (2026-10-22) were made the same way: by AI agents that I directed, without a line-by-line human review."
   },
-  "not_a_change_of_order": "Every count here is a fixed fraction of N log2 N. Results that lower the exponent, such as OpenAI's result of 2026-09-25 for the Fourier transform, are of a smaller order: below every fixed fraction of N log2 N for large N.",
+  "not_a_change_of_order": "Every count here is a fixed fraction of N log2 N. Results that lower the exponent, such as OpenAI's result of 2026-09-25 for the Fourier transform, are of a smaller order: below every fixed fraction of N log2 N for large N. Those results give nothing at any size anyone computes. Revision 2: in the same circuit model, OpenAI's family 130 proves circuits below c n log2 n for every c > 0 for the Fourier transform at some very large lengths; for this transform, wht-power-saving-lean proves in Lean an order N (log2 N)^z with z = 1 - 1.57e-3 in OpenAI's model of a computer with memory (see literature.asymptotic_results).",
   "lean": {
     "status": "lean",
     "statement_in_words": "for every j, the exact Walsh-Hadamard transform on N = 8^j points has a circuit in OpenAI's circuit model with at most 20*j*8^(j-1) + 8^j gates, which is (5/6) N log2 N + N",
@@ -364,6 +366,24 @@
       "command": "sh lean/check.sh",
       "needs": "Linux with git, curl and elan; about 12 GB of disk; the last command held 15.3 GB of memory in one process; VERIFY.md",
       "note": "on 2026-10-11 on the Linux machine: 51 modules, 15 minutes from nothing, RESULT: PASS"
+    },
+    {
+      "what": "the exact count tables at 8 to 4,096 points, each circuit built, counted and checked against its formula",
+      "command": "python3 -B tools/circuits/count_tables.py",
+      "needs": "Python 3.9 or later, standard library; a few seconds, about 160 MB",
+      "expected": "tools/circuits/expected-output-count-tables.txt; last line starts with OK"
+    },
+    {
+      "what": "the kernel with FFHT's entry points: exactness, return codes, rounding, and a broken copy that must fail",
+      "command": "sh tools/fht-kernel/test.sh",
+      "needs": "a C compiler; the vector code runs on x86-64 with AVX2 and FMA, elsewhere the plain C unless SIMDe is given",
+      "expected": "last line starts with OK"
+    },
+    {
+      "what": "every figure of the measurements of 2026-10-22, re-derived from the raw files",
+      "command": "python3 -B measurements/2026-10-22/tables.py",
+      "needs": "Python 3, standard library",
+      "expected": "last line starts with OK"
     }
   ],
   "not_claimed": [
@@ -371,18 +391,26 @@
     "running time: the 8-point step was written into the generated code of the library FFHT in place of its 24-operation block and timed on one machine on 2026-10-11; it was not faster at any size from 2^6 to 2^26 points (from 2^5 in double precision), in any of three forms (tools/circuits/fast/wht56/results/ffht/README.md); in my own plain C on two machines the time did not follow the operation count (tools/circuits/fast/wht56/results/bench-by-size/bench.md)",
     "hardware: as one block of adders with no registers inside, the 19-adder 8-point circuit takes 274 logic cells against 349 for the textbook network on a Lattice iCE40HX8K (273 against 337 with the synthesis option -dff); it is twice as deep, slower by the tools' estimates, larger than the textbook when pipelined, and not the smallest design on that chip; no existing design was improved (tools/circuits/fpga/README.md)",
     "optimality: at 8 points the minimum in count G is between 15 and 19; the lower bound 2N - 1 (15 at 8 points) is Proposition 6 of the paper in paper/, with a proof written by the AI agents on 2026-10-11 and read by a second agent and by no person, not in Lean; 19 is the exact minimum only among circuits of its own shape, by two exhaustive searches (python)",
-    "novelty beyond the literature search described in explicit-circuits.md"
+    "novelty beyond the literature search described in explicit-circuits.md",
+    "an asymptotic record: counts of a smaller order are known (literature.asymptotic_results); this is an explicit constant at practical sizes",
+    "running time, revision 2: a few percent less time at best, on AMD Zen 4 and Zen 5, against the best textbook code in the same program; no gain on AMD Zen 2 or on a GPU; slower on an Intel Broadwell; no gain at 64 to 512 points on Zen 4; one run per chip; see measurements_2026_10_22",
+    "the same output as FFHT bit for bit on real data: the rounding differs (measurements_2026_10_22, F13)",
+    "that the kernel in tools/fht-kernel/ is fast as a library: it has not been timed on its own",
+    "a smaller FPGA design on every chip: a loss on a Xilinx Artix-7 (measurements_2026_10_22, F16); power not measured",
+    "peer review: the paper was not reviewed and not submitted"
   ],
   "literature": {
     "searched_on": [
       "2026-10-10",
-      "2026-10-11"
+      "2026-10-11",
+      "2026-10-22"
     ],
     "best_found_in_print": {
       "G_8_points": 22,
       "G_16_points": 56,
       "G_rate": "7/8",
-      "O_rate_exact": "23/24"
+      "O_rate_exact": "23/24",
+      "form": "explicit count c N log2 N + O(N); counts of a smaller order are in print (asymptotic_results)"
     },
     "not_read": [
       "I. S. Sergeev, survey of 2025: pages 50 to about 170 not read",
@@ -406,7 +434,39 @@
       "bound": "(N/2) log2 N is a lower bound for circuits of additions and subtractions, by the determinant argument of Morgenstern (1973) as Alman and Rao quote it; the introduction of the paper gives 0.5 N log N as a lower bound for the Hadamard transform (page 172)",
       "program": "tools/circuits/ga_count.py",
       "status": "python: arithmetic on the two formulas; the recursion was written down by the AI agents from the description of the algorithm on pages 179 to 181"
-    }
+    },
+    "asymptotic_results": [
+      {
+        "who": "OpenAI, 'Finite tensor savings and exact Fourier circuits', 2026-09-25, family 130 of openai/math",
+        "transform": "Fourier",
+        "model": "the same circuit model as the Lean statement of this repository",
+        "result": "for every c > 0, circuits below c n log2 n at some very large lengths that it does not name; existence only"
+      },
+      {
+        "who": "OpenAI, 'An explicit power saving for the exact discrete Fourier transform', 2026-09-25, family 130 of openai/math",
+        "transform": "Fourier",
+        "model": "OpenAI's model of a computer with memory (RAM), exact arithmetic",
+        "result": "O(n (log n)^(1 - 10^-13)) at every length"
+      },
+      {
+        "who": "J. Sussman, wht-power-saving-lean, https://github.com/jacobalansussman/wht-power-saving-lean (read at commit 86e575e28ed94890872dcff1bb2621d7ff559cbd)",
+        "transform": "Walsh-Hadamard, N = 2^k",
+        "model": "OpenAI's model of a computer with memory (RAM)",
+        "result": "O(N (log N)^z) with z = 1 - 1.5699306e-3, proved in Lean"
+      }
+    ],
+    "asymptotic_results_at_practical_sizes": "no gain at any size anyone computes: their hidden constants are far too large",
+    "not_searched": [
+      "the hardware literature on shift-and-add synthesis of constant matrices (exact SAT and integer-programming methods and heuristics), which counts adders as count G does: no result of those tools on the 8 x 8 Hadamard matrix was looked for; two searches on 2026-10-22 found none, which settles nothing"
+    ],
+    "read_2026_10_22": [
+      "J. Morgenstern, J. ACM 20(2), 1973, 305-306, doi 10.1145/321752.321761: the bibliographic record; its statement through N. Ailon, arXiv:1403.1307; not read in the original",
+      "J. Alman, arXiv:2102.11992 and arXiv:2608.06592: abstracts; the second has no operation count",
+      "OpenAI, the two papers of family 130: introductions, in the source; the community page of the first",
+      "S. Sanjeet, I. Colbert et al., arXiv:2601.22347 (PeRQ), version 2: Appendix A.1 and Table 4; cited only for the separate GPU test of the rotation by groups of four, not for the counts",
+      "M. A. Herman, T. H. Weston, US 9,081,731 B2: grouped partial sums for 12 and 20 points; cited only for the separate GPU test",
+      "A. Andoni, P. Indyk, T. Laarhoven, I. Razenshteyn, L. Schmidt, NIPS 2015, arXiv:1509.02897: the paper FFHT asks users to cite"
+    ]
   },
   "credits": [
     {
@@ -418,11 +478,23 @@
       "who": "D. Coppersmith, E. Feig, E. Linzer, IEEE Trans. Signal Process. 42(4), 1994, doi 10.1109/78.285664"
     },
     {
-      "what": "the published record in count O, (23/24) N log2 N + (13/12) N; the method of the 20-operation circuit: the 8-point matrix as a part of low rank plus a sparse part, with one halving",
+      "what": "the smallest explicit count c N log2 N + O(N) in count O that I found in print (revision 2: the first version said \"the published record\", which was wrong as written), (23/24) N log2 N + (13/12) N; the method of the 20-operation circuit: the 8-point matrix as a part of low rank plus a sparse part, with one halving",
       "who": "J. Alman, K. Rao, STOC 2023, doi 10.1145/3564246.3585188; arXiv:2211.06459"
     },
     {
       "what": "the searches, the programs, the Lean files, the literature search",
+      "who": "AI agents (Anthropic's Claude) that I directed"
+    },
+    {
+      "what": "FFHT, the library of the timings; its plan of passes and a few of its lines, kept in tools/fht-kernel/ and in the timing programs under measurements/2026-10-22/x86/, under its MIT licence",
+      "who": "A. Andoni, P. Indyk, T. Laarhoven, I. Razenshteyn, L. Schmidt (https://github.com/FALCONN-LIB/FFHT; NIPS 2015, arXiv:1509.02897)"
+    },
+    {
+      "what": "the rotation by groups of four for lengths that are not powers of two, and its halving of the additions (the separate GPU test of 2026-10-22 only)",
+      "who": "S. Sanjeet, I. Colbert, P. Monteagudo-Lago, G. Franco, Y. Umuroglu, N. J. Fraser, arXiv:2601.22347 (ICML 2026), Appendix A.1 and Table 4; earlier, for 12 and 20 points, US 9,081,731 B2"
+    },
+    {
+      "what": "on 2026-10-22: the timing programs and their runs on rented cloud machines, the review that found the handicapped rival, the count program, the kernel, and the pages of revision 2",
       "who": "AI agents (Anthropic's Claude) that I directed"
     }
   ],
@@ -433,6 +505,552 @@
     "a direct search for a 16-point circuit with 53 operations or fewer in count O, up to a common factor (the best known has 56)",
     "Lean statements for count G, for the 7/8 family and for sizes that are not powers of 8",
     "the exact minimum at 8 points",
-    "the same question for the Fourier transform"
-  ]
+    "the same question for the Fourier transform",
+    "timing on modern Intel processors (Sapphire Rapids and later), Apple processors and Arm library code; several threads; FFHT timed by its own Makefile and test program; sizes below 2^6 in the timing of 2026-10-22",
+    "the kernel of tools/fht-kernel/ timed against FFHT as a library",
+    "a shift-and-add optimiser from the hardware literature run on the 8 x 8 Hadamard matrix",
+    "power on any chip; the FPGA makers' own tools",
+    "a reading of the Lean statement by a person"
+  ],
+  "exact_counts_8_to_32768": {
+    "what": "exact H x at 8, 16, 32, 64, 128, 256, 512, 4,096 and 32,768 points, in count G (doublings free) and count O (doublings charged); k = log2 N",
+    "columns": {
+      "textbook": "N k, in both counts; folklore",
+      "G_coppersmith_feig_linzer_1994": "their 4-point circuit (page 969) along each pair of address bits, one textbook layer if k is odd: (7/8) N k, plus N/8 if k is odd; their formulas",
+      "G_alman_rao_2023": "their 8-point step along each group of three address bits, textbook layers for the bits left over: (11/12) N k + (N/12)(k mod 3); my reading of their circuit",
+      "G_5_6_circuit": "layers of the 19-operation circuit with no scaling, textbook layers for the bits left over: 19 (N/8)(k div 3) + N (k mod 3); this repository",
+      "G_3_4_family": "the family: (3/4) N k + N/4; this repository",
+      "O_coppersmith_feig_linzer_1994_each_doubling_charged": "the same 1994 circuit with each doubling charged, 10 per 4-point block: 10 (N/4)(k div 2) + N (k mod 2); my reading; its authors never counted this way",
+      "O_alman_rao_2023": "their total in the proof of their Theorem 6.2: (23/24) N k + (N/24)(k mod 3) + N - 1; read, not built (they apply their input doublings once)",
+      "O_5_6_circuit": "layers of the 20-operation circuit, textbook layers for the bits left over, N final multiplications: N (k - m/2 + 1), m = k div 3; this repository; lean when 3 divides k",
+      "O_3_4_family_rescaled": "the family with halvings in place of doublings, then N multiplications: (7/8) N k + N/4 + N for k even, (7/8) N k + 5N/8 + N for k odd; this repository",
+      "O_3_4_family_each_doubling_charged": "the count-G circuit of the family counted in count O; no formula claimed",
+      "O_5_6_circuit_in_lean": "true when the Lean theorem covers the size (N a power of 8)"
+    },
+    "rows": [
+      {
+        "points": 8,
+        "k": 3,
+        "textbook": 24,
+        "G_coppersmith_feig_linzer_1994": 22,
+        "G_alman_rao_2023": 22,
+        "G_5_6_circuit": 19,
+        "G_3_4_family": 20,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 28,
+        "O_alman_rao_2023": 30,
+        "O_5_6_circuit": 28,
+        "O_3_4_family_rescaled": 34,
+        "O_3_4_family_each_doubling_charged": 32,
+        "O_5_6_circuit_in_lean": true
+      },
+      {
+        "points": 16,
+        "k": 4,
+        "textbook": 64,
+        "G_coppersmith_feig_linzer_1994": 56,
+        "G_alman_rao_2023": 60,
+        "G_5_6_circuit": 54,
+        "G_3_4_family": 52,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 80,
+        "O_alman_rao_2023": 77,
+        "O_5_6_circuit": 72,
+        "O_3_4_family_rescaled": 76,
+        "O_3_4_family_each_doubling_charged": 84,
+        "O_5_6_circuit_in_lean": false
+      },
+      {
+        "points": 32,
+        "k": 5,
+        "textbook": 160,
+        "G_coppersmith_feig_linzer_1994": 144,
+        "G_alman_rao_2023": 152,
+        "G_5_6_circuit": 140,
+        "G_3_4_family": 128,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 192,
+        "O_alman_rao_2023": 187,
+        "O_5_6_circuit": 176,
+        "O_3_4_family_rescaled": 192,
+        "O_3_4_family_each_doubling_charged": 208,
+        "O_5_6_circuit_in_lean": false
+      },
+      {
+        "points": 64,
+        "k": 6,
+        "textbook": 384,
+        "G_coppersmith_feig_linzer_1994": 336,
+        "G_alman_rao_2023": 352,
+        "G_5_6_circuit": 304,
+        "G_3_4_family": 304,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 480,
+        "O_alman_rao_2023": 431,
+        "O_5_6_circuit": 384,
+        "O_3_4_family_rescaled": 416,
+        "O_3_4_family_each_doubling_charged": 496,
+        "O_5_6_circuit_in_lean": true
+      },
+      {
+        "points": 128,
+        "k": 7,
+        "textbook": 896,
+        "G_coppersmith_feig_linzer_1994": 800,
+        "G_alman_rao_2023": 832,
+        "G_5_6_circuit": 736,
+        "G_3_4_family": 704,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 1088,
+        "O_alman_rao_2023": 991,
+        "O_5_6_circuit": 896,
+        "O_3_4_family_rescaled": 992,
+        "O_3_4_family_each_doubling_charged": 1152,
+        "O_5_6_circuit_in_lean": false
+      },
+      {
+        "points": 256,
+        "k": 8,
+        "textbook": 2048,
+        "G_coppersmith_feig_linzer_1994": 1792,
+        "G_alman_rao_2023": 1920,
+        "G_5_6_circuit": 1728,
+        "G_3_4_family": 1600,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 2560,
+        "O_alman_rao_2023": 2239,
+        "O_5_6_circuit": 2048,
+        "O_3_4_family_rescaled": 2112,
+        "O_3_4_family_each_doubling_charged": 2624,
+        "O_5_6_circuit_in_lean": false
+      },
+      {
+        "points": 512,
+        "k": 9,
+        "textbook": 4608,
+        "G_coppersmith_feig_linzer_1994": 4096,
+        "G_alman_rao_2023": 4224,
+        "G_5_6_circuit": 3648,
+        "G_3_4_family": 3584,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 5632,
+        "O_alman_rao_2023": 4927,
+        "O_5_6_circuit": 4352,
+        "O_3_4_family_rescaled": 4864,
+        "O_3_4_family_each_doubling_charged": 5888,
+        "O_5_6_circuit_in_lean": true
+      },
+      {
+        "points": 4096,
+        "k": 12,
+        "textbook": 49152,
+        "G_coppersmith_feig_linzer_1994": 43008,
+        "G_alman_rao_2023": 45056,
+        "G_5_6_circuit": 38912,
+        "G_3_4_family": 37888,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 61440,
+        "O_alman_rao_2023": 51199,
+        "O_5_6_circuit": 45056,
+        "O_3_4_family_rescaled": 48128,
+        "O_3_4_family_each_doubling_charged": 62464,
+        "O_5_6_circuit_in_lean": true
+      },
+      {
+        "points": 32768,
+        "k": 15,
+        "textbook": 491520,
+        "G_coppersmith_feig_linzer_1994": 434176,
+        "G_alman_rao_2023": 450560,
+        "G_5_6_circuit": 389120,
+        "G_3_4_family": 376832,
+        "O_coppersmith_feig_linzer_1994_each_doubling_charged": 606208,
+        "O_alman_rao_2023": 503807,
+        "O_5_6_circuit": 442368,
+        "O_3_4_family_rescaled": 483328,
+        "O_3_4_family_each_doubling_charged": 622592,
+        "O_5_6_circuit_in_lean": true
+      }
+    ],
+    "program": "tools/circuits/count_tables.py",
+    "status": "python: every circuit was built (except the Alman and Rao column in count O, which is their published total), counted by the repository's counter slp.py, checked on random integer vectors, and its count asserted equal to the formula; this check is weaker than run.py's check on every unit input; the 32,768-point row is from a recorded run on an Apple M4"
+  },
+  "measurements_2026_10_22": {
+    "what": "timings of the circuits on four x86 processors and a GPU, and a placement on a Xilinx Artix-7, on 2026-10-22",
+    "page": "measurements/2026-10-22/README.md",
+    "program": "measurements/2026-10-22/tables.py",
+    "ratio": "median time of the program / median time of the fastest rival in the same program; below 1 means less time",
+    "across_builds": "the best exact-output circuit over the gcc 13.3.0 and clang 18.1.3 builds / the best rival over both builds, at the sizes both compilers ran",
+    "circuits": "the fastest, at each size, of g20 (the 8-point member of the 3/4 family, tools/circuits/programs/generated/G_family_8.txt, 20 operations in count G), g19 (tools/circuits/programs/h8_19gates.txt) and g52 (the family's 16-point member)",
+    "excluded": "the 20-operation step that leaves its output halved, whose output is not FFHT's",
+    "decision_rule_set_before_the_runs": "at 0.90 of the rival's time or below the work goes on; at 0.95 or above it counts as no gain worth pursuing on that chip; across builds Zen 5 came out above 0.95 and Zen 4 between the two",
+    "data_values": {
+      "same array": "one buffer transformed again and again; in at least 90.5 % of the timed calls at 2^10-2^16 (more than 99.9 % at the smallest sizes, at least 31 % at the largest) the data are inf or NaN, for every program alike; whether such values change the speed was not measured directly",
+      "finite": "separate arrays, or many vectors per call; the data stay finite"
+    },
+    "status_values": {
+      "reviewed": "a second agent read the run's results after it finished",
+      "not reviewed": "nobody but the agent that ran it read the results"
+    },
+    "figures": [
+      {
+        "id": "F1",
+        "chip": "AMD Zen 5 (EPYC 9B45)",
+        "test": "FFHT's structure, 256-bit",
+        "precision": "double",
+        "sizes": "2^10-2^16",
+        "across_builds": [
+          0.977,
+          0.996
+        ],
+        "per_compiler": {
+          "gcc": [
+            0.939,
+            0.957
+          ],
+          "clang": [
+            0.977,
+            0.996
+          ]
+        },
+        "data": "same array",
+        "status": "one run; its program was reviewed before the run, its results were not"
+      },
+      {
+        "id": "F2",
+        "chip": "AMD Zen 5 (EPYC 9B45)",
+        "test": "FFHT's structure, 256-bit",
+        "precision": "single",
+        "sizes": "2^10-2^20",
+        "across_builds": [
+          0.974,
+          0.994
+        ],
+        "separate_arrays_gcc_at_2^12_2^16_2^20": [
+          0.944,
+          0.958
+        ],
+        "data": "same array; separate arrays finite",
+        "status": "one run"
+      },
+      {
+        "id": "F3",
+        "chip": "AMD Zen 4 (EPYC 9B14)",
+        "test": "FFHT's structure, 256-bit",
+        "precision": "double",
+        "sizes": "2^10-2^16",
+        "across_builds": [
+          0.94,
+          0.952
+        ],
+        "per_compiler_g20_alone": {
+          "gcc": [
+            0.944,
+            0.968
+          ],
+          "clang": [
+            0.938,
+            0.957
+          ]
+        },
+        "data": "same array",
+        "status": "one run, not reviewed"
+      },
+      {
+        "id": "F4",
+        "chip": "AMD Zen 4 (EPYC 9B14)",
+        "test": "FFHT's structure, 256-bit",
+        "precision": "single",
+        "sizes": "2^10-2^20",
+        "across_builds": [
+          0.934,
+          1.038
+        ],
+        "separate_arrays_gcc": [
+          0.965,
+          0.969
+        ],
+        "reading": "mixed",
+        "data": "same array; separate arrays finite",
+        "status": "one run, not reviewed"
+      },
+      {
+        "id": "F5",
+        "chip": "AMD Zen 4 (EPYC 9B14)",
+        "test": "many vectors per call, best over all 8 builds",
+        "precision": "single and double",
+        "sizes_64_to_512_points": [
+          0.972,
+          1.107
+        ],
+        "note_on_1_107": "1.107 is at 64 points in single precision, against a 512-bit textbook layout that has no circuit version; without it 0.972-1.013",
+        "at_1024_points": {
+          "double": 0.979,
+          "single": 0.983
+        },
+        "at_4096_points": {
+          "double": 0.981,
+          "single": 0.967
+        },
+        "reading": "no gain at 64 to 512 points",
+        "data": "finite (610 of 610 results)",
+        "status": "one run, not reviewed; a run of the same test on Zen 5 finished after this revision was written and is not in it"
+      },
+      {
+        "id": "F6",
+        "chip": "AMD Zen 2 (EPYC 7B12)",
+        "test": "FFHT's structure, 256-bit, against the older rival with register copies (which can only favour the circuit)",
+        "double_gcc": [
+          0.928,
+          1.001
+        ],
+        "single_gcc": [
+          0.986,
+          1.1
+        ],
+        "single_clang": [
+          0.994,
+          1.047
+        ],
+        "reading": "no clear gain; double precision noisy",
+        "data": "same array",
+        "status": "one run, reviewed"
+      },
+      {
+        "id": "F7",
+        "chip": "Intel Xeon at 2.20 GHz, family 6 model 79 (Broadwell)",
+        "test": "FFHT's structure, 256-bit, against the older rival",
+        "double_gcc": [
+          1.065,
+          1.134
+        ],
+        "single_gcc": [
+          1.151,
+          1.265
+        ],
+        "single_clang": [
+          1.023,
+          1.062
+        ],
+        "reading": "the circuit is slower",
+        "data": "same array",
+        "status": "one run, reviewed"
+      },
+      {
+        "id": "F8",
+        "status": "retracted",
+        "chip": "AMD Zen 5 (EPYC 9B45)",
+        "runs": 3,
+        "precision": "double",
+        "compiler": "gcc",
+        "first_written": "0.847-0.889 of the fastest rival's time, 11-15 % less time",
+        "why_wrong": "the fastest rival, the balanced textbook written multiply-add first, carried avoidable register copies per 8-point step",
+        "register_copies_per_step": {
+          "rival_multiply_add_first": {
+            "clang": 12,
+            "gcc": 8
+          },
+          "rival_subtraction_first": {
+            "clang": 0,
+            "gcc": 4
+          },
+          "circuit": {
+            "clang": 0,
+            "gcc": 3
+          }
+        },
+        "corrected": "F1",
+        "review": "found by a reviewing agent reading the compiled code"
+      },
+      {
+        "id": "F9",
+        "test": "512-bit (AVX-512), across builds at the even sizes 2^8-2^20",
+        "zen5": {
+          "single": [
+            0.94,
+            1.018
+          ],
+          "double": [
+            0.946,
+            1.007
+          ]
+        },
+        "zen4": {
+          "single": [
+            0.886,
+            1.002
+          ],
+          "double": [
+            0.913,
+            1.037
+          ]
+        },
+        "data": "same array",
+        "status": "one run on each chip in this revision, not reviewed; a repeat on Zen 4 finished after this revision was written and is not in it"
+      },
+      {
+        "id": "F10",
+        "test": "by-product, no new mathematics: the subtraction-first balanced textbook in FFHT's structure / the best FFHT build",
+        "zen5_double_2^10_2^16_across_builds": [
+          0.8,
+          0.84
+        ],
+        "zen5_per_compiler_against_FFHT_built_the_same_way": {
+          "gcc": [
+            0.844,
+            0.904
+          ],
+          "clang": [
+            0.795,
+            0.83
+          ]
+        },
+        "zen4_double": [
+          0.9,
+          0.93
+        ],
+        "data": "same array",
+        "status": "one run each"
+      },
+      {
+        "id": "F11",
+        "test": "by-product, no new mathematics: a tuned 512-bit textbook / FFHT (which has no 512-bit code), 2^10-2^20",
+        "zen5": {
+          "double": [
+            0.4,
+            0.5
+          ],
+          "single": [
+            0.37,
+            0.46
+          ]
+        },
+        "zen4": {
+          "double": [
+            0.64,
+            0.75
+          ],
+          "single": [
+            0.56,
+            0.72
+          ]
+        },
+        "zen5_fastest_512_bit_textbook_over_fastest_256_bit_program_speed": [
+          1.3,
+          1.41
+        ],
+        "data": "same array",
+        "status": "one run each, not reviewed"
+      },
+      {
+        "id": "F12",
+        "test": "one pass in the registers, not a whole transform; rivals not yet including the subtraction-first form",
+        "zen2_16_point_family_step_single_double": [
+          0.78,
+          0.785
+        ],
+        "zen2_8_point_step_single_double": [
+          0.829,
+          0.843
+        ],
+        "zen5_avx512_16_point_family_step": [
+          0.784,
+          0.787
+        ],
+        "zen5_avx512_8_point_depth_4_step": 0.737,
+        "zen4_avx512_16_point_family_step": [
+          0.789,
+          0.792
+        ],
+        "zen5_latency_bound_8_point_step_times_slower": 1.96,
+        "status": "one run each"
+      },
+      {
+        "id": "F13",
+        "test": "rounding, from the timing program's own checks",
+        "whole_number_inputs": "exact for every program",
+        "double_max_difference_from_textbook_relative_to_largest_output_at_2^10_and_2^20": 3.9e-16,
+        "double_max_difference_kernel_test_2^5_to_2^20": 4.54e-16,
+        "single_error_against_double_reference": {
+          "circuits": [
+            1.1e-07,
+            1.7e-07
+          ],
+          "textbook": [
+            7.9e-08,
+            1.3e-07
+          ]
+        },
+        "reading": "not bit-identical to FFHT on real data"
+      },
+      {
+        "id": "F14",
+        "chip": "NVIDIA RTX PRO 6000 Blackwell Server Edition, CUDA 13.0",
+        "row_kernels_256_MiB": [
+          0.9999,
+          1.0001
+        ],
+        "dao_kernel_patched_18_settings": [
+          0.966,
+          1.043
+        ],
+        "hadacore_over_dao": [
+          0.594,
+          0.722
+        ],
+        "note": "a figure of 0.82 at 4 MiB sits on the 4.1 microsecond launch floor and is not a circuit result",
+        "reading": "nothing",
+        "status": "one run"
+      },
+      {
+        "id": "F15",
+        "test": "separate topic, not these circuits: the 28-point part of the rotation of lengths that are not powers of two; my circuit (235 additions, randomized greedy shared-subexpression search) and the groups of four of Sanjeet, Colbert et al. (252 additions), each against Dao's kernel, batch 4,096, fp16 and bf16",
+        "28_x_1024_points_LLaMA_3_3_70B": [
+          0.952,
+          0.967
+        ],
+        "28_x_512_points_LLaMA_3_1_8B_Mistral_7B": [
+          1.169,
+          1.178
+        ],
+        "groups_of_four_28_x_1024": [
+          0.955,
+          0.963
+        ],
+        "groups_of_four_28_x_512": [
+          0.995,
+          1.005
+        ],
+        "credit": "the groups of four and their count of additions: Sanjeet, Colbert et al., arXiv:2601.22347, Appendix A.1 and Table 4; mine: the 235-addition greedy circuit and the measurement. Their form did as well where mine gains and did not lose where mine does",
+        "status": "one run each"
+      },
+      {
+        "id": "F16",
+        "chip": "Xilinx Artix-7 xc7a100t, open-source tools openXC7, 5 seeds",
+        "carry_blocks": {
+          "8_points": [
+            57,
+            72
+          ],
+          "16_points": [
+            156,
+            192
+          ]
+        },
+        "slices_change": {
+          "8_points_3_levels_per_clock": "+13.1 %",
+          "8_points_2_levels": "+29.8 %",
+          "16_points_2_levels": "+31.4 %",
+          "16_points_4_levels": "-0.9 %"
+        },
+        "against_alman_rao_8_point_slices": "-8.4 %",
+        "three_input_adder_textbook_carry_blocks": {
+          "8_points": 54,
+          "8_points_circuit": 57
+        },
+        "reading": "not a gain",
+        "limits": "no maker's tools, no bitstream, the chip nearly empty",
+        "status": "one run"
+      }
+    ],
+    "not_in_this_revision": [
+      "the many-vectors test at 64 to 4,096 points on Zen 5 (run, finished after this revision was written, not reviewed)",
+      "a repeat of the 512-bit run on Zen 4 (run, finished after this revision was written, not reviewed)",
+      "a review of the Zen 4 and 512-bit runs by a second agent",
+      "a finite-data control of the same-array runs",
+      "the kernel of tools/fht-kernel/ timed against FFHT"
+    ]
+  }
 }

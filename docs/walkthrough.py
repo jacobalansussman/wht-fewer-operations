@@ -491,7 +491,7 @@ def step7():
 
 
 def step8():
-    head(8, 'The published record, like for like')
+    head(8, 'The best explicit count in print, like for like')
     print('Alman and Rao (arXiv:2211.06459), exact count in the proof of their Theorem 6.2, against mine;')
     print('both charge every addition, subtraction, halving and final multiplication.')
     print('    points  textbook | Alman and Rao: add/sub  halvings  mult.   total | mine: add/sub  halvings  mult.   total')

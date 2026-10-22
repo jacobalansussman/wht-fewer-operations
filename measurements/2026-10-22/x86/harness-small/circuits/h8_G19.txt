@@ -1,0 +1,28 @@
+# The 8-point Walsh-Hadamard transform in 19 gates.  Count (G): a gate is any a*u + b*v, scalings free.
+# Textbook: 24.  Count (O), every operation charged: 31 for this file (19 additions or subtractions, 12 doublings);
+# see h8_half_20ops.txt for the form with 20 operations.
+#
+# How it is built: seven gates make one sign vector g7 (pairs, blocks of four, all eight); it is not an output.
+# Twelve more gates each flip the signs of one input, or of one piece that the first seven gates left behind.
+# The search that found it is in ../search/walk19/ .
+#
+# Inputs x0..x7.  Output yJ = row J of H, where H[J][i] = (-1)^(number of 1-bits common to J and i).
+g1  = x0 + x7
+g2  = x1 + x6
+g3  = x2 - x5
+g4  = x3 - x4
+g5  = g1 - g2
+g6  = g3 + g4
+g7  = g5 - g6            # the centre: signs + - - - + + - + ; not an output
+g8  = g7 - 2*x7
+g9  = g7 - 2*x5
+g10 = g8 + 2*x6
+g11 = g9 - 2*x4
+y7  = g10 + 2*g4
+y3  = g9 + 2*x3
+y5  = -y3 + 2*g5
+y1  = g10 + 2*g3
+y6  = g11 + 2*g2
+y2  = g8 + 2*x1
+y4  = y2 + 2*g6
+y0  = -g11 + 2*g1

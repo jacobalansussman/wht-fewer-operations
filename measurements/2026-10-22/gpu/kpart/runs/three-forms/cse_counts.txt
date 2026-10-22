@@ -1,0 +1,4 @@
+had_12_paley: 50 additions (dense 132)
+had_20_will: 126 additions (dense 380)
+had_28_will: 241 additions (dense 756)
+had_40_tpal: 413 additions (dense 1560)

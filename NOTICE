@@ -90,8 +90,11 @@ authors of openai/math (OpenAI).
    file; docs/UNDERSTAND.md and docs/walkthrough.py; the note
    notes/explicit-circuits.md and notes/explicit-circuits.json; the
    programs, circuit texts and recorded outputs under tools/circuits/
-   (section 7 says more about two of its folders); and
-   the paper with its two check programs under paper/. The six text files
+   (section 7 says more about two of its folders); the paper with its
+   two check programs under paper/; and, added in revision 2 on
+   2026-10-22, the folders measurements/2026-10-22/ and tools/fht-kernel/
+   (section 8) and the program tools/circuits/count_tables.py with its
+   recorded output. The six text files
    under tools/circuits/fast/wht56/circuits/ are byte-for-byte copies of
    files under tools/circuits/programs/. The program
    tools/circuits/lean/slp2lean.py writes Lean source in the circuit model
@@ -120,6 +123,13 @@ authors of openai/math (OpenAI).
    obtained. The note notes/explicit-circuits.md and the README files
    under tools/circuits/ were first written inside the working copy named
    in section 3 and were rewritten for this repository on 2026-10-11.
+   On 2026-10-21 and 2026-10-22, for revision 2, the agents, at Jacob
+   Sussman's direction, wrote the timing programs now under
+   measurements/2026-10-22/, ran them on machines he rented through Google
+   Colab, reviewed the results (a reviewing agent found the handicapped
+   rival that the page there describes), and wrote the kernel under
+   tools/fht-kernel/, the program tools/circuits/count_tables.py and the
+   pages of revision 2.
 
 5. What comes from others.
    From openai/math: the circuit model in which the result is stated
@@ -138,6 +148,16 @@ authors of openai/math (OpenAI).
    of the tests beside it and paper/check.py use NumPy. Of the programs
    under waves/, 83 use NumPy, SciPy or SymPy, and one C program there
    uses OpenMP. None of these libraries is included here.
+   The programs added in revision 2 (measurements/2026-10-22/ and
+   tools/fht-kernel/) use, without including them: FFHT (MIT; section 7),
+   which their scripts fetch; SIMDe (https://github.com/simd-everywhere/simde,
+   MIT), used only to check the x86 code on machines without x86
+   processors; the compilers gcc and clang; on the GPU, the NVIDIA driver,
+   CUDA and PyTorch, and three libraries that the GPU scripts fetch:
+   Dao-AILab/fast-hadamard-transform (BSD 3-Clause), HadaCore in
+   pytorch-labs/applied-ai (BSD 3-Clause) and VkFFT (MIT); for the Xilinx
+   run, the openXC7 tools and the oss-cad-suite of YosysHQ, which its script
+   downloads.
 
 6. The folder waves/.
    The files under waves/ are Jacob Sussman's. They are the working reports,
@@ -196,6 +216,48 @@ authors of openai/math (OpenAI).
    The hardware tools (the oss-cad-suite of YosysHQ, with Yosys, nextpnr,
    Icarus Verilog, Verilator and the solvers it ships) and the compiler
    gcc are not included.
+
+8. The folders measurements/2026-10-22/ and tools/fht-kernel/.
+   The files in these two folders are Jacob Sussman's. They were made on
+   2026-10-21 and 2026-10-22 by the AI agents (Anthropic's Claude) that he
+   directed, and they are published under the Apache License, Version 2.0,
+   like the rest of this repository, except for the parts of FFHT named
+   next.
+   Parts of FFHT (section 7 gives its licence and copyright): its recursion
+   thresholds (from its hall_of_fame_avx.txt), the instruction sequences of
+   its in-lane levels (from its gen.py, written again with intrinsics) and
+   its order of passes are FFHT's and stay under the MIT License. They are
+   in tools/fht-kernel/whtc_ffht_plan.h, and in bench_hyb.c and
+   bench_h512.c of the folders measurements/2026-10-22/x86/harness-hybrid/,
+   harness-hybrid512/ and harness-small/. The C++ overloads in
+   tools/fht-kernel/whtc.h are copied from FFHT's fht.h and stay under the
+   MIT License too. tools/fht-kernel/LICENSE-FFHT reproduces FFHT's licence
+   with its copyright line, and a copy of it is in each of the three
+   harness folders named above, so that a folder copied on its own keeps
+   the licence of the FFHT parts it holds. No file of FFHT is included;
+   the scripts fetch it.
+   Dao-AILab/fast-hadamard-transform (BSD 3-Clause, read at commit
+   e7706faf8d1c3b9f241e36860640ad1dac644ede): the header
+   measurements/2026-10-22/gpu/kpart/dao-cse/dao_fast_hadamard_transform_special.h
+   defines functions with the same names as Dao's generated header, for
+   the same matrices, and is new code, written by the program in
+   gpu/kpart/generator/. The files under gpu/kpart/generator/search/mats/
+   are the signs of those Hadamard matrices, as Dao's and executorch's code
+   generators define them, and nothing else. The GPU scripts patch a
+   fetched copy of Dao's library on the test machine; the job that uses
+   the header above puts Dao's copyright lines back on top of it there. No
+   file of Dao's is included.
+   HadaCore (pytorch-labs/applied-ai, BSD 3-Clause; commit 2391954b on the
+   day of the run) and VkFFT (MIT, commit 066a17c1) are fetched by the GPU
+   script and not included.
+   xk265 is still not included: the Artix-7 run left out the folder of
+   those designs, and of the designs it placed only those of this
+   repository's circuits are published.
+   Paths on Jacob Sussman's computer, the names of the machines that
+   launched the jobs, the container names of the rented machines and the
+   process lists of their quiet checks were taken out of the programs and
+   of the recorded outputs before publication;
+   measurements/2026-10-22/CODE-AS-RUN.md lists every changed line.
 
 Not included in this repository and fetched by the build: Mathlib
 (https://github.com/leanprover-community/mathlib4, Apache License 2.0) and its

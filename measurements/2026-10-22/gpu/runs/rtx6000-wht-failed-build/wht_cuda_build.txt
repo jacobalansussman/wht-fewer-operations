@@ -1,0 +1,5 @@
+wht_cuda.cu(245): error: class "cudaDeviceProp" has no member "clockRate"
+           p.multiProcessorCount, p.clockRate / 1e3, p.memoryBusWidth, p.l2CacheSize / 1024);
+                                    ^
+
+1 error detected in the compilation of "wht_cuda.cu".

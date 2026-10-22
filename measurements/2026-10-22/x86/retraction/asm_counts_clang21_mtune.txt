@@ -1,0 +1,21 @@
+== -mtune=znver5 (clang_avx2_f64)
+  hfirst_g20_nat         add/sub   32 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  26 regmov   0
+  hfirst_tb8_bal         add/sub   36 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  25 regmov  12
+  hfirst_tb8_balS        add/sub   36 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  25 regmov   0
+  hstep_g20_nat          add/sub    8 fma   12 mul   0 ld    4 st    8 stack    0 bcast/perm   2 regmov   0
+  hstep_tb8_bal          add/sub   36 fma   36 mul   0 ld   24 st   24 stack    0 bcast/perm   1 regmov  36
+  hstep_tb8_balS         add/sub   36 fma   36 mul   0 ld   24 st   24 stack    0 bcast/perm   1 regmov   0
+== -mtune=znver4 (clang_avx2_f64)
+  hfirst_g20_nat         add/sub   32 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  26 regmov   0
+  hfirst_tb8_bal         add/sub   36 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  25 regmov  12
+  hfirst_tb8_balS        add/sub   36 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  25 regmov   0
+  hstep_g20_nat          add/sub    8 fma   12 mul   0 ld    4 st    8 stack    0 bcast/perm   2 regmov   0
+  hstep_tb8_bal          add/sub   36 fma   36 mul   0 ld   24 st   24 stack    0 bcast/perm   1 regmov  36
+  hstep_tb8_balS         add/sub   36 fma   36 mul   0 ld   24 st   24 stack    0 bcast/perm   1 regmov   0
+== -mtune=haswell (clang_avx2_f64)
+  hfirst_g20_nat         add/sub   32 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  26 regmov   0
+  hfirst_tb8_bal         add/sub   36 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  25 regmov  12
+  hfirst_tb8_balS        add/sub   36 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm  25 regmov   0
+  hstep_g20_nat          add/sub    8 fma   12 mul   0 ld    4 st    8 stack    0 bcast/perm   2 regmov   0
+  hstep_tb8_bal          add/sub   12 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm   1 regmov  12
+  hstep_tb8_balS         add/sub   12 fma   12 mul   0 ld    8 st    8 stack    0 bcast/perm   1 regmov   0

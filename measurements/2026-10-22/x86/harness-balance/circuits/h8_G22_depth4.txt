@@ -1,0 +1,26 @@
+# 8 points, 22 operations of count (G) at depth 4 (the 22-gate circuits of 1994 and 2023 have depth 5 and 6).
+# One layer of 4 butterflies (x_i +- x_{i+4}), then the depth-3 4-point circuit h4_G7_depth3.txt on each half.
+# 8 + 7 + 7 = 22 operations (8 + 6 additions, 8 multiply-adds); count (O) 30.  Written by ax-s0 (wave 16).
+# Output yJ = row J of H.
+s0 = x0 + x4
+d0 = x0 - x4
+s1 = x1 + x5
+d1 = x1 - x5
+s2 = x2 + x6
+d2 = x2 - x6
+s3 = x3 + x7
+d3 = x3 - x7
+sa = s0 - s3
+sb = s1 + s2
+sc = sa - sb
+y0 = 2*s0 - sc
+y1 = sc + 2*s2
+y2 = sc + 2*s1
+y3 = sc + 2*s3
+da = d0 - d3
+db = d1 + d2
+dc = da - db
+y4 = 2*d0 - dc
+y5 = dc + 2*d2
+y6 = dc + 2*d1
+y7 = dc + 2*d3

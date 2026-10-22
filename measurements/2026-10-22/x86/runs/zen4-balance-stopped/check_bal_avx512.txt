@@ -1,0 +1,3 @@
+CHECK k_h8_textbook_24             PASS (exact)
+CHECK k_h8_textbook_24_bal         PASS (exact)
+CHECK k_h8_G19                     FAIL

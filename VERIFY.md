@@ -136,3 +136,32 @@ The 44 files of `lean/OAI/` were also compared with a new checkout of openai/mat
 - The theorems cover `N = 8^j` only: 8, 64, 512, 4,096 and so on.
 - `lake exe cache get` downloads compiled Mathlib files from the Mathlib project's server. Mathlib was not
   compiled from its source.
+
+## Revision 2: what else can be checked, and what was run
+
+Revision 2 (22 October 2026) adds three programs that check something and one folder of measurements. None of them
+is a Lean check, and none of the measurements is a proof. **The Lean files are unchanged in revision 2, and the Lean
+check was not run again.** Each command below is run from the top folder of the repository, and each ends with the
+line shown when everything is right.
+
+| command | what it checks | last line | needs |
+|---|---|---|---|
+| `python3 -B tools/circuits/count_tables.py` | builds the circuits of five constructions at 8 to 4,096 points, counts them in both counts, checks each on random whole numbers against the transform and its count against a formula; prints the exact count tables of the README | `OK: every built circuit equals its formula.  A Python check, not a proof.` | Python 3; about 5 s and 160 MB (`--kmax-gen 15`, which builds 32,768 points too: about 50 s and 1.5 GB) |
+| `python3 -B measurements/2026-10-22/circuits/check_circuits.py` | replays the 12 circuit files that the timing programs used on every unit vector in exact arithmetic, and checks that the harnesses' copies are the same files | `OK: 12 circuit files, each exact on every unit vector.` | Python 3; under a second |
+| `python3 -B measurements/2026-10-22/tables.py` | re-derives every figure of the measurements page from the raw files, and checks that the page quotes each one | `OK: every figure of measurements/2026-10-22/README.md re-derived from the raw files.  Measurements, not proofs.` | Python 3; under a second |
+| `sh tools/fht-kernel/test.sh` | builds the kernel and checks it: exact on whole numbers at every size 2^0 to 2^20 in float and double, FFHT's return codes, a deliberately broken copy caught, code written for FFHT linked under FFHT's names, and the code word for word the timed code | `OK: exact on integer inputs at every size 2^0 to 2^20 in float and double, FFHT's return codes, broken copy caught.` | a C compiler; Python 3 for the last check; with `SIMDE_DIR` set, it also checks the AVX2 code through SIMDe |
+
+**What was run.** On 22 October 2026 the agents ran all four commands on an Apple M4 with macOS: `count_tables.py`
+in both forms, `check_circuits.py`, `tables.py`, and `test.sh` twice, natively (the portable code, since that machine
+has no AVX2) and with `SIMDE_DIR` (the AVX2 code, emulated by SIMDe v0.8.2). Each ended with its last line. The
+recorded outputs are `tools/circuits/expected-output-count-tables.txt`,
+`measurements/2026-10-22/expected-tables.txt` and `tools/fht-kernel/tests/expected-macos-arm64*.txt`.
+
+**The measurements themselves** were run on machines rented through Google Colab (AMD EPYC 9B45, 9B14 and 7B12, an
+Intel Xeon of family 6 model 79, and an NVIDIA RTX PRO 6000 Blackwell Server Edition), not on the Mac. Every timing
+program checks its own exactness before it times anything, on the machine where it runs; those checks are in the raw
+outputs (`check_*.txt`). The sources of the four main x86 timing programs were also built on the Mac through SIMDe
+and passed their exactness gates there (their READMEs under `measurements/2026-10-22/x86/` give the output; the
+short kernel-level program of `harness-balance/` has no such build), and the GPU program's device code passed its
+CPU check (`gpu/harness-wht/wht_cuda_cpucheck.cpp`).
+`measurements/2026-10-22/README.md` says what was measured, how, and what it does not show.

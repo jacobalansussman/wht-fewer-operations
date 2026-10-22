@@ -1,0 +1,38 @@
+== az_quiet 2026-10-22 13:28:18 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 0.40 of 8 cores busy; steal 0.1 %; load ['0.78', '0.94', '1.08']
+   CPUs the timing uses: cpu3 1.3 %, cpu7 13.6 %
+   BUSY because cpu7 13.6 % busy
+   BUSY because whole machine 0.40 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:28:31 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 0.58 of 8 cores busy; steal 0.1 %; load ['0.74', '0.92', '1.07']
+   CPUs the timing uses: cpu3 1.7 %, cpu7 22.7 %
+   BUSY because cpu7 22.7 % busy
+   BUSY because whole machine 0.58 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:28:44 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 0.80 of 8 cores busy; steal 0.2 %; load ['0.73', '0.91', '1.06']
+   CPUs the timing uses: cpu3 7.3 %, cpu7 26.2 %
+   BUSY because cpu3 7.3 % busy
+   BUSY because cpu7 26.2 % busy
+   BUSY because whole machine 0.80 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:28:57 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 1.01 of 8 cores busy; steal 0.4 %; load ['0.62', '0.88', '1.05']
+   CPUs the timing uses: cpu3 8.3 %, cpu7 5.6 %
+   BUSY because cpu3 8.3 % busy
+   BUSY because cpu7 5.6 % busy
+   BUSY because whole machine 1.01 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:29:10 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 0.91 of 8 cores busy; steal 0.3 %; load ['0.64', '0.87', '1.05']
+   CPUs the timing uses: cpu3 35.3 %, cpu7 4.3 %
+   BUSY because cpu3 35.3 % busy
+   BUSY because whole machine 0.91 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:29:23 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 0.71 of 8 cores busy; steal 0.2 %; load ['0.54', '0.84', '1.04']
+   CPUs the timing uses: cpu3 3.7 %, cpu7 9.0 %
+   BUSY because cpu7 9.0 % busy
+   BUSY because whole machine 0.71 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:29:36 whole_same_gcc_avx2_f32: BUSY over 3 s; whole machine 0.51 of 8 cores busy; steal 0.2 %; load ['0.50', '0.82', '1.02']
+   CPUs the timing uses: cpu3 6.0 %, cpu7 3.3 %
+   BUSY because cpu3 6.0 % busy
+   BUSY because whole machine 0.51 cores busy (limit 0.40)
+== az_quiet 2026-10-22 13:29:49 whole_same_gcc_avx2_f32: QUIET over 3 s; whole machine 0.31 of 8 cores busy; steal 0.1 %; load ['0.39', '0.78', '1.01']
+   CPUs the timing uses: cpu3 3.3 %, cpu7 2.7 %
+== az_quiet 2026-10-22 13:34:02 whole_same_clang_avx2_f32: QUIET over 3 s; whole machine 0.08 of 8 cores busy; steal 0.0 %; load ['1.23', '1.06', '1.06']
+   CPUs the timing uses: cpu3 0.7 %, cpu7 0.7 %
+== az_quiet 2026-10-22 13:38:14 whole_sep_gcc_avx2_f32: QUIET over 3 s; whole machine 0.06 of 8 cores busy; steal 0.0 %; load ['1.24', '1.17', '1.10']
+   CPUs the timing uses: cpu3 1.0 %, cpu7 0.0 %
+== az_quiet 2026-10-22 13:39:31 whole_same_gcc_avx2_f64: QUIET over 3 s; whole machine 0.05 of 8 cores busy; steal 0.0 %; load ['1.16', '1.18', '1.11']
+   CPUs the timing uses: cpu3 0.3 %, cpu7 0.3 %

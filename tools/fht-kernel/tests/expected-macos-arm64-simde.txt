@@ -1,0 +1,123 @@
+# SIMDE_DIR=<SIMDE_DIR> sh tools/fht-kernel/test.sh, run on an Apple M4, macOS 26.6.2, Apple clang 21.0.0, on 22 October 2026, with SIMDe v0.8.2 (commit 71fd833d) at <SIMDE_DIR>. The SIMDe build runs the AVX2 code, emulated.
+== machine: Darwin arm64; compiler: Apple clang version 21.0.0 (clang-2100.1.1.101)
+
+== build: portable C   (cc -O2 -DWHTC_PLAIN)
+# test_exact: g20, portable C
+CHECK whole numbers 2^0 : float 0 wrong, double 0 wrong of 1  PASS
+CHECK whole numbers 2^1 : float 0 wrong, double 0 wrong of 2  PASS
+CHECK whole numbers 2^2 : float 0 wrong, double 0 wrong of 4  PASS
+CHECK whole numbers 2^3 : float 0 wrong, double 0 wrong of 8  PASS
+CHECK whole numbers 2^4 : float 0 wrong, double 0 wrong of 16  PASS
+CHECK whole numbers 2^8 : float 0 wrong, double 0 wrong of 256  PASS
+CHECK whole numbers 2^12: float 0 wrong, double 0 wrong of 4096  PASS
+CHECK whole numbers 2^16: float 0 wrong, double 0 wrong of 65536  PASS
+CHECK whole numbers 2^20: float 0 wrong, double 0 wrong of 1048576  PASS
+CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: PASS
+CHECK the portable code gives the same numbers as the compiled code, whole and real inputs, 2^0 to 2^20: PASS (0 differ)
+CHECK _oop: input unchanged, output equal to the in-place transform: PASS
+CHECK _scaled: scale 1 equal to the in-place transform, scale 2 exactly twice it: PASS
+CHECK return codes: 0 for log_n 0 (buffer unchanged); 1 for -1 and 31 (buffers untouched): PASS
+ALL PASS
+# test_exact: tb8balS, portable C
+CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: PASS
+CHECK the portable code gives the same numbers as the compiled code, whole and real inputs, 2^0 to 2^20: PASS (0 differ)
+ALL PASS
+# test_exact: tb8, portable C
+CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: PASS
+CHECK the portable code gives the same numbers as the compiled code, whole and real inputs, 2^0 to 2^20: PASS (0 differ)
+ALL PASS
+# test_rounding: g20, portable C
+# relative to the largest output; real inputs uniform in [-1, 1); exact = double-double textbook
+# n     | float:                              | double:                            
+#       | kernel-tb   kernel-ex   tb-ex       | kernel-tb   kernel-ex   tb-ex      
+  2^5   | 0.00e+00    9.50e-08    9.50e-08    | 1.83e-16    1.83e-16    1.83e-16   
+  2^6   | 8.68e-08    9.54e-08    8.79e-08    | 1.01e-16    6.30e-17    6.30e-17   
+  2^7   | 1.09e-07    6.84e-08    9.44e-08    | 1.46e-16    1.28e-16    1.10e-16   
+  2^8   | 7.16e-08    7.89e-08    8.73e-08    | 2.11e-16    1.85e-16    1.50e-16   
+  2^9   | 8.71e-08    1.04e-07    7.74e-08    | 2.75e-16    2.12e-16    1.78e-16   
+  2^10  | 1.74e-07    1.21e-07    1.01e-07    | 2.49e-16    2.14e-16    1.83e-16   
+  2^11  | 1.73e-07    1.20e-07    9.97e-08    | 3.06e-16    2.36e-16    1.79e-16   
+  2^12  | 1.69e-07    1.22e-07    1.01e-07    | 3.60e-16    2.58e-16    2.02e-16   
+  2^13  | 1.59e-07    1.27e-07    1.46e-07    | 2.76e-16    2.23e-16    1.85e-16   
+  2^14  | 1.34e-07    1.17e-07    1.13e-07    | 2.74e-16    2.44e-16    2.08e-16   
+  2^15  | 1.25e-07    1.28e-07    1.19e-07    | 3.29e-16    2.89e-16    2.04e-16   
+  2^16  | 1.98e-07    1.47e-07    1.40e-07    | 3.57e-16    2.76e-16    2.35e-16   
+  2^17  | 1.71e-07    1.51e-07    1.38e-07    | 3.31e-16    2.63e-16    2.33e-16   
+  2^18  | 1.73e-07    1.56e-07    1.25e-07    | 3.32e-16    2.80e-16    2.39e-16   
+  2^19  | 1.68e-07    1.51e-07    1.37e-07    | 4.54e-16    2.79e-16    2.28e-16   
+  2^20  | 1.70e-07    1.54e-07    1.38e-07    | 3.23e-16    2.68e-16    2.44e-16   
+  worst | 1.98e-07    1.56e-07    1.46e-07    | 4.54e-16    2.89e-16    2.44e-16   
+# float: the kernel differs from the textbook by at most 1.98e-07 of the largest output (2^5 to 2^20)
+# double: the kernel differs from the textbook by at most 4.54e-16 of the largest output (2^5 to 2^20)
+# test_rounding: tb8balS, portable C
+  worst | 0.00e+00    1.46e-07    1.46e-07    | 0.00e+00    2.44e-16    2.44e-16   
+# test_rounding: tb8, portable C
+  worst | 0.00e+00    1.46e-07    1.46e-07    | 0.00e+00    2.44e-16    2.44e-16   
+  broken copy: # test_exact: g20 (BROKEN COPY, for the test that must fail), portable C
+  broken copy: CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: FAIL
+  broken copy: FAIL
+CHECK the broken copy (one line of g20 changed) fails the exactness test: CAUGHT (good)
+CHECK code written for FFHT (fht_float, fht_double, fht_float_oop, fht_double_oop) links and runs: PASS
+CHECK FFHT's C++ overloads fht(...) compile and run: PASS
+
+== build: AVX2 and FMA through SIMDe   (cc -O2 -DWHTC_SIMDE -I<SIMDE_DIR>)
+# test_exact: g20, AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+CHECK whole numbers 2^0 : float 0 wrong, double 0 wrong of 1  PASS
+CHECK whole numbers 2^1 : float 0 wrong, double 0 wrong of 2  PASS
+CHECK whole numbers 2^2 : float 0 wrong, double 0 wrong of 4  PASS
+CHECK whole numbers 2^3 : float 0 wrong, double 0 wrong of 8  PASS
+CHECK whole numbers 2^4 : float 0 wrong, double 0 wrong of 16  PASS
+CHECK whole numbers 2^8 : float 0 wrong, double 0 wrong of 256  PASS
+CHECK whole numbers 2^12: float 0 wrong, double 0 wrong of 4096  PASS
+CHECK whole numbers 2^16: float 0 wrong, double 0 wrong of 65536  PASS
+CHECK whole numbers 2^20: float 0 wrong, double 0 wrong of 1048576  PASS
+CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: PASS
+CHECK the portable code gives the same numbers as the compiled code, whole and real inputs, 2^0 to 2^20: PASS (0 differ)
+CHECK _oop: input unchanged, output equal to the in-place transform: PASS
+CHECK _scaled: scale 1 equal to the in-place transform, scale 2 exactly twice it: PASS
+CHECK return codes: 0 for log_n 0 (buffer unchanged); 1 for -1 and 31 (buffers untouched): PASS
+ALL PASS
+# test_exact: tb8balS, AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: PASS
+CHECK the portable code gives the same numbers as the compiled code, whole and real inputs, 2^0 to 2^20: PASS (0 differ)
+ALL PASS
+# test_exact: tb8, AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: PASS
+CHECK the portable code gives the same numbers as the compiled code, whole and real inputs, 2^0 to 2^20: PASS (0 differ)
+ALL PASS
+# test_rounding: g20, AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+# relative to the largest output; real inputs uniform in [-1, 1); exact = double-double textbook
+# n     | float:                              | double:                            
+#       | kernel-tb   kernel-ex   tb-ex       | kernel-tb   kernel-ex   tb-ex      
+  2^5   | 0.00e+00    9.50e-08    9.50e-08    | 1.83e-16    1.83e-16    1.83e-16   
+  2^6   | 8.68e-08    9.54e-08    8.79e-08    | 1.01e-16    6.30e-17    6.30e-17   
+  2^7   | 1.09e-07    6.84e-08    9.44e-08    | 1.46e-16    1.28e-16    1.10e-16   
+  2^8   | 7.16e-08    7.89e-08    8.73e-08    | 2.11e-16    1.85e-16    1.50e-16   
+  2^9   | 8.71e-08    1.04e-07    7.74e-08    | 2.75e-16    2.12e-16    1.78e-16   
+  2^10  | 1.74e-07    1.21e-07    1.01e-07    | 2.49e-16    2.14e-16    1.83e-16   
+  2^11  | 1.73e-07    1.20e-07    9.97e-08    | 3.06e-16    2.36e-16    1.79e-16   
+  2^12  | 1.69e-07    1.22e-07    1.01e-07    | 3.60e-16    2.58e-16    2.02e-16   
+  2^13  | 1.59e-07    1.27e-07    1.46e-07    | 2.76e-16    2.23e-16    1.85e-16   
+  2^14  | 1.34e-07    1.17e-07    1.13e-07    | 2.74e-16    2.44e-16    2.08e-16   
+  2^15  | 1.25e-07    1.28e-07    1.19e-07    | 3.29e-16    2.89e-16    2.04e-16   
+  2^16  | 1.98e-07    1.47e-07    1.40e-07    | 3.57e-16    2.76e-16    2.35e-16   
+  2^17  | 1.71e-07    1.51e-07    1.38e-07    | 3.31e-16    2.63e-16    2.33e-16   
+  2^18  | 1.73e-07    1.56e-07    1.25e-07    | 3.32e-16    2.80e-16    2.39e-16   
+  2^19  | 1.68e-07    1.51e-07    1.37e-07    | 4.54e-16    2.79e-16    2.28e-16   
+  2^20  | 1.70e-07    1.54e-07    1.38e-07    | 3.23e-16    2.68e-16    2.44e-16   
+  worst | 1.98e-07    1.56e-07    1.46e-07    | 4.54e-16    2.89e-16    2.44e-16   
+# float: the kernel differs from the textbook by at most 1.98e-07 of the largest output (2^5 to 2^20)
+# double: the kernel differs from the textbook by at most 4.54e-16 of the largest output (2^5 to 2^20)
+# test_rounding: tb8balS, AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+  worst | 0.00e+00    1.46e-07    1.46e-07    | 0.00e+00    2.44e-16    2.44e-16   
+# test_rounding: tb8, AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+  worst | 0.00e+00    1.46e-07    1.46e-07    | 0.00e+00    2.44e-16    2.44e-16   
+  broken copy: # test_exact: g20 (BROKEN COPY, for the test that must fail), AVX2 and FMA through SIMDe (emulated: for testing, not for speed)
+  broken copy: CHECK whole numbers in [-4, 4], every 2^0 to 2^20, float and double, equal to the textbook number for number: FAIL
+  broken copy: FAIL
+CHECK the broken copy (one line of g20 changed) fails the exactness test: CAUGHT (good)
+CHECK code written for FFHT (fht_float, fht_double, fht_float_oop, fht_double_oop) links and runs: PASS
+CHECK FFHT's C++ overloads fht(...) compile and run: PASS
+
+OK: steps identical to the timed harness
+OK: exact on integer inputs at every size 2^0 to 2^20 in float and double, FFHT's return codes, broken copy caught.

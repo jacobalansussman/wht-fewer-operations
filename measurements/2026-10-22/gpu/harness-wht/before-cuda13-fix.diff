@@ -1,0 +1,23 @@
+# Unified diff: the code of the first GPU launch (rtx6000-wht-failed-build), part 1 of 2 (lines starting with -)
+# against the code published in this folder (lines starting with +).
+# Both sides have had the same private paths and labels removed (see ../../CODE-AS-RUN.md).
+--- as-run/run.sh
++++ published/run.sh
+@@ -85,4 +85,6 @@
+   (cd $SRC/VkFFT && git checkout -q 066a17c17068c0f11c9298d848c2976c71fad1c1 2>/dev/null; git log -1 --format='VkFFT %H %cd')
+   python3 $W/vkfft_arch_patch.py $SRC/VkFFT/CMakeLists.txt $CAP || { echo "VkFFT arch patch FAILED"; }
++  # fix 22 Oct 2026: CUDA 13 headers make cuCtxCreate_v4 take a CUctxCreateParams* second argument
++  grep -q "CUDA_VERSION >= 13000" $SRC/VkFFT/VkFFT_TestSuite.cpp 2>/dev/null || sed -i 's|cuCtxCreate_v4(&vkGPU->context, 0, (int)vkGPU->device)|cuCtxCreate_v4(\&vkGPU->context, NULL, 0, (int)vkGPU->device) /* CUDA_VERSION >= 13000 */|' $SRC/VkFFT/VkFFT_TestSuite.cpp
+   cmake -S $SRC/VkFFT -B $KB/vkfft -DVKFFT_BACKEND=1 -Dbuild_VkFFT_cuFFT_benchmark=ON -DCMAKE_CUDA_ARCHITECTURES=$CAP \
+         -DCMAKE_BUILD_TYPE=Release > $O/vkfft_cmake.txt 2>&1 && make -C $KB/vkfft -j$(nproc) > $O/vkfft_make.txt 2>&1
+--- as-run/wht_cuda.cu
++++ published/wht_cuda.cu
+@@ -242,6 +242,7 @@
+   const char *mode = argc > 1 ? argv[1] : "all";
+   cudaDeviceProp p; CK(cudaGetDeviceProperties(&p, 0));
++  int clk_khz = 0; cudaDeviceGetAttribute(&clk_khz, cudaDevAttrClockRate, 0);  /* fix 22 Oct: CUDA 13 dropped cudaDeviceProp.clockRate */
+   printf("# wht_cuda on %s, sm_%d%d, %d SMs, %.0f MHz, %d-bit bus, L2 %d KB\n", p.name, p.major, p.minor,
+-         p.multiProcessorCount, p.clockRate / 1e3, p.memoryBusWidth, p.l2CacheSize / 1024);
++         p.multiProcessorCount, clk_khz / 1e3, p.memoryBusWidth, p.l2CacheSize / 1024);
+   srand(7);
+   int ok = check_regs();

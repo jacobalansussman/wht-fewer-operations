@@ -1,0 +1,2 @@
+== az_quiet 2026-10-22 11:51:52 gpu timing: QUIET over 3 s; whole machine 0.02 of 48 cores busy; steal 0.0 %; load ['0.31', '1.13', '0.96']
+== az_quiet 2026-10-22 11:52:52 gpu timing: QUIET over 3 s; whole machine 0.02 of 48 cores busy; steal 0.0 %; load ['0.78', '1.12', '0.97']

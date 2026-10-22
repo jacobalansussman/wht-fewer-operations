@@ -1,0 +1,32 @@
+CHECK k_h8_textbook_24             PASS (exact)
+CHECK k_h8_textbook_24_bal         PASS (exact)
+CHECK k_h8_G19                     PASS (exact)
+CHECK k_h8_G19_bal                 PASS (exact)
+CHECK k_h8_G22_depth4              PASS (exact)
+CHECK k_h8_G22_depth4_bal          PASS (exact)
+CHECK k_h8_ar22                    PASS (exact)
+CHECK k_h8_ar22_bal                PASS (exact)
+CHECK k_h16_textbook_64            PASS (exact)
+CHECK k_h16_textbook_64_bal        PASS (exact)
+CHECK k_h16_G52_family             PASS (exact)
+CHECK k_h16_G52_family_bal         PASS (exact)
+CHECK k_h16_G56_depth6             PASS (exact)
+CHECK k_h16_G56_depth6_bal         PASS (exact)
+CHECK k_h16_G60_depth5             PASS (exact)
+CHECK k_h16_G60_depth5_bal         PASS (exact)
+RESULT k_h8_textbook_24             best 0.0549 median 0.0549 ns/point  reps: 0.0549 0.0549 0.0549 0.0549 0.0549 0.0549 0.0549 0.0550 0.0550
+RESULT k_h8_textbook_24_bal         best 0.0474 median 0.0475 ns/point  reps: 0.0474 0.0475 0.0475 0.0474 0.0474 0.0475 0.0475 0.0475 0.0476
+RESULT k_h8_G19                     best 0.0420 median 0.0421 ns/point  reps: 0.0421 0.0421 0.0421 0.0426 0.0421 0.0420 0.0423 0.0421 0.0421
+RESULT k_h8_G19_bal                 best 0.0442 median 0.0442 ns/point  reps: 0.0442 0.0442 0.0443 0.0442 0.0442 0.0442 0.0442 0.0442 0.0442
+RESULT k_h8_G22_depth4              best 0.0449 median 0.0450 ns/point  reps: 0.0450 0.0449 0.0451 0.0449 0.0449 0.0450 0.0451 0.0450 0.0451
+RESULT k_h8_G22_depth4_bal          best 0.0496 median 0.0497 ns/point  reps: 0.0497 0.0497 0.0497 0.0497 0.0497 0.0497 0.0499 0.0497 0.0496
+RESULT k_h8_ar22                    best 0.0418 median 0.0418 ns/point  reps: 0.0418 0.0418 0.0418 0.0419 0.0418 0.0418 0.0420 0.0418 0.0418
+RESULT k_h8_ar22_bal                best 0.0516 median 0.0516 ns/point  reps: 0.0516 0.0516 0.0516 0.0517 0.0517 0.0516 0.0519 0.0517 0.0516
+RESULT k_h16_textbook_64            best 0.0732 median 0.0732 ns/point  reps: 0.0732 0.0732 0.0732 0.0732 0.0732 0.0733 0.0733 0.0732 0.0732
+RESULT k_h16_textbook_64_bal        best 0.0598 median 0.0602 ns/point  reps: 0.0598 0.0599 0.0602 0.0602 0.0599 0.0603 0.0602 0.0603 0.0599
+RESULT k_h16_G52_family             best 0.0474 median 0.0475 ns/point  reps: 0.0475 0.0474 0.0475 0.0475 0.0475 0.0475 0.0475 0.0475 0.0476
+RESULT k_h16_G52_family_bal         best 0.0549 median 0.0550 ns/point  reps: 0.0549 0.0549 0.0550 0.0550 0.0550 0.0551 0.0550 0.0550 0.0551
+RESULT k_h16_G56_depth6             best 0.0572 median 0.0572 ns/point  reps: 0.0572 0.0572 0.0572 0.0572 0.0572 0.0572 0.0573 0.0572 0.0572
+RESULT k_h16_G56_depth6_bal         best 0.0602 median 0.0603 ns/point  reps: 0.0602 0.0604 0.0603 0.0602 0.0603 0.0603 0.0603 0.0603 0.0603
+RESULT k_h16_G60_depth5             best 0.0566 median 0.0566 ns/point  reps: 0.0566 0.0567 0.0566 0.0567 0.0568 0.0566 0.0566 0.0566 0.0566
+RESULT k_h16_G60_depth5_bal         best 0.0617 median 0.0618 ns/point  reps: 0.0617 0.0618 0.0618 0.0617 0.0618 0.0618 0.0617 0.0617 0.0618

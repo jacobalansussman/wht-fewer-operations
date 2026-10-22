@@ -1,0 +1,12 @@
+# bench_hyb 256bit-f32, 8 lanes, 32 vector registers, compiler 13.3.0, FFHT linked
+PLAN 2^10 FFHT threshold 10 | hyb8: block 2^10 [0-6(lanes 3 + 3) 6-9 9-10] layers [ ] (8-point steps per element: 2) | hyb16: block 2^10 [0-7(lanes 3 + 4) 7-10] layers [ ]
+PLAN 2^11 FFHT threshold 11 | hyb8: block 2^11 [0-6(lanes 3 + 3) 6-9 9-11] layers [ ] (8-point steps per element: 2) | hyb16: block 2^11 [0-7(lanes 3 + 4) 7-11] layers [ ]
+PLAN 2^12 FFHT threshold 12 | hyb8: block 2^12 [0-6(lanes 3 + 3) 6-9 9-12] layers [ ] (8-point steps per element: 3) | hyb16: block 2^12 [0-7(lanes 3 + 4) 7-11 11-12] layers [ ]
+PLAN 2^13 FFHT threshold 11 | hyb8: block 2^11 [0-6(lanes 3 + 3) 6-9 9-11] layers [ 11-13 ] (8-point steps per element: 2) | hyb16: block 2^11 [0-7(lanes 3 + 4) 7-11] layers [ 11-13 ]
+PLAN 2^14 FFHT threshold 12 | hyb8: block 2^12 [0-6(lanes 3 + 3) 6-9 9-12] layers [ 12-14 ] (8-point steps per element: 3) | hyb16: block 2^12 [0-7(lanes 3 + 4) 7-11 11-12] layers [ 12-14 ]
+PLAN 2^15 FFHT threshold 13 | hyb8: block 2^13 [0-6(lanes 3 + 3) 6-9 9-12 12-13] layers [ 13-15 ] (8-point steps per element: 3) | hyb16: block 2^13 [0-7(lanes 3 + 4) 7-11 11-13] layers [ 13-15 ]
+PLAN 2^16 FFHT threshold 13 | hyb8: block 2^13 [0-6(lanes 3 + 3) 6-9 9-12 12-13] layers [ 13-16 ] (8-point steps per element: 4) | hyb16: block 2^13 [0-7(lanes 3 + 4) 7-11 11-13] layers [ 13-16 ]
+PLAN 2^17 FFHT threshold 12 | hyb8: block 2^12 [0-6(lanes 3 + 3) 6-9 9-12] layers [ 12-15 15-17 ] (8-point steps per element: 4) | hyb16: block 2^12 [0-7(lanes 3 + 4) 7-11 11-12] layers [ 12-16 16-17 ]
+PLAN 2^18 FFHT threshold 12 | hyb8: block 2^12 [0-6(lanes 3 + 3) 6-9 9-12] layers [ 12-15 15-18 ] (8-point steps per element: 5) | hyb16: block 2^12 [0-7(lanes 3 + 4) 7-11 11-12] layers [ 12-16 16-18 ]
+PLAN 2^19 FFHT threshold 13 | hyb8: block 2^13 [0-6(lanes 3 + 3) 6-9 9-12 12-13] layers [ 13-16 16-19 ] (8-point steps per element: 5) | hyb16: block 2^13 [0-7(lanes 3 + 4) 7-11 11-13] layers [ 13-17 17-19 ]
+PLAN 2^20 FFHT threshold 12 | hyb8: block 2^12 [0-6(lanes 3 + 3) 6-9 9-12] layers [ 12-15 15-18 18-20 ] (8-point steps per element: 5) | hyb16: block 2^12 [0-7(lanes 3 + 4) 7-11 11-12] layers [ 12-16 16-20 ]

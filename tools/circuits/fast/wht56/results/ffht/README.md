@@ -1,5 +1,9 @@
 # The 8-point step inside FFHT: the timings
 
+*Revision 2, 22 October 2026: AMD processors and AVX-512 were timed later, in a different test that keeps
+FFHT's structure: see [measurements/2026-10-22/](../../../../../../measurements/2026-10-22/README.md). Apart from
+this note and one line in section 5, this page is unchanged; it describes the timings of 11 October.*
+
 This page is the long version of the section "Is it faster in practice?" of
 [the README](../../../../../../README.md). The question: does the new 8-point step make a tuned library
 for the Walsh-Hadamard transform faster? On the one machine that was timed, the answer is no.
@@ -329,6 +333,7 @@ could not recount the compiled loops, because the machine was offline.
   numbers in FFHT's scheme; several threads; 2 MiB memory pages; small arrays transformed once each;
   rounding error on real-valued data; a search for a circuit with fewer than 24 operations and a chain
   shorter than 7.
+  (AMD and AVX-512 were tried on 22 October 2026; see the line at the top.)
 
 So nothing here says that the step is slower in general, or what it would do on another processor. And no
 change was offered to FFHT or to any other library: there is no measured gain to offer.

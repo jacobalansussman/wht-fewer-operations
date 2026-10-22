@@ -1,0 +1,12 @@
+== az_quiet 2026-10-22 12:09:18 bal_avx2 round 1: QUIET over 3 s; whole machine 0.09 of 48 cores busy; steal 0.0 %; load ['0.32', '1.57', '1.63']
+   CPUs the timing uses: cpu1 0.7 %, cpu25 0.3 %
+== az_quiet 2026-10-22 12:10:16 bal_avx512 round 1: BUSY over 3 s; whole machine 0.69 of 48 cores busy; steal 0.0 %; load ['0.71', '1.46', '1.59']
+   CPUs the timing uses: cpu1 0.3 %, cpu25 0.3 %
+   BUSY because process <pid> (<another process: name removed for publication>) at 34.3 % of a core
+   BUSY because process <pid> (<another process: name removed for publication>) at 32.7 % of a core
+== az_quiet 2026-10-22 12:10:29 bal_avx512 round 1: QUIET over 3 s; whole machine 0.09 of 48 cores busy; steal 0.0 %; load ['0.60', '1.41', '1.57']
+   CPUs the timing uses: cpu1 0.0 %, cpu25 0.3 %
+== az_quiet 2026-10-22 12:11:24 bal_avx2 round 2: QUIET over 3 s; whole machine 0.04 of 48 cores busy; steal 0.0 %; load ['0.84', '1.34', '1.53']
+   CPUs the timing uses: cpu1 0.0 %, cpu25 0.0 %
+== az_quiet 2026-10-22 12:12:23 bal_avx512 round 2: QUIET over 3 s; whole machine 0.03 of 48 cores busy; steal 0.0 %; load ['0.90', '1.27', '1.50']
+   CPUs the timing uses: cpu1 0.0 %, cpu25 0.3 %

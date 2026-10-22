@@ -1,0 +1,8 @@
+== az_quiet 2026-10-22 12:04:03 bench orig round 1: QUIET over 3 s; whole machine 0.03 of 48 cores busy; steal 0.0 %; load ['6.38', '3.46', '2.06']
+== az_quiet 2026-10-22 12:04:49 bench cse round 1: QUIET over 3 s; whole machine 0.11 of 48 cores busy; steal 0.0 %; load ['3.25', '3.05', '1.98']
+== az_quiet 2026-10-22 12:05:14 bench grp round 1: QUIET over 3 s; whole machine 0.04 of 48 cores busy; steal 0.0 %; load ['2.48', '2.89', '1.96']
+== az_quiet 2026-10-22 12:05:39 bench mm round 1: QUIET over 3 s; whole machine 0.05 of 48 cores busy; steal 0.0 %; load ['1.98', '2.73', '1.93']
+== az_quiet 2026-10-22 12:06:11 bench orig round 2: QUIET over 3 s; whole machine 0.02 of 48 cores busy; steal 0.0 %; load ['1.46', '2.52', '1.89']
+== az_quiet 2026-10-22 12:06:36 bench cse round 2: QUIET over 3 s; whole machine 0.03 of 48 cores busy; steal 0.0 %; load ['1.22', '2.38', '1.86']
+== az_quiet 2026-10-22 12:07:01 bench grp round 2: QUIET over 3 s; whole machine 0.02 of 48 cores busy; steal 0.0 %; load ['1.07', '2.25', '1.83']
+== az_quiet 2026-10-22 12:07:46 bench mm round 2: QUIET over 3 s; whole machine 0.02 of 48 cores busy; steal 0.0 %; load ['0.69', '2.00', '1.76']

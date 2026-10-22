@@ -1,0 +1,24 @@
+# wht_cuda on NVIDIA RTX PRO 6000 Blackwell Server Edition, sm_120, 188 SMs, 2430 MHz, 512-bit bus, L2 131072 KB
+CHECK regs R=8 tb8    exact on integers: 0 wrong PASS
+CHECK regs R=8 g19    exact on integers: 0 wrong PASS
+CHECK regs R=8 g22d4  exact on integers: 0 wrong PASS
+CHECK regs R=16 tb16   exact on integers: 0 wrong PASS
+CHECK regs R=16 g52    exact on integers: 0 wrong PASS
+CHECK regs R=16 g56d6  exact on integers: 0 wrong PASS
+CHECK row N=256 tb16   rel err 1.115e-07 PASS
+CHECK row N=256 g52    rel err 1.183e-07 PASS
+CHECK row N=256 g56d6  rel err 1.089e-07 PASS
+CHECK row N=256 broken copy CAUGHT (good)
+CHECK row N=4096 tb16   rel err 1.217e-07 PASS
+CHECK row N=4096 g52    rel err 1.760e-07 PASS
+CHECK row N=4096 g56d6  rel err 1.325e-07 PASS
+CHECK row N=4096 broken copy CAUGHT (good)
+CHECK row N=512 tb8    rel err 1.121e-07 PASS
+CHECK row N=512 g19    rel err 1.237e-07 PASS
+CHECK row N=512 g22d4  rel err 1.203e-07 PASS
+CHECK row N=512 broken copy CAUGHT (good)
+CHECK row N=4096 tb8    rel err 1.051e-07 PASS
+CHECK row N=4096 g19    rel err 1.394e-07 PASS
+CHECK row N=4096 g22d4  rel err 1.122e-07 PASS
+CHECK row N=4096 broken copy CAUGHT (good)
+ALL PASS

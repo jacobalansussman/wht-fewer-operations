@@ -7,7 +7,8 @@ authors:
   - family-names: Sussman
     given-names: Jacob
 repository-code: "https://github.com/jacobalansussman/wht-fewer-operations"
-date-released: 2026-10-11
+version: "2"
+date-released: 2026-10-22
 license: Apache-2.0
 abstract: >-
   Explicit circuits for the Walsh-Hadamard transform that use fewer operations than the textbook's
@@ -17,7 +18,10 @@ abstract: >-
   addition, there are circuits with 19 operations at 8 points, 52 at 16, and (3/4) N log2 N + N/4 at
   every power of two from 4; these are replayed exactly by programs and are not in Lean. It is a
   better constant, not a better exponent. The circuits were found by computer searches run by AI
-  agents (Anthropic's Claude) under the author's direction.
+  agents (Anthropic's Claude) under the author's direction. Revision 2 adds exact count tables,
+  measurements on AMD, Intel, NVIDIA and Xilinx hardware (at best a few percent less time, on
+  two AMD processors in one run each; no gain or a loss on the others), and a kernel with the entry
+  points of the library FFHT.
 keywords:
   - Walsh-Hadamard transform
   - arithmetic circuits

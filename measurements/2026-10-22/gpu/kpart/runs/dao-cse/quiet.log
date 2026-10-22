@@ -1,0 +1,4 @@
+== az_quiet 2026-10-22 11:45:15 bench orig: QUIET over 3 s; whole machine 0.05 of 48 cores busy; steal 0.0 %; load ['2.69', '2.07', '1.02']
+== az_quiet 2026-10-22 11:46:04 bench cse: QUIET over 3 s; whole machine 0.05 of 48 cores busy; steal 0.0 %; load ['1.51', '1.85', '0.99']
+== az_quiet 2026-10-22 11:46:53 bench orig: QUIET over 3 s; whole machine 0.06 of 48 cores busy; steal 0.0 %; load ['0.94', '1.65', '0.97']
+== az_quiet 2026-10-22 11:47:23 bench cse: QUIET over 3 s; whole machine 0.10 of 48 cores busy; steal 0.0 %; load ['0.88', '1.57', '0.97']

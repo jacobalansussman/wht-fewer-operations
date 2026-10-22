@@ -54,3 +54,22 @@ tools/circuits/fast/wht56/results/ffht/style-generator/gen.py
 tools/circuits/fast/wht56/results/ffht/style-generator/gen/
 tools/circuits/fast/wht56/results/ffht/**/build*/
 tools/circuits/fast/wht56/results/ffht/fused-retiming/b/
+# Revision 2: what the kernel's scripts build (and the FFHT and SIMDe checkouts they fetch there)
+tools/fht-kernel/build/
+# Revision 2: what the timing jobs of measurements/2026-10-22/ write when they are run again (their raw results of
+# 22 October are under runs/ and results/, not in these folders); the GPU jobs' link to their fetched sources
+measurements/2026-10-22/**/build/
+measurements/2026-10-22/x86/harness-*/out/
+measurements/2026-10-22/gpu/harness-wht/out/
+measurements/2026-10-22/gpu/kpart/dao-cse/out/
+measurements/2026-10-22/gpu/kpart/dao-cse/src
+measurements/2026-10-22/gpu/kpart/three-forms/out/
+measurements/2026-10-22/gpu/kpart/three-forms/src
+measurements/2026-10-22/gpu/kpart/generator/out/
+measurements/2026-10-22/fpga-xc7/out/
+# Revision 2: what the documented commands write beside the code (the CPU check of the GPU program, the generated
+# benchmarks of harness-balance, and the link to FFHT that harness-wht's run.sh makes while it runs)
+measurements/2026-10-22/gpu/harness-wht/cpucheck
+measurements/2026-10-22/x86/harness-balance/bench_avx2.c
+measurements/2026-10-22/x86/harness-balance/bench_avx512.c
+measurements/2026-10-22/x86/harness-wht/FFHT

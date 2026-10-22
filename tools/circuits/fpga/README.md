@@ -314,6 +314,10 @@ clock would be slower than the textbook's.
 | the family, 256 points | yes | yes | ECP5-85F, one seed, the 1994 design and the family only | figures read again from the logs |
 | the family on a Xilinx 7-series | yes | no | no | the 32-point pair |
 
+Revision 2, 22 October 2026: after this page was written, the 19- and 52-adder circuits were placed and routed
+on a Xilinx Artix-7 with open tools (openXC7), and they used more slices than the textbook, though they used
+fewer carry blocks: [measurements/2026-10-22/](../../../measurements/2026-10-22/README.md), section 10.
+
 ## 7. Limits, and what has not been done
 
 - **One tool chain:** the open-source tools. The makers' own tools (Lattice iCEcube2 or Radiant, Xilinx
@@ -342,6 +346,9 @@ clock would be slower than the textbook's.
   Nobody has searched for one with few adder levels, or for one that is small in real cells.
 - **The literature search has gaps:** abstracts only for six of the papers, summaries only for the two
   patents, no Chinese-language sources, no vendor catalogues behind a login.
+- **Xilinx, placed later with open tools only.** On 22 October 2026 the 19- and 52-adder circuits were placed and
+  routed on a Xilinx Artix-7 with openXC7: fewer carry blocks, more slices than the textbook, no vendor tool and
+  no bitstream ([measurements/2026-10-22/](../../../measurements/2026-10-22/README.md), section 10).
 
 ## 8. The files, and how to run them again
 

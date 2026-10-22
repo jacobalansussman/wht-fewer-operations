@@ -1,0 +1,185 @@
+== FPGA kit: job xc7   Thu Oct 22 12:13:28 UTC 2026
+== machine
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Xeon(R) CPU @ 2.20GHz
+CPU family:                              6
+Model:                                   79
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+Stepping:                                0
+BogoMIPS:                                4399.99
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+nproc 8
+               total        used        free      shared  buff/cache   available
+Mem:              50           1          39           0          10          49
+Swap:              0           0           0
+no GPU
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Python 3.13.16
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+== other processes using CPU now (recorded; FPGA figures do not depend on load)
+   (process list removed for publication)
+download oss-cad-suite-linux-x64-20261011.tgz
+download openxc7-toolchain-linux-x86-64-20261019.tgz
+unpack oss-cad-suite
+unpack openxc7
+== versions
+  yosys -V -> Yosys 0.69+274 (git sha1 7513f8df8, Release, Clang /usr/bin/clang++ 21.1.8)
+  nextpnr-ice40 --version -> "nextpnr-ice40" -- Next Generation Place and Route (Version nextpnr-0.11.1-59-g837d0eed)
+  nextpnr-ecp5 --version -> "nextpnr-ecp5" -- Next Generation Place and Route (Version nextpnr-0.11.1-59-g837d0eed)
+  nextpnr-nexus --version -> "nextpnr-nexus" -- Next Generation Place and Route (Version nextpnr-0.11.1-59-g837d0eed)
+  nextpnr-himbaechel --version -> "nextpnr-himbaechel" -- Next Generation Place and Route (Version nextpnr-0.11.1-59-g837d0eed)
+  /content/fpga-tools/openxc7/bin/nextpnr-xilinx --version -> "nextpnr-xilinx" -- Next Generation Place and Route (Version e7a6fb0e)
+  iverilog -V -> Icarus Verilog version 14.0 (devel) (s20260301-542-g04cc49350-dirty)
+  verilator --version -> Verilator 5.053 devel rev v5.052-362-ge9f8cb2d9 (mod)
+  sby --help -> usage: sby [options] [<jobname>.sby [tasknames] | <dirname>]
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7a100t.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7a200t.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7a50t.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7s100.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7s25.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7s50.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7z010.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7z020.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7z030.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7z045.bin
+  chipdb /content/fpga-tools/openxc7/share/nextpnr/himbaechel/xilinx/chipdb-xc7z100.bin
+DONE-TOOLS
+first job on this runtime: FULL self-test (--xc7) instead of '--quick --xc7'
+== self-test Thu Oct 22 12:14:07 UTC 2026
+[selftest] fold_lc1_dspinfer on ice40-up5k ...
+[selftest] fold_lc1_dspinfer  ice40-up5k     SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 36.08, here 42.22
+             seed 1 crit_logic_steps: Mac 19, here 29
+             seed 2 fmax_mhz: Mac 43.54, here 43.39
+             seed 2 crit_logic_steps: Mac 19, here 17
+             seed 3 fmax_mhz: Mac 42.34, here 43.73
+             seed 4 fmax_mhz: Mac 43.83, here 43.21
+             seed 5 fmax_mhz: Mac 43.19, here 44.98
+             seed 5 crit_logic_steps: Mac 17, here 30
+[selftest] ntt4_as2 on ecp5-25k ...
+[selftest] ntt4_as2           ecp5-25k       SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 96.86, here 98.82
+             seed 1 crit_logic_steps: Mac 98, here 83
+             seed 1 dut_slices_touched: Mac 894, here 911
+             seed 1 dut_slices_shared_with_harness: Mac 352, here 345
+             seed 2 fmax_mhz: Mac 98.56, here 98.9
+             seed 2 crit_logic_steps: Mac 77, here 76
+             seed 2 dut_slices_touched: Mac 902, here 921
+             seed 2 dut_slices_shared_with_harness: Mac 360, here 357
+[selftest] ntt4_as2 on nexus-lifcl40 ...
+[selftest] ntt4_as2           nexus-lifcl40  SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 143.08, here 140.83
+             seed 1 crit_logic_steps: Mac 123, here 115
+             seed 1 dut_slices_touched: Mac 926, here 940
+             seed 1 dut_slices_shared_with_harness: Mac 313, here 336
+             seed 2 fmax_mhz: Mac 143.68, here 138.81
+             seed 2 crit_logic_steps: Mac 120, here 114
+             seed 2 dut_slices_touched: Mac 916, here 901
+             seed 2 dut_slices_shared_with_harness: Mac 319, here 336
+[selftest] ntt4_harvey on ecp5-25k ...
+[selftest] ntt4_harvey        ecp5-25k       SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 93.32, here 94.09
+             seed 1 crit_logic_steps: Mac 79, here 82
+             seed 1 dut_slices_touched: Mac 1051, here 1041
+             seed 1 dut_slices_shared_with_harness: Mac 370, here 364
+             seed 2 fmax_mhz: Mac 94.86, here 90.2
+             seed 2 crit_logic_steps: Mac 79, here 84
+             seed 2 dut_slices_touched: Mac 1063, here 1056
+             seed 2 dut_slices_shared_with_harness: Mac 356, here 360
+[selftest] ntt4_harvey on nexus-lifcl40 ...
+[selftest] ntt4_harvey        nexus-lifcl40  SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 134.97, here 141.66
+             seed 1 crit_logic_steps: Mac 115, here 121
+             seed 1 dut_slices_touched: Mac 1056, here 1045
+             seed 1 dut_slices_shared_with_harness: Mac 321, here 311
+             seed 2 fmax_mhz: Mac 136.37, here 134.32
+             seed 2 crit_logic_steps: Mac 118, here 105
+             seed 2 dut_slices_shared_with_harness: Mac 311, here 339
+             seed 3 fmax_mhz: Mac 134.61, here 140.55
+[selftest] ax7_tb8_d2 on xc7a100t ...
+[selftest] ax7_tb8_d2         xc7a100t       SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 242.72, here 246.55
+             seed 1 dut_slices_touched: Mac 83, here 85
+             seed 1 dut_slices_shared_with_harness: Mac 17, here 24
+             seed 2 fmax_mhz: Mac 250.75, here 258.0
+             seed 2 dut_slices_touched: Mac 84, here 83
+             seed 2 dut_slices_shared_with_harness: Mac 22, here 23
+             seed 3 fmax_mhz: Mac 263.5, here 255.62
+             seed 3 dut_slices_touched: Mac 86, here 84
+[selftest] ax7_o19_d2 on xc7a100t ...
+[selftest] ax7_o19_d2         xc7a100t       SYNTH-EXACT
+             seed 1 fmax_mhz: Mac 270.27, here 267.59
+             seed 1 dut_slices_touched: Mac 112, here 109
+             seed 1 dut_slices_shared_with_harness: Mac 36, here 41
+             seed 2 fmax_mhz: Mac 274.65, here 250.82
+             seed 2 crit_logic_steps: Mac 6, here 7
+             seed 2 dut_slices_touched: Mac 122, here 107
+             seed 2 dut_slices_shared_with_harness: Mac 41, here 33
+             seed 3 fmax_mhz: Mac 273.37, here 259.0
+SELFTEST SYNTH-EXACT (synthesis identical; keep this machine's P&R figures in tables of their own)
+self-test exit 0
+== farm designs/xc7 Thu Oct 22 12:18:32 UTC 2026
+[farm] 22 lines, 5 seeds each, 8 tool runs at once (1 lines x 5 seeds); RAM 53 GB; out /content/work/remote/fpga-xc7-1792671207-65723/out/xc7
+[farm] aj5_tern8_hand_p               rc=0  28 s
+[farm] aj5_bin8_hand_p                rc=0  30 s
+[farm] aj5_tern8_beh_p                rc=0  26 s
+[farm] aj5_bin8_beh_p                 rc=0  26 s
+[farm] aj5_tern16a_hand_p             rc=0  50 s
+[farm] aj5_bin16_hand_p               rc=0  56 s
+[farm] aj5_tern64_hand_p              rc=0  268 s
+[farm] aj5_bin64_hand_p               rc=0  304 s
+[farm] ax7_tb8_d1                     rc=0  25 s
+[farm] ax7_o19_d1                     rc=0  26 s
+[farm] ax7_tb8_d2                     rc=0  23 s
+[farm] ax7_o19_d2                     rc=0  24 s
+[farm] ax7_ar8_d2                     rc=0  26 s
+[farm] ax7_tb8_d3                     rc=0  26 s
+[farm] ax7_o19_d3                     rc=0  24 s
+[farm] ax7_tb16_d2                    rc=0  35 s
+[farm] ax7_o52_d2                     rc=0  35 s
+[farm] ax7_tb16_d4                    rc=0  33 s
+[farm] ax7_o52_d4                     rc=0  32 s
+[farm] as4_base_e1_w18                rc=0  191 s
+[farm] as4_g4_e1_w10                  rc=0  170 s
+[farm] as4_u4_e1_w13                  rc=0  205 s
+| tag | chip | seeds ok / failed | lut | lut_user | lut_sites | lut_srl_or_ram | ff | carry4 | dsp | bram | slices_lower_bound | slices_touched | fmax_mhz |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| aj5_tern8_hand_p | xc7a100t | 5 / 0 | 821 | 389 | 417 [415-417] | 0 | 188 | 54 | 0 | 0 | 105 [104-105] | 136 [130-143] | 134.54 [130.57-142.53] |
+| aj5_bin8_hand_p | xc7a100t | 5 / 0 | 1069 | 493 | 540 [539-541] | 1 | 240 | 72 | 0 | 0 | 135 [135-136] | 181 [175-184] | 332.67 [293.43-336.47] |
+| aj5_tern8_beh_p | xc7a100t | 5 / 0 | 644 | 339 | 344 [342-345] | 0 | 188 | 66 | 0 | 0 | 86 [86-87] | 103 [100-107] | 265.18 [258.67-282.33] |
+| aj5_bin8_beh_p | xc7a100t | 5 / 0 | 577 | 241 | 289 | 1 | 240 | 72 | 0 | 0 | 73 | 88 [87-91] | 398.25 [379.22-408.16] |
+| aj5_tern16a_hand_p | xc7a100t | 5 / 0 | 2419 | 1171 | 1226 [1225-1228] | 1 | 564 | 156 | 0 | 0 | 307 | 407 [392-409] | 136.63 [132.31-143.97] |
+| aj5_bin16_hand_p | xc7a100t | 5 / 0 | 2913 | 1377 | 1472 [1468-1472] | 1 | 672 | 192 | 0 | 0 | 368 [367-368] | 472 [466-482] | 317.36 [266.31-327.55] |
+| aj5_tern64_hand_p | xc7a100t | 5 / 0 | 15025 | 7089 | 7608 [7606-7615] | 1 | 3408 | 992 | 0 | 0 | 1902 [1902-1904] | 2342 [2225-2366] | 106.41 [96.47-108.98] |
+| aj5_bin64_hand_p | xc7a100t | 5 / 0 | 19265 | 9025 | 9713 [9709-9717] | 1 | 4416 | 1280 | 0 | 0 | 2429 [2428-2430] | 3048 [2940-3146] | 237.08 [228.83-248.69] |
+| ax7_tb8_d1 | xc7a100t | 5 / 0 | 577 | 241 | 289 | 1 | 240 | 72 | 0 | 0 | 73 | 87 [85-88] | 406.17 [369.55-410.34] |
+| ax7_o19_d1 | xc7a100t | 5 / 0 | 570 | 303 | 341 [341-342] | 106 | 209 | 57 | 0 | 0 | 86 | 109 [107-114] | 408 [398.25-434.78] |
+| ax7_tb8_d2 | xc7a100t | 5 / 0 | 580 | 244 | 292 | 0 | 162 | 72 | 0 | 0 | 73 | 84 [82-85] | 256.87 [246.55-268.53] |
+| ax7_o19_d2 | xc7a100t | 5 / 0 | 464 | 197 | 236 | 1 | 296 | 57 | 0 | 0 | 59 | 109 [107-124] | 258.33 [250.82-267.59] |
+| ax7_ar8_d2 | xc7a100t | 5 / 0 | 529 | 217 | 265 | 1 | 298 | 66 | 0 | 0 | 67 | 119 [116-136] | 246.24 [238.89-264.34] |
+| ax7_tb8_d3 | xc7a100t | 5 / 0 | 586 | 250 | 298 [297-298] | 0 | 89 | 72 | 0 | 0 | 75 | 84 [81-85] | 193.24 [183.15-196.19] |
+| ax7_o19_d3 | xc7a100t | 5 / 0 | 461 | 195 | 233 [232-233] | 0 | 200 | 57 | 0 | 0 | 59 [58-59] | 95 [91-98] | 198.22 [189.54-198.93] |
+| ax7_tb16_d2 | xc7a100t | 5 / 0 | 1552 | 688 | 784 [783-784] | 0 | 354 | 192 | 0 | 0 | 196 | 220 [218-225] | 231.96 [224.32-235.46] |
+| ax7_o52_d2 | xc7a100t | 5 / 0 | 1271 | 567 | 646 [644-647] | 1 | 772 | 156 | 0 | 0 | 162 [161-162] | 289 [280-316] | 255.04 [241.78-260.15] |
+| ax7_tb16_d4 | xc7a100t | 5 / 0 | 1570 | 706 | 801 [798-802] | 0 | 193 | 192 | 0 | 0 | 201 [200-201] | 228 [217-229] | 141.96 [137.57-146.63] |
+| ax7_o52_d4 | xc7a100t | 5 / 0 | 1272 | 570 | 648 [646-648] | 0 | 384 | 156 | 0 | 0 | 162 | 226 [219-232] | 154.73 [148.28-156.57] |
+| as4_base_e1_w18 | xc7a200t | 0 / 5 | - | - | - | - | - | - | - | - | - | - | - |
+| as4_g4_e1_w10 | xc7a200t | 5 / 0 | 3456 | 1072 | 1777 [1775-1786] | 16 | 2016 | 416 | 112 | 0 | 445 [444-447] | 633 [628-652] | 297.27 [280.98-300.03] |
+| as4_u4_e1_w13 | xc7a200t | 5 / 0 | 3232 | 1160 | 1656 [1651-1663] | 0 | 2272 | 392 | 128 | 0 | 414 [413-416] | 631 [604-663] | 289.35 [272.85-296.82] |
+
+FARM DONE: 22 lines, 0 failed
+== END Thu Oct 22 12:46:16 UTC 2026

@@ -1,0 +1,67 @@
+# bench_k0 256bit-f32, 8 lanes, 16 vector registers, compiler 13.3.0
+## x86 regs 256bit-f32 radix-8 interleave 4  (9 repeats of >= 0.20 s each, programs take turns; ns per block)
+rep  0  tb8                                5.2449
+rep  0  tb8bal                             5.8270
+rep  0  g19                                5.4585
+rep  0  g20                                5.3065
+rep  0  g22d4                              5.3422
+rep  0  h20half                            5.5751
+rep  1  tb8bal                             5.8455
+rep  1  g19                                5.4578
+rep  1  g20                                5.2591
+rep  1  g22d4                              5.3420
+rep  1  h20half                            5.5663
+rep  1  tb8                                5.2488
+rep  2  g19                                5.4530
+rep  2  g20                                5.2613
+rep  2  g22d4                              5.3366
+rep  2  h20half                            5.5663
+rep  2  tb8                                5.2474
+rep  2  tb8bal                             5.8276
+rep  3  g20                                5.2609
+rep  3  g22d4                              5.3379
+rep  3  h20half                            5.5670
+rep  3  tb8                                5.2477
+rep  3  tb8bal                             5.8364
+rep  3  g19                                5.4544
+rep  4  g22d4                              5.3409
+rep  4  h20half                            5.5759
+rep  4  tb8                                5.2433
+rep  4  tb8bal                             5.8336
+rep  4  g19                                5.4507
+rep  4  g20                                5.2595
+rep  5  h20half                            5.5727
+rep  5  tb8                                5.2478
+rep  5  tb8bal                             5.8287
+rep  5  g19                                5.4494
+rep  5  g20                                5.2617
+rep  5  g22d4                              5.3374
+rep  6  tb8                                5.2455
+rep  6  tb8bal                             5.8249
+rep  6  g19                                5.4508
+rep  6  g20                                5.2628
+rep  6  g22d4                              5.3418
+rep  6  h20half                            5.5658
+rep  7  tb8bal                             5.8235
+rep  7  g19                                5.4579
+rep  7  g20                                5.2580
+rep  7  g22d4                              5.3422
+rep  7  h20half                            5.5667
+rep  7  tb8                                5.2454
+rep  8  g19                                5.4535
+rep  8  g20                                5.2569
+rep  8  g22d4                              5.3666
+rep  8  h20half                            5.5689
+rep  8  tb8                                5.2473
+rep  8  tb8bal                             5.8383
+RESULT x86 regs 256bit-f32 radix-8 interleave 4 tb8                          best     5.2433  median     5.2473  ns/block  (calls/rep 163525)
+RESULT x86 regs 256bit-f32 radix-8 interleave 4 tb8bal                       best     5.8235  median     5.8287  ns/block  (calls/rep 147484)
+RESULT x86 regs 256bit-f32 radix-8 interleave 4 g19                          best     5.4494  median     5.4535  ns/block  (calls/rep 157067)
+RESULT x86 regs 256bit-f32 radix-8 interleave 4 g20                          best     5.2569  median     5.2609  ns/block  (calls/rep 163644)
+RESULT x86 regs 256bit-f32 radix-8 interleave 4 g22d4                        best     5.3366  median     5.3418  ns/block  (calls/rep 160959)
+RESULT x86 regs 256bit-f32 radix-8 interleave 4 h20half                      best     5.5658  median     5.5670  ns/block  (calls/rep 153359)
+RATIO x86 regs 256bit-f32 radix-8 interleave 4 tb8bal/tb8 best 1.1107 median 1.1108 | vs best textbook best 1.1107 median 1.1108
+RATIO x86 regs 256bit-f32 radix-8 interleave 4 g19/tb8 best 1.0393 median 1.0393 | vs best textbook best 1.0393 median 1.0393
+RATIO x86 regs 256bit-f32 radix-8 interleave 4 g20/tb8 best 1.0026 median 1.0026 | vs best textbook best 1.0026 median 1.0026
+RATIO x86 regs 256bit-f32 radix-8 interleave 4 g22d4/tb8 best 1.0178 median 1.0180 | vs best textbook best 1.0178 median 1.0180
+RATIO x86 regs 256bit-f32 radix-8 interleave 4 h20half/tb8 best 1.0615 median 1.0609 | vs best textbook best 1.0615 median 1.0609

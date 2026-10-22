@@ -1,0 +1,258 @@
+# Unified diff: the code of the five runs before the twin (zen5-hybrid-retracted-1, -2, -3, zen2-hybrid, intel-hybrid) (lines starting with -)
+# against the code published in this folder (lines starting with +).
+# Both sides have had the same private paths and labels removed (see ../../CODE-AS-RUN.md).
+--- as-run/asmcount_hyb.py
++++ published/asmcount_hyb.py
+@@ -2,5 +2,9 @@
+ """asmcount_hyb.py FILE.asm... -- per hybrid step function (hfirst_<kernel>, hstep_<kernel>; x86-hybrid, from x86-wht/asmcount.py),
+ count vector instructions in objdump output:
+-adds/subs, FMAs, muls, loads/stores, and stack traffic (spills).  Evidence that each circuit line is one instruction."""
++adds/subs, FMAs, muls, loads/stores, and stack traffic (spills).  Evidence that each circuit line is one instruction.
++regmov (twin review, 22 Oct 2026): register-to-register copies vmovap[sd] / vmovup[sd] / vmovdq[au](32|64) %reg,%reg
++(masked forms included).  They are not arithmetic but each costs a front-end slot (and, where the copy is not eliminated
++at rename, a pipe slot): the FMA-first balanced textbook carried 12 per 8-point step in clang, the circuits 0.
++Operand separators may be ',' (GNU objdump, the Colab) or ', ' (llvm-objdump, the Mac)."""
+ import re, sys
+ FN = re.compile(r'^[0-9a-f]+ <_?((?:hfirst|hstep)_[\w.]+)>:')
+@@ -11,5 +15,6 @@
+         m = FN.match(line)
+         if m:
+-            cur = m.group(1); res[cur] = cnt = {'add': 0, 'fma': 0, 'mul': 0, 'ld': 0, 'st': 0, 'spill': 0, 'perm': 0}
++            cur = m.group(1)
++            res[cur] = cnt = {'add': 0, 'fma': 0, 'mul': 0, 'ld': 0, 'st': 0, 'spill': 0, 'perm': 0, 'regmov': 0}
+             continue
+         if cur is None:
+@@ -27,6 +32,7 @@
+         elif re.match(r'vmov(u|a)p[sd]|vmovdq', op):
+             if '(%rsp)' in ins or '(%rbp)' in ins: cnt['spill'] += 1
+-            elif re.search(r'\),%[xyz]mm', ins): cnt['ld'] += 1
++            elif re.search(r'\),\s*%[xyz]mm', ins): cnt['ld'] += 1
+             elif re.search(r'%[xyz]mm\d+,.*\(', ins): cnt['st'] += 1
++            elif re.match(r'%[xyz]mm\d+,\s*%[xyz]mm\d+', ops) and '(' not in ops: cnt['regmov'] += 1
+         elif re.match(r'vperm|vshuf|vblend|vbroadcast', op): cnt['perm'] += 1
+     print(f'== {path.split("/")[-1]}')
+@@ -34,3 +40,4 @@
+         c = res[fn]
+         if fn != "hstep_kid_nat":
+-            print(f'  {fn:22s} add/sub {c["add"]:4d} fma {c["fma"]:4d} mul {c["mul"]:3d} ld {c["ld"]:4d} st {c["st"]:4d} stack {c["spill"]:4d} bcast/perm {c["perm"]:3d}')
++            print(f'  {fn:22s} add/sub {c["add"]:4d} fma {c["fma"]:4d} mul {c["mul"]:3d} ld {c["ld"]:4d} st {c["st"]:4d} '
++                  f'stack {c["spill"]:4d} bcast/perm {c["perm"]:3d} regmov {c["regmov"]:3d}')
+--- as-run/bench_hyb.c
++++ published/bench_hyb.c
+@@ -26,5 +26,7 @@
+  * Programs (all in this one binary, same protocol as x86-wht: bench.h, programs take turns, >= 9 repeats, best + median):
+  *   rivals:   FFHT (linked, -DWITH_FFHT), x86wht-tb and x86wht-tbbal (bench_k0.c's whole(), textbook and pipe-balanced
+- *             textbook, unchanged), hyb8-tb8, hyb8-tb8bal, hyb16-tb16 (FFHT's structure with textbook kernels)
++ *             textbook, unchanged), hyb8-tb8, hyb8-tb8bal, hyb16-tb16 (FFHT's structure with textbook kernels),
++ *             hyb8-tb8balS (twin review, 22 Oct: tb8bal's very lines, operands and signs, each butterfly emitted SUB
++ *             before FMA; the FMA-first order costs clang 12 register copies per 8-point step, see kernels_k0.h)
+  *   circuits: hyb8-g19 (19 lines), hyb8-g20 (20 lines, family), hyb8-h20half (20 operations, output H/2 per 8-point step:
+  *             the whole output is H x / 2^p, p = number of 8-point steps), hyb16-g52 (52 lines, 3-level tails g20)
+@@ -127,4 +129,5 @@
+ DEFHYB(tb8_nat, 8)
+ DEFHYB(tb8_bal, 8)
++DEFHYB(tb8_balS, 8)
+ DEFHYB(g19_nat, 8)
+ DEFHYB(g20_nat, 8)
+@@ -149,5 +152,5 @@
+     HV8("hyb8-tb8", tb8_nat, 1.0),     HV8("hyb8-tb8bal", tb8_bal, 1.0), HV16("hyb16-tb16", tb16_nat, tb8_nat),
+     HV8("hyb8-g19", g19_nat, 1.0),     HV8("hyb8-g20", g20_nat, 1.0),    HV8("hyb8-h20half", h20_nat, 0.5),
+-    HV16("hyb16-g52", g52_nat, g20_nat),
++    HV16("hyb16-g52", g52_nat, g20_nat),        HV8("hyb8-tb8balS", tb8_balS, 1.0), /* appended: HV[0], HV[2] fixed */
+ };
+ static const hvar HBROKEN = HV8("BROKEN-hyb8-g20swap", broken_g20, 1.0);
+@@ -227,6 +230,6 @@
+ #endif
+     {"x86wht-tb", 0, 0, 1},     {"x86wht-tbbal", 0, 1, 1}, {"hyb8-tb8", 2, 0, 1},     {"hyb8-tb8bal", 2, 1, 1},
+-    {"hyb16-tb16", 2, 2, 1},    {"hyb8-g19", 2, 3, 0},     {"hyb8-g20", 2, 4, 0},     {"hyb8-h20half", 2, 5, 0},
+-    {"hyb16-g52", 2, 6, 0},
++    {"hyb16-tb16", 2, 2, 1},    {"hyb8-tb8balS", 2, 7, 1}, {"hyb8-g19", 2, 3, 0},     {"hyb8-g20", 2, 4, 0},
++    {"hyb8-h20half", 2, 5, 0},  {"hyb16-g52", 2, 6, 0},
+ };
+ #define NPR (int)(sizeof PR / sizeof PR[0])
+@@ -281,4 +284,5 @@
+     ok &= check_kernel(k->name, k->k, k->R, k->scale, 0);
+   }
++  ok &= check_kernel("tb8balS", tb8_balS, 8, 1, 0);
+   ok &= check_kernel("tb4", tb4_nat, 4, 1, 0);
+   ok &= check_kernel("tb2", tb2_nat, 2, 1, 0);
+--- as-run/gen_x86.py
++++ published/gen_x86.py
+@@ -16,4 +16,8 @@
+                ONE is a register the compiler cannot see through (an empty asm), so fma(x, 1, y) is not folded back
+                into an add.  u + 1*v is exact (the product 1*v is exact, one rounding), so results are identical.
++    NAME_balS: NAME_bal with the same lines, operands and signs, only the ORDER changed (x86-hybrid, 22 Oct 2026): a
++               converted FMA line that is followed by the plain line reading the same two inputs (the other half of its
++               butterfly) is emitted AFTER that line.  With the FMA first both inputs are still live when the destructive
++               3-operand vfmadd runs, so clang copies one (vmovapd) per butterfly; with the SUB first they are not.
+ Kernel signature:  static inline void NAME(V *v, V one)   v[0..n-1] in, v[j] = y_j out.
+ Usage:  gen_x86.py NAME FILE [NAME FILE] ...  > kernels_k0.h      (FILE may be textbookN)
+@@ -58,5 +62,5 @@
+ 
+ 
+-def emit(name, spec, balanced):
++def emit(name, spec, balanced, sub_first=False):
+     n, gates, outs = load(spec)
+     L = lines_of(n, gates)
+@@ -92,6 +96,11 @@
+         kinds[k] = kinds.get(k, 0) + 1
+         body.append(f'  V {w} = {e};')
++    if sub_first:  # the plain half of each converted butterfly first (it reads the same inputs, not the FMA's output)
++        for i in sorted(conv):
++            j = i + 1
++            if j < len(L) and j not in conv and L[j][1] in ('ADD', 'SUB') and {L[j][2], L[j][3]} == {L[i][2], L[i][3]}:
++                body[i], body[j] = body[j], body[i]
+     head = [f'/* {name}: {n} points, {len(L)} lines {dict(sorted(kinds.items()))}'
+-            f'{" PIPE-BALANCED" if balanced else ""}; from {spec.split("/")[-1]} */',
++            f'{" PIPE-BALANCED" if balanced else ""}{", SUB BEFORE FMA" if sub_first else ""}; from {spec.split("/")[-1]} */',
+             f'static inline void {name}(V *v, V one) {{', '  (void)one;',
+             '  ' + ' '.join(f'V x{i} = v[{i}];' for i in range(n))]
+@@ -104,5 +113,5 @@
+     print('/* generated by gen_x86.py (22 Oct 2026); do not edit */')
+     for name, spec in zip(a[0::2], a[1::2]):
+-        txt, n, nl = emit(name, spec, name.endswith('_bal'))
++        txt, n, nl = emit(name, spec, name.endswith(('_bal', '_balS')), name.endswith('_balS'))
+         print(txt)
+         sys.stderr.write(f'{name}: n={n} lines={nl}\n')
+--- as-run/kernels_k0.h
++++ published/kernels_k0.h
+@@ -476,4 +476,42 @@
+ }
+ 
++/* tb8_balS: 8 points, 24 lines {'FMA1': 12, 'SUB': 12} PIPE-BALANCED, SUB BEFORE FMA; from h8_textbook_24.txt */
++static inline void tb8_balS(V *v, V one) {
++  (void)one;
++  V x0 = v[0]; V x1 = v[1]; V x2 = v[2]; V x3 = v[3]; V x4 = v[4]; V x5 = v[5]; V x6 = v[6]; V x7 = v[7];
++  V t2 = V_SUB(x0, x1);
++  V t1 = FMADD(x1, one, x0);
++  V t4 = V_SUB(x2, x3);
++  V t3 = FMADD(x3, one, x2);
++  V t6 = V_SUB(x4, x5);
++  V t5 = FMADD(x5, one, x4);
++  V t8 = V_SUB(x6, x7);
++  V t7 = FMADD(x7, one, x6);
++  V t10 = V_SUB(t1, t3);
++  V t9 = FMADD(t3, one, t1);
++  V t12 = V_SUB(t2, t4);
++  V t11 = FMADD(t4, one, t2);
++  V t14 = V_SUB(t5, t7);
++  V t13 = FMADD(t7, one, t5);
++  V t16 = V_SUB(t6, t8);
++  V t15 = FMADD(t8, one, t6);
++  V t18 = V_SUB(t9, t13);
++  V t17 = FMADD(t13, one, t9);
++  V t20 = V_SUB(t11, t15);
++  V t19 = FMADD(t15, one, t11);
++  V t22 = V_SUB(t10, t14);
++  V t21 = FMADD(t14, one, t10);
++  V t24 = V_SUB(t12, t16);
++  V t23 = FMADD(t16, one, t12);
++  v[0] = t17;
++  v[1] = t19;
++  v[2] = t21;
++  v[3] = t23;
++  v[4] = t18;
++  v[5] = t20;
++  v[6] = t22;
++  v[7] = t24;
++}
++
+ /* g19_nat: 8 points, 19 lines {'ADD': 3, 'FMA': 7, 'FMS': 3, 'RFMS': 2, 'SUB': 4}; from h8_G19.txt */
+ static inline void g19_nat(V *v, V one) {
+--- as-run/run.sh
++++ published/run.sh
+@@ -8,16 +8,24 @@
+ #   is FFHT's (same blocks, recursion, loop order, in-lane sequences: check_plan.py proves the step sequence equals the
+ #   pinned fht_avx.c) and only the kernel on the 8 (or 16) vectors held in registers changes. See bench_hyb.c.
++# Twin review (22 Oct 2026, a reviewing agent's report): new rival hyb8-tb8balS (the balanced textbook
++#   with each butterfly emitted SUB before FMA: clang's FMA-first tb8bal carries 12 register copies per 8-point step,
++#   tb8balS 0); clang_avx2_f64 is built and timed; the hfirst_/hstep_ disassembly of every binary is kept in out/asm/,
++#   and asm_counts.txt counts register-to-register vector moves (regmov).
+ #
+ # Run on an x86-64 Linux machine:   bash run.sh   (see README.md in this folder for what it needs)
+ #   results:             out/ (out/SUMMARY.md last); the runs of 22 Oct 2026 are in ../runs/
+-# Env: MODE=quick|full (full: every binary, same array 2^10..2^20 and separate 2^12..2^20 even: about 22 min without
+-#      AVX-512, about 41 min with it [derived: 48 or 96 program-sizes (3 or 6 binaries x 16 sizes) x 10 x 2.3 s + 4 min]);
++# Env: MODE=quick|full (full: every binary, same array 2^10..2^20 and separate 2^12..2^20 even: about 28 min without
++#      AVX-512, about 48 min with it [derived: 64 or 112 program-sizes (4 or 7 binaries x 16 sizes) x 11 programs x
++#      2.3 s + about 1 min; 2.3 s = the Zen 5 full run 82494: 2206 s of timing for 96 x 10 program-sizes]);
+ #      CORE=<cpu to pin> (default: the last CPU); FORCE=1 times even if busy; TBUDGET=<s> (default 1620: a run that would
+ #      end after this many seconds from the start is skipped and listed in SUMMARY.md; MODE=full: default 4000).
+-# Runtime (quick): about 15 min without AVX-512, about 24-27 min with it, on 8 vCPU
+-#   [derived: 2.3 s per program and size in x86-wht tonight (127 s for 8 sizes x 7 programs); 10 programs here;
+-#   29 sizes x 10 x 2.3 s = 667 s without AVX-512, 51 x 10 x 2.3 s = 1173 s with it; plus about 4 min of install,
+-#   builds and gates (x86-wht: 2 min 46 s)]. The budget guard skips the last, least important runs if it runs slow.
+-# RAM: < 1 GB (same array), about 0.7 GB in the separate-array runs (10 programs x 64 MiB). No GPU.
++# Runtime (quick): about 15-17 min without AVX-512, about 24 min with it (27 if apt must install compilers), on 8 vCPU
++#   [derived: 2.3 s per program and size measured in the Zen 5 quick runs 74788 / 79401 (1197-1199 s in all for 51
++#   sizes x 10 programs; timing began at 23-24 s); now 11 programs and 4 more sizes (clang_avx2_f64):
++#   33 sizes x 11 x 2.3 s = 835 s without AVX-512 (Intel run 75640: 2.6 s per program and size, 944 s), 55 x 11 x
++#   2.3 s = 1392 s with it; plus about 0.5 min of builds and gates (up to 4 min with apt installs)]. The budget guard
++#   (estimate 2.6 s per program and size) skips the last, least important runs if it runs slow: on a host at 2.6 s with
++#   AVX-512 that is the final whole_sep_gcc_avx512_f32 [derived: 50 + 52 x 11 x 2.6 + 91 = 1628 s > 1620 s].
++# RAM: < 1 GB (same array), about 0.75 GB in the separate-array runs (11 programs x 64 MiB). No GPU.
+ # Binaries, objects and the FFHT clone live in $AZ_BUILD = /content/build/x86-hybrid, not in this folder.
+ set -u
+@@ -63,5 +71,5 @@
+ # name : XT : flags : compilers.  XT 0 = 256-bit f32, 1 = 512-bit f32, 2 = 256-bit f64, 3 = 512-bit f64.
+ # avx2r32 = 256-bit vectors with 32 registers (the AVX-512 register file): where hyb16 (16 vectors) stops spilling.
+-CFGS=("avx2_f32:0:-mavx2 -mfma:gcc clang" "avx2_f64:2:-mavx2 -mfma:gcc")
++CFGS=("avx2_f32:0:-mavx2 -mfma:gcc clang" "avx2_f64:2:-mavx2 -mfma:gcc clang")
+ [ $HAVE512 = 1 ] && CFGS+=("avx512_f32:1:-mavx2 -mfma -mavx512f -mavx512vl:gcc" "avx512_f64:3:-mavx2 -mfma -mavx512f -mavx512vl:gcc" \
+                            "avx2r32_f32:0:-mavx2 -mfma -mavx512f -mavx512vl:gcc")
+@@ -78,5 +86,9 @@
+ done
+ [ -n "$BINS" ] || az_stop "no binary built"
+-python3 -I asmcount_hyb.py $BIN/*.asm > $O/asm_counts.txt 2>&1; grep -E "^==|hstep_(g52|tb16|g20|tb8)_|hfirst_(g52|tb16)_" $O/asm_counts.txt | head -60
++python3 -I asmcount_hyb.py $BIN/*.asm > $O/asm_counts.txt 2>&1
++grep -E "^==|hstep_(g52|tb16|g20|tb8)_|hfirst_(g52|tb16|g20|tb8)_" $O/asm_counts.txt | head -100
++# keep the timed step functions' disassembly (hfirst_*, hstep_*: every kernel's code as timed); drop the rest
++mkdir -p $O/asm
++for a in $BIN/*.asm; do awk '/^[0-9a-f]+ <_?h(first|step)_[^>]*>:$/{p=1} p{print} /^$/{p=0}' "$a" > "$O/asm/$(basename "$a")"; done
+ rm -f "${BIN:?}"/*.asm
+ 
+@@ -101,5 +113,5 @@
+ echo "== pinning every timing to CPU $CORE; its SMT sibling(s): $SIBS"
+ T() { taskset -c $CORE "$@"; }
+-NPROG=10; SEC_PER=${SEC_PER:-2.6}   # seconds per program and size (estimate for the time budget)
++NPROG=11; SEC_PER=${SEC_PER:-2.6}   # seconds per program and size (estimate for the time budget)
+ run() { # name binary mode sizes...  -> out/<name>.txt; skipped if it would end after TBUDGET
+   local nm=$1 b=$2 mode=$3; shift 3
+@@ -125,4 +137,5 @@
+   run whole_sep_gcc_avx2_f32 gcc_avx2_f32 separate 12 16 20
+   run whole_same_gcc_avx2_f64 gcc_avx2_f64 same 10 12 14 16
++  run whole_same_clang_avx2_f64 clang_avx2_f64 same 10 12 14 16
+   run whole_same_gcc_avx512_f64 gcc_avx512_f64 same 10 12 14 16
+   run whole_same_gcc_avx2r32_f32 gcc_avx2r32_f32 same 10 12 14 16
+--- as-run/summarize_hyb.py
++++ published/summarize_hyb.py
+@@ -4,5 +4,7 @@
+ Reads every RESULT line in OUTDIR/whole_<mode>_<binary>.txt.  For each binary, mode and n:
+   ratio = program median / median of the BEST RIVAL (the fastest by median of FFHT, x86wht-tb, x86wht-tbbal, hyb8-tb8,
+-          hyb8-tb8bal, hyb16-tb16), all in the same process; below 1 = faster.  The same with best-of-repeats in brackets.
++          hyb8-tb8bal, hyb16-tb16, hyb8-tb8balS), all in the same process; below 1 = faster.  The same with
++          best-of-repeats in brackets.  hyb8-tb8balS (twin review, 22 Oct 2026) = hyb8-tb8bal with each butterfly
++          emitted SUB before FMA (no register copies in clang).
+ Track 2 decision rule (PLAN.md, Track 2): a circuit continues at 0.90 or below on whole transforms 2^10-2^16, same array,
+ against the best rival; between 0.90 and 0.95 one more deciding host decides; 0.95 or above counts towards closing.
+@@ -16,5 +18,5 @@
+ 
+ RX = re.compile(r'^RESULT x86-hybrid whole (\S+) 2\^(\d+) (same|separate)\s+(\S+)\s+best\s+([\d.]+)\s+median\s+([\d.]+)')
+-RIVALS = ['FFHT', 'x86wht-tb', 'x86wht-tbbal', 'hyb8-tb8', 'hyb8-tb8bal', 'hyb16-tb16']
++RIVALS = ['FFHT', 'x86wht-tb', 'x86wht-tbbal', 'hyb8-tb8', 'hyb8-tb8bal', 'hyb16-tb16', 'hyb8-tb8balS']
+ CIRCUITS = ['hyb8-g19', 'hyb8-g20', 'hyb8-h20half', 'hyb16-g52']
+ TWIN = {'hyb8-g19': 'hyb8-tb8', 'hyb8-g20': 'hyb8-tb8', 'hyb8-h20half': 'hyb8-tb8', 'hyb16-g52': 'hyb16-tb16'}
+@@ -130,6 +132,12 @@
+         if xs:
+             print(f'- {c} / {t}: ' + ', '.join(xs))
++    for c in ('hyb8-g19', 'hyb8-g20'):  # against the balanced twins (FMA first as generated; SUB first, copy-free)
++        for t in ('hyb8-tb8bal', 'hyb8-tb8balS'):
++            xs = [f'2^{L} {rows[L][c][1] / rows[L][t][1]:.3f}' for L in sorted(rows) if c in rows[L] and t in rows[L]]
++            if xs:
++                print(f'- {c} / {t}: ' + ', '.join(xs))
+     print('\nStructure effect (textbook kernels throughout):')
+-    for a, z in (('hyb8-tb8', 'FFHT'), ('x86wht-tb', 'FFHT'), ('hyb16-tb16', 'hyb8-tb8'), ('hyb8-tb8bal', 'hyb8-tb8')):
++    for a, z in (('hyb8-tb8', 'FFHT'), ('x86wht-tb', 'FFHT'), ('hyb16-tb16', 'hyb8-tb8'), ('hyb8-tb8bal', 'hyb8-tb8'),
++                 ('hyb8-tb8balS', 'hyb8-tb8bal')):
+         xs = [f'2^{L} {rows[L][a][1] / rows[L][z][1]:.3f}' for L in sorted(rows) if a in rows[L] and z in rows[L]]
+         if xs:

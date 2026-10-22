@@ -1,0 +1,213 @@
+# bench_h512 512bit-f64, 8 lanes, 32 vector registers, compiler Ubuntu Clang 18.1.3 (1ubuntu1), FFHT linked, in-lane form F(shuffle+FMA)
+# tune 512bit-f64: 5 rounds of >= 15.0 ms per configuration, configurations take turns; same array; ns per point; textbook variants only
+TUNEFORM 2^10 form 0 h8-tb       thr 10 median 0.3985
+TUNEFORM 2^10 form 0 h8-tbbal    thr 10 median 0.3926
+TUNEFORM 2^10 form 0 h8-tbbalS   thr 10 median 0.4051
+TUNEFORM 2^10 form 0 h8-tbmix    thr 10 median 0.4017
+TUNEFORM 2^10 form 0 h16-tbmix   thr 10 median 0.3548
+TUNEFORM 2^10 form 1 h8-tb       thr 10 median 0.4844
+TUNEFORM 2^10 form 1 h8-tbbal    thr 10 median 0.4532
+TUNEFORM 2^10 form 1 h8-tbbalS   thr 10 median 0.4603
+TUNEFORM 2^10 form 1 h8-tbmix    thr 10 median 0.4828
+TUNEFORM 2^10 form 1 h16-tbmix   thr 10 median 0.4543
+TUNEFORM 2^10 form 2 h8-tb       thr 10 median 0.5437
+TUNEFORM 2^10 form 2 h8-tbbal    thr 10 median 0.5155
+TUNEFORM 2^10 form 2 h8-tbbalS   thr 10 median 0.5221
+TUNEFORM 2^10 form 2 h8-tbmix    thr 10 median 0.5449
+TUNEFORM 2^10 form 2 h16-tbmix   thr 10 median 0.5095
+TUNEFORM 2^14 form 0 h8-tb       thr 12 median 0.5094
+TUNEFORM 2^14 form 0 h8-tbbal    thr 12 median 0.5044
+TUNEFORM 2^14 form 0 h8-tbbalS   thr 12 median 0.5255
+TUNEFORM 2^14 form 0 h8-tbmix    thr 12 median 0.5241
+TUNEFORM 2^14 form 0 h16-tbmix   thr 12 median 0.5320
+TUNEFORM 2^14 form 1 h8-tb       thr 12 median 0.5983
+TUNEFORM 2^14 form 1 h8-tbbal    thr 12 median 0.5668
+TUNEFORM 2^14 form 1 h8-tbbalS   thr 12 median 0.5835
+TUNEFORM 2^14 form 1 h8-tbmix    thr 12 median 0.6074
+TUNEFORM 2^14 form 1 h16-tbmix   thr 12 median 0.6315
+TUNEFORM 2^14 form 2 h8-tb       thr 12 median 0.6596
+TUNEFORM 2^14 form 2 h8-tbbal    thr 12 median 0.6285
+TUNEFORM 2^14 form 2 h8-tbbalS   thr 12 median 0.6462
+TUNEFORM 2^14 form 2 h8-tbmix    thr 12 median 0.6694
+TUNEFORM 2^14 form 2 h16-tbmix   thr 12 median 0.6872
+TUNEFORM score (sum over 2^10, 2^14 of the best textbook's median): F 0.8592, A 1.0200, X 1.1380 -> F(shuffle+FMA)
+FORM 0
+TUNETHR 0 2^8 thr 8 h8-tbmix    median 0.3047
+TUNETHR 0 2^8 thr 8 h8-tbbalS   median 0.3121
+THR 0 8 8
+TUNETHR 1 2^8 thr 8 h16-tbmix   median 0.3393
+THR 1 8 8
+TUNETHR 0 2^9 thr 9 h8-tbmix    median 0.3224
+TUNETHR 0 2^9 thr 9 h8-tbbalS   median 0.3278
+THR 0 9 9
+TUNETHR 1 2^9 thr 9 h16-tbmix   median 0.3231
+THR 1 9 9
+TUNETHR 0 2^10 thr 9 h8-tbmix    median 0.4077
+TUNETHR 0 2^10 thr 9 h8-tbbalS   median 0.4070
+TUNETHR 0 2^10 thr 10 h8-tbmix    median 0.3965
+TUNETHR 0 2^10 thr 10 h8-tbbalS   median 0.4050
+THR 0 10 10
+TUNETHR 1 2^10 thr 9 h16-tbmix   median 0.4045
+TUNETHR 1 2^10 thr 10 h16-tbmix   median 0.3568
+THR 1 10 10
+TUNETHR 0 2^11 thr 9 h8-tbmix    median 0.4004
+TUNETHR 0 2^11 thr 9 h8-tbbalS   median 0.4040
+TUNETHR 0 2^11 thr 10 h8-tbmix    median 0.4763
+TUNETHR 0 2^11 thr 10 h8-tbbalS   median 0.4806
+TUNETHR 0 2^11 thr 11 h8-tbmix    median 0.3941
+TUNETHR 0 2^11 thr 11 h8-tbbalS   median 0.4034
+THR 0 11 11
+TUNETHR 1 2^11 thr 9 h16-tbmix   median 0.3956
+TUNETHR 1 2^11 thr 10 h16-tbmix   median 0.4316
+TUNETHR 1 2^11 thr 11 h16-tbmix   median 0.3734
+THR 1 11 11
+TUNETHR 0 2^12 thr 9 h8-tbmix    median 0.4450
+TUNETHR 0 2^12 thr 9 h8-tbbalS   median 0.4506
+TUNETHR 0 2^12 thr 10 h8-tbmix    median 0.4814
+TUNETHR 0 2^12 thr 10 h8-tbbalS   median 0.4823
+TUNETHR 0 2^12 thr 11 h8-tbmix    median 0.4697
+TUNETHR 0 2^12 thr 11 h8-tbbalS   median 0.4784
+TUNETHR 0 2^12 thr 12 h8-tbmix    median 0.4432
+TUNETHR 0 2^12 thr 12 h8-tbbalS   median 0.4456
+THR 0 12 12
+TUNETHR 1 2^12 thr 9 h16-tbmix   median 0.4493
+TUNETHR 1 2^12 thr 10 h16-tbmix   median 0.4298
+TUNETHR 1 2^12 thr 11 h16-tbmix   median 0.4496
+TUNETHR 1 2^12 thr 12 h16-tbmix   median 0.4415
+THR 1 12 10
+TUNETHR 0 2^13 thr 9 h8-tbmix    median 0.5284
+TUNETHR 0 2^13 thr 9 h8-tbbalS   median 0.5337
+TUNETHR 0 2^13 thr 10 h8-tbmix    median 0.5327
+TUNETHR 0 2^13 thr 10 h8-tbbalS   median 0.5406
+TUNETHR 0 2^13 thr 11 h8-tbmix    median 0.4835
+TUNETHR 0 2^13 thr 11 h8-tbbalS   median 0.4851
+TUNETHR 0 2^13 thr 12 h8-tbmix    median 0.5259
+TUNETHR 0 2^13 thr 12 h8-tbbalS   median 0.5364
+TUNETHR 0 2^13 thr 13 h8-tbmix    median 0.5277
+TUNETHR 0 2^13 thr 13 h8-tbbalS   median 0.5280
+THR 0 13 11
+TUNETHR 1 2^13 thr 9 h16-tbmix   median 0.5347
+TUNETHR 1 2^13 thr 10 h16-tbmix   median 0.4933
+TUNETHR 1 2^13 thr 11 h16-tbmix   median 0.4504
+TUNETHR 1 2^13 thr 12 h16-tbmix   median 0.5342
+TUNETHR 1 2^13 thr 13 h16-tbmix   median 0.4492
+THR 1 13 13
+TUNETHR 0 2^14 thr 9 h8-tbmix    median 0.5316
+TUNETHR 0 2^14 thr 9 h8-tbbalS   median 0.5316
+TUNETHR 0 2^14 thr 10 h8-tbmix    median 0.6151
+TUNETHR 0 2^14 thr 10 h8-tbbalS   median 0.6161
+TUNETHR 0 2^14 thr 11 h8-tbmix    median 0.5140
+TUNETHR 0 2^14 thr 11 h8-tbbalS   median 0.5234
+TUNETHR 0 2^14 thr 12 h8-tbmix    median 0.5264
+TUNETHR 0 2^14 thr 12 h8-tbbalS   median 0.5288
+TUNETHR 0 2^14 thr 13 h8-tbmix    median 0.6016
+TUNETHR 0 2^14 thr 13 h8-tbbalS   median 0.6086
+THR 0 14 11
+TUNETHR 1 2^14 thr 9 h16-tbmix   median 0.5321
+TUNETHR 1 2^14 thr 10 h16-tbmix   median 0.5617
+TUNETHR 1 2^14 thr 11 h16-tbmix   median 0.4965
+TUNETHR 1 2^14 thr 12 h16-tbmix   median 0.5257
+TUNETHR 1 2^14 thr 13 h16-tbmix   median 0.5388
+THR 1 14 11
+TUNETHR 0 2^15 thr 9 h8-tbmix    median 0.5655
+TUNETHR 0 2^15 thr 9 h8-tbbalS   median 0.5705
+TUNETHR 0 2^15 thr 10 h8-tbmix    median 0.6132
+TUNETHR 0 2^15 thr 10 h8-tbbalS   median 0.6136
+TUNETHR 0 2^15 thr 11 h8-tbmix    median 0.5924
+TUNETHR 0 2^15 thr 11 h8-tbbalS   median 0.6022
+TUNETHR 0 2^15 thr 12 h8-tbmix    median 0.5613
+TUNETHR 0 2^15 thr 12 h8-tbbalS   median 0.5620
+TUNETHR 0 2^15 thr 13 h8-tbmix    median 0.5995
+TUNETHR 0 2^15 thr 13 h8-tbbalS   median 0.6077
+THR 0 15 12
+TUNETHR 1 2^15 thr 9 h16-tbmix   median 0.5713
+TUNETHR 1 2^15 thr 10 h16-tbmix   median 0.5619
+TUNETHR 1 2^15 thr 11 h16-tbmix   median 0.5732
+TUNETHR 1 2^15 thr 12 h16-tbmix   median 0.5612
+TUNETHR 1 2^15 thr 13 h16-tbmix   median 0.5359
+THR 1 15 13
+TUNETHR 0 2^16 thr 9 h8-tbmix    median 0.6444
+TUNETHR 0 2^16 thr 9 h8-tbbalS   median 0.6507
+TUNETHR 0 2^16 thr 10 h8-tbmix    median 0.6532
+TUNETHR 0 2^16 thr 10 h8-tbbalS   median 0.6532
+TUNETHR 0 2^16 thr 11 h8-tbmix    median 0.5968
+TUNETHR 0 2^16 thr 11 h8-tbbalS   median 0.6043
+TUNETHR 0 2^16 thr 12 h8-tbmix    median 0.6414
+TUNETHR 0 2^16 thr 12 h8-tbbalS   median 0.6428
+TUNETHR 0 2^16 thr 13 h8-tbmix    median 0.6394
+TUNETHR 0 2^16 thr 13 h8-tbbalS   median 0.6483
+THR 0 16 11
+TUNETHR 1 2^16 thr 9 h16-tbmix   median 0.6537
+TUNETHR 1 2^16 thr 10 h16-tbmix   median 0.6018
+TUNETHR 1 2^16 thr 11 h16-tbmix   median 0.5744
+TUNETHR 1 2^16 thr 12 h16-tbmix   median 0.6422
+TUNETHR 1 2^16 thr 13 h16-tbmix   median 0.5759
+THR 1 16 11
+TUNETHR 0 2^17 thr 9 h8-tbmix    median 0.6627
+TUNETHR 0 2^17 thr 9 h8-tbbalS   median 0.6679
+TUNETHR 0 2^17 thr 10 h8-tbmix    median 0.7543
+TUNETHR 0 2^17 thr 10 h8-tbbalS   median 0.7582
+TUNETHR 0 2^17 thr 11 h8-tbmix    median 0.6491
+TUNETHR 0 2^17 thr 11 h8-tbbalS   median 0.6507
+TUNETHR 0 2^17 thr 12 h8-tbmix    median 0.6608
+TUNETHR 0 2^17 thr 12 h8-tbbalS   median 0.6610
+TUNETHR 0 2^17 thr 13 h8-tbmix    median 0.7405
+TUNETHR 0 2^17 thr 13 h8-tbbalS   median 0.7431
+THR 0 17 11
+TUNETHR 1 2^17 thr 9 h16-tbmix   median 0.6739
+TUNETHR 1 2^17 thr 10 h16-tbmix   median 0.7144
+TUNETHR 1 2^17 thr 11 h16-tbmix   median 0.6135
+TUNETHR 1 2^17 thr 12 h16-tbmix   median 0.6618
+TUNETHR 1 2^17 thr 13 h16-tbmix   median 0.6607
+THR 1 17 11
+TUNETHR 0 2^18 thr 9 h8-tbmix    median 0.6978
+TUNETHR 0 2^18 thr 9 h8-tbbalS   median 0.7052
+TUNETHR 0 2^18 thr 10 h8-tbmix    median 0.7573
+TUNETHR 0 2^18 thr 10 h8-tbbalS   median 0.7615
+TUNETHR 0 2^18 thr 11 h8-tbmix    median 0.7393
+TUNETHR 0 2^18 thr 11 h8-tbbalS   median 0.7477
+TUNETHR 0 2^18 thr 12 h8-tbmix    median 0.6936
+TUNETHR 0 2^18 thr 12 h8-tbbalS   median 0.6979
+TUNETHR 0 2^18 thr 13 h8-tbmix    median 0.7477
+TUNETHR 0 2^18 thr 13 h8-tbbalS   median 0.7504
+THR 0 18 12
+TUNETHR 1 2^18 thr 9 h16-tbmix   median 0.7081
+TUNETHR 1 2^18 thr 10 h16-tbmix   median 0.7091
+TUNETHR 1 2^18 thr 11 h16-tbmix   median 0.7197
+TUNETHR 1 2^18 thr 12 h16-tbmix   median 0.7019
+TUNETHR 1 2^18 thr 13 h16-tbmix   median 0.6737
+THR 1 18 13
+TUNETHR 0 2^19 thr 9 h8-tbmix    median 0.8007
+TUNETHR 0 2^19 thr 9 h8-tbbalS   median 0.8023
+TUNETHR 0 2^19 thr 10 h8-tbmix    median 0.7808
+TUNETHR 0 2^19 thr 10 h8-tbbalS   median 0.7888
+TUNETHR 0 2^19 thr 11 h8-tbmix    median 0.7510
+TUNETHR 0 2^19 thr 11 h8-tbbalS   median 0.7525
+TUNETHR 0 2^19 thr 12 h8-tbmix    median 0.7849
+TUNETHR 0 2^19 thr 12 h8-tbbalS   median 0.7942
+TUNETHR 0 2^19 thr 13 h8-tbmix    median 0.7788
+TUNETHR 0 2^19 thr 13 h8-tbbalS   median 0.7822
+THR 0 19 11
+TUNETHR 1 2^19 thr 9 h16-tbmix   median 0.7995
+TUNETHR 1 2^19 thr 10 h16-tbmix   median 0.7428
+TUNETHR 1 2^19 thr 11 h16-tbmix   median 0.7149
+TUNETHR 1 2^19 thr 12 h16-tbmix   median 0.7963
+TUNETHR 1 2^19 thr 13 h16-tbmix   median 0.7020
+THR 1 19 13
+TUNETHR 0 2^20 thr 9 h8-tbmix    median 0.7992
+TUNETHR 0 2^20 thr 9 h8-tbbalS   median 0.8062
+TUNETHR 0 2^20 thr 10 h8-tbmix    median 0.8716
+TUNETHR 0 2^20 thr 10 h8-tbbalS   median 0.8824
+TUNETHR 0 2^20 thr 11 h8-tbmix    median 0.7762
+TUNETHR 0 2^20 thr 11 h8-tbbalS   median 0.7761
+TUNETHR 0 2^20 thr 12 h8-tbmix    median 0.7878
+TUNETHR 0 2^20 thr 12 h8-tbbalS   median 0.7974
+TUNETHR 0 2^20 thr 13 h8-tbmix    median 0.8712
+TUNETHR 0 2^20 thr 13 h8-tbbalS   median 0.8722
+THR 0 20 11
+TUNETHR 1 2^20 thr 9 h16-tbmix   median 0.8065
+TUNETHR 1 2^20 thr 10 h16-tbmix   median 0.8346
+TUNETHR 1 2^20 thr 11 h16-tbmix   median 0.7432
+TUNETHR 1 2^20 thr 12 h16-tbmix   median 0.7989
+TUNETHR 1 2^20 thr 13 h16-tbmix   median 0.7919
+THR 1 20 11

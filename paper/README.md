@@ -1,5 +1,7 @@
 # The paper
 
+**Revision 2, 22 October 2026.** The paper is the version of 11 October 2026 and is not changed in revision 2. Three things in it are superseded; the [README](../README.md) has the current text. (1) "The smallest constant that I found in print" should be read as the smallest constant of a count of the form c N log2 N plus a multiple of N: counts of a smaller order are in print, as the paper itself says in its abstract. (2) The figure 8.7625e-4 for my repository wht-power-saving-lean was its saving on 11 October; its README now gives 1.5699306e-3 for this transform. (3) The remarks on running time cover the one machine timed on 11 October; the measurements of 22 October are in [measurements/2026-10-22/](../measurements/2026-10-22/README.md).
+
 - **What it is.** `explicit-wht-circuits.pdf` is the result of this repository written up as a paper: the circuits, the proofs of the counts, the tables, what was checked and how, what was measured about running time and about hardware, and what was read in the literature. `explicit-wht-circuits.tex` is its source.
 - **Its status.** It is not peer reviewed and not submitted anywhere. AI agents (Anthropic's Claude) wrote it at my direction, and no person has yet checked its proofs line by line.
 - **To build the PDF again.** In this folder, run `pdflatex explicit-wht-circuits.tex` twice. The source is one file and uses standard packages only; it was built with TeX Live 2026.

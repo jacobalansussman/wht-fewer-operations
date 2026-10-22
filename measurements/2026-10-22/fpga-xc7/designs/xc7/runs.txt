@@ -1,0 +1,21 @@
+# Job "xc7": Xilinx 7-series PLACE AND ROUTE with openXC7 of designs that were synthesis-only so far.
+# Every line is one design; compare only lines of the same chip, on the same machine (see the self-test).
+# READ THIS FIRST: openXC7's LUT/FF delays are stubs, DSP paths are untimed, and its packer adds
+# a pass-through LUT on every CARRY4 input driven by a hand-built LUT6_2 (aj-5's hand designs: about 2x Vivado's LUT sites).
+# Trust CARRY4 / FF / DSP counts and ratios between designs; not absolute slices or clocks.
+#
+#
+# ax-7 (wave 16): the 19-adder 8-point and 52-adder 16-point circuits vs the textbook, registered every d adder levels
+# (d1 makes Yosys use SRL16 shift-register LUTs for the long waits).  ax-7's synthesis-only slice bounds: -21 % at d >= 2.
+ax7_tb8_d1: ax7/tb8_wp_d1.v --chip xc7a100t --freq 400
+ax7_o19_d1: ax7/o19_wp_d1.v --chip xc7a100t --freq 400
+ax7_tb8_d2: ax7/tb8_wp_d2.v --chip xc7a100t --freq 400
+ax7_o19_d2: ax7/o19_wp_d2.v --chip xc7a100t --freq 400
+ax7_ar8_d2: ax7/ar8_wp_d2.v --chip xc7a100t --freq 400
+ax7_tb8_d3: ax7/tb8_wp_d3.v --chip xc7a100t --freq 400
+ax7_o19_d3: ax7/o19_wp_d3.v --chip xc7a100t --freq 400
+ax7_tb16_d2: ax7/tb16_wp_d2.v --chip xc7a100t --freq 400
+ax7_o52_d2: ax7/o52_wp_d2.v --chip xc7a100t --freq 400
+ax7_tb16_d4: ax7/tb16_wp_d4.v --chip xc7a100t --freq 400
+ax7_o52_d4: ax7/o52_wp_d4.v --chip xc7a100t --freq 400
+#

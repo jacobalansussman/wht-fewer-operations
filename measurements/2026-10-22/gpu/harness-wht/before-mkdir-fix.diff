@@ -1,0 +1,28 @@
+# Unified diff: the code of the first GPU launch (rtx6000-wht-failed-build), part 2 of 2 (lines starting with -)
+# against the code published in this folder (lines starting with +).
+# Both sides have had the same private paths and labels removed (see ../../CODE-AS-RUN.md).
+--- as-run/bench_dao.py
++++ published/bench_dao.py
+@@ -32,4 +32,8 @@
+ 
+ 
++def _bd(name):  # fix 22 Oct: torch's load() needs the build folder to exist
++    d = os.path.join(os.environ.get('KBUILD', '/content/k0build'), name); os.makedirs(d, exist_ok=True); return d
++
++
+ def build(name, src, flags):
+     t = time.time()
+@@ -37,5 +41,5 @@
+                                  os.path.join(src, 'csrc/fast_hadamard_transform_cuda.cu')],
+              extra_cflags=['-O3'], extra_cuda_cflags=NVCC + flags, extra_include_paths=[src],
+-             build_directory=os.path.join(os.environ.get('KBUILD', '/content/k0build'), name), verbose=False)
++             build_directory=_bd(name), verbose=False)
+     print(f'built {name} in {time.time() - t:.0f} s', flush=True)
+     return m
+@@ -142,5 +146,5 @@
+                                                 os.path.join(hcdir, 'hadamard_transform_cuda.cu')],
+                       extra_cflags=['-O3'], extra_cuda_cflags=['-O3', '-lineinfo'],
+-                      build_directory=os.path.join(os.environ.get('KBUILD', '/content/k0build'), 'hadacore'))
++                      build_directory=_bd('hadacore'))
+             print(f'built hadacore in {time.time() - t:.0f} s', flush=True)
+             fns['hadacore'] = lambda x: hc.hadamard_transform(x, False)

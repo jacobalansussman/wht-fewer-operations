@@ -48,7 +48,9 @@ four and N/8 more when N is an odd power of two. Their formula gives 22 operatio
 Every line of my count-(G) circuits has two terms and at most one multiplication by a constant, so each
 line is one of their operations: 19 against 22, 52 against 56 and the rate 3/4 against 7/8 are comparisons
 in their own count. They claim no lower bound, and I do not claim that my counts are the least possible.
-The best count I found in print for the exact transform with everything charged is Alman and Rao's (2023):
+The best count of the explicit form c·N log2 N plus a multiple of N that I found in print for the exact
+transform with everything charged is Alman and Rao's (2023) (counts of a smaller order are in print; see the
+README):
 at most (23/24) N log2 N + (13/12) N, and (23/24) N log2 N + N - 1 when N is a power of 8. The method of
 the 20-operation circuit is theirs too: the 8-point matrix written as a part of low rank plus a sparse part,
 and one halving. The circuit model is OpenAI's. I did not find the other rows of the table in the literature
@@ -61,6 +63,10 @@ search.
 constructions as recursions. `tables.py` prints the tables. `multiply_add_check.py` checks that every line
 of every circuit file is one operation in the sense of the 1994 paper, and `ga_count.py` prints the
 computation on the count of Grigoryan and Agaian; each takes a second and ends with `OK ...`.
+`count_tables.py` (added in revision 2) builds the circuits of five constructions, the textbook, Coppersmith,
+Feig and Linzer's, Alman and Rao's, the 5/6 circuit and the 3/4 family, at 8 to 4,096 points, checks each, and
+prints the exact count tables of the README in both counts, to 32,768 points (about 5 s; it ends with `OK ...`;
+`expected-output-count-tables.txt` is what it printed).
 `programs/` has the circuits as text. `fast/wht56/` has them as working programs and `fpga/` as hardware
 (both described below). `search/`
 has the search programs as they were run; its README says for each what it searches, what it found, how
@@ -82,6 +88,10 @@ additions and subtractions. On the one machine that was timed it did not make FF
 than a second build of FFHT's unchanged code. In my own plain C on two machines the time did not follow the operation count either, and
 the gain it showed at some sizes on one machine comes from how the compiler treated one pass, not from the
 step. Nothing in that folder is checked by Lean, and `run.py` does not run it.
+A kernel with FFHT's entry points and the 20-operation 8-point step of the 3/4 family, cut from the timing program
+of 22 October 2026,
+is in [../fht-kernel/](../fht-kernel/README.md); the timings of that day are in
+[measurements/2026-10-22/](../../measurements/2026-10-22/README.md).
 
 **The circuits as hardware.** [fpga/](fpga/README.md) builds the circuits for an FPGA (a chip whose logic
 is set by loading a file into it, made of units called logic cells) with open-source tools. As one block

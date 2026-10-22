@@ -1,0 +1,56 @@
+# bench_k0 512bit-f32, 16 lanes, 32 vector registers, compiler 13.3.0
+## x86 regs 512bit-f32 radix-16 interleave 2  (9 repeats of >= 0.20 s each, programs take turns; ns per block)
+rep  0  tb16                               7.7524
+rep  0  tb16bal                            6.6978
+rep  0  g52                                6.6218
+rep  0  g54d7                              6.4821
+rep  0  g56d6                              5.8886
+rep  1  tb16bal                            6.7028
+rep  1  g52                                6.6240
+rep  1  g54d7                              6.4814
+rep  1  g56d6                              5.8882
+rep  1  tb16                               7.7527
+rep  2  g52                                6.6290
+rep  2  g54d7                              6.4844
+rep  2  g56d6                              5.8830
+rep  2  tb16                               7.7527
+rep  2  tb16bal                            6.7208
+rep  3  g54d7                              6.4994
+rep  3  g56d6                              5.8825
+rep  3  tb16                               7.7471
+rep  3  tb16bal                            6.7049
+rep  3  g52                                6.6238
+rep  4  g56d6                              5.8848
+rep  4  tb16                               7.7470
+rep  4  tb16bal                            6.7032
+rep  4  g52                                6.6285
+rep  4  g54d7                              6.4822
+rep  5  tb16                               7.7478
+rep  5  tb16bal                            6.6998
+rep  5  g52                                6.6285
+rep  5  g54d7                              6.4836
+rep  5  g56d6                              5.8846
+rep  6  tb16bal                            6.6954
+rep  6  g52                                6.6249
+rep  6  g54d7                              6.4914
+rep  6  g56d6                              5.8858
+rep  6  tb16                               7.7454
+rep  7  g52                                6.6231
+rep  7  g54d7                              6.4916
+rep  7  g56d6                              5.8850
+rep  7  tb16                               7.7466
+rep  7  tb16bal                            6.6971
+rep  8  g54d7                              6.4887
+rep  8  g56d6                              5.8909
+rep  8  tb16                               7.7455
+rep  8  tb16bal                            6.7079
+rep  8  g52                                6.6221
+RESULT x86 regs 512bit-f32 radix-16 interleave 2 tb16                         best     7.7454  median     7.7471  ns/block  (calls/rep 221761)
+RESULT x86 regs 512bit-f32 radix-16 interleave 2 tb16bal                      best     6.6954  median     6.7028  ns/block  (calls/rep 256136)
+RESULT x86 regs 512bit-f32 radix-16 interleave 2 g52                          best     6.6218  median     6.6240  ns/block  (calls/rep 259570)
+RESULT x86 regs 512bit-f32 radix-16 interleave 2 g54d7                        best     6.4814  median     6.4844  ns/block  (calls/rep 264321)
+RESULT x86 regs 512bit-f32 radix-16 interleave 2 g56d6                        best     5.8825  median     5.8850  ns/block  (calls/rep 291676)
+RATIO x86 regs 512bit-f32 radix-16 interleave 2 tb16bal/tb16 best 0.8644 median 0.8652 | vs best textbook best 1.0000 median 1.0000
+RATIO x86 regs 512bit-f32 radix-16 interleave 2 g52/tb16 best 0.8549 median 0.8550 | vs best textbook best 0.9890 median 0.9882
+RATIO x86 regs 512bit-f32 radix-16 interleave 2 g54d7/tb16 best 0.8368 median 0.8370 | vs best textbook best 0.9680 median 0.9674
+RATIO x86 regs 512bit-f32 radix-16 interleave 2 g56d6/tb16 best 0.7595 median 0.7596 | vs best textbook best 0.8786 median 0.8780

@@ -1,6 +1,7 @@
 # Explicit circuits for the Walsh-Hadamard transform below the textbook count
 
-Author: Jacob Sussman. Text of 2026-10-11.
+Author: Jacob Sussman. Text of 2026-10-11. Revision 2, of 2026-10-22, adds the passages marked "Revision 2"
+and a few short qualifiers, and changes no figure of the first version.
 
 This note is the full account of the result of this repository: small circuits for the Walsh-Hadamard
 transform, written out line by line, that use fewer operations than the textbook program at sizes people
@@ -9,7 +10,7 @@ through the main circuit in ten steps, each with a check to do by hand.
 
 **It is a better constant, not a better exponent.** Every count in this note is a fixed fraction of
 N log2 N. Results that lower the exponent, such as OpenAI's of 25 September 2026 for the Fourier transform,
-are of a smaller order (section 5).
+are of a smaller order (section 5). They give nothing at any size anyone computes.
 
 **What is checked by Lean and what is not.**
 
@@ -22,7 +23,10 @@ are of a smaller order (section 5).
 
 I directed this work. The AI agents (Anthropic's Claude) that I ran wrote the programs, ran the searches,
 wrote the Lean files, searched the literature and read the two older papers (section 7). Their reports have
-not had a line-by-line human review, and no person has yet read the Lean files.
+not had a line-by-line human review, and no person has yet read the Lean files. On 22 October 2026 the same
+kind of agents, at my direction, timed the circuits on rented cloud machines, placed them on an FPGA of a
+second maker (Xilinx), wrote the count program and the kernel of revision 2, and checked the literature again
+(sections 5, 7 and 9).
 
 ## 1. What this is
 
@@ -64,8 +68,10 @@ own sense.
    written out in the generator. The agents checked it twice, and no person has read it.
 3. Count (O), exact H x, N a power of 8: (5/6) N log2 N + N operations. At 512 points that is 4,352 against
    the textbook's 4,608, and 512 is the first size where it is below the textbook. The best count I found in
-   print is Alman and Rao's: at most (23/24) N log2 N + (13/12) N, and exactly (23/24) N log2 N + N - 1 when
-   N is a power of 8. Their theorem covers every power of two and any field; my Lean statement covers the
+   print, of the explicit form c·N log2 N + O(N), is Alman and Rao's: at most (23/24) N log2 N + (13/12) N,
+   and exactly (23/24) N log2 N + N - 1 when N is a power of 8. (Revision 2: counts of a smaller order are
+   in print too, for the Fourier transform in the same circuit model and for this transform in a model of a
+   computer with memory; they give nothing at any size anyone computes. Section 5 says more.) Their theorem covers every power of two and any field; my Lean statement covers the
    powers of 8, over the complex numbers. The count of mine is the one statement checked by Lean
    (section 6); the gate lists themselves are checked by the Python programs.
 4. Count (O), the scaled transform H x / √N, N a power of 4: (7/8) N log2 N + N/4 operations, 60 at 16
@@ -269,6 +275,22 @@ Two remarks on what these circuits are.
   gives at least 0.3155·N log2 N operations. That argument was made by the agents and has not been reviewed;
   it is not in Lean. The count-(O) programs also hold values with entries 1/2, 1/4 and 1/8, and the argument
   has not been written out for them.
+
+  Revision 2 makes two points more exact. First, OpenAI's family 130 has two papers. "Finite tensor savings
+  and exact Fourier circuits" works in the same circuit model as the Lean statement of section 6 and proves
+  circuits below c·n log2 n for every c > 0 at some very large lengths, which it does not name. "An explicit
+  power saving for the exact discrete Fourier transform" gives O(n (log n)^(1 - 10^-13)) operations at every
+  length in a model of a computer with memory; in that model wht-power-saving-lean proves in Lean a count of
+  order N (log2 N)^z with z = 1 - 1.57e-3 for this transform. So 23/24 is the smallest constant I found in
+  print only among explicit counts c·N log2 N + O(N). Second, Morgenstern's bound (1973): if every constant
+  has absolute value at most 1, the exact transform needs at least (1/2) N log2 N operations. Every count of
+  this note is above that, so it rules none of them out. It does not cover the exact count-(O) circuits as
+  they stand, because their last step multiplies every output by 2^j, a constant that grows with N. The
+  layers before that step use only 1, -1 and 1/2 and compute H x / 2^j, for which the same argument gives
+  only (1/6) N log2 N. The bound does say that a change of order needs large constants, which is how OpenAI's
+  family 130 gets around it; Alman (2021) uses large constants in the same way to get around Pudlák's bound
+  for shallow circuits (section 7). These two remarks are arithmetic by the agents, not reviewed and
+  not in Lean.
 - **Most of it is not checked by Lean.** One count has a Lean statement (section 6). Nothing in count (G) is
   in Lean, and neither is the 7/8 family for the scaled transform.
 - **It is not a faster program.** The test that counts is against FFHT, a tuned open-source library for
@@ -309,6 +331,27 @@ Two remarks on what these circuits are.
   `tools/circuits/fast/wht56/results/bench-by-size/bench.md`. The 1994 paper shows the same gap between
   counting and timing: its count predicts a gain of 12.5%, and the authors measured 5.6% to 7.4% on their
   machine (an IBM RISC System/6000 Model 530, 64 to 4,096 points, pages 969 and 970).
+
+  Revision 2 (22 October 2026). The step was timed again on four processors, in a program that keeps
+  FFHT's sequence of steps and swaps only the 8-point step done in the registers, against FFHT and the best
+  textbook code in the same program, built with gcc 13.3.0 and clang 18.1.3. Over the two compilers, the
+  circuit's time divided by the fastest rival's was 0.977-0.996 on AMD Zen 5 and 0.940-0.952 on AMD Zen 4,
+  in double precision at 2^10 to 2^16 points, on data that had overflowed (the same array transformed again
+  and again; every program alike). There was no clear gain on AMD Zen 2, and the circuit was slower on an
+  Intel Broadwell (1.065-1.134 in double precision with gcc). At 64 to 512 points, with many vectors per
+  call and finite data, Zen 4 showed no gain; a run of the same test on Zen 5 finished after this note was
+  written and is not in this revision. My first figure that day,
+  0.847-0.889 on Zen 5 (11-15 % less time), is retracted: the rival then fastest, the balanced textbook
+  written multiply-add first, carried 12 (clang) and 8 (gcc) avoidable register copies per 8-point step,
+  where the circuit has 0 and 3. On real inputs in double precision the circuits differ from the textbook by
+  at most 3.9e-16 relative to the largest output at 2^10 and 2^20 (up to 4.5e-16 in the kernel's test at 2^5
+  to 2^20), so the circuit is not bit-identical to FFHT on real data.
+  On a GPU, an NVIDIA RTX PRO 6000 Blackwell Server Edition, the circuits showed nothing. Two by-products
+  need no new mathematics: on Zen 5 the subtraction-first balanced textbook takes 0.80-0.84 of FFHT's time,
+  and a 512-bit textbook 0.40-0.50 (FFHT has no 512-bit code). Each figure is from one run per chip, and most
+  were not read by a second agent after the run. Every figure, its status and the programs are in
+  [measurements/2026-10-22/](../measurements/2026-10-22/README.md). The figures of 11 October above stay as
+  they are: they describe that machine.
 - **As hardware it saves cells in one setting, and it is not the smallest design.** On a chip, count (G) is
   the number of *adders* (an adder adds or subtracts two numbers), because doubling a number only moves its
   wires by one place. The circuits were built for an FPGA, a chip whose logic is set by loading a file into
@@ -337,7 +380,12 @@ Two remarks on what these circuits are.
   depending on the size). The standard in the hardware designs that were read is the textbook network; the
   8-point Hadamard module of the open video encoder xk265 is that network. On an iCE40-HX8K FPGA board running at 12 MHz, the 19-adder 8-point Walsh-Hadamard circuit was run side by side with the textbook circuit on 597,750,000 test inputs, and the two gave the same outputs every time; a deliberately broken copy of the circuit, run alongside, was caught, which shows the test can fail. This checks only that the circuit computes the right values on a real chip: it says nothing about size or speed, and in this pipelined build the 19-adder circuit is the larger of the two designs. No existing design was improved in this check.
   [tools/circuits/fpga/README.md](../tools/circuits/fpga/README.md) has the tables, the conditions, what
-  was and was not placed and routed, and the designs.
+  was and was not placed and routed, and the designs. Revision 2 (22 October 2026): on a Xilinx Artix-7
+  (xc7a100t), placed with the open-source tools openXC7 over 5 seeds, the 19- and 52-adder circuits used
+  20.8 % and 18.8 % fewer carry blocks than the textbook, but 13.1 % to 31.4 % more slices once placed
+  (0.9 % fewer for the 16-point circuit at 4 adder levels per clock), and a textbook built from three-input
+  adders used fewer carry blocks than the 19-adder circuit (54 against 57). Not a gain. No maker's tools, no bitstream; the figures are in
+  [measurements/2026-10-22/](../measurements/2026-10-22/README.md).
 - **It is not known to be optimal.** With free constants I found no lower bound above linear for this
   transform. The only lower bound proved here is 2N - 1 operations, in either count: 7 at 4 points, 15 at 8 and
   31 at 16. It is Proposition 6 of [the paper](../paper/explicit-wht-circuits.pdf). The agents wrote its
@@ -526,6 +574,33 @@ What was not read, and so limits the word "new":
 
 If you know a smaller count in print, I would be glad to hear of it and will credit it here.
 
+**Revision 2 (22 October 2026): what was added to the search.** The agents checked the literature again,
+at my direction.
+
+- Alman (2021), named above: its abstract also says that its shallow circuits use constants of size
+  polynomial in N, which gets around the bound of Pudlák for bounded constants (P. Pudlák, ECCC TR98-042).
+  It gives no count of the kind of this note.
+- J. Alman, "Superlogarithmic-Rank Matrix Rigidity for the Walsh-Hadamard Transform", arXiv:2608.06592
+  (2026): about rigidity, with no operation count, so not a competing constant. Abstract read.
+- Morgenstern (1973): its statement is now also read in N. Ailon, arXiv:1403.1307. The paper itself is
+  still not read in the original.
+- OpenAI's family 130: both papers and the community page of the first (section 5, and the README section
+  "Relation to OpenAI's family 130"). The first paper itself separates constants from order: it writes that
+  "Alman and Rao obtain new leading constants for power-of-two transforms", and that "a fixed
+  leading-constant improvement does not settle the quantified question addressed here".
+- For the separate GPU test of revision 2 only, not for the counts of this note: S. Sanjeet, I. Colbert and
+  co-authors, "Pushing the Limits of Block Rotations in Post-Training Quantization" (PeRQ),
+  arXiv:2601.22347, ICML 2026, whose Appendix A.1 and Table 4 give the rotation by groups of four for
+  lengths that are not powers of two, and its halving of the additions; and US patent 9,081,731 (Herman and
+  Weston), with grouped partial sums for 12 and 20 points. The agents read the appendix and the table; the
+  abstract has no operation count.
+- **A gap, stated as a gap.** The hardware literature on shift-and-add synthesis of constant matrices counts
+  adders the way count (G) does: an adder costs one and a shift is free. It has exact methods (SAT and
+  integer programming) and heuristics. Neither the October search nor revision 2 looked for a result of
+  those tools on the 8 × 8 Hadamard matrix. Two searches on 22 October found none, which settles nothing.
+  Until it is checked, "the 22 in print" means the 22 in the literature searched here. A first experiment
+  is item 2 of "Open directions" in the [README](../README.md).
+
 ## 8. The files
 
 The circuits, the programs that check them and the programs that found them are in `tools/circuits/`. Its
@@ -571,7 +646,11 @@ machine-readable form, each marked as checked by Lean or as computed in Python.
 - Timing beyond section 5. The step is now timed inside a tuned library, FFHT, on one machine, and it was
   not faster there. Still untried: a second family of processors (one on which additions and multiply-adds
   run on different units, an ARM processor, one with wider vector instructions); a second compiler; several
-  threads; the larger circuits of the family, of which only the 8-point member was timed.
+  threads; the larger circuits of the family, of which only the 8-point member was timed. Revision 2: on
+  22 October 2026 AMD processors (Zen 2, Zen 4 and Zen 5), an Intel Broadwell, 512-bit vector instructions,
+  a second compiler (clang 18.1.3), the 16-point member of the family and a GPU were timed (section 5).
+  Still untried: modern Intel processors (Sapphire Rapids and later), Arm library code, several threads,
+  power, and FFHT timed by its own test program.
 - A form of the step with a shorter chain. The 8-point step has a chain of 7 operations (6 with fused
   multiply-add) where the textbook has 3. Nobody has searched for a circuit with fewer than 24 operations
   and a shorter chain. The test of one pass alone says what a 20-operation block with a chain of 3 would
@@ -579,7 +658,9 @@ machine-readable form, each marked as checked by Lean or as computed in Python.
 - Hardware beyond section 5. One open-source tool chain, two chip families of one maker after packing, no
   measurement of speed or power, nothing in custom silicon. Still untried: a search for a circuit with few
   adder levels, or one that is small in real logic cells and not only in adders; registers placed by hand
-  or by a search; a chip maker's own tools; any real design. No existing design was changed.
+  or by a search; a chip maker's own tools; any real design. No existing design was changed. Revision 2:
+  on 22 October 2026 the 19- and 52-adder circuits were placed on a Xilinx Artix-7 with the open-source tools
+  openXC7, a loss in slices (section 5). Still untried: the makers' own tools, power, and any real design.
 - The same question for the Fourier transform. Alman and Rao's paper turns a count for this transform into
   a count for the Fourier transform; my count has not been put through that.
 - A lower bound for count (O). Nothing here says that 5/6 is the best possible.
@@ -648,6 +729,24 @@ The literature was read and searched on 10 and 11 October 2026. Section 7 says w
 - For the timings of section 5: FFHT, <https://github.com/FALCONN-LIB/FFHT>, at commit
   `fba727a3ff72c862260460631ae1cc8e3e44e861` (10 March 2019, its last), under the MIT License; gcc 13.3.0.
   No file of FFHT is in this repository.
+- Read or checked for revision 2, on 22 October 2026: J. Morgenstern, "Note on a Lower Bound on the Linear
+  Complexity of the Fast Fourier Transform", Journal of the ACM 20(2), pages 305 to 306, 1973, doi
+  10.1145/321752.321761 (the bibliographic record); N. Ailon, "An n log n Lower Bound for Fourier Transform
+  Computation in the Well Conditioned Model", arXiv:1403.1307 (its statement of Morgenstern's bound);
+  P. Pudlák, "A note on the use of determinant for proving lower bounds on the size of linear circuits",
+  ECCC TR98-042 (known from Alman's abstract and the community page below; not read); J. Alman,
+  arXiv:2102.11992 and arXiv:2608.06592 (abstracts); the two papers of OpenAI's family 130 (their
+  introductions, in the source) and the community page
+  <https://mathcommunity.github.io/oai-math-revised/papers/Finite-tensor-savings-and-exact-Fourier-circuits-September-25-2026/>;
+  J. Sussman, wht-power-saving-lean, <https://github.com/jacobalansussman/wht-power-saving-lean>, at commit
+  `86e575e28ed94890872dcff1bb2621d7ff559cbd`; S. Sanjeet, I. Colbert, P. Monteagudo-Lago, G. Franco,
+  Y. Umuroglu, N. J. Fraser, "Pushing the Limits of Block Rotations in Post-Training Quantization",
+  arXiv:2601.22347, version 2 (Appendix A.1 and Table 4); M. A. Herman, T. H. Weston, US patent
+  9,081,731 B2 (2015); A. Andoni, P. Indyk, T. Laarhoven, I. Razenshteyn, L. Schmidt, "Practical and Optimal
+  LSH for Angular Distance", NIPS 2015, arXiv:1509.02897 (the paper FFHT asks users to cite).
+- For the measurements of revision 2: the machines, compilers, third-party code and tools are listed in the
+  sources of [measurements/2026-10-22/](../measurements/2026-10-22/README.md) and of the
+  [README](../README.md).
 - For the hardware figures of section 5: the open-source suite oss-cad-suite, release 2026-10-11, with
   Yosys 0.69+274 and nextpnr 0.11.1-59; the chips Lattice iCE40HX8K (package CT256) and Lattice ECP5; the
   8-point module `hadamard_trans_1d` of xk265, <https://github.com/openasic-org/xk265>, at commit

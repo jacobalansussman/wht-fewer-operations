@@ -1,0 +1,8 @@
+== az_quiet 2026-10-22 12:52:31 whole_same_gcc_avx2_f32: QUIET over 3 s; whole machine 0.06 of 8 cores busy; steal 0.1 %; load ['0.90', '0.94', '1.27']
+   CPUs the timing uses: cpu3 0.3 %, cpu7 0.7 %
+== az_quiet 2026-10-22 12:56:45 whole_same_clang_avx2_f32: QUIET over 3 s; whole machine 0.05 of 8 cores busy; steal 0.1 %; load ['1.27', '1.17', '1.29']
+   CPUs the timing uses: cpu3 1.3 %, cpu7 0.0 %
+== az_quiet 2026-10-22 13:00:59 whole_sep_gcc_avx2_f32: QUIET over 3 s; whole machine 0.07 of 8 cores busy; steal 0.1 %; load ['1.06', '1.14', '1.24']
+   CPUs the timing uses: cpu3 1.7 %, cpu7 0.3 %
+== az_quiet 2026-10-22 13:02:13 whole_same_gcc_avx2_f64: QUIET over 3 s; whole machine 0.05 of 8 cores busy; steal 0.0 %; load ['1.16', '1.15', '1.24']
+   CPUs the timing uses: cpu3 1.3 %, cpu7 0.0 %

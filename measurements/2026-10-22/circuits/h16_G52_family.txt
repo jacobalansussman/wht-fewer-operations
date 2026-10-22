@@ -1,0 +1,76 @@
+# The 16-point Walsh-Hadamard transform in 52 gates.  Count (G): a gate is any a*u + b*v, scalings free.
+# Textbook: 64.  The published rate 7/8 gives 56.  Count (O), every operation charged: 84 for this file;
+# with the outputs divided by 4, 60 (generated/O_family_16_factor.txt), against the textbook's 64 for H x.
+#
+# It is the member N = 16 of the family with (3/4) N log2 N + N/4 gates.  gen.py writes the family for every
+# N = 2^k and states the recursion in its first lines.  The program that first wrote it is ../search/family/gen.py .
+#
+# Inputs x0..x15.  Output yJ = row J of H, where H[J][i] = (-1)^(number of 1-bits common to J and i).
+p1 = x0 + x1
+p2 = x2 - x3
+hub3 = p1 - p2
+p4 = hub3 + 2*x2
+p5 = -hub3 + 2*x0
+p6 = x4 + x5
+p7 = x6 - x7
+hub8 = p6 + p7
+p9 = hub8 - 2*x6
+p10 = -hub8 + 2*x4
+hub11 = p4 - p9
+p12 = hub11 + 2*p6
+p13 = -hub11 + 2*p1
+hub14 = p5 + p10
+p15 = hub14 + 2*p7
+p16 = hub14 - 2*p2
+p17 = x8 + x9
+p18 = x10 - x11
+hub19 = p17 - p18
+p20 = hub19 + 2*x10
+p21 = -hub19 + 2*x8
+p22 = x12 + x13
+p23 = x14 - x15
+hub24 = p22 + p23
+p25 = hub24 - 2*x14
+p26 = -hub24 + 2*x12
+hub27 = p20 + p25
+p28 = hub27 - 2*p22
+p29 = -hub27 + 2*p17
+hub30 = p21 - p26
+p31 = hub30 - 2*p23
+p32 = hub30 - 2*p18
+hub33 = p12 + p28
+p34 = hub33 - 2*p20
+p35 = -hub33 + 2*p4
+p36 = 2*p12 - p34
+p37 = p35 + 2*p28
+hub38 = p15 + p31
+p39 = hub38 - 2*p21
+p40 = -hub38 + 2*p5
+p41 = 2*p15 - p39
+p42 = p40 + 2*p31
+hub43 = p13 + p29
+p44 = hub43 + 2*p25
+p45 = hub43 - 2*p9
+p46 = 2*p13 - p44
+p47 = p45 - 2*p29
+hub48 = p16 + p32
+p49 = hub48 + 2*p26
+p50 = hub48 - 2*p10
+p51 = 2*p16 - p49
+p52 = p50 - 2*p32
+y0 = p36
+y1 = p41
+y2 = p44
+y3 = p49
+y4 = p37
+y5 = p42
+y6 = p45
+y7 = p50
+y8 = p34
+y9 = p39
+y10 = p46
+y11 = p51
+y12 = p35
+y13 = p40
+y14 = p47
+y15 = p52

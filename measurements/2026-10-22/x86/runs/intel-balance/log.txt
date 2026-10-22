@@ -1,0 +1,132 @@
+== machine (x86-balance) 2026-10-22 12:49:36 UTC
+Linux <container> 6.6.122+ #1 SMP Thu Apr 30 18:17:14 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Xeon(R) CPU @ 2.20GHz
+CPU family:                              6
+Model:                                   79
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+Stepping:                                0
+BogoMIPS:                                4399.99
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                1 MiB (4 instances)
+L3 cache:                                55 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-7
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Vulnerable
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Mitigation; PTE Inversion
+Vulnerability Mds:                       Vulnerable; SMT Host state unknown
+Vulnerability Meltdown:                  Vulnerable
+Vulnerability Mmio stale data:           Vulnerable
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Vulnerable
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Vulnerable
+Vulnerability Spectre v1:                Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:                Vulnerable; IBPB: disabled; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Vulnerable
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Vulnerable
+Vulnerability Vmscape:                   Not affected
+
+nproc: 8
+               total        used        free      shared  buff/cache   available
+Mem:              50           1          36           0          13          49
+Swap:              0           0           0
+nvidia-smi: not present (no GPU)
+== compilers and tools
+-- gcc: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+-- g++: g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+-- clang: not installed
+-- clang++: not installed
+-- nvcc: not installed
+-- cmake: cmake version 3.31.10
+-- python3: Python 3.13.16
+== load: 0.36 2.64 3.76 1/479 41141
+== job folder /content/work/remote/x86-balance-1792673375-71565, build folder /content/build/x86-balance
+Thu Oct 22 12:49:36 UTC 2026
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+bal_avx2: exact kernels: 16
+== az_quiet 2026-10-22 12:49:41 bal_avx2 round 1: QUIET over 3 s; whole machine 0.17 of 8 cores busy; steal 0.1 %; load ['0.33', '2.60', '3.74']
+   CPUs the timing uses: cpu1 0.3 %, cpu5 3.7 %
+CHECK k_h8_textbook_24             PASS (exact)
+CHECK k_h8_textbook_24_bal         PASS (exact)
+CHECK k_h8_G19                     PASS (exact)
+CHECK k_h8_G19_bal                 PASS (exact)
+CHECK k_h8_G22_depth4              PASS (exact)
+CHECK k_h8_G22_depth4_bal          PASS (exact)
+CHECK k_h8_ar22                    PASS (exact)
+CHECK k_h8_ar22_bal                PASS (exact)
+CHECK k_h16_textbook_64            PASS (exact)
+CHECK k_h16_textbook_64_bal        PASS (exact)
+CHECK k_h16_G52_family             PASS (exact)
+CHECK k_h16_G52_family_bal         PASS (exact)
+CHECK k_h16_G56_depth6             PASS (exact)
+CHECK k_h16_G56_depth6_bal         PASS (exact)
+CHECK k_h16_G60_depth5             PASS (exact)
+CHECK k_h16_G60_depth5_bal         PASS (exact)
+RESULT k_h8_textbook_24             best 0.0859 median 0.0871 ns/point  reps: 0.0874 0.0873 0.0877 0.0871 0.0859 0.0867 0.0866 0.0864 0.0879
+RESULT k_h8_textbook_24_bal         best 0.0914 median 0.0917 ns/point  reps: 0.0918 0.0920 0.0936 0.0925 0.0914 0.0916 0.0917 0.0917 0.0914
+RESULT k_h8_G19                     best 0.0929 median 0.0932 ns/point  reps: 0.0931 0.0943 0.0929 0.0942 0.0932 0.0938 0.0953 0.0929 0.0932
+RESULT k_h8_G19_bal                 best 0.0917 median 0.0926 ns/point  reps: 0.0931 0.0917 0.0926 0.0970 0.0919 0.0945 0.0925 0.0920 0.0926
+RESULT k_h8_G22_depth4              best 0.0858 median 0.0865 ns/point  reps: 0.0860 0.0859 0.0875 0.0885 0.0883 0.0871 0.0863 0.0865 0.0858
+RESULT k_h8_G22_depth4_bal          best 0.0877 median 0.0889 ns/point  reps: 0.0885 0.0883 0.0897 0.0936 0.0889 0.0877 0.0892 0.0877 0.0912
+RESULT k_h8_ar22                    best 0.1153 median 0.1160 ns/point  reps: 0.1153 0.1155 0.1193 0.1178 0.1190 0.1154 0.1160 0.1157 0.1206
+RESULT k_h8_ar22_bal                best 0.1178 median 0.1198 ns/point  reps: 0.1197 0.1178 0.1222 0.1230 0.1216 0.1190 0.1198 0.1181 0.1316
+RESULT k_h16_textbook_64            best 0.1123 median 0.1136 ns/point  reps: 0.1183 0.1134 0.1193 0.1164 0.1134 0.1123 0.1131 0.1143 0.1136
+RESULT k_h16_textbook_64_bal        best 0.1301 median 0.1310 ns/point  reps: 0.1311 0.1310 0.1345 0.1332 0.1309 0.1318 0.1309 0.1306 0.1301
+RESULT k_h16_G52_family             best 0.1316 median 0.1324 ns/point  reps: 0.1327 0.1322 0.1359 0.1366 0.1324 0.1318 0.1332 0.1316 0.1318
+RESULT k_h16_G52_family_bal         best 0.1294 median 0.1306 ns/point  reps: 0.1302 0.1306 0.1350 0.1399 0.1294 0.1312 0.1341 0.1303 0.1303
+RESULT k_h16_G56_depth6             best 0.1270 median 0.1283 ns/point  reps: 0.1278 0.1289 0.1312 0.1381 0.1278 0.1270 0.1425 0.1283 0.1273
+RESULT k_h16_G56_depth6_bal         best 0.1268 median 0.1282 ns/point  reps: 0.1297 0.1282 0.1276 0.1364 0.1272 0.1268 0.1290 0.1291 0.1278
+RESULT k_h16_G60_depth5             best 0.1232 median 0.1249 ns/point  reps: 0.1261 0.1245 0.1246 0.1506 0.1249 0.1253 0.1241 0.1259 0.1232
+RESULT k_h16_G60_depth5_bal         best 0.1332 median 0.1346 ns/point  reps: 0.1354 0.1333 0.1371 0.1342 0.1344 0.1346 0.1363 0.1363 0.1332
+== az_quiet 2026-10-22 12:50:36 bal_avx2 round 2: QUIET over 3 s; whole machine 0.05 of 8 cores busy; steal 0.0 %; load ['0.76', '2.34', '3.59']
+   CPUs the timing uses: cpu1 0.0 %, cpu5 1.7 %
+CHECK k_h8_textbook_24             PASS (exact)
+CHECK k_h8_textbook_24_bal         PASS (exact)
+CHECK k_h8_G19                     PASS (exact)
+CHECK k_h8_G19_bal                 PASS (exact)
+CHECK k_h8_G22_depth4              PASS (exact)
+CHECK k_h8_G22_depth4_bal          PASS (exact)
+CHECK k_h8_ar22                    PASS (exact)
+CHECK k_h8_ar22_bal                PASS (exact)
+CHECK k_h16_textbook_64            PASS (exact)
+CHECK k_h16_textbook_64_bal        PASS (exact)
+CHECK k_h16_G52_family             PASS (exact)
+CHECK k_h16_G52_family_bal         PASS (exact)
+CHECK k_h16_G56_depth6             PASS (exact)
+CHECK k_h16_G56_depth6_bal         PASS (exact)
+CHECK k_h16_G60_depth5             PASS (exact)
+CHECK k_h16_G60_depth5_bal         PASS (exact)
+RESULT k_h8_textbook_24             best 0.0861 median 0.0865 ns/point  reps: 0.0866 0.0895 0.0861 0.0863 0.0868 0.0864 0.0865 0.0862 0.0867
+RESULT k_h8_textbook_24_bal         best 0.0908 median 0.0913 ns/point  reps: 0.0913 0.0913 0.0913 0.0908 0.0962 0.0916 0.0911 0.0909 0.0913
+RESULT k_h8_G19                     best 0.0924 median 0.0933 ns/point  reps: 0.0934 0.0939 0.0928 0.0933 0.0949 0.0933 0.0926 0.0928 0.0924
+RESULT k_h8_G19_bal                 best 0.0917 median 0.0920 ns/point  reps: 0.0917 0.0925 0.0919 0.0928 0.0920 0.0918 0.0922 0.0923 0.0920
+RESULT k_h8_G22_depth4              best 0.0857 median 0.0861 ns/point  reps: 0.0857 0.0861 0.0861 0.0866 0.0863 0.0859 0.0861 0.0862 0.0858
+RESULT k_h8_G22_depth4_bal          best 0.0875 median 0.0879 ns/point  reps: 0.0879 0.0876 0.0890 0.0892 0.0884 0.0878 0.0902 0.0875 0.0879
+RESULT k_h8_ar22                    best 0.1146 median 0.1158 ns/point  reps: 0.1167 0.1146 0.1158 0.1146 0.1158 0.1156 0.1178 0.1160 0.1149
+RESULT k_h8_ar22_bal                best 0.1172 median 0.1183 ns/point  reps: 0.1189 0.1172 0.1342 0.1183 0.1182 0.1192 0.1186 0.1182 0.1183
+RESULT k_h16_textbook_64            best 0.1122 median 0.1131 ns/point  reps: 0.1129 0.1122 0.1179 0.1133 0.1132 0.1127 0.1131 0.1135 0.1126
+RESULT k_h16_textbook_64_bal        best 0.1292 median 0.1308 ns/point  reps: 0.1316 0.1308 0.1310 0.1307 0.1308 0.1309 0.1292 0.1312 0.1305
+RESULT k_h16_G52_family             best 0.1355 median 0.1363 ns/point  reps: 0.1355 0.1362 0.1358 0.1363 0.1374 0.1384 0.1367 0.1362 0.1367
+RESULT k_h16_G52_family_bal         best 0.1350 median 0.1356 ns/point  reps: 0.1357 0.1350 0.1356 0.1352 0.1403 0.1355 0.1352 0.1365 0.1357
+RESULT k_h16_G56_depth6             best 0.1279 median 0.1302 ns/point  reps: 0.1298 0.1279 0.1302 0.1295 0.1321 0.1304 0.1287 0.1312 0.1304
+RESULT k_h16_G56_depth6_bal         best 0.1312 median 0.1322 ns/point  reps: 0.1320 0.1318 0.1322 0.1326 0.1322 0.1327 0.1312 0.1343 0.1321
+RESULT k_h16_G60_depth5             best 0.1239 median 0.1253 ns/point  reps: 0.1254 0.1239 0.1251 0.1245 0.1257 0.1259 0.1253 0.1385 0.1245
+RESULT k_h16_G60_depth5_bal         best 0.1358 median 0.1371 ns/point  reps: 0.1373 0.1378 0.1358 0.1377 0.1371 0.1360 0.1367 0.1433 0.1365
+Thu Oct 22 12:51:30 UTC 2026

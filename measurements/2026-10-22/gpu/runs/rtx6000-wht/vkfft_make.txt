@@ -1,0 +1,51 @@
+make: Entering directory '/content/k0build/vkfft'
+make[1]: Entering directory '/content/k0build/vkfft'
+make[2]: Entering directory '/content/k0build/vkfft'
+make[2]: Leaving directory '/content/k0build/vkfft'
+[ 33%] Built target cuFFT_scripts
+make[2]: Entering directory '/content/k0build/vkfft'
+make[2]: Leaving directory '/content/k0build/vkfft'
+make[2]: Entering directory '/content/k0build/vkfft'
+[ 35%] Building CUDA object CMakeFiles/VkFFT_TestSuite.dir/VkFFT_TestSuite.cpp.o
+nvcc warning : incompatible redefinition for option 'std', the last value of this option was used
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(28): warning #68-D: integer conversion resulted in a change of sign
+   uint64_t initPageSize = -1;
+                           ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(30): warning #68-D: integer conversion resulted in a change of sign
+   uint64_t locBufferSize = -1;
+                            ^
+
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(112): warning #68-D: integer conversion resulted in a change of sign
+   initPageSize = -1;
+                  ^
+
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(114): warning #68-D: integer conversion resulted in a change of sign
+   locBufferSize = -1;
+                   ^
+
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(337): warning #68-D: integer conversion resulted in a change of sign
+   uint64_t initPageSize = -1;
+                           ^
+
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(446): warning #68-D: integer conversion resulted in a change of sign
+   initPageSize = -1;
+                  ^
+
+/content/k0src/VkFFT/vkFFT/vkFFT/vkFFT_PlanManagement/vkFFT_API_handles/vkFFT_UpdateBuffers.h(448): warning #68-D: integer conversion resulted in a change of sign
+   locBufferSize = -1;
+                   ^
+
+/content/k0src/VkFFT/VkFFT_TestSuite.cpp(179): error: too few arguments in function call
+   res = cuCtxCreate_v4(&vkGPU->context, 0, (int)vkGPU->device);
+                                                              ^
+
+1 error detected in the compilation of "/content/k0src/VkFFT/VkFFT_TestSuite.cpp".
+make[2]: *** [CMakeFiles/VkFFT_TestSuite.dir/build.make:80: CMakeFiles/VkFFT_TestSuite.dir/VkFFT_TestSuite.cpp.o] Error 2
+make[2]: Leaving directory '/content/k0build/vkfft'
+make[1]: *** [CMakeFiles/Makefile2:90: CMakeFiles/VkFFT_TestSuite.dir/all] Error 2
+make[1]: Leaving directory '/content/k0build/vkfft'
+make: *** [Makefile:136: all] Error 2
+make: Leaving directory '/content/k0build/vkfft'

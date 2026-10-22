@@ -1,0 +1,273 @@
+# wht_cuda on NVIDIA RTX PRO 6000 Blackwell Server Edition, sm_120, 188 SMs, 2430 MHz, 512-bit bus, L2 131072 KB
+CHECK regs R=8 tb8    exact on integers: 0 wrong PASS
+CHECK regs R=8 g19    exact on integers: 0 wrong PASS
+CHECK regs R=8 g22d4  exact on integers: 0 wrong PASS
+CHECK regs R=16 tb16   exact on integers: 0 wrong PASS
+CHECK regs R=16 g52    exact on integers: 0 wrong PASS
+CHECK regs R=16 g56d6  exact on integers: 0 wrong PASS
+CHECK row N=256 tb16   rel err 1.115e-07 PASS
+CHECK row N=256 g52    rel err 1.183e-07 PASS
+CHECK row N=256 g56d6  rel err 1.089e-07 PASS
+CHECK row N=256 broken copy CAUGHT (good)
+CHECK row N=4096 tb16   rel err 1.217e-07 PASS
+CHECK row N=4096 g52    rel err 1.760e-07 PASS
+CHECK row N=4096 g56d6  rel err 1.325e-07 PASS
+CHECK row N=4096 broken copy CAUGHT (good)
+CHECK row N=512 tb8    rel err 1.121e-07 PASS
+CHECK row N=512 g19    rel err 1.237e-07 PASS
+CHECK row N=512 g22d4  rel err 1.203e-07 PASS
+CHECK row N=512 broken copy CAUGHT (good)
+CHECK row N=4096 tb8    rel err 1.051e-07 PASS
+CHECK row N=4096 g19    rel err 1.394e-07 PASS
+CHECK row N=4096 g22d4  rel err 1.122e-07 PASS
+CHECK row N=4096 broken copy CAUGHT (good)
+ALL PASS
+COPY device-to-device 1474.3 GB/s (read + write, 256 MiB)
+## row N=256 radix=16 rows=262144 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb16     0.00546 ns/point
+rep 0 g52      0.00546 ns/point
+rep 0 g56d6    0.00546 ns/point
+rep 1 g52      0.00546 ns/point
+rep 1 g56d6    0.00546 ns/point
+rep 1 tb16     0.00547 ns/point
+rep 2 g56d6    0.00547 ns/point
+rep 2 tb16     0.00547 ns/point
+rep 2 g52      0.00548 ns/point
+rep 3 tb16     0.00547 ns/point
+rep 3 g52      0.00546 ns/point
+rep 3 g56d6    0.00546 ns/point
+rep 4 g52      0.00546 ns/point
+rep 4 g56d6    0.00547 ns/point
+rep 4 tb16     0.00546 ns/point
+rep 5 g56d6    0.00546 ns/point
+rep 5 tb16     0.00546 ns/point
+rep 5 g52      0.00546 ns/point
+rep 6 tb16     0.00546 ns/point
+rep 6 g52      0.00546 ns/point
+rep 6 g56d6    0.00546 ns/point
+rep 7 g52      0.00546 ns/point
+rep 7 g56d6    0.00546 ns/point
+rep 7 tb16     0.00546 ns/point
+rep 8 g56d6    0.00546 ns/point
+rep 8 tb16     0.00547 ns/point
+rep 8 g52      0.00546 ns/point
+RESULT row N=256 radix=16 rows=262144 tb16     best 0.00546 median 0.00546 ns/point ratio-vs-tb16 1.0000  1464.2 GB/s
+RESULT row N=256 radix=16 rows=262144 g52      best 0.00546 median 0.00546 ns/point ratio-vs-tb16 1.0001  1464.0 GB/s
+RESULT row N=256 radix=16 rows=262144 g56d6    best 0.00546 median 0.00546 ns/point ratio-vs-tb16 1.0000  1464.2 GB/s
+## row N=4096 radix=16 rows=16384 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb16     0.00545 ns/point
+rep 0 g52      0.00546 ns/point
+rep 0 g56d6    0.00545 ns/point
+rep 1 g52      0.00545 ns/point
+rep 1 g56d6    0.00545 ns/point
+rep 1 tb16     0.00545 ns/point
+rep 2 g56d6    0.00545 ns/point
+rep 2 tb16     0.00545 ns/point
+rep 2 g52      0.00545 ns/point
+rep 3 tb16     0.00545 ns/point
+rep 3 g52      0.00545 ns/point
+rep 3 g56d6    0.00545 ns/point
+rep 4 g52      0.00545 ns/point
+rep 4 g56d6    0.00545 ns/point
+rep 4 tb16     0.00545 ns/point
+rep 5 g56d6    0.00545 ns/point
+rep 5 tb16     0.00545 ns/point
+rep 5 g52      0.00545 ns/point
+rep 6 tb16     0.00545 ns/point
+rep 6 g52      0.00545 ns/point
+rep 6 g56d6    0.00545 ns/point
+rep 7 g52      0.00545 ns/point
+rep 7 g56d6    0.00545 ns/point
+rep 7 tb16     0.00545 ns/point
+rep 8 g56d6    0.00545 ns/point
+rep 8 tb16     0.00546 ns/point
+rep 8 g52      0.00545 ns/point
+RESULT row N=4096 radix=16 rows=16384 tb16     best 0.00545 median 0.00545 ns/point ratio-vs-tb16 1.0000  1466.6 GB/s
+RESULT row N=4096 radix=16 rows=16384 g52      best 0.00545 median 0.00545 ns/point ratio-vs-tb16 1.0000  1466.7 GB/s
+RESULT row N=4096 radix=16 rows=16384 g56d6    best 0.00545 median 0.00545 ns/point ratio-vs-tb16 0.9999  1466.7 GB/s
+## row N=512 radix=8 rows=131072 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb8      0.00547 ns/point
+rep 0 g19      0.00547 ns/point
+rep 0 g22d4    0.00547 ns/point
+rep 1 g19      0.00547 ns/point
+rep 1 g22d4    0.00547 ns/point
+rep 1 tb8      0.00547 ns/point
+rep 2 g22d4    0.00547 ns/point
+rep 2 tb8      0.00547 ns/point
+rep 2 g19      0.00547 ns/point
+rep 3 tb8      0.00547 ns/point
+rep 3 g19      0.00547 ns/point
+rep 3 g22d4    0.00547 ns/point
+rep 4 g19      0.00547 ns/point
+rep 4 g22d4    0.00547 ns/point
+rep 4 tb8      0.00547 ns/point
+rep 5 g22d4    0.00547 ns/point
+rep 5 tb8      0.00547 ns/point
+rep 5 g19      0.00547 ns/point
+rep 6 tb8      0.00547 ns/point
+rep 6 g19      0.00547 ns/point
+rep 6 g22d4    0.00547 ns/point
+rep 7 g19      0.00547 ns/point
+rep 7 g22d4    0.00547 ns/point
+rep 7 tb8      0.00547 ns/point
+rep 8 g22d4    0.00547 ns/point
+rep 8 tb8      0.00547 ns/point
+rep 8 g19      0.00547 ns/point
+RESULT row N=512 radix=8 rows=131072 tb8      best 0.00547 median 0.00547 ns/point ratio-vs-tb8 1.0000  1461.9 GB/s
+RESULT row N=512 radix=8 rows=131072 g19      best 0.00547 median 0.00547 ns/point ratio-vs-tb8 1.0000  1461.9 GB/s
+RESULT row N=512 radix=8 rows=131072 g22d4    best 0.00547 median 0.00547 ns/point ratio-vs-tb8 1.0001  1461.8 GB/s
+## row N=4096 radix=8 rows=16384 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb8      0.00546 ns/point
+rep 0 g19      0.00546 ns/point
+rep 0 g22d4    0.00546 ns/point
+rep 1 g19      0.00546 ns/point
+rep 1 g22d4    0.00546 ns/point
+rep 1 tb8      0.00546 ns/point
+rep 2 g22d4    0.00546 ns/point
+rep 2 tb8      0.00546 ns/point
+rep 2 g19      0.00546 ns/point
+rep 3 tb8      0.00546 ns/point
+rep 3 g19      0.00546 ns/point
+rep 3 g22d4    0.00546 ns/point
+rep 4 g19      0.00546 ns/point
+rep 4 g22d4    0.00546 ns/point
+rep 4 tb8      0.00546 ns/point
+rep 5 g22d4    0.00546 ns/point
+rep 5 tb8      0.00546 ns/point
+rep 5 g19      0.00546 ns/point
+rep 6 tb8      0.00546 ns/point
+rep 6 g19      0.00546 ns/point
+rep 6 g22d4    0.00546 ns/point
+rep 7 g19      0.00546 ns/point
+rep 7 g22d4    0.00546 ns/point
+rep 7 tb8      0.00546 ns/point
+rep 8 g22d4    0.00546 ns/point
+rep 8 tb8      0.00546 ns/point
+rep 8 g19      0.00546 ns/point
+RESULT row N=4096 radix=8 rows=16384 tb8      best 0.00546 median 0.00546 ns/point ratio-vs-tb8 1.0000  1464.2 GB/s
+RESULT row N=4096 radix=8 rows=16384 g19      best 0.00546 median 0.00546 ns/point ratio-vs-tb8 1.0000  1464.2 GB/s
+RESULT row N=4096 radix=8 rows=16384 g22d4    best 0.00546 median 0.00546 ns/point ratio-vs-tb8 0.9999  1464.3 GB/s
+## row N=256 radix=16 rows=4096 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb16     0.00391 ns/point
+rep 0 g52      0.00391 ns/point
+rep 0 g56d6    0.00391 ns/point
+rep 1 g52      0.00391 ns/point
+rep 1 g56d6    0.00391 ns/point
+rep 1 tb16     0.00391 ns/point
+rep 2 g56d6    0.00391 ns/point
+rep 2 tb16     0.00391 ns/point
+rep 2 g52      0.00391 ns/point
+rep 3 tb16     0.00391 ns/point
+rep 3 g52      0.00391 ns/point
+rep 3 g56d6    0.00391 ns/point
+rep 4 g52      0.00391 ns/point
+rep 4 g56d6    0.00391 ns/point
+rep 4 tb16     0.00391 ns/point
+rep 5 g56d6    0.00391 ns/point
+rep 5 tb16     0.00391 ns/point
+rep 5 g52      0.00391 ns/point
+rep 6 tb16     0.00391 ns/point
+rep 6 g52      0.00391 ns/point
+rep 6 g56d6    0.00391 ns/point
+rep 7 g52      0.00391 ns/point
+rep 7 g56d6    0.00391 ns/point
+rep 7 tb16     0.00391 ns/point
+rep 8 g56d6    0.00391 ns/point
+rep 8 tb16     0.00391 ns/point
+rep 8 g52      0.00391 ns/point
+RESULT row N=256 radix=16 rows=4096 tb16     best 0.00391 median 0.00391 ns/point ratio-vs-tb16 1.0000  2047.0 GB/s
+RESULT row N=256 radix=16 rows=4096 g52      best 0.00391 median 0.00391 ns/point ratio-vs-tb16 1.0000  2047.0 GB/s
+RESULT row N=256 radix=16 rows=4096 g56d6    best 0.00391 median 0.00391 ns/point ratio-vs-tb16 1.0000  2047.0 GB/s
+## row N=4096 radix=16 rows=256 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb16     0.00476 ns/point
+rep 0 g52      0.00391 ns/point
+rep 0 g56d6    0.00392 ns/point
+rep 1 g52      0.00391 ns/point
+rep 1 g56d6    0.00392 ns/point
+rep 1 tb16     0.00477 ns/point
+rep 2 g56d6    0.00392 ns/point
+rep 2 tb16     0.00477 ns/point
+rep 2 g52      0.00391 ns/point
+rep 3 tb16     0.00479 ns/point
+rep 3 g52      0.00391 ns/point
+rep 3 g56d6    0.00392 ns/point
+rep 4 g52      0.00391 ns/point
+rep 4 g56d6    0.00392 ns/point
+rep 4 tb16     0.00477 ns/point
+rep 5 g56d6    0.00392 ns/point
+rep 5 tb16     0.00477 ns/point
+rep 5 g52      0.00391 ns/point
+rep 6 tb16     0.00479 ns/point
+rep 6 g52      0.00391 ns/point
+rep 6 g56d6    0.00392 ns/point
+rep 7 g52      0.00391 ns/point
+rep 7 g56d6    0.00392 ns/point
+rep 7 tb16     0.00477 ns/point
+rep 8 g56d6    0.00392 ns/point
+rep 8 tb16     0.00477 ns/point
+rep 8 g52      0.00391 ns/point
+RESULT row N=4096 radix=16 rows=256 tb16     best 0.00476 median 0.00477 ns/point ratio-vs-tb16 1.0000  1677.5 GB/s
+RESULT row N=4096 radix=16 rows=256 g52      best 0.00391 median 0.00391 ns/point ratio-vs-tb16 0.8195  2047.0 GB/s
+RESULT row N=4096 radix=16 rows=256 g56d6    best 0.00392 median 0.00392 ns/point ratio-vs-tb16 0.8212  2042.7 GB/s
+## regs R=16 REP=256 threads=385024 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb16     0.00153 ns/block
+rep 0 g52      0.00141 ns/block
+rep 0 g56d6    0.00151 ns/block
+rep 1 g52      0.00141 ns/block
+rep 1 g56d6    0.00151 ns/block
+rep 1 tb16     0.00153 ns/block
+rep 2 g56d6    0.00151 ns/block
+rep 2 tb16     0.00153 ns/block
+rep 2 g52      0.00141 ns/block
+rep 3 tb16     0.00153 ns/block
+rep 3 g52      0.00141 ns/block
+rep 3 g56d6    0.00151 ns/block
+rep 4 g52      0.00141 ns/block
+rep 4 g56d6    0.00151 ns/block
+rep 4 tb16     0.00153 ns/block
+rep 5 g56d6    0.00151 ns/block
+rep 5 tb16     0.00153 ns/block
+rep 5 g52      0.00141 ns/block
+rep 6 tb16     0.00153 ns/block
+rep 6 g52      0.00141 ns/block
+rep 6 g56d6    0.00151 ns/block
+rep 7 g52      0.00141 ns/block
+rep 7 g56d6    0.00151 ns/block
+rep 7 tb16     0.00153 ns/block
+rep 8 g56d6    0.00151 ns/block
+rep 8 tb16     0.00153 ns/block
+rep 8 g52      0.00141 ns/block
+RESULT regs R=16 REP=256 threads=385024 tb16     best 0.00153 median 0.00153 ns/block ratio-vs-tb16 1.0000
+RESULT regs R=16 REP=256 threads=385024 g52      best 0.00141 median 0.00141 ns/block ratio-vs-tb16 0.9198
+RESULT regs R=16 REP=256 threads=385024 g56d6    best 0.00151 median 0.00151 ns/block ratio-vs-tb16 0.9866
+## regs R=8 REP=256 threads=385024 (9 repeats of >= 0.2 s, programs take turns)
+rep 0 tb8      0.00074 ns/block
+rep 0 g19      0.00046 ns/block
+rep 0 g22d4    0.00050 ns/block
+rep 1 g19      0.00046 ns/block
+rep 1 g22d4    0.00050 ns/block
+rep 1 tb8      0.00074 ns/block
+rep 2 g22d4    0.00050 ns/block
+rep 2 tb8      0.00074 ns/block
+rep 2 g19      0.00046 ns/block
+rep 3 tb8      0.00074 ns/block
+rep 3 g19      0.00046 ns/block
+rep 3 g22d4    0.00050 ns/block
+rep 4 g19      0.00046 ns/block
+rep 4 g22d4    0.00050 ns/block
+rep 4 tb8      0.00074 ns/block
+rep 5 g22d4    0.00050 ns/block
+rep 5 tb8      0.00074 ns/block
+rep 5 g19      0.00046 ns/block
+rep 6 tb8      0.00074 ns/block
+rep 6 g19      0.00046 ns/block
+rep 6 g22d4    0.00050 ns/block
+rep 7 g19      0.00046 ns/block
+rep 7 g22d4    0.00050 ns/block
+rep 7 tb8      0.00074 ns/block
+rep 8 g22d4    0.00050 ns/block
+rep 8 tb8      0.00074 ns/block
+rep 8 g19      0.00046 ns/block
+RESULT regs R=8 REP=256 threads=385024 tb8      best 0.00074 median 0.00074 ns/block ratio-vs-tb8 1.0000
+RESULT regs R=8 REP=256 threads=385024 g19      best 0.00046 median 0.00046 ns/block ratio-vs-tb8 0.6153
+RESULT regs R=8 REP=256 threads=385024 g22d4    best 0.00050 median 0.00050 ns/block ratio-vs-tb8 0.6718

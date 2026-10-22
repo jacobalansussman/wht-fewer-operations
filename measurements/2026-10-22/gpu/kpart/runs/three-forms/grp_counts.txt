@@ -1,0 +1,4 @@
+had_12_paley: grouped(4) 60 additions (dense 132), proof on unit vectors PASS
+had_20_will: grouped(4) 140 additions (dense 380), proof on unit vectors PASS
+had_28_will: grouped(4) 252 additions (dense 756), proof on unit vectors PASS
+had_40_tpal: grouped(4) 480 additions (dense 1560), proof on unit vectors PASS
